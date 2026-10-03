@@ -60,6 +60,8 @@ def cox(df, covariates, duration="months", event="event"):
     """Cox PH fit (statsmodels PHReg). Returns DataFrame of HR, CI, p per covariate."""
     from statsmodels.duration.hazard_regression import PHReg
 
+    # drop adjustment covariates that are mostly missing (e.g. no AJCC stage in GBM)
+    covariates = [covariates[0]] + [c for c in covariates[1:] if df[c].notna().mean() >= 0.7]
     d = df[[duration, event] + covariates].dropna()
     x = d[covariates].astype(float)
     keep = x.std() > 0

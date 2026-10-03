@@ -11,8 +11,9 @@ The original readout is fragile. Swapping the 2019 TCGA files for the current
 GDC release moves pathway scores only slightly (median per-pathway correlation
 0.91), yet the 5-FU log-rank p for k=5 pathways moves from 0.13 to 0.72. Picking
 the best of 3 models x 9 values of k also inflates significance: the paper's best
-p = 0.076 has a whole-pipeline permutation p of about 0.5. See
-`results/COAD_FLUOROURACIL/REPORT.md`.
+p = 0.076 has a whole-pipeline permutation p of 0.48 (500 permutations). See
+`results/COAD_FLUOROURACIL/REPORT.md` and, for the other cancers,
+`results/multicancer_summary.tsv`.
 
 ## What it does
 

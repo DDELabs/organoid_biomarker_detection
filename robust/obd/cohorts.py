@@ -56,6 +56,98 @@ def generic_organoids(expr_path, response_path, sample_col="sample", drug_col="d
     return expr, resp
 
 
+def _r_dataframe(obj):
+    """Minimal reader for an R data.frame node parsed by the `rdata` package."""
+    from rdata.parser import RObjectType as T
+
+    def tag_name(tag):
+        sym = tag.referenced_object if tag.info.type == T.REF else tag
+        return sym.value.value.decode()
+
+    def strings(o):
+        return [None if x.value is None else x.value.decode("latin1") for x in o.value]
+
+    attrs, a = {}, obj.attributes
+    while a is not None and a.info.type == T.LIST:
+        car, cdr = a.value
+        attrs[tag_name(a.tag)] = car
+        a = cdr
+    cols = strings(attrs["names"])
+    rn = attrs["row.names"]
+    rows = strings(rn) if rn.info.type == T.STR else None
+    data = {c: np.asarray(v.value, dtype=float) if v.info.type in (T.REAL, T.INT) else strings(v)
+            for c, v in zip(cols, obj.value)}
+    return pd.DataFrame(data, index=rows)
+
+
+def licob_organoids():
+    """LICOB liver cancer organoids (Ji et al., Sci Transl Med 2023; iLICOB GitHub release).
+
+    50 organoids with RNA-seq (log scale, as distributed) and AUC for 76 drugs.
+    Returns (expression genes x organoids, response organoids x drugs).
+    """
+    import rdata
+
+    path = fetch("https://raw.githubusercontent.com/wu-yc/iLICOB/master/data/data_ilicob_org",
+                 EXTERNAL / "LICOB_organoid.RData")
+    parsed = rdata.parser.parse_file(path)
+    full = parsed.object.value[0].value[3]          # [[4]]: full omics matrices
+    expr = _r_dataframe(full.value[0])               # RNA: genes x organoids
+    auc = _r_dataframe(full.value[5])                # drug AUC: organoids x drugs
+    auc.columns = [common_drug_name(c.replace("_", "-")) for c in auc.columns]
+    return to_canonical(expr), auc
+
+
+def gdsc_cell_lines(tissues):
+    """GDSC (Garnett et al. 2012) cell lines as a pre-clinical proxy where no open
+    organoid pharmacogenomic set exists. Brainarray RMA expression + ln IC50.
+
+    tissues: list of substrings matched against the GDSC 'Tissue' annotation,
+    e.g. ['breast'] or ['lung: NSCLC'].
+    Returns (expression genes x cell lines, response cell lines x drugs).
+    """
+    import rdata
+    from rdata.parser import RObjectType as T
+
+    path = fetch("https://media.githubusercontent.com/media/hwr9912/pRRophetic/master/data/drugAndPhenoCgp.RData",
+                 EXTERNAL / "GDSC_drugAndPhenoCgp.RData")
+    parsed = rdata.parser.parse_file(path)
+    objs, a = {}, parsed.object
+    while a is not None and a.info.type == T.LIST:
+        car, cdr = a.value
+        sym = a.tag.referenced_object if a.tag.info.type == T.REF else a.tag
+        objs[sym.value.value.decode()] = car
+        a = cdr
+    sens = _r_dataframe(objs["drugSensitivityDataCgp"])
+    arrays = _r_dataframe(objs["drugToCellLineDataCgp"])
+    m = objs["gdsc_brainarray_syms"]
+    attrs, at = {}, m.attributes
+    while at is not None and at.info.type == T.LIST:
+        car, cdr = at.value
+        sym = at.tag.referenced_object if at.tag.info.type == T.REF else at.tag
+        attrs[sym.value.value.decode()] = car
+        at = cdr
+    nrow, ncol = np.asarray(attrs["dim"].value)
+    genes = [x.value.decode() if x.value is not None else "" for x in attrs["dimnames"].value[0].value]
+    cels = [x.value.decode() if x.value is not None else "" for x in attrs["dimnames"].value[1].value]
+    expr = pd.DataFrame(np.asarray(m.value, float).reshape(ncol, nrow).T, index=genes, columns=cels)
+
+    def norm(name):
+        return str(name).upper().replace("-", "").replace(" ", "").replace(".", "").replace("_", "")
+
+    cel2line = dict(zip(arrays["Array.Data.File"], arrays["Characteristics.CellLine."].map(norm)))
+    expr = expr[[c for c in expr.columns if c in cel2line]]
+    expr.columns = [cel2line[c] for c in expr.columns]
+    expr = expr.T.groupby(level=0).mean().T
+    sens["line"] = sens["Cell.Line"].map(norm)
+    sens = sens[sens["Tissue"].fillna("").apply(lambda t: any(x in t for x in tissues))].drop_duplicates("line")
+    ic = sens.set_index("line")[[c for c in sens.columns if c.endswith("_IC_50")]]
+    ic.columns = [common_drug_name(c[:-6].replace(".", "-")) for c in ic.columns]
+    ic = ic.apply(pd.to_numeric, errors="coerce")
+    keep = [l for l in ic.index if l in expr.columns]
+    return to_canonical(expr[keep]), ic.loc[keep]
+
+
 def to_canonical(expr):
     sym = expr.index.map(canonical_symbol)
     expr = expr[sym.notna()]
@@ -128,8 +220,13 @@ def tcga_biotab_clinical(project):
 
 def tcga_biotab_drugs(project):
     """{common drug name: set(patients)} from the BCR biotab clinical_drug file."""
-    path = next((DATA / f"TCGA_{project}/clinical_drug").glob("*/nationwidechildrens.org_clinical_drug_*.txt"))
-    df = pd.read_csv(path, sep="\t")
+    local = list((DATA / f"TCGA_{project}/clinical_drug").glob("*/nationwidechildrens.org_clinical_drug_*.txt"))
+    if local:
+        df = pd.read_csv(local[0], sep="\t")
+    else:  # BCR biotab mirror (kemplab/FBA-pipeline); 3 header lines
+        url = ("https://raw.githubusercontent.com/kemplab/FBA-pipeline/master/Code%20%2B%20Models/data/clinical/"
+               f"_data_/input/TCGA/nationwidechildrens.org_clinical_drug_{project.lower()}.txt")
+        df = pd.read_csv(fetch(url, EXTERNAL / f"clinical_drug_{project.lower()}.txt"), sep="\t", skiprows=[1, 2])
     out = {}
     for pat, name in zip(df["bcr_patient_barcode"], df["pharmaceutical_therapy_drug_name"]):
         if "TCGA" not in str(pat):

@@ -54,8 +54,28 @@ def drug_synonyms():
     return out
 
 
+# Brand names, abbreviations and common misspellings in TCGA clinical_drug files
+# that the DrugBank vocabulary (synonyms only, no brands) does not resolve.
+BRANDS = {
+    "GEMZAR": "GEMCITABINE", "TEMODAR": "TEMOZOLOMIDE", "TEMODOR": "TEMOZOLOMIDE", "TEMOZOLAMIDE": "TEMOZOLOMIDE",
+    "TAXOL": "PACLITAXEL", "TAXOTERE": "DOCETAXEL", "ABRAXANE": "PACLITAXEL", "CYTOXAN": "CYCLOPHOSPHAMIDE",
+    "ADRIAMYCIN": "DOXORUBICIN", "DOXIL": "DOXORUBICIN", "ALIMTA": "PEMETREXED", "NAVELBINE": "VINORELBINE",
+    "NEXAVAR": "SORAFENIB", "NAXAVAR": "SORAFENIB", "XELODA": "CAPECITABINE", "ARIMIDEX": "ANASTROZOLE",
+    "FEMARA": "LETROZOLE", "AROMASIN": "EXEMESTANE", "HERCEPTIN": "TRASTUZUMAB", "AVASTIN": "BEVACIZUMAB",
+    "ELOXATIN": "OXALIPLATIN", "CAMPTOSAR": "IRINOTECAN", "CPT11": "IRINOTECAN", "5FU": "FLUOROURACIL",
+    "5FLUOROURACIL": "FLUOROURACIL", "PARAPLATIN": "CARBOPLATIN", "PLATINOL": "CISPLATIN", "CCNU": "LOMUSTINE",
+    "BCNU": "CARMUSTINE", "GLIADEL": "CARMUSTINE", "TARCEVA": "ERLOTINIB", "IRESSA": "GEFITINIB",
+    "HYCAMTIN": "TOPOTECAN", "ELLENCE": "EPIRUBICIN", "VEPESID": "ETOPOSIDE", "VP16": "ETOPOSIDE",
+    "ERBITUX": "CETUXIMAB", "GEMCITABINEHCL": "GEMCITABINE", "GEMCITABINE HCL": "GEMCITABINE", "NOLVADEX": "TAMOXIFEN", "FASLODEX": "FULVESTRANT", "LEUCOVORINCALCIUM": "LEUCOVORIN",
+}
+
+
 def common_drug_name(name):
     name = str(name).upper().strip()
+    for key in (name, name.replace("-", "").replace(" ", "")):
+        if key in BRANDS:
+            name = BRANDS[key]
+            break
     syn = drug_synonyms()
     for key in (name, name.replace("-", ""), name.replace(" ", ""), name.replace("-", "").replace(" ", "")):
         if key in syn:

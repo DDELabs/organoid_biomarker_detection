@@ -1,0 +1,257 @@
+{
+  "cancer": "COAD",
+  "drug": "FLUOROURACIL",
+  "versions": {
+    "paper": {
+      "summary": {
+        "cancer": "COAD",
+        "drug": "FLUOROURACIL",
+        "data": "paper",
+        "organoids": 19,
+        "candidate_pathways": 37,
+        "patients_with_survival": 445,
+        "treated_patients": 114
+      },
+      "baseline_best": {
+        "ML": "Ridge",
+        "k": 7,
+        "logrank_p": 0.0762450598621383
+      },
+      "baseline_k7_ridge_p": 0.0762450598621383,
+      "signature": {
+        "REACTOME_ACTIVATION_OF_BH3_ONLY_PROTEINS": -0.3467,
+        "REACTOME_HYALURONAN_UPTAKE_AND_DEGRADATION": 0.3341,
+        "REACTOME_REVERSIBLE_HYDRATION_OF_CARBON_DIOXIDE": 0.2629
+      },
+      "robust": {
+        "n_treated": 114,
+        "events": 8,
+        "logrank_p": 0.1294010254813478,
+        "os5_responder": 0.8307692307692308,
+        "os5_nonresponder": 0.6108597285067873,
+        "c_index": 0.7268292682926829,
+        "cox_HR": 2.252532233974807,
+        "cox_p": 0.03798393899548027,
+        "adj_HR": 2.0835106448018506,
+        "adj_HR_low": 0.8570393654202145,
+        "adj_HR_high": 5.0651309404839076,
+        "adj_p": 0.10532122140178002,
+        "adj_n": 114,
+        "prognostic_HR_untreated": 1.0485734959233513,
+        "prognostic_p": 0.7474455668878026,
+        "interaction_HR": 1.9796109307518936,
+        "interaction_p": 0.12378569403177797
+      },
+      "robust_precise_aligned": {
+        "n_treated": 114,
+        "events": 8,
+        "logrank_p": 0.1294010254813478,
+        "os5_responder": 0.8307692307692308,
+        "os5_nonresponder": 0.6108597285067873,
+        "c_index": 0.7024390243902439,
+        "cox_HR": 2.0734811264515125,
+        "cox_p": 0.04529806369263595,
+        "adj_HR": 2.0051183308956873,
+        "adj_HR_low": 0.8556418556382501,
+        "adj_HR_high": 4.698811184143032,
+        "adj_p": 0.10934284441817922,
+        "adj_n": 114,
+        "prognostic_HR_untreated": 1.0876080642469654,
+        "prognostic_p": 0.5694734962063869,
+        "interaction_HR": 1.778117291967299,
+        "interaction_p": 0.17590111019521715
+      }
+    },
+    "current_ssgsea": {
+      "summary": {
+        "cancer": "COAD",
+        "drug": "FLUOROURACIL",
+        "data": "current_ssgsea",
+        "organoids": 19,
+        "candidate_pathways": 37,
+        "patients_with_survival": 434,
+        "treated_patients": 117
+      },
+      "baseline_best": {
+        "ML": "SVR",
+        "k": 4,
+        "logrank_p": 0.012231085361729364
+      },
+      "baseline_k7_ridge_p": 0.343339633749722,
+      "signature": {
+        "REACTOME_ACTIVATION_OF_BH3_ONLY_PROTEINS": -0.3467,
+        "REACTOME_HYALURONAN_UPTAKE_AND_DEGRADATION": 0.3341,
+        "REACTOME_REVERSIBLE_HYDRATION_OF_CARBON_DIOXIDE": 0.2629
+      },
+      "robust": {
+        "n_treated": 117,
+        "events": 21,
+        "logrank_p": 0.7082215026355525,
+        "os5_responder": 0.5392340425531915,
+        "os5_nonresponder": 0.6908087829636984,
+        "c_index": 0.5955777460770328,
+        "cox_HR": 1.2950733623069912,
+        "cox_p": 0.26185547679552235,
+        "adj_HR": 1.1942984799412053,
+        "adj_HR_low": 0.726386474970757,
+        "adj_HR_high": 1.9636225457629781,
+        "adj_p": 0.48399418266858063,
+        "adj_n": 117,
+        "prognostic_HR_untreated": 0.7981848698331858,
+        "prognostic_p": 0.08783370759646884,
+        "interaction_HR": 1.4468047764983019,
+        "interaction_p": 0.15905188634310874
+      },
+      "robust_precise_aligned": {
+        "n_treated": 117,
+        "events": 21,
+        "logrank_p": 0.46980618197547475,
+        "os5_responder": 0.5514710356192166,
+        "os5_nonresponder": 0.6848669925077804,
+        "c_index": 0.5634807417974322,
+        "cox_HR": 1.117400723414941,
+        "cox_p": 0.6065339735890023,
+        "adj_HR": 1.0867084387838686,
+        "adj_HR_low": 0.6994255898620508,
+        "adj_HR_high": 1.6884358365512355,
+        "adj_p": 0.7114884190843946,
+        "adj_n": 117,
+        "prognostic_HR_untreated": 0.7860055485030453,
+        "prognostic_p": 0.06415563651336388,
+        "interaction_HR": 1.3332063838625785,
+        "interaction_p": 0.23296828427376293
+      }
+    },
+    "current_rank": {
+      "summary": {
+        "cancer": "COAD",
+        "drug": "FLUOROURACIL",
+        "data": "current_rank",
+        "organoids": 19,
+        "candidate_pathways": 33,
+        "patients_with_survival": 434,
+        "treated_patients": 117
+      },
+      "baseline_best": {
+        "ML": "LinearRegression",
+        "k": 5,
+        "logrank_p": 0.06693365163473154
+      },
+      "baseline_k7_ridge_p": 0.1372366840271716,
+      "signature": {
+        "REACTOME_ACTIVATION_OF_BH3_ONLY_PROTEINS": -0.3986,
+        "REACTOME_HYALURONAN_UPTAKE_AND_DEGRADATION": 0.3625,
+        "REACTOME_REVERSIBLE_HYDRATION_OF_CARBON_DIOXIDE": 0.3374
+      },
+      "robust": {
+        "n_treated": 117,
+        "events": 21,
+        "logrank_p": 0.34120717898899733,
+        "os5_responder": 0.500599700149925,
+        "os5_nonresponder": 0.6872569653036431,
+        "c_index": 0.6112696148359487,
+        "cox_HR": 1.3371872005469296,
+        "cox_p": 0.20519972241351903,
+        "adj_HR": 1.221282725129224,
+        "adj_HR_low": 0.7427974312257244,
+        "adj_HR_high": 2.007992262759739,
+        "adj_p": 0.43072014715611684,
+        "adj_n": 117,
+        "prognostic_HR_untreated": 0.7671126104175068,
+        "prognostic_p": 0.04297801154251246,
+        "interaction_HR": 1.5326545661692723,
+        "interaction_p": 0.10263487916812683
+      },
+      "robust_precise_aligned": {
+        "n_treated": 117,
+        "events": 21,
+        "logrank_p": 0.5220962444700081,
+        "os5_responder": 0.5472230880230881,
+        "os5_nonresponder": 0.6920143927299137,
+        "c_index": 0.6098430813124108,
+        "cox_HR": 1.3026892581721348,
+        "cox_p": 0.24509983951116676,
+        "adj_HR": 1.2014672851992012,
+        "adj_HR_low": 0.7361859801636595,
+        "adj_HR_high": 1.9608138110468132,
+        "adj_p": 0.4626828004505491,
+        "adj_n": 117,
+        "prognostic_HR_untreated": 0.7645118184578563,
+        "prognostic_p": 0.03986565040893862,
+        "interaction_HR": 1.5094284268719456,
+        "interaction_p": 0.11035441052013584
+      }
+    }
+  },
+  "organoid_cv": {
+    "robust_loocv_spearman": 0.2964912280701754,
+    "robust_loocv_p": 0.2177302439466742,
+    "baseline_loocv_spearman": 0.02982456140350877,
+    "baseline_loocv_p": 0.903530415784872
+  },
+  "permutation": {
+    "n": 500,
+    "robust_adjHR_empirical_p": 0.04790419161676647,
+    "robust_logrank_empirical_p": 0.18562874251497005,
+    "baseline_min_p_observed": 0.0762450598621383,
+    "baseline_min_p_empirical_p": 0.47904191616766467
+  },
+  "fragility": {
+    "jackknife_HR_gt1_fraction": 1.0,
+    "jackknife_HR_range": [
+      1.3080277927019484,
+      2.091169542521693
+    ],
+    "bootstrap_HR_CI95": [
+      0.4467803126602013,
+      1788796.3098256425
+    ],
+    "bootstrap_HR_gt1_fraction": 0.8911917098445595,
+    "cutoff_sensitivity": {
+      "-1.0": {
+        "n_pathways": 50,
+        "signature": [
+          "REACTOME_REVERSIBLE_HYDRATION_OF_CARBON_DIOXIDE",
+          "REACTOME_HYALURONAN_UPTAKE_AND_DEGRADATION",
+          "REACTOME_ACTIVATION_OF_BH3_ONLY_PROTEINS"
+        ],
+        "adj_HR": 2.091834525857613,
+        "adj_p": 0.10996132870153677
+      },
+      "-1.2816": {
+        "n_pathways": 37,
+        "signature": [
+          "REACTOME_REVERSIBLE_HYDRATION_OF_CARBON_DIOXIDE",
+          "REACTOME_HYALURONAN_UPTAKE_AND_DEGRADATION",
+          "REACTOME_ACTIVATION_OF_BH3_ONLY_PROTEINS"
+        ],
+        "adj_HR": 2.083513170553094,
+        "adj_p": 0.10531999954246253
+      },
+      "-1.645": {
+        "n_pathways": 23,
+        "signature": [
+          "REACTOME_G1_S_SPECIFIC_TRANSCRIPTION",
+          "REACTOME_ABACAVIR_TRANSPORT_AND_METABOLISM",
+          "REACTOME_HYALURONAN_UPTAKE_AND_DEGRADATION"
+        ],
+        "adj_HR": 1.4112727320547764,
+        "adj_p": 0.4437079231789971
+      }
+    }
+  },
+  "robust_pathways": [
+    "REACTOME_ACTIVATION_OF_BH3_ONLY_PROTEINS",
+    "REACTOME_HYALURONAN_UPTAKE_AND_DEGRADATION",
+    "REACTOME_REVERSIBLE_HYDRATION_OF_CARBON_DIOXIDE"
+  ],
+  "supported_pathways": [],
+  "verdict": {
+    "permutation_significant": true,
+    "direction_consistent_all_versions": true,
+    "predictive_interaction_p_lt_0.1": false,
+    "events_in_treated": 8,
+    "adequately_powered": false,
+    "signature_status": "promising, not validated"
+  }
+}

@@ -62,13 +62,14 @@ def pathway_patient_hr(study, pathways):
     return pd.DataFrame(rows, index=["patient_adj_HR", "patient_adj_p"]).T
 
 
-def run(versions, proximity, outdir, n_perm=500, cutoffs=(-1.0, -1.2816, -1.645), top_k=7, n_jobs=4):
+def run(versions, proximity, outdir, n_perm=500, cutoffs=(-1.0, -1.2816, -1.645), top_k=7, n_jobs=4, extra_z=None):
     """versions: {name: Study}; the first one is the primary analysis."""
     outdir.mkdir(parents=True, exist_ok=True)
     names = list(versions)
     primary = versions[names[0]]
     drug, cancer = primary.drug, primary.cancer
-    report = {"cancer": cancer, "drug": drug, "versions": {}}
+    report = {"cancer": cancer, "drug": drug, "model": primary.notes.get("model", "patient-derived organoids"),
+              "notes": primary.notes, "versions": {}}
 
     # ---------------------------------------------------------- every data version
     sigs, tables, evals = {}, {}, {}
@@ -134,6 +135,8 @@ def run(versions, proximity, outdir, n_perm=500, cutoffs=(-1.0, -1.2816, -1.645)
     # ---------------------------------------------------------- pathway scorecard
     card = tables[names[0]].copy()
     card.insert(0, "proximity_z", proximity.reindex(card.index))
+    for k, z in (extra_z or {}).items():
+        card.insert(1, k, z.reindex(card.index))
     card["jackknife_retention"] = jk_member.reindex(card.index).fillna(0)
     for name in names[1:]:
         card[f"freq_{name}"] = tables[name]["selection_freq"].reindex(card.index)
@@ -192,7 +195,9 @@ def _fmt(x, d=3):
 
 
 def write_markdown(rep, card, outdir):
-    L = [f"# {rep['cancer']} / {rep['drug']}: robust biomarker report", ""]
+    L = [f"# {rep['cancer']} / {rep['drug']}: robust biomarker report", "",
+         f"Pre-clinical model: **{rep['model']}**. Drug targets: {', '.join(rep['notes'].get('targets', [])) or 'see drug_drugTarget.txt'}. "
+         f"Network: {rep['notes'].get('network', 'STRING > 700 (original precomputed proximity)')}.", ""]
     v = rep["verdict"]
     L += [f"**Signature status: {v['signature_status']}** "
           f"(permutation p = {_fmt(rep['permutation']['robust_adjHR_empirical_p'])}, "
