@@ -1,6 +1,8 @@
 {
   "cancer": "COAD",
   "drug": "FLUOROURACIL",
+  "model": "patient-derived organoids",
+  "notes": {},
   "versions": {
     "paper": {
       "summary": {
@@ -30,6 +32,7 @@
         "os5_responder": 0.8307692307692308,
         "os5_nonresponder": 0.6108597285067873,
         "c_index": 0.7268292682926829,
+        "adj_covariates": "stage_III,stage_IV,age,sex",
         "cox_HR": 2.252532233974807,
         "cox_p": 0.03798393899548027,
         "adj_HR": 2.0835106448018506,
@@ -49,6 +52,7 @@
         "os5_responder": 0.8307692307692308,
         "os5_nonresponder": 0.6108597285067873,
         "c_index": 0.7024390243902439,
+        "adj_covariates": "stage_III,stage_IV,age,sex",
         "cox_HR": 2.0734811264515125,
         "cox_p": 0.04529806369263595,
         "adj_HR": 2.0051183308956873,
@@ -90,6 +94,7 @@
         "os5_responder": 0.5392340425531915,
         "os5_nonresponder": 0.6908087829636984,
         "c_index": 0.5955777460770328,
+        "adj_covariates": "stage_III,stage_IV,age,sex",
         "cox_HR": 1.2950733623069912,
         "cox_p": 0.26185547679552235,
         "adj_HR": 1.1942984799412053,
@@ -109,6 +114,7 @@
         "os5_responder": 0.5514710356192166,
         "os5_nonresponder": 0.6848669925077804,
         "c_index": 0.5634807417974322,
+        "adj_covariates": "stage_III,stage_IV,age,sex",
         "cox_HR": 1.117400723414941,
         "cox_p": 0.6065339735890023,
         "adj_HR": 1.0867084387838686,
@@ -150,6 +156,7 @@
         "os5_responder": 0.500599700149925,
         "os5_nonresponder": 0.6872569653036431,
         "c_index": 0.6112696148359487,
+        "adj_covariates": "stage_III,stage_IV,age,sex",
         "cox_HR": 1.3371872005469296,
         "cox_p": 0.20519972241351903,
         "adj_HR": 1.221282725129224,
@@ -169,6 +176,7 @@
         "os5_responder": 0.5472230880230881,
         "os5_nonresponder": 0.6920143927299137,
         "c_index": 0.6098430813124108,
+        "adj_covariates": "stage_III,stage_IV,age,sex",
         "cox_HR": 1.3026892581721348,
         "cox_p": 0.24509983951116676,
         "adj_HR": 1.2014672851992012,
@@ -203,10 +211,10 @@
       2.091169542521693
     ],
     "bootstrap_HR_CI95": [
-      0.4467803126602013,
-      1788796.3098256425
+      0.48324243580977866,
+      652313.8960149175
     ],
-    "bootstrap_HR_gt1_fraction": 0.8911917098445595,
+    "bootstrap_HR_gt1_fraction": 0.898989898989899,
     "cutoff_sensitivity": {
       "-1.0": {
         "n_pathways": 50,
@@ -252,6 +260,7 @@
     "predictive_interaction_p_lt_0.1": false,
     "events_in_treated": 8,
     "adequately_powered": false,
+    "direction": "as expected (resistant score -> worse survival)",
     "signature_status": "promising, not validated"
   }
 }

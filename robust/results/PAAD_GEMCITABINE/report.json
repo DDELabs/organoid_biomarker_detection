@@ -1,0 +1,225 @@
+{
+  "cancer": "PAAD",
+  "drug": "GEMCITABINE",
+  "model": "cell-line proxy (GDSC 2012)",
+  "notes": {
+    "model": "cell-line proxy (GDSC 2012)",
+    "targets": [
+      "CMPK1",
+      "RRM1",
+      "TYMS"
+    ],
+    "network": "STRING v12 >= 700"
+  },
+  "versions": {
+    "current_ssgsea": {
+      "summary": {
+        "cancer": "PAAD",
+        "drug": "GEMCITABINE",
+        "data": "current_ssgsea",
+        "organoids": 15,
+        "candidate_pathways": 35,
+        "patients_with_survival": 177,
+        "treated_patients": 103
+      },
+      "baseline_best": {
+        "ML": "SVR",
+        "k": 2,
+        "logrank_p": 0.19798445011344942
+      },
+      "baseline_k7_ridge_p": 0.37718083923384504,
+      "signature": {
+        "REACTOME_ABACAVIR_TRANSPORT_AND_METABOLISM": 0.3229,
+        "REACTOME_CYTOSOLIC_TRNA_AMINOACYLATION": -0.2547,
+        "REACTOME_FACILITATIVE_NA_INDEPENDENT_GLUCOSE_TRANSPORTERS": 0.2281,
+        "REACTOME_GLYCOGEN_BREAKDOWN_GLYCOGENOLYSIS": -0.2767,
+        "REACTOME_TRANSPORT_OF_VITAMINS_NUCLEOSIDES_AND_RELATED_MOLECULES": 0.2601
+      },
+      "robust": {
+        "n_treated": 103,
+        "events": 50,
+        "logrank_p": 0.4984983894656261,
+        "os5_responder": 0.26154352942709286,
+        "os5_nonresponder": 0.3786185807830511,
+        "c_index": 0.49381443298969074,
+        "adj_covariates": "age,sex",
+        "cox_HR": 0.9710682110375021,
+        "cox_p": 0.8303151367854014,
+        "adj_HR": 0.9843878820813025,
+        "adj_HR_low": 0.7326043002124246,
+        "adj_HR_high": 1.3227051794639169,
+        "adj_p": 0.9168537714699179,
+        "adj_n": 102,
+        "prognostic_HR_untreated": 1.3139731633492637,
+        "prognostic_p": 0.04109380486611121,
+        "interaction_HR": 0.730167545609766,
+        "interaction_p": 0.12243287948418853
+      },
+      "robust_precise_aligned": {
+        "n_treated": 103,
+        "events": 50,
+        "logrank_p": 0.8240951351712498,
+        "os5_responder": 0.28942144612464854,
+        "os5_nonresponder": 0.321995072404491,
+        "c_index": 0.5223367697594502,
+        "adj_covariates": "age,sex",
+        "cox_HR": 1.0187785006783534,
+        "cox_p": 0.899177805071118,
+        "adj_HR": 1.073330354911418,
+        "adj_HR_low": 0.7928126293589942,
+        "adj_HR_high": 1.4531025466959544,
+        "adj_p": 0.6470584169228237,
+        "adj_n": 102,
+        "prognostic_HR_untreated": 1.3559294543628655,
+        "prognostic_p": 0.04842267329033129,
+        "interaction_HR": 0.7561105372795637,
+        "interaction_p": 0.19947260449402415
+      }
+    },
+    "current_rank": {
+      "summary": {
+        "cancer": "PAAD",
+        "drug": "GEMCITABINE",
+        "data": "current_rank",
+        "organoids": 15,
+        "candidate_pathways": 35,
+        "patients_with_survival": 177,
+        "treated_patients": 103
+      },
+      "baseline_best": {
+        "ML": "SVR",
+        "k": 7,
+        "logrank_p": 0.28954417001085264
+      },
+      "baseline_k7_ridge_p": 0.998878148287593,
+      "signature": {
+        "REACTOME_ABACAVIR_TRANSPORT_AND_METABOLISM": 0.42,
+        "REACTOME_CYTOSOLIC_TRNA_AMINOACYLATION": -0.22,
+        "REACTOME_FACILITATIVE_NA_INDEPENDENT_GLUCOSE_TRANSPORTERS": 0.2454,
+        "REACTOME_GLYCOGEN_BREAKDOWN_GLYCOGENOLYSIS": -0.2777,
+        "REACTOME_VITAMIN_B5_PANTOTHENATE_METABOLISM": 0.1941
+      },
+      "robust": {
+        "n_treated": 103,
+        "events": 50,
+        "logrank_p": 0.47084176107787357,
+        "os5_responder": 0.3160848125359657,
+        "os5_nonresponder": 0.19171501273914954,
+        "c_index": 0.46494845360824744,
+        "adj_covariates": "age,sex",
+        "cox_HR": 0.8778093906096378,
+        "cox_p": 0.3556142995977526,
+        "adj_HR": 0.8612280144864747,
+        "adj_HR_low": 0.6294435438610027,
+        "adj_HR_high": 1.1783641283960884,
+        "adj_p": 0.3503365590128792,
+        "adj_n": 102,
+        "prognostic_HR_untreated": 1.1804441777263242,
+        "prognostic_p": 0.21770735356139814,
+        "interaction_HR": 0.7297956071953543,
+        "interaction_p": 0.1275292386792738
+      },
+      "robust_precise_aligned": {
+        "n_treated": 103,
+        "events": 50,
+        "logrank_p": 0.431619318830913,
+        "os5_responder": 0.3237148297697847,
+        "os5_nonresponder": 0.18156805979515395,
+        "c_index": 0.4903780068728522,
+        "adj_covariates": "age,sex",
+        "cox_HR": 0.9365348707763537,
+        "cox_p": 0.6761913939095253,
+        "adj_HR": 1.0107357280076577,
+        "adj_HR_low": 0.7265458174482513,
+        "adj_HR_high": 1.406087114311869,
+        "adj_p": 0.9494501353306131,
+        "adj_n": 102,
+        "prognostic_HR_untreated": 1.1329922753299988,
+        "prognostic_p": 0.38772326543124336,
+        "interaction_HR": 0.8681751242511263,
+        "interaction_p": 0.5268127354166278
+      }
+    }
+  },
+  "organoid_cv": {
+    "robust_loocv_spearman": 0.1607142857142857,
+    "robust_loocv_p": 0.5671967045803448,
+    "baseline_loocv_spearman": 0.3214285714285714,
+    "baseline_loocv_p": 0.24271904680166828
+  },
+  "permutation": {
+    "n": 500,
+    "robust_adjHR_empirical_p": 0.5728542914171657,
+    "robust_logrank_empirical_p": 0.5169660678642715,
+    "baseline_min_p_observed": 0.1979844501134494,
+    "baseline_min_p_empirical_p": 0.718562874251497
+  },
+  "fragility": {
+    "jackknife_HR_gt1_fraction": 0.26666666666666666,
+    "jackknife_HR_range": [
+      0.8418953447818461,
+      1.0767921995557541
+    ],
+    "bootstrap_HR_CI95": [
+      0.7219462567348942,
+      1.3013723775011032
+    ],
+    "bootstrap_HR_gt1_fraction": 0.395,
+    "cutoff_sensitivity": {
+      "-1.0": {
+        "n_pathways": 50,
+        "signature": [
+          "REACTOME_GLYCOGEN_BREAKDOWN_GLYCOGENOLYSIS",
+          "REACTOME_ABACAVIR_TRANSPORT_AND_METABOLISM",
+          "REACTOME_FACILITATIVE_NA_INDEPENDENT_GLUCOSE_TRANSPORTERS",
+          "REACTOME_TRANSPORT_OF_VITAMINS_NUCLEOSIDES_AND_RELATED_MOLECULES",
+          "REACTOME_SYNTHESIS_OF_SUBSTRATES_IN_N_GLYCAN_BIOSYTHESIS"
+        ],
+        "adj_HR": 1.0327868547000993,
+        "adj_p": 0.82979081426463
+      },
+      "-1.2816": {
+        "n_pathways": 35,
+        "signature": [
+          "REACTOME_GLYCOGEN_BREAKDOWN_GLYCOGENOLYSIS",
+          "REACTOME_ABACAVIR_TRANSPORT_AND_METABOLISM",
+          "REACTOME_CYTOSOLIC_TRNA_AMINOACYLATION",
+          "REACTOME_FACILITATIVE_NA_INDEPENDENT_GLUCOSE_TRANSPORTERS",
+          "REACTOME_TRANSPORT_OF_VITAMINS_NUCLEOSIDES_AND_RELATED_MOLECULES"
+        ],
+        "adj_HR": 0.9843861431809547,
+        "adj_p": 0.9168446412246325
+      },
+      "-1.645": {
+        "n_pathways": 22,
+        "signature": [
+          "REACTOME_ABACAVIR_TRANSPORT_AND_METABOLISM",
+          "REACTOME_CYTOSOLIC_TRNA_AMINOACYLATION",
+          "REACTOME_FACILITATIVE_NA_INDEPENDENT_GLUCOSE_TRANSPORTERS",
+          "REACTOME_TRANSPORT_OF_VITAMINS_NUCLEOSIDES_AND_RELATED_MOLECULES"
+        ],
+        "adj_HR": 0.9624263794000197,
+        "adj_p": 0.7982729966461131
+      }
+    }
+  },
+  "robust_pathways": [],
+  "supported_pathways": [
+    "REACTOME_ABACAVIR_TRANSPORT_AND_METABOLISM",
+    "REACTOME_TRANSPORT_OF_VITAMINS_NUCLEOSIDES_AND_RELATED_MOLECULES",
+    "REACTOME_FACILITATIVE_NA_INDEPENDENT_GLUCOSE_TRANSPORTERS",
+    "REACTOME_GLYCOGEN_BREAKDOWN_GLYCOGENOLYSIS",
+    "REACTOME_CYTOSOLIC_TRNA_AMINOACYLATION",
+    "REACTOME_VITAMIN_B5_PANTOTHENATE_METABOLISM",
+    "REACTOME_E2F_ENABLED_INHIBITION_OF_PRE_REPLICATION_COMPLEX_FORMATION"
+  ],
+  "verdict": {
+    "permutation_significant": false,
+    "direction_consistent_all_versions": false,
+    "predictive_interaction_p_lt_0.1": false,
+    "events_in_treated": 50,
+    "adequately_powered": true,
+    "direction": "reversed (resistant score -> better survival)",
+    "signature_status": "not supported"
+  }
+}

@@ -41,17 +41,18 @@
         "os5_responder": 0.37402809706257967,
         "os5_nonresponder": 0.4212154584149721,
         "c_index": 0.4737620103473762,
+        "adj_covariates": "stage_III,age,sex",
         "cox_HR": 0.9372311029267841,
         "cox_p": 0.7421685791935713,
-        "adj_HR": 0.8103101342571467,
-        "adj_HR_low": 0.5416718330810917,
-        "adj_HR_high": 1.2121776942784794,
-        "adj_p": 0.3060317882687942,
+        "adj_HR": 0.8102368485992444,
+        "adj_HR_low": 0.5412780241668788,
+        "adj_HR_high": 1.2128402069130328,
+        "adj_p": 0.3065880554261363,
         "adj_n": 82,
-        "prognostic_HR_untreated": 0.8792749137126568,
-        "prognostic_p": 0.13115832454133708,
+        "prognostic_HR_untreated": 0.8792749137126566,
+        "prognostic_p": 0.1311583245413368,
         "interaction_HR": 1.0693635137352673,
-        "interaction_p": 0.7507639211366008
+        "interaction_p": 0.7507639211366007
       },
       "robust_precise_aligned": {
         "n_treated": 83,
@@ -60,17 +61,18 @@
         "os5_responder": 0.5652547791766807,
         "os5_nonresponder": 0.29021556107563823,
         "c_index": 0.4530672579453067,
-        "cox_HR": 0.8830033822302671,
-        "cox_p": 0.523018320529824,
-        "adj_HR": 0.8896266263881283,
-        "adj_HR_low": 0.5781918305419529,
-        "adj_HR_high": 1.3688113400649247,
-        "adj_p": 0.594745689475952,
+        "adj_covariates": "stage_III,age,sex",
+        "cox_HR": 0.8830033822302669,
+        "cox_p": 0.5230183205298228,
+        "adj_HR": 0.8550844671216726,
+        "adj_HR_low": 0.5638066600235974,
+        "adj_HR_high": 1.296844286802417,
+        "adj_p": 0.4612831048922298,
         "adj_n": 82,
-        "prognostic_HR_untreated": 0.9596253096840669,
-        "prognostic_p": 0.6061531454812833,
-        "interaction_HR": 0.9264445086224204,
-        "interaction_p": 0.7200566370405399
+        "prognostic_HR_untreated": 0.959625309684067,
+        "prognostic_p": 0.6061531454812841,
+        "interaction_HR": 0.9264445086224198,
+        "interaction_p": 0.720056637040537
       }
     },
     "current_rank": {
@@ -100,17 +102,18 @@
         "os5_responder": 0.5304843684884696,
         "os5_nonresponder": 0.29496057581300233,
         "c_index": 0.5062823355506282,
-        "cox_HR": 0.9858307847476095,
-        "cox_p": 0.9478685877314598,
-        "adj_HR": 1.0059062166689314,
-        "adj_HR_low": 0.6287157805142622,
-        "adj_HR_high": 1.609387497647277,
-        "adj_p": 0.9804066298828982,
+        "adj_covariates": "stage_III,age,sex",
+        "cox_HR": 0.9858307847476088,
+        "cox_p": 0.9478685877314568,
+        "adj_HR": 0.9448650188732121,
+        "adj_HR_low": 0.6074584744503605,
+        "adj_HR_high": 1.4696805484491262,
+        "adj_p": 0.8013337249110292,
         "adj_n": 82,
         "prognostic_HR_untreated": 0.8145814361098248,
-        "prognostic_p": 0.013345860993691096,
-        "interaction_HR": 1.1977406797172079,
-        "interaction_p": 0.49748676032336925
+        "prognostic_p": 0.013345860993691037,
+        "interaction_HR": 1.1977406797172065,
+        "interaction_p": 0.4974867603233718
       },
       "robust_precise_aligned": {
         "n_treated": 83,
@@ -119,17 +122,18 @@
         "os5_responder": 0.530694142142117,
         "os5_nonresponder": 0.29649642968199175,
         "c_index": 0.4870657797487066,
-        "cox_HR": 0.9226663463361287,
-        "cox_p": 0.7011329947280984,
-        "adj_HR": 0.9139073008099955,
-        "adj_HR_low": 0.5839504780490183,
-        "adj_HR_high": 1.4303037429891452,
-        "adj_p": 0.6936300391930758,
+        "adj_covariates": "stage_III,age,sex",
+        "cox_HR": 0.9226663463361281,
+        "cox_p": 0.7011329947280962,
+        "adj_HR": 0.8691796144564017,
+        "adj_HR_low": 0.570691533457566,
+        "adj_HR_high": 1.3237855441967104,
+        "adj_p": 0.5136337289904209,
         "adj_n": 82,
-        "prognostic_HR_untreated": 0.8512715211034473,
-        "prognostic_p": 0.04614764994008954,
-        "interaction_HR": 1.0686439139549637,
-        "interaction_p": 0.78967256573078
+        "prognostic_HR_untreated": 0.8512715211034476,
+        "prognostic_p": 0.04614764994009009,
+        "interaction_HR": 1.0686439139549624,
+        "interaction_p": 0.7896725657307838
       }
     }
   },
@@ -141,7 +145,7 @@
   },
   "permutation": {
     "n": 500,
-    "robust_adjHR_empirical_p": 0.8802395209580839,
+    "robust_adjHR_empirical_p": 0.9001996007984032,
     "robust_logrank_empirical_p": 0.7465069860279441,
     "baseline_min_p_observed": 0.1474604714580906,
     "baseline_min_p_empirical_p": 0.812375249500998
@@ -149,14 +153,14 @@
   "fragility": {
     "jackknife_HR_gt1_fraction": 0.0,
     "jackknife_HR_range": [
-      0.7137839954119087,
-      0.8606416007399088
+      0.7131969468970868,
+      0.855669094806042
     ],
     "bootstrap_HR_CI95": [
-      0.5059615068334593,
-      1.2958921883033543
+      0.513553394003637,
+      1.2883433264067785
     ],
-    "bootstrap_HR_gt1_fraction": 0.2,
+    "bootstrap_HR_gt1_fraction": 0.19,
     "cutoff_sensitivity": {
       "-1.0": {
         "n_pathways": 88,
@@ -165,8 +169,8 @@
           "REACTOME_EGFR_DOWNREGULATION",
           "REACTOME_AMYLOIDS"
         ],
-        "adj_HR": 0.8542310026079614,
-        "adj_p": 0.43430179807245217
+        "adj_HR": 0.8809360918962678,
+        "adj_p": 0.5378045601530258
       },
       "-1.2816": {
         "n_pathways": 69,
@@ -175,8 +179,8 @@
           "REACTOME_HOST_INTERACTIONS_OF_HIV_FACTORS",
           "REACTOME_AMYLOIDS"
         ],
-        "adj_HR": 0.8103106115962092,
-        "adj_p": 0.30603298143977953
+        "adj_HR": 0.8102374054585919,
+        "adj_p": 0.3065895265955203
       },
       "-1.645": {
         "n_pathways": 43,
@@ -185,8 +189,8 @@
           "REACTOME_HOST_INTERACTIONS_OF_HIV_FACTORS",
           "REACTOME_AMYLOIDS"
         ],
-        "adj_HR": 0.7952502154782933,
-        "adj_p": 0.27181573522185243
+        "adj_HR": 0.7917456998963485,
+        "adj_p": 0.2611704394965
       }
     }
   },
@@ -203,7 +207,7 @@
     "predictive_interaction_p_lt_0.1": false,
     "events_in_treated": 27,
     "adequately_powered": false,
-    "direction": "inconsistent",
+    "direction": "reversed (resistant score -> better survival)",
     "signature_status": "not supported"
   }
 }

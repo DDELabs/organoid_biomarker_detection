@@ -1,6 +1,8 @@
 # COAD / FLUOROURACIL: robust biomarker report
 
-**Signature status: promising, not validated** (permutation p = 0.0479, direction consistent across data versions: True, treatment-interaction p = 0.124, events in treated patients = 8 - underpowered, fewer than 30 events).
+Pre-clinical model: **patient-derived organoids**. Drug targets: see drug_drugTarget.txt. Network: STRING > 700 (original precomputed proximity).
+
+**Signature status: promising, not validated** (permutation p = 0.0479, direction: as expected (resistant score -> worse survival), treatment-interaction p = 0.124, events in treated patients = 8 - underpowered, fewer than 30 events).
 
 ## Data versions
 
@@ -23,7 +25,7 @@
 ## Fragility
 
 - Leave-one-organoid-out: HR > 1 in 100% of refits (range 1.31-2.09)
-- Patient bootstrap: adjusted HR 95% interval 0.447-1.79e+06, HR > 1 in 89.1%
+- Patient bootstrap: adjusted HR 95% interval 0.483-6.52e+05, HR > 1 in 89.9%
 - Proximity cut-off sensitivity:
   - z <= -1.0: 50 pathways, adj HR 2.09 (p 0.11), signature: REVERSIBLE_HYDRATION_OF_CARBON_DIOXIDE, HYALURONAN_UPTAKE_AND_DEGRADATION, ACTIVATION_OF_BH3_ONLY_PROTEINS
   - z <= -1.2816: 37 pathways, adj HR 2.08 (p 0.105), signature: REVERSIBLE_HYDRATION_OF_CARBON_DIOXIDE, HYALURONAN_UPTAKE_AND_DEGRADATION, ACTIVATION_OF_BH3_ONLY_PROTEINS

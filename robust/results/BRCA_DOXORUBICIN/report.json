@@ -1,0 +1,204 @@
+{
+  "cancer": "BRCA",
+  "drug": "DOXORUBICIN",
+  "model": "cell-line proxy (GDSC 2012)",
+  "notes": {
+    "model": "cell-line proxy (GDSC 2012)",
+    "targets": [
+      "NOLC1",
+      "TOP2A"
+    ],
+    "network": "STRING v12 >= 700"
+  },
+  "versions": {
+    "current_ssgsea": {
+      "summary": {
+        "cancer": "BRCA",
+        "drug": "DOXORUBICIN",
+        "data": "current_ssgsea",
+        "organoids": 37,
+        "candidate_pathways": 8,
+        "patients_with_survival": 1073,
+        "treated_patients": 334
+      },
+      "baseline_best": {
+        "ML": "LinearRegression",
+        "k": 5,
+        "logrank_p": 0.0922555381059857
+      },
+      "baseline_k7_ridge_p": 0.3974458411266605,
+      "signature": {
+        "REACTOME_SIGNAL_TRANSDUCTION_BY_L1": 0.272
+      },
+      "robust": {
+        "n_treated": 334,
+        "events": 29,
+        "logrank_p": 0.8534035757667734,
+        "os5_responder": 0.9053822946126813,
+        "os5_nonresponder": 0.9116885027123127,
+        "c_index": 0.5820296831127156,
+        "adj_covariates": "stage_III,age",
+        "cox_HR": 0.9743141239382473,
+        "cox_p": 0.891437378979178,
+        "adj_HR": 1.010280919863125,
+        "adj_HR_low": 0.6863031641592445,
+        "adj_HR_high": 1.4871963154794,
+        "adj_p": 0.9586506581059342,
+        "adj_n": 329,
+        "prognostic_HR_untreated": 1.2885773664753744,
+        "prognostic_p": 0.010788252515294978,
+        "interaction_HR": 0.7685691761883413,
+        "interaction_p": 0.2542397177200738
+      },
+      "robust_precise_aligned": {
+        "n_treated": 334,
+        "events": 29,
+        "logrank_p": 0.8534035757667734,
+        "os5_responder": 0.9053822946126813,
+        "os5_nonresponder": 0.9116885027123127,
+        "c_index": 0.5820296831127156,
+        "adj_covariates": "stage_III,age",
+        "cox_HR": 0.9743141239382473,
+        "cox_p": 0.8914373789791779,
+        "adj_HR": 1.010280919863125,
+        "adj_HR_low": 0.6863031641592444,
+        "adj_HR_high": 1.4871963154794001,
+        "adj_p": 0.9586506581059342,
+        "adj_n": 329,
+        "prognostic_HR_untreated": 1.2885773664753744,
+        "prognostic_p": 0.010788252515294978,
+        "interaction_HR": 0.7685691761883415,
+        "interaction_p": 0.25423971772007425
+      }
+    },
+    "current_rank": {
+      "summary": {
+        "cancer": "BRCA",
+        "drug": "DOXORUBICIN",
+        "data": "current_rank",
+        "organoids": 37,
+        "candidate_pathways": 8,
+        "patients_with_survival": 1073,
+        "treated_patients": 334
+      },
+      "baseline_best": {
+        "ML": "LinearRegression",
+        "k": 2,
+        "logrank_p": 0.16611614533502575
+      },
+      "baseline_k7_ridge_p": 0.6259056607417491,
+      "signature": {
+        "REACTOME_METABOLISM_OF_NON_CODING_RNA": -0.2297
+      },
+      "robust": {
+        "n_treated": 334,
+        "events": 29,
+        "logrank_p": 0.9927129253813465,
+        "os5_responder": 0.9031592275589659,
+        "os5_nonresponder": 0.9114029322357926,
+        "c_index": 0.5240673886883274,
+        "adj_covariates": "stage_III,age",
+        "cox_HR": 0.8777742802361527,
+        "cox_p": 0.4775094224061317,
+        "adj_HR": 0.8408925047765717,
+        "adj_HR_low": 0.5797191243901455,
+        "adj_HR_high": 1.219728959835979,
+        "adj_p": 0.3611266999945242,
+        "adj_n": 329,
+        "prognostic_HR_untreated": 0.849226806335896,
+        "prognostic_p": 0.08375225667748919,
+        "interaction_HR": 1.044540596499944,
+        "interaction_p": 0.824441272624439
+      },
+      "robust_precise_aligned": {
+        "n_treated": 334,
+        "events": 29,
+        "logrank_p": 0.9927129253813465,
+        "os5_responder": 0.9031592275589659,
+        "os5_nonresponder": 0.9114029322357926,
+        "c_index": 0.5240673886883274,
+        "adj_covariates": "stage_III,age",
+        "cox_HR": 0.8777742802361527,
+        "cox_p": 0.4775094224061316,
+        "adj_HR": 0.8408925047765717,
+        "adj_HR_low": 0.5797191243901455,
+        "adj_HR_high": 1.2197289598359793,
+        "adj_p": 0.3611266999945245,
+        "adj_n": 329,
+        "prognostic_HR_untreated": 0.8492268063358958,
+        "prognostic_p": 0.08375225667748884,
+        "interaction_HR": 1.044540596499944,
+        "interaction_p": 0.8244412726244386
+      }
+    }
+  },
+  "organoid_cv": {
+    "robust_loocv_spearman": -0.11000474158368895,
+    "robust_loocv_p": 0.516895718056363,
+    "baseline_loocv_spearman": -0.16714082503556188,
+    "baseline_loocv_p": 0.3227800804661778
+  },
+  "permutation": {
+    "n": 500,
+    "robust_adjHR_empirical_p": 0.5069860279441117,
+    "robust_logrank_empirical_p": 0.8622754491017964,
+    "baseline_min_p_observed": 0.0922555381059857,
+    "baseline_min_p_empirical_p": 0.48902195608782434
+  },
+  "fragility": {
+    "jackknife_HR_gt1_fraction": 0.8648648648648649,
+    "jackknife_HR_range": [
+      0.8746914819171084,
+      1.175150732115241
+    ],
+    "bootstrap_HR_CI95": [
+      0.6645725239922783,
+      1.5825157054705776
+    ],
+    "bootstrap_HR_gt1_fraction": 0.58,
+    "cutoff_sensitivity": {
+      "-1.0": {
+        "n_pathways": 16,
+        "signature": [
+          "REACTOME_METABOLISM_OF_NON_CODING_RNA",
+          "REACTOME_MITOTIC_G2_G2_M_PHASES",
+          "REACTOME_CHROMOSOME_MAINTENANCE",
+          "REACTOME_SIGNAL_TRANSDUCTION_BY_L1",
+          "REACTOME_SYNTHESIS_SECRETION_AND_INACTIVATION_OF_GLP1"
+        ],
+        "adj_HR": 1.0277012802218357,
+        "adj_p": 0.8940237624827216
+      },
+      "-1.2816": {
+        "n_pathways": 8,
+        "signature": [
+          "REACTOME_SIGNAL_TRANSDUCTION_BY_L1"
+        ],
+        "adj_HR": 1.010280919863125,
+        "adj_p": 0.9586506581059344
+      },
+      "-1.645": {
+        "n_pathways": 0,
+        "signature": [],
+        "adj_HR": NaN,
+        "adj_p": NaN
+      }
+    }
+  },
+  "robust_pathways": [
+    "REACTOME_SIGNAL_TRANSDUCTION_BY_L1"
+  ],
+  "supported_pathways": [
+    "REACTOME_RECRUITMENT_OF_NUMA_TO_MITOTIC_CENTROSOMES",
+    "REACTOME_EXTENSION_OF_TELOMERES"
+  ],
+  "verdict": {
+    "permutation_significant": false,
+    "direction_consistent_all_versions": false,
+    "predictive_interaction_p_lt_0.1": false,
+    "events_in_treated": 29,
+    "adequately_powered": false,
+    "direction": "inconsistent",
+    "signature_status": "not supported"
+  }
+}

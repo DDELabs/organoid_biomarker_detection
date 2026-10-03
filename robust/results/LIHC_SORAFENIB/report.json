@@ -47,17 +47,18 @@
         "os5_responder": 0.1730769230769231,
         "os5_nonresponder": 0.3516483516483517,
         "c_index": 0.225130890052356,
+        "adj_covariates": "stage_III,age,sex",
         "cox_HR": 0.45055764079452826,
         "cox_p": 0.01945091003357078,
-        "adj_HR": 0.4059061427758832,
-        "adj_HR_low": 0.18665667457940777,
-        "adj_HR_high": 0.8826890177618767,
-        "adj_p": 0.02291884195457989,
+        "adj_HR": 0.3885074172067071,
+        "adj_HR_low": 0.1827661042092156,
+        "adj_HR_high": 0.8258534254899089,
+        "adj_p": 0.014000023590567937,
         "adj_n": 25,
-        "prognostic_HR_untreated": 0.792082082974979,
-        "prognostic_p": 0.024717541353259685,
-        "interaction_HR": 1.1026250061937677,
-        "interaction_p": 0.7632879245065001
+        "prognostic_HR_untreated": 0.7922039002749807,
+        "prognostic_p": 0.024136101412722467,
+        "interaction_HR": 1.0241648507070091,
+        "interaction_p": 0.9408442815556116
       },
       "robust_precise_aligned": {
         "n_treated": 26,
@@ -66,17 +67,18 @@
         "os5_responder": 0.1730769230769231,
         "os5_nonresponder": 0.3516483516483517,
         "c_index": 0.2198952879581152,
+        "adj_covariates": "stage_III,age,sex",
         "cox_HR": 0.4643339735594481,
         "cox_p": 0.022456571592534138,
-        "adj_HR": 0.43497281569124463,
-        "adj_HR_low": 0.20416173041845023,
-        "adj_HR_high": 0.9267228975899748,
-        "adj_p": 0.03099307260386168,
+        "adj_HR": 0.41593204171403303,
+        "adj_HR_low": 0.1995330210899779,
+        "adj_HR_high": 0.8670217209130079,
+        "adj_p": 0.019247411456905773,
         "adj_n": 25,
-        "prognostic_HR_untreated": 0.792871699107744,
-        "prognostic_p": 0.02534349602399492,
-        "interaction_HR": 1.1043088589435928,
-        "interaction_p": 0.7636521449698019
+        "prognostic_HR_untreated": 0.7941330393575304,
+        "prognostic_p": 0.025662441513197704,
+        "interaction_HR": 1.0198331984978608,
+        "interaction_p": 0.9521734079300613
       }
     },
     "current_rank": {
@@ -106,17 +108,18 @@
         "os5_responder": 0.0,
         "os5_nonresponder": 0.38888888888888895,
         "c_index": 0.25654450261780104,
+        "adj_covariates": "stage_III,age,sex",
         "cox_HR": 0.6033544438114451,
         "cox_p": 0.06037705494090368,
-        "adj_HR": 0.3925421681383475,
-        "adj_HR_low": 0.1598593435983307,
-        "adj_HR_high": 0.9639058330798984,
-        "adj_p": 0.041333561852830644,
+        "adj_HR": 0.3893195530496871,
+        "adj_HR_low": 0.16165641346228904,
+        "adj_HR_high": 0.9376040896896803,
+        "adj_p": 0.03541037804701511,
         "adj_n": 25,
-        "prognostic_HR_untreated": 0.6488639467642004,
-        "prognostic_p": 5.836980535593407e-06,
-        "interaction_HR": 1.4850841408701065,
-        "interaction_p": 0.20458111481535757
+        "prognostic_HR_untreated": 0.662376055555855,
+        "prognostic_p": 1.9209731012361804e-05,
+        "interaction_HR": 1.4488320253541191,
+        "interaction_p": 0.21238198470585656
       },
       "robust_precise_aligned": {
         "n_treated": 26,
@@ -125,17 +128,18 @@
         "os5_responder": 0.0,
         "os5_nonresponder": 0.38888888888888895,
         "c_index": 0.24083769633507854,
+        "adj_covariates": "stage_III,age,sex",
         "cox_HR": 0.6191484924754072,
         "cox_p": 0.06557291726404123,
-        "adj_HR": 0.380018004294027,
-        "adj_HR_low": 0.15320382714234881,
-        "adj_HR_high": 0.9426245171632276,
-        "adj_p": 0.03684804314500876,
+        "adj_HR": 0.38018891912034597,
+        "adj_HR_low": 0.15640862767830163,
+        "adj_HR_high": 0.9241409273099155,
+        "adj_p": 0.0328386533578098,
         "adj_n": 25,
-        "prognostic_HR_untreated": 0.6509710626132831,
-        "prognostic_p": 5.781334318527495e-06,
-        "interaction_HR": 1.4734300301411776,
-        "interaction_p": 0.1949650201401364
+        "prognostic_HR_untreated": 0.6637997126906607,
+        "prognostic_p": 1.8090587236204523e-05,
+        "interaction_HR": 1.4562240686097148,
+        "interaction_p": 0.1899582850950925
       }
     }
   },
@@ -147,7 +151,7 @@
   },
   "permutation": {
     "n": 500,
-    "robust_adjHR_empirical_p": 0.8882235528942116,
+    "robust_adjHR_empirical_p": 0.9500998003992016,
     "robust_logrank_empirical_p": 0.11177644710578842,
     "baseline_min_p_observed": 0.0032809315175452,
     "baseline_min_p_empirical_p": 0.24550898203592814
@@ -155,22 +159,22 @@
   "fragility": {
     "jackknife_HR_gt1_fraction": 0.0,
     "jackknife_HR_range": [
-      0.3863544560619041,
-      0.8560588687544993
+      0.3701380495078859,
+      0.8369538785204058
     ],
     "bootstrap_HR_CI95": [
-      0.0147196823818974,
-      1.1818402074094607
+      0.02002124211653808,
+      0.9632736487265293
     ],
-    "bootstrap_HR_gt1_fraction": 0.03468208092485549,
+    "bootstrap_HR_gt1_fraction": 0.025,
     "cutoff_sensitivity": {
       "-1.0": {
         "n_pathways": 184,
         "signature": [
           "REACTOME_CS_DS_DEGRADATION"
         ],
-        "adj_HR": 0.8560588687544992,
-        "adj_p": 0.5686826072815676
+        "adj_HR": 0.8369538785204058,
+        "adj_p": 0.49501089578857493
       },
       "-1.2816": {
         "n_pathways": 167,
@@ -178,8 +182,8 @@
           "REACTOME_DOWNREGULATION_OF_ERBB2_ERBB3_SIGNALING",
           "REACTOME_CS_DS_DEGRADATION"
         ],
-        "adj_HR": 0.4059089799863137,
-        "adj_p": 0.02291953126805854
+        "adj_HR": 0.388510085724837,
+        "adj_p": 0.014000463797652756
       },
       "-1.645": {
         "n_pathways": 147,
@@ -187,8 +191,8 @@
           "REACTOME_DOWNREGULATION_OF_ERBB2_ERBB3_SIGNALING",
           "REACTOME_CS_DS_DEGRADATION"
         ],
-        "adj_HR": 0.40952170254470455,
-        "adj_p": 0.023813115214600753
+        "adj_HR": 0.3919090402956644,
+        "adj_p": 0.014572332670654043
       }
     }
   },
