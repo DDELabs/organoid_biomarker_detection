@@ -1,0 +1,209 @@
+{
+  "cancer": "LUAD",
+  "drug": "CISPLATIN",
+  "model": "cell-line proxy (GDSC 2012)",
+  "notes": {
+    "model": "cell-line proxy (GDSC 2012)",
+    "targets": [
+      "A2M",
+      "ATOX1",
+      "MPG",
+      "TF"
+    ],
+    "network": "STRING v12 >= 700"
+  },
+  "versions": {
+    "current_ssgsea": {
+      "summary": {
+        "cancer": "LUAD",
+        "drug": "CISPLATIN",
+        "data": "current_ssgsea",
+        "organoids": 65,
+        "candidate_pathways": 69,
+        "patients_with_survival": 503,
+        "treated_patients": 83
+      },
+      "baseline_best": {
+        "ML": "Ridge",
+        "k": 6,
+        "logrank_p": 0.14746047145809063
+      },
+      "baseline_k7_ridge_p": 0.7853610305290395,
+      "signature": {
+        "REACTOME_AMYLOIDS": 0.2992,
+        "REACTOME_HOST_INTERACTIONS_OF_HIV_FACTORS": -0.3873,
+        "REACTOME_RECYCLING_OF_BILE_ACIDS_AND_SALTS": -0.4587
+      },
+      "robust": {
+        "n_treated": 83,
+        "events": 27,
+        "logrank_p": 0.7972848058843076,
+        "os5_responder": 0.37402809706257967,
+        "os5_nonresponder": 0.4212154584149721,
+        "c_index": 0.4737620103473762,
+        "cox_HR": 0.9372311029267841,
+        "cox_p": 0.7421685791935713,
+        "adj_HR": 0.8103101342571467,
+        "adj_HR_low": 0.5416718330810917,
+        "adj_HR_high": 1.2121776942784794,
+        "adj_p": 0.3060317882687942,
+        "adj_n": 82,
+        "prognostic_HR_untreated": 0.8792749137126568,
+        "prognostic_p": 0.13115832454133708,
+        "interaction_HR": 1.0693635137352673,
+        "interaction_p": 0.7507639211366008
+      },
+      "robust_precise_aligned": {
+        "n_treated": 83,
+        "events": 27,
+        "logrank_p": 0.7880673370410868,
+        "os5_responder": 0.5652547791766807,
+        "os5_nonresponder": 0.29021556107563823,
+        "c_index": 0.4530672579453067,
+        "cox_HR": 0.8830033822302671,
+        "cox_p": 0.523018320529824,
+        "adj_HR": 0.8896266263881283,
+        "adj_HR_low": 0.5781918305419529,
+        "adj_HR_high": 1.3688113400649247,
+        "adj_p": 0.594745689475952,
+        "adj_n": 82,
+        "prognostic_HR_untreated": 0.9596253096840669,
+        "prognostic_p": 0.6061531454812833,
+        "interaction_HR": 0.9264445086224204,
+        "interaction_p": 0.7200566370405399
+      }
+    },
+    "current_rank": {
+      "summary": {
+        "cancer": "LUAD",
+        "drug": "CISPLATIN",
+        "data": "current_rank",
+        "organoids": 65,
+        "candidate_pathways": 69,
+        "patients_with_survival": 503,
+        "treated_patients": 83
+      },
+      "baseline_best": {
+        "ML": "LinearRegression",
+        "k": 3,
+        "logrank_p": 0.07916828677294793
+      },
+      "baseline_k7_ridge_p": 0.4759179323181285,
+      "signature": {
+        "REACTOME_ABCA_TRANSPORTERS_IN_LIPID_HOMEOSTASIS": 0.2919,
+        "REACTOME_HOST_INTERACTIONS_OF_HIV_FACTORS": -0.322
+      },
+      "robust": {
+        "n_treated": 83,
+        "events": 27,
+        "logrank_p": 0.9400371531716962,
+        "os5_responder": 0.5304843684884696,
+        "os5_nonresponder": 0.29496057581300233,
+        "c_index": 0.5062823355506282,
+        "cox_HR": 0.9858307847476095,
+        "cox_p": 0.9478685877314598,
+        "adj_HR": 1.0059062166689314,
+        "adj_HR_low": 0.6287157805142622,
+        "adj_HR_high": 1.609387497647277,
+        "adj_p": 0.9804066298828982,
+        "adj_n": 82,
+        "prognostic_HR_untreated": 0.8145814361098248,
+        "prognostic_p": 0.013345860993691096,
+        "interaction_HR": 1.1977406797172079,
+        "interaction_p": 0.49748676032336925
+      },
+      "robust_precise_aligned": {
+        "n_treated": 83,
+        "events": 27,
+        "logrank_p": 0.8834186191790664,
+        "os5_responder": 0.530694142142117,
+        "os5_nonresponder": 0.29649642968199175,
+        "c_index": 0.4870657797487066,
+        "cox_HR": 0.9226663463361287,
+        "cox_p": 0.7011329947280984,
+        "adj_HR": 0.9139073008099955,
+        "adj_HR_low": 0.5839504780490183,
+        "adj_HR_high": 1.4303037429891452,
+        "adj_p": 0.6936300391930758,
+        "adj_n": 82,
+        "prognostic_HR_untreated": 0.8512715211034473,
+        "prognostic_p": 0.04614764994008954,
+        "interaction_HR": 1.0686439139549637,
+        "interaction_p": 0.78967256573078
+      }
+    }
+  },
+  "organoid_cv": {
+    "robust_loocv_spearman": 0.3416520979020979,
+    "robust_loocv_p": 0.005346360536108065,
+    "baseline_loocv_spearman": 0.10362762237762237,
+    "baseline_loocv_p": 0.41137479953571904
+  },
+  "permutation": {
+    "n": 500,
+    "robust_adjHR_empirical_p": 0.8802395209580839,
+    "robust_logrank_empirical_p": 0.7465069860279441,
+    "baseline_min_p_observed": 0.1474604714580906,
+    "baseline_min_p_empirical_p": 0.812375249500998
+  },
+  "fragility": {
+    "jackknife_HR_gt1_fraction": 0.0,
+    "jackknife_HR_range": [
+      0.7137839954119087,
+      0.8606416007399088
+    ],
+    "bootstrap_HR_CI95": [
+      0.5059615068334593,
+      1.2958921883033543
+    ],
+    "bootstrap_HR_gt1_fraction": 0.2,
+    "cutoff_sensitivity": {
+      "-1.0": {
+        "n_pathways": 88,
+        "signature": [
+          "REACTOME_RECYCLING_OF_BILE_ACIDS_AND_SALTS",
+          "REACTOME_EGFR_DOWNREGULATION",
+          "REACTOME_AMYLOIDS"
+        ],
+        "adj_HR": 0.8542310026079614,
+        "adj_p": 0.43430179807245217
+      },
+      "-1.2816": {
+        "n_pathways": 69,
+        "signature": [
+          "REACTOME_RECYCLING_OF_BILE_ACIDS_AND_SALTS",
+          "REACTOME_HOST_INTERACTIONS_OF_HIV_FACTORS",
+          "REACTOME_AMYLOIDS"
+        ],
+        "adj_HR": 0.8103106115962092,
+        "adj_p": 0.30603298143977953
+      },
+      "-1.645": {
+        "n_pathways": 43,
+        "signature": [
+          "REACTOME_RECYCLING_OF_BILE_ACIDS_AND_SALTS",
+          "REACTOME_HOST_INTERACTIONS_OF_HIV_FACTORS",
+          "REACTOME_AMYLOIDS"
+        ],
+        "adj_HR": 0.7952502154782933,
+        "adj_p": 0.27181573522185243
+      }
+    }
+  },
+  "robust_pathways": [],
+  "supported_pathways": [
+    "REACTOME_HOST_INTERACTIONS_OF_HIV_FACTORS",
+    "REACTOME_RECYCLING_OF_BILE_ACIDS_AND_SALTS",
+    "REACTOME_AMYLOIDS",
+    "REACTOME_ABCA_TRANSPORTERS_IN_LIPID_HOMEOSTASIS"
+  ],
+  "verdict": {
+    "permutation_significant": false,
+    "direction_consistent_all_versions": false,
+    "predictive_interaction_p_lt_0.1": false,
+    "events_in_treated": 27,
+    "adequately_powered": false,
+    "direction": "inconsistent",
+    "signature_status": "not supported"
+  }
+}

@@ -109,6 +109,9 @@ def run(versions, proximity, outdir, n_perm=500, cutoffs=(-1.0, -1.2816, -1.645)
     for c in cutoffs:
         feats = [p for p in proximity.index if proximity[p] <= c]
         sc = Study(st.cancer, st.drug, st.org_scores, st.response, st.pat_scores, st.clinical, st.treated, feats, label=f"z<={c}")
+        if len(sc.features) < 3:
+            cut[str(c)] = {"n_pathways": len(sc.features), "signature": [], "adj_HR": np.nan, "adj_p": np.nan}
+            continue
         wc, _ = sc.signature(top_k=top_k)
         ec = sc.evaluate(wc, interaction=False)
         cut[str(c)] = {"n_pathways": len(sc.features), "signature": list(wc.index), "adj_HR": ec.get("adj_HR"), "adj_p": ec.get("adj_p")}

@@ -1,0 +1,3 @@
+study	model	targets	cancer	drug	data	organoids	candidate_pathways	patients_with_survival	treated_patients	events_treated	adj_HR	adj_p	perm_p	baseline_min_p	baseline_perm_p	interaction_p	status	robust_pathways
+LIHC_SORAFENIB	patient-derived organoids (LICOB)	BRAF,FGFR1,FLT1,FLT3,FLT4,KDR,KIT,PDGFRB,RAF1,RET,ZHX2	LIHC	SORAFENIB	current_ssgsea	50	167	365	26	15	0.4059061427758832	0.02291884195457989	0.8882235528942116	0.0032809315175452	0.24550898203592814	0.7632879245065001	not supported	
+LUAD_CISPLATIN	cell-line proxy (GDSC 2012)	A2M,ATOX1,MPG,TF	LUAD	CISPLATIN	current_ssgsea	65	69	503	83	27	0.8103101342571467	0.3060317882687942	0.8802395209580839	0.1474604714580906	0.812375249500998	0.7507639211366008	not supported	

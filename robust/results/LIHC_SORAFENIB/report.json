@@ -1,0 +1,211 @@
+{
+  "cancer": "LIHC",
+  "drug": "SORAFENIB",
+  "model": "patient-derived organoids (LICOB)",
+  "notes": {
+    "model": "patient-derived organoids (LICOB)",
+    "targets": [
+      "BRAF",
+      "FGFR1",
+      "FLT1",
+      "FLT3",
+      "FLT4",
+      "KDR",
+      "KIT",
+      "PDGFRB",
+      "RAF1",
+      "RET",
+      "ZHX2"
+    ],
+    "network": "STRING v12 >= 700"
+  },
+  "versions": {
+    "current_ssgsea": {
+      "summary": {
+        "cancer": "LIHC",
+        "drug": "SORAFENIB",
+        "data": "current_ssgsea",
+        "organoids": 50,
+        "candidate_pathways": 167,
+        "patients_with_survival": 365,
+        "treated_patients": 26
+      },
+      "baseline_best": {
+        "ML": "Ridge",
+        "k": 6,
+        "logrank_p": 0.0032809315175452423
+      },
+      "baseline_k7_ridge_p": 0.1553866736574922,
+      "signature": {
+        "REACTOME_CS_DS_DEGRADATION": 0.2021,
+        "REACTOME_DOWNREGULATION_OF_ERBB2_ERBB3_SIGNALING": 0.1927
+      },
+      "robust": {
+        "n_treated": 26,
+        "events": 15,
+        "logrank_p": 0.024950326340971996,
+        "os5_responder": 0.1730769230769231,
+        "os5_nonresponder": 0.3516483516483517,
+        "c_index": 0.225130890052356,
+        "cox_HR": 0.45055764079452826,
+        "cox_p": 0.01945091003357078,
+        "adj_HR": 0.4059061427758832,
+        "adj_HR_low": 0.18665667457940777,
+        "adj_HR_high": 0.8826890177618767,
+        "adj_p": 0.02291884195457989,
+        "adj_n": 25,
+        "prognostic_HR_untreated": 0.792082082974979,
+        "prognostic_p": 0.024717541353259685,
+        "interaction_HR": 1.1026250061937677,
+        "interaction_p": 0.7632879245065001
+      },
+      "robust_precise_aligned": {
+        "n_treated": 26,
+        "events": 15,
+        "logrank_p": 0.024950326340971996,
+        "os5_responder": 0.1730769230769231,
+        "os5_nonresponder": 0.3516483516483517,
+        "c_index": 0.2198952879581152,
+        "cox_HR": 0.4643339735594481,
+        "cox_p": 0.022456571592534138,
+        "adj_HR": 0.43497281569124463,
+        "adj_HR_low": 0.20416173041845023,
+        "adj_HR_high": 0.9267228975899748,
+        "adj_p": 0.03099307260386168,
+        "adj_n": 25,
+        "prognostic_HR_untreated": 0.792871699107744,
+        "prognostic_p": 0.02534349602399492,
+        "interaction_HR": 1.1043088589435928,
+        "interaction_p": 0.7636521449698019
+      }
+    },
+    "current_rank": {
+      "summary": {
+        "cancer": "LIHC",
+        "drug": "SORAFENIB",
+        "data": "current_rank",
+        "organoids": 50,
+        "candidate_pathways": 167,
+        "patients_with_survival": 365,
+        "treated_patients": 26
+      },
+      "baseline_best": {
+        "ML": "Ridge",
+        "k": 4,
+        "logrank_p": 0.009647702863926253
+      },
+      "baseline_k7_ridge_p": 0.13400147529530113,
+      "signature": {
+        "REACTOME_AMINO_ACID_TRANSPORT_ACROSS_THE_PLASMA_MEMBRANE": -0.2538,
+        "REACTOME_CS_DS_DEGRADATION": 0.1747
+      },
+      "robust": {
+        "n_treated": 26,
+        "events": 15,
+        "logrank_p": 0.011810409897905157,
+        "os5_responder": 0.0,
+        "os5_nonresponder": 0.38888888888888895,
+        "c_index": 0.25654450261780104,
+        "cox_HR": 0.6033544438114451,
+        "cox_p": 0.06037705494090368,
+        "adj_HR": 0.3925421681383475,
+        "adj_HR_low": 0.1598593435983307,
+        "adj_HR_high": 0.9639058330798984,
+        "adj_p": 0.041333561852830644,
+        "adj_n": 25,
+        "prognostic_HR_untreated": 0.6488639467642004,
+        "prognostic_p": 5.836980535593407e-06,
+        "interaction_HR": 1.4850841408701065,
+        "interaction_p": 0.20458111481535757
+      },
+      "robust_precise_aligned": {
+        "n_treated": 26,
+        "events": 15,
+        "logrank_p": 0.011810409897905157,
+        "os5_responder": 0.0,
+        "os5_nonresponder": 0.38888888888888895,
+        "c_index": 0.24083769633507854,
+        "cox_HR": 0.6191484924754072,
+        "cox_p": 0.06557291726404123,
+        "adj_HR": 0.380018004294027,
+        "adj_HR_low": 0.15320382714234881,
+        "adj_HR_high": 0.9426245171632276,
+        "adj_p": 0.03684804314500876,
+        "adj_n": 25,
+        "prognostic_HR_untreated": 0.6509710626132831,
+        "prognostic_p": 5.781334318527495e-06,
+        "interaction_HR": 1.4734300301411776,
+        "interaction_p": 0.1949650201401364
+      }
+    }
+  },
+  "organoid_cv": {
+    "robust_loocv_spearman": 0.10607442977190876,
+    "robust_loocv_p": 0.46346049540097306,
+    "baseline_loocv_spearman": 0.2740456182472989,
+    "baseline_loocv_p": 0.05412566526309256
+  },
+  "permutation": {
+    "n": 500,
+    "robust_adjHR_empirical_p": 0.8882235528942116,
+    "robust_logrank_empirical_p": 0.11177644710578842,
+    "baseline_min_p_observed": 0.0032809315175452,
+    "baseline_min_p_empirical_p": 0.24550898203592814
+  },
+  "fragility": {
+    "jackknife_HR_gt1_fraction": 0.0,
+    "jackknife_HR_range": [
+      0.3863544560619041,
+      0.8560588687544993
+    ],
+    "bootstrap_HR_CI95": [
+      0.0147196823818974,
+      1.1818402074094607
+    ],
+    "bootstrap_HR_gt1_fraction": 0.03468208092485549,
+    "cutoff_sensitivity": {
+      "-1.0": {
+        "n_pathways": 184,
+        "signature": [
+          "REACTOME_CS_DS_DEGRADATION"
+        ],
+        "adj_HR": 0.8560588687544992,
+        "adj_p": 0.5686826072815676
+      },
+      "-1.2816": {
+        "n_pathways": 167,
+        "signature": [
+          "REACTOME_DOWNREGULATION_OF_ERBB2_ERBB3_SIGNALING",
+          "REACTOME_CS_DS_DEGRADATION"
+        ],
+        "adj_HR": 0.4059089799863137,
+        "adj_p": 0.02291953126805854
+      },
+      "-1.645": {
+        "n_pathways": 147,
+        "signature": [
+          "REACTOME_DOWNREGULATION_OF_ERBB2_ERBB3_SIGNALING",
+          "REACTOME_CS_DS_DEGRADATION"
+        ],
+        "adj_HR": 0.40952170254470455,
+        "adj_p": 0.023813115214600753
+      }
+    }
+  },
+  "robust_pathways": [],
+  "supported_pathways": [
+    "REACTOME_CS_DS_DEGRADATION",
+    "REACTOME_DOWNREGULATION_OF_ERBB2_ERBB3_SIGNALING",
+    "REACTOME_TIE2_SIGNALING",
+    "REACTOME_SIGNAL_REGULATORY_PROTEIN_SIRP_FAMILY_INTERACTIONS"
+  ],
+  "verdict": {
+    "permutation_significant": false,
+    "direction_consistent_all_versions": false,
+    "predictive_interaction_p_lt_0.1": false,
+    "events_in_treated": 15,
+    "adequately_powered": false,
+    "direction": "reversed (resistant score -> better survival)",
+    "signature_status": "not supported"
+  }
+}

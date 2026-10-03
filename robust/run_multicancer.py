@@ -101,7 +101,12 @@ def main():
         if args.only and f"{project}_{drug}" not in args.only:
             continue
         rows.append(run_one(project, drug, source, tissues, g, args.perm, args.jobs))
-        pd.DataFrame(rows).to_csv(RESULTS / "multicancer_summary.tsv", sep="\t", index=False)
+        summary = RESULTS / "multicancer_summary.tsv"
+        old = pd.read_csv(summary, sep="\t") if summary.exists() else pd.DataFrame(columns=["study"])
+        new = pd.DataFrame(rows)
+        merged = pd.concat([old[~old.study.isin(new.study)], new])
+        order = [f"{p}_{d}" for p, d, _, _ in STUDIES]
+        merged.sort_values("study", key=lambda c: c.map(order.index)).to_csv(summary, sep="\t", index=False)
     print(pd.DataFrame(rows).to_string())
 
 
