@@ -173,6 +173,9 @@ def run(versions, proximity, outdir, n_perm=500, cutoffs=(-1.0, -1.2816, -1.645)
         "events_in_treated": int(obs["events"]),
         "adequately_powered": int(obs["events"]) >= 30,
     }
+    hrs = np.array([evals[n].get("adj_HR", np.nan) for n in names], float)
+    report["verdict"]["direction"] = ("as expected (resistant score -> worse survival)" if np.all(hrs > 1) else
+                                      "reversed (resistant score -> better survival)" if np.all(hrs < 1) else "inconsistent")
     v = report["verdict"]
     v["signature_status"] = ("validated" if v["permutation_significant"] and v["direction_consistent_all_versions"]
                              and v["predictive_interaction_p_lt_0.1"] else
@@ -201,7 +204,7 @@ def write_markdown(rep, card, outdir):
     v = rep["verdict"]
     L += [f"**Signature status: {v['signature_status']}** "
           f"(permutation p = {_fmt(rep['permutation']['robust_adjHR_empirical_p'])}, "
-          f"direction consistent across data versions: {v['direction_consistent_all_versions']}, "
+          f"direction: {v['direction']}, "
           f"treatment-interaction p = {_fmt(rep['versions'][next(iter(rep['versions']))]['robust'].get('interaction_p'))}, "
           f"events in treated patients = {v['events_in_treated']}"
           f"{'' if v['adequately_powered'] else ' - underpowered, fewer than 30 events'}).", ""]
