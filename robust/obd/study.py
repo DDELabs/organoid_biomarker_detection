@@ -59,7 +59,9 @@ class Study:
         df["months"], df["event"] = t, e
         try:
             u = S.cox(df, ["score"]).loc["score"]
-            a = S.cox(df, ["score", "stage_III", "stage_IV", "age", "sex"]).loc["score"]
+            af = S.cox(df, ["score", "stage_III", "stage_IV", "age", "sex"])
+            a = af.loc["score"]
+            out["adj_covariates"] = ",".join(c for c in af.attrs.get("covariates", af.index) if c != "score")
             out.update({"cox_HR": u.HR, "cox_p": u.p, "adj_HR": a.HR, "adj_HR_low": a.HR_low,
                         "adj_HR_high": a.HR_high, "adj_p": a.p, "adj_n": int(a.n)})
         except Exception as exc:  # singular fits on tiny cohorts

@@ -122,7 +122,8 @@ def run(versions, proximity, outdir, n_perm=500, cutoffs=(-1.0, -1.2816, -1.645)
     base0 = pd.read_csv(outdir / f"baseline_{names[0]}.tsv", sep="\t")
     report["permutation"] = {
         "n": n_perm,
-        "robust_adjHR_empirical_p": float((1 + (perm.log_adj_HR >= np.log(obs["adj_HR"])).sum()) / (1 + n_perm)),
+        "robust_adjHR_empirical_p": (float((1 + (perm.log_adj_HR >= np.log(obs["adj_HR"])).sum()) / (1 + n_perm))
+                                     if np.isfinite(obs.get("adj_HR", np.nan)) else float("nan")),
         "robust_logrank_empirical_p": float((1 + (perm.robust_logrank_p <= obs["logrank_p"]).sum()) / (1 + n_perm)),
         "baseline_min_p_observed": float(base0.logrank_p.min()),
         "baseline_min_p_empirical_p": float((1 + (perm.baseline_min_p <= base0.logrank_p.min()).sum()) / (1 + n_perm)),

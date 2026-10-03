@@ -65,11 +65,23 @@ def cox(df, covariates, duration="months", event="event"):
     d = df[[duration, event] + covariates].dropna()
     x = d[covariates].astype(float)
     keep = x.std() > 0
+    # binary adjustment covariates need events in both levels, else the HR is infinite
+    for c in covariates[1:]:
+        v = x[c]
+        if keep[c] and set(v.unique()) <= {0.0, 1.0}:
+            ev = d[event]
+            cells = [ev[v == 1].sum(), (1 - ev[v == 1]).sum(), ev[v == 0].sum(), (1 - ev[v == 0]).sum()]
+            if min(cells) == 0 or min((v == 1).sum(), (v == 0).sum()) < 5:
+                keep[c] = False
     x = x.loc[:, keep]
     res = PHReg(d[duration].values, x.values, status=d[event].values, ties="efron").fit(disp=False)
-    ci = np.exp(res.conf_int())
-    return pd.DataFrame({"HR": np.exp(res.params), "HR_low": ci[:, 0], "HR_high": ci[:, 1],
-                         "p": res.pvalues, "n": len(d), "events": int(d[event].sum())}, index=x.columns)
+    if not np.all(np.isfinite(res.params)) and x.shape[1] > 1:
+        return cox(df, covariates[:1], duration, event)  # fall back to unadjusted
+    ci = np.exp(np.clip(res.conf_int(), -50, 50))
+    out = pd.DataFrame({"HR": np.exp(res.params), "HR_low": ci[:, 0], "HR_high": ci[:, 1],
+                        "p": res.pvalues, "n": len(d), "events": int(d[event].sum())}, index=x.columns)
+    out.attrs["covariates"] = list(x.columns)
+    return out
 
 
 def covariate_frame(clinical, patients):
