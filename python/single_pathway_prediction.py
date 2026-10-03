@@ -207,6 +207,9 @@ for ML in ML_algorithm_list:
 		plt.savefig('%s/%s_%s_rank_%s.jpg'%(fo_dir, cancer_type, drug, testing_pathway_rank), format='jpg')
 		plt.savefig('%s/%s_%s_rank_%s.eps'%(fo_dir, cancer_type, drug, testing_pathway_rank), format='eps', dpi=300)
 		plt.close()
+
+		# output file
+		print >> fo_all, '\t'.join(map(str, [cancer_type, drug, ML, testing_pathway_rank, ';'.join(map(str, features_used)), fiveYear_dic['Responder'], fiveYear_dic['Nonresponder'], pvalue]))
 		
 		
 fo_all.close()		

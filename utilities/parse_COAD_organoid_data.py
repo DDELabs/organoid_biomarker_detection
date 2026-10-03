@@ -50,7 +50,7 @@ def parse_GPL16686():
 	
 	print 'importing probe ID - refseq ID, ', time.ctime()
 	tmp = {} # { probe ID : RefSeq ID }
-	fi_directory = '../data/organoid_COAD/expression/GPL16686'
+	fi_directory = '../data/organoid_COAD/GPL16686'
 	f = open('%s/GPL16686_family.soft' %fi_directory, 'r')
 	for line in f.xreadlines():
 		line = line.strip().split('\t')
@@ -95,7 +95,7 @@ def return_COAD_2015_cell_organoid_RMA_normalized_expression():
 	tmpExp = {} # { sample : { gene : [ list of expressions ] } }
 	geneList = set()
 
-	fi_directory = '../data/organoid_organoid/expression/GSE64392/GSE64392_series_matrix.txt'
+	fi_directory = '../data/organoid_COAD/expression/GSE64392/GSE64392_series_matrix.txt'
 	
 	fiList = os.listdir(fi_directory)
 
