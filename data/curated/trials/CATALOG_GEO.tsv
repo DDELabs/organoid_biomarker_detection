@@ -1,0 +1,21 @@
+cohort_id	accession	cancer	drugs	setting	n	responders	n_labelled	endpoint	randomised	has_control_arm	arms	platform	n_genes	qc_pc1_auc	qc_pc2_auc	qc_pc3_auc	qc_flag	qc_arm_pc1_auc	qc_arm_flag	usable	note
+GSE72970	GSE72970	colorectal (metastatic)	BEVACIZUMAB;CAPECITABINE;CETUXIMAB;FLUOROURACIL;IRINOTECAN;LEUCOVORIN;OXALIPLATIN	metastatic	124	63	124	RECIST response; PFS; OS	False	False	FOLFIRI;FOLFOX;FOLFIRI+BEVACIZUMAB;FOLFOX+BEVACIZUMAB;FOLFIRINOX;FOLFIRI+ERBITUX;XELIRI+BEVACIZUMAB;FOLFIRINOX+BEVACIZUMAB	GPL570	20848	0.464	0.508	0.468	False		False	True	
+GSE109211	GSE109211	hepatocellular carcinoma	PLACEBO;SORAFENIB	adjuvant	140	42	140	responder (recurrence-based, per paper)	True	True	placebo;sorafenib	GPL13938	20702	0.037	0.515	0.439	True	0.503	False	False	
+GSE20271	GSE20271	breast	CYCLOPHOSPHAMIDE;DOXORUBICIN;EPIRUBICIN;FLUOROURACIL;PACLITAXEL	neoadjuvant	178	26	178	pCR	True	True	FAC;T/FAC	GPL96	12502	0.573	0.649	0.668	False	0.534	False	True	
+GSE41998	GSE41998	breast	CYCLOPHOSPHAMIDE;DOXORUBICIN;IXABEPILONE;PACLITAXEL	neoadjuvant	279	69	253	pCR	True	True	AC->ixabepilone;AC->paclitaxel;AC only	GPL571	12502	0.346	0.601	0.444	False		False	True	
+GSE32646	GSE32646	breast	CYCLOPHOSPHAMIDE;EPIRUBICIN;FLUOROURACIL;PACLITAXEL	neoadjuvant	115	27	115	pCR	False	False	P->FEC	GPL570	20848	0.222	0.429	0.67	False		False	True	
+GSE20194	GSE20194	breast	CAPECITABINE;CYCLOPHOSPHAMIDE;DOXORUBICIN;EPIRUBICIN;FLUOROURACIL;PACLITAXEL;TRASTUZUMAB	neoadjuvant	278	56	278	pCR	False	False	TFAC;TFEC;TXFAC;TH/FAC;FAC;TH/FEC;FECT;Tonly;FEC;TFAC/HT;FACT;FACT+XRT/X	GPL96	12502	0.511	0.211	0.436	False		False	True	
+GSE22093	GSE22093	breast	CYCLOPHOSPHAMIDE;DOXORUBICIN;FLUOROURACIL	neoadjuvant	103	28	97	pCR	False	False	FAC/FEC	GPL96	12502	0.286	0.594	0.595	False		False	True	
+GSE23988	GSE23988	breast	CAPECITABINE;CYCLOPHOSPHAMIDE;DOCETAXEL;DOXORUBICIN;FLUOROURACIL	neoadjuvant	61	20	61	pCR	False	False	FAC->TX	GPL96	12502	0.379	0.417	0.674	False		False	True	
+GSE45670	GSE45670	oesophageal squamous cell carcinoma	CISPLATIN;VINORELBINE	neoadjuvant	28	11	28	pCR	False	False	CRT	GPL570	20848	0.663	0.278	0.674	False		False	True	
+GSE15622	GSE15622	ovarian (high-grade serous)	CARBOPLATIN;PACLITAXEL	neoadjuvant	35	22	35	CA-125 response	False	True	paclitaxel;carboplatin	GPL8414	11196	0.573	0.524	0.5	False	0.473	False	True	
+GSE9891	GSE9891	ovarian (serous/endometrioid)	PACLITAXEL;PLATINUM	adjuvant	267	146	229	RFS; OS; derived RFS>=12m response	False	False	platinum+taxane;platinum;no platinum;unknown	GPL570	20838	0.361	0.393	0.453	False		False	True	
+GSE51373	GSE51373	ovarian (high-grade serous)	CARBOPLATIN;PACLITAXEL	adjuvant	28	16	28	platinum sensitivity	False	False	platinum-taxane	GPL570	20848	0.62	0.349	0.583	False		False	True	
+GSE63885	GSE63885	ovarian	CYCLOPHOSPHAMIDE;PACLITAXEL;PLATINUM	adjuvant	101	65	75	clinical response; OS; platinum sensitivity	False	False	taxane/platinum;platinum/cyclophosphamide	GPL570	20848	0.615	0.548	0.6	False	0.491	False	True	
+GSE52219	GSE52219	bladder (MIBC)	CISPLATIN;DOXORUBICIN;METHOTREXATE;VINBLASTINE	neoadjuvant	23	6	23	downstaging (<=pT1)	False	False	MVAC	GPL14951	20794	0.471	0.471	0.48	False		False	True	
+GSE169455	GSE169455	bladder (MIBC)	CISPLATIN	neoadjuvant	149	48	149	pCR (pT0N0)	False	False	neoadjuvant;induction	GPL6244	13624	0.483	0.555	0.415	False	0.462	False	True	
+GSE42127	GSE42127	NSCLC	NONE;PLATINUM	adjuvant	176	0	0	OS	False	True	observation;adjuvant chemo	GPL6884	19405				False	0.453	False	True	
+GSE103479	GSE103479	colorectal (stage II/III)	FLUOROURACIL;NONE	adjuvant	156	0	0	OS; PFS	False	True	surgery only;adjuvant chemo	GPL23985	24457				False	0.496	False	True	
+GSE19860	GSE19860	colorectal (advanced)	FLUOROURACIL;LEUCOVORIN;OXALIPLATIN	metastatic	40	15	40	response (R/NR)	False	False	mFOLFOX6	GPL570	20848	0.405	0.595	0.477	False		False	True	
+GSE19862	GSE19862	colorectal (advanced)	BEVACIZUMAB	metastatic	14	7	14	response (R/NR)	False	False	bevacizumab-containing	GPL570	20848	0.061	0.51	0.347	True		False	False	
+GSE62080	GSE62080	colorectal (metastatic)	FLUOROURACIL;IRINOTECAN;LEUCOVORIN	metastatic	21	9	21	response (sensitive/resistant)	False	False	FOLFIRI	GPL570	20848	0.62	0.537	0.667	False		False	True	

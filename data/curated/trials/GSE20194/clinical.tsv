@@ -1,0 +1,279 @@
+sample	arm	drug	drugs	setting	response	responder	age	sex	stage	randomised	control_arm	er	pr	her2	grade	race	maqc_set
+GSM505327	TFAC	TFAC | 98-240 Taxol (80mg/m2 q wk), FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	57.0	F	T2N0	False	False	positive	positive	negative	2	white	MAQC_T -- Training
+GSM505328	TFAC	TFAC | Taxol 80 mg/m2 weekly x12, FAC	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	69.0	F	T2N1	False	False	positive	positive	negative	2	asian	MAQC_T -- Training
+GSM505329	TFAC	TFAC | Taxol 80 mg/m2 weekly x12, FAC x1	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	77.0	F	T4N1	False	False	positive	negative	positive	2	mixed	MAQC_T -- Training
+GSM505330	TFAC	TFAC | Taxol 80 weekly x 12, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	54.0	F	T2N1	False	False	positive	negative	negative	2	white	MAQC_T -- Training
+GSM505331	TFAC	TFAC | 98-240: Taxol q wk (80mg/m2) x12, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	75.0	F	T2N0	False	False	negative	negative	negative	3	black	MAQC_T -- Training
+GSM505333	Tonly	Tonly | Taxol 80 mg/m2 weekly off study for PD	PACLITAXEL	neoadjuvant	RD	0	29.0	F	T4N2	False	False	negative	negative	negative	3	white	MAQC_T -- Training
+GSM505334	TFAC	TFAC | Taxol 225 mg/m2 x4, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	50.0	F	T2N1	False	False	positive	negative	negative	2	black	MAQC_T -- Training
+GSM505335	TFAC	TFAC | Taxol 225 x 4, FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	42.0	F	T2N1	False	False	negative	negative	positive	3	asian	MAQC_T -- Training
+GSM505336	TFAC	TFAC | 98-240 Taxol (150 mg q weekly) x12, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	61.0	F	T1N1	False	False	negative	positive	negative	3	white	MAQC_T -- Training
+GSM505337	TFAC	TFAC | Taxol 80 weekly x 11, FACx4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	38.0	F	T3N1	False	False	positive	negative	negative	3	white	MAQC_T -- Training
+GSM505338	TFAC	TFAC | Taxol 100 weekly X 12, FAC X 6	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	53.0	F	T4N1	False	False	positive	negative	negative	2	black	MAQC_T -- Training
+GSM505339	TFAC	TFAC | Taxol 80 mg/m2 weekly x12, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	42.0	F	T3N0	False	False	positive	negative	negative	3	black	MAQC_T -- Training
+GSM505340	TFAC	TFAC | Taxol 80 mg/m2 weekly x12, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	54.0	F	T2N0	False	False	negative	negative	positive	3	white	MAQC_T -- Training
+GSM505341	TFAC	TFAC | Taxol (100mg/m2 weekly) x12, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	44.0	F	T2N1	False	False	negative	positive	positive	3	white	MAQC_T -- Training
+GSM505342	TFAC	TFAC | 98-240 Taxol (225mg/m2 q 3 wk), FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	59.0	F	T2N0	False	False	negative	negative	positive	3	asian	MAQC_T -- Training
+GSM505343	TFAC	TFAC | 98-240: Taxol qwk (150mg/m2) x12, FACx4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	66.0	F	T2N1	False	False	negative	positive	negative	3	asian	MAQC_T -- Training
+GSM505344	TFAC	TFAC | Taxol 80 mg/m2 weekly x12 FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	44.0	F	T2N1	False	False	negative	negative	negative	3	white	MAQC_T -- Training
+GSM505345	TFAC	TFAC | 98-240: Taxol q wk (80mg/m2) x12, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	65.0	F	T1N0	False	False	negative	negative	negative	3	white	MAQC_T -- Training
+GSM505346	TFAC	TFAC | 98-240 Taxol (225 mg q 3 wk) x 4, FAX x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	62.0	F	T2N0	False	False	positive	positive	negative	3	white	MAQC_T -- Training
+GSM505347	TFAC	TFAC | 98-240: Taxol q wk (80g/m2) x12, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	67.0	F	T2N0	False	False	positive	positive	negative	2	white	MAQC_T -- Training
+GSM505348	TFAC	TFAC | Taxol 100 weekly X 12, FAC X 6	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	38.0	F	T3N1	False	False	positive	positive	negative	3	white	MAQC_T -- Training
+GSM505349	TFAC	TFAC | Taxol q wk (80mg/m2) x 12, No FAC!	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	49.0	F	T4N2	False	False	negative	negative	positive	3	hispanic	MAQC_T -- Training
+GSM505350	TFAC	TFAC | 98-240 Taxol (225 mg/m2) x4, FAX x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	67.0	F	T2N2	False	False	negative	negative	negative	2	white	MAQC_T -- Training
+GSM505351	TFAC	TFAC | 98-240: Taxol q wk (150mg/m2) x12, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	50.0	F	T3N1	False	False	negative	negative	negative	3	white	MAQC_T -- Training
+GSM505352	TFAC	TFAC | Taxol 80mg/m2 weekly x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	75.0	F	T2N1	False	False	positive	negative	negative	2	white	MAQC_T -- Training
+GSM505353	TFAC	TFAC | Taxol 80 mg/m2 weekly x12, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	68.0	F	T2N1	False	False	positive	positive	negative	1	black	MAQC_T -- Training
+GSM505354	TFAC	TFAC | Taxol 100mg/2 q wk x 12, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	38.0	F	T2N2	False	False	positive	positive	negative	2	asian	MAQC_T -- Training
+GSM505355	TFAC	TFAC | Taxol 80 weekly X 12, FAC X 6	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	31.0	F	T2N1	False	False	positive	positive	negative	2	white	MAQC_T -- Training
+GSM505356	TFAC	TFAC | Taxol 100 g/m2 weekly x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	46.0	F	T2N1	False	False	negative	negative	positive	3	black	MAQC_T -- Training
+GSM505357	TFAC	TFAC | Taxol 80 weekly x 12, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	44.0	F	T2N1	False	False	negative	negative	negative	3	black	MAQC_T -- Training
+GSM505358	TFAC	TFAC | 98-240 Taxol 225mg/m2 x 4, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	38.0	F	T1N0	False	False	negative	positive	negative	3	hispanic	MAQC_T -- Training
+GSM505359	TFAC	TFAC | Taxol 80mg/m2 weekly x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	48.0	F	T2N0	False	False	negative	negative	negative	3	white	MAQC_T -- Training
+GSM505360	TFAC	TFAC | Taxol 80mg/m2 weekly x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	52.0	F	T3N2	False	False	negative	negative	negative	3	white	MAQC_T -- Training
+GSM505361	TFAC	TFAC | Taxol 80 weekly x 12, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	52.0	F	T2N0	False	False	positive	positive	negative	2	white	MAQC_T -- Training
+GSM505362	TFAC	TFAC | 98-240 Taxol 80mg/m2 x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	51.0	F	T3N0	False	False	positive	negative	positive	3	white	MAQC_T -- Training
+GSM505363	TFAC	TFAC | Taxol 80 weekly x12 , FAC x 6	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	59.0	F	T2N1	False	False	positive	negative	negative	2	white	MAQC_T -- Training
+GSM505364	TFAC	TFAC | 98-240 Taxol 225mg/m2 x 4, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	51.0	F	T2N0	False	False	positive	positive	negative	2	white	MAQC_T -- Training
+GSM505365	TFAC	TFAC | 98-240: Taxol q 3wk (225mg/m2) x4, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	34.0	F	T4N1	False	False	positive	positive	negative	2	white	MAQC_T -- Training
+GSM505366	TFAC	TFAC | 98-240: Taxol q3 wk (225mg/m2) x4, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	57.0	F	T2N0	False	False	positive	positive	negative	2	white	MAQC_T -- Training
+GSM505367	TFAC	TFAC | 98-240: Taxol q wk (150mg/m2) x12, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	39.0	F	T4N0	False	False	positive	positive	positive	3	white	MAQC_T -- Training
+GSM505368	TFAC	TFAC | 98-240: Taxol q 3wk (225mg/m2) x4, Fac x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	52.0	F	T3N1	False	False	positive	negative	negative	1	white	MAQC_T -- Training
+GSM505369	TFAC	TFAC | Taxol q3wk (225mg/m2) x 4, NO FAC	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	59.0	F	T4N0	False	False	negative	positive	negative	3	white	MAQC_T -- Training
+GSM505370	TFAC	TFAC | Taxol 80mg/m2 weekly x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	35.0	F	T1N1	False	False	negative	negative	negative	3	white	MAQC_T -- Training
+GSM505371	TFAC	TFAC | Taxol 80 mg/m2 weekly / FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	46.0	F	T1N0	False	False	positive	positive	negative	2	hispanic	MAQC_T -- Training
+GSM505372	TFAC	TFAC | 98-240: Taxol q 3wk (225mg/m2) x 4, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	38.0	F	T2N0	False	False	negative	negative	negative	3	hispanic	MAQC_T -- Training
+GSM505373	TFAC	TFAC | Taxol 80 mg/m2 weekly x12, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	54.0	F	T2N1	False	False	negative	negative	positive	3	white	MAQC_T -- Training
+GSM505374	TFAC	TFAC | Taxol 80 mg/m2 weekly x12, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	47.0	F	T2N0	False	False	positive	positive	negative	3	white	MAQC_T -- Training
+GSM505375	TFAC	TFAC | Taxol 80 mg/m2 weekly x12, FACx 3	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	75.0	F	T3N1	False	False	positive	positive	negative	2	white	MAQC_T -- Training
+GSM505376	TFAC	TFAC | Taxol 80 mg/m2.q weekly x 12, FEC X 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	58.0	F	T4N2	False	False	negative	negative	positive	3	white	MAQC_T -- Training
+GSM505377	TFAC	TFAC | Taxol 80 mg/m2.q weekly x 12, FEC X 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	58.0	F	T4N2	False	False	negative	negative	positive	3	white	MDA_R -- Not used
+GSM505378	TFAC	TFAC | 00-005:Taxol weekly x 12,FAC X 5	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	53.0	F	T2N1	False	False	positive	positive	negative	2	white	MAQC_T -- Training
+GSM505379	TFAC	TFAC | 00-005:Taxol weekly x 12,FAC X 5	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	53.0	F	T2N1	False	False	positive	positive	negative	2	white	MDA_R -- Not used
+GSM505380	TH/FAC	TH/FAC | Taxol 100mg/m2 x 12Herceptin, FAC X 6	PACLITAXEL;TRASTUZUMAB;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	39.0	F	T4N1	False	False	negative	negative	positive	3	white	MAQC_T -- Training
+GSM505381	TH/FAC	TH/FAC | Taxol 100mg/m2 x 12Herceptin, FAC X 6	PACLITAXEL;TRASTUZUMAB;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	39.0	F	T4N1	False	False	negative	negative	positive	3	white	MDA_R -- Not used
+GSM505382	TFAC	TFAC | Taxol 80mg/m2.q weekly x 12, FAC X 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	42.0	F	T1N1	False	False	positive	negative	negative	3	hispanic	MAQC_T -- Training
+GSM505383	TFAC	TFAC | Taxol 80mg/m2.q weekly x 12, FAC X 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	42.0	F	T1N1	False	False	positive	negative	negative	3	hispanic	MDA_R -- Not used
+GSM505384	TFAC	TFAC | 99-146:Taxol weeklyx 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	51.0	F	T2N3	False	False	positive	negative	positive	3	hispanic	MAQC_T -- Training
+GSM505385	TFAC	TFAC | 99-146:Taxol weeklyx 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	51.0	F	T2N3	False	False	positive	negative	positive	3	hispanic	MDA_R -- Not used
+GSM505386	TFAC	TFAC | FAC X 4, Taxol weekly x 12	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	55.0	F	T2N0	False	False	negative	negative	positive	3	white	MAQC_T -- Training
+GSM505387	TFAC	TFAC | FAC X 4, Taxol weekly x 12	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	55.0	F	T2N0	False	False	negative	negative	positive	3	white	MDA_R -- Not used
+GSM505388	TFAC	TFAC | Taxol 80 mg/m2 x12, FAC X 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	62.0	F	T4N3	False	False	positive	positive	positive	3	black	MAQC_T -- Training
+GSM505389	TFAC	TFAC | Taxol 80 mg/m2 x12, FAC X 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	62.0	F	T4N3	False	False	positive	positive	positive	3	black	MDA_R -- Not used
+GSM505390	TFAC	TFAC | 99-146:Taxol weekly x 12, FACX 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	56.0	F	T2N0	False	False	positive	positive	positive	2	asian	MAQC_T -- Training
+GSM505391	TFAC	TFAC | 99-146:Taxol weekly x 12, FACX 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	56.0	F	T2N0	False	False	positive	positive	positive	2	asian	MDA_R -- Not used
+GSM505392	TFAC	TFAC | Taxol 80 mg/m2 x12 , FEC X4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	71.0	F	T2N3	False	False	positive	negative	negative	3	white	MAQC_T -- Training
+GSM505393	TFAC	TFAC | Taxol 80 mg/m2 x12 , FEC X4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	71.0	F	T2N3	False	False	positive	negative	negative	3	white	MDA_R -- Not used
+GSM505394	TH/FAC	TH/FAC | Taxol 100mg/m2.q weekly x 12, Trastuzumab, FAC X 4	PACLITAXEL;TRASTUZUMAB;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	52.0	F	T2N3	False	False	positive	positive	positive	3	white	MAQC_T -- Training
+GSM505395	TH/FAC	TH/FAC | Taxol 100mg/m2.q weekly x 12, Trastuzumab, FAC X 4	PACLITAXEL;TRASTUZUMAB;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	52.0	F	T2N3	False	False	positive	positive	positive	3	white	MDA_R -- Not used
+GSM505396	TFAC	TFAC | Taxol 80mg/m2.q weekly x 12, FAC X 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	54.0	F	T3N0	False	False	positive	positive	negative	2	white	MAQC_Q -- Not used
+GSM505397	TFAC	TFAC | Taxol 80mg/m2.q weekly x 12, FAC X 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	54.0	F	T3N0	False	False	positive	positive	negative	2	white	MAQC_Q -- Not used
+GSM505398	TFAC	TFAC | Taxol 80mg/m2 x 12, FAC X 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	45.0	F	T2N3	False	False	positive	negative	negative	3	asian	MAQC_T -- Training
+GSM505399	TFAC	TFAC | Taxol 80mg/m2 x 12, FAC X 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	45.0	F	T2N3	False	False	positive	negative	negative	3	asian	MDA_R -- Not used
+GSM505400	TFAC	TFAC | 99-146: Taxol 225mg/m2 q.3 week x 4, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	53.0	F	T3N1	False	False	negative	negative	positive	3	black	MAQC_T -- Training
+GSM505401	TFAC	TFAC | 99-146: Taxol 225mg/m2 q.3 week x 4, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	53.0	F	T3N1	False	False	negative	negative	positive	3	black	MDA_R -- Not used
+GSM505402	TFAC	TFAC | 00-005:Taxol 100 mg/m2 x10, FAC X 6	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	52.0	F	T2N0	False	False	positive	positive	negative	2	white	MAQC_T -- Training
+GSM505403	TFAC	TFAC | 00-005:Taxol 100 mg/m2 x10, FAC X 6	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	52.0	F	T2N0	False	False	positive	positive	negative	2	white	MDA_R -- Not used
+GSM505404	TFAC	TFAC | Taxol 100 mg/m2 x 12, FAC X 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	73.0	F	T2N0	False	False	positive	positive	positive	2	white	MAQC_T -- Training
+GSM505405	TFAC	TFAC | Taxol 100 mg/m2 x 12, FAC X 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	73.0	F	T2N0	False	False	positive	positive	positive	2	white	MDA_R -- Not used
+GSM505406	TFAC	TFAC | Taxol 100mg/m2.q.weekly x 12,	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	79.0	F	T2N3	False	False	positive	positive	negative	3	white	MAQC_T -- Training
+GSM505407	TFAC	TFAC | Taxol 100mg/m2.q.weekly x 12,	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	79.0	F	T2N3	False	False	positive	positive	negative	3	white	MDA_R -- Not used
+GSM505408	TFAC	TFAC | Taxol 80 mg/m2 x12 , FEC X4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	67.0	F	T4N0	False	False	positive	negative	negative	3	white	MAQC_T -- Training
+GSM505409	TFAC	TFAC | Taxol 80 mg/m2 x12 , FEC X4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	67.0	F	T4N0	False	False	positive	negative	negative	3	white	MDA_R -- Not used
+GSM505410	TFAC	TFAC | Taxol 80 mg/m2 x12, FAC X 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	39.0	F	T2N0	False	False	positive	positive	positive	3	white	MAQC_T -- Training
+GSM505411	TFAC	TFAC | Taxol 80 mg/m2 x12 , FAC X4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	46.0	F	T3N1	False	False	negative	negative	negative	3	black	MAQC_T -- Training
+GSM505412	TFAC	TFAC | 00-005:Taxol 100mg/m2.q weekly x10, FAC X 4.	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	58.0	F	T3N1	False	False	positive	negative	negative	2	white	MAQC_T -- Training
+GSM505413	TFAC	TFAC | Taxol 80 mg/m2 x12 , FAC X4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	51.0	F	T2N1	False	False	negative	negative	negative	2	white	MAQC_T -- Training
+GSM505414	TFAC	TFAC | Taxol 80mg/m2. q weekly x 12, FAC X 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	79.0	F	T3N1	False	False	positive	positive	positive	3	white	MAQC_T -- Training
+GSM505415	TFAC	TFAC | Taxol 100mg/m2 x 12, FAC X 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	50.0	F	T3N1	False	False	positive	positive	negative	3	white	MAQC_T -- Training
+GSM505416	TFAC	TFAC | Taxol 80mg/m2.q.weekly x12, FAC X 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	48.0	F	T2N3	False	False	negative	negative	negative	2	white	MAQC_T -- Training
+GSM505417	TFAC	TFAC | Taxol 80 mg/m2 x12 , FEC X4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	51.0	F	T3N1	False	False	negative	negative	positive	3	white	MAQC_T -- Training
+GSM505418	TFAC	TFAC | FEC X3, Taxol 80 mg/m2 x12	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	55.0	F	T4N2	False	False	negative	negative	positive	3	white	MAQC_T -- Training
+GSM505419	TFAC	TFAC | Taxol 80 mg/m2 x12 , FEC X4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	62.0	F	T2N1	False	False	negative	negative	positive	3	white	MAQC_T -- Training
+GSM505420	TFAC	TFAC | Taxol 80 mg/m2 x12 , FEC X4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	46.0	F	T2N0	False	False	positive	positive	negative	2	white	MAQC_T -- Training
+GSM505421	TFAC	TFAC | 00-005: Taxol 80 mg/m2.q weekly x 12, FAC X 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	60.0	F	T4N3	False	False	negative	negative	negative	3	white	MAQC_T -- Training
+GSM505422	TFAC	TFAC | Taxol 80 mg/m2 x12 , FAC X6	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	65.0	F	T4N2	False	False	positive	negative	negative	2	black	MAQC_T -- Training
+GSM505423	TFAC	TFAC | Taxol 80 mg/m2 x12 , FAC X4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	48.0	F	T2N1	False	False	negative	negative	negative	3	white	MAQC_T -- Training
+GSM505424	TFAC	TFAC | Taxol 80 mg/m2 x12 , FEC X4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	44.0	F	T1N1	False	False	positive	negative	negative	2	white	MAQC_T -- Training
+GSM505425	TFAC	TFAC | Taxol 80 mg/m2 x12 , FEC X4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	50.0	F	T2N3	False	False	negative	positive	positive	3	mixed	MAQC_T -- Training
+GSM505426	TFAC	TFAC | Taxol 80 mg/m2 x12, FEC X 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	56.0	F	T2N0	False	False	positive	positive	negative	2	white	MAQC_T -- Training
+GSM505427	TFAC	TFAC | PACLITAXEL x 12, FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	67.0	F	T2N1	False	False	positive	positive	negative	3	white	MAQC_T -- Training
+GSM505428	TFAC	TFAC | PACLITAXEL x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	38.0	F	T4N1	False	False	negative	negative	negative	3	white	MAQC_T -- Training
+GSM505429	TFAC	TFAC | PACLITAXEL x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	28.0	F	T4N0	False	False	positive	positive	positive	3	white	MAQC_T -- Training
+GSM505430	TFAC	TFAC | PACLITAXEL x 12, FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	42.0	F	T2N0	False	False	positive	negative	negative	2	white	MAQC_T -- Training
+GSM505431	TFAC	TFAC | PACLITAXEL x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	65.0	F	T2N0	False	False	positive	negative	positive	3	white	MAQC_T -- Training
+GSM505432	TFAC	TFAC | PACLITAXEL x 12, FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	64.0	F	T2N1	False	False	negative	negative	negative	3	white	MAQC_T -- Training
+GSM505433	TFAC	TFAC | PACLITAXEL x ( ), FEC x ( )	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	35.0	F	T3N3	False	False	positive	positive	negative	2	white	MAQC_T -- Training
+GSM505434	TH/FEC	TH/FEC | Taxol/FEC+Herceptin: updated from(PACLITAXEL x 12, FEC x 4)	PACLITAXEL;TRASTUZUMAB;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	45.0	F	T4N3	False	False	negative	negative	positive	3	white	MAQC_T -- Training
+GSM505435	TFAC	TFAC | PACLITAXEL x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	71.0	F	T1N1	False	False	negative	negative	positive	2	hispanic	MAQC_T -- Training
+GSM505436	TFAC	TFAC | PACLITAXEL x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	48.0	F	T4N1	False	False	positive	positive	negative	3	black	MAQC_Q -- Not used
+GSM505437	TH/FAC	TH/FAC | Taxol/Herceptin+FAC: updated from(PACLITAXEL x 12, FEC x 4)	PACLITAXEL;TRASTUZUMAB;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	51.0	F	T4N3	False	False	negative	negative	positive	3	hispanic	MDA_R -- Not used
+GSM505438	TFAC	TFAC | PACLITAXEL x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	38.0	F	T4N1	False	False	negative	negative	negative	3	white	MDA_R -- Not used
+GSM505439	TFAC	TFAC | PACLITAXEL x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	71.0	F	T1N1	False	False	negative	negative	positive	2	hispanic	MDA_R -- Not used
+GSM505440	TFAC	TFAC | PACLITAXEL x 12, FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	64.0	F	T2N1	False	False	negative	negative	negative	3	white	MDA_R -- Not used
+GSM505441	TFAC	TFAC | PACLITAXEL x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	65.0	F	T2N0	False	False	positive	negative	positive	3	white	MDA_R -- Not used
+GSM505442	TFAC	TFAC | PACLITAXEL x 12, FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	67.0	F	T2N1	False	False	positive	positive	negative	3	white	MDA_R -- Not used
+GSM505443	TFAC	TFAC | PACLITAXEL x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	28.0	F	T4N0	False	False	positive	positive	positive	3	white	MDA_R -- Not used
+GSM505444	TFAC	TFAC | PACLITAXEL x 12, FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	42.0	F	T2N0	False	False	positive	negative	negative	2	white	MDA_R -- Not used
+GSM505445	TH/FEC	TH/FEC | Taxol/FEC+Herceptin: updated from(PACLITAXEL x 12, FEC x 4)	PACLITAXEL;TRASTUZUMAB;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	45.0	F	T4N3	False	False	negative	negative	positive	3	white	MDA_R -- Not used
+GSM505446	TFAC	TFAC | PACLITAXEL x ( ), FEC x ( )	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	35.0	F	T3N3	False	False	positive	positive	negative	2	white	MDA_R -- Not used
+GSM505447	TH/FAC	TH/FAC | Taxol/Herceptin+FAC: updated from(PACLITAXEL x 12, FEC x 4)	PACLITAXEL;TRASTUZUMAB;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	51.0	F	T4N3	False	False	negative	negative	positive	3	hispanic	MAQC_T -- Training
+GSM505448	TFAC	TFAC | PACLITAXEL x12 FACx 3	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	40.0	F	T1N2	False	False	positive	positive	negative	3	hispanic	MAQC_T -- Training
+GSM505449	TFAC	TFAC | PACLITAXEL x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	41.0	F	T3N1	False	False	positive	positive	negative	3	white	MAQC_T -- Training
+GSM505450	TFAC	TFAC | 12 PACLITAXEL +4FAC	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	58.0	F	T4N2	False	False	negative	negative	negative	3	hispanic	MAQC_T -- Training
+GSM505451	TFAC	TFAC | PACLITAXEL x (12 ), FAC x (4 )	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	47.0	F	T2N1	False	False	positive	positive	negative	2	white	MAQC_T -- Training
+GSM505452	TFAC	TFAC | PACLITAXEL x 7 , FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	36.0	F	T2N1	False	False	positive	positive	negative	2	white	MAQC_T -- Training
+GSM505453	TFAC	TFAC | PACLITAXEL x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	40.0	F	T2N1	False	False	positive	positive	negative	2	white	MAQC_T -- Training
+GSM505454	TFAC	TFAC | PACLITAXEL x (12), FAC x ( 4)	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	31.0	F	T2N1	False	False	negative	negative	negative	3	hispanic	MAQC_T -- Training
+GSM505455	TFAC	TFAC | PACLITAXEL x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	51.0	F	T3N2	False	False	positive	negative	negative	3	hispanic	MAQC_T -- Training
+GSM505456	TFAC	TFAC | FEC x 4 , PACLITAXELx (12 )	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	46.0	F	T4N3	False	False	positive	positive	negative	2	white	MAQC_T -- Training
+GSM505457	TFAC	TFAC | PACLITAXEL x 12, FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	44.0	F	T2N0	False	False	positive	negative	negative	2	black	MAQC_T -- Training
+GSM505458	TFAC	TFAC | PACLITAXEL x 12, FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	55.0	F	T2N1	False	False	positive	positive	negative	2	white	MAQC_T -- Training
+GSM505459	TFAC	TFAC | PACLITAXEL x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	62.0	F	T4N1	False	False	negative	negative	negative	3	white	MAQC_T -- Training
+GSM505460	TFAC	TFAC | Taxol q 3wk (225mg/m2) x4, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	52.0	F	T2N0	False	False	negative	positive	negative	3	asian	MAQC_T -- Training
+GSM505461	TFAC	TFAC | PACLITAXEL x 12, FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	47.0	F	T2N3	False	False	positive	negative	positive	3	hispanic	MAQC_T -- Training
+GSM505462	TFAC	TFAC | 12 PACLITAXEL + 4FAC	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	50.0	F	T4N1	False	False	negative	negative	negative	2	hispanic	MAQC_Q -- Not used
+GSM505463	TFAC	TFAC | FAC, X 4, TAXOL X 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	70.0	F	T0N1	False	False	positive	negative	positive	2	hispanic	MAQC_T -- Training
+GSM505464	TFAC	TFAC | Taxol q wk (150mg/m2) x12, Fac x5	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	47.0	F	T3N1	False	False	positive	negative	negative	3	black	MAQC_T -- Training
+GSM505465	TFAC	TFAC | PACLITAXEL x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	50.0	F	T2N3	False	False	positive	positive	negative	2	asian	MAQC_T -- Training
+GSM505466	TFAC	TFAC | PACLITAXEL x 11, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	50.0	F	T4N2	False	False	negative	negative	negative	3	white	MAQC_T -- Training
+GSM505467	TFAC	TFAC | PACLITAXEL x 12, FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	46.0	F	T2N1	False	False	negative	negative	negative	2	white	MAQC_T -- Training
+GSM505468	TFAC	TFAC | PACLITAXEL x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	60.0	F	T4N1	False	False	positive	negative	negative	3	hispanic	MAQC_T -- Training
+GSM505469	TFAC	TFAC | PACLITAXEL x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	52.0	F	T2N0	False	False	positive	positive	negative	2	white	MAQC_T -- Training
+GSM505470	FAC	FAC | FAC x 6	FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	40.0	F	T3N1	False	False	negative	negative	negative	NA	hispanic	MAQC_Q -- Not used
+GSM505471	TFAC	TFAC | 12 PACLITAXEL + 4FAC	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	65.0	F	T2N2	False	False	positive	positive	negative	3	hispanic	MAQC_T -- Training
+GSM505472	TFAC	TFAC | PACLITAXEL x 12, FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	60.0	F	T3N0	False	False	positive	positive	negative	2	hispanic	MAQC_T -- Training
+GSM505473	TFAC	TFAC | PACLITAXEL x 12, FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	62.0	F	T2N3	False	False	positive	negative	negative	3	white	MAQC_T -- Training
+GSM505474	TFAC	TFAC | 12 PACLITAXEL + 4FAC	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	71.0	F	T4N1	False	False	positive	negative	negative	3	hispanic	MAQC_T -- Training
+GSM505475	TFAC	TFAC | PACLITAXEL x 12, FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	38.0	F	T1N0	False	False	negative	negative	negative	3	white	MAQC_T -- Training
+GSM505476	TFAC	TFAC | Taxol q 3wk (225mg/m2) x 4, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	61.0	F	T2N0	False	False	negative	negative	negative	2	white	MAQC_T -- Training
+GSM505477	TFAC	TFAC | PACLITAXEL x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	48.0	F	T3N1	False	False	positive	negative	negative	2	white	MAQC_T -- Training
+GSM505478	TFAC	TFAC | Taxol (80 mg q weekly) x12, FAC	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	40.0	F	T1N0	False	False	negative	negative	negative	3	white	MAQC_T -- Training
+GSM505479	TFAC	TFAC | PACLITAXEL x 8 , FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	46.0	F	T2N1	False	False	positive	positive	negative	3	white	MAQC_T -- Training
+GSM505480	TFAC	TFAC | 12 pACLITAXEL + 4FAC	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	47.0	F	T4N1	False	False	positive	positive	negative	2	hispanic	MAQC_T -- Training
+GSM505481	TFAC	TFAC | PACLITAXEL x (12), FAC x ( 4)	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	46.0	F	T2N0	False	False	positive	negative	negative	3	white	MAQC_T -- Training
+GSM505482	TFAC	TFAC | Taxol (150 mg q weekly) x12, FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	45.0	F	T3N2	False	False	positive	positive	positive	2	hispanic	MAQC_T -- Training
+GSM505483	TFAC	TFAC | PACLITAXEL x 12, FAC x 6	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	57.0	F	T2N3	False	False	positive	negative	negative	2	white	MAQC_T -- Training
+GSM505484	TFAC	TFAC | PACLITAXEL x 11, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	55.0	F	T2N0	False	False	positive	negative	negative	2	white	MAQC_T -- Training
+GSM505485	TFAC	TFAC | PACLITAXEL x 12, FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	41.0	F	T2N1	False	False	positive	negative	negative	2	white	MAQC_T -- Training
+GSM505486	TFAC	TFAC | PACLITAXEL x 12, FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	50.0	F	T2N1	False	False	positive	positive	negative	2	white	MAQC_T -- Training
+GSM505487	TFAC	TFAC | PACLITAXEL x 12, FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	63.0	F	T1N1	False	False	negative	negative	negative	3	white	MAQC_T -- Training
+GSM505488	TFAC	TFAC | 12 PACLITAXEL+ 4 FAC	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	73.0	F	T4N1	False	False	positive	negative	negative	2	hispanic	MAQC_T -- Training
+GSM505489	FAC	FAC | FAC x 6	FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	35.0	F	T3N1	False	False	negative	negative	negative	NA	hispanic	MAQC_Q -- Not used
+GSM505490	FAC	FAC | FAC x 6	FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	42.0	F	T4N1	False	False	negative	negative	negative	NA	hispanic	MAQC_Q -- Not used
+GSM505491	FEC	FEC | FEC x 4	FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	50.0	F	T1N1	False	False	negative	negative	negative	3	white	MAQC_Q -- Not used
+GSM505492	TXFAC	TXFAC	PACLITAXEL;CAPECITABINE;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	52.0	F	NA	False	False	negative	negative	positive	NA	NA	MAQC_Q -- Not used
+GSM505493	NA	NA	NA	neoadjuvant	RD	0	NA	F	NA	False	False	negative	negative	negative	NA	NA	MAQC_Q -- Not used
+GSM505494	TXFAC	TXFAC	PACLITAXEL;CAPECITABINE;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	46.0	F	T3N0	False	False	positive	positive	positive	NA	NA	MAQC_Q -- Not used
+GSM505495	TXFAC	TXFAC	PACLITAXEL;CAPECITABINE;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	50.0	F	T3N1	False	False	negative	negative	positive	3	NA	MAQC_Q -- Not used
+GSM505496	TXFAC	TXFAC	PACLITAXEL;CAPECITABINE;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	64.0	F	T3N1	False	False	negative	negative	negative	NA	NA	MAQC_Q -- Not used
+GSM505497	TXFAC	TXFAC	PACLITAXEL;CAPECITABINE;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	41.0	F	T3N2	False	False	negative	negative	negative	NA	NA	MAQC_Q -- Not used
+GSM505498	TXFAC	TXFAC	PACLITAXEL;CAPECITABINE;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	46.0	F	T3N1	False	False	negative	negative	negative	NA	NA	MAQC_Q -- Not used
+GSM505499	TXFAC	TXFAC	PACLITAXEL;CAPECITABINE;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	36.0	F	T3N2	False	False	negative	negative	negative	3	NA	MAQC_Q -- Not used
+GSM505500	TFAC	TFAC | FAC x 3 (no response) Taxol x 8 (no response)	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	46.0	F	T3N3	False	False	negative	negative	negative	3	black	MAQC_Q -- Not used
+GSM505501	TXFAC	TXFAC	PACLITAXEL;CAPECITABINE;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	61.0	F	T3N0	False	False	positive	positive	negative	NA	NA	MAQC_Q -- Not used
+GSM505502	TXFAC	TXFAC	PACLITAXEL;CAPECITABINE;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	46.0	F	T3N0	False	False	positive	positive	negative	NA	NA	MAQC_Q -- Not used
+GSM505503	TFAC	TFAC | 00-005: Taxol 80 mg/m2.q weekly x 12, FAC X 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	60.0	F	T4N3	False	False	negative	negative	negative	3	white	MDA_R -- Not used
+GSM505504	TFAC	TFAC | Taxol 80 mg/m2 x12 , FEC X4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	51.0	F	T3N1	False	False	negative	negative	positive	3	white	MDA_R -- Not used
+GSM505505	TFAC	TFAC | Taxol 80 mg/m2 x12 , FEC X4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	50.0	F	T2N3	False	False	negative	positive	positive	3	mixed	MDA_R -- Not used
+GSM505506	TFAC	TFAC | FAC x 4 Taxol x 12	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	42.0	F	T2N0	False	False	positive	positive	negative	2	white	MAQC_V -- Validation
+GSM505507	NA	NA	NA	neoadjuvant	pCR	1	49.0	F	T1N1	False	False	negative	negative	positive	3	white	MAQC_V -- Validation
+GSM505508	TFAC	TFAC | Taxol x 12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	72.0	F	T2N1	False	False	positive	positive	negative	1	white	MAQC_V -- Validation
+GSM505509	TFEC	TFEC | Taxol q.3 week x 4 FEC  x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	45.0	F	T2N0	False	False	positive	positive	negative	2	white	MAQC_V -- Validation
+GSM505510	TFAC	TFAC | Taxol  x 12  FAC  x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	46.0	F	T4N1	False	False	positive	negative	negative	3	white	MAQC_V -- Validation
+GSM505511	NA	NA	NA	neoadjuvant	pCR	1	53.0	F	T1N1	False	False	negative	negative	positive	2	white	MAQC_V -- Validation
+GSM505512	TFAC	TFAC | Taxol x 12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	26.0	F	T2N0	False	False	positive	positive	negative	2	white	MAQC_V -- Validation
+GSM505513	TFAC	TFAC | Taxol x 6 (d/t P.D)   FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	42.0	F	T3N1	False	False	positive	positive	negative	3	white	MAQC_V -- Validation
+GSM505514	TFAC	TFAC | Taxol x 12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	44.0	F	T2N1	False	False	negative	negative	negative	3	white	MAQC_V -- Validation
+GSM505515	TFAC	TFAC | FAC x 6 Taxol x 12	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	54.0	F	T4N1	False	False	positive	negative	negative	2	hispanic	MAQC_V -- Validation
+GSM505516	TFAC	TFAC | Taxol x 9 (P.D)  FAC x 8 (P.D) - No Sx	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	39.0	F	T4N2	False	False	negative	negative	negative	3	black	MAQC_V -- Validation
+GSM505517	TFAC	TFAC | Taxol x 12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	59.0	F	T3N2	False	False	positive	positive	negative	1	white	MAQC_V -- Validation
+GSM505518	TFEC	TFEC | Taxol x 12 FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	56.0	F	T0N3	False	False	positive	positive	negative	3	white	MAQC_V -- Validation
+GSM505519	TFEC	TFEC | Taxol x 12 FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	58.0	F	T3N0	False	False	positive	positive	negative	3	asian	MAQC_V -- Validation
+GSM505520	TFAC	TFAC | Taxol x 12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	42.0	F	T2N1	False	False	positive	positive	negative	1	white	MAQC_V -- Validation
+GSM505521	NA	NA	NA	neoadjuvant	pCR	1	55.0	F	T2N3	False	False	negative	negative	positive	3	black	MAQC_V -- Validation
+GSM505522	NA	NA	NA	neoadjuvant	RD	0	65.0	F	T1N1	False	False	positive	positive	positive	2	white	MAQC_V -- Validation
+GSM505523	TFEC	TFEC | Taxol x 12 FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	35.0	F	T2N2	False	False	positive	negative	negative	1	hispanic	MAQC_V -- Validation
+GSM505524	TFAC	TFAC | Taxol x 12 FAC x 6	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	44.0	F	T2N1	False	False	positive	positive	negative	2	asian	MAQC_V -- Validation
+GSM505525	TFEC	TFEC | Taxol x 12 FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	63.0	F	T2N1	False	False	positive	positive	negative	2	hispanic	MAQC_V -- Validation
+GSM505526	TFEC	TFEC | Taxol x 12 FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	68.0	F	T0N3	False	False	positive	positive	negative	2	black	MAQC_V -- Validation
+GSM505527	TFAC	TFAC | Taxol x 12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	60.0	F	T4N1	False	False	negative	negative	negative	2	white	MAQC_V -- Validation
+GSM505528	TFAC	TFAC | Taxol x 12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	52.0	F	T3N1	False	False	negative	negative	negative	3	black	MAQC_V -- Validation
+GSM505529	TFEC	TFEC | Taxol x 12 FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	50.0	F	T2N1	False	False	positive	positive	negative	2	white	MAQC_V -- Validation
+GSM505530	TFEC	TFEC | Taxol x12 FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	47.0	F	T2N0	False	False	positive	positive	negative	3	hispanic	MAQC_V -- Validation
+GSM505531	NA	NA	NA	neoadjuvant	pCR	1	46.0	F	T3N2	False	False	negative	negative	positive	3	white	MAQC_V -- Validation
+GSM505532	TFEC	TFEC | Taxol x 12 FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	44.0	F	T2N0	False	False	positive	positive	negative	3	white	MAQC_V -- Validation
+GSM505533	FECT	FECT | FEC x 3 (N.C) Taxol x 12	FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0	50.0	F	T2N0	False	False	negative	negative	negative	2	white	MAQC_V -- Validation
+GSM505534	TFAC	TFAC | FAC x 4 Taxol x 12	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	66.0	F	T2N0	False	False	positive	positive	negative	2	white	MAQC_V -- Validation
+GSM505535	TFAC	TFAC | FAC x 4(d/t N.C) Taxol x 6 (d/t severe Fatigue) (FAC resistance & pCR at the end)	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	59.0	F	T2N1	False	False	negative	negative	negative	3	black	MAQC_V -- Validation
+GSM505536	TFAC	TFAC | Taxol x 12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	53.0	F	T4N3	False	False	negative	negative	negative	3	white	MAQC_V -- Validation
+GSM505537	TFAC	TFAC | Taxol x 12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	58.0	F	T2N1	False	False	negative	negative	negative	3	black	MAQC_V -- Validation
+GSM505538	TFEC	TFEC | Taxol x 12 FEC x4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	40.0	F	T2N1	False	False	positive	positive	negative	2	hispanic	MAQC_V -- Validation
+GSM505539	TFAC/HT	TFAC/HT | Taxol x 13 FAC x 3(d/t cardiotox)   Anastrozole  x 3 Moths	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	47.0	F	T1N1	False	False	positive	positive	negative	2	white	MAQC_V -- Validation
+GSM505540	TFAC	TFAC | Taxol x12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	57.0	F	T2N3	False	False	negative	negative	negative	3	white	MAQC_V -- Validation
+GSM505541	TFAC	TFAC | FAC x 4 Taxol x 12	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	62.0	F	T4N3	False	False	negative	negative	negative	3	white	MAQC_V -- Validation
+GSM505542	TFAC	TFAC | FAC x 4 Taxol x 12	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	55.0	F	T2N1	False	False	positive	negative	negative	2	white	MAQC_V -- Validation
+GSM505543	TFAC	TFAC | Taxol x 12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	68.0	F	T4N2	False	False	negative	negative	negative	3	white	MAQC_V -- Validation
+GSM505544	TFAC	TFAC | Taxol x  12  FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	39.0	F	T2N3	False	False	positive	negative	negative	2	white	MAQC_V -- Validation
+GSM505545	FACT	FACT | FAC x 4 Taxol x 12	FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1	32.0	F	T2N1	False	False	negative	negative	negative	3	black	MAQC_V -- Validation
+GSM505546	NA	NA	NA	neoadjuvant	RD	0	70.0	F	T2N1	False	False	negative	negative	positive	3	white	MAQC_V -- Validation
+GSM505547	TFAC	TFAC | Taxol x 12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	45.0	F	T4N1	False	False	positive	positive	negative	3	black	MAQC_V -- Validation
+GSM505548	TFAC	TFAC | Taxol x 12  FAC x 6	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	51.0	F	T2N3	False	False	negative	positive	negative	2	white	MAQC_V -- Validation
+GSM505549	TFEC	TFEC | Taxol x 12  FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	50.0	F	T1N1	False	False	positive	positive	negative	1	white	MAQC_V -- Validation
+GSM505550	TFEC	TFEC | Taxol x 12 FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	67.0	F	T1N1	False	False	positive	negative	negative	2	white	MAQC_V -- Validation
+GSM505551	TFAC	TFAC | Taxol x 12  FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	47.0	F	T3N2	False	False	positive	positive	negative	2	hispanic	MAQC_V -- Validation
+GSM505552	TFAC	TFAC | Taxol x 12   FAC x 2  ( d/t CVC infection )	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	40.0	F	T2N2	False	False	negative	negative	negative	3	white	MAQC_V -- Validation
+GSM505553	TFEC	TFEC | Taxol x 12  FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	50.0	F	T2N1	False	False	negative	negative	negative	3	white	MAQC_V -- Validation
+GSM505554	FACT+XRT/X	FACT+XRT/X | FAC x 6 Taxol  x 12 /  XRT+ Xeloda (as a neo-adj setting)	FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL;CAPECITABINE	neoadjuvant	RD	0	52.0	F	T4N2	False	False	negative	negative	negative	3	white	MAQC_V -- Validation
+GSM505555	NA	NA	NA	neoadjuvant	RD	0	45.0	F	T2N1	False	False	negative	negative	positive	3	hispanic	MAQC_V -- Validation
+GSM505556	TFEC	TFEC | FEC x 4  Taxol x 12	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	45.0	F	T4N2	False	False	positive	positive	negative	2	hispanic	MAQC_V -- Validation
+GSM505557	TFEC	TFEC | Taxol x 12 FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	41.0	F	T2N0	False	False	positive	positive	negative	2	white	MAQC_V -- Validation
+GSM505558	TFAC	TFAC | Taxol x 12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	65.0	F	T3N1	False	False	negative	negative	negative	3	white	MAQC_V -- Validation
+GSM505559	TFAC	TFAC | Taxol x 9 (d/t severe parestesias)    FACx 2 (d/t Cholecystiitis + Sx)	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	61.0	F	T2N1	False	False	positive	positive	negative	3	white	MAQC_V -- Validation
+GSM505560	TFAC	TFAC | FAC x 4 Taxol x12 (Abraxene)	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	66.0	F	T2N1	False	False	positive	negative	negative	2	white	MAQC_V -- Validation
+GSM505561	TFAC	TFAC | Taxol x 12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	48.0	F	T1N0	False	False	negative	positive	negative	2	hispanic	MAQC_V -- Validation
+GSM505562	TFAC	TFAC | Taxol x 12   FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	61.0	F	T3N3	False	False	negative	negative	negative	3	hispanic	MAQC_V -- Validation
+GSM505563	TFAC	TFAC | Taxol x 10 (D/T  N.C swith to) FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	51.0	F	T2N1	False	False	negative	negative	negative	3	asian	MAQC_V -- Validation
+GSM505564	TFAC	TFAC | Taxol x 12 FAC x 2 (D/T severe allergic reaction)	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	49.0	F	T2N1	False	False	negative	negative	negative	3	white	MAQC_V -- Validation
+GSM505565	TFEC	TFEC | Taxol x 12 FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	46.0	F	T2N1	False	False	positive	positive	negative	2	asian	MAQC_V -- Validation
+GSM505566	TFAC	TFAC | Taxol x 12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	57.0	F	T2N1	False	False	negative	negative	negative	3	white	MAQC_V -- Validation
+GSM505567	TFAC	TFAC | Taxol x 12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	58.0	F	T2N0	False	False	positive	positive	negative	2	white	MAQC_V -- Validation
+GSM505568	TFAC	TFAC | Taxol x 12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	50.0	F	T3N2	False	False	positive	positive	negative	3	asian	MAQC_V -- Validation
+GSM505569	TFAC	TFAC | Taxol x 12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	47.0	F	T2N1	False	False	positive	positive	negative	2	asian	MAQC_V -- Validation
+GSM505570	TFEC	TFEC | Taxol x 12 FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	43.0	F	T2N1	False	False	negative	negative	negative	2	white	MAQC_V -- Validation
+GSM505571	TFAC	TFAC | Taxol x 12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	30.0	F	T1N1	False	False	positive	positive	negative	3	white	MAQC_V -- Validation
+GSM505572	TFEC	TFEC | Taxol x 11 ( one dose missed & no repleced) FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	58.0	F	T2N3	False	False	negative	negative	negative	3	white	MAQC_V -- Validation
+GSM505573	TFAC	TFAC | Taxol x 12 FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	64.0	F	T2N1	False	False	negative	negative	negative	2	white	MAQC_V -- Validation
+GSM505574	TFAC	TFAC | FAC x 4 Taxol x 12	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	72.0	F	T2N0	False	False	negative	negative	negative	3	white	MAQC_V -- Validation
+GSM505575	TFEC	TFEC | Taxol x 12 FEC x4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	33.0	F	T3N0	False	False	negative	negative	negative	3	hispanic	MAQC_V -- Validation
+GSM505576	TFEC	TFEC | Taxol x 10 (D/T severe low ANC) FEC x4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	50.0	F	T2N0	False	False	positive	positive	negative	2	white	MAQC_V -- Validation
+GSM505577	TFAC	TFAC | Taxol x 12 FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	59.0	F	T2N0	False	False	negative	positive	negative	3	white	MAQC_V -- Validation
+GSM505578	TFEC	TFEC | Taxol x 12  FEC x4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	53.0	F	T2N0	False	False	positive	positive	negative	1	white	MAQC_V -- Validation
+GSM505579	TFEC	TFEC | Taxol x 12 FEC x4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	73.0	F	T2N1	False	False	positive	positive	negative	1	white	MAQC_V -- Validation
+GSM505580	TFEC	TFEC | Taxol x 12 FEC x  4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	46.0	F	T2N3	False	False	negative	negative	negative	2	white	MAQC_V -- Validation
+GSM505581	TFAC	TFAC | FAC x 4 Taxol x12	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	47.0	F	T2N0	False	False	positive	positive	negative	2	white	MAQC_V -- Validation
+GSM505582	TFAC	TFAC | FAC x 4 Taxol x 12	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	43.0	F	T2N0	False	False	positive	negative	negative	3	white	MAQC_V -- Validation
+GSM505583	TFAC	TFAC | Taxol x12 FAC x4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	53.0	F	T2N1	False	False	negative	negative	negative	3	black	MAQC_V -- Validation
+GSM505584	TFAC	TFAC | Taxol x 12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	51.0	F	T4N2	False	False	negative	negative	negative	3	white	MAQC_V -- Validation
+GSM505585	TFEC	TFEC | Taxol x 12 FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	53.0	F	T2N1	False	False	positive	positive	negative	2	white	MAQC_V -- Validation
+GSM505586	TFEC	TFEC | Taxol x 4 FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	64.0	F	T2N1	False	False	positive	negative	negative	3	white	MAQC_V -- Validation
+GSM505587	TFEC	TFEC | FEC x 5 (d/t NC) switch to Taxol x 10 (Pt missed two doses)	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	52.0	F	T2N0	False	False	positive	positive	negative	1	asian	MAQC_V -- Validation
+GSM505588	TFEC	TFEC | Taxol x 12 FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	36.0	F	T2N0	False	False	negative	negative	negative	3	white	MAQC_V -- Validation
+GSM505589	TFAC	TFAC | Taxol x 12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	63.0	F	T2N1	False	False	positive	positive	negative	2	hispanic	MAQC_V -- Validation
+GSM505590	FECT	FECT | FEC x 6 (P.D “new supra & infraclavicular Ln”)Taxol x 12	FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0	46.0	F	T2N3	False	False	positive	positive	negative	1	white	MAQC_V -- Validation
+GSM505591	TFAC	TFAC | FAC x 4 Taxol x 12	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	49.0	F	T3N1	False	False	positive	positive	negative	3	black	MAQC_V -- Validation
+GSM505592	TFEC	TFEC | Taxol x 12 FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	50.0	F	T2N2	False	False	negative	negative	negative	3	white	MAQC_V -- Validation
+GSM505593	TFEC	TFEC | Taxol x 12 FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	36.0	F	T2N0	False	False	positive	positive	negative	2	black	MAQC_V -- Validation
+GSM505594	TFAC	TFAC | Taxol x 12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	44.0	F	T2N1	False	False	positive	negative	negative	2	white	MAQC_V -- Validation
+GSM505595	TFEC	TFEC | Taxol x 12 FEC x 4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	56.0	F	T3N0	False	False	positive	positive	negative	1	black	MAQC_V -- Validation
+GSM505596	TFAC	TFAC | Taxol x 12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	49.0	F	T4N0	False	False	positive	positive	negative	2	white	MAQC_V -- Validation
+GSM505597	TFAC	TFAC | Taxol x 12  FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	62.0	F	T4N1	False	False	positive	positive	negative	3	white	MAQC_V -- Validation
+GSM505598	TFAC	TFAC | Taxol x 12  FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	pCR	1	51.0	F	T2N0	False	False	positive	positive	negative	2	white	MAQC_V -- Validation
+GSM505599	TFEC	TFEC | Taxol x   12 FEC x  4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	49.0	F	T2N1	False	False	positive	positive	negative	2	white	MAQC_V -- Validation
+GSM505600	TFEC	TFEC | Taxol x 12 FEC x  4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	40.0	F	T3N0	False	False	positive	positive	negative	2	white	MAQC_V -- Validation
+GSM505601	TFAC	TFAC | Tamoxifen x 2 weeks  Taxol x 12 FAC x 4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	53.0	F	T2N3	False	False	positive	negative	negative	1	white	MAQC_V -- Validation
+GSM505602	TFAC	TFAC | Taxol x 12 FAC x  6	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	58.0	F	T4N0	False	False	positive	positive	negative	3	white	MAQC_V -- Validation
+GSM505603	TFAC	TFAC | Taxol x  12 FAC x  4	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	64.0	F	T2N0	False	False	positive	negative	negative	2	white	MAQC_V -- Validation
+GSM505604	TFEC	TFEC | Taxol x  12 FEC x  4	PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	45.0	F	T2N1	False	False	positive	negative	negative	2	white	MAQC_V -- Validation
+GSM505605	TFAC	TFAC | Taxol x 8 ( d/t NC) FAC x 3 (d/t PD) Xeloda (1) Letrozole + Gleevec (PD) +XRT (rt breast, bi-supra and IMC w/ xeloda)	PACLITAXEL;FLUOROURACIL;DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	RD	0	49.0	F	T4N2	False	False	positive	positive	negative	3	hispanic	MAQC_V -- Validation

@@ -1,0 +1,280 @@
+sample	arm	drug	drugs	setting	response	responder	age	sex	randomised	control_arm	pcr_rcb1	ac_response	er	pr	her2	menopause	tumor_size
+GSM1030079	AC only	AC only	DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	NA	NA	41	F	False	False	NA	progressive disease	negative	negative	positive	pre-menopausal	2 - 5 cm
+GSM1030080	AC only	AC only	DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	NA	NA	72	F	False	False	NA	0	positive	negative	negative	post-menopausal	not reported
+GSM1030081	AC only	AC only	DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	NA	NA	72	F	False	False	NA	0	positive	negative	negative	post-menopausal	not reported
+GSM1030082	AC only	AC only	DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	NA	NA	72	F	False	False	NA	0	positive	negative	negative	post-menopausal	not reported
+GSM1030083	AC only	AC only	DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	NA	NA	28	F	False	False	NA	progressive disease	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030084	AC only	AC only	DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	NA	NA	34	F	False	False	NA	stable disease	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030085	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	34	F	True	False	0.0	partial response	negative	positive	negative	not reported	> 5 cm
+GSM1030086	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	50	F	True	False	0.0	partial response	negative	positive	negative	post-menopausal	2 - 5 cm
+GSM1030087	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	45	F	True	False	1.0	partial response	negative	positive	negative	post-menopausal	> 5 cm
+GSM1030088	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	49	F	True	False	1.0	complete response	negative	negative	positive	pre-menopausal	2 - 5 cm
+GSM1030089	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	52	F	True	False	0.0	partial response	positive	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030090	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	31	F	True	False	0.0	partial response	positive	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030091	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	52	F	True	False	0.0	partial response	negative	negative	positive	post-menopausal	2 - 5 cm
+GSM1030092	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	NA	NA	56	F	True	False	NA	complete response	negative	negative	positive	post-menopausal	> 5 cm
+GSM1030093	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	40	F	True	False	1.0	stable disease	negative	negative	positive	pre-menopausal	> 5 cm
+GSM1030094	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	27	F	True	False	0.0	partial response	negative	negative	positive	pre-menopausal	> 5 cm
+GSM1030095	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	56	F	True	False	1.0	partial response	negative	negative	positive	post-menopausal	> 5 cm
+GSM1030096	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	65	F	True	False	0.0	partial response	negative	negative	positive	post-menopausal	2 - 5 cm
+GSM1030097	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	61	F	True	False	1.0	partial response	negative	negative	positive	post-menopausal	2 - 5 cm
+GSM1030098	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	40	F	True	False	0.0	stable disease	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030099	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	67	F	True	False	0.0	complete response	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030100	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	45	F	True	False	0.0	complete response	positive	negative	negative	not reported	2 - 5 cm
+GSM1030101	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	48	F	True	False	0.0	partial response	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030102	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	46	F	True	False	0.0	partial response	positive	positive	positive	pre-menopausal	2 - 5 cm
+GSM1030103	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	41	F	True	False	0.0	partial response	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030104	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	60	F	True	False	0.0	partial response	negative	negative	positive	post-menopausal	> 5 cm
+GSM1030105	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	47	F	True	False	0.0	partial response	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030106	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	65	F	True	False	0.0	partial response	positive	positive	negative	post-menopausal	> 5 cm
+GSM1030107	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	51	F	True	False	0.0	stable disease	positive	positive	negative	pre-menopausal	> 5 cm
+GSM1030108	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	50	F	True	False	0.0	stable disease	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030109	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	45	F	True	False	1.0	complete response	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030110	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	48	F	True	False	0.0	partial response	positive	positive	negative	peri-menopausal	2 - 5 cm
+GSM1030111	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	47	F	True	False	1.0	stable disease	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030112	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	66	F	True	False	0.0	stable disease	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030113	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	42	F	True	False	0.0	partial response	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030114	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	46	F	True	False	1.0	partial response	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030115	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	56	F	True	False	0.0	partial response	positive	negative	negative	post-menopausal	2 - 5 cm
+GSM1030116	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	59	F	True	False	0.0	partial response	positive	positive	positive	post-menopausal	2 - 5 cm
+GSM1030117	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	41	F	True	False	0.0	stable disease	positive	positive	negative	pre-menopausal	> 5 cm
+GSM1030118	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	44	F	True	False	1.0	partial response	positive	positive	negative	pre-menopausal	< 2 cm
+GSM1030119	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	47	F	True	False	1.0	partial response	positive	positive	negative	post-menopausal	> 5 cm
+GSM1030120	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	37	F	True	False	0.0	stable disease	positive	positive	negative	pre-menopausal	> 5 cm
+GSM1030121	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	48	F	True	False	0.0	partial response	positive	positive	negative	pre-menopausal	> 5 cm
+GSM1030122	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	NA	NA	54	F	True	False	NA	complete response	positive	positive	negative	not reported	> 5 cm
+GSM1030123	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	55	F	True	False	0.0	partial response	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030124	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	54	F	True	False	0.0	stable disease	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030125	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	50	F	True	False	0.0	stable disease	positive	negative	negative	peri-menopausal	> 5 cm
+GSM1030126	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	56	F	True	False	1.0	complete response	positive	positive	positive	post-menopausal	> 5 cm
+GSM1030127	AC only	AC only	DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	NA	NA	40	F	False	False	NA	partial response	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030128	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	47	F	True	False	1.0	partial response	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030129	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	42	F	True	False	0.0	stable disease	positive	positive	positive	pre-menopausal	2 - 5 cm
+GSM1030130	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	40	F	True	False	0.0	stable disease	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030131	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	68	F	True	False	0.0	partial response	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030132	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	68	F	True	False	0.0	partial response	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030133	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	29	F	True	False	0.0	stable disease	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030134	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	60	F	True	False	0.0	stable disease	positive	positive	negative	post-menopausal	> 5 cm
+GSM1030135	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	56	F	True	False	0.0	stable disease	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030136	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	67	F	True	False	0.0	partial response	positive	positive	positive	post-menopausal	> 5 cm
+GSM1030137	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	46	F	True	False	0.0	stable disease	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030138	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	54	F	True	False	0.0	partial response	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030139	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	79	F	True	False	0.0	partial response	positive	negative	negative	post-menopausal	> 5 cm
+GSM1030140	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	47	F	True	False	1.0	complete response	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030141	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	46	F	True	False	0.0	partial response	positive	negative	negative	pre-menopausal	> 5 cm
+GSM1030142	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	46	F	True	False	0.0	unable to determine	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030143	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	43	F	True	False	0.0	stable disease	negative	positive	positive	pre-menopausal	2 - 5 cm
+GSM1030144	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	48	F	True	False	1.0	partial response	positive	NA	negative	pre-menopausal	2 - 5 cm
+GSM1030145	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	44	F	True	False	1.0	complete response	positive	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030146	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	56	F	True	False	1.0	complete response	positive	positive	negative	post-menopausal	> 5 cm
+GSM1030147	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	63	F	True	False	0.0	partial response	positive	negative	negative	post-menopausal	2 - 5 cm
+GSM1030148	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	41	F	True	False	0.0	stable disease	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030149	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	68	F	True	False	0.0	partial response	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030150	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	47	F	True	False	0.0	partial response	positive	positive	negative	pre-menopausal	> 5 cm
+GSM1030151	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	70	F	True	False	0.0	partial response	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030152	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	48	F	True	False	0.0	partial response	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030153	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	56	F	True	False	0.0	partial response	positive	negative	positive	post-menopausal	> 5 cm
+GSM1030154	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	70	F	True	False	0.0	stable disease	positive	negative	negative	post-menopausal	2 - 5 cm
+GSM1030155	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	62	F	True	False	0.0	partial response	positive	positive	negative	post-menopausal	> 5 cm
+GSM1030156	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	31	F	True	False	1.0	partial response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030157	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	59	F	True	False	0.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030158	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	40	F	True	False	0.0	partial response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030159	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	62	F	True	False	0.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030160	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	45	F	True	False	1.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030161	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	NA	NA	57	F	True	False	NA	progressive disease	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030162	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	54	F	True	False	0.0	partial response	negative	negative	negative	post-menopausal	> 5 cm
+GSM1030163	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	50	F	True	False	0.0	partial response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030164	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	44	F	True	False	0.0	partial response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030165	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	52	F	True	False	0.0	stable disease	negative	negative	negative	peri-menopausal	2 - 5 cm
+GSM1030166	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	NA	NA	54	F	True	False	NA	partial response	negative	negative	negative	peri-menopausal	> 5 cm
+GSM1030167	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	39	F	True	False	1.0	partial response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030168	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	43	F	True	False	0.0	partial response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030169	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	47	F	True	False	1.0	complete response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030170	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	65	F	True	False	0.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030171	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	49	F	True	False	0.0	partial response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030172	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	32	F	True	False	1.0	complete response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030173	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	46	F	True	False	1.0	partial response	negative	negative	negative	post-menopausal	> 5 cm
+GSM1030174	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	35	F	True	False	1.0	partial response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030175	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	48	F	True	False	0.0	partial response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030176	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	61	F	True	False	0.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030177	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	32	F	True	False	1.0	complete response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030178	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	30	F	True	False	0.0	stable disease	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030179	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	49	F	True	False	0.0	partial response	negative	negative	negative	post-menopausal	> 5 cm
+GSM1030180	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	36	F	True	False	1.0	partial response	negative	negative	negative	peri-menopausal	> 5 cm
+GSM1030181	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	61	F	True	False	0.0	stable disease	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030182	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	38	F	True	False	0.0	partial response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030183	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	40	F	True	False	0.0	complete response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030184	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	NA	NA	62	F	True	False	NA	stable disease	negative	negative	negative	post-menopausal	> 5 cm
+GSM1030185	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	56	F	True	False	1.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030186	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	47	F	True	False	1.0	complete response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030187	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	29	F	True	False	0.0	partial response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030188	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	35	F	True	False	1.0	partial response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030189	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	59	F	True	False	1.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030190	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	43	F	True	False	1.0	partial response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030191	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	43	F	True	False	1.0	partial response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030192	AC only	AC only	DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	NA	NA	53	F	False	False	NA	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030193	AC only	AC only	DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	NA	NA	53	F	False	False	NA	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030194	AC only	AC only	DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	NA	NA	53	F	False	False	NA	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030195	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	63	F	True	False	0.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030196	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	42	F	True	False	1.0	partial response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030197	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	58	F	True	False	0.0	stable disease	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030198	AC only	AC only	DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	NA	NA	50	F	False	False	NA	stable disease	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030199	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	41	F	True	False	0.0	unable to determine	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030200	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	45	F	True	False	0.0	complete response	negative	negative	negative	post-menopausal	> 5 cm
+GSM1030201	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	43	F	True	False	0.0	partial response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030202	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	63	F	True	False	0.0	partial response	negative	negative	negative	post-menopausal	> 5 cm
+GSM1030203	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	35	F	True	False	0.0	partial response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030204	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	49	F	True	False	1.0	complete response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030205	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	31	F	True	False	0.0	partial response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030206	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	60	F	True	False	0.0	partial response	negative	negative	negative	not reported	2 - 5 cm
+GSM1030207	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	66	F	True	False	1.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030208	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	51	F	True	False	0.0	stable disease	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030209	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	36	F	True	False	0.0	partial response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030210	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	62	F	True	False	0.0	partial response	negative	negative	negative	post-menopausal	> 5 cm
+GSM1030211	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	55	F	True	False	0.0	stable disease	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030212	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	40	F	True	False	1.0	complete response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030213	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	55	F	True	False	1.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030214	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	67	F	True	False	0.0	stable disease	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030215	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	25	F	True	False	1.0	partial response	negative	negative	negative	peri-menopausal	2 - 5 cm
+GSM1030216	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	63	F	True	False	0.0	stable disease	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030217	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	43	F	True	False	0.0	partial response	negative	negative	negative	post-menopausal	> 5 cm
+GSM1030218	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	72	F	True	False	0.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030219	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	38	F	True	False	1.0	complete response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030220	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	42	F	True	False	0.0	stable disease	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030221	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	37	F	True	False	1.0	complete response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030222	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	NA	NA	56	F	True	False	NA	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030223	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	44	F	True	False	1.0	complete response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030224	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	36	F	True	False	1.0	complete response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030225	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	43	F	True	False	1.0	partial response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030226	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	pCR	1.0	35	F	True	False	1.0	partial response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030227	AC->ixabepilone	AC->ixabepilone	DOXORUBICIN;CYCLOPHOSPHAMIDE;IXABEPILONE	neoadjuvant	RD	0.0	58	F	True	False	0.0	stable disease	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030228	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	28	F	True	True	1.0	partial response	negative	positive	negative	pre-menopausal	> 5 cm
+GSM1030229	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	40	F	True	True	1.0	partial response	negative	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030230	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	56	F	True	True	0.0	partial response	negative	positive	negative	post-menopausal	2 - 5 cm
+GSM1030231	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	45	F	True	True	1.0	stable disease	negative	negative	positive	pre-menopausal	> 5 cm
+GSM1030232	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	39	F	True	True	0.0	stable disease	negative	negative	positive	pre-menopausal	2 - 5 cm
+GSM1030233	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	57	F	True	True	1.0	partial response	positive	negative	negative	post-menopausal	2 - 5 cm
+GSM1030234	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	67	F	True	True	0.0	partial response	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030235	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	73	F	True	True	0.0	partial response	positive	positive	positive	post-menopausal	> 5 cm
+GSM1030236	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	NA	NA	33	F	True	True	NA	partial response	negative	negative	positive	pre-menopausal	2 - 5 cm
+GSM1030237	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	53	F	True	True	0.0	stable disease	negative	negative	positive	post-menopausal	2 - 5 cm
+GSM1030238	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	55	F	True	True	0.0	partial response	negative	positive	positive	post-menopausal	2 - 5 cm
+GSM1030239	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	56	F	True	True	0.0	stable disease	negative	negative	positive	post-menopausal	2 - 5 cm
+GSM1030240	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	NA	NA	63	F	True	True	NA	complete response	positive	positive	negative	post-menopausal	> 5 cm
+GSM1030241	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	33	F	True	True	0.0	partial response	negative	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030242	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	33	F	True	True	0.0	partial response	negative	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030243	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	33	F	True	True	0.0	partial response	negative	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030244	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	60	F	True	True	0.0	stable disease	positive	positive	positive	post-menopausal	2 - 5 cm
+GSM1030245	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	55	F	True	True	0.0	stable disease	positive	positive	negative	post-menopausal	> 5 cm
+GSM1030246	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	42	F	True	True	1.0	stable disease	positive	positive	negative	pre-menopausal	< 2 cm
+GSM1030247	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	41	F	True	True	0.0	complete response	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030248	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	55	F	True	True	0.0	partial response	negative	positive	positive	post-menopausal	2 - 5 cm
+GSM1030249	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	44	F	True	True	0.0	partial response	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030250	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	54	F	True	True	0.0	partial response	positive	negative	negative	post-menopausal	> 5 cm
+GSM1030251	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	39	F	True	True	0.0	partial response	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030252	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	43	F	True	True	0.0	stable disease	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030253	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	41	F	True	True	0.0	partial response	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030254	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	45	F	True	True	0.0	stable disease	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030255	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	57	F	True	True	0.0	stable disease	positive	negative	negative	post-menopausal	2 - 5 cm
+GSM1030256	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	55	F	True	True	0.0	stable disease	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030257	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	45	F	True	True	0.0	complete response	positive	positive	negative	pre-menopausal	> 5 cm
+GSM1030258	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	58	F	True	True	0.0	stable disease	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030259	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	39	F	True	True	0.0	stable disease	negative	positive	negative	pre-menopausal	> 5 cm
+GSM1030260	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	50	F	True	True	1.0	partial response	positive	positive	negative	not reported	2 - 5 cm
+GSM1030261	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	58	F	True	True	0.0	partial response	negative	positive	negative	post-menopausal	> 5 cm
+GSM1030262	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	NA	NA	39	F	True	True	NA	partial response	negative	positive	positive	pre-menopausal	2 - 5 cm
+GSM1030263	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	56	F	True	True	0.0	partial response	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030264	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	48	F	True	True	0.0	partial response	positive	positive	negative	pre-menopausal	> 5 cm
+GSM1030265	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	46	F	True	True	0.0	partial response	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030266	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	43	F	True	True	0.0	partial response	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030267	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	42	F	True	True	0.0	partial response	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030268	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	36	F	True	True	0.0	stable disease	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030269	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	44	F	True	True	0.0	stable disease	positive	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030270	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	58	F	True	True	1.0	partial response	positive	negative	negative	post-menopausal	2 - 5 cm
+GSM1030271	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	59	F	True	True	1.0	complete response	positive	positive	negative	post-menopausal	> 5 cm
+GSM1030272	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	57	F	True	True	1.0	partial response	positive	negative	negative	post-menopausal	2 - 5 cm
+GSM1030273	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	38	F	True	True	0.0	partial response	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030274	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	43	F	True	True	0.0	partial response	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030275	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	58	F	True	True	0.0	partial response	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030276	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	34	F	True	True	0.0	partial response	positive	positive	negative	peri-menopausal	> 5 cm
+GSM1030277	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	65	F	True	True	0.0	complete response	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030278	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	50	F	True	True	0.0	partial response	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030279	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	40	F	True	True	0.0	partial response	positive	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030280	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	70	F	True	True	1.0	partial response	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030281	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	50	F	True	True	0.0	partial response	positive	positive	negative	peri-menopausal	2 - 5 cm
+GSM1030282	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	60	F	True	True	0.0	partial response	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030283	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	74	F	True	True	0.0	stable disease	positive	positive	negative	post-menopausal	> 5 cm
+GSM1030284	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	39	F	True	True	0.0	stable disease	positive	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030285	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	64	F	True	True	0.0	unable to determine	positive	positive	negative	post-menopausal	> 5 cm
+GSM1030286	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	37	F	True	True	1.0	stable disease	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030287	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	54	F	True	True	0.0	partial response	positive	positive	negative	post-menopausal	2 - 5 cm
+GSM1030288	AC only	AC only	DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	NA	NA	42	F	False	False	NA	partial response	positive	positive	negative	pre-menopausal	2 - 5 cm
+GSM1030289	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	40	F	True	True	0.0	partial response	positive	positive	negative	pre-menopausal	> 5 cm
+GSM1030290	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	35	F	True	True	1.0	partial response	negative	negative	positive	pre-menopausal	2 - 5 cm
+GSM1030291	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	47	F	True	True	1.0	partial response	positive	negative	negative	pre-menopausal	> 5 cm
+GSM1030292	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	50	F	True	True	0.0	complete response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030293	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	33	F	True	True	0.0	partial response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030294	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	54	F	True	True	1.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030295	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	54	F	True	True	0.0	stable disease	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030296	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	42	F	True	True	0.0	partial response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030297	AC only	AC only	DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	NA	NA	38	F	False	False	NA	partial response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030298	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	53	F	True	True	0.0	partial response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030299	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	32	F	True	True	1.0	partial response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030300	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	36	F	True	True	1.0	stable disease	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030301	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	48	F	True	True	1.0	partial response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030302	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	48	F	True	True	0.0	stable disease	negative	negative	negative	peri-menopausal	> 5 cm
+GSM1030303	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	37	F	True	True	1.0	partial response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030304	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	46	F	True	True	1.0	complete response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030305	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	44	F	True	True	1.0	partial response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030306	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	52	F	True	True	1.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030307	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	52	F	True	True	0.0	stable disease	negative	negative	negative	peri-menopausal	> 5 cm
+GSM1030308	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	52	F	True	True	0.0	stable disease	negative	negative	negative	peri-menopausal	> 5 cm
+GSM1030309	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	52	F	True	True	0.0	stable disease	negative	negative	negative	peri-menopausal	> 5 cm
+GSM1030310	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	34	F	True	True	0.0	partial response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030311	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	54	F	True	True	1.0	partial response	negative	negative	negative	post-menopausal	> 5 cm
+GSM1030312	AC only	AC only	DOXORUBICIN;CYCLOPHOSPHAMIDE	neoadjuvant	NA	NA	50	F	False	False	NA	unable to determine	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030313	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	37	F	True	True	0.0	stable disease	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030314	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	65	F	True	True	1.0	complete response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030315	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	41	F	True	True	1.0	complete response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030316	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	30	F	True	True	0.0	complete response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030317	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	44	F	True	True	0.0	partial response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030318	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	52	F	True	True	1.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030319	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	54	F	True	True	1.0	complete response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030320	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	57	F	True	True	0.0	stable disease	negative	negative	negative	post-menopausal	> 5 cm
+GSM1030321	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	57	F	True	True	0.0	complete response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030322	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	42	F	True	True	0.0	partial response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030323	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	38	F	True	True	0.0	partial response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030324	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	50	F	True	True	1.0	complete response	negative	negative	negative	peri-menopausal	2 - 5 cm
+GSM1030325	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	42	F	True	True	0.0	stable disease	negative	negative	negative	post-menopausal	> 5 cm
+GSM1030326	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	40	F	True	True	0.0	stable disease	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030327	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	37	F	True	True	1.0	complete response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030328	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	52	F	True	True	0.0	progressive disease	negative	negative	negative	not reported	> 5 cm
+GSM1030329	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	41	F	True	True	1.0	partial response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030330	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	60	F	True	True	0.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030331	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	51	F	True	True	1.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030332	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	NA	NA	40	F	True	True	NA	partial response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030333	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	48	F	True	True	1.0	partial response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030334	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	45	F	True	True	0.0	partial response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030335	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	69	F	True	True	1.0	stable disease	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030336	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	26	F	True	True	0.0	stable disease	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030337	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	41	F	True	True	0.0	complete response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030338	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	50	F	True	True	1.0	unable to determine	negative	negative	negative	post-menopausal	< 2 cm
+GSM1030339	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	NA	NA	45	F	True	True	NA	complete response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030340	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	50	F	True	True	1.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030341	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	32	F	True	True	1.0	complete response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030342	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	31	F	True	True	1.0	unable to determine	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030343	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	48	F	True	True	1.0	complete response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030344	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	46	F	True	True	0.0	partial response	negative	negative	negative	pre-menopausal	2 - 5 cm
+GSM1030345	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	46	F	True	True	1.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030346	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	34	F	True	True	0.0	stable disease	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030347	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	59	F	True	True	0.0	progressive disease	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030348	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	NA	NA	53	F	True	True	NA	partial response	negative	negative	negative	post-menopausal	> 5 cm
+GSM1030349	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	73	F	True	True	0.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030350	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	46	F	True	True	1.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030351	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	61	F	True	True	0.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030352	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	35	F	True	True	1.0	partial response	negative	negative	negative	pre-menopausal	> 5 cm
+GSM1030353	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	56	F	True	True	1.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030354	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	62	F	True	True	0.0	stable disease	negative	negative	negative	post-menopausal	> 5 cm
+GSM1030355	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	44	F	True	True	1.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030356	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	pCR	1.0	44	F	True	True	1.0	partial response	negative	negative	negative	post-menopausal	2 - 5 cm
+GSM1030357	AC->paclitaxel	AC->paclitaxel	DOXORUBICIN;CYCLOPHOSPHAMIDE;PACLITAXEL	neoadjuvant	RD	0.0	41	F	True	True	0.0	partial response	negative	negative	negative	post-menopausal	> 5 cm
