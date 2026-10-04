@@ -113,11 +113,11 @@ def apply(coef, sc, samples):
 def statistic(kind, score, clin, treated, control):
     """Return (effect, p, extra) for one test; effect oriented so > 0.5 / > 1 = model works."""
     if kind == "auc":
-        c = clin.loc[treated].dropna(subset=["responder"])
+        c = clin.loc[treated.index[treated.values]].dropna(subset=["responder"])
         s = score.loc[c.index]
         return roc_auc_score(c["responder"], s), None, {"n": len(c), "responders": int(c["responder"].sum())}
     idx = treated | control
-    c = clin.loc[idx].copy()
+    c = clin.loc[idx.index[idx.values]].copy()
     c["score"] = (score.loc[c.index] - score.loc[c.index].mean()) / score.loc[c.index].std()
     c["arm_t"] = treated.loc[c.index].astype(float)
     c["sxa"] = c["score"] * c["arm_t"]
