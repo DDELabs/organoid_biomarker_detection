@@ -1,0 +1,14 @@
+{
+ "n": 6902,
+ "events": 2460,
+ "cancers": 20,
+ "treated_frac": 0.43,
+ "HR_score_untreated": 0.8711808111274529,
+ "p_untreated": 1.1514287139605984e-05,
+ "HR_interaction": 0.9264052125362109,
+ "p_interaction": 0.06430248499991123,
+ "HR_score_untreated_only": 0.8807798001960553,
+ "p_untreated_only": 5.663655401724387e-05,
+ "HR_score_treated_only": 0.8070899646029591,
+ "p_treated_only": 1.6707209805257498e-15
+}
