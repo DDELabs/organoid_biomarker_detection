@@ -33,19 +33,32 @@ def baseline_coefficients(X, y, model):
 
 
 # ----------------------------------------------------------------- robust learner
-def _ensemble_coefs(X, y, rng=None):
-    """Coefficients of four penalised/robust linear learners on standardised data."""
+def _ensemble_coefs(X, y, rng=None, w=None, prior=None):
+    """Coefficients (per standardised pathway score) of four linear learners.
+
+    w: per-feature network-prior weights. Features are scaled by w before fitting,
+       equivalent to a ridge penalty of 1/w^2: distant pathways are shrunk harder
+       instead of being dropped by a hard cut-off. Coefficients are mapped back.
+    prior: prior coefficient vector on standardised features (e.g. a cell-line model);
+       learners fit the residual y - Xz·prior, i.e. shrink toward the prior.
+    """
     Xz = zscore(X)
     yz = (y - y.mean()) / (y.std() or 1.0)
-    return np.vstack([
-        Ridge(alpha=1.0).fit(Xz, yz).coef_,
-        np.ravel(SVR(kernel="linear", C=1.0).fit(Xz, yz).coef_),
-        ElasticNet(alpha=0.1, l1_ratio=0.5, max_iter=5000).fit(Xz, yz).coef_,
-        np.array([spearmanr(Xz[:, j], yz)[0] if Xz[:, j].std() > 0 else 0.0 for j in range(Xz.shape[1])]),
-    ])
+    if prior is not None:
+        yz = yz - Xz @ prior
+    w = np.ones(X.shape[1]) if w is None else np.asarray(w, float)
+    Xw = Xz * w
+    C = np.vstack([
+        Ridge(alpha=1.0).fit(Xw, yz).coef_,
+        np.ravel(SVR(kernel="linear", C=1.0).fit(Xw, yz).coef_),
+        ElasticNet(alpha=0.1, l1_ratio=0.5, max_iter=5000).fit(Xw, yz).coef_,
+        np.array([spearmanr(Xw[:, j], yz)[0] if Xw[:, j].std() > 0 else 0.0 for j in range(Xw.shape[1])]),
+    ]) * w
+    C[3] = np.nan_to_num(C[3])
+    return C if prior is None else C + prior
 
 
-def stability_selection(X, y, top_k=7, n_boot=200, frac=0.8, seed=0):
+def stability_selection(X, y, top_k=7, n_boot=200, frac=0.8, seed=0, w=None, prior=None):
     """Selection frequency of each feature among the top_k (by |coef|) of every learner,
     over random subsamples of organoids (Meinshausen & Buhlmann 2010 style).
 
@@ -60,7 +73,7 @@ def stability_selection(X, y, top_k=7, n_boot=200, frac=0.8, seed=0):
     total = 0
     for _ in range(n_boot):
         idx = rng.choice(n, m, replace=False)
-        C = _ensemble_coefs(X[idx], y[idx])
+        C = _ensemble_coefs(X[idx], y[idx], w=w, prior=prior)
         for c in C:
             top = np.argsort(-np.abs(c))[:top_k]
             freq[top] += 1
@@ -71,9 +84,9 @@ def stability_selection(X, y, top_k=7, n_boot=200, frac=0.8, seed=0):
     return freq / total, np.abs(signs) / sel, coef_sum / total
 
 
-def robust_signature(X, y, features, top_k=7, n_boot=200, min_freq=0.5, min_sign=0.9, seed=0):
+def robust_signature(X, y, features, top_k=7, n_boot=200, min_freq=0.5, min_sign=0.9, seed=0, w=None, prior=None):
     """Pathways selected stably and with a consistent sign; weights = mean ensemble coef."""
-    freq, sign_agree, coef = stability_selection(X, y, top_k, n_boot, seed=seed)
+    freq, sign_agree, coef = stability_selection(X, y, top_k, n_boot, seed=seed, w=w, prior=prior)
     table = pd.DataFrame({"selection_freq": freq, "sign_agreement": sign_agree, "mean_coef": coef}, index=features)
     chosen = table[(table.selection_freq >= min_freq) & (table.sign_agreement >= min_sign)]
     if chosen.empty:  # fall back to the most stable pathways

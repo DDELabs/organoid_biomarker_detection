@@ -238,6 +238,25 @@ def tcga_biotab_drugs(project):
     return out
 
 
+def tcga_biotab_drug_start(project, drug):
+    """Earliest start of the drug (days from diagnosis) per patient, from the biotab drug table."""
+    local = list((DATA / f"TCGA_{project}/clinical_drug").glob("*/nationwidechildrens.org_clinical_drug_*.txt"))
+    if local:
+        df = pd.read_csv(local[0], sep="\t")
+        df = df[df["bcr_patient_barcode"].astype(str).str.startswith("TCGA")]
+    else:
+        tcga_biotab_drugs(project)  # downloads the mirror
+        df = pd.read_csv(EXTERNAL / f"clinical_drug_{project.lower()}.txt", sep="\t", skiprows=[1, 2])
+    col = next(c for c in ("pharmaceutical_tx_started_days_to", "days_to_drug_therapy_start") if c in df.columns)
+    rows = []
+    for pat, name, start in zip(df["bcr_patient_barcode"], df["pharmaceutical_therapy_drug_name"], df[col]):
+        names = {common_drug_name(d) for d in str(name).upper().replace("-", "").replace(" ", "").split("AND")}
+        if drug in names:
+            rows.append((pat, pd.to_numeric(start, errors="coerce")))
+    out = pd.DataFrame(rows, columns=["patient", "start"]).dropna()
+    return out.groupby("patient")["start"].min()
+
+
 def paper_scores(cancer, source):
     """Pathway NES matrices committed by the original authors (pathways x samples)."""
     path = DATA.parent / f"python/results/{cancer.upper()}/{source}/reactome_ssgsea_result/gseapy.samples.normalized.es.txt"

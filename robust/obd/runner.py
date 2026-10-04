@@ -1,4 +1,5 @@
 """Run the full robust analysis for one drug across data versions and write a report."""
+import dataclasses
 import json
 import warnings
 
@@ -108,7 +109,7 @@ def run(versions, proximity, outdir, n_perm=500, cutoffs=(-1.0, -1.2816, -1.645)
     cut = {}
     for c in cutoffs:
         feats = [p for p in proximity.index if proximity[p] <= c]
-        sc = Study(st.cancer, st.drug, st.org_scores, st.response, st.pat_scores, st.clinical, st.treated, feats, label=f"z<={c}")
+        sc = dataclasses.replace(st, features=feats, label=f"z<={c}")  # keeps landmark/covariates/priors
         if len(sc.features) < 3:
             cut[str(c)] = {"n_pathways": len(sc.features), "signature": [], "adj_HR": np.nan, "adj_p": np.nan}
             continue

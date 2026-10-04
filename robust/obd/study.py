@@ -21,6 +21,10 @@ class Study:
     features: list                # candidate (network-proximal) pathways
     label: str = ""
     notes: dict = field(default_factory=dict)
+    feature_weights: pd.Series = None   # soft network prior per pathway (None = hard cut-off only)
+    prior_coef: pd.Series = None        # transfer prior (e.g. cell-line model) per pathway
+    patient_covars: pd.DataFrame = None  # extra adjustment covariates (e.g. proliferation)
+    landmark_days: pd.Series = None     # treatment start (days from diagnosis) per treated patient
 
     def __post_init__(self):
         samples = [s for s in self.response.dropna().index if s in self.org_scores.columns]
@@ -32,6 +36,17 @@ class Study:
         # patients are standardised within the patient cohort, as in the original pipeline
         self.P = pd.DataFrame(M.zscore(self.pat_scores.loc[feats, pats].T.values), index=pats, columns=feats)
         self.treated_pats = [p for p in pats if p in self.treated]
+        self.w = None if self.feature_weights is None else self.feature_weights.reindex(feats).fillna(0).values
+        self.prior = None if self.prior_coef is None else self.prior_coef.reindex(feats).fillna(0).values
+        self.extra_cov = [] if self.patient_covars is None else list(self.patient_covars.columns)
+        # survival of treated patients, optionally re-based at treatment start (landmark)
+        cl = self.clinical.loc[self.treated_pats, ["months", "event"]].copy()
+        if self.landmark_days is not None:
+            start = self.landmark_days.reindex(cl.index) / (365.25 / 12)
+            cl["months"] = cl["months"] - start
+            cl = cl[cl["months"] > 0]
+            self.treated_pats = list(cl.index)
+        self.treated_surv = cl
 
     def summary(self):
         return {"cancer": self.cancer, "drug": self.drug, "data": self.label,
@@ -47,19 +62,19 @@ class Study:
         """Validate a weighted pathway signature (score = predicted IC50) in patients."""
         tp = self.treated_pats
         score = self.patient_score(weights, tp)
-        cl = self.clinical.loc[tp]
+        cl = self.treated_surv.loc[tp]
         t, e = cl["months"].values, cl["event"].values
         resp = score <= np.median(score)
         out = {"n_treated": len(tp), "events": int(e.sum()),
                "logrank_p": S.logrank(t[resp], e[resp], t[~resp], e[~resp]),
                "os5_responder": S.km_at(t[resp], e[resp]), "os5_nonresponder": S.km_at(t[~resp], e[~resp]),
                "c_index": S.c_index(t, e, score)}
-        df = S.covariate_frame(self.clinical, tp)
+        df = self.covariates(tp)
         df["score"] = (score - score.mean()) / (score.std() or 1.0)
         df["months"], df["event"] = t, e
         try:
             u = S.cox(df, ["score"]).loc["score"]
-            af = S.cox(df, ["score", "stage_III", "stage_IV", "age", "sex"])
+            af = S.cox(df, ["score", "stage_III", "stage_IV", "age", "sex"] + self.extra_cov)
             a = af.loc["score"]
             out["adj_covariates"] = ",".join(c for c in af.attrs.get("covariates", af.index) if c != "score")
             out.update({"cox_HR": u.HR, "cox_p": u.p, "adj_HR": a.HR, "adj_HR_low": a.HR_low,
@@ -74,26 +89,32 @@ class Study:
         """Predictive vs prognostic: Cox on all patients with score x treated interaction."""
         pats = self.patients
         score = self.patient_score(weights, pats)
-        df = S.covariate_frame(self.clinical, pats)
+        df = self.covariates(pats)
         df["score"] = (score - score.mean()) / (score.std() or 1.0)
         df["treated"] = [float(p in self.treated) for p in pats]
         df["score_x_treated"] = df["score"] * df["treated"]
         df["months"] = self.clinical.loc[pats, "months"].values
         df["event"] = self.clinical.loc[pats, "event"].values
         try:
-            r = S.cox(df, ["score", "treated", "score_x_treated", "stage_III", "stage_IV", "age", "sex"])
+            r = S.cox(df, ["score", "treated", "score_x_treated", "stage_III", "stage_IV", "age", "sex"] + self.extra_cov)
             return {"prognostic_HR_untreated": r.loc["score", "HR"], "prognostic_p": r.loc["score", "p"],
                     "interaction_HR": r.loc["score_x_treated", "HR"], "interaction_p": r.loc["score_x_treated", "p"]}
         except Exception:
             return {"interaction_HR": np.nan, "interaction_p": np.nan}
+
+    def covariates(self, pats):
+        df = S.covariate_frame(self.clinical, pats)
+        if self.patient_covars is not None:
+            df = df.join(self.patient_covars.reindex(df.index))
+        return df
 
     # ------------------------------------------------------------ baseline (paper)
     def baseline(self, y=None, ks=range(2, 11)):
         """Kong et al. top-k pathways for Ridge / SVR / OLS, median split log-rank."""
         y = self.y if y is None else y
         tp = self.treated_pats
-        t = self.clinical.loc[tp, "months"].values
-        e = self.clinical.loc[tp, "event"].values
+        t = self.treated_surv.loc[tp, "months"].values
+        e = self.treated_surv.loc[tp, "event"].values
         Pt = self.P.loc[tp].values
         rows = []
         for model in M.BASELINE_MODELS:
@@ -112,7 +133,8 @@ class Study:
     def signature(self, y=None, X=None, top_k=7, n_boot=200, seed=0, align=False):
         X = self.X if X is None else X
         y = self.y if y is None else y
-        weights, table = M.robust_signature(X, y, self.features, top_k=top_k, n_boot=n_boot, seed=seed)
+        weights, table = M.robust_signature(X, y, self.features, top_k=top_k, n_boot=n_boot, seed=seed,
+                                            w=self.w, prior=self.prior)
         if align:  # PRECISE: re-estimate weights on organoid/patient shared directions
             basis, _ = M.precise_directions(X, self.P.values, n_components=min(10, X.shape[0] - 2), n_shared=5)
             w = pd.Series(M.precise_weights(X, y, basis), index=self.features)
