@@ -1,0 +1,208 @@
+{
+  "cancer": "LUAD",
+  "drug": "CISPLATIN",
+  "model": "gdsc",
+  "notes": {
+    "model": "gdsc",
+    "deconfound": {
+      "confounder_R2": 0.08148987830907228,
+      "beta_proliferation": -0.1905275540916769,
+      "beta_general": 0.4292296463678768
+    }
+  },
+  "versions": {
+    "nit": {
+      "summary": {
+        "cancer": "LUAD",
+        "drug": "CISPLATIN",
+        "data": "nit",
+        "organoids": 65,
+        "candidate_pathways": 279,
+        "patients_with_survival": 503,
+        "treated_patients": 80
+      },
+      "baseline_best": {
+        "ML": "Ridge",
+        "k": 7,
+        "logrank_p": 0.057301487872807186
+      },
+      "baseline_k7_ridge_p": 0.057301487872807186,
+      "signature": {
+        "REACTOME_RECYCLING_OF_BILE_ACIDS_AND_SALTS": -0.2206,
+        "REACTOME_EGFR_DOWNREGULATION": -0.2216
+      },
+      "robust": {
+        "n_treated": 80,
+        "events": 25,
+        "logrank_p": 0.7088526906685335,
+        "os5_responder": 0.43999197230860276,
+        "os5_nonresponder": 0.3190726358928851,
+        "c_index": 0.4924901185770751,
+        "adj_covariates": "stage_III,age,sex,proliferation",
+        "cox_HR": 0.9698838624276003,
+        "cox_p": 0.8803441829341513,
+        "adj_HR": 0.7141163329770477,
+        "adj_HR_low": 0.4450916071930558,
+        "adj_HR_high": 1.1457464683295917,
+        "adj_p": 0.16274169981763076,
+        "adj_n": 80,
+        "prognostic_HR_untreated": 0.8509185984115852,
+        "prognostic_p": 0.07176272766851606,
+        "interaction_HR": 1.0195065231290987,
+        "interaction_p": 0.9213390002515085
+      },
+      "robust_precise_aligned": {
+        "n_treated": 80,
+        "events": 25,
+        "logrank_p": 0.2509373142387283,
+        "os5_responder": 0.32418021860837115,
+        "os5_nonresponder": 0.6920190513878681,
+        "c_index": 0.47114624505928854,
+        "adj_covariates": "stage_III,age,sex,proliferation",
+        "cox_HR": 0.8984714835328702,
+        "cox_p": 0.6130286146748599,
+        "adj_HR": 0.7672227809405022,
+        "adj_HR_low": 0.4832222458139517,
+        "adj_HR_high": 1.2181367904587532,
+        "adj_p": 0.26126853109031045,
+        "adj_n": 80,
+        "prognostic_HR_untreated": 1.0220916260118975,
+        "prognostic_p": 0.7891990293827056,
+        "interaction_HR": 0.7957717060176507,
+        "interaction_p": 0.364010658893834
+      }
+    },
+    "nit_nodeconf": {
+      "summary": {
+        "cancer": "LUAD",
+        "drug": "CISPLATIN",
+        "data": "nit_nodeconf",
+        "organoids": 65,
+        "candidate_pathways": 279,
+        "patients_with_survival": 503,
+        "treated_patients": 80
+      },
+      "baseline_best": {
+        "ML": "SVR",
+        "k": 10,
+        "logrank_p": 0.3482292141263258
+      },
+      "baseline_k7_ridge_p": 0.70842461132351,
+      "signature": {
+        "REACTOME_RECYCLING_OF_BILE_ACIDS_AND_SALTS": -0.2688,
+        "REACTOME_ABCA_TRANSPORTERS_IN_LIPID_HOMEOSTASIS": 0.194,
+        "REACTOME_EGFR_DOWNREGULATION": -0.206,
+        "REACTOME_AMYLOIDS": 0.2049
+      },
+      "robust": {
+        "n_treated": 80,
+        "events": 25,
+        "logrank_p": 0.8816439511237902,
+        "os5_responder": 0.4884848484848485,
+        "os5_nonresponder": 0.4105690777925595,
+        "c_index": 0.5446640316205533,
+        "adj_covariates": "stage_III,age,sex,proliferation",
+        "cox_HR": 1.0651879788376697,
+        "cox_p": 0.7410411038617468,
+        "adj_HR": 0.9021794703748246,
+        "adj_HR_low": 0.5979702927735868,
+        "adj_HR_high": 1.3611508909423056,
+        "adj_p": 0.6237231435376546,
+        "adj_n": 80,
+        "prognostic_HR_untreated": 0.8468776859031102,
+        "prognostic_p": 0.05593305140381294,
+        "interaction_HR": 1.1413492365568334,
+        "interaction_p": 0.49139779576205245
+      },
+      "robust_precise_aligned": {
+        "n_treated": 80,
+        "events": 25,
+        "logrank_p": 0.5139069004219641,
+        "os5_responder": 0.5064888888888888,
+        "os5_nonresponder": 0.38620002490970246,
+        "c_index": 0.5367588932806324,
+        "adj_covariates": "stage_III,age,sex,proliferation",
+        "cox_HR": 1.037117230357655,
+        "cox_p": 0.8377449794031177,
+        "adj_HR": 1.021855880551423,
+        "adj_HR_low": 0.6533271741549154,
+        "adj_HR_high": 1.5982642111407546,
+        "adj_p": 0.924524280039052,
+        "adj_n": 80,
+        "prognostic_HR_untreated": 1.074889020519883,
+        "prognostic_p": 0.36098839388824566,
+        "interaction_HR": 0.9630006369410342,
+        "interaction_p": 0.8601769644551249
+      }
+    }
+  },
+  "organoid_cv": {
+    "robust_loocv_spearman": 0.17124125874125873,
+    "robust_loocv_p": 0.17259853609247525,
+    "baseline_loocv_spearman": 0.24060314685314682,
+    "baseline_loocv_p": 0.05352868881877623
+  },
+  "permutation": {
+    "n": 500,
+    "robust_adjHR_empirical_p": 0.9680638722554891,
+    "robust_logrank_empirical_p": 0.6746506986027944,
+    "baseline_min_p_observed": 0.0573014878728071,
+    "baseline_min_p_empirical_p": 0.31736526946107785
+  },
+  "fragility": {
+    "jackknife_HR_gt1_fraction": 0.0,
+    "jackknife_HR_range": [
+      0.6739250788126848,
+      0.876632189276186
+    ],
+    "bootstrap_HR_CI95": [
+      0.4434593001913891,
+      1.2504038393364092
+    ],
+    "bootstrap_HR_gt1_fraction": 0.15,
+    "cutoff_sensitivity": {
+      "-1.0": {
+        "n_pathways": 88,
+        "signature": [
+          "REACTOME_RECYCLING_OF_BILE_ACIDS_AND_SALTS",
+          "REACTOME_EGFR_DOWNREGULATION"
+        ],
+        "adj_HR": 0.716389122250594,
+        "adj_p": 0.16520043872648837
+      },
+      "-1.2816": {
+        "n_pathways": 69,
+        "signature": [
+          "REACTOME_RECYCLING_OF_BILE_ACIDS_AND_SALTS"
+        ],
+        "adj_HR": 0.8387850360168405,
+        "adj_p": 0.39059693808027685
+      },
+      "-1.645": {
+        "n_pathways": 43,
+        "signature": [
+          "REACTOME_RECYCLING_OF_BILE_ACIDS_AND_SALTS",
+          "REACTOME_HOST_INTERACTIONS_OF_HIV_FACTORS"
+        ],
+        "adj_HR": 0.7854265964397324,
+        "adj_p": 0.29267201485865757
+      }
+    }
+  },
+  "robust_pathways": [],
+  "supported_pathways": [
+    "REACTOME_EGFR_DOWNREGULATION",
+    "REACTOME_RECYCLING_OF_BILE_ACIDS_AND_SALTS",
+    "REACTOME_ABCA_TRANSPORTERS_IN_LIPID_HOMEOSTASIS",
+    "REACTOME_AMYLOIDS"
+  ],
+  "verdict": {
+    "permutation_significant": false,
+    "direction_consistent_all_versions": false,
+    "predictive_interaction_p_lt_0.1": false,
+    "events_in_treated": 25,
+    "adequately_powered": false,
+    "direction": "reversed (resistant score -> better survival)",
+    "signature_status": "not supported"
+  }
+}

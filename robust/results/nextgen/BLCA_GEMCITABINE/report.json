@@ -1,0 +1,218 @@
+{
+  "cancer": "BLCA",
+  "drug": "GEMCITABINE",
+  "model": "gdsc",
+  "notes": {
+    "model": "gdsc",
+    "deconfound": {
+      "confounder_R2": 0.527326644747971,
+      "beta_proliferation": -0.03691862517941279,
+      "beta_general": 3.3783488066232272
+    }
+  },
+  "versions": {
+    "nit": {
+      "summary": {
+        "cancer": "BLCA",
+        "drug": "GEMCITABINE",
+        "data": "nit",
+        "organoids": 17,
+        "candidate_pathways": 181,
+        "patients_with_survival": 401,
+        "treated_patients": 86
+      },
+      "baseline_best": {
+        "ML": "Ridge",
+        "k": 10,
+        "logrank_p": 0.004077137823446096
+      },
+      "baseline_k7_ridge_p": 0.060487196816688585,
+      "signature": {
+        "REACTOME_BASE_FREE_SUGAR_PHOSPHATE_REMOVAL_VIA_THE_SINGLE_NUCLEOTIDE_REPLACEMENT_PATHWAY": 0.1746,
+        "REACTOME_CYTOSOLIC_TRNA_AMINOACYLATION": 0.1954,
+        "REACTOME_EARLY_PHASE_OF_HIV_LIFE_CYCLE": 0.175,
+        "REACTOME_PYRIMIDINE_METABOLISM": -0.29
+      },
+      "robust": {
+        "n_treated": 86,
+        "events": 34,
+        "logrank_p": 0.25833510646857605,
+        "os5_responder": 0.3477333537177023,
+        "os5_nonresponder": 0.6235685011230694,
+        "c_index": 0.4103869653767821,
+        "adj_covariates": "stage_III,stage_IV,age,sex,proliferation",
+        "cox_HR": 0.6652781698123441,
+        "cox_p": 0.03108592562564345,
+        "adj_HR": 0.6874079690618744,
+        "adj_HR_low": 0.4599109970295198,
+        "adj_HR_high": 1.027437306308727,
+        "adj_p": 0.0675555106849652,
+        "adj_n": 84,
+        "prognostic_HR_untreated": 0.8947917505293482,
+        "prognostic_p": 0.20110891158630073,
+        "interaction_HR": 0.8365116410789704,
+        "interaction_p": 0.3825701002664066
+      },
+      "robust_precise_aligned": {
+        "n_treated": 86,
+        "events": 34,
+        "logrank_p": 0.842820086628573,
+        "os5_responder": 0.3531601803672572,
+        "os5_nonresponder": 0.5729746162030701,
+        "c_index": 0.5015274949083504,
+        "adj_covariates": "stage_III,stage_IV,age,sex,proliferation",
+        "cox_HR": 0.8669332943445841,
+        "cox_p": 0.4112980009480365,
+        "adj_HR": 0.9024930152791603,
+        "adj_HR_low": 0.5772104019524325,
+        "adj_HR_high": 1.4110862172140697,
+        "adj_p": 0.6527881341113699,
+        "adj_n": 84,
+        "prognostic_HR_untreated": 1.2722023976632253,
+        "prognostic_p": 0.02407164382287044,
+        "interaction_HR": 0.6551479652947853,
+        "interaction_p": 0.029252141747109498
+      }
+    },
+    "nit_nodeconf": {
+      "summary": {
+        "cancer": "BLCA",
+        "drug": "GEMCITABINE",
+        "data": "nit_nodeconf",
+        "organoids": 17,
+        "candidate_pathways": 181,
+        "patients_with_survival": 401,
+        "treated_patients": 86
+      },
+      "baseline_best": {
+        "ML": "Ridge",
+        "k": 9,
+        "logrank_p": 0.023430794605881593
+      },
+      "baseline_k7_ridge_p": 0.5629451339907094,
+      "signature": {
+        "REACTOME_PURINE_RIBONUCLEOSIDE_MONOPHOSPHATE_BIOSYNTHESIS": -0.2201,
+        "REACTOME_PURINE_METABOLISM": -0.2173,
+        "REACTOME_EARLY_PHASE_OF_HIV_LIFE_CYCLE": 0.2066
+      },
+      "robust": {
+        "n_treated": 86,
+        "events": 34,
+        "logrank_p": 0.9194026509936433,
+        "os5_responder": 0.4695844807596883,
+        "os5_nonresponder": 0.44324328465429697,
+        "c_index": 0.4760692464358452,
+        "adj_covariates": "stage_III,stage_IV,age,sex,proliferation",
+        "cox_HR": 1.0013076239592136,
+        "cox_p": 0.9941076261384355,
+        "adj_HR": 0.9800943478513288,
+        "adj_HR_low": 0.6369601279320979,
+        "adj_HR_high": 1.508077018586198,
+        "adj_p": 0.9271382240294863,
+        "adj_n": 84,
+        "prognostic_HR_untreated": 0.8960006827543816,
+        "prognostic_p": 0.23520935066539317,
+        "interaction_HR": 1.041559198834535,
+        "interaction_p": 0.8299740945737115
+      },
+      "robust_precise_aligned": {
+        "n_treated": 86,
+        "events": 34,
+        "logrank_p": 0.5116321706517593,
+        "os5_responder": 0.5552019583843328,
+        "os5_nonresponder": 0.3523624123389082,
+        "c_index": 0.4954175152749491,
+        "adj_covariates": "stage_III,stage_IV,age,sex,proliferation",
+        "cox_HR": 1.0695401804633866,
+        "cox_p": 0.7018309853607989,
+        "adj_HR": 1.0087859740325849,
+        "adj_HR_low": 0.6248315339007965,
+        "adj_HR_high": 1.628677629395128,
+        "adj_p": 0.9714484253972393,
+        "adj_n": 84,
+        "prognostic_HR_untreated": 0.8381463476916993,
+        "prognostic_p": 0.09142801134966708,
+        "interaction_HR": 1.212082750933611,
+        "interaction_p": 0.29213442643311494
+      }
+    }
+  },
+  "organoid_cv": {
+    "robust_loocv_spearman": -0.46323529411764713,
+    "robust_loocv_p": 0.061113371302034855,
+    "baseline_loocv_spearman": -0.33333333333333337,
+    "baseline_loocv_p": 0.19105762734590404
+  },
+  "permutation": {
+    "n": 500,
+    "robust_adjHR_empirical_p": 0.9660678642714571,
+    "robust_logrank_empirical_p": 0.1996007984031936,
+    "baseline_min_p_observed": 0.004077137823446,
+    "baseline_min_p_empirical_p": 0.06786427145708583
+  },
+  "fragility": {
+    "jackknife_HR_gt1_fraction": 0.0,
+    "jackknife_HR_range": [
+      0.5651681540978569,
+      0.9085624814848198
+    ],
+    "bootstrap_HR_CI95": [
+      0.3289328776138839,
+      1.012430326577978
+    ],
+    "bootstrap_HR_gt1_fraction": 0.035,
+    "cutoff_sensitivity": {
+      "-1.0": {
+        "n_pathways": 50,
+        "signature": [
+          "REACTOME_BASE_FREE_SUGAR_PHOSPHATE_REMOVAL_VIA_THE_SINGLE_NUCLEOTIDE_REPLACEMENT_PATHWAY",
+          "REACTOME_EARLY_PHASE_OF_HIV_LIFE_CYCLE",
+          "REACTOME_PYRIMIDINE_METABOLISM"
+        ],
+        "adj_HR": 0.7176821364710626,
+        "adj_p": 0.08204510577509384
+      },
+      "-1.2816": {
+        "n_pathways": 35,
+        "signature": [
+          "REACTOME_PYRIMIDINE_CATABOLISM",
+          "REACTOME_BASE_FREE_SUGAR_PHOSPHATE_REMOVAL_VIA_THE_SINGLE_NUCLEOTIDE_REPLACEMENT_PATHWAY",
+          "REACTOME_EARLY_PHASE_OF_HIV_LIFE_CYCLE",
+          "REACTOME_PYRIMIDINE_METABOLISM"
+        ],
+        "adj_HR": 0.6349420722990288,
+        "adj_p": 0.0189455376649887
+      },
+      "-1.645": {
+        "n_pathways": 22,
+        "signature": [
+          "REACTOME_PYRIMIDINE_CATABOLISM",
+          "REACTOME_BASE_FREE_SUGAR_PHOSPHATE_REMOVAL_VIA_THE_SINGLE_NUCLEOTIDE_REPLACEMENT_PATHWAY",
+          "REACTOME_CYTOSOLIC_TRNA_AMINOACYLATION",
+          "REACTOME_SYNTHESIS_AND_INTERCONVERSION_OF_NUCLEOTIDE_DI_AND_TRIPHOSPHATES",
+          "REACTOME_EARLY_PHASE_OF_HIV_LIFE_CYCLE",
+          "REACTOME_PYRIMIDINE_METABOLISM"
+        ],
+        "adj_HR": 0.7117548203597452,
+        "adj_p": 0.09596216413419587
+      }
+    }
+  },
+  "robust_pathways": [
+    "REACTOME_CYTOSOLIC_TRNA_AMINOACYLATION"
+  ],
+  "supported_pathways": [
+    "REACTOME_PYRIMIDINE_METABOLISM",
+    "REACTOME_BASE_FREE_SUGAR_PHOSPHATE_REMOVAL_VIA_THE_SINGLE_NUCLEOTIDE_REPLACEMENT_PATHWAY",
+    "REACTOME_EARLY_PHASE_OF_HIV_LIFE_CYCLE"
+  ],
+  "verdict": {
+    "permutation_significant": false,
+    "direction_consistent_all_versions": false,
+    "predictive_interaction_p_lt_0.1": false,
+    "events_in_treated": 34,
+    "adequately_powered": true,
+    "direction": "reversed (resistant score -> better survival)",
+    "signature_status": "not supported"
+  }
+}

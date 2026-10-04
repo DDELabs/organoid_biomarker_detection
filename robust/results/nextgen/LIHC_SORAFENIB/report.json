@@ -1,0 +1,217 @@
+{
+  "cancer": "LIHC",
+  "drug": "SORAFENIB",
+  "model": "licob",
+  "notes": {
+    "model": "licob",
+    "deconfound": {
+      "confounder_R2": 0.2071160044703496,
+      "beta_proliferation": -0.06435509179150936,
+      "beta_general": 0.01573822078511768
+    }
+  },
+  "versions": {
+    "nit": {
+      "summary": {
+        "cancer": "LIHC",
+        "drug": "SORAFENIB",
+        "data": "nit",
+        "organoids": 50,
+        "candidate_pathways": 278,
+        "patients_with_survival": 365,
+        "treated_patients": 25
+      },
+      "baseline_best": {
+        "ML": "SVR",
+        "k": 10,
+        "logrank_p": 0.036069714894530126
+      },
+      "baseline_k7_ridge_p": 0.22828913491962505,
+      "signature": {
+        "REACTOME_SIGNALING_BY_NOTCH4": 0.2842,
+        "REACTOME_DOWNSTREAM_SIGNAL_TRANSDUCTION": -0.245,
+        "REACTOME_SIGNAL_REGULATORY_PROTEIN_SIRP_FAMILY_INTERACTIONS": -0.3378,
+        "REACTOME_SOS_MEDIATED_SIGNALLING": 0.2421
+      },
+      "robust": {
+        "n_treated": 25,
+        "events": 15,
+        "logrank_p": 0.8371461025547723,
+        "os5_responder": 0.0,
+        "os5_nonresponder": 0.21428571428571427,
+        "c_index": 0.5463414634146342,
+        "adj_covariates": "stage_III,age,sex,proliferation",
+        "cox_HR": 1.186669099831113,
+        "cox_p": 0.5203713884739156,
+        "adj_HR": 1.4157493708724573,
+        "adj_HR_low": 0.7430526884627027,
+        "adj_HR_high": 2.697448393965897,
+        "adj_p": 0.29050671580570253,
+        "adj_n": 24,
+        "prognostic_HR_untreated": 1.0259350276952908,
+        "prognostic_p": 0.7940962667729372,
+        "interaction_HR": 1.1443607361991468,
+        "interaction_p": 0.5827399810351894
+      },
+      "robust_precise_aligned": {
+        "n_treated": 25,
+        "events": 15,
+        "logrank_p": 0.9628742483321497,
+        "os5_responder": 0.3418803418803419,
+        "os5_nonresponder": 0.0,
+        "c_index": 0.3902439024390244,
+        "adj_covariates": "stage_III,age,sex,proliferation",
+        "cox_HR": 0.518368105518606,
+        "cox_p": 0.03684375445804069,
+        "adj_HR": 0.36049396872248884,
+        "adj_HR_low": 0.15995682822797913,
+        "adj_HR_high": 0.8124436007200057,
+        "adj_p": 0.013856259973188805,
+        "adj_n": 24,
+        "prognostic_HR_untreated": 1.031271140700964,
+        "prognostic_p": 0.7543430714719215,
+        "interaction_HR": 0.7414938441357899,
+        "interaction_p": 0.40890918401014464
+      }
+    },
+    "nit_nodeconf": {
+      "summary": {
+        "cancer": "LIHC",
+        "drug": "SORAFENIB",
+        "data": "nit_nodeconf",
+        "organoids": 50,
+        "candidate_pathways": 278,
+        "patients_with_survival": 365,
+        "treated_patients": 25
+      },
+      "baseline_best": {
+        "ML": "SVR",
+        "k": 2,
+        "logrank_p": 0.03514509595892471
+      },
+      "baseline_k7_ridge_p": 0.44308812928860575,
+      "signature": {
+        "REACTOME_DOWNREGULATION_OF_ERBB2_ERBB3_SIGNALING": 0.2555,
+        "REACTOME_SIGNALING_BY_NOTCH4": 0.3105,
+        "REACTOME_SHC1_EVENTS_IN_EGFR_SIGNALING": -0.3281,
+        "REACTOME_DOWNSTREAM_SIGNAL_TRANSDUCTION": -0.267,
+        "REACTOME_SIGNAL_REGULATORY_PROTEIN_SIRP_FAMILY_INTERACTIONS": -0.3213
+      },
+      "robust": {
+        "n_treated": 25,
+        "events": 15,
+        "logrank_p": 0.9401855914761676,
+        "os5_responder": 0.0,
+        "os5_nonresponder": 0.26515151515151514,
+        "c_index": 0.5365853658536586,
+        "adj_covariates": "stage_III,age,sex,proliferation",
+        "cox_HR": 1.1949317999285898,
+        "cox_p": 0.5080652217111375,
+        "adj_HR": 1.6195939634186693,
+        "adj_HR_low": 0.7150172103922312,
+        "adj_HR_high": 3.6685614950488676,
+        "adj_p": 0.24774466674054718,
+        "adj_n": 24,
+        "prognostic_HR_untreated": 0.9520215966134583,
+        "prognostic_p": 0.6360331859469833,
+        "interaction_HR": 1.564403829120294,
+        "interaction_p": 0.10149636435871713
+      },
+      "robust_precise_aligned": {
+        "n_treated": 25,
+        "events": 15,
+        "logrank_p": 0.8147150384400141,
+        "os5_responder": 0.28846153846153855,
+        "os5_nonresponder": 0.0,
+        "c_index": 0.43902439024390244,
+        "adj_covariates": "stage_III,age,sex,proliferation",
+        "cox_HR": 0.8106118660955803,
+        "cox_p": 0.4411506856245061,
+        "adj_HR": 0.5710555682797991,
+        "adj_HR_low": 0.24357322134341822,
+        "adj_HR_high": 1.338835444490771,
+        "adj_p": 0.19748388638413739,
+        "adj_n": 24,
+        "prognostic_HR_untreated": 0.9602556717589225,
+        "prognostic_p": 0.717611571769301,
+        "interaction_HR": 1.2378138033008186,
+        "interaction_p": 0.4671861995326215
+      }
+    }
+  },
+  "organoid_cv": {
+    "robust_loocv_spearman": 0.09224489795918367,
+    "robust_loocv_p": 0.5240383366312202,
+    "baseline_loocv_spearman": 0.1741656662665066,
+    "baseline_loocv_p": 0.22640964109625428
+  },
+  "permutation": {
+    "n": 500,
+    "robust_adjHR_empirical_p": 0.37924151696606784,
+    "robust_logrank_empirical_p": 0.8183632734530938,
+    "baseline_min_p_observed": 0.0360697148945301,
+    "baseline_min_p_empirical_p": 0.38323353293413176
+  },
+  "fragility": {
+    "jackknife_HR_gt1_fraction": 0.98,
+    "jackknife_HR_range": [
+      0.7332133751976386,
+      2.1768716611700207
+    ],
+    "bootstrap_HR_CI95": [
+      0.46314587017411196,
+      4.814211045318665
+    ],
+    "bootstrap_HR_gt1_fraction": 0.885,
+    "cutoff_sensitivity": {
+      "-1.0": {
+        "n_pathways": 185,
+        "signature": [
+          "REACTOME_DOWNSTREAM_SIGNAL_TRANSDUCTION",
+          "REACTOME_SIGNAL_REGULATORY_PROTEIN_SIRP_FAMILY_INTERACTIONS",
+          "REACTOME_SOS_MEDIATED_SIGNALLING"
+        ],
+        "adj_HR": 1.7193823715768195,
+        "adj_p": 0.10497712900602443
+      },
+      "-1.2816": {
+        "n_pathways": 167,
+        "signature": [
+          "REACTOME_SIGNALING_BY_NOTCH4",
+          "REACTOME_DOWNSTREAM_SIGNAL_TRANSDUCTION",
+          "REACTOME_SIGNAL_REGULATORY_PROTEIN_SIRP_FAMILY_INTERACTIONS",
+          "REACTOME_SOS_MEDIATED_SIGNALLING"
+        ],
+        "adj_HR": 1.4786949506191018,
+        "adj_p": 0.2353822708019374
+      },
+      "-1.645": {
+        "n_pathways": 147,
+        "signature": [
+          "REACTOME_SIGNALING_BY_NOTCH4",
+          "REACTOME_DOWNSTREAM_SIGNAL_TRANSDUCTION",
+          "REACTOME_SIGNAL_REGULATORY_PROTEIN_SIRP_FAMILY_INTERACTIONS",
+          "REACTOME_SOS_MEDIATED_SIGNALLING"
+        ],
+        "adj_HR": 1.4610177364335486,
+        "adj_p": 0.24823244367748498
+      }
+    }
+  },
+  "robust_pathways": [
+    "REACTOME_SIGNAL_REGULATORY_PROTEIN_SIRP_FAMILY_INTERACTIONS",
+    "REACTOME_DOWNSTREAM_SIGNAL_TRANSDUCTION"
+  ],
+  "supported_pathways": [
+    "REACTOME_SIGNALING_BY_NOTCH4"
+  ],
+  "verdict": {
+    "permutation_significant": false,
+    "direction_consistent_all_versions": true,
+    "predictive_interaction_p_lt_0.1": false,
+    "events_in_treated": 15,
+    "adequately_powered": false,
+    "direction": "as expected (resistant score -> worse survival)",
+    "signature_status": "promising, not validated"
+  }
+}
