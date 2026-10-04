@@ -1,0 +1,157 @@
+sample	arm	drug	drugs	setting	os_months	os_event	pfs_months	pfs_event	age	sex	stage	randomised	control_arm	site	cms	kras	braf
+GSM2772122	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	87.814	0.0	87.814	0.0	48.0	Female	IIB	False	False	Aberdeen	UNK	MT	WT
+GSM2772123	surgery only	none	NONE	adjuvant	39.616	1.0	39.616	0.0	94.0	Female	IIB	False	True	Aberdeen	CMS1	WT	MT
+GSM2772124	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	88.208	0.0	88.208	0.0	47.0	Female	IIA	False	False	Aberdeen	CMS2	MT	WT
+GSM2772125	surgery only	none	NONE	adjuvant	21.666	1.0	12.197	1.0	77.0	Female	IIIB	False	True	Aberdeen	CMS4	NA	NA
+GSM2772126	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	87.682	0.0	87.682	0.0	60.0	Male	IIIA	False	False	Aberdeen	CMS2	WT	WT
+GSM2772127	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	87.518	0.0	87.518	0.0	68.0	Female	IIIB	False	False	Aberdeen	CMS4	WT	WT
+GSM2772128	surgery only	none	NONE	adjuvant	19.463	1.0	19.463	0.0	67.0	Male	IIIB	False	True	Aberdeen	UNK	WT	MT
+GSM2772129	surgery only	none	NONE	adjuvant	66.871	1.0	66.871	0.0	73.0	Male	IIA	False	True	Aberdeen	CMS3	MT	WT
+GSM2772130	surgery only	none	NONE	adjuvant	84.658	0.0	84.658	0.0	80.0	Female	IIA	False	True	Aberdeen	CMS3	WT	WT
+GSM2772131	surgery only	none	NONE	adjuvant	86.334	0.0	6.477	1.0	57.0	Male	IIA	False	True	Aberdeen	CMS2	WT	WT
+GSM2772132	surgery only	none	NONE	adjuvant	86.827	0.0	86.827	0.0	76.0	Male	IIA	False	True	Aberdeen	CMS1	WT	MT
+GSM2772133	surgery only	none	NONE	adjuvant	83.573	1.0	83.573	0.0	84.0	Female	IIIB	False	True	Aberdeen	CMS3	MT	WT
+GSM2772134	surgery only	none	NONE	adjuvant	84.23	0.0	84.23	0.0	71.0	Male	IIA	False	True	Aberdeen	UNK	MT	WT
+GSM2772135	surgery only	none	NONE	adjuvant	50.137	0.0	50.137	0.0	73.0	Male	IIA	False	True	Aberdeen	CMS2	WT	WT
+GSM2772136	surgery only	none	NONE	adjuvant	84.953	0.0	84.953	0.0	72.0	Male	IIA	False	True	Aberdeen	CMS2	WT	WT
+GSM2772137	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	83.967	0.0	83.967	0.0	61.0	Female	IIA	False	False	Aberdeen	CMS2	NA	NA
+GSM2772138	surgery only	none	NONE	adjuvant	82.225	0.0	82.225	0.0	58.0	Male	IIA	False	True	Aberdeen	CMS2	WT	WT
+GSM2772139	surgery only	none	NONE	adjuvant	24.69	1.0	24.69	0.0	75.0	Female	IIA	False	True	Aberdeen	CMS2	WT	WT
+GSM2772140	surgery only	none	NONE	adjuvant	77.622	0.0	77.622	0.0	80.0	Male	IIA	False	True	Aberdeen	UNK	WT	WT
+GSM2772141	surgery only	none	NONE	adjuvant	18.674	1.0	11.047	1.0	78.0	Male	IIIB	False	True	Aberdeen	CMS2	WT	WT
+GSM2772142	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	36.395	1.0	22.192	1.0	70.0	Female	IIIB	False	False	Aberdeen	CMS2	WT	WT
+GSM2772143	surgery only	none	NONE	adjuvant	1.808	1.0	0.362	1.0	48.0	Male	IIIC	False	True	Aberdeen	UNK	WT	WT
+GSM2772144	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	81.337	0.0	19.595	1.0	52.0	Female	IIIB	False	False	Aberdeen	CMS3	WT	WT
+GSM2772145	surgery only	none	NONE	adjuvant	34.619	1.0	34.619	0.0	84.0	Female	IIIC	False	True	Barcelona	CMS1	WT	MT
+GSM2772146	surgery only	none	NONE	adjuvant	7.496	1.0	7.496	0.0	72.2	Male	IIIC	False	True	Barcelona	CMS2	WT	WT
+GSM2772147	surgery only	none	NONE	adjuvant	7.266	1.0	3.879	1.0	74.4	Male	IIIC	False	True	Barcelona	CMS2	WT	WT
+GSM2772148	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	57.074	0.0	57.074	0.0	52.6	Female	IIIB	False	False	Barcelona	CMS4	MT	WT
+GSM2772149	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	21.436	1.0	21.436	0.0	65.2	Female	IIIC	False	False	Barcelona	CMS2	MT	WT
+GSM2772150	surgery only	none	NONE	adjuvant	22.323	0.0	2.17	1.0	73.6	Male	IIC	False	True	Barcelona	UNK	WT	MT
+GSM2772151	surgery only	none	NONE	adjuvant	41.622	0.0	41.622	0.0	77.1	Female	IIA	False	True	Barcelona	CMS1	WT	WT
+GSM2772152	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	55.463	0.0	55.463	0.0	63.0	Female	IIA	False	False	Barcelona	CMS2	MT	WT
+GSM2772153	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	57.271	0.0	57.271	0.0	55.5	Male	IIIB	False	False	Barcelona	CMS4	NA	NA
+GSM2772154	surgery only	none	NONE	adjuvant	33.929	1.0	33.567	1.0	85.7	Male	IIA	False	True	Barcelona	CMS4	MT	WT
+GSM2772155	surgery only	none	NONE	adjuvant	0.23	1.0	0.23	0.0	NA	Male	IIA	False	True	Barcelona	CMS2	WT	WT
+GSM2772156	surgery only	none	NONE	adjuvant	44.647	0.0	44.647	0.0	87.2	Female	IIC	False	True	Barcelona	UNK	WT	WT
+GSM2772157	surgery only	none	NONE	adjuvant	12.132	1.0	12.132	0.0	80.8	Female	IIA	False	True	Barcelona	CMS1	WT	MT
+GSM2772158	surgery only	none	NONE	adjuvant	45.304	0.0	45.304	0.0	68.5	Female	IIA	False	True	Barcelona	CMS3	MT	WT
+GSM2772159	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	48.329	0.0	48.329	0.0	81.8	Male	IIIB	False	False	Barcelona	CMS4	NA	NA
+GSM2772160	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	47.737	0.0	47.737	0.0	71.5	Male	IIC	False	False	Barcelona	CMS2	WT	WT
+GSM2772161	surgery only	none	NONE	adjuvant	0.362	1.0	0.362	0.0	86.5	Male	IIA	False	True	Barcelona	CMS2	WT	WT
+GSM2772162	NA	NA	NA	adjuvant	49.479	0.0	49.479	0.0	65.4	Male	IIIC	False	False	Barcelona	CMS4	MT	WT
+GSM2772163	surgery only	none	NONE	adjuvant	NA	NA	NA	0.0	73.1	Male	IIB	False	True	Barcelona	CMS2	NA	NA
+GSM2772164	surgery only	none	NONE	adjuvant	46.422	0.0	46.422	0.0	78.8	Female	IIIC	False	True	Barcelona	CMS4	MT	WT
+GSM2772165	surgery only	none	NONE	adjuvant	6.904	0.0	6.904	0.0	85.3	Male	IIIC	False	True	Barcelona	CMS4	MT	WT
+GSM2772166	surgery only	none	NONE	adjuvant	1.249	0.0	1.249	0.0	63.8	Female	IIC	False	True	Barcelona	CMS1	NA	NA
+GSM2772167	NA	NA	NA	adjuvant	48.23	0.0	48.23	0.0	67.0	Male	IIIC	False	False	Barcelona	CMS2	MT	WT
+GSM2772168	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	48.559	0.0	48.559	0.0	76.5	Female	IIIC	False	False	Barcelona	CMS2	NA	NA
+GSM2772169	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	41.622	0.0	41.622	0.0	61.0	Male	IIA	False	False	Barcelona	CMS2	WT	WT
+GSM2772170	surgery only	none	NONE	adjuvant	9.995	1.0	8.679	1.0	NA	Female	IIIC	False	True	Barcelona	CMS4	WT	MT
+GSM2772171	NA	NA	NA	adjuvant	12.822	1.0	12.822	NA	65.0	Male	IIIB	False	False	Barcelona	CMS4	MT	WT
+GSM2772172	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	44.877	0.0	44.877	0.0	65.9	Male	IIIC	False	False	Barcelona	CMS1	NA	NA
+GSM2772173	surgery only	none	NONE	adjuvant	47.803	0.0	47.803	0.0	78.4	Female	IIIB	False	True	Barcelona	CMS2	MT	WT
+GSM2772174	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	43.397	0.0	43.397	0.0	73.0	Female	IIC	False	False	Barcelona	CMS2	WT	WT
+GSM2772175	surgery only	none	NONE	adjuvant	10.816	1.0	10.816	0.0	81.2	Female	IIA	False	True	Barcelona	CMS2	NA	NA
+GSM2772176	surgery only	none	NONE	adjuvant	5.819	1.0	5.293	1.0	81.3	Male	IIIC	False	True	Barcelona	UNK	WT	WT
+GSM2772177	surgery only	none	NONE	adjuvant	5.293	1.0	5.293	0.0	74.9	Male	IIC	False	True	Barcelona	CMS2	NA	NA
+GSM2772178	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	44.975	0.0	16.373	1.0	57.1	Male	IIIB	False	False	Barcelona	CMS3	WT	WT
+GSM2772179	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	44.482	0.0	15.879	1.0	71.5	Male	IIIC	False	False	Barcelona	CMS4	MT	WT
+GSM2772180	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	38.071	1.0	5.49	1.0	69.1	Female	IIIB	False	False	Florence	CMS2	WT	WT
+GSM2772181	surgery only	none	NONE	adjuvant	164.384	1.0	164.384	0.0	62.0	Male	IIA	False	True	Florence	CMS2	WT	WT
+GSM2772182	surgery only	none	NONE	adjuvant	102.51	0.0	102.51	0.0	65.8	Female	IIA	False	True	Florence	CMS4	WT	WT
+GSM2772183	surgery only	none	NONE	adjuvant	104.811	0.0	104.811	0.0	68.4	Male	IIA	False	True	Florence	CMS4	WT	WT
+GSM2772184	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	14.334	1.0	7.792	1.0	74.9	Female	IIA	False	False	Florence	CMS1	MT	WT
+GSM2772185	surgery only	none	NONE	adjuvant	0.329	1.0	0.329	0.0	67.4	Male	IIA	False	True	Florence	UNK	MT	WT
+GSM2772186	surgery only	none	NONE	adjuvant	84.756	0.0	84.756	0.0	53.9	Female	IIA	False	True	SVH Dublin	CMS2	WT	WT
+GSM2772187	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	44.877	1.0	17.852	1.0	62.6	Male	IIIB	False	False	SVH Dublin	CMS4	NA	NA
+GSM2772188	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	79.627	0.0	79.627	0.0	63.4	Male	IIA	False	False	SVH Dublin	CMS2	WT	WT
+GSM2772189	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	79.167	0.0	79.167	0.0	66.0	Male	IIIB	False	False	SVH Dublin	CMS4	WT	WT
+GSM2772190	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	45.041	1.0	36.625	1.0	73.5	Male	IIIB	False	False	SVH Dublin	CMS4	WT	WT
+GSM2772191	surgery only	none	NONE	adjuvant	9.6	1.0	9.074	1.0	84.2	Female	IIIC	False	True	SVH Dublin	CMS1	WT	MT
+GSM2772192	surgery only	none	NONE	adjuvant	70.323	0.0	70.323	0.0	84.7	Female	IIIB	False	True	SVH Dublin	CMS2	WT	WT
+GSM2772193	surgery only	none	NONE	adjuvant	68.285	0.0	68.285	0.0	78.3	Male	IIA	False	True	SVH Dublin	CMS2	WT	WT
+GSM2772194	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	63.616	0.0	63.616	0.0	42.5	Female	IIIB	False	False	SVH Dublin	CMS2	WT	WT
+GSM2772195	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	64.471	0.0	64.471	0.0	53.3	Male	IIA	False	False	SVH Dublin	CMS3	WT	WT
+GSM2772196	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	58.422	0.0	58.422	0.0	69.6	Female	IIIB	False	False	SVH Dublin	CMS2	WT	WT
+GSM2772197	surgery only	none	NONE	adjuvant	27.682	1.0	17.951	1.0	84.9	Male	IIIB	False	True	SVH Dublin	CMS2	MT	WT
+GSM2772198	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	89.786	0.0	89.786	0.0	64.1	Male	IIA	False	False	SVH Dublin	CMS1	MT	WT
+GSM2772199	surgery only	none	NONE	adjuvant	93.896	0.0	93.896	0.0	75.9	Male	IIIA	False	True	SVH Dublin	CMS1	MT	WT
+GSM2772200	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	90.773	1.0	90.773	0.0	63.0	Male	IIA	False	False	SVH Dublin	CMS4	WT	WT
+GSM2772201	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	37.874	1.0	17.458	1.0	66.9	Male	IIIB	False	False	SVH Dublin	CMS4	WT	WT
+GSM2772202	surgery only	none	NONE	adjuvant	47.803	1.0	47.803	0.0	86.6	Female	IIA	False	True	SVH Dublin	CMS3	WT	WT
+GSM2772203	surgery only	none	NONE	adjuvant	67.66	0.0	67.66	0.0	85.5	Female	IIA	False	True	SVH Dublin	CMS1	WT	MT
+GSM2772204	surgery only	none	NONE	adjuvant	7.529	1.0	NA	1.0	77.7	Female	IIIB	False	True	SVH Dublin	UNK	WT	WT
+GSM2772205	surgery only	none	NONE	adjuvant	40.011	1.0	38.268	1.0	75.5	Male	IIA	False	True	SVH Dublin	CMS2	NA	NA
+GSM2772206	surgery only	none	NONE	adjuvant	56.811	0.0	56.811	0.0	78.6	Male	IIA	False	True	SVH Dublin	CMS2	WT	WT
+GSM2772207	surgery only	none	NONE	adjuvant	41.293	1.0	19.463	1.0	83.9	Female	IIIA	False	True	SVH Dublin	CMS2	MT	WT
+GSM2772208	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	205.249	0.0	205.249	0.0	42.8	Female	IIA	False	False	Florence	CMS3	MT	WT
+GSM2772209	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	58.356	1.0	31.726	1.0	62.9	Male	IIIA	False	False	Florence	CMS2	WT	WT
+GSM2772210	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	217.94	0.0	27.452	1.0	51.5	Male	IIA	False	False	Florence	CMS4	WT	WT
+GSM2772211	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	214.356	0.0	214.356	0.0	36.6	Male	IIA	False	False	Florence	CMS2	MT	WT
+GSM2772212	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	212.121	0.0	212.121	0.0	62.7	Female	IIIB	False	False	Florence	CMS2	MT	WT
+GSM2772213	surgery only	none	NONE	adjuvant	59.704	1.0	59.704	0.0	83.7	Male	IIA	False	True	Florence	CMS3	WT	WT
+GSM2772214	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	30.411	1.0	20.614	1.0	56.4	Female	IIIB	False	False	Florence	CMS3	MT	WT
+GSM2772215	surgery only	none	NONE	adjuvant	97.512	0.0	97.512	0.0	67.0	Male	IIIB	False	True	Florence	UNK	WT	WT
+GSM2772216	surgery only	none	NONE	adjuvant	43.266	1.0	43.266	0.0	83.7	Female	IIA	False	True	Florence	CMS4	WT	WT
+GSM2772217	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	98.005	0.0	98.005	0.0	75.6	Male	IIIB	False	False	Florence	CMS1	WT	WT
+GSM2772218	surgery only	none	NONE	adjuvant	55.956	1.0	55.956	0.0	86.1	Female	IIIB	False	True	Barcelona	CMS4	WT	WT
+GSM2772219	surgery only	none	NONE	adjuvant	57.205	1.0	57.205	0.0	84.6	Male	IIIB	False	True	Barcelona	CMS2	WT	WT
+GSM2772220	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	35.54	1.0	26.038	1.0	76.6	Male	IIIB	False	False	Barcelona	CMS2	WT	WT
+GSM2772221	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	91.364	0.0	91.364	0.0	73.3	Male	IIA	False	False	Barcelona	CMS2	MT	WT
+GSM2772222	surgery only	none	NONE	adjuvant	27.978	1.0	7.825	1.0	71.8	Male	IIIC	False	True	Barcelona	CMS1	WT	MT
+GSM2772223	surgery only	none	NONE	adjuvant	66.444	1.0	66.444	0.0	80.8	Male	IIA	False	True	Barcelona	CMS3	WT	WT
+GSM2772224	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	105.271	0.0	105.271	0.0	69.0	Male	IIA	False	False	Barcelona	CMS3	MT	WT
+GSM2772225	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	55.332	1.0	55.332	0.0	80.7	Female	IIIB	False	False	Barcelona	CMS1	WT	MT
+GSM2772226	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	88.175	0.0	88.175	0.0	73.8	Male	IIIB	False	False	Barcelona	CMS3	WT	MT
+GSM2772227	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	90.049	0.0	90.049	0.0	59.0	Male	IIA	False	False	Barcelona	CMS2	WT	WT
+GSM2772228	surgery only	none	NONE	adjuvant	82.619	1.0	60.132	1.0	84.6	Female	IIIB	False	True	Barcelona	CMS3	MT	WT
+GSM2772229	surgery only	none	NONE	adjuvant	71.408	1.0	71.408	0.0	82.7	Male	IIB	False	True	Barcelona	UNK	MT	WT
+GSM2772230	surgery only	none	NONE	adjuvant	58.652	1.0	58.652	0.0	88.0	Female	IIA	False	True	Barcelona	UNK	MT	WT
+GSM2772231	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	95.605	0.0	95.605	0.0	44.1	Female	IIA	False	False	Barcelona	CMS1	WT	WT
+GSM2772232	surgery only	none	NONE	adjuvant	52.734	1.0	21.764	1.0	69.6	Male	IIIA	False	True	Barcelona	CMS3	MT	WT
+GSM2772233	surgery only	none	NONE	adjuvant	102.74	0.0	102.74	0.0	77.5	Female	IIIC	False	True	Barcelona	UNK	MT	WT
+GSM2772234	surgery only	none	NONE	adjuvant	63.912	0.0	63.912	NA	57.7	Male	IIA	False	True	Barcelona	CMS3	WT	WT
+GSM2772235	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	97.315	0.0	97.315	0.0	69.7	Male	IIIB	False	False	Barcelona	CMS3	MT	WT
+GSM2772236	surgery only	none	NONE	adjuvant	92.285	0.0	92.285	0.0	67.6	Female	IIA	False	True	Barcelona	CMS4	MT	WT
+GSM2772237	surgery only	none	NONE	adjuvant	48.855	1.0	48.855	0.0	80.2	Female	IIA	False	True	Barcelona	CMS3	WT	WT
+GSM2772238	surgery only	none	NONE	adjuvant	62.86	0.0	62.86	0.0	69.6	Male	IIA	False	True	Barcelona	CMS2	WT	WT
+GSM2772239	surgery only	none	NONE	adjuvant	92.449	0.0	92.449	0.0	72.5	Female	IIA	False	True	Barcelona	UNK	MT	WT
+GSM2772240	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	99.781	0.0	99.781	0.0	61.9	Female	IIA	False	False	Barcelona	CMS2	MT	WT
+GSM2772241	surgery only	none	NONE	adjuvant	18.345	1.0	18.345	1.0	61.8	Male	IIB	False	True	Barcelona	CMS2	WT	WT
+GSM2772242	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	37.381	1.0	10.389	1.0	68.7	Male	IIIC	False	False	Barcelona	CMS4	WT	WT
+GSM2772243	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	59.704	0.0	29.096	1.0	60.1	Male	IIIB	False	False	SVH Dublin	CMS2	MT	WT
+GSM2772244	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	57.501	0.0	57.501	0.0	73.2	Female	IIIB	False	False	SVH Dublin	UNK	NA	NA
+GSM2772245	surgery only	none	NONE	adjuvant	57.699	0.0	57.699	0.0	81.2	Female	IIA	False	True	SVH Dublin	CMS4	MT	WT
+GSM2772246	surgery only	none	NONE	adjuvant	55.595	0.0	55.595	0.0	60.7	Male	IIA	False	True	SVH Dublin	CMS2	MT	WT
+GSM2772247	surgery only	none	NONE	adjuvant	56.679	0.0	56.679	0.0	75.3	Female	IIA	False	True	SVH Dublin	CMS2	WT	WT
+GSM2772248	surgery only	none	NONE	adjuvant	41.03	1.0	36.822	1.0	64.7	Male	IIA	False	True	SVH Dublin	CMS3	MT	WT
+GSM2772249	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	52.34	0.0	52.34	0.0	57.0	Female	IIIB	False	False	SVH Dublin	CMS2	WT	WT
+GSM2772250	surgery only	none	NONE	adjuvant	54.444	0.0	54.444	0.0	71.1	Male	IIA	False	True	SVH Dublin	CMS2	MT	WT
+GSM2772251	surgery only	none	NONE	adjuvant	53.162	0.0	53.162	0.0	66.8	Female	IIA	False	True	SVH Dublin	CMS2	WT	WT
+GSM2772252	surgery only	none	NONE	adjuvant	53.359	0.0	53.359	0.0	68.5	Male	IIA	False	True	SVH Dublin	UNK	MT	WT
+GSM2772253	surgery only	none	NONE	adjuvant	45.403	0.0	45.403	0.0	53.2	Male	IIA	False	True	SVH Dublin	CMS1	MT	WT
+GSM2772254	surgery only	none	NONE	adjuvant	49.348	0.0	49.348	0.0	78.0	Male	IIA	False	True	SVH Dublin	CMS2	WT	WT
+GSM2772255	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	38.827	1.0	8.022	1.0	72.9	Female	IIIB	False	False	SVH Dublin	UNK	MT	WT
+GSM2772256	surgery only	none	NONE	adjuvant	48.625	1.0	48.625	0.0	93.0	Female	IIIB	False	True	SVH Dublin	CMS3	MT	WT
+GSM2772257	surgery only	none	NONE	adjuvant	43.43	0.0	43.43	0.0	70.1	Female	IIA	False	True	SVH Dublin	CMS1	MT	WT
+GSM2772258	surgery only	none	NONE	adjuvant	47.474	0.0	47.474	0.0	72.7	Male	IIA	False	True	SVH Dublin	CMS2	WT	WT
+GSM2772259	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	44.548	0.0	44.548	0.0	62.2	Male	IIB	False	False	SVH Dublin	CMS3	WT	WT
+GSM2772260	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	49.085	0.0	21.403	1.0	67.2	Female	IIIC	False	False	SVH Dublin	CMS2	WT	WT
+GSM2772261	surgery only	none	NONE	adjuvant	39.682	0.0	39.682	0.0	83.8	Male	IIA	False	True	SVH Dublin	CMS1	WT	MT
+GSM2772262	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	43.397	0.0	19.463	1.0	58.4	Male	IIIB	False	False	SVH Dublin	CMS2	NA	NA
+GSM2772263	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	20.153	1.0	4.142	1.0	62.1	Male	IIIB	False	False	SVH Dublin	CMS1	MT	WT
+GSM2772264	surgery only	none	NONE	adjuvant	43.233	0.0	43.233	0.0	86.8	Male	IIIB	False	True	SVH Dublin	CMS1	MT	WT
+GSM2772265	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	36.953	0.0	36.953	0.0	59.1	Female	IIA	False	False	SVH Dublin	CMS1	WT	WT
+GSM2772266	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	37.775	0.0	37.775	0.0	70.4	Female	IIIB	False	False	SVH Dublin	CMS1	WT	MT
+GSM2772267	surgery only	none	NONE	adjuvant	44.745	0.0	44.745	0.0	72.6	Male	IIA	False	True	SVH Dublin	CMS4	WT	WT
+GSM2772268	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	39.156	0.0	39.156	0.0	60.8	Male	IIIB	False	False	SVH Dublin	CMS1	MT	WT
+GSM2772269	surgery only	none	NONE	adjuvant	35.967	0.0	35.967	0.0	59.3	Male	IIA	False	True	SVH Dublin	CMS2	NA	NA
+GSM2772270	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	92.055	0.0	4.636	1.0	55.0	Female	IIIB	False	False	Aberdeen	CMS1	WT	MT
+GSM2772271	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	91.595	0.0	91.595	0.0	48.0	Male	IIIB	False	False	Aberdeen	UNK	NA	NA
+GSM2772272	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	40.734	1.0	16.603	1.0	81.0	Male	IIIB	False	False	Aberdeen	CMS2	MT	WT
+GSM2772273	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	24.0	1.0	13.249	1.0	46.0	Female	IIIA	False	False	Aberdeen	UNK	MT	WT
+GSM2772274	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	131.474	0.0	131.474	0.0	52.0	Male	IIA	False	False	Barcelona	CMS4	NA	NA
+GSM2772275	surgery only	none	NONE	adjuvant	148.866	0.0	148.866	0.0	62.4	Female	IIB	False	True	Barcelona	CMS4	NA	NA
+GSM2772276	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	143.244	0.0	143.244	0.0	73.8	Female	IIB	False	False	Barcelona	UNK	NA	NA
+GSM2772277	adjuvant chemo	adjuvant fluoropyrimidine-based chemotherapy	FLUOROURACIL	adjuvant	36.099	1.0	14.564	1.0	64.1	Female	IIA	False	False	Florence	CMS2	MT	WT

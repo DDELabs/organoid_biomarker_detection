@@ -1,0 +1,268 @@
+sample	arm	drug	drugs	setting	response	responder	os_months	os_event	rfs_months	rfs_event	age	sex	stage	randomised	control_arm	neoadjuvant	grade	histology	primary_site	debulking	batch
+GSM249732	platinum	platinum	PLATINUM	adjuvant	NR (RFS<12m)	0.0	18.72689938398357	1.0	8.870636550308008	1.0	73.0	F	3.0c	False	False	n	3.0	ser	ov	NA	2004-12-03
+GSM249733	no platinum	no platinum	NA	adjuvant	NA	NA	111.37577002053388	0.0	79.83572895277207	1.0	52.0	F	3.0b	False	False	n	NA	ser	ov	NA	2005-01-12
+GSM249734	platinum	platinum	PLATINUM	adjuvant	NA	NA	0.0	0.0	0.0	0.0	43.0	F	3.0a	False	False	n	3.0	ser	ov	optimal	2005-01-17
+GSM249735	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	14.784394250513348	1.0	14.784394250513348	1.0	54.0	F	3.0c	False	False	n	2.0	ser	ov	NA	2005-02-21
+GSM249736	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	34.496919917864474	1.0	13.79876796714579	1.0	79.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2004-12-03
+GSM249737	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	31.540041067761805	1.0	18.72689938398357	1.0	52.0	F	3.0c	False	False	n	NA	ser	ov	NA	2005-02-21
+GSM249738	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	104.47638603696099	1.0	56.18069815195072	1.0	63.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2004-12-23
+GSM249739	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	41.39630390143737	1.0	19.71252566735113	1.0	63.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-05-05
+GSM249740	platinum	platinum	PLATINUM	adjuvant	NA	NA	1.9712525667351128	1.0	1.9712525667351128	0.0	63.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-07-15
+GSM249741	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	109.40451745379877	1.0	100.53388090349075	1.0	54.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-01-12
+GSM249742	platinum	platinum	PLATINUM	adjuvant	NR (RFS<12m)	0.0	15.770020533880903	1.0	7.885010266940451	1.0	53.0	F	3.0c	False	False	n	2.0	ser	ov	NA	2005-07-06
+GSM249743	platinum	platinum	PLATINUM	adjuvant	NR (RFS<12m)	0.0	17.741273100616016	1.0	10.841889117043122	1.0	47.0	F	4.0	False	False	n	3.0	ser	ov	NA	2005-06-16
+GSM249744	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	26.611909650924023	1.0	26.611909650924023	1.0	71.0	F	2.0c	False	False	n	3.0	ser	ov	suboptimal	2005-02-21
+GSM249745	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	68.0082135523614	1.0	12.813141683778234	1.0	52.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-06-16
+GSM249746	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	71.95071868583162	1.0	49.281314168377826	1.0	57.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-06-08
+GSM249747	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	47.31006160164271	1.0	18.72689938398357	1.0	75.0	F	3.0c	False	False	n	3.0	ser	ov	NA	2004-12-03
+GSM249748	platinum	platinum	PLATINUM	adjuvant	NR (RFS<12m)	0.0	11.827515400410677	1.0	5.9137577002053385	1.0	72.0	F	3.0c	False	False	n	3.0	ser	other	NA	2005-06-06
+GSM249749	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	23.655030800821354	1.0	13.79876796714579	1.0	58.0	F	3.0b	False	False	n	3.0	ser	ov	optimal	2005-01-24
+GSM249750	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	25.626283367556468	1.0	12.813141683778234	1.0	53.0	F	4.0	False	False	n	3.0	ser	ov	suboptimal	2005-06-06
+GSM249751	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	57.16632443531827	1.0	43.36755646817249	1.0	76.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-01-24
+GSM249752	platinum	platinum	PLATINUM	adjuvant	NR (RFS<12m)	0.0	12.813141683778234	1.0	6.899383983572895	1.0	68.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-02-21
+GSM249753	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	210.92402464065708	0.0	15.770020533880903	1.0	40.0	F	2.0c	False	False	n	1.0	ser	ov	optimal	2005-06-17
+GSM249754	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	21.683778234086244	0.0	21.683778234086244	0.0	80.0	F	3.0b	False	False	n	3.0	ser	ov	optimal	2006-04-13
+GSM249755	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NA	NA	26.611909650924023	0.0	NA	1.0	62.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-12-21
+GSM249756	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	22.6694045174538	0.0	17.741273100616016	1.0	62.0	F	3.0c	False	False	n	2.0	ser	ov	suboptimal	2005-11-09
+GSM249757	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	18.72689938398357	1.0	13.79876796714579	1.0	69.0	F	3.0b	False	False	n	1.0	endo	ov	NA	2006-04-13
+GSM249758	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	18.72689938398357	0.0	18.72689938398357	0.0	79.0	F	3.0c	False	False	n	3.0	ser	ov	NA	2006-04-06
+GSM249759	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	22.6694045174538	0.0	9.856262833675565	1.0	70.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-08-24
+GSM249760	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	22.6694045174538	0.0	10.841889117043122	1.0	59.0	F	3.0c	False	False	n	3.0	ser	ov	NA	2005-10-05
+GSM249761	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	neoadjuvant	R (RFS>=12m)	1.0	21.683778234086244	0.0	16.75564681724846	1.0	55.0	F	NA	False	False	y	1.0	ser	ft	NA	2005-08-18
+GSM249762	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	31.540041067761805	0.0	12.813141683778234	1.0	53.0	F	3.0c	False	False	n	2.0	ser	ov	NA	2005-11-04
+GSM249763	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	neoadjuvant	NR (RFS<12m)	0.0	25.626283367556468	0.0	10.841889117043122	1.0	67.0	F	3.0c	False	False	y	2.0	ser	ov	NA	2005-07-15
+GSM249764	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	28.583162217659137	0.0	28.583162217659137	0.0	68.0	F	3.0c	False	False	n	3.0	ser	other	optimal	2005-08-24
+GSM249765	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	37.45379876796714	0.0	12.813141683778234	1.0	69.0	F	3.0c	False	False	n	3.0	ser	other	NA	2005-08-05
+GSM249766	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	34.496919917864474	1.0	14.784394250513348	1.0	52.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2004-12-23
+GSM249767	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	26.611909650924023	1.0	13.79876796714579	1.0	54.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-08-18
+GSM249768	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	neoadjuvant	NR (RFS<12m)	0.0	27.59753593429158	0.0	6.899383983572895	1.0	72.0	F	4.0	False	False	y	2.0	ser	other	suboptimal	2005-09-09
+GSM249769	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	19.71252566735113	1.0	10.841889117043122	1.0	59.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-01-31
+GSM249770	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	42.38193018480493	1.0	27.59753593429158	1.0	50.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-01-17
+GSM249771	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	45.3388090349076	1.0	12.813141683778234	1.0	58.0	F	3.0c	False	False	n	3.0	ser	other	optimal	2005-06-02
+GSM249773	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	48.29568788501027	0.0	48.29568788501027	0.0	75.0	F	3.0b	False	False	n	3.0	ser	ov	optimal	2005-01-17
+GSM249774	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	41.39630390143737	0.0	17.741273100616016	1.0	59.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-09-09
+GSM249775	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	39.42505133470226	1.0	13.79876796714579	1.0	64.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-01-12
+GSM249776	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	43.36755646817249	0.0	23.655030800821354	1.0	53.0	F	3.0b	False	False	n	3.0	ser	ov	optimal	2004-12-23
+GSM249777	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NA	NA	5.9137577002053385	0.0	5.9137577002053385	0.0	77.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-12-15
+GSM249778	no platinum	no platinum	NA	adjuvant	NA	NA	11.827515400410677	0.0	11.827515400410677	0.0	73.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2006-05-03
+GSM249779	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	43.36755646817249	0.0	43.36755646817249	0.0	51.0	F	1.0a	False	False	n	1.0	endo	ov	optimal	2006-01-31
+GSM249780	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	32.525667351129364	0.0	14.784394250513348	1.0	64.0	F	3.0c	False	False	n	2.0	ser	ov	suboptimal	2006-01-20
+GSM249781	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	28.583162217659137	0.0	28.583162217659137	0.0	55.0	F	4.0	False	False	n	3.0	ser	ov	suboptimal	2005-06-24
+GSM249782	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	24.640657084188913	1.0	10.841889117043122	1.0	73.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-08-26
+GSM249783	no platinum	no platinum	NA	adjuvant	NA	NA	7.885010266940451	0.0	7.885010266940451	0.0	56.0	F	1.0c	False	False	n	3.0	ser	ov	optimal	2005-07-29
+GSM249784	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	19.71252566735113	0.0	19.71252566735113	0.0	60.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2005-10-28
+GSM249785	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	27.59753593429158	0.0	27.59753593429158	0.0	68.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2006-04-13
+GSM249786	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	19.71252566735113	1.0	10.841889117043122	1.0	55.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2006-05-03
+GSM249788	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	32.525667351129364	0.0	32.525667351129364	0.0	53.0	F	1.0c	False	False	n	3.0	ser	ov	optimal	2006-05-03
+GSM249789	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	neoadjuvant	R (RFS>=12m)	1.0	33.51129363449692	0.0	33.51129363449692	0.0	52.0	F	3.0c	False	False	y	3.0	ser	ov	optimal	2006-01-20
+GSM249790	no platinum	no platinum	NA	adjuvant	NA	NA	NA	0.0	NA	0.0	42.0	F	3.0c	False	False	n	2.0	endo	ov	suboptimal	2006-05-03
+GSM249791	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	22.6694045174538	0.0	10.841889117043122	1.0	47.0	F	3.0c	False	False	n	3.0	endo	ov	suboptimal	2005-07-20
+GSM249792	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	44.35318275154004	0.0	44.35318275154004	0.0	64.0	F	1.0c	False	False	n	2.0	ser	ov	optimal	2005-06-06
+GSM249793	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	43.36755646817249	0.0	43.36755646817249	0.0	50.0	F	2.0b	False	False	n	3.0	ser	ov	optimal	2006-02-08
+GSM249794	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NA	NA	41.39630390143737	0.0	NA	1.0	51.0	F	2.0c	False	False	n	2.0	ser	ov	NA	2006-06-22
+GSM249795	no platinum	no platinum	NA	adjuvant	NA	NA	8.870636550308008	0.0	8.870636550308008	0.0	56.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-07-29
+GSM249796	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	11.827515400410677	1.0	3.9425051334702257	1.0	79.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-12-21
+GSM249797	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	45.3388090349076	0.0	15.770020533880903	1.0	40.0	F	4.0	False	False	n	2.0	ser	ov	suboptimal	2006-07-19
+GSM249798	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	48.29568788501027	1.0	28.583162217659137	1.0	52.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2006-06-22
+GSM249799	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	30.55441478439425	0.0	16.75564681724846	1.0	69.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2006-04-28
+GSM249800	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NA	NA	7.885010266940451	0.0	7.885010266940451	0.0	75.0	F	3.0c	False	False	n	3.0	ser	ft	optimal	2005-12-15
+GSM249801	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	17.741273100616016	1.0	15.770020533880903	1.0	77.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2005-12-15
+GSM249802	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	33.51129363449692	1.0	25.626283367556468	1.0	52.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2006-06-22
+GSM249803	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NA	NA	17.741273100616016	0.0	NA	1.0	73.0	F	3.0a	False	False	n	2.0	ser	ov	suboptimal	2006-04-12
+GSM249804	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	39.42505133470226	1.0	19.71252566735113	1.0	55.0	F	3.0b	False	False	n	2.0	ser	ov	suboptimal	2006-07-19
+GSM249805	platinum	platinum	PLATINUM	adjuvant	NR (RFS<12m)	0.0	15.770020533880903	1.0	7.885010266940451	1.0	80.0	F	4.0	False	False	n	3.0	ser	ov	suboptimal	2006-01-31
+GSM249806	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	22.6694045174538	1.0	6.899383983572895	1.0	71.0	F	3.0c	False	False	n	3.0	ser	other	suboptimal	2006-01-31
+GSM249807	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	11.827515400410677	1.0	9.856262833675565	1.0	66.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2005-11-11
+GSM249808	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	45.3388090349076	0.0	45.3388090349076	0.0	52.0	F	1.0a	False	False	n	3.0	ser	ov	optimal	2005-09-21
+GSM249809	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	50.26694045174538	0.0	50.26694045174538	1.0	66.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2006-04-28
+GSM249810	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	49.281314168377826	0.0	11.827515400410677	1.0	50.0	F	3.0	False	False	n	2.0	ser	other	suboptimal	2006-06-06
+GSM249811	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	50.26694045174538	0.0	42.38193018480493	1.0	39.0	F	3.0a	False	False	n	2.0	ser	ov	optimal	2005-12-21
+GSM249812	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	21.683778234086244	1.0	13.79876796714579	1.0	77.0	F	3.0c	False	False	n	2.0	ser	ov	suboptimal	2005-10-26
+GSM249813	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	51.252566735112936	0.0	51.252566735112936	0.0	59.0	F	3.0c	False	False	n	3.0	ser	ft	suboptimal	2005-08-24
+GSM249814	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	54.209445585215605	0.0	20.698151950718685	1.0	67.0	F	3.0c	False	False	n	3.0	ser	other	suboptimal	2006-01-31
+GSM249815	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	43.36755646817249	1.0	22.6694045174538	1.0	64.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2005-06-02
+GSM249816	platinum	platinum	PLATINUM	adjuvant	NR (RFS<12m)	0.0	4.9281314168377826	1.0	3.9425051334702257	1.0	71.0	F	3.0c	False	False	n	2.0	ser	ov	suboptimal	2006-05-03
+GSM249817	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	18.72689938398357	1.0	11.827515400410677	1.0	23.0	F	3.0c	False	False	n	2.0	ser	ov	suboptimal	2005-12-15
+GSM249818	platinum	platinum	PLATINUM	adjuvant	NR (RFS<12m)	0.0	7.885010266940451	1.0	2.9568788501026693	1.0	71.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2006-06-06
+GSM249819	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	19.71252566735113	1.0	9.856262833675565	1.0	53.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2005-01-31
+GSM249820	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	9.856262833675565	1.0	9.856262833675565	1.0	58.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2006-02-28
+GSM249821	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	8.870636550308008	0.0	8.870636550308008	1.0	72.0	F	3.0c	False	False	n	2.0	ser	ov	suboptimal	2006-06-06
+GSM249822	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	24.640657084188913	1.0	12.813141683778234	1.0	37.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-01-31
+GSM249823	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	64.06570841889118	0.0	64.06570841889118	0.0	51.0	F	3.0c	False	False	n	2.0	ser	other	suboptimal	2006-04-05
+GSM249824	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	16.75564681724846	0.0	16.75564681724846	0.0	70.0	F	3.0b	False	False	n	2.0	ser	ov	optimal	2006-06-22
+GSM249825	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	16.75564681724846	0.0	7.885010266940451	1.0	73.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-06-17
+GSM249826	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	17.741273100616016	0.0	17.741273100616016	0.0	55.0	F	3.0a	False	False	n	2.0	ser	ov	optimal	2005-08-03
+GSM249827	platinum	platinum	PLATINUM	neoadjuvant	R (RFS>=12m)	1.0	37.45379876796714	1.0	12.813141683778234	1.0	57.0	F	3.0	False	False	y	3.0	ser	ov	suboptimal	2006-06-06
+GSM249828	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	34.496919917864474	0.0	14.784394250513348	1.0	57.0	F	3.0c	False	False	n	3.0	ser	other	suboptimal	2005-09-14
+GSM249829	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	12.813141683778234	1.0	6.899383983572895	1.0	61.0	F	3.0c	False	False	n	3.0	ser	other	suboptimal	2005-08-05
+GSM249830	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	31.540041067761805	0.0	13.79876796714579	1.0	65.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-08-03
+GSM249831	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	24.640657084188913	0.0	5.9137577002053385	1.0	64.0	F	3.0c	False	False	n	3.0	ser	other	optimal	2006-04-06
+GSM249832	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	14.784394250513348	0.0	14.784394250513348	0.0	53.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2005-08-26
+GSM249833	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	40.41067761806981	0.0	40.41067761806981	0.0	56.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2006-04-05
+GSM249834	platinum	platinum	PLATINUM	adjuvant	NR (RFS<12m)	0.0	4.9281314168377826	1.0	4.9281314168377826	1.0	75.0	F	3.0c	False	False	n	2.0	ser	other	suboptimal	2005-06-08
+GSM249835	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	34.496919917864474	1.0	14.784394250513348	1.0	66.0	F	4.0	False	False	n	3.0	ser	ov	suboptimal	2005-06-08
+GSM249836	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	70.96509240246407	0.0	70.96509240246407	0.0	56.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2006-06-06
+GSM249837	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	neoadjuvant	R (RFS>=12m)	1.0	64.06570841889118	1.0	18.72689938398357	1.0	47.0	F	3.0c	False	False	y	3.0	ser	ov	suboptimal	2005-06-02
+GSM249838	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	60.12320328542094	1.0	20.698151950718685	1.0	38.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-11-04
+GSM249839	platinum	platinum	PLATINUM	adjuvant	NR (RFS<12m)	0.0	7.885010266940451	1.0	6.899383983572895	1.0	56.0	F	3.0	False	False	n	3.0	ser	ov	optimal	2006-01-31
+GSM249840	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	37.45379876796714	1.0	15.770020533880903	1.0	57.0	F	3.0c	False	False	n	2.0	ser	ov	suboptimal	2006-04-28
+GSM249841	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	56.18069815195072	1.0	16.75564681724846	1.0	48.0	F	3.0c	False	False	n	2.0	ser	ov	suboptimal	2005-06-16
+GSM249842	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	77.86447638603696	0.0	29.568788501026695	1.0	59.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2005-06-02
+GSM249843	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	44.35318275154004	1.0	20.698151950718685	1.0	59.0	F	3.0c	False	False	n	3.0	ser	other	suboptimal	2005-01-31
+GSM249844	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	67.02258726899385	1.0	26.611909650924023	1.0	62.0	F	3.0	False	False	n	3.0	ser	ov	optimal	2005-05-27
+GSM249845	platinum	platinum	PLATINUM	adjuvant	NR (RFS<12m)	0.0	25.626283367556468	1.0	9.856262833675565	1.0	58.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-05-30
+GSM249846	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	32.525667351129364	1.0	8.870636550308008	1.0	70.0	F	3.0c	False	False	n	2.0	ser	ov	suboptimal	2005-01-31
+GSM249847	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	49.281314168377826	1.0	19.71252566735113	1.0	63.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2005-06-17
+GSM249848	platinum	platinum	PLATINUM	adjuvant	NR (RFS<12m)	0.0	26.611909650924023	1.0	10.841889117043122	1.0	49.0	F	4.0	False	False	n	2.0	ser	ov	suboptimal	2005-09-16
+GSM249849	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	5.9137577002053385	1.0	4.9281314168377826	1.0	58.0	F	3.0c	False	False	n	2.0	ser	ov	suboptimal	2005-05-09
+GSM249850	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	26.611909650924023	1.0	10.841889117043122	1.0	62.0	F	1.0c	False	False	n	2.0	ser	ov	optimal	2005-09-16
+GSM249851	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NA	NA	3.9425051334702257	0.0	3.9425051334702257	0.0	51.0	F	3.0c	False	False	n	3.0	ser	ov	NA	2005-11-11
+GSM249852	platinum	platinum	PLATINUM	adjuvant	NR (RFS<12m)	0.0	32.525667351129364	1.0	11.827515400410677	1.0	74.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-10-05
+GSM249853	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	51.252566735112936	1.0	26.611909650924023	1.0	52.0	F	3.0c	False	False	n	1.0	ser	ov	suboptimal	2005-03-17
+GSM249854	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	89.69199178644764	0.0	89.69199178644764	1.0	66.0	F	3.0c	False	False	n	3.0	ser	ov	NA	2005-12-15
+GSM249855	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	20.698151950718685	1.0	11.827515400410677	1.0	70.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2006-02-28
+GSM249856	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	28.583162217659137	0.0	28.583162217659137	0.0	53.0	F	1.0a	False	False	n	1.0	endo	ov	NA	2006-04-12
+GSM249857	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	34.496919917864474	0.0	19.71252566735113	1.0	56.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-07-20
+GSM249858	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	neoadjuvant	R (RFS>=12m)	1.0	20.698151950718685	1.0	12.813141683778234	1.0	61.0	F	4.0	False	False	y	3.0	ser	ov	suboptimal	2006-06-22
+GSM249859	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	13.79876796714579	1.0	6.899383983572895	1.0	60.0	F	4.0	False	False	n	2.0	ser	ov	suboptimal	2005-06-24
+GSM249860	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	10.841889117043122	1.0	3.9425051334702257	1.0	46.0	F	3.0c	False	False	n	2.0	ser	ov	suboptimal	2006-06-07
+GSM249861	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	34.496919917864474	0.0	9.856262833675565	1.0	62.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2005-06-08
+GSM249862	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	40.41067761806981	1.0	10.841889117043122	1.0	69.0	F	3.0c	False	False	n	3.0	ser	ov	NA	2005-01-12
+GSM249863	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	27.59753593429158	1.0	8.870636550308008	1.0	57.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-09-14
+GSM249864	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	11.827515400410677	1.0	6.899383983572895	1.0	64.0	F	4.0	False	False	n	3.0	ser	other	suboptimal	2005-09-21
+GSM249865	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	42.38193018480493	0.0	10.841889117043122	1.0	59.0	F	2.0c	False	False	n	2.0	ser	other	optimal	2005-07-20
+GSM249866	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	36.46817248459959	1.0	14.784394250513348	1.0	49.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-01-24
+GSM249867	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	16.75564681724846	1.0	9.856262833675565	1.0	61.0	F	3.0c	False	False	n	3.0	ser	other	optimal	2005-01-17
+GSM249868	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	47.31006160164271	0.0	47.31006160164271	0.0	65.0	F	3.0c	False	False	n	2.0	endo	ov	NA	2005-06-06
+GSM249869	no platinum	no platinum	NA	adjuvant	NA	NA	47.31006160164271	0.0	47.31006160164271	0.0	75.0	F	1.0b	False	False	n	1.0	ser	ov	optimal	2005-05-25
+GSM249870	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	48.29568788501027	0.0	48.29568788501027	0.0	53.0	F	1.0c	False	False	n	2.0	endo	ov	optimal	2005-06-02
+GSM249871	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	42.38193018480493	0.0	31.540041067761805	1.0	65.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-02-21
+GSM249872	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	20.698151950718685	1.0	10.841889117043122	1.0	48.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-02-21
+GSM249873	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	neoadjuvant	R (RFS>=12m)	1.0	50.26694045174538	0.0	19.71252566735113	1.0	60.0	F	4.0	False	False	y	2.0	ser	other	optimal	2005-10-05
+GSM249874	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	44.35318275154004	0.0	44.35318275154004	0.0	63.0	F	1.0c	False	False	n	2.0	ser	ov	optimal	2006-07-19
+GSM249875	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	37.45379876796714	1.0	15.770020533880903	1.0	68.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2006-06-22
+GSM249876	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	58.15195071868583	0.0	19.71252566735113	1.0	59.0	F	4.0	False	False	n	3.0	ser	ov	NA	2005-12-21
+GSM249877	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	52.238193018480494	0.0	18.72689938398357	1.0	60.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2006-06-22
+GSM249878	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	53.223819301848046	0.0	24.640657084188913	1.0	47.0	F	3.0c	False	False	n	3.0	endo	ov	optimal	2006-04-12
+GSM249879	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	15.770020533880903	1.0	5.9137577002053385	1.0	71.0	F	3.0c	False	False	n	3.0	ser	ov	NA	2006-06-07
+GSM249880	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	54.209445585215605	0.0	43.36755646817249	1.0	57.0	F	3.0b	False	False	n	2.0	ser	ov	optimal	2005-11-23
+GSM249881	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	28.583162217659137	0.0	14.784394250513348	1.0	66.0	F	3.0c	False	False	n	2.0	ser	ov	NA	2005-08-18
+GSM249882	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	68.0082135523614	1.0	8.870636550308008	1.0	59.0	F	3.0c	False	False	n	1.0	ser	ov	optimal	2005-01-31
+GSM249883	platinum	platinum	PLATINUM	adjuvant	NA	NA	0.0	0.0	0.0	0.0	73.0	F	3.0b	False	False	n	2.0	ser	ov	optimal	2006-02-08
+GSM249884	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	92.64887063655031	0.0	39.42505133470226	1.0	67.0	F	4.0	False	False	n	3.0	ser	ov	NA	2005-09-16
+GSM249885	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	24.640657084188913	0.0	10.841889117043122	1.0	52.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2005-11-23
+GSM249886	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	20.698151950718685	0.0	20.698151950718685	0.0	59.0	F	3.0c	False	False	n	3.0	endo	ov	optimal	2006-01-31
+GSM249887	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	15.770020533880903	1.0	4.9281314168377826	1.0	54.0	F	3.0c	False	False	n	3.0	ser	other	optimal	2005-11-04
+GSM249888	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	28.583162217659137	1.0	12.813141683778234	1.0	44.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-11-09
+GSM249889	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	28.583162217659137	0.0	28.583162217659137	0.0	71.0	F	1.0c	False	False	n	2.0	ser	ov	optimal	2005-08-03
+GSM249890	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	22.6694045174538	1.0	5.9137577002053385	1.0	56.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2005-11-11
+GSM249891	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	22.6694045174538	0.0	22.6694045174538	0.0	63.0	F	3.0c	False	False	n	2.0	ser	other	optimal	2006-07-19
+GSM249892	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	26.611909650924023	0.0	26.611909650924023	0.0	57.0	F	1.0c	False	False	n	1.0	endo	ov	optimal	2006-04-28
+GSM249893	platinum	platinum	PLATINUM	adjuvant	NR (RFS<12m)	0.0	20.698151950718685	0.0	8.870636550308008	1.0	77.0	F	3.0c	False	False	n	3.0	endo	ov	optimal	2005-08-03
+GSM249894	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	25.626283367556468	0.0	25.626283367556468	0.0	76.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2005-07-20
+GSM249895	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	29.568788501026695	0.0	28.583162217659137	1.0	63.0	F	4.0	False	False	n	2.0	ser	ov	optimal	2005-11-04
+GSM249896	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	34.496919917864474	0.0	9.856262833675565	1.0	50.0	F	3.0c	False	False	n	3.0	ser	other	optimal	2005-09-14
+GSM249897	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	28.583162217659137	0.0	22.6694045174538	1.0	53.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2005-06-24
+GSM249898	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	40.41067761806981	0.0	26.611909650924023	1.0	54.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2006-07-19
+GSM249899	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	24.640657084188913	0.0	9.856262833675565	1.0	54.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2006-06-22
+GSM249900	no platinum	no platinum	NA	adjuvant	NA	NA	44.35318275154004	0.0	44.35318275154004	0.0	58.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-07-29
+GSM249901	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	47.31006160164271	0.0	47.31006160164271	0.0	70.0	F	2.0c	False	False	n	2.0	endo	ov	NA	2005-01-24
+GSM249902	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	13.79876796714579	1.0	13.79876796714579	1.0	74.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-09-16
+GSM249903	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	60.12320328542094	1.0	31.540041067761805	1.0	52.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-01-31
+GSM249904	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	47.31006160164271	1.0	12.813141683778234	1.0	67.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2005-01-31
+GSM249905	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	33.51129363449692	1.0	7.885010266940451	1.0	55.0	F	3.0c	False	False	n	3.0	ser	ov	NA	2005-03-17
+GSM249906	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	43.36755646817249	1.0	8.870636550308008	1.0	56.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2005-01-24
+GSM249907	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	56.18069815195072	0.0	56.18069815195072	0.0	53.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2006-04-12
+GSM249908	unknown	unknown	NA	adjuvant	NA	NA	NA	NA	NA	NA	NA	F	NA	False	False	NA	NA	endo	ov	NA	2005-12-21
+GSM249909	no platinum	no platinum	NA	adjuvant	NA	NA	NA	0.0	NA	0.0	60.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-12-21
+GSM249910	no platinum	no platinum	NA	adjuvant	NA	NA	22.6694045174538	0.0	22.6694045174538	0.0	52.0	F	3.0c	False	False	n	1.0	ser	ov	optimal	2006-07-19
+GSM249911	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	19.71252566735113	1.0	10.841889117043122	1.0	62.0	F	3.0c	False	False	n	3.0	ser	other	optimal	2005-11-23
+GSM249912	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	20.698151950718685	0.0	20.698151950718685	0.0	55.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2005-10-05
+GSM249913	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	23.655030800821354	0.0	13.79876796714579	1.0	71.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-11-09
+GSM249914	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	12.813141683778234	1.0	4.9281314168377826	1.0	63.0	F	3.0c	False	False	n	3.0	ser	other	suboptimal	2005-09-14
+GSM249915	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	29.568788501026695	0.0	12.813141683778234	1.0	43.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2005-12-15
+GSM249916	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	29.568788501026695	0.0	29.568788501026695	0.0	44.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-08-05
+GSM249917	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	35.48254620123203	0.0	11.827515400410677	1.0	60.0	F	3.0c	False	False	n	3.0	ser	ov	NA	2005-06-24
+GSM249918	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	29.568788501026695	0.0	29.568788501026695	0.0	54.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2005-08-03
+GSM249919	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	21.683778234086244	1.0	9.856262833675565	1.0	60.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-09-09
+GSM249920	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	36.46817248459959	1.0	14.784394250513348	1.0	33.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-07-15
+GSM249921	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	23.655030800821354	1.0	9.856262833675565	1.0	70.0	F	3.0c	False	False	n	3.0	ser	other	suboptimal	2005-11-11
+GSM249922	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	31.540041067761805	0.0	31.540041067761805	0.0	57.0	F	1.0b	False	False	n	3.0	endo	ov	optimal	2005-06-24
+GSM249923	no platinum	no platinum	NA	adjuvant	NA	NA	2.9568788501026693	0.0	2.9568788501026693	0.0	74.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-07-15
+GSM249924	no platinum	no platinum	NA	adjuvant	NA	NA	NA	0.0	NA	0.0	74.0	F	3.0c	False	False	n	2.0	ser	ov	suboptimal	2005-12-15
+GSM249925	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	13.79876796714579	1.0	9.856262833675565	1.0	60.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-11-04
+GSM249926	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	neoadjuvant	R (RFS>=12m)	1.0	31.540041067761805	0.0	31.540041067761805	0.0	53.0	F	3.0c	False	False	y	3.0	ser	ov	optimal	2005-10-05
+GSM249927	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	25.626283367556468	1.0	13.79876796714579	1.0	47.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2005-02-21
+GSM249928	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	39.42505133470226	0.0	39.42505133470226	0.0	56.0	F	1.0a	False	False	n	3.0	ser	ov	optimal	2005-01-12
+GSM249929	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	21.683778234086244	1.0	10.841889117043122	1.0	57.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-01-24
+GSM249930	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	23.655030800821354	0.0	18.72689938398357	1.0	75.0	F	3.0a	False	False	n	3.0	ser	ov	optimal	2005-08-26
+GSM249931	no platinum	no platinum	NA	adjuvant	NA	NA	0.9856262833675564	1.0	0.9856262833675564	1.0	77.0	F	3.0c	False	False	n	2.0	ser	other	suboptimal	2005-09-09
+GSM249932	no platinum	no platinum	NA	adjuvant	NA	NA	21.683778234086244	0.0	20.698151950718685	1.0	49.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-11-11
+GSM249933	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	neoadjuvant	NR (RFS<12m)	0.0	15.770020533880903	1.0	7.885010266940451	1.0	59.0	F	4.0	False	False	y	2.0	ser	ov	NA	2005-09-14
+GSM249934	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	35.48254620123203	0.0	10.841889117043122	1.0	45.0	F	3.0c	False	False	n	2.0	ser	ov	suboptimal	2005-08-24
+GSM249935	platinum	platinum	PLATINUM	adjuvant	NR (RFS<12m)	0.0	28.583162217659137	0.0	10.841889117043122	1.0	57.0	F	3.0c	False	False	n	3.0	ser	ft	suboptimal	2005-07-29
+GSM249936	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	40.41067761806981	0.0	40.41067761806981	0.0	69.0	F	3.0a	False	False	n	3.0	ser	ov	optimal	2005-06-08
+GSM249937	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NA	NA	10.841889117043122	0.0	10.841889117043122	0.0	58.0	F	3.0c	False	False	n	3.0	ser	other	suboptimal	2005-06-02
+GSM249938	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	34.496919917864474	0.0	34.496919917864474	0.0	60.0	F	2.0c	False	False	n	3.0	ser	ft	optimal	2005-02-21
+GSM249939	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	36.46817248459959	0.0	31.540041067761805	1.0	68.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-09-16
+GSM249940	platinum	platinum	PLATINUM	adjuvant	NR (RFS<12m)	0.0	1.9712525667351128	1.0	1.9712525667351128	1.0	68.0	F	3.0c	False	False	n	2.0	ser	ov	NA	2005-08-24
+GSM249941	no platinum	no platinum	NA	adjuvant	NA	NA	22.6694045174538	0.0	22.6694045174538	1.0	61.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2006-01-31
+GSM249942	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	22.6694045174538	1.0	10.841889117043122	1.0	73.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2006-01-20
+GSM249943	platinum	platinum	PLATINUM	adjuvant	NR (RFS<12m)	0.0	12.813141683778234	1.0	5.9137577002053385	1.0	55.0	F	4.0	False	False	n	2.0	ser	ov	suboptimal	2006-04-12
+GSM249944	no platinum	no platinum	NA	neoadjuvant	NA	NA	30.55441478439425	0.0	5.9137577002053385	1.0	72.0	F	3.0c	False	False	y	2.0	ser	other	suboptimal	2006-05-03
+GSM249945	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	neoadjuvant	NR (RFS<12m)	0.0	17.741273100616016	0.0	3.9425051334702257	1.0	67.0	F	3.0c	False	False	y	3.0	ser	other	optimal	2006-07-07
+GSM249946	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	neoadjuvant	NR (RFS<12m)	0.0	10.841889117043122	1.0	1.9712525667351128	1.0	58.0	F	3.0c	False	False	y	1.0	ser	ov	suboptimal	2006-04-05
+GSM249947	no platinum	no platinum	NA	adjuvant	NA	NA	2.9568788501026693	0.0	2.9568788501026693	0.0	75.0	F	3.0c	False	False	n	2.0	ser	other	optimal	2006-07-07
+GSM249948	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	19.71252566735113	0.0	17.741273100616016	1.0	62.0	F	3.0c	False	False	n	3.0	other	ov	optimal	2006-04-05
+GSM249949	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NA	NA	9.856262833675565	0.0	9.856262833675565	0.0	67.0	F	1.0a	False	False	n	3.0	ser	ft	optimal	2006-04-05
+GSM249950	no platinum	no platinum	NA	adjuvant	NA	NA	18.72689938398357	0.0	18.72689938398357	0.0	58.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-10-28
+GSM249951	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	neoadjuvant	NA	NA	7.885010266940451	0.0	7.885010266940451	0.0	66.0	F	3.0c	False	False	y	2.0	ser	ov	suboptimal	2005-10-26
+GSM249953	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	22.6694045174538	0.0	22.6694045174538	0.0	76.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-09-21
+GSM249954	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	17.741273100616016	0.0	17.741273100616016	0.0	73.0	F	2.0c	False	False	n	2.0	ser	ov	optimal	2005-11-04
+GSM249955	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	23.655030800821354	0.0	12.813141683778234	1.0	49.0	F	3.0c	False	False	n	3.0	endo	ov	optimal	2006-04-05
+GSM249956	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	15.770020533880903	1.0	7.885010266940451	1.0	59.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-07-20
+GSM249957	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NA	NA	11.827515400410677	0.0	11.827515400410677	0.0	49.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-07-15
+GSM249958	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	20.698151950718685	0.0	11.827515400410677	1.0	59.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-06-24
+GSM249959	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	23.655030800821354	0.0	16.75564681724846	1.0	62.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2005-11-11
+GSM249960	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	23.655030800821354	0.0	23.655030800821354	0.0	46.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-07-20
+GSM249961	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	28.583162217659137	0.0	23.655030800821354	1.0	57.0	F	3.0b	False	False	n	2.0	ser	ov	optimal	2005-07-20
+GSM249962	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	neoadjuvant	NR (RFS<12m)	0.0	30.55441478439425	0.0	8.870636550308008	1.0	62.0	F	3.0c	False	False	y	2.0	ser	ov	optimal	2006-07-07
+GSM249963	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	33.51129363449692	0.0	12.813141683778234	1.0	65.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-08-03
+GSM249964	no platinum	no platinum	NA	neoadjuvant	NA	NA	7.885010266940451	1.0	3.9425051334702257	1.0	68.0	F	3.0c	False	False	y	3.0	ser	other	NA	2006-04-12
+GSM249965	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NA	NA	10.841889117043122	0.0	10.841889117043122	0.0	78.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-11-11
+GSM249966	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	32.525667351129364	0.0	32.525667351129364	1.0	49.0	F	3.0b	False	False	n	2.0	endo	ov	optimal	2005-06-17
+GSM249967	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	33.51129363449692	0.0	33.51129363449692	0.0	77.0	F	2.0c	False	False	n	2.0	ser	ov	optimal	2005-05-27
+GSM249968	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	27.59753593429158	0.0	21.683778234086244	1.0	59.0	F	3.0b	False	False	n	3.0	ser	ov	optimal	2005-07-29
+GSM249969	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	34.496919917864474	1.0	6.899383983572895	1.0	58.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-02-21
+GSM249970	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	19.71252566735113	1.0	19.71252566735113	1.0	77.0	F	1.0c	False	False	n	3.0	ser	ft	optimal	2005-06-17
+GSM249971	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	neoadjuvant	NR (RFS<12m)	0.0	23.655030800821354	1.0	9.856262833675565	1.0	48.0	F	4.0	False	False	y	2.0	ser	ov	optimal	2005-01-24
+GSM249972	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	30.55441478439425	0.0	14.784394250513348	1.0	57.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-01-31
+GSM249973	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	40.41067761806981	0.0	20.698151950718685	1.0	73.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-05-30
+GSM249974	no platinum	no platinum	NA	adjuvant	NA	NA	42.38193018480493	0.0	42.38193018480493	0.0	43.0	F	2.0c	False	False	n	2.0	endo	ov	optimal	2005-01-17
+GSM249975	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	43.36755646817249	0.0	18.72689938398357	1.0	67.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-05-30
+GSM249976	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	35.48254620123203	0.0	12.813141683778234	1.0	57.0	F	3.0c	False	False	n	3.0	ser	ov	NA	2005-08-24
+GSM249977	unknown	unknown	NA	adjuvant	NA	NA	NA	NA	NA	NA	NA	F	NA	False	False	NA	NA	endo	ov	NA	2005-12-21
+GSM249978	unknown	unknown	NA	adjuvant	NA	NA	NA	NA	NA	NA	NA	F	3.0a	False	False	NA	NA	ser	ov	NA	2006-05-03
+GSM249979	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	8.870636550308008	1.0	6.899383983572895	1.0	45.0	F	4.0	False	False	n	3.0	ser	other	optimal	2006-04-12
+GSM249980	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	22.6694045174538	0.0	22.6694045174538	0.0	60.0	F	3.0c	False	False	n	2.0	ser	ov	optimal	2006-02-28
+GSM249981	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	34.496919917864474	0.0	34.496919917864474	0.0	70.0	F	2.0c	False	False	n	2.0	ser	ov	optimal	2006-04-05
+GSM249982	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	21.683778234086244	1.0	8.870636550308008	1.0	45.0	F	3.0c	False	False	n	3.0	ser	other	suboptimal	2006-06-22
+GSM249983	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	13.79876796714579	1.0	9.856262833675565	1.0	71.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2006-06-06
+GSM249984	platinum	platinum	PLATINUM	adjuvant	NR (RFS<12m)	0.0	16.75564681724846	1.0	7.885010266940451	1.0	78.0	F	3.0c	False	False	n	2.0	ser	ov	suboptimal	2005-01-24
+GSM249985	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	41.39630390143737	0.0	41.39630390143737	0.0	58.0	F	3.0c	False	False	n	2.0	endo	ov	optimal	2005-01-17
+GSM249986	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	18.72689938398357	1.0	17.741273100616016	1.0	58.0	F	4.0	False	False	n	3.0	ser	ov	suboptimal	2005-08-26
+GSM249987	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	40.41067761806981	0.0	40.41067761806981	0.0	46.0	F	3.0c	False	False	n	2.0	ser	ov	suboptimal	2005-01-12
+GSM249988	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	NR (RFS<12m)	0.0	11.827515400410677	0.0	8.870636550308008	1.0	41.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2006-07-07
+GSM249989	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	46.32443531827516	0.0	46.32443531827516	0.0	55.0	F	3.0a	False	False	n	2.0	ser	other	optimal	2005-09-21
+GSM249990	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	42.38193018480493	0.0	26.611909650924023	1.0	50.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-10-28
+GSM249991	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	30.55441478439425	0.0	26.611909650924023	1.0	58.0	F	3.0b	False	False	n	3.0	ser	ft	optimal	2005-07-06
+GSM249992	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	32.525667351129364	0.0	32.525667351129364	0.0	65.0	F	3.0a	False	False	n	2.0	ser	ov	optimal	2006-05-03
+GSM249993	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	36.46817248459959	0.0	36.46817248459959	1.0	43.0	F	2.0c	False	False	n	3.0	ser	ov	optimal	2005-01-31
+GSM249994	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	neoadjuvant	NR (RFS<12m)	0.0	14.784394250513348	1.0	10.841889117043122	1.0	63.0	F	4.0	False	False	y	2.0	ser	ov	optimal	2005-01-17
+GSM249995	platinum+taxane	platinum+taxane	PLATINUM;PACLITAXEL	adjuvant	R (RFS>=12m)	1.0	42.38193018480493	0.0	29.568788501026695	1.0	56.0	F	2.0c	False	False	n	2.0	endo	ov	optimal	2005-07-15
+GSM249996	no platinum	no platinum	NA	adjuvant	NA	NA	0.9856262833675564	1.0	0.9856262833675564	0.0	71.0	F	3.0c	False	False	n	3.0	ser	ov	optimal	2005-07-15
+GSM249997	platinum	platinum	PLATINUM	adjuvant	NR (RFS<12m)	0.0	42.38193018480493	1.0	11.827515400410677	1.0	80.0	F	3.0c	False	False	n	3.0	ser	other	optimal	2005-08-24
+GSM249998	no platinum	no platinum	NA	adjuvant	NA	NA	NA	0.0	NA	0.0	58.0	F	2.0c	False	False	n	3.0	ser	ov	suboptimal	2005-11-23
+GSM249999	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	79.83572895277207	1.0	17.741273100616016	1.0	49.0	F	3.0c	False	False	n	2.0	ser	ov	suboptimal	2005-08-18
+GSM250000	platinum	platinum	PLATINUM	adjuvant	R (RFS>=12m)	1.0	163.61396303901438	0.0	163.61396303901438	0.0	56.0	F	3.0	False	False	n	3.0	ser	ov	suboptimal	2006-02-08
+GSM250001	platinum	platinum	PLATINUM	adjuvant	NR (RFS<12m)	0.0	14.784394250513348	1.0	6.899383983572895	1.0	65.0	F	3.0c	False	False	n	3.0	ser	ov	suboptimal	2005-09-16
