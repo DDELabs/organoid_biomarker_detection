@@ -66,6 +66,9 @@ SOURCES = {
     "cd_ctrp_exp": (FIG.format(53779400), "coderdata_ctrpv2_experiments.tsv.gz"),
     "cd_ctrp_samples": (FIG.format(53779412), "coderdata_ctrpv2_samples.csv"),
     "cd_ctrp_drugs": (FIG.format(53779397), "coderdata_ctrpv2_drugs.tsv.gz"),
+    # CoderData 2.2.x full release (figshare article 29923646 v4, 2.8 GB zip): liver PDOs (Ji 2023)
+    "cd22_zip": ("https://ndownloader.figshare.com/articles/29923646/versions/4",
+                 "coderdata_v2.2_article29923646_v4.zip"),
     # Shi et al. 2022 Nat Commun pancreatic PDOs
     "shi_fpkm": ("https://ftp.ncbi.nlm.nih.gov/geo/series/GSE194nnn/GSE194249/suppl/GSE194249_PDPCOs_FPKM.txt.gz",
                  "GSE194249_PDPCOs_FPKM.txt.gz"),
@@ -154,7 +157,9 @@ def write_set(name, expr, resp, source_md, catalog, extra_files=None, decimals=3
     out = HERE / name
     out.mkdir(parents=True, exist_ok=True)
     expr = expr.loc[:, sorted(expr.columns)].astype(float).round(decimals)
-    with gzip.open(out / "expression.tsv.gz", "wt", compresslevel=9) as f:
+    with open(out / "expression.tsv.gz", "wb") as raw, \
+            gzip.GzipFile(fileobj=raw, mode="wb", compresslevel=9, mtime=0, filename="") as gz, \
+            io.TextIOWrapper(gz, encoding="utf-8", newline="") as f:      # mtime=0: byte-reproducible output
         expr.to_csv(f, sep="\t")
     resp = resp.copy()
     resp["direction"] = DIRECTION
@@ -204,7 +209,7 @@ def drugbank():
         for s in str(syns).split(" | "):
             if s and s != "nan":
                 syn.setdefault(norm(s), n)
-    _DB.update(ik=ik, sk=sk, syn=syn)
+    _DB.update(ik=ik, sk=sk, syn=syn, names={norm(n) for n in v["Common name"]})
     return _DB
 
 
@@ -222,7 +227,9 @@ ALIASES = {
     "JNJ42756493": "ERDAFITINIB", "PF477736": "PF-477736", "SIROLIMUS": "SIROLIMUS",
     "RAPAMYCIN": "SIROLIMUS", "MITOMYCINC": "MITOMYCIN", "MITOMYCIN": "MITOMYCIN", "FK866": "FK-866", "GDC0032": "TASELISIB", "HKI272": "NERATINIB", "ABT263": "NAVITOCLAX",
     "LBH589": "PANOBINOSTAT", "SAHA": "VORINOSTAT", "BI2536": "BI-2536", "SCH772984": "SCH-772984",
-    "SN38": "SN-38", "7ETHYL10HYDROXYCAMPTOTHECIN": "SN-38", "AZD6738": "CERALASERTIB", "AURORAAINHIBITORI": "AURORA A INHIBITOR I", "KU55933": "KU-55933", "OSI027": "OSI-027", "MK2206": "MK-2206",
+    "SN38": "SN-38", "7ETHYL10HYDROXYCAMPTOTHECIN": "SN-38", "AZD6738": "CERALASERTIB", "AT406XEVINAPANT": "XEVINAPANT", "AT406": "XEVINAPANT", "AG881": "VORASIDENIB", "LOXO101": "LAROTRECTINIB",
+    "NOFINDER": "GSK-1838705A",  # CoderData synonym placeholder for GSK1838705A (PubChem 25113169)
+    "AURORAAINHIBITORI": "AURORA A INHIBITOR I", "KU55933": "KU-55933", "OSI027": "OSI-027", "MK2206": "MK-2206",
     "PD173074": "PD-173074", "BIBR1532": "BIBR-1532", "LY2109761": "LY-2109761", "GSK126": "GSK-126",
     "PAC1": "PAC-1", "XAV939": "XAV-939", "PLX4720": "PLX-4720", "AZD8055": "AZD-8055", "JQ1": "JQ1",
     "TALAZOPARIB": "TALAZOPARIB", "RAD001": "EVEROLIMUS", "CHIR258": "DOVITINIB", "PHA739358": "DANUSERTIB",
@@ -256,7 +263,7 @@ def generic(name):
 
 JUNK = re.compile(r"^(schembl|chembl|akos|hms\d|ncgc|bdbm|q\d|sr-|ex-a|cs-|hy-|bcp|mfcd|en300|z\d|dtx|sdccg|ccg-|"
                   r"gtpl|nsc|d\d|unii|smr|ab\d|f\d|ac1|ks-|da-|db-|as-|sw\d|glxc|mls|cid|chebi|brd-|kbio|spectrum|"
-                  r"tox21|cas-|bspbio|pubchem|zinc|nci|s\d|mcule|stk|vu\d|[0-9]+-[0-9]+-[0-9]$)")
+                  r"tox21|cas-|bspbio|pubchem|zinc|nci|s\d|mcule|stk|vu\d|db\d|fg\d|bp-|ms-|orb\d|[0-9]+-[0-9]+-[0-9]$)")
 
 
 def coderdata_names(drugs, override=None, brd=None):
@@ -294,13 +301,17 @@ def coderdata_names(drugs, override=None, brd=None):
         if name is None:
             for x in syns:
                 n = norm(x)
+                base = norm(re.sub(SALT, "", re.sub(r"\s*\(.*?\)\s*", " ", x).strip(), flags=re.I))
                 if n in ALIASES or n in db["syn"]:
                     name = ALIASES.get(n) or db["syn"][n]
+                    break
+                if base in db["names"]:
+                    name = db["syn"][base]
                     break
         if name is None:
             cands = [x for x in syns
                      if not JUNK.match(x) and len(x) <= 25 and not re.search(r"[\[\]\(\),;:=]|\s.*\s", x)]
-            name = (sorted(cands, key=len)[0] if cands else syns[0]).upper()
+            name = (sorted(cands, key=lambda x: (len(x) < 5, len(x)))[0] if cands else syns[0]).upper()
         out[did] = ALIASES.get(norm(name), name.upper())
     return out
 
@@ -743,12 +754,69 @@ with RNA-seq: **{{n_both}}**. Genes: {{n_genes}}; drugs: {{n_drugs}}.
                      extra_files={"samples.tsv": samples, "drug_map.tsv": dmap})
 
 
+def build_liver_ji():
+    zf = zipfile.ZipFile(fetch("cd22_zip"))
+    rd = lambda n, **kw: pd.read_csv(io.BytesIO(zf.read(n)), compression="gzip" if n.endswith(".gz") else None, **kw)
+    exp = rd("liver_experiments.tsv.gz", sep="\t")
+    smp = rd("liver_samples.csv")
+    drugs = rd("liver_drugs.tsv.gz", sep="\t")
+    tx = rd("liver_transcriptomics.csv.gz")
+    member_sha = {n: hashlib.sha256(zf.read(n)).hexdigest() for n in
+                  ("liver_experiments.tsv.gz", "liver_samples.csv", "liver_drugs.tsv.gz", "liver_transcriptomics.csv.gz")}
+    s = smp.drop_duplicates("improve_sample_id").set_index("improve_sample_id")
+    dn = coderdata_names(drugs)
+    e = exp.pivot_table(index=["improve_sample_id", "improve_drug_id"], columns="dose_response_metric",
+                        values="dose_response_value", aggfunc="first").reset_index()
+    e["sample"] = e["improve_sample_id"].map(s["common_name"])
+    e["drug"] = e["improve_drug_id"].map(dn)
+    resp = (e.groupby(["sample", "drug"])
+            .agg(response=("fit_auc", "median"), fit_r2=("fit_r2", "median"), n_compounds=("improve_drug_id", "nunique"))
+            .reset_index())
+    resp["metric"] = "AUC"
+    mat = tx.pivot_table(index="entrez_id", columns="improve_sample_id", values="transcriptomics", aggfunc="mean")
+    mat.index = mat.index.astype("int64").astype(str)
+    mat.columns = [s.loc[c, "common_name"] for c in mat.columns]
+    expr = collapse(np.log2(mat + 1), gene_tables()["entrez"])
+    ann = s.reset_index()[["common_name", "cancer_type"]].rename(columns={"common_name": "sample"})
+    members = "\n".join(f"| `{k}` (zip member) | | `{v}` |" for k, v in member_sha.items())
+    md = f"""# Primary liver cancer PDOs (Ji et al. 2023)
+
+**Paper**: Ji S, Feng L, Fu Z, et al. *Pharmaco-proteogenomic characterization of liver cancer organoids for
+precision oncology.* Sci Transl Med 2023;15(706):eadg3358. doi:10.1126/scitranslmed.adg3358 (PMID 37494474).
+
+**Accessions**: data deposited on Synapse by CoderData (syn66401300-syn66401303, syn66593307; login needed for
+file contents), harmonised in **CoderData 2.2.x** and taken from the full release zip of figshare article
+29923646 (version 4). Individual file IDs of that release are not listable here (api.figshare.com is blocked by the
+egress policy), but the whole-article download works.
+
+{{provenance}}
+{members}
+
+## Derivation
+* Response: CoderData `fit_auc` (AUC of a fitted Hill curve on fraction viability over the tested range, 0-1,
+  72 h). **Lower = more sensitive**. The fit R^2 is kept as `fit_r2` (median 0.68; filter on it if needed).
+  Drug names: DrugBank via InChIKey, else CoderData's source name / synonyms.
+* Expression: CoderData transcriptomics (Synapse RNA-seq table, TPM-scale: ~1.07e6 per sample over all genes) ->
+  log2(x + 1); Entrez -> HGNC symbols, protein-coding only. Units: **log2(TPM + 1)** (TPM-scale input).
+  Histology per model (HCC, ICC, combined HCC-CC, hepatoblastoma) in `samples.tsv`.
+
+## Sample-ID matching
+Organoid IDs (`HCCO4`, `ICCO1`, `CHCO1`, `HBO1` ...) identical in both tables. Expression models: {{n_expr_models}};
+screened: {{n_resp_models}}; **overlap n = {{n_both}}**. Genes: {{n_genes}}; drugs: {{n_drugs}}.
+"""
+    md = md.replace("{provenance}", provenance(["cd22_zip", "gene_info"]))
+    return write_set("liver_ji2023", expr, resp, md,
+                     {"type": "organoid", "tissue": "liver (HCC, ICC, CHC, HB)", "source": "Synapse/CoderData 2.2"},
+                     extra_files={"samples.tsv": ann})
+
+
 BUILDERS = {
     "bladder_lee2018": build_bladder,
     "prism_repurposing": build_prism,
     "pancreas_tiriac2018": build_pancreas_tiriac,
     "pancreas_shi2022": build_shi,
     "liver_broutier2017": build_broutier,
+    "liver_ji2023": build_liver_ji,
     "sarcoma_alshihabi2024": build_sarcoma,
     "ctrpv2_ccle": build_ctrp,
 }
@@ -781,6 +849,8 @@ META = {
                              reference="Shi 2022 Nat Commun 13:2169", accession="GSE194249; PMC9023604"),
     "liver_broutier2017": dict(model="organoid", tissue="liver", expression_units="log2(RPKM+1)",
                                reference="Broutier 2017 Nat Med 23:1424", accession="GSE84073; PMC5722201"),
+    "liver_ji2023": dict(model="organoid", tissue="liver", expression_units="log2(TPM+1)",
+                         reference="Ji 2023 Sci Transl Med 15:eadg3358", accession="CoderData 2.2 (figshare 29923646)"),
     "sarcoma_alshihabi2024": dict(model="organoid", tissue="sarcoma", expression_units="log2(TPM+1)",
                                   reference="Al Shihabi 2024 Cell Stem Cell 31:1524",
                                   accession="syn61892224; CoderData 2.1.0 sarcpdo"),
