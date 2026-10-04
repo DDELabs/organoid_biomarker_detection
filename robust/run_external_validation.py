@@ -103,25 +103,26 @@ def main():
                 rows.append({"cohort": gse, "endpoint": "FOLFOX response", "signature": name, **r})
         # random-signature null on the primary design
         if gse == "GSE39582" and args.null:
-            tcol, ecol = endpoints[0]
+            for tcol, ecol in endpoints:
+                ep = tcol.split("_")[0].upper()
 
-            def stat_tr(s):
-                r = V.survival_tests(s.reindex(base.index), base, tr, None, tcol, ecol)
-                return abs(np.log(r["HR_treated"])) if "HR_treated" in r else None
+                def stat_tr(s, tcol=tcol, ecol=ecol):
+                    r = V.survival_tests(s.reindex(base.index), base, tr, None, tcol, ecol)
+                    return abs(np.log(r["HR_treated"])) if "HR_treated" in r else None
 
-            def stat_int(s):
-                r = V.survival_tests(s.reindex(base.index), base, tr, un, tcol, ecol)
-                return abs(np.log(r["interaction_HR"])) if "interaction_HR" in r else None
+                def stat_int(s, tcol=tcol, ecol=ecol):
+                    r = V.survival_tests(s.reindex(base.index), base, tr, un, tcol, ecol)
+                    return abs(np.log(r["interaction_HR"])) if "interaction_HR" in r else None
 
-            for name, w in sigs.items():
-                k = int(sum(p in sc.index for p in w.index))
-                obs = [r for r in rows if r["cohort"] == gse and r["signature"] == name and r["endpoint"] == "RFS"][0]
-                n_tr = V.random_null(sc, k, stat_tr, n=args.null)
-                n_in = V.random_null(sc, k, stat_int, n=args.null // 2, seed=12)
-                nulls.append({"signature": name, "k": k,
-                              "random_null_p_treated": float((1 + (n_tr >= abs(np.log(obs["HR_treated"]))).sum()) / (1 + len(n_tr))),
-                              "random_null_p_interaction": float((1 + (n_in >= abs(np.log(obs["interaction_HR"]))).sum()) / (1 + len(n_in)))})
-                print("null", nulls[-1])
+                for name, w in sigs.items():
+                    k = int(sum(p in sc.index for p in w.index))
+                    obs = [r for r in rows if r["cohort"] == gse and r["signature"] == name and r["endpoint"] == ep][0]
+                    n_tr = V.random_null(sc, k, stat_tr, n=args.null)
+                    n_in = V.random_null(sc, k, stat_int, n=args.null, seed=12)
+                    nulls.append({"endpoint": ep, "signature": name, "k": k,
+                                  "random_null_p_treated": float((1 + (n_tr >= abs(np.log(obs["HR_treated"]))).sum()) / (1 + len(n_tr))),
+                                  "random_null_p_interaction": float((1 + (n_in >= abs(np.log(obs["interaction_HR"]))).sum()) / (1 + len(n_in)))})
+                    print("null", nulls[-1], flush=True)
     res = pd.DataFrame(rows)
     res.to_csv(OUT / "external_validation.tsv", sep="\t", index=False)
     pd.DataFrame(nulls).to_csv(OUT / "random_signature_null_GSE39582.tsv", sep="\t", index=False)
