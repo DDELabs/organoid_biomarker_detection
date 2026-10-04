@@ -98,8 +98,12 @@ transfer.
 ## Bottom line and next steps
 
 1. **Validated in independent trials:** the TCGA-trained paclitaxel model predicts pCR in
-   BrighTNess (null p = 0.01) and I-SPY2 (p of about 0.05), beyond proliferation and receptor
-   status, with organoid, cell-line and network priors improving it over patient-only learning.
+   BrighTNess (null p = 0.01) and I-SPY2 (p of about 0.05). Organoid, cell-line and network
+   priors improve it over patient-only learning.
+   - In BrighTNess the effect holds after adjusting for proliferation (all patients there are
+     triple-negative).
+   - In I-SPY2 it does not survive adjustment for proliferation plus HR/HER2 (OR 1.22, p = 0.29),
+     whereas the doxorubicin model does (OR 1.75, p = 0.006).
 2. **Not validated:** drug specificity (trial designs combine drugs); cisplatin survival
    benefit in randomised lung trials; 5-FU, carboplatin, gemcitabine.
 3. **To make it decisive:**
