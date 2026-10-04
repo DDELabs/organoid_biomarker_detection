@@ -58,8 +58,12 @@ def fit_prior_logistic(X, y, lam=1.0, w=None, m=None, sample_weight=None):
     return res.x[0], res.x[1:]
 
 
-def loco(X, y, groups, lam=1.0, w=None, m=None, min_test=10):
-    """Leave-one-cancer-out predictions. Returns per-sample scores and per-cancer AUROC."""
+def loco(X, y, groups, lam=1.0, w=None, m=None, min_test=10, n_score=None):
+    """Leave-one-cancer-out predictions. Returns per-sample scores and per-cancer AUROC.
+
+    n_score: if given, only the first n_score columns form the biomarker score; later
+    columns are adjustment covariates (e.g. treatment setting) fitted but not scored.
+    """
     X, y, groups = np.asarray(X, float), np.asarray(y, float), np.asarray(groups)
     pred = np.full(len(y), np.nan)
     per = {}
@@ -72,13 +76,43 @@ def loco(X, y, groups, lam=1.0, w=None, m=None, min_test=10):
         sw = 1.0 / pd.Series(groups[~te]).map(counts).values
         sw = sw * len(sw) / sw.sum()
         b0, b = fit_prior_logistic(X[~te], y[~te], lam, w, m, sw)
-        pred[te] = b0 + X[te] @ b
+        k = X.shape[1] if n_score is None else n_score
+        pred[te] = X[te, :k] @ b[:k]
         per[g] = {"n": int(te.sum()), "responders": int(y[te].sum()), "auc": roc_auc_score(y[te], pred[te])}
     ok = ~np.isnan(pred)
     pooled = roc_auc_score(y[ok], pred[ok]) if ok.sum() and len(np.unique(y[ok])) == 2 else np.nan
     # mean within-cancer AUC is the honest summary (pooled AUC can reflect base-rate shifts)
     mean_auc = float(np.mean([v["auc"] for v in per.values()])) if per else np.nan
     return pred, per, pooled, mean_auc
+
+
+def kfold(X, y, groups, lam=1.0, w=None, m=None, n_score=None, k=5, seed=0, min_test=10):
+    """Patient-level k-fold CV stratified by cancer type (training pools all cancers).
+
+    Unlike LOCO, the held-out patients come from cancers seen in training, so
+    tissue-specific response biology can be learned. Returns mean within-cancer AUROC.
+    """
+    X, y, groups = np.asarray(X, float), np.asarray(y, float), np.asarray(groups)
+    rng = np.random.default_rng(seed)
+    fold = np.empty(len(y), int)
+    for g in np.unique(groups):
+        idx = np.where(groups == g)[0]
+        fold[rng.permutation(idx)] = np.arange(len(idx)) % k
+    pred = np.full(len(y), np.nan)
+    for f in range(k):
+        te = fold == f
+        counts = pd.Series(groups[~te]).value_counts()
+        sw = 1.0 / pd.Series(groups[~te]).map(counts).values
+        sw = sw * len(sw) / sw.sum()
+        b0, b = fit_prior_logistic(X[~te], y[~te], lam, w, m, sw)
+        kk = X.shape[1] if n_score is None else n_score
+        pred[te] = X[te, :kk] @ b[:kk]
+    per = {}
+    for g in np.unique(groups):
+        te = groups == g
+        if te.sum() >= min_test and len(np.unique(y[te])) == 2:
+            per[g] = {"n": int(te.sum()), "auc": roc_auc_score(y[te], pred[te])}
+    return pred, per, float(np.mean([v["auc"] for v in per.values()])) if per else np.nan
 
 
 def prior_only_auc(X, y, groups, m):
@@ -92,8 +126,8 @@ def prior_only_auc(X, y, groups, m):
     return float(np.mean(list(per.values()))) if per else np.nan, per
 
 
-def permutation_null(X, y, groups, lam, w, m, n=200, seed=0):
-    """Mean within-cancer LOCO AUROC with labels shuffled within each cancer."""
+def permutation_null(X, y, groups, lam, w, m, n=200, seed=0, n_score=None, scheme="loco"):
+    """Mean within-cancer AUROC (LOCO or k-fold) with labels shuffled within each cancer."""
     rng = np.random.default_rng(seed)
     y = np.asarray(y)
     groups = np.asarray(groups)
@@ -103,5 +137,8 @@ def permutation_null(X, y, groups, lam, w, m, n=200, seed=0):
         for g in np.unique(groups):
             idx = np.where(groups == g)[0]
             yp[idx] = rng.permutation(yp[idx])
-        vals.append(loco(X, yp, groups, lam, w, m)[3])
+        if scheme == "loco":
+            vals.append(loco(X, yp, groups, lam, w, m, n_score=n_score)[3])
+        else:
+            vals.append(kfold(X, yp, groups, lam, w, m, n_score=n_score)[2])
     return np.array(vals)
