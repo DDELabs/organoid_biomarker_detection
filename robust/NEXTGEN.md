@@ -45,11 +45,11 @@ The steps are cumulative from left to right.
 | BRCA doxorubicin (GDSC proxy) | 0.84 | 1.10 | 2.32 | 1.18 | 1.19 | - |
 | LUAD cisplatin (GDSC proxy) | 0.95 | 0.93 | 1.25 | 1.05 | 0.71 | - |
 | BLCA gemcitabine (GDSC proxy) | 0.75 | 0.74 | 0.72 | 0.60 | 0.69 | - |
-
-Full tables: `results/nextgen/ablation_*.tsv`. Reports: `results/nextgen/<STUDY>/REPORT.md`.
 | PAAD gemcitabine (GDSC proxy) | 0.86 | 0.83 | 0.91 | 0.70 | 0.91 | - |
 | STAD cisplatin (GDSC proxy) | 0.85 | 1.01 | 1.10 | 0.84 | 0.93 | - |
 | OV paclitaxel (Vias PDO, n = 14) | 1.04 | 1.01 | 1.02 | 0.86 | 0.82 | 0.87 |
+
+Full tables: `results/nextgen/ablation_*.tsv`. Reports: `results/nextgen/<STUDY>/REPORT.md`.
 
 ## Final NIT results (full model, 500 permutations)
 
@@ -77,9 +77,9 @@ signature was the only one with a predictive interaction in the expected directi
 1. NIT removes the systematic artefacts. Sorafenib's sign reversal came from confounding,
    and was fixed by deconfounding plus the landmark. Every false positive of the original
    method is now caught by the permutation null.
-2. Organoid models learn biologically sensible drug-specific programmes: ABC transport
-   for paclitaxel, purine salvage and DNA repair for 5-FU, nucleotide metabolism for
-   gemcitabine.
+2. For some drugs, the organoid models learn plausible drug-specific programmes: ABC
+   transport for paclitaxel, purine salvage and DNA repair for 5-FU (Tiriac pancreatic
+   organoids). Others, such as gemcitabine in pancreatic organoids, give no stable pathways.
 3. **None of these transfers to TCGA overall survival with statistical support.** The
    limiting factor is the patient side: retrospective, non-randomised treatment records,
    15-50 deaths per drug, and overall survival dominated by stage and later lines of
