@@ -114,7 +114,7 @@ def network_w(drug, gs, graph):
     return 0.25 + 0.75 * w, t   # never fully exclude a pathway
 
 
-def run_drug(drug, n_perm, graph):
+def run_drug(drug, n_perm, graph, primary_only=False):
     gs = gene_sets(("REACTOME",))
     lab = R.patient_labels(drug)
     lab = lab[lab["responder"].notna()]
@@ -163,9 +163,10 @@ def run_drug(drug, n_perm, graph):
             rows.append({"model": name, "mean_within_cancer_AUC": auc, "kfold_within_cancer_AUC": auc})
     res = pd.DataFrame(rows)
     # permutation null for the pre-registered primary model and the patient-only model
-    for name in ("TRIAD_all", "patient_only"):
+    for name in (("TRIAD_all",) if primary_only else ("TRIAD_all", "patient_only")):
         w, m = models[name]
-        for scheme, col in (("loco", "mean_within_cancer_AUC"), ("kfold", "kfold_within_cancer_AUC")):
+        for scheme, col in ((("loco", "mean_within_cancer_AUC"),) if primary_only else
+                            (("loco", "mean_within_cancer_AUC"), ("kfold", "kfold_within_cancer_AUC"))):
             null = T.permutation_null(X, y, groups, LAM, w, m, n=n_perm, n_score=k, scheme=scheme)
             obs = res.loc[res.model == name, col].iloc[0]
             res.loc[res.model == name, f"perm_p_{scheme}"] = (1 + (null >= obs).sum()) / (1 + len(null))
@@ -174,7 +175,7 @@ def run_drug(drug, n_perm, graph):
     w, m = models["TRIAD_all"]
     b0, b = T.fit_prior_logistic(X, y, LAM, w, m)
     coef = pd.Series(b[:k], index=feats).sort_values()
-    out = OUT / drug
+    out = OUT / drug if not primary_only else OUT / "confirmatory" / drug
     out.mkdir(parents=True, exist_ok=True)
     res.to_csv(out / "models.tsv", sep="\t", index=False)
     pd.DataFrame({m: {c: v["auc"] for c, v in pc.items()} for m, pc in per_cancer.items()}).to_csv(out / "per_cancer_auc.tsv", sep="\t")
@@ -191,6 +192,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--drugs", nargs="*", default=DRUGS)
     ap.add_argument("--perm", type=int, default=100)
+    ap.add_argument("--primary-only", action="store_true", help="confirmatory run: primary model, LOCO null only")
     a = ap.parse_args()
     graph = {}
 
@@ -203,10 +205,10 @@ def main():
     allres = []
     for d in a.drugs:
         try:
-            allres.append(run_drug(d, a.perm, g))
+            allres.append(run_drug(d, a.perm, g, a.primary_only))
         except Exception as exc:
             print(d, "FAILED", repr(exc), flush=True)
-        if allres:
+        if allres and not a.primary_only:
             path = OUT / "triad_summary.tsv"
             new = pd.concat(allres)
             old = pd.read_csv(path, sep="\t") if path.exists() else pd.DataFrame(columns=["drug"])
