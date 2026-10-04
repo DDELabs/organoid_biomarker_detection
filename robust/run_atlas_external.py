@@ -112,14 +112,38 @@ def cohorts():
     return out
 
 
+REGIMEN_ABBR = {"AC": ["DOXORUBICIN", "CYCLOPHOSPHAMIDE"], "FAC": ["FLUOROURACIL", "DOXORUBICIN", "CYCLOPHOSPHAMIDE"],
+                "FEC": ["FLUOROURACIL", "EPIRUBICIN", "CYCLOPHOSPHAMIDE"], "T": ["PACLITAXEL"],
+                "FOLFOX": ["FLUOROURACIL", "OXALIPLATIN"], "FOLFIRI": ["FLUOROURACIL", "IRINOTECAN"],
+                "TAXANE": ["PACLITAXEL"], "ANTHRACYCLINE": ["DOXORUBICIN"]}
+
+
 def drugs_of(clin):
+    """Per-sample ';'-joined generic drug names parsed from free-text regimen strings."""
+    import re
+    from obd.reference import common_drug_name
     col = "drugs" if "drugs" in clin else "drug"
-    return clin[col].fillna("").astype(str).str.upper().str.replace(" ", "")
+    out = []
+    for s in clin[col].fillna("").astype(str):
+        names = set()
+        for tok in re.findall(r"[A-Za-z][A-Za-z\-]+", s):
+            t = tok.upper()
+            if t in REGIMEN_ABBR:
+                names.update(REGIMEN_ABBR[t])
+            elif t == "PLATINUM":
+                names.add("PLATINUM")
+            else:
+                c = common_drug_name(t)
+                if c in A.DRUG_CLASS:
+                    names.add(c)
+        out.append(";".join(sorted(names)))
+    return pd.Series(out, index=clin.index)
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--null", type=int, default=500)
+    ap.add_argument("--skip-specificity", action="store_true")
     a = ap.parse_args()
     OUT.mkdir(parents=True, exist_ok=True)
     eff = frozen_effects()
@@ -156,6 +180,8 @@ def main():
                 print(rows[-1], flush=True)
         pd.DataFrame(rows).to_csv(OUT / "atlas_external_auc.tsv", sep="\t", index=False)
 
+    if a.skip_specificity:
+        return
     # ---------------- drug-specificity tests in randomised / controlled designs
     spec_rows = []
     designs = [
