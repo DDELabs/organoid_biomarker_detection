@@ -2,3 +2,4 @@ data/external/
 robust/results/cache/
 __pycache__/
 *.pyc
+robust/results/atlas/inference_bootstrap_stack.npy

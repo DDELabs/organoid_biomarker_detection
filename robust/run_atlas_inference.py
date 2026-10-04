@@ -32,9 +32,14 @@ OUT = RESULTS / "atlas"
 
 
 def bh(p):
-    s = p.sort_values()
-    q = (s * len(s) / np.arange(1, len(s) + 1))[::-1].cummin()[::-1].clip(upper=1)
-    return q.reindex(p.index)
+    """Benjamini-Hochberg q-values (positional, safe with duplicate labels)."""
+    p = np.asarray(p, float)
+    order = np.argsort(p)
+    ranked = p[order] * len(p) / np.arange(1, len(p) + 1)
+    q = np.minimum.accumulate(ranked[::-1])[::-1].clip(max=1)
+    out = np.empty_like(q)
+    out[order] = q
+    return pd.Series(out)
 
 
 def main():
@@ -54,7 +59,12 @@ def main():
         _, b = A.fit(des, X[keep], rec["drug"].values[keep], cov[keep], y[keep], RA.LAM, ww[keep])
         return des.effects(b).values
 
-    stack = np.stack(Parallel(n_jobs=4)(delayed(one)(s) for s in range(a.boot)))
+    cache = OUT / "inference_bootstrap_stack.npy"
+    if cache.exists():
+        stack = np.load(cache)
+    else:
+        stack = np.stack(Parallel(n_jobs=4)(delayed(one)(s) for s in range(a.boot)))
+        np.save(cache, stack)
     _, b = A.fit(des, X, rec["drug"].values, cov, y, RA.LAM, w)
     eff = des.effects(b)
     cols = list(eff.columns)
@@ -79,7 +89,7 @@ def main():
         tot.append(pd.DataFrame({"drug": d, "class": A.DRUG_CLASS[d], "pathway": pathways,
                                  "effect": eff[[cols[i] for i in idx]].sum(1).values, "z": z, "p": p.values,
                                  "sign_consistency": (np.sign(t) == np.sign(t.mean(0))).mean(0)}))
-    tot = pd.concat(tot)
+    tot = pd.concat(tot, ignore_index=True)
     tot["q"] = bh(tot["p"]).values  # FDR across all drug x pathway tests
     tot.to_csv(OUT / "inference_drug_total.tsv.gz", sep="\t", index=False)
     print("layers q<0.1:", layers[layers.q < 0.1].groupby("layer").size().to_dict())
