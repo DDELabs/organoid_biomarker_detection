@@ -1,0 +1,202 @@
+{
+  "cancer": "PAAD",
+  "drug": "GEMCITABINE",
+  "model": "tiriac",
+  "notes": {
+    "model": "tiriac",
+    "deconfound": {
+      "confounder_R2": 0.20195213939455436,
+      "beta_proliferation": -0.013824170827759344,
+      "beta_general": 0.022624889649994786
+    }
+  },
+  "versions": {
+    "nit": {
+      "summary": {
+        "cancer": "PAAD",
+        "drug": "GEMCITABINE",
+        "data": "nit",
+        "organoids": 44,
+        "candidate_pathways": 183,
+        "patients_with_survival": 177,
+        "treated_patients": 100
+      },
+      "baseline_best": {
+        "ML": "SVR",
+        "k": 9,
+        "logrank_p": 0.0296136099560762
+      },
+      "baseline_k7_ridge_p": 0.43867203806233734,
+      "signature": {
+        "REACTOME_EARLY_PHASE_OF_HIV_LIFE_CYCLE": 0.2853
+      },
+      "robust": {
+        "n_treated": 100,
+        "events": 47,
+        "logrank_p": 0.15189720451986477,
+        "os5_responder": 0.2731507994357659,
+        "os5_nonresponder": 0.24756747454275918,
+        "c_index": 0.4058759521218716,
+        "adj_covariates": "age,sex,proliferation",
+        "cox_HR": 0.8433611038480168,
+        "cox_p": 0.23084348364275853,
+        "adj_HR": 0.8238128809666869,
+        "adj_HR_low": 0.6266376520592136,
+        "adj_HR_high": 1.0830304572609732,
+        "adj_p": 0.1649787862229779,
+        "adj_n": 99,
+        "prognostic_HR_untreated": 1.3518720787119558,
+        "prognostic_p": 0.020276399112025355,
+        "interaction_HR": 0.629844127187698,
+        "interaction_p": 0.016431979799209812
+      },
+      "robust_precise_aligned": {
+        "n_treated": 100,
+        "events": 47,
+        "logrank_p": 0.1518972045198645,
+        "os5_responder": 0.24756747454275918,
+        "os5_nonresponder": 0.2731507994357659,
+        "c_index": 0.5941240478781284,
+        "adj_covariates": "age,sex,proliferation",
+        "cox_HR": 1.1857317054785719,
+        "cox_p": 0.23084348364275875,
+        "adj_HR": 1.2138678856618141,
+        "adj_HR_low": 0.9233350671679534,
+        "adj_HR_high": 1.595818567099932,
+        "adj_p": 0.1649787862229779,
+        "adj_n": 99,
+        "prognostic_HR_untreated": 0.7397149595343261,
+        "prognostic_p": 0.020276399112025258,
+        "interaction_HR": 1.5876944101472799,
+        "interaction_p": 0.01643197979920967
+      }
+    },
+    "nit_nodeconf": {
+      "summary": {
+        "cancer": "PAAD",
+        "drug": "GEMCITABINE",
+        "data": "nit_nodeconf",
+        "organoids": 44,
+        "candidate_pathways": 183,
+        "patients_with_survival": 177,
+        "treated_patients": 100
+      },
+      "baseline_best": {
+        "ML": "SVR",
+        "k": 6,
+        "logrank_p": 0.04677928558892955
+      },
+      "baseline_k7_ridge_p": 0.17200952233419786,
+      "signature": {
+        "REACTOME_EARLY_PHASE_OF_HIV_LIFE_CYCLE": 0.3215
+      },
+      "robust": {
+        "n_treated": 100,
+        "events": 47,
+        "logrank_p": 0.15189720451986477,
+        "os5_responder": 0.2731507994357659,
+        "os5_nonresponder": 0.24756747454275918,
+        "c_index": 0.4058759521218716,
+        "adj_covariates": "age,sex,proliferation",
+        "cox_HR": 0.8433611038480168,
+        "cox_p": 0.23084348364275864,
+        "adj_HR": 0.8238128809666869,
+        "adj_HR_low": 0.6266376520592135,
+        "adj_HR_high": 1.083030457260973,
+        "adj_p": 0.16497878622297768,
+        "adj_n": 99,
+        "prognostic_HR_untreated": 1.351872078711956,
+        "prognostic_p": 0.0202763991120253,
+        "interaction_HR": 0.6298441271876978,
+        "interaction_p": 0.01643197979920971
+      },
+      "robust_precise_aligned": {
+        "n_treated": 100,
+        "events": 47,
+        "logrank_p": 0.1518972045198645,
+        "os5_responder": 0.24756747454275918,
+        "os5_nonresponder": 0.2731507994357659,
+        "c_index": 0.5941240478781284,
+        "adj_covariates": "age,sex,proliferation",
+        "cox_HR": 1.1857317054785719,
+        "cox_p": 0.23084348364275853,
+        "adj_HR": 1.2138678856618141,
+        "adj_HR_low": 0.9233350671679534,
+        "adj_HR_high": 1.595818567099932,
+        "adj_p": 0.16497878622297768,
+        "adj_n": 99,
+        "prognostic_HR_untreated": 0.7397149595343262,
+        "prognostic_p": 0.0202763991120253,
+        "interaction_HR": 1.5876944101472794,
+        "interaction_p": 0.016431979799209726
+      }
+    }
+  },
+  "organoid_cv": {
+    "robust_loocv_spearman": -0.27512332628611696,
+    "robust_loocv_p": 0.07068699249772262,
+    "baseline_loocv_spearman": -0.2920366455250176,
+    "baseline_loocv_p": 0.05441112318427685
+  },
+  "permutation": {
+    "n": 500,
+    "robust_adjHR_empirical_p": 0.844311377245509,
+    "robust_logrank_empirical_p": 0.3872255489021956,
+    "baseline_min_p_observed": 0.0296136099560762,
+    "baseline_min_p_empirical_p": 0.2994011976047904
+  },
+  "fragility": {
+    "jackknife_HR_gt1_fraction": 0.0,
+    "jackknife_HR_range": [
+      0.794046232986846,
+      0.8273899338263183
+    ],
+    "bootstrap_HR_CI95": [
+      0.6349277465542208,
+      1.082034806988705
+    ],
+    "bootstrap_HR_gt1_fraction": 0.115,
+    "cutoff_sensitivity": {
+      "-1.0": {
+        "n_pathways": 51,
+        "signature": [
+          "REACTOME_EARLY_PHASE_OF_HIV_LIFE_CYCLE"
+        ],
+        "adj_HR": 0.8238128809666869,
+        "adj_p": 0.16497878622297768
+      },
+      "-1.2816": {
+        "n_pathways": 36,
+        "signature": [
+          "REACTOME_EARLY_PHASE_OF_HIV_LIFE_CYCLE"
+        ],
+        "adj_HR": 0.8238128809666868,
+        "adj_p": 0.16497878622297757
+      },
+      "-1.645": {
+        "n_pathways": 23,
+        "signature": [
+          "REACTOME_BASE_EXCISION_REPAIR",
+          "REACTOME_ABACAVIR_TRANSPORT_AND_METABOLISM",
+          "REACTOME_METABOLISM_OF_NUCLEOTIDES",
+          "REACTOME_EARLY_PHASE_OF_HIV_LIFE_CYCLE"
+        ],
+        "adj_HR": 0.7671716513069687,
+        "adj_p": 0.15748622902371778
+      }
+    }
+  },
+  "robust_pathways": [],
+  "supported_pathways": [
+    "REACTOME_EARLY_PHASE_OF_HIV_LIFE_CYCLE"
+  ],
+  "verdict": {
+    "permutation_significant": false,
+    "direction_consistent_all_versions": false,
+    "predictive_interaction_p_lt_0.1": true,
+    "events_in_treated": 47,
+    "adequately_powered": true,
+    "direction": "reversed (resistant score -> better survival)",
+    "signature_status": "not supported"
+  }
+}

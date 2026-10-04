@@ -193,7 +193,9 @@ def tcga_xena_clinical(project):
     cli["patient"] = cli["sample"].str[:12]
     cli = cli.drop_duplicates("patient").set_index("patient")
     out = pd.DataFrame({"months": sur["OS.time"] / (365 / 12), "event": sur["OS"]})
-    out["stage"] = cli.reindex(out.index)["ajcc_pathologic_stage.diagnoses"].map(_stage)
+    stage_col = next((c for c in ("ajcc_pathologic_stage.diagnoses", "figo_stage.diagnoses", "ajcc_clinical_stage.diagnoses")
+                      if c in cli.columns), None)
+    out["stage"] = cli.reindex(out.index)[stage_col].map(_stage) if stage_col else np.nan
     out["age"] = pd.to_numeric(cli.reindex(out.index)["age_at_index.demographic"], errors="coerce")
     out["sex"] = (cli.reindex(out.index)["gender.demographic"].str.lower() == "male").astype(float)
     return out.dropna(subset=["months", "event"])

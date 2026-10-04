@@ -1,0 +1,222 @@
+{
+  "cancer": "PAAD",
+  "drug": "FLUOROURACIL",
+  "model": "tiriac",
+  "notes": {
+    "model": "tiriac",
+    "deconfound": {
+      "confounder_R2": 0.025930796511384635,
+      "beta_proliferation": 0.006545087526207082,
+      "beta_general": 0.016575171696966613
+    }
+  },
+  "versions": {
+    "nit": {
+      "summary": {
+        "cancer": "PAAD",
+        "drug": "FLUOROURACIL",
+        "data": "nit",
+        "organoids": 44,
+        "candidate_pathways": 187,
+        "patients_with_survival": 177,
+        "treated_patients": 36
+      },
+      "baseline_best": {
+        "ML": "SVR",
+        "k": 2,
+        "logrank_p": 0.09362275523309123
+      },
+      "baseline_k7_ridge_p": 0.15975069002486242,
+      "signature": {
+        "REACTOME_NGF_SIGNALLING_VIA_TRKA_FROM_THE_PLASMA_MEMBRANE": 0.206,
+        "REACTOME_G1_S_TRANSITION": -0.2373,
+        "REACTOME_PURINE_SALVAGE": 0.4312,
+        "REACTOME_DNA_REPAIR": -0.2067,
+        "REACTOME_FORMATION_OF_INCISION_COMPLEX_IN_GG_NER": -0.2149,
+        "REACTOME_EARLY_PHASE_OF_HIV_LIFE_CYCLE": 0.2305
+      },
+      "robust": {
+        "n_treated": 36,
+        "events": 18,
+        "logrank_p": 0.4141625279724436,
+        "os5_responder": 0.385,
+        "os5_nonresponder": 0.0,
+        "c_index": 0.5014409221902018,
+        "adj_covariates": "age,sex,proliferation",
+        "cox_HR": 1.0828577987475472,
+        "cox_p": 0.7158214092070255,
+        "adj_HR": 1.0964661950173078,
+        "adj_HR_low": 0.6242489009644733,
+        "adj_HR_high": 1.925895448046858,
+        "adj_p": 0.7486421963624872,
+        "adj_n": 35,
+        "prognostic_HR_untreated": 1.1096657913373589,
+        "prognostic_p": 0.39161540062427236,
+        "interaction_HR": 1.2770575421071135,
+        "interaction_p": 0.3303039168134143
+      },
+      "robust_precise_aligned": {
+        "n_treated": 36,
+        "events": 18,
+        "logrank_p": 0.6093113569658551,
+        "os5_responder": 0.20544433593750006,
+        "os5_nonresponder": 0.0,
+        "c_index": 0.45821325648414984,
+        "adj_covariates": "age,sex,proliferation",
+        "cox_HR": 1.0066247189387494,
+        "cox_p": 0.9809293430884773,
+        "adj_HR": 1.0203295083303805,
+        "adj_HR_low": 0.4874718282116245,
+        "adj_HR_high": 2.1356563504173596,
+        "adj_p": 0.9574114031326841,
+        "adj_n": 35,
+        "prognostic_HR_untreated": 1.1754077862337917,
+        "prognostic_p": 0.21455860090836798,
+        "interaction_HR": 1.209433979602978,
+        "interaction_p": 0.4847190736120902
+      }
+    },
+    "nit_nodeconf": {
+      "summary": {
+        "cancer": "PAAD",
+        "drug": "FLUOROURACIL",
+        "data": "nit_nodeconf",
+        "organoids": 44,
+        "candidate_pathways": 187,
+        "patients_with_survival": 177,
+        "treated_patients": 36
+      },
+      "baseline_best": {
+        "ML": "SVR",
+        "k": 4,
+        "logrank_p": 0.023177886653900564
+      },
+      "baseline_k7_ridge_p": 0.15975069002486242,
+      "signature": {
+        "REACTOME_NGF_SIGNALLING_VIA_TRKA_FROM_THE_PLASMA_MEMBRANE": 0.2052,
+        "REACTOME_G1_S_TRANSITION": -0.2211,
+        "REACTOME_PURINE_SALVAGE": 0.4389,
+        "REACTOME_DNA_REPAIR": -0.2061,
+        "REACTOME_EARLY_PHASE_OF_HIV_LIFE_CYCLE": 0.2597
+      },
+      "robust": {
+        "n_treated": 36,
+        "events": 18,
+        "logrank_p": 0.3775681317599092,
+        "os5_responder": 0.37898437499999993,
+        "os5_nonresponder": 0.0,
+        "c_index": 0.5446685878962536,
+        "adj_covariates": "age,sex,proliferation",
+        "cox_HR": 1.0974980035432278,
+        "cox_p": 0.663762931939455,
+        "adj_HR": 1.0699951161088308,
+        "adj_HR_low": 0.6489135901331751,
+        "adj_HR_high": 1.7643174159163277,
+        "adj_p": 0.7909009113077284,
+        "adj_n": 35,
+        "prognostic_HR_untreated": 1.0579419174868172,
+        "prognostic_p": 0.6285245344529511,
+        "interaction_HR": 1.2159700747528166,
+        "interaction_p": 0.394594290497717
+      },
+      "robust_precise_aligned": {
+        "n_treated": 36,
+        "events": 18,
+        "logrank_p": 0.8878722435927576,
+        "os5_responder": 0.3893048128342247,
+        "os5_nonresponder": 0.0,
+        "c_index": 0.4899135446685879,
+        "adj_covariates": "age,sex,proliferation",
+        "cox_HR": 1.1399140777426238,
+        "cox_p": 0.6007909589153677,
+        "adj_HR": 0.9666162196508834,
+        "adj_HR_low": 0.49756780088277747,
+        "adj_HR_high": 1.8778283370315767,
+        "adj_p": 0.9201755972229902,
+        "adj_n": 35,
+        "prognostic_HR_untreated": 0.9547404125536162,
+        "prognostic_p": 0.7474638572122363,
+        "interaction_HR": 1.3266664995441921,
+        "interaction_p": 0.30665474758522415
+      }
+    }
+  },
+  "organoid_cv": {
+    "robust_loocv_spearman": 0.10880902043692742,
+    "robust_loocv_p": 0.4820115560803326,
+    "baseline_loocv_spearman": 0.3121916842847075,
+    "baseline_loocv_p": 0.039102276982252354
+  },
+  "permutation": {
+    "n": 500,
+    "robust_adjHR_empirical_p": 0.17964071856287425,
+    "robust_logrank_empirical_p": 0.31137724550898205,
+    "baseline_min_p_observed": 0.0936227552330912,
+    "baseline_min_p_empirical_p": 0.5169660678642715
+  },
+  "fragility": {
+    "jackknife_HR_gt1_fraction": 1.0,
+    "jackknife_HR_range": [
+      1.0398595116091707,
+      1.2673276323479665
+    ],
+    "bootstrap_HR_CI95": [
+      0.49905214732278586,
+      2.3060008563184917
+    ],
+    "bootstrap_HR_gt1_fraction": 0.49,
+    "cutoff_sensitivity": {
+      "-1.0": {
+        "n_pathways": 44,
+        "signature": [
+          "REACTOME_PYRIMIDINE_CATABOLISM",
+          "REACTOME_G1_S_TRANSITION",
+          "REACTOME_PURINE_SALVAGE",
+          "REACTOME_MITOTIC_G1_G1_S_PHASES",
+          "REACTOME_EARLY_PHASE_OF_HIV_LIFE_CYCLE"
+        ],
+        "adj_HR": 1.144667544704087,
+        "adj_p": 0.7124124732721562
+      },
+      "-1.2816": {
+        "n_pathways": 30,
+        "signature": [
+          "REACTOME_G1_S_TRANSITION",
+          "REACTOME_PURINE_SALVAGE",
+          "REACTOME_MITOTIC_G1_G1_S_PHASES"
+        ],
+        "adj_HR": 1.2617574613805955,
+        "adj_p": 0.5310462502448087
+      },
+      "-1.645": {
+        "n_pathways": 21,
+        "signature": [
+          "REACTOME_G1_S_TRANSITION",
+          "REACTOME_PURINE_SALVAGE",
+          "REACTOME_MITOTIC_G1_G1_S_PHASES"
+        ],
+        "adj_HR": 1.273736456745543,
+        "adj_p": 0.5348128498830588
+      }
+    }
+  },
+  "robust_pathways": [
+    "REACTOME_PURINE_SALVAGE",
+    "REACTOME_DNA_REPAIR"
+  ],
+  "supported_pathways": [
+    "REACTOME_G1_S_TRANSITION",
+    "REACTOME_FORMATION_OF_INCISION_COMPLEX_IN_GG_NER",
+    "REACTOME_EARLY_PHASE_OF_HIV_LIFE_CYCLE",
+    "REACTOME_NGF_SIGNALLING_VIA_TRKA_FROM_THE_PLASMA_MEMBRANE"
+  ],
+  "verdict": {
+    "permutation_significant": false,
+    "direction_consistent_all_versions": true,
+    "predictive_interaction_p_lt_0.1": false,
+    "events_in_treated": 18,
+    "adequately_powered": false,
+    "direction": "as expected (resistant score -> worse survival)",
+    "signature_status": "promising, not validated"
+  }
+}
