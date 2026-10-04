@@ -1,0 +1,225 @@
+{
+  "cancer": "COAD",
+  "drug": "FLUOROURACIL",
+  "model": "vdw",
+  "notes": {
+    "model": "vdw",
+    "deconfound": {
+      "confounder_R2": 0.3899386514379195,
+      "beta_proliferation": -0.08785168189355,
+      "beta_general": 1.3044465579034665
+    }
+  },
+  "versions": {
+    "nit": {
+      "summary": {
+        "cancer": "COAD",
+        "drug": "FLUOROURACIL",
+        "data": "nit",
+        "organoids": 19,
+        "candidate_pathways": 174,
+        "patients_with_survival": 434,
+        "treated_patients": 115
+      },
+      "baseline_best": {
+        "ML": "Ridge",
+        "k": 8,
+        "logrank_p": 0.04627655247605263
+      },
+      "baseline_k7_ridge_p": 0.22784833972669977,
+      "signature": {
+        "REACTOME_G1_S_SPECIFIC_TRANSCRIPTION": -0.2859,
+        "REACTOME_SCFSKP2_MEDIATED_DEGRADATION_OF_P27_P21": 0.2978,
+        "REACTOME_E2F_MEDIATED_REGULATION_OF_DNA_REPLICATION": -0.2784,
+        "REACTOME_AMINO_ACID_SYNTHESIS_AND_INTERCONVERSION_TRANSAMINATION": -0.2897,
+        "REACTOME_HYALURONAN_UPTAKE_AND_DEGRADATION": 0.3177
+      },
+      "robust": {
+        "n_treated": 115,
+        "events": 20,
+        "logrank_p": 0.8988013922546674,
+        "os5_responder": 0.6249601983568938,
+        "os5_nonresponder": 0.4221417810922933,
+        "c_index": 0.4643696162881754,
+        "adj_covariates": "stage_III,stage_IV,age,sex,proliferation",
+        "cox_HR": 1.01525172711604,
+        "cox_p": 0.9475101232978317,
+        "adj_HR": 1.0110613272240203,
+        "adj_HR_low": 0.5672990209938079,
+        "adj_HR_high": 1.8019509457590892,
+        "adj_p": 0.970237182066988,
+        "adj_n": 115,
+        "prognostic_HR_untreated": 0.7412705665455871,
+        "prognostic_p": 0.027447256487195287,
+        "interaction_HR": 1.2185451192475383,
+        "interaction_p": 0.4634955972628205
+      },
+      "robust_precise_aligned": {
+        "n_treated": 115,
+        "events": 20,
+        "logrank_p": 0.21133238041442706,
+        "os5_responder": 0.514970238095238,
+        "os5_nonresponder": 0.5332590017592611,
+        "c_index": 0.586530931871574,
+        "adj_covariates": "stage_III,stage_IV,age,sex,proliferation",
+        "cox_HR": 1.0810526889779888,
+        "cox_p": 0.751281234509936,
+        "adj_HR": 1.0636792509465252,
+        "adj_HR_low": 0.3915911560748662,
+        "adj_HR_high": 2.889272475494446,
+        "adj_p": 0.9036241140262591,
+        "adj_n": 115,
+        "prognostic_HR_untreated": 1.2180866990509454,
+        "prognostic_p": 0.3734405838147907,
+        "interaction_HR": 0.9929393743321303,
+        "interaction_p": 0.980509903958405
+      }
+    },
+    "nit_nodeconf": {
+      "summary": {
+        "cancer": "COAD",
+        "drug": "FLUOROURACIL",
+        "data": "nit_nodeconf",
+        "organoids": 19,
+        "candidate_pathways": 174,
+        "patients_with_survival": 434,
+        "treated_patients": 115
+      },
+      "baseline_best": {
+        "ML": "Ridge",
+        "k": 10,
+        "logrank_p": 0.024848173834181708
+      },
+      "baseline_k7_ridge_p": 0.7499610518650026,
+      "signature": {
+        "REACTOME_G1_S_SPECIFIC_TRANSCRIPTION": -0.3141,
+        "REACTOME_SCFSKP2_MEDIATED_DEGRADATION_OF_P27_P21": 0.2889,
+        "REACTOME_E2F_MEDIATED_REGULATION_OF_DNA_REPLICATION": -0.2998,
+        "REACTOME_HYALURONAN_UPTAKE_AND_DEGRADATION": 0.4153
+      },
+      "robust": {
+        "n_treated": 115,
+        "events": 20,
+        "logrank_p": 0.8806053451999829,
+        "os5_responder": 0.6261427384931345,
+        "os5_nonresponder": 0.44496594376634696,
+        "c_index": 0.5058731401722788,
+        "adj_covariates": "stage_III,stage_IV,age,sex,proliferation",
+        "cox_HR": 1.1483850542830474,
+        "cox_p": 0.5451273631252561,
+        "adj_HR": 0.9673365124319314,
+        "adj_HR_low": 0.5426363477492974,
+        "adj_HR_high": 1.7244328216588474,
+        "adj_p": 0.9103568843220587,
+        "adj_n": 115,
+        "prognostic_HR_untreated": 0.7400493274097755,
+        "prognostic_p": 0.031754341167184987,
+        "interaction_HR": 1.3190954896571208,
+        "interaction_p": 0.3415217565804768
+      },
+      "robust_precise_aligned": {
+        "n_treated": 115,
+        "events": 20,
+        "logrank_p": 0.7470815126984176,
+        "os5_responder": 0.49123057208994697,
+        "os5_nonresponder": 0.5563454203229063,
+        "c_index": 0.562255285826155,
+        "adj_covariates": "stage_III,stage_IV,age,sex,proliferation",
+        "cox_HR": 1.0823744853106965,
+        "cox_p": 0.7426155352885848,
+        "adj_HR": 1.0756335800088668,
+        "adj_HR_low": 0.3832359856664356,
+        "adj_HR_high": 3.0189951928202294,
+        "adj_p": 0.8898707362334992,
+        "adj_n": 115,
+        "prognostic_HR_untreated": 0.8418431148080183,
+        "prognostic_p": 0.4802921439148886,
+        "interaction_HR": 1.0909539873682783,
+        "interaction_p": 0.7616295120651309
+      }
+    }
+  },
+  "organoid_cv": {
+    "robust_loocv_spearman": -0.3385964912280702,
+    "robust_loocv_p": 0.15618974502366026,
+    "baseline_loocv_spearman": 0.06842105263157894,
+    "baseline_loocv_p": 0.780767401593491
+  },
+  "permutation": {
+    "n": 500,
+    "robust_adjHR_empirical_p": 0.6586826347305389,
+    "robust_logrank_empirical_p": 0.8602794411177644,
+    "baseline_min_p_observed": 0.0462765524760526,
+    "baseline_min_p_empirical_p": 0.2435129740518962
+  },
+  "fragility": {
+    "jackknife_HR_gt1_fraction": 0.8421052631578947,
+    "jackknife_HR_range": [
+      0.7534721031474072,
+      1.3577196465912502
+    ],
+    "bootstrap_HR_CI95": [
+      0.5606879564750755,
+      1.7842950505125217
+    ],
+    "bootstrap_HR_gt1_fraction": 0.485,
+    "cutoff_sensitivity": {
+      "-1.0": {
+        "n_pathways": 44,
+        "signature": [
+          "REACTOME_REVERSIBLE_HYDRATION_OF_CARBON_DIOXIDE",
+          "REACTOME_G1_S_SPECIFIC_TRANSCRIPTION",
+          "REACTOME_E2F_MEDIATED_REGULATION_OF_DNA_REPLICATION",
+          "REACTOME_AMINO_ACID_SYNTHESIS_AND_INTERCONVERSION_TRANSAMINATION",
+          "REACTOME_HYALURONAN_UPTAKE_AND_DEGRADATION"
+        ],
+        "adj_HR": 0.9934066709312477,
+        "adj_p": 0.9870965323676142
+      },
+      "-1.2816": {
+        "n_pathways": 33,
+        "signature": [
+          "REACTOME_REVERSIBLE_HYDRATION_OF_CARBON_DIOXIDE",
+          "REACTOME_G1_S_SPECIFIC_TRANSCRIPTION",
+          "REACTOME_E2F_MEDIATED_REGULATION_OF_DNA_REPLICATION",
+          "REACTOME_AMINO_ACID_SYNTHESIS_AND_INTERCONVERSION_TRANSAMINATION",
+          "REACTOME_HYALURONAN_UPTAKE_AND_DEGRADATION",
+          "REACTOME_METABOLISM_OF_VITAMINS_AND_COFACTORS"
+        ],
+        "adj_HR": 0.8555465140816868,
+        "adj_p": 0.6786140990939526
+      },
+      "-1.645": {
+        "n_pathways": 22,
+        "signature": [
+          "REACTOME_G1_S_SPECIFIC_TRANSCRIPTION",
+          "REACTOME_CELL_CYCLE",
+          "REACTOME_E2F_MEDIATED_REGULATION_OF_DNA_REPLICATION",
+          "REACTOME_AMINO_ACID_SYNTHESIS_AND_INTERCONVERSION_TRANSAMINATION",
+          "REACTOME_HYALURONAN_UPTAKE_AND_DEGRADATION",
+          "REACTOME_METABOLISM_OF_VITAMINS_AND_COFACTORS"
+        ],
+        "adj_HR": 0.9862415360570935,
+        "adj_p": 0.9619417397289113
+      }
+    }
+  },
+  "robust_pathways": [
+    "REACTOME_E2F_MEDIATED_REGULATION_OF_DNA_REPLICATION",
+    "REACTOME_AMINO_ACID_SYNTHESIS_AND_INTERCONVERSION_TRANSAMINATION"
+  ],
+  "supported_pathways": [
+    "REACTOME_SCFSKP2_MEDIATED_DEGRADATION_OF_P27_P21",
+    "REACTOME_HYALURONAN_UPTAKE_AND_DEGRADATION",
+    "REACTOME_G1_S_SPECIFIC_TRANSCRIPTION"
+  ],
+  "verdict": {
+    "permutation_significant": false,
+    "direction_consistent_all_versions": false,
+    "predictive_interaction_p_lt_0.1": false,
+    "events_in_treated": 20,
+    "adequately_powered": false,
+    "direction": "inconsistent",
+    "signature_status": "not supported"
+  }
+}
