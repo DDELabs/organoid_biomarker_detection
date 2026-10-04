@@ -1,0 +1,210 @@
+{
+  "cancer": "PAAD",
+  "drug": "GEMCITABINE",
+  "model": "gdsc",
+  "notes": {
+    "model": "gdsc",
+    "deconfound": {
+      "confounder_R2": 0.746425157638885,
+      "beta_proliferation": 0.37991730357040887,
+      "beta_general": 3.028944314156407
+    }
+  },
+  "versions": {
+    "nit": {
+      "summary": {
+        "cancer": "PAAD",
+        "drug": "GEMCITABINE",
+        "data": "nit",
+        "organoids": 15,
+        "candidate_pathways": 181,
+        "patients_with_survival": 177,
+        "treated_patients": 100
+      },
+      "baseline_best": {
+        "ML": "Ridge",
+        "k": 10,
+        "logrank_p": 0.07844706188687253
+      },
+      "baseline_k7_ridge_p": 0.6320282423174874,
+      "signature": {
+        "REACTOME_ABACAVIR_TRANSPORT_AND_METABOLISM": 0.4002,
+        "REACTOME_PURINE_METABOLISM": 0.138
+      },
+      "robust": {
+        "n_treated": 100,
+        "events": 47,
+        "logrank_p": 0.7842161779441241,
+        "os5_responder": 0.21246357444831604,
+        "os5_nonresponder": 0.31627004718823487,
+        "c_index": 0.5161407326804498,
+        "adj_covariates": "age,sex,proliferation",
+        "cox_HR": 0.9174971474970763,
+        "cox_p": 0.5246959947503459,
+        "adj_HR": 0.9078775012039589,
+        "adj_HR_low": 0.6783100829280803,
+        "adj_HR_high": 1.2151397685765155,
+        "adj_p": 0.5158160434333169,
+        "adj_n": 99,
+        "prognostic_HR_untreated": 1.0741632441119195,
+        "prognostic_p": 0.6294714685105827,
+        "interaction_HR": 0.8631981427264398,
+        "interaction_p": 0.4746707779694972
+      },
+      "robust_precise_aligned": {
+        "n_treated": 100,
+        "events": 47,
+        "logrank_p": 0.39242658016073884,
+        "os5_responder": 0.29773209822188823,
+        "os5_nonresponder": 0.1705061442059627,
+        "c_index": 0.4243743199129489,
+        "adj_covariates": "age,sex,proliferation",
+        "cox_HR": 0.810404794923245,
+        "cox_p": 0.16608712470936604,
+        "adj_HR": 0.8862137858954535,
+        "adj_HR_low": 0.6457034179618376,
+        "adj_HR_high": 1.216308993361361,
+        "adj_p": 0.4545979252023481,
+        "adj_n": 99,
+        "prognostic_HR_untreated": 0.9060391298749374,
+        "prognostic_p": 0.5363572922178286,
+        "interaction_HR": 0.9659182130449715,
+        "interaction_p": 0.8760643497883454
+      }
+    },
+    "nit_nodeconf": {
+      "summary": {
+        "cancer": "PAAD",
+        "drug": "GEMCITABINE",
+        "data": "nit_nodeconf",
+        "organoids": 15,
+        "candidate_pathways": 181,
+        "patients_with_survival": 177,
+        "treated_patients": 100
+      },
+      "baseline_best": {
+        "ML": "Ridge",
+        "k": 10,
+        "logrank_p": 0.008982128735841826
+      },
+      "baseline_k7_ridge_p": 0.05185513807849372,
+      "signature": {
+        "REACTOME_VITAMIN_B5_PANTOTHENATE_METABOLISM": 0.1996,
+        "REACTOME_ABACAVIR_TRANSPORT_AND_METABOLISM": 0.4447,
+        "REACTOME_CYTOSOLIC_TRNA_AMINOACYLATION": -0.1891,
+        "REACTOME_FACILITATIVE_NA_INDEPENDENT_GLUCOSE_TRANSPORTERS": 0.1613
+      },
+      "robust": {
+        "n_treated": 100,
+        "events": 47,
+        "logrank_p": 0.35013168200101297,
+        "os5_responder": 0.2806467649972938,
+        "os5_nonresponder": 0.27940814042871476,
+        "c_index": 0.43670656510700034,
+        "adj_covariates": "age,sex,proliferation",
+        "cox_HR": 0.8446279921147395,
+        "cox_p": 0.24374653703738813,
+        "adj_HR": 0.830270989198246,
+        "adj_HR_low": 0.5951805381713405,
+        "adj_HR_high": 1.15821985312595,
+        "adj_p": 0.2734537358964264,
+        "adj_n": 99,
+        "prognostic_HR_untreated": 1.0498251490051933,
+        "prognostic_p": 0.7572298875008192,
+        "interaction_HR": 0.8090339284952327,
+        "interaction_p": 0.34019113524730116
+      },
+      "robust_precise_aligned": {
+        "n_treated": 100,
+        "events": 47,
+        "logrank_p": 0.8681701580850498,
+        "os5_responder": 0.3225523322994588,
+        "os5_nonresponder": 0.22837624732024736,
+        "c_index": 0.4323540079796881,
+        "adj_covariates": "age,sex,proliferation",
+        "cox_HR": 0.8310088314881715,
+        "cox_p": 0.19816866419110968,
+        "adj_HR": 0.8951898581422215,
+        "adj_HR_low": 0.6357761519558647,
+        "adj_HR_high": 1.2604513076739643,
+        "adj_p": 0.5259699685412378,
+        "adj_n": 99,
+        "prognostic_HR_untreated": 1.2071750821821072,
+        "prognostic_p": 0.2259446348608627,
+        "interaction_HR": 0.7822604471459673,
+        "interaction_p": 0.24012647873448767
+      }
+    }
+  },
+  "organoid_cv": {
+    "robust_loocv_spearman": -0.13214285714285715,
+    "robust_loocv_p": 0.6387442188840664,
+    "baseline_loocv_spearman": -0.3285714285714285,
+    "baseline_loocv_p": 0.23180969720615965
+  },
+  "permutation": {
+    "n": 500,
+    "robust_adjHR_empirical_p": 0.7784431137724551,
+    "robust_logrank_empirical_p": 0.8083832335329342,
+    "baseline_min_p_observed": 0.0784470618868725,
+    "baseline_min_p_empirical_p": 0.38922155688622756
+  },
+  "fragility": {
+    "jackknife_HR_gt1_fraction": 0.0,
+    "jackknife_HR_range": [
+      0.8605775368204718,
+      0.9510451621438906
+    ],
+    "bootstrap_HR_CI95": [
+      0.6985426442050936,
+      1.4238228489906484
+    ],
+    "bootstrap_HR_gt1_fraction": 0.405,
+    "cutoff_sensitivity": {
+      "-1.0": {
+        "n_pathways": 50,
+        "signature": [
+          "REACTOME_ABACAVIR_TRANSPORT_AND_METABOLISM",
+          "REACTOME_PURINE_METABOLISM"
+        ],
+        "adj_HR": 0.9082060233346745,
+        "adj_p": 0.517211894987142
+      },
+      "-1.2816": {
+        "n_pathways": 35,
+        "signature": [
+          "REACTOME_ABACAVIR_TRANSPORT_AND_METABOLISM",
+          "REACTOME_PURINE_METABOLISM",
+          "REACTOME_GLUCOSE_METABOLISM"
+        ],
+        "adj_HR": 0.9127172965918747,
+        "adj_p": 0.5273252370737674
+      },
+      "-1.645": {
+        "n_pathways": 22,
+        "signature": [
+          "REACTOME_ABACAVIR_TRANSPORT_AND_METABOLISM",
+          "REACTOME_PURINE_METABOLISM",
+          "REACTOME_GLUCOSE_METABOLISM"
+        ],
+        "adj_HR": 0.9123107285998888,
+        "adj_p": 0.5258981445961182
+      }
+    }
+  },
+  "robust_pathways": [],
+  "supported_pathways": [
+    "REACTOME_ABACAVIR_TRANSPORT_AND_METABOLISM",
+    "REACTOME_PURINE_METABOLISM",
+    "REACTOME_VITAMIN_B5_PANTOTHENATE_METABOLISM"
+  ],
+  "verdict": {
+    "permutation_significant": false,
+    "direction_consistent_all_versions": false,
+    "predictive_interaction_p_lt_0.1": false,
+    "events_in_treated": 47,
+    "adequately_powered": true,
+    "direction": "reversed (resistant score -> better survival)",
+    "signature_status": "not supported"
+  }
+}

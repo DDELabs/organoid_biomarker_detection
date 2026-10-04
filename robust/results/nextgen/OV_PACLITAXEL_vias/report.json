@@ -1,0 +1,224 @@
+{
+  "cancer": "OV",
+  "drug": "PACLITAXEL",
+  "model": "vias",
+  "notes": {
+    "model": "vias",
+    "deconfound": {
+      "confounder_R2": 0.6521734398463812,
+      "beta_proliferation": -0.14721750970153855,
+      "beta_general": 0.20540119137377888
+    }
+  },
+  "versions": {
+    "nit": {
+      "summary": {
+        "cancer": "OV",
+        "drug": "PACLITAXEL",
+        "data": "nit",
+        "organoids": 14,
+        "candidate_pathways": 322,
+        "patients_with_survival": 420,
+        "treated_patients": 307
+      },
+      "baseline_best": {
+        "ML": "Ridge",
+        "k": 6,
+        "logrank_p": 0.007762557880008234
+      },
+      "baseline_k7_ridge_p": 0.039204365125756785,
+      "signature": {
+        "REACTOME_ABC_FAMILY_PROTEINS_MEDIATED_TRANSPORT": 0.2759,
+        "REACTOME_CREB_PHOSPHORYLATION_THROUGH_THE_ACTIVATION_OF_RAS": -0.3665,
+        "REACTOME_CREB_PHOSPHORYLATION_THROUGH_THE_ACTIVATION_OF_CAMKII": -0.316,
+        "REACTOME_RAP1_SIGNALLING": -0.2824,
+        "REACTOME_MTORC1_MEDIATED_SIGNALLING": 0.2507
+      },
+      "robust": {
+        "n_treated": 307,
+        "events": 191,
+        "logrank_p": 0.11017399209682138,
+        "os5_responder": 0.2906351414329403,
+        "os5_nonresponder": 0.3713270781012614,
+        "c_index": 0.46514007480064923,
+        "adj_covariates": "stage_III,stage_IV,age,proliferation",
+        "cox_HR": 0.8640314451207929,
+        "cox_p": 0.0405122213287135,
+        "adj_HR": 0.8731698914029796,
+        "adj_HR_low": 0.7569853491190893,
+        "adj_HR_high": 1.0071868103391073,
+        "adj_p": 0.06265009928212466,
+        "adj_n": 307,
+        "prognostic_HR_untreated": 1.0558392074308762,
+        "prognostic_p": 0.7290567750781896,
+        "interaction_HR": 0.8176669510803312,
+        "interaction_p": 0.24377624317535385
+      },
+      "robust_precise_aligned": {
+        "n_treated": 307,
+        "events": 191,
+        "logrank_p": 0.031292459669040366,
+        "os5_responder": 0.2535967127688947,
+        "os5_nonresponder": 0.41054171063614453,
+        "c_index": 0.450568061534119,
+        "adj_covariates": "stage_III,stage_IV,age,proliferation",
+        "cox_HR": 0.8266083889344035,
+        "cox_p": 0.010078012975320108,
+        "adj_HR": 0.8293569439151874,
+        "adj_HR_low": 0.7136584700623001,
+        "adj_HR_high": 0.963812480723859,
+        "adj_p": 0.014655406515777672,
+        "adj_n": 307,
+        "prognostic_HR_untreated": 0.8588476936179655,
+        "prognostic_p": 0.3279939296462183,
+        "interaction_HR": 0.9843041021832757,
+        "interaction_p": 0.92658694236754
+      }
+    },
+    "nit_nodeconf": {
+      "summary": {
+        "cancer": "OV",
+        "drug": "PACLITAXEL",
+        "data": "nit_nodeconf",
+        "organoids": 14,
+        "candidate_pathways": 322,
+        "patients_with_survival": 420,
+        "treated_patients": 307
+      },
+      "baseline_best": {
+        "ML": "Ridge",
+        "k": 3,
+        "logrank_p": 0.15784407041823212
+      },
+      "baseline_k7_ridge_p": 0.818088881040332,
+      "signature": {
+        "REACTOME_ABC_FAMILY_PROTEINS_MEDIATED_TRANSPORT": 0.2672,
+        "REACTOME_REGULATION_OF_INSULIN_SECRETION_BY_GLUCAGON_LIKE_PEPTIDE1": 0.1732,
+        "REACTOME_ACTIVATED_TAK1_MEDIATES_P38_MAPK_ACTIVATION": 0.1854,
+        "REACTOME_MTORC1_MEDIATED_SIGNALLING": 0.2423
+      },
+      "robust": {
+        "n_treated": 307,
+        "events": 191,
+        "logrank_p": 0.13403117331262687,
+        "os5_responder": 0.3633335124013547,
+        "os5_nonresponder": 0.29314317932744804,
+        "c_index": 0.5370827746806859,
+        "adj_covariates": "stage_III,stage_IV,age,proliferation",
+        "cox_HR": 1.1207606717270222,
+        "cox_p": 0.10057735970772698,
+        "adj_HR": 1.159582842527358,
+        "adj_HR_low": 1.0081063331036075,
+        "adj_HR_high": 1.3338199796287105,
+        "adj_p": 0.038171924289117115,
+        "adj_n": 307,
+        "prognostic_HR_untreated": 1.2129059935127176,
+        "prognostic_p": 0.10602648593742442,
+        "interaction_HR": 0.9362199545661315,
+        "interaction_p": 0.6301886476645291
+      },
+      "robust_precise_aligned": {
+        "n_treated": 307,
+        "events": 191,
+        "logrank_p": 0.6566506129467411,
+        "os5_responder": 0.3297576745703429,
+        "os5_nonresponder": 0.329457415495914,
+        "c_index": 0.501199633053419,
+        "adj_covariates": "stage_III,stage_IV,age,proliferation",
+        "cox_HR": 0.9626449506574869,
+        "cox_p": 0.5985173709192261,
+        "adj_HR": 0.9278472503937045,
+        "adj_HR_low": 0.8031225244726267,
+        "adj_HR_high": 1.071941694859662,
+        "adj_p": 0.30927158946218636,
+        "adj_n": 307,
+        "prognostic_HR_untreated": 0.9663669957259651,
+        "prognostic_p": 0.7357666200014779,
+        "interaction_HR": 0.9414928638584869,
+        "interaction_p": 0.6232316629134027
+      }
+    }
+  },
+  "organoid_cv": {
+    "robust_loocv_spearman": 0.23956043956043957,
+    "robust_loocv_p": 0.4094298928517327,
+    "baseline_loocv_spearman": 0.2835164835164835,
+    "baseline_loocv_p": 0.32596594744177293
+  },
+  "permutation": {
+    "n": 500,
+    "robust_adjHR_empirical_p": 1.0,
+    "robust_logrank_empirical_p": 0.18562874251497005,
+    "baseline_min_p_observed": 0.0077625578800082,
+    "baseline_min_p_empirical_p": 0.16766467065868262
+  },
+  "fragility": {
+    "jackknife_HR_gt1_fraction": 0.2857142857142857,
+    "jackknife_HR_range": [
+      0.8675870206742217,
+      1.136716920867051
+    ],
+    "bootstrap_HR_CI95": [
+      0.7456497679471286,
+      0.9792300694495656
+    ],
+    "bootstrap_HR_gt1_fraction": 0.01,
+    "cutoff_sensitivity": {
+      "-1.0": {
+        "n_pathways": 126,
+        "signature": [
+          "REACTOME_HDL_MEDIATED_LIPID_TRANSPORT",
+          "REACTOME_CREB_PHOSPHORYLATION_THROUGH_THE_ACTIVATION_OF_RAS",
+          "REACTOME_CREB_PHOSPHORYLATION_THROUGH_THE_ACTIVATION_OF_CAMKII",
+          "REACTOME_RAP1_SIGNALLING",
+          "REACTOME_GLUCOSE_METABOLISM"
+        ],
+        "adj_HR": 0.8257047640465164,
+        "adj_p": 0.008119391153515175
+      },
+      "-1.2816": {
+        "n_pathways": 86,
+        "signature": [
+          "REACTOME_ERKS_ARE_INACTIVATED",
+          "REACTOME_HDL_MEDIATED_LIPID_TRANSPORT",
+          "REACTOME_NRAGE_SIGNALS_DEATH_THROUGH_JNK",
+          "REACTOME_PREFOLDIN_MEDIATED_TRANSFER_OF_SUBSTRATE_TO_CCT_TRIC",
+          "REACTOME_PROTEIN_FOLDING",
+          "REACTOME_RAP1_SIGNALLING"
+        ],
+        "adj_HR": 0.8794178404166922,
+        "adj_p": 0.08805647322242141
+      },
+      "-1.645": {
+        "n_pathways": 49,
+        "signature": [
+          "REACTOME_PREFOLDIN_MEDIATED_TRANSFER_OF_SUBSTRATE_TO_CCT_TRIC",
+          "REACTOME_PROTEIN_FOLDING",
+          "REACTOME_CREB_PHOSPHORYLATION_THROUGH_THE_ACTIVATION_OF_RAS",
+          "REACTOME_CREB_PHOSPHORYLATION_THROUGH_THE_ACTIVATION_OF_CAMKII",
+          "REACTOME_RAP1_SIGNALLING"
+        ],
+        "adj_HR": 0.8208292606641159,
+        "adj_p": 0.00876580856364243
+      }
+    }
+  },
+  "robust_pathways": [
+    "REACTOME_ABC_FAMILY_PROTEINS_MEDIATED_TRANSPORT",
+    "REACTOME_MTORC1_MEDIATED_SIGNALLING"
+  ],
+  "supported_pathways": [
+    "REACTOME_ACTIVATED_TAK1_MEDIATES_P38_MAPK_ACTIVATION",
+    "REACTOME_REGULATION_OF_INSULIN_SECRETION_BY_GLUCAGON_LIKE_PEPTIDE1",
+    "REACTOME_CREB_PHOSPHORYLATION_THROUGH_THE_ACTIVATION_OF_RAS"
+  ],
+  "verdict": {
+    "permutation_significant": false,
+    "direction_consistent_all_versions": false,
+    "predictive_interaction_p_lt_0.1": false,
+    "events_in_treated": 191,
+    "adequately_powered": true,
+    "direction": "inconsistent",
+    "signature_status": "not supported"
+  }
+}
