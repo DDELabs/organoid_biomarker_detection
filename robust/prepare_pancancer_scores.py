@@ -21,10 +21,12 @@ PROJECTS = ["ACC", "BLCA", "BRCA", "CESC", "CHOL", "COAD", "DLBC", "ESCA", "GBM"
             "LAML", "LGG", "LIHC", "LUAD", "LUSC", "MESO", "OV", "PAAD", "PCPG", "PRAD", "READ", "SARC", "SKCM",
             "STAD", "TGCT", "THCA", "THYM", "UCEC", "UCS", "UVM"]
 
+SAMPLE_TYPES = {"SKCM": ("01", "06")}  # most TCGA melanomas are metastases
+
 
 def project_scores(project, cleanup=False):
     def compute():
-        expr = C.tcga_star_fpkm_uq(project)
+        expr = C.tcga_star_fpkm_uq(project, SAMPLE_TYPES.get(project, ("01",)))
         gs = {k: [g for g in v if g in expr.index] for k, v in gene_sets(("REACTOME",)).items()}
         return scoring.rank_score(expr, {k: v for k, v in gs.items() if len(v) >= 5})
 

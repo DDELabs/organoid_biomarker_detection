@@ -156,18 +156,20 @@ def to_canonical(expr):
 
 
 # --------------------------------------------------------------------- TCGA
-def tcga_star_fpkm_uq(project):
+def tcga_star_fpkm_uq(project, sample_types=("01",)):
     """Current GDC STAR FPKM-UQ (log2(x+1), GENCODE v36) from the Xena GDC hub.
 
-    Primary tumours only (-01), one aliquot per patient (vial A preferred),
+    Primary tumours only (-01) by default; `sample_types` in order of preference, e.g. ("01", "06")
+    adds metastases for patients without a primary (SKCM). One aliquot per patient (vial A preferred),
     Ensembl IDs mapped to the canonical symbols used by the original pipeline.
     """
     path = fetch(XENA_GDC + f"TCGA-{project}.star_fpkm-uq.tsv.gz", EXTERNAL / f"TCGA-{project}.star_fpkm-uq.tsv.gz")
     expr = pd.read_csv(path, sep="\t", index_col=0)
     expr.index = expr.index.str.split(".").str[0]
     keep = {}
-    for c in sorted(c for c in expr.columns if c[13:15] == "01"):
-        keep.setdefault(c[:12], c)
+    for st in sample_types:
+        for c in sorted(c for c in expr.columns if c[13:15] == st):
+            keep.setdefault(c[:12], c)
     expr = expr[list(keep.values())]
     expr.columns = list(keep.keys())
     e2s = ensembl_to_symbol()
