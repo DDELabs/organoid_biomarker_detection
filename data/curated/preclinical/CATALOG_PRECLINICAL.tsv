@@ -5,5 +5,6 @@ liver_broutier2017	5	7	5	29	AUC,lnIC50	organoid	liver	log2(RPKM+1)	Broutier 2017
 liver_ji2023	61	62	61	73	AUC	organoid	liver	log2(TPM+1)	Ji 2023 Sci Transl Med 15:eadg3358	CoderData 2.2 (figshare 29923646)
 pancreas_shi2022	39	87	39	63	AUC	organoid	pancreas	log2(FPKM+1)	Shi 2022 Nat Commun 13:2169	GSE194249; PMC9023604
 pancreas_tiriac2018	36	46	58	5	AUC	organoid	pancreas	log2(TPM+1)	Tiriac 2018 Cancer Discov 8:1112	CoderData 2.1.0 pancpdo; HCMI
+pdx_novartis_gao2015	192	399	280	61	BestAvgResponse	PDX	pan-cancer (breast, CRC, gastric, NSCLC, pancreas, melanoma)	log2(FPKM+1)	Gao 2015 Nat Med 21:1318	nm.3954 Supplementary Table S1
 prism_repurposing	476	476	480	1448	AUC	cell line	pan-cancer	log2(TPM+1)	Corsello 2020 Nat Cancer 1:235	figshare 20237739; DepMap 21Q4
 sarcoma_alshihabi2024	15	16	17	33	viability_pct	organoid	sarcoma	log2(TPM+1)	Al Shihabi 2024 Cell Stem Cell 31:1524	syn61892224; CoderData 2.1.0 sarcpdo
