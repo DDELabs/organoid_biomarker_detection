@@ -36,6 +36,14 @@ bp.SOURCES.update({
                  "GSE76402_series_matrix.txt.gz"),
     "gpl10558": ("https://ftp.ncbi.nlm.nih.gov/geo/platforms/GPL10nnn/GPL10558/annot/GPL10558.annot.gz",
                  "GPL10558.annot.gz"),
+    # van de Wetering et al. 2015 Cell 161:933 (CRC living organoid biobank): Table S2 (drug screen) + GSE64392
+    "vdw_s2": ("https://ars.els-cdn.com/content/image/1-s2.0-S0092867415003736-mmc3.xlsx", "vdWetering2015_mmc3.xlsx"),
+    "gse64392": ("https://ftp.ncbi.nlm.nih.gov/geo/series/GSE64nnn/GSE64392/matrix/GSE64392_series_matrix.txt.gz",
+                 "GSE64392_series_matrix.txt.gz"),
+    "gpl16686": ("https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL16686&targ=self&view=data&form=text",
+                 "GPL16686_full.txt"),
+    "hgnc": ("https://storage.googleapis.com/public-download-files/hgnc/tsv/tsv/hgnc_complete_set.txt",
+             "hgnc_complete_set.txt"),
 })
 
 LOWER = "lower = more sensitive"
@@ -215,6 +223,93 @@ def probes_to_symbols(data, annot_path, col="Gene symbol"):
     return bp.collapse(data, {p: g.get(s.upper()) for p, s in sym.items()})
 
 
+def refseq_to_symbol():
+    """RefSeq transcript accession (no version) -> HGNC symbol, from the HGNC complete set (refseq + MANE)."""
+    h = pd.read_csv(bp.fetch("hgnc"), sep="\t", dtype=str, low_memory=False)
+    m = {}
+    for sym, ref, mane in zip(h["symbol"], h["refseq_accession"], h["mane_select"]):
+        for a in str(ref).split("|") + str(mane).split("|"):
+            if a[:2] in ("NM", "NR", "XM", "XR"):
+                m[a.split(".")[0]] = sym
+    return m
+
+
+# ============================================================================ CRC PDO (van de Wetering 2015)
+VDW_DRUGS = {
+    "(5Z)-7-Oxozeaenol": "5Z-7-OXOZEAENOL", "17-AAG": "TANESPIMYCIN", "5-Fluorouracil": "FLUOROURACIL",
+    "681640": "681640", "ABT-263": "NAVITOCLAX", "AICAR": "ACADESINE", "AMG-706": "MOTESANIB",
+    "AZD-2281": "OLAPARIB", "AZD6482": "AZD-6482", "AZD8055": "AZD-8055", "AZD8931": "SAPITINIB",
+    "BIBW2992/Afatanib": "AFATINIB", "BIRB 0796": "DORAMAPIMOD", "BMN-673": "TALAZOPARIB",
+    "BMS-708163": "AVAGACESTAT", "BYL719": "ALPELISIB", "CEP-701": "LESTAURTINIB", "Dasatanib": "DASATINIB",
+    "GDC-0449": "VISMODEGIB", "GDC0941": "PICTILISIB", "GSK1120212/Tramatenib": "TRAMETINIB",
+    "GSK2118436/Dabrafenib": "DABRAFENIB", "Gemcitibine": "GEMCITABINE", "INCB-18424/Ruxolitinib": "RUXOLITINIB",
+    "JNJ-26854165": "SERDEMETAN", "LY317615": "ENZASTAURIN", "MLN8237": "ALISERTIB", "NVP-BEZ235": "DACTOLISIB",
+    "Nutlin-3a": "NUTLIN-3A", "OSI-906": "LINSITINIB", "Obatoclax Mesylate": "OBATOCLAX",
+    "PD-0332991": "PALBOCICLIB", "PF-02341066": "CRIZOTINIB", "PF477736": "PF-477736", "PLX4720": "PLX-4720",
+    "SCH772984": "SCH-772984", "XAV 939": "XAV-939", "FK866": "FK-866",
+}
+
+def build_vdw():
+    import io
+    d = pd.read_excel(bp.fetch("vdw_s2"), sheet_name="Supplemental Table S2b").iloc[:, :7]
+    d = d.dropna(subset=["Organoid", "AUC"])
+    d["sample"] = d["Organoid"].astype(str).str.upper().str.replace(r"^P(\d+)A$", r"P\1TA", regex=True) \
+        .str.replace(r"^P(\d+)B$", r"P\1TB", regex=True)
+    d["drug"] = [VDW_DRUGS.get(str(n).strip()) or bp.generic(n) for n in d["Drug Name"]]
+    d["rep"] = d.groupby(["sample", "Drug_ID"]).cumcount() + 1
+    resp = (d.groupby(["sample", "drug"])
+            .agg(response=("AUC", "median"), ln_ic50=("IC50", "median"), max_conc_uM=("Max_conc", "first"),
+                 n_screens=("AUC", "size"), gdsc_drug_id=("Drug_ID", lambda x: ",".join(sorted({str(i) for i in x}))))
+            .reset_index())
+    resp["screens"] = resp["sample"] + "x" + resp["n_screens"].astype(str)
+    resp["metric"] = "AUC"
+    data, ann = series_matrix(bp.fetch("gse64392"))
+    tum = ann[ann["title"].str.contains(r"t[ab]?$")]
+    lines = tum["title"].str.upper().str.replace(r"T$", "", regex=True).str.replace(r"^(P\d+)T([AB])$", r"\1T\2", regex=True)
+    lines = lines.where(~tum["title"].str.contains(r"t[ab]$"), tum["title"].str.upper())
+    txt = bp.fetch("gpl16686").read_text().splitlines()
+    i = next(k for k, l in enumerate(txt) if l.startswith("ID\t"))
+    gpl = pd.read_csv(io.StringIO("\n".join(l for l in txt[i:] if not l.startswith("!"))), sep="\t", dtype=str)
+    gpl = gpl[gpl["GB_ACC"].notna()]
+    r2s = refseq_to_symbol()
+    probe_sym = {p: r2s.get(a.split(".")[0]) for p, a in zip(gpl["ID"], gpl["GB_ACC"])}
+    x = data[tum.index].astype(float)
+    x.columns = lines.values
+    g = bp.gene_tables()["symbol"]
+    expr = bp.collapse(x, {p: g.get(str(s).upper()) for p, s in probe_sym.items() if s})
+    gsm = tum[["geo_accession", "title"]].assign(sample=lines.values)
+    md = f"""# Colorectal cancer PDOs - living organoid biobank (van de Wetering et al. 2015)
+
+**Paper**: van de Wetering M, Francies HE, Francis JM, et al. *Prospective derivation of a living organoid biobank
+of colorectal cancer patients.* Cell 2015;161(4):933-945. doi:10.1016/j.cell.2015.03.053 (PMID 25957691).
+
+**Accessions**: drug screen = Table S2 (`mmc3.xlsx`, Elsevier supplementary-content CDN), sheet S2b (GDSC-style
+screen at the Sanger Institute, 83 compounds, technical/biological replicates per organoid); expression = GEO
+**GSE64392** (Affymetrix HuGene 2.0 ST, RMA-sketch, tumour and matched normal organoids).
+
+{bp.provenance(["vdw_s2", "gse64392", "gpl16686", "hgnc", "gene_info"])}
+
+## Derivation
+* Response: **AUC** of the fitted dose-response curve as published (fraction of the tested range, 0-1; screen
+  used a 5-dose, 256-fold range up to `max_conc_uM`). Median over replicate screens (`n_screens`). **Lower = more
+  sensitive**. The published ln(IC50 / uM) median is kept as `ln_ic50` (not used by the loader). Drug names ->
+  generic via DrugBank vocabulary (e.g. `Nutlin-3a (-)` -> NUTLIN-3A); research codes are kept.
+  This replaces the degenerate CoderData 2.2 colorectal refit noted in REPORT_PRECLINICAL.md.
+* Expression: GEO series-matrix RMA values (already log2), **tumour organoids only** (`p<n>t`, `p19ta/b`,
+  `p24ta/b`; normal organoids `p<n>n` dropped). Transcript clusters -> RefSeq (`GB_ACC` of GPL16686) -> HGNC
+  symbol (HGNC complete set, RefSeq/MANE columns), highest-mean cluster per gene, protein-coding only. Units:
+  **log2 RMA**. Only ~13.5k genes map (GPL16686 lacks a gene-symbol column).
+
+## Sample-ID matching
+Drug-screen IDs `P10`, `P19a`, `P24a` = GEO titles `p10t`, `p19ta`, `p24ta` (written `P10`, `P19TA`, `P24TA`).
+Expression organoids: {{n_expr_models}}; screened: {{n_resp_models}}; **overlap n = {{n_both}}**.
+Genes: {{n_genes}}; drugs: {{n_drugs}}. No matched patient clinical response is public.
+"""
+    return write("colorectal_vandewetering2015", expr, resp, md,
+                 {"type": "organoid", "tissue": "colorectal", "source": "Cell supplement + GEO"},
+                 extra_files={"gsm_map.tsv": gsm})
+
+
 # ============================================================================ CRC PDX cetuximab (Isella 2017)
 def build_isella():
     import zipfile
@@ -281,6 +376,7 @@ Genes: {{n_genes}}; drugs: {{n_drugs}}.
 BUILDERS = {
     "pdx_novartis_gao2015": build_pdxe,
     "colorectal_pdx_isella2017": build_isella,
+    "colorectal_vandewetering2015": build_vdw,
 }
 
 bp.META.update({
@@ -290,6 +386,9 @@ bp.META.update({
     "colorectal_pdx_isella2017": dict(model="PDX", tissue="colorectal (liver metastasis)",
                                       expression_units="log2(lumi intensity)", reference="Isella 2017 Nat Commun 8:15107",
                                       accession="GSE76402; PMC5499209 Suppl. Data 4"),
+    "colorectal_vandewetering2015": dict(model="organoid", tissue="colorectal", expression_units="log2(RMA)",
+                                         reference="van de Wetering 2015 Cell 161:933",
+                                         accession="GSE64392; Cell Table S2 (mmc3)"),
 })
 
 
