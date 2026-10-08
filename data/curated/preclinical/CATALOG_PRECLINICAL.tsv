@@ -1,5 +1,6 @@
 set	n_models_both	n_expr_models	n_resp_models	n_drugs	metrics	model	tissue	expression_units	reference	accession
 bladder_lee2018	11	21	11	50	AUC	organoid	bladder	log2(TPM+1)	Lee 2018 Cell 173:515	GSE103990; syn64765430; CoderData 2.1.0
+colorectal_pdx_isella2017	192	248	192	1	tumour_volume_change_3w	PDX	colorectal (liver metastasis)	log2(lumi intensity)	Isella 2017 Nat Commun 8:15107	GSE76402; PMC5499209 Suppl. Data 4
 ctrpv2_ccle	819	819	844	460	AUC	cell line	pan-cancer	log2(TPM+1)	Seashore-Ludlow 2015 Cancer Discov 5:1210	CoderData 2.1.0 ctrpv2; DepMap 21Q4
 liver_broutier2017	5	7	5	29	AUC,lnIC50	organoid	liver	log2(RPKM+1)	Broutier 2017 Nat Med 23:1424	GSE84073; PMC5722201
 liver_ji2023	61	62	61	73	AUC	organoid	liver	log2(TPM+1)	Ji 2023 Sci Transl Med 15:eadg3358	CoderData 2.2 (figshare 29923646)

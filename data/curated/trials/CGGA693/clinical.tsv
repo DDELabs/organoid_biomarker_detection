@@ -1,0 +1,694 @@
+sample	arm	drug	drugs	setting	responder	os_months	os_event	pfs_months	pfs_event	age	sex	randomised	control_arm	radio_status	histology	grade	prs_type	idh_status	codel_1p19q	mgmt_status	cancer
+CGGA_1002	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	10.020533880903491	1.0	NA	NA	43.0	Female	False	False	1.0	AA	WHO III	Primary	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_1003	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	125.40451745379877	0.0	NA	NA	47.0	Female	False	False	0.0	O	WHO II	Primary	Mutant	Codel	un-methylated	lower-grade glioma
+CGGA_1010	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	8.082135523613964	1.0	NA	NA	45.0	Male	False	False	1.0	A	WHO II	Primary	Mutant	NA	un-methylated	lower-grade glioma
+CGGA_1012	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	120.870636550308	1.0	NA	NA	45.0	Male	False	False	1.0	rO	WHO II	Recurrent	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1014	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	8.640657084188911	1.0	NA	NA	42.0	Male	False	False	0.0	A	WHO II	Primary	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1017	no TMZ	NONE	NONE	primary	NA	25.232032854209447	1.0	NA	NA	29.0	Female	False	True	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1018	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	83.02258726899385	1.0	NA	NA	50.0	Male	False	False	1.0	rO	WHO II	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_103	no TMZ	NONE	NONE	primary	NA	39.030800821355236	1.0	NA	NA	56.0	Male	False	True	1.0	AA	WHO III	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1030	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	120.37782340862422	0.0	NA	NA	40.0	Female	False	False	1.0	A	WHO II	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1032	NA	NA	NA	primary	NA	21.125256673511295	1.0	NA	NA	41.0	Female	False	False	NA	A	WHO II	Primary	Wildtype	NA	methylated	lower-grade glioma
+CGGA_1033	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	43.43326488706366	0.0	NA	NA	44.0	Male	False	False	0.0	OA	WHO II	Primary	NA	Non-codel	un-methylated	lower-grade glioma
+CGGA_1036	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	26.480492813141684	1.0	NA	NA	41.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1037	no TMZ	NONE	NONE	primary	NA	25.626283367556468	0.0	NA	NA	44.0	Male	False	True	1.0	A	WHO II	Primary	NA	Codel	methylated	lower-grade glioma
+CGGA_1041	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	118.04517453798768	0.0	NA	NA	58.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1048	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	23.096509240246405	0.0	NA	NA	27.0	Female	False	False	0.0	A	WHO II	Primary	Wildtype	Non-codel	NA	lower-grade glioma
+CGGA_1051	NA	NA	NA	primary	NA	27.531827515400412	1.0	NA	NA	47.0	Male	False	False	NA	A	WHO II	Primary	Wildtype	Codel	NA	lower-grade glioma
+CGGA_1055	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	52.92813141683778	1.0	NA	NA	43.0	Male	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1057	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	50.8911704312115	1.0	NA	NA	57.0	Female	False	False	1.0	A	WHO II	Primary	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1058	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	32.68993839835729	1.0	NA	NA	34.0	Male	False	False	1.0	rA	WHO II	Recurrent	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_106	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	165.19096509240245	0.0	NA	NA	30.0	Male	False	False	0.0	rA	WHO II	Recurrent	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1063	NA	NA	NA	primary	NA	NA	NA	NA	NA	29.0	Male	False	False	NA	A	WHO II	Primary	Mutant	NA	methylated	lower-grade glioma
+CGGA_1065	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	112.09856262833675	0.0	NA	NA	48.0	Female	False	False	1.0	O	WHO II	Primary	Mutant	Codel	un-methylated	lower-grade glioma
+CGGA_1066	no TMZ	NONE	NONE	primary	NA	23.753593429158112	1.0	NA	NA	34.0	Female	False	True	1.0	A	WHO II	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1069	NA	NA	NA	recurrent	NA	NA	NA	NA	NA	47.0	Male	False	False	NA	rA	WHO II	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_107	no TMZ	NONE	NONE	recurrent	NA	70.83367556468173	1.0	NA	NA	38.0	Female	False	True	0.0	rAA	WHO III	Recurrent	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1075	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	13.075975359342916	1.0	NA	NA	72.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_108	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	12.02464065708419	1.0	NA	NA	44.0	Male	False	False	0.0	rAA	WHO III	Recurrent	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1082	NA	NA	NA	primary	NA	NA	NA	NA	NA	55.0	Female	False	False	NA	A	WHO II	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1086	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	64.95277207392198	1.0	NA	NA	65.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	NA	methylated	glioblastoma
+CGGA_1087	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	23.030800821355236	0.0	NA	NA	36.0	Female	False	False	0.0	O	WHO II	Primary	Mutant	Codel	un-methylated	lower-grade glioma
+CGGA_1097	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	45.27310061601643	1.0	NA	NA	30.0	Male	False	False	1.0	A	WHO II	Primary	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_1100	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	108.8788501026694	0.0	NA	NA	61.0	Female	False	False	1.0	O	WHO II	Primary	Mutant	NA	methylated	lower-grade glioma
+CGGA_1101	no TMZ	NONE	NONE	primary	NA	7.030800821355236	1.0	NA	NA	35.0	Female	False	True	0.0	A	WHO II	Primary	Wildtype	NA	un-methylated	lower-grade glioma
+CGGA_1103	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	19.21971252566735	1.0	NA	NA	35.0	Female	False	False	1.0	GBM	WHO IV	Primary	Mutant	Non-codel	methylated	glioblastoma
+CGGA_1106	no TMZ	NONE	NONE	primary	NA	13.79876796714579	1.0	NA	NA	37.0	Male	False	True	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1108	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	22.472279260780287	1.0	NA	NA	39.0	Female	False	False	1.0	AA	WHO III	Primary	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1111	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	88.57494866529774	1.0	NA	NA	45.0	Male	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_112	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	50.39835728952772	1.0	NA	NA	17.0	Male	False	False	1.0	A	WHO II	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1120	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	13.86447638603696	1.0	NA	NA	58.0	Female	False	False	1.0	AOA	WHO III	Primary	Mutant	NA	methylated	lower-grade glioma
+CGGA_1121	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	107.69609856262834	0.0	NA	NA	29.0	Female	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1126	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	25.75770020533881	1.0	NA	NA	44.0	Male	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1127	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	86.40657084188912	1.0	NA	NA	33.0	Male	False	False	1.0	O	WHO II	Primary	NA	Codel	un-methylated	lower-grade glioma
+CGGA_1130	no TMZ	NONE	NONE	recurrent	NA	13.207392197125257	1.0	NA	NA	23.0	Female	False	True	1.0	rGBM	WHO IV	Recurrent	Mutant	Non-codel	methylated	glioblastoma
+CGGA_1131	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	106.80903490759754	0.0	NA	NA	46.0	Female	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1132	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	106.80903490759754	0.0	NA	NA	33.0	Female	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1134	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	1.9383983572895278	1.0	NA	NA	56.0	Female	False	False	0.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1135	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	40.87063655030801	1.0	NA	NA	40.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1137	NA	NA	NA	primary	NA	106.34907597535934	0.0	NA	NA	58.0	Male	False	False	1.0	AA	WHO III	Primary	Wildtype	NA	methylated	lower-grade glioma
+CGGA_1138	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	13.503080082135524	1.0	NA	NA	54.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1141	NA	NA	NA	primary	NA	14.193018480492814	1.0	NA	NA	65.0	Male	False	False	NA	AA	WHO III	Primary	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1142	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	33.01848049281314	1.0	NA	NA	60.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1144	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	82.29979466119096	0.0	NA	NA	39.0	Female	False	False	1.0	AA	WHO III	Primary	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1147	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	105.62628336755647	0.0	NA	NA	36.0	Male	False	False	0.0	A	WHO II	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1148	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	19.581108829568787	1.0	NA	NA	37.0	Male	False	False	1.0	A	WHO II	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1152	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	105.16632443531827	0.0	NA	NA	13.0	Male	False	False	0.0	A	WHO II	Primary	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1154	NA	NA	NA	recurrent	NA	12.123203285420944	1.0	NA	NA	33.0	Female	False	False	NA	rAA	WHO III	Recurrent	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1155	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	45.1088295687885	1.0	NA	NA	43.0	Male	False	False	1.0	AA	WHO III	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1156	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	104.93634496919918	0.0	NA	NA	41.0	Female	False	False	1.0	A	WHO II	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1157	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	23.88501026694045	1.0	NA	NA	64.0	Male	False	False	1.0	A	WHO II	Primary	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_1158	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	104.73921971252567	0.0	NA	NA	39.0	Male	False	False	1.0	O	WHO II	Primary	Mutant	Codel	un-methylated	lower-grade glioma
+CGGA_1159	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	104.50924024640658	0.0	NA	NA	51.0	Male	False	False	0.0	A	WHO II	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1161	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	104.47638603696099	0.0	NA	NA	36.0	Male	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1162	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	104.27926078028747	0.0	NA	NA	39.0	Male	False	False	1.0	AOA	WHO III	Primary	NA	Codel	un-methylated	lower-grade glioma
+CGGA_1164	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	33.57700205338809	1.0	NA	NA	38.0	Female	False	False	0.0	rGBM	WHO IV	Recurrent	Mutant	Codel	un-methylated	glioblastoma
+CGGA_1169	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	57.987679671457904	1.0	NA	NA	30.0	Male	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1172	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	102.86652977412732	0.0	NA	NA	36.0	Female	False	False	1.0	GBM	WHO IV	Primary	Mutant	Non-codel	methylated	glioblastoma
+CGGA_1178	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	13.86447638603696	1.0	NA	NA	41.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1181	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	10.447638603696099	0.0	NA	NA	36.0	Male	False	False	1.0	A	WHO II	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1183	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	13.404517453798768	1.0	NA	NA	25.0	Female	False	False	1.0	AA	WHO III	Primary	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1184	no TMZ	NONE	NONE	recurrent	NA	5.125256673511293	1.0	NA	NA	46.0	Male	False	True	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1185	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	24.016427104722794	1.0	NA	NA	50.0	Female	False	False	1.0	rAA	WHO III	Recurrent	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1191	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	101.25667351129364	0.0	NA	NA	53.0	Male	False	False	0.0	AO	WHO III	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1192	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	101.19096509240246	0.0	NA	NA	43.0	Female	False	False	1.0	A	WHO II	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1195	no TMZ	NONE	NONE	primary	NA	15.638603696098563	1.0	NA	NA	43.0	Male	False	True	0.0	AA	WHO III	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1198	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	100.73100616016427	0.0	NA	NA	30.0	Male	False	False	0.0	O	WHO II	Primary	Mutant	NA	un-methylated	lower-grade glioma
+CGGA_120	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	9.462012320328542	1.0	NA	NA	42.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	NA	glioblastoma
+CGGA_1204	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	100.40246406570841	0.0	NA	NA	53.0	Male	False	False	0.0	O	WHO II	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1205	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	30.521560574948666	1.0	NA	NA	59.0	Female	False	False	1.0	AA	WHO III	Primary	Wildtype	NA	un-methylated	lower-grade glioma
+CGGA_1207	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	100.17248459958932	0.0	NA	NA	49.0	Female	False	False	0.0	AOA	WHO III	Primary	NA	Codel	methylated	lower-grade glioma
+CGGA_1208	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	5.28952772073922	1.0	NA	NA	38.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1211	no TMZ	NONE	NONE	primary	NA	99.94250513347022	0.0	NA	NA	40.0	Male	False	True	0.0	O	WHO II	Primary	Mutant	Codel	un-methylated	lower-grade glioma
+CGGA_1212	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	75.30184804928132	1.0	NA	NA	31.0	Male	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1223	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	22.406570841889117	1.0	NA	NA	42.0	Male	False	False	1.0	AA	WHO III	Primary	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1226	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	22.012320328542096	1.0	NA	NA	33.0	Female	False	False	1.0	A	WHO II	Primary	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1228	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	86.27515400410678	0.0	NA	NA	34.0	Male	False	False	0.0	A	WHO II	Primary	Wildtype	Non-codel	NA	lower-grade glioma
+CGGA_1232	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	67.90965092402465	1.0	NA	NA	39.0	Male	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1235	no TMZ	NONE	NONE	primary	NA	98.69404517453799	0.0	NA	NA	32.0	Female	False	True	0.0	AO	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1236	no TMZ	NONE	NONE	primary	NA	6.275154004106776	1.0	NA	NA	47.0	Female	False	True	0.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1238	no TMZ	NONE	NONE	primary	NA	98.43121149897331	0.0	NA	NA	11.0	Female	False	True	0.0	A	WHO II	Primary	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1239	NA	NA	NA	primary	NA	98.46406570841889	0.0	NA	NA	44.0	Female	False	False	1.0	O	WHO II	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1248	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	4.5338809034907595	1.0	NA	NA	54.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1255	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	3.8767967145790556	1.0	NA	NA	49.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1256	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	84.0082135523614	0.0	NA	NA	52.0	Female	False	False	1.0	GBM	WHO IV	Primary	NA	Non-codel	methylated	glioblastoma
+CGGA_1257	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	6.308008213552362	1.0	NA	NA	59.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1260	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	5.815195071868583	1.0	NA	NA	32.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1262	no TMZ	NONE	NONE	recurrent	NA	5.453798767967146	1.0	NA	NA	69.0	Female	False	True	1.0	rGBM	WHO IV	Recurrent	Wildtype	NA	methylated	glioblastoma
+CGGA_1264	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	96.22997946611909	0.0	NA	NA	37.0	Female	False	False	0.0	AO	WHO III	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1269	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	96.03285420944559	0.0	NA	NA	35.0	Female	False	False	0.0	AO	WHO III	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1273	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	80.09856262833675	0.0	NA	NA	64.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1282	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	36.6652977412731	1.0	NA	NA	33.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1286	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	95.47433264887064	0.0	NA	NA	52.0	Female	False	False	1.0	O	WHO II	Primary	Mutant	Codel	un-methylated	lower-grade glioma
+CGGA_1291	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	79.5728952772074	0.0	NA	NA	41.0	Male	False	False	1.0	AO	WHO III	Primary	NA	Codel	un-methylated	lower-grade glioma
+CGGA_1295	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	10.184804928131417	1.0	NA	NA	40.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1300	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	58.90759753593429	1.0	NA	NA	35.0	Male	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1303	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	93.99589322381931	0.0	NA	NA	45.0	Female	False	False	1.0	AOA	WHO III	Primary	Mutant	NA	methylated	lower-grade glioma
+CGGA_1305	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	88.77207392197126	1.0	NA	NA	43.0	Male	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1309	no TMZ	NONE	NONE	primary	NA	31.67145790554415	0.0	NA	NA	65.0	Male	False	True	0.0	AO	WHO III	Primary	NA	Codel	methylated	lower-grade glioma
+CGGA_1311	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	35.48254620123203	1.0	NA	NA	29.0	Female	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1317	no TMZ	NONE	NONE	primary	NA	94.09445585215606	0.0	NA	NA	45.0	Male	False	True	0.0	OA	WHO II	Primary	Mutant	NA	methylated	lower-grade glioma
+CGGA_1318	no TMZ	NONE	NONE	primary	NA	49.18275154004107	0.0	NA	NA	39.0	Male	False	True	1.0	A	WHO II	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1319	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	93.99589322381931	0.0	NA	NA	42.0	Female	False	False	1.0	AO	WHO III	Primary	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_1321	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	23.06365503080082	1.0	NA	NA	46.0	Male	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1325	no TMZ	NONE	NONE	recurrent	NA	NA	NA	NA	NA	20.0	Male	False	True	0.0	rGBM	WHO IV	Recurrent	Wildtype	NA	un-methylated	glioblastoma
+CGGA_1326	no TMZ	NONE	NONE	primary	NA	10.57905544147844	1.0	NA	NA	45.0	Male	False	True	1.0	GBM	WHO IV	Primary	Mutant	Non-codel	un-methylated	glioblastoma
+CGGA_1334	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	4.7967145790554415	1.0	NA	NA	33.0	Female	False	False	1.0	A	WHO II	Primary	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_1335	no TMZ	NONE	NONE	primary	NA	93.27310061601642	0.0	NA	NA	43.0	Female	False	True	0.0	O	WHO II	Primary	Mutant	Codel	un-methylated	lower-grade glioma
+CGGA_1337	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	71.35934291581108	1.0	NA	NA	67.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	NA	Non-codel	un-methylated	glioblastoma
+CGGA_1339	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	93.04312114989733	0.0	NA	NA	41.0	Male	False	False	0.0	O	WHO II	Primary	Mutant	Codel	un-methylated	lower-grade glioma
+CGGA_1345	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	92.81314168377824	0.0	NA	NA	56.0	Male	False	False	1.0	O	WHO II	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_135	no TMZ	NONE	NONE	primary	NA	63.21149897330596	1.0	NA	NA	41.0	Female	False	True	1.0	AA	WHO III	Primary	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1350	no TMZ	NONE	NONE	primary	NA	92.61601642710473	0.0	NA	NA	36.0	Male	False	True	0.0	O	WHO II	Primary	Mutant	NA	methylated	lower-grade glioma
+CGGA_1353	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	33.57700205338809	1.0	NA	NA	65.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1354	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	17.412731006160165	1.0	NA	NA	40.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1356	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	31.145790554414784	1.0	NA	NA	52.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1359	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	11.268993839835728	1.0	NA	NA	21.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_1361	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	92.12320328542094	0.0	NA	NA	40.0	Male	False	False	1.0	O	WHO II	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1362	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	92.12320328542094	0.0	NA	NA	64.0	Female	False	False	1.0	AA	WHO III	Primary	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1365	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	8.31211498973306	1.0	NA	NA	55.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	NA	methylated	glioblastoma
+CGGA_1368	no TMZ	NONE	NONE	primary	NA	91.89322381930185	0.0	NA	NA	49.0	Male	False	True	1.0	O	WHO II	Primary	Mutant	NA	methylated	lower-grade glioma
+CGGA_1369	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	11.827515400410677	0.0	NA	NA	37.0	Female	False	False	1.0	AO	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1371	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	91.69609856262834	0.0	NA	NA	68.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1377	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	91.33470225872689	0.0	NA	NA	28.0	Male	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1378	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	12.41889117043121	1.0	NA	NA	47.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	NA	un-methylated	glioblastoma
+CGGA_1380	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	9.560574948665298	1.0	NA	NA	46.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1382	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	9.330595482546201	1.0	NA	NA	57.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1383	no TMZ	NONE	NONE	recurrent	NA	29.04312114989733	0.0	NA	NA	47.0	Female	False	True	1.0	rAA	WHO III	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1386	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	91.00616016427105	0.0	NA	NA	34.0	Male	False	False	0.0	AO	WHO III	Primary	NA	Codel	methylated	lower-grade glioma
+CGGA_1387	no TMZ	NONE	NONE	recurrent	NA	2.9568788501026693	1.0	NA	NA	41.0	Male	False	True	0.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1389	no TMZ	NONE	NONE	primary	NA	54.83367556468173	1.0	NA	NA	67.0	Female	False	True	1.0	AO	WHO III	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_139	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	22.80082135523614	1.0	NA	NA	59.0	Male	False	False	1.0	GBM	WHO IV	Primary	Mutant	Non-codel	un-methylated	glioblastoma
+CGGA_1390	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	67.35112936344969	0.0	NA	NA	50.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1391	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	13.995893223819301	0.0	NA	NA	62.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1392	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	15.540041067761807	1.0	NA	NA	62.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1398	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	18.20123203285421	1.0	NA	NA	43.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1400	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	90.08624229979466	0.0	NA	NA	53.0	Female	False	False	1.0	rAO	WHO III	Recurrent	NA	Codel	un-methylated	lower-grade glioma
+CGGA_1401	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	55.19507186858316	1.0	NA	NA	39.0	Male	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1402	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	90.08624229979466	0.0	NA	NA	30.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1403	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	22.308008213552363	1.0	NA	NA	43.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1404	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	90.05338809034907	0.0	NA	NA	56.0	Female	False	False	1.0	AO	WHO III	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1407	no TMZ	NONE	NONE	primary	NA	89.62628336755647	0.0	NA	NA	29.0	Female	False	True	0.0	AO	WHO III	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1410	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	27.104722792607802	1.0	NA	NA	27.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1413	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	89.36344969199179	0.0	NA	NA	35.0	Male	False	False	1.0	AO	WHO III	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1415	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	89.3305954825462	0.0	NA	NA	30.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1416	no TMZ	NONE	NONE	primary	NA	63.507186858316224	1.0	NA	NA	42.0	Male	False	True	0.0	AO	WHO III	Primary	Mutant	Codel	un-methylated	lower-grade glioma
+CGGA_1417	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	89.13347022587268	0.0	NA	NA	56.0	Male	False	False	1.0	AO	WHO III	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1418	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	9.429158110882957	1.0	NA	NA	73.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	NA	un-methylated	glioblastoma
+CGGA_1419	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	8.180698151950718	1.0	NA	NA	56.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1420	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	11.958932238193018	1.0	NA	NA	60.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1421	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	88.67351129363449	0.0	NA	NA	35.0	Male	False	False	1.0	AO	WHO III	Primary	NA	Non-codel	methylated	lower-grade glioma
+CGGA_1422	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	6.702258726899384	1.0	NA	NA	76.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	NA	un-methylated	glioblastoma
+CGGA_1424	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	88.4435318275154	0.0	NA	NA	41.0	Female	False	False	1.0	AO	WHO III	Primary	Mutant	NA	methylated	lower-grade glioma
+CGGA_1425	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	21.026694045174537	1.0	NA	NA	22.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Codel	methylated	glioblastoma
+CGGA_1426	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	4.369609856262834	1.0	NA	NA	50.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1427	no TMZ	NONE	NONE	primary	NA	11.137577002053389	0.0	NA	NA	30.0	Female	False	True	1.0	OA	WHO II	Primary	NA	Non-codel	un-methylated	lower-grade glioma
+CGGA_1429	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	88.21355236139631	0.0	NA	NA	40.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Mutant	Codel	methylated	glioblastoma
+CGGA_1430	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	5.322381930184805	1.0	NA	NA	28.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1431	no TMZ	NONE	NONE	primary	NA	67.28542094455852	1.0	NA	NA	48.0	Male	False	True	0.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1433	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	12.944558521560575	1.0	NA	NA	72.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1434	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	2.2012320328542097	1.0	NA	NA	61.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1435	no TMZ	NONE	NONE	primary	NA	54.4394250513347	1.0	NA	NA	46.0	Female	False	True	1.0	AA	WHO III	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1437	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	34.06981519507187	1.0	NA	NA	48.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1440	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	87.72073921971253	0.0	NA	NA	29.0	Female	False	False	0.0	O	WHO II	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1441	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	61.831622176591374	1.0	NA	NA	70.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1443	no TMZ	NONE	NONE	recurrent	NA	87.5564681724846	0.0	NA	NA	41.0	Male	False	True	1.0	rA	WHO II	Recurrent	Wildtype	Non-codel	NA	lower-grade glioma
+CGGA_1444	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	12.41889117043121	1.0	NA	NA	68.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1445	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	87.52361396303901	0.0	NA	NA	37.0	Male	False	False	0.0	rAA	WHO III	Recurrent	Wildtype	NA	methylated	lower-grade glioma
+CGGA_1446	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	87.52361396303901	0.0	NA	NA	29.0	Male	False	False	0.0	OA	WHO II	Primary	Mutant	NA	un-methylated	lower-grade glioma
+CGGA_1447	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	10.119096509240247	1.0	NA	NA	48.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Wildtype	NA	methylated	lower-grade glioma
+CGGA_1451	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	14.390143737166325	1.0	NA	NA	45.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1452	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	15.375770020533881	1.0	NA	NA	53.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1454	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	87.22792607802874	0.0	NA	NA	42.0	Female	False	False	1.0	A	WHO II	Primary	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_1455	no TMZ	NONE	NONE	primary	NA	87.22792607802874	0.0	NA	NA	40.0	Male	False	True	0.0	O	WHO II	Primary	Mutant	NA	un-methylated	lower-grade glioma
+CGGA_1457	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	10.250513347022586	1.0	NA	NA	60.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1458	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	4.172484599589322	1.0	NA	NA	54.0	Female	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1459	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	16.525667351129364	1.0	NA	NA	55.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1461	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	7.425051334702259	1.0	NA	NA	60.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1462	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	5.716632443531828	1.0	NA	NA	49.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1463	no TMZ	NONE	NONE	primary	NA	86.50513347022587	0.0	NA	NA	69.0	Female	False	True	1.0	O	WHO II	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1467	no TMZ	NONE	NONE	primary	NA	28.451745379876797	1.0	NA	NA	58.0	Male	False	True	1.0	GBM	WHO IV	Primary	Mutant	NA	un-methylated	glioblastoma
+CGGA_1469	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	86.27515400410678	0.0	NA	NA	46.0	Male	False	False	1.0	AOA	WHO III	Primary	Mutant	NA	methylated	lower-grade glioma
+CGGA_1471	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	86.17659137577002	0.0	NA	NA	45.0	Male	False	False	1.0	A	WHO II	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1472	no TMZ	NONE	NONE	primary	NA	33.67556468172484	1.0	NA	NA	34.0	Male	False	True	0.0	GBM	WHO IV	Primary	NA	Non-codel	methylated	glioblastoma
+CGGA_1473	no TMZ	NONE	NONE	recurrent	NA	8.706365503080082	1.0	NA	NA	28.0	Female	False	True	1.0	rAA	WHO III	Recurrent	NA	Non-codel	un-methylated	lower-grade glioma
+CGGA_1474	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	10.940451745379876	0.0	NA	NA	50.0	Female	False	False	1.0	AO	WHO III	Primary	Mutant	NA	methylated	lower-grade glioma
+CGGA_1476	no TMZ	NONE	NONE	primary	NA	9.82340862422998	1.0	NA	NA	53.0	Female	False	True	0.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1477	no TMZ	NONE	NONE	primary	NA	39.227926078028744	1.0	NA	NA	43.0	Male	False	True	1.0	OA	WHO II	Primary	NA	Non-codel	un-methylated	lower-grade glioma
+CGGA_1478	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	17.806981519507186	1.0	NA	NA	72.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1480	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	13.305954825462011	1.0	NA	NA	41.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1481	no TMZ	NONE	NONE	primary	NA	4.303901437371663	1.0	NA	NA	55.0	Male	False	True	0.0	GBM	WHO IV	Primary	Wildtype	NA	methylated	glioblastoma
+CGGA_1482	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	85.15811088295688	0.0	NA	NA	38.0	Male	False	False	1.0	AO	WHO III	Primary	NA	Codel	methylated	lower-grade glioma
+CGGA_1486	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	6.04517453798768	1.0	NA	NA	45.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	NA	methylated	glioblastoma
+CGGA_1487	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	17.084188911704313	1.0	NA	NA	49.0	Female	False	False	1.0	rAA	WHO III	Recurrent	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1488	no TMZ	NONE	NONE	primary	NA	84.96098562628337	0.0	NA	NA	31.0	Male	False	True	0.0	A	WHO II	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1491	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	8.082135523613964	1.0	NA	NA	29.0	Male	False	False	1.0	GBM	WHO IV	Primary	Mutant	Non-codel	un-methylated	glioblastoma
+CGGA_1492	no TMZ	NONE	NONE	recurrent	NA	8.804928131416839	1.0	NA	NA	47.0	Female	False	True	0.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1494	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	8.837782340862423	1.0	NA	NA	21.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	NA	methylated	glioblastoma
+CGGA_1496	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	10.841889117043122	1.0	NA	NA	42.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Mutant	Codel	methylated	glioblastoma
+CGGA_1497	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	38.70225872689939	1.0	NA	NA	24.0	Female	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1498	NA	NA	NA	primary	NA	NA	NA	NA	NA	69.0	Male	False	False	NA	GBM	WHO IV	Primary	Wildtype	NA	un-methylated	glioblastoma
+CGGA_1500	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	3.5482546201232035	1.0	NA	NA	45.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1501	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	7.293634496919918	1.0	NA	NA	58.0	Male	False	False	1.0	GBM	WHO IV	Primary	NA	Non-codel	methylated	glioblastoma
+CGGA_1502	no TMZ	NONE	NONE	primary	NA	84.27104722792608	0.0	NA	NA	27.0	Female	False	True	0.0	O	WHO II	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1503	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	25.527720739219713	1.0	NA	NA	47.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	NA	un-methylated	glioblastoma
+CGGA_1504	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	84.04106776180699	0.0	NA	NA	44.0	Female	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1505	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	5.650924024640657	1.0	NA	NA	30.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Mutant	Non-codel	un-methylated	glioblastoma
+CGGA_1507	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	23.49075975359343	1.0	NA	NA	41.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1508	no TMZ	NONE	NONE	primary	NA	34.46406570841889	1.0	NA	NA	39.0	Male	False	True	0.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1510	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	8.903490759753593	1.0	NA	NA	40.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1513	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	77.27310061601642	1.0	NA	NA	36.0	Female	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1514	no TMZ	NONE	NONE	primary	NA	2.4969199178644765	1.0	NA	NA	57.0	Female	False	True	0.0	A	WHO II	Primary	Wildtype	NA	methylated	lower-grade glioma
+CGGA_1516	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	83.1211498973306	0.0	NA	NA	46.0	Male	False	False	1.0	O	WHO II	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1517	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	83.1211498973306	0.0	NA	NA	42.0	Male	False	False	1.0	O	WHO II	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1518	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	13.503080082135524	1.0	NA	NA	19.0	Female	False	False	1.0	AA	WHO III	Primary	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_1520	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	9.757700205338809	1.0	NA	NA	67.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	NA	glioblastoma
+CGGA_1521	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	6.7351129363449695	1.0	NA	NA	63.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1523	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	82.39835728952772	0.0	NA	NA	50.0	Male	False	False	1.0	A	WHO II	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1524	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	32.98562628336756	1.0	NA	NA	36.0	Male	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1525	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	55.39219712525667	1.0	NA	NA	41.0	Male	False	False	1.0	AOA	WHO III	Primary	NA	Non-codel	methylated	lower-grade glioma
+CGGA_1526	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	82.20123203285421	0.0	NA	NA	39.0	Male	False	False	1.0	AO	WHO III	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1527	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	56.31211498973306	1.0	NA	NA	47.0	Male	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1528	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	82.03696098562628	0.0	NA	NA	27.0	Female	False	False	1.0	O	WHO II	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1529	NA	NA	NA	primary	NA	19.15400410677618	1.0	NA	NA	63.0	Male	False	False	NA	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1530	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	82.03696098562628	0.0	NA	NA	41.0	Male	False	False	0.0	AOA	WHO III	Primary	NA	Non-codel	un-methylated	lower-grade glioma
+CGGA_1531	NA	NA	NA	primary	NA	NA	NA	NA	NA	36.0	Male	False	False	NA	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1533	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	39.983572895277206	1.0	NA	NA	61.0	Female	False	False	1.0	rAA	WHO III	Recurrent	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_1534	no TMZ	NONE	NONE	primary	NA	0.8870636550308009	1.0	NA	NA	58.0	Female	False	True	0.0	GBM	WHO IV	Primary	Mutant	Non-codel	un-methylated	glioblastoma
+CGGA_1535	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	7.62217659137577	1.0	NA	NA	43.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Mutant	Non-codel	un-methylated	glioblastoma
+CGGA_1536	no TMZ	NONE	NONE	primary	NA	27.59753593429158	1.0	NA	NA	53.0	Male	False	True	0.0	A	WHO II	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1537	no TMZ	NONE	NONE	primary	NA	3.186858316221766	1.0	NA	NA	73.0	Male	False	True	0.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1538	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	8.114989733059549	1.0	NA	NA	57.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1539	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	80.8870636550308	0.0	NA	NA	61.0	Male	False	False	1.0	GBM	WHO IV	Primary	Mutant	Non-codel	methylated	glioblastoma
+CGGA_1541	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	2.2012320328542097	1.0	NA	NA	50.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1542	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	6.04517453798768	0.0	NA	NA	26.0	Male	False	False	1.0	GBM	WHO IV	Primary	Mutant	NA	un-methylated	glioblastoma
+CGGA_1543	no TMZ	NONE	NONE	primary	NA	23.753593429158112	1.0	NA	NA	57.0	Male	False	True	1.0	GBM	WHO IV	Primary	Mutant	Non-codel	un-methylated	glioblastoma
+CGGA_1544	no TMZ	NONE	NONE	primary	NA	6.833675564681725	1.0	NA	NA	38.0	Female	False	True	0.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1546	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	7.326488706365503	1.0	NA	NA	56.0	Male	False	False	0.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1548	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	34.62833675564682	1.0	NA	NA	53.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1551	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	11.40041067761807	1.0	NA	NA	50.0	Female	False	False	1.0	GBM	WHO IV	Primary	NA	Non-codel	un-methylated	glioblastoma
+CGGA_1552	no TMZ	NONE	NONE	primary	NA	79.90143737166325	0.0	NA	NA	39.0	Male	False	True	1.0	AO	WHO III	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1553	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	17.741273100616016	1.0	NA	NA	30.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1554	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	27.071868583162217	1.0	NA	NA	34.0	Male	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1557	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	79.73716632443532	0.0	NA	NA	47.0	Male	False	False	0.0	AO	WHO III	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1558	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	4.271047227926078	1.0	NA	NA	71.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1559	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	19.811088295687885	1.0	NA	NA	63.0	Male	False	False	0.0	GBM	WHO IV	Primary	Mutant	Codel	methylated	glioblastoma
+CGGA_1560	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	15.080082135523615	1.0	NA	NA	35.0	Female	False	False	1.0	GBM	WHO IV	Primary	Mutant	Non-codel	methylated	glioblastoma
+CGGA_1562	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	66.75975359342915	1.0	NA	NA	51.0	Male	False	False	1.0	AO	WHO III	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1563	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	79.60574948665298	0.0	NA	NA	32.0	Female	False	False	1.0	A	WHO II	Primary	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_1564	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	6.242299794661191	1.0	NA	NA	48.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1565	no TMZ	NONE	NONE	primary	NA	46.554414784394254	0.0	NA	NA	23.0	Female	False	True	0.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1566	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	79.50718685831622	0.0	NA	NA	43.0	Female	False	False	1.0	AO	WHO III	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1567	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	27.59753593429158	1.0	NA	NA	48.0	Female	False	False	1.0	AO	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1568	no TMZ	NONE	NONE	primary	NA	11.3347022587269	0.0	NA	NA	26.0	Female	False	True	0.0	AA	WHO III	Primary	NA	Non-codel	methylated	lower-grade glioma
+CGGA_1569	no TMZ	NONE	NONE	primary	NA	46.19301848049281	0.0	NA	NA	27.0	Female	False	True	0.0	AA	WHO III	Primary	Wildtype	Codel	methylated	lower-grade glioma
+CGGA_157	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	30.028747433264886	1.0	NA	NA	34.0	Male	False	False	1.0	rA	WHO II	Recurrent	NA	Non-codel	un-methylated	lower-grade glioma
+CGGA_1571	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	13.535934291581109	0.0	NA	NA	43.0	Female	False	False	1.0	GBM	WHO IV	Primary	Mutant	Non-codel	methylated	glioblastoma
+CGGA_1572	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	5.256673511293634	1.0	NA	NA	60.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1575	no TMZ	NONE	NONE	recurrent	NA	4.238193018480493	1.0	NA	NA	37.0	Male	False	True	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1579	no TMZ	NONE	NONE	primary	NA	78.78439425051334	0.0	NA	NA	37.0	Male	False	True	0.0	A	WHO II	Primary	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_1580	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	51.94250513347023	1.0	NA	NA	34.0	Female	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1583	no TMZ	NONE	NONE	primary	NA	52.76386036960986	1.0	NA	NA	51.0	Female	False	True	1.0	OA	WHO II	Primary	NA	Non-codel	methylated	lower-grade glioma
+CGGA_1586	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	7.62217659137577	1.0	NA	NA	55.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1587	no TMZ	NONE	NONE	primary	NA	24.640657084188913	1.0	NA	NA	30.0	Female	False	True	0.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1588	no TMZ	NONE	NONE	primary	NA	65.80698151950719	0.0	NA	NA	24.0	Female	False	True	0.0	AA	WHO III	Primary	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_1589	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	11.236139630390143	1.0	NA	NA	49.0	Male	False	False	1.0	rA	WHO II	Recurrent	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_1591	no TMZ	NONE	NONE	recurrent	NA	37.223819301848046	1.0	NA	NA	54.0	Male	False	True	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1592	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	52.172484599589325	1.0	NA	NA	37.0	Male	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1594	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	15.770020533880903	0.0	NA	NA	25.0	Male	False	False	0.0	rA	WHO II	Recurrent	NA	Non-codel	methylated	lower-grade glioma
+CGGA_1595	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	77.63449691991786	0.0	NA	NA	34.0	Female	False	False	1.0	GBM	WHO IV	Primary	NA	Non-codel	un-methylated	glioblastoma
+CGGA_1596	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	6.7351129363449695	1.0	NA	NA	63.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1597	no TMZ	NONE	NONE	primary	NA	5.716632443531828	1.0	NA	NA	58.0	Male	False	True	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1598	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	18.529774127310063	1.0	NA	NA	31.0	Male	False	False	1.0	AA	WHO III	Primary	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1601	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	23.326488706365502	1.0	NA	NA	66.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1603	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	11.696098562628336	1.0	NA	NA	18.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1604	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	24.31211498973306	1.0	NA	NA	46.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Mutant	Non-codel	methylated	glioblastoma
+CGGA_1605	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	10.546201232032855	1.0	NA	NA	34.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1606	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	15.474332648870636	1.0	NA	NA	28.0	Female	False	False	1.0	AA	WHO III	Primary	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1607	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	43.794661190965094	1.0	NA	NA	35.0	Female	False	False	1.0	rO	WHO II	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1608	no TMZ	NONE	NONE	recurrent	NA	64.16427104722793	0.0	NA	NA	38.0	Male	False	True	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1610	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	34.75975359342916	1.0	NA	NA	39.0	Male	False	False	1.0	rAOA	WHO III	Recurrent	NA	Codel	methylated	lower-grade glioma
+CGGA_1611	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	38.04517453798768	1.0	NA	NA	30.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Mutant	Non-codel	un-methylated	glioblastoma
+CGGA_1612	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	23.589322381930184	1.0	NA	NA	68.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1613	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	8.213552361396303	0.0	NA	NA	53.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1614	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	35.449691991786445	1.0	NA	NA	51.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1615	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	19.252566735112936	1.0	NA	NA	48.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Codel	un-methylated	glioblastoma
+CGGA_1617	no TMZ	NONE	NONE	primary	NA	75.89322381930185	0.0	NA	NA	35.0	Female	False	True	1.0	O	WHO II	Primary	NA	Codel	methylated	lower-grade glioma
+CGGA_1618	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	76.18891170431212	0.0	NA	NA	31.0	Male	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1619	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	25.166324435318277	1.0	NA	NA	44.0	Male	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1620	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	75.95893223819301	0.0	NA	NA	51.0	Male	False	False	1.0	AO	WHO III	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1621	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	75.92607802874743	0.0	NA	NA	48.0	Female	False	False	1.0	A	WHO II	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1623	no TMZ	NONE	NONE	primary	NA	75.79466119096509	0.0	NA	NA	16.0	Female	False	True	1.0	AA	WHO III	Primary	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_1624	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	2.858316221765914	1.0	NA	NA	27.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Mutant	Non-codel	methylated	glioblastoma
+CGGA_1626	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	22.86652977412731	1.0	NA	NA	66.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1627	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	75.59753593429159	0.0	NA	NA	37.0	Male	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1630	no TMZ	NONE	NONE	primary	NA	70.96509240246407	0.0	NA	NA	26.0	Male	False	True	0.0	O	WHO II	Primary	NA	Codel	un-methylated	lower-grade glioma
+CGGA_1631	no TMZ	NONE	NONE	recurrent	NA	7.260780287474333	1.0	NA	NA	58.0	Female	False	True	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1634	no TMZ	NONE	NONE	primary	NA	12.02464065708419	1.0	NA	NA	26.0	Female	False	True	0.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1635	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	10.907597535934292	1.0	NA	NA	43.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	NA	un-methylated	glioblastoma
+CGGA_1640	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	74.48049281314168	0.0	NA	NA	55.0	Male	False	False	1.0	AOA	WHO III	Primary	NA	Non-codel	un-methylated	lower-grade glioma
+CGGA_1641	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	9.560574948665298	1.0	NA	NA	57.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1642	no TMZ	NONE	NONE	primary	NA	74.44763860369609	0.0	NA	NA	48.0	Male	False	True	1.0	A	WHO II	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1643	NA	NA	NA	primary	NA	NA	NA	NA	NA	50.0	Female	False	False	NA	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1644	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	5.683778234086242	1.0	NA	NA	48.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1645	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	65.57700205338809	0.0	NA	NA	59.0	Male	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1647	no TMZ	NONE	NONE	primary	NA	73.23203285420945	0.0	NA	NA	40.0	Male	False	True	1.0	O	WHO II	Primary	NA	Codel	methylated	lower-grade glioma
+CGGA_1648	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	57.39630390143737	0.0	NA	NA	45.0	Female	False	False	1.0	AOA	WHO III	Primary	NA	Codel	un-methylated	lower-grade glioma
+CGGA_1649	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	73.10061601642711	0.0	NA	NA	36.0	Male	False	False	1.0	O	WHO II	Primary	Mutant	Codel	un-methylated	lower-grade glioma
+CGGA_165	no TMZ	NONE	NONE	primary	NA	6.012320328542095	0.0	NA	NA	34.0	Male	False	True	1.0	A	WHO II	Primary	NA	Non-codel	un-methylated	lower-grade glioma
+CGGA_1650	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	42.15195071868583	1.0	NA	NA	36.0	Male	False	False	1.0	GBM	WHO IV	Primary	Mutant	Non-codel	methylated	glioblastoma
+CGGA_1651	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	27.66324435318275	1.0	NA	NA	44.0	Female	False	False	1.0	rA	WHO II	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1653	no TMZ	NONE	NONE	primary	NA	72.83778234086242	0.0	NA	NA	47.0	Female	False	True	1.0	OA	WHO II	Primary	NA	Non-codel	methylated	lower-grade glioma
+CGGA_1654	NA	NA	NA	primary	NA	NA	NA	NA	NA	61.0	Male	False	False	NA	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1655	no TMZ	NONE	NONE	primary	NA	39.72073921971253	0.0	NA	NA	48.0	Male	False	True	1.0	A	WHO II	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1656	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	4.895277207392197	1.0	NA	NA	56.0	Male	False	False	0.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1657	no TMZ	NONE	NONE	primary	NA	72.77207392197126	0.0	NA	NA	20.0	Female	False	True	0.0	AOA	WHO III	Primary	NA	Non-codel	methylated	lower-grade glioma
+CGGA_1658	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	51.71252566735113	1.0	NA	NA	64.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1659	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	12.714579055441478	1.0	NA	NA	24.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1660	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	NA	NA	NA	NA	41.0	Male	False	False	1.0	A	WHO II	Primary	Wildtype	Codel	methylated	lower-grade glioma
+CGGA_1661	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	72.57494866529774	0.0	NA	NA	42.0	Female	False	False	1.0	AA	WHO III	Primary	NA	Non-codel	methylated	lower-grade glioma
+CGGA_1662	no TMZ	NONE	NONE	primary	NA	49.05133470225873	0.0	NA	NA	55.0	Female	False	True	1.0	O	WHO II	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1663	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	9.527720739219713	1.0	NA	NA	61.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	NA	glioblastoma
+CGGA_1664	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	50.20123203285421	1.0	NA	NA	40.0	Female	False	False	1.0	O	WHO II	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1666	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	8.180698151950718	1.0	NA	NA	60.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	NA	methylated	glioblastoma
+CGGA_1667	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	71.62217659137578	0.0	NA	NA	40.0	Female	False	False	1.0	AO	WHO III	Primary	Mutant	Codel	un-methylated	lower-grade glioma
+CGGA_1669	no TMZ	NONE	NONE	primary	NA	4.566735112936345	1.0	NA	NA	44.0	Female	False	True	0.0	AA	WHO III	Primary	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_1670	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	11.991786447638603	1.0	NA	NA	30.0	Female	False	False	1.0	rAA	WHO III	Recurrent	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_1671	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	71.22792607802874	0.0	NA	NA	26.0	Female	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1672	NA	NA	NA	primary	NA	NA	NA	NA	NA	49.0	Female	False	False	NA	AOA	WHO III	Primary	NA	Non-codel	methylated	lower-grade glioma
+CGGA_1673	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	70.96509240246407	0.0	NA	NA	23.0	Female	False	False	0.0	A	WHO II	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1675	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	70.76796714579055	0.0	NA	NA	38.0	Male	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1677	NA	NA	NA	primary	NA	NA	NA	NA	NA	39.0	Female	False	False	NA	A	WHO II	Primary	NA	Non-codel	methylated	lower-grade glioma
+CGGA_1678	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	21.585215605749486	1.0	NA	NA	51.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	NA	methylated	glioblastoma
+CGGA_1679	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	70.50513347022587	0.0	NA	NA	52.0	Female	False	False	1.0	AO	WHO III	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1680	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	19.581108829568787	1.0	NA	NA	45.0	Male	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1681	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	11.367556468172484	1.0	NA	NA	58.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Codel	methylated	glioblastoma
+CGGA_1682	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	11.3347022587269	1.0	NA	NA	67.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1684	NA	NA	NA	primary	NA	NA	NA	NA	NA	51.0	Male	False	False	NA	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1685	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	7.392197125256674	1.0	NA	NA	33.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1686	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	24.476386036960985	1.0	NA	NA	27.0	Male	False	False	0.0	AA	WHO III	Primary	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1687	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	69.58521560574948	0.0	NA	NA	14.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1688	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	1.675564681724846	1.0	NA	NA	51.0	Female	False	False	1.0	rAA	WHO III	Recurrent	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_1689	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	69.58521560574948	0.0	NA	NA	45.0	Male	False	False	1.0	A	WHO II	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1690	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	19.449691991786448	1.0	NA	NA	60.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1693	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	16.985626283367555	1.0	NA	NA	61.0	Male	False	False	1.0	AO	WHO III	Primary	NA	Non-codel	un-methylated	lower-grade glioma
+CGGA_1694	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	20.501026694045173	1.0	NA	NA	55.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1695	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	68.79671457905545	0.0	NA	NA	45.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1696	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	39.58932238193019	0.0	NA	NA	72.0	Male	False	False	1.0	AA	WHO III	Primary	Wildtype	NA	un-methylated	lower-grade glioma
+CGGA_1697	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	2.924024640657084	1.0	NA	NA	47.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1698	no TMZ	NONE	NONE	primary	NA	12.747433264887064	1.0	NA	NA	55.0	Female	False	True	0.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1699	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	68.59958932238193	0.0	NA	NA	41.0	Female	False	False	0.0	GBM	WHO IV	Primary	Mutant	NA	un-methylated	glioblastoma
+CGGA_1700	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	68.20533880903491	0.0	NA	NA	49.0	Male	False	False	1.0	AO	WHO III	Primary	Mutant	Codel	un-methylated	lower-grade glioma
+CGGA_1701	no TMZ	NONE	NONE	primary	NA	55.72073921971253	0.0	NA	NA	44.0	Male	False	True	1.0	AO	WHO III	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1702	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	5.519507186858316	1.0	NA	NA	29.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1703	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	52.303901437371664	0.0	NA	NA	30.0	Female	False	False	1.0	A	WHO II	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1704	no TMZ	NONE	NONE	primary	NA	67.81108829568788	0.0	NA	NA	32.0	Female	False	True	1.0	A	WHO II	Primary	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1706	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	67.94250513347022	0.0	NA	NA	60.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	NA	glioblastoma
+CGGA_1708	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	36.86242299794661	1.0	NA	NA	54.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1709	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	13.634496919917865	1.0	NA	NA	47.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1713	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	10.907597535934292	1.0	NA	NA	62.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1714	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	66.82546201232033	0.0	NA	NA	37.0	Female	False	False	1.0	AOA	WHO III	Primary	NA	Codel	un-methylated	lower-grade glioma
+CGGA_1715	no TMZ	NONE	NONE	primary	NA	66.79260780287474	0.0	NA	NA	12.0	Female	False	True	0.0	O	WHO II	Primary	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_1716	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	31.24435318275154	1.0	NA	NA	38.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1718	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	65.57700205338809	0.0	NA	NA	37.0	Female	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1720	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	65.51129363449692	0.0	NA	NA	35.0	Male	False	False	1.0	A	WHO II	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1721	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	65.51129363449692	0.0	NA	NA	46.0	Female	False	False	1.0	AO	WHO III	Primary	NA	Codel	un-methylated	lower-grade glioma
+CGGA_1722	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	11.46611909650924	1.0	NA	NA	60.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	NA	un-methylated	glioblastoma
+CGGA_1723	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	65.24845995893224	0.0	NA	NA	39.0	Female	False	False	1.0	AO	WHO III	Primary	Mutant	Codel	un-methylated	lower-grade glioma
+CGGA_1725	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	65.14989733059548	0.0	NA	NA	33.0	Female	False	False	1.0	AO	WHO III	Primary	Mutant	Codel	un-methylated	lower-grade glioma
+CGGA_1727	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	65.05133470225873	0.0	NA	NA	48.0	Male	False	False	1.0	GBM	WHO IV	Primary	Mutant	Non-codel	un-methylated	glioblastoma
+CGGA_1728	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	30.127310061601644	1.0	NA	NA	45.0	Male	False	False	1.0	GBM	WHO IV	Primary	Mutant	Non-codel	un-methylated	glioblastoma
+CGGA_1729	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	8.016427104722792	1.0	NA	NA	52.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1731	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	64.91991786447639	0.0	NA	NA	45.0	Female	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1735	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	26.71047227926078	1.0	NA	NA	54.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1736	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	30.817248459958932	1.0	NA	NA	57.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1737	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	64.13141683778234	0.0	NA	NA	33.0	Male	False	False	1.0	AO	WHO III	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1738	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	15.408624229979466	1.0	NA	NA	49.0	Male	False	False	1.0	AA	WHO III	Primary	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_1739	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	16.919917864476385	1.0	NA	NA	45.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1740	no TMZ	NONE	NONE	primary	NA	11.926078028747433	1.0	NA	NA	50.0	Female	False	True	0.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1743	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	44.714579055441476	1.0	NA	NA	47.0	Female	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1744	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	63.605749486652975	0.0	NA	NA	51.0	Male	False	False	1.0	GBM	WHO IV	Primary	NA	Non-codel	methylated	glioblastoma
+CGGA_1745	no TMZ	NONE	NONE	primary	NA	63.37577002053388	0.0	NA	NA	45.0	Female	False	True	1.0	AOA	WHO III	Primary	Mutant	NA	methylated	lower-grade glioma
+CGGA_1747	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	9.626283367556468	1.0	NA	NA	27.0	Female	False	False	1.0	AOA	WHO III	Primary	NA	Non-codel	un-methylated	lower-grade glioma
+CGGA_1749	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	13.174537987679672	1.0	NA	NA	44.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1750	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	8.213552361396303	1.0	NA	NA	52.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1758	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	13.60164271047228	1.0	NA	NA	45.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1760	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	15.080082135523615	1.0	NA	NA	51.0	Male	False	False	0.0	rA	WHO II	Recurrent	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1764	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	23.326488706365502	1.0	NA	NA	33.0	Male	False	False	1.0	GBM	WHO IV	Primary	Mutant	Non-codel	un-methylated	glioblastoma
+CGGA_1767	no TMZ	NONE	NONE	primary	NA	2.8254620123203287	1.0	NA	NA	63.0	Male	False	True	0.0	GBM	WHO IV	Primary	Wildtype	NA	methylated	glioblastoma
+CGGA_1769	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	60.91170431211499	0.0	NA	NA	49.0	Female	False	False	0.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1770	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	8.772073921971252	1.0	NA	NA	43.0	Female	False	False	0.0	rGBM	WHO IV	Recurrent	Mutant	Non-codel	un-methylated	glioblastoma
+CGGA_1771	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	35.08829568788501	1.0	NA	NA	38.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_1773	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	3.4168377823408624	1.0	NA	NA	46.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1776	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	8.509240246406572	1.0	NA	NA	23.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1780	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	59.9917864476386	0.0	NA	NA	57.0	Female	False	False	0.0	GBM	WHO IV	Primary	Wildtype	NA	NA	glioblastoma
+CGGA_1785	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	10.809034907597535	1.0	NA	NA	34.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Mutant	Non-codel	methylated	glioblastoma
+CGGA_1786	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	59.696098562628336	0.0	NA	NA	54.0	Female	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Codel	NA	lower-grade glioma
+CGGA_1791	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	28.09034907597536	1.0	NA	NA	55.0	Male	False	False	1.0	AA	WHO III	Primary	Wildtype	NA	un-methylated	lower-grade glioma
+CGGA_1807	NA	NA	NA	primary	NA	8.114989733059549	1.0	NA	NA	65.0	Female	False	False	NA	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1809	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	11.268993839835728	1.0	NA	NA	27.0	Male	False	False	1.0	AO	WHO III	Primary	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_1811	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	9.987679671457906	1.0	NA	NA	64.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	NA	glioblastoma
+CGGA_1812	NA	NA	NA	primary	NA	25.626283367556468	1.0	NA	NA	65.0	Male	False	False	NA	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1814	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	7.260780287474333	1.0	NA	NA	46.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1815	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	6.078028747433265	1.0	NA	NA	45.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1817	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	13.1088295687885	1.0	NA	NA	72.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1819	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	33.01848049281314	1.0	NA	NA	55.0	Male	False	False	0.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1820	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	2.529774127310062	1.0	NA	NA	52.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1826	no TMZ	NONE	NONE	primary	NA	1.4455852156057496	1.0	NA	NA	70.0	Female	False	True	0.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1829	no TMZ	NONE	NONE	primary	NA	26.316221765913756	0.0	NA	NA	23.0	Male	False	True	0.0	A	WHO II	Primary	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_1833	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	16.229979466119097	1.0	NA	NA	60.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1840	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	38.73511293634497	0.0	NA	NA	58.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1850	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	24.640657084188913	0.0	NA	NA	29.0	Male	False	False	0.0	A	WHO II	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1854	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	53.42094455852156	0.0	NA	NA	36.0	Male	False	False	0.0	AA	WHO III	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1857	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	5.158110882956879	1.0	NA	NA	46.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	NA	glioblastoma
+CGGA_1862	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	3.6139630390143735	1.0	NA	NA	40.0	Male	False	False	1.0	AA	WHO III	Primary	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_1863	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	52.369609856262834	0.0	NA	NA	50.0	Female	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Codel	un-methylated	lower-grade glioma
+CGGA_1865	no TMZ	NONE	NONE	recurrent	NA	2.924024640657084	1.0	NA	NA	45.0	Female	False	True	0.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	NA	glioblastoma
+CGGA_1866	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	4.172484599589322	1.0	NA	NA	68.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1870	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	51.121149897330596	0.0	NA	NA	62.0	Male	False	False	1.0	GBM	WHO IV	Primary	Mutant	Codel	un-methylated	glioblastoma
+CGGA_1875	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	51.186858316221766	0.0	NA	NA	22.0	Female	False	False	1.0	A	WHO II	Primary	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_1877	NA	NA	NA	recurrent	NA	NA	NA	NA	NA	35.0	Male	False	False	NA	rAO	WHO III	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1880	no TMZ	NONE	NONE	recurrent	NA	42.776180698151954	0.0	NA	NA	37.0	Female	False	True	0.0	rAA	WHO III	Recurrent	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_1882	no TMZ	NONE	NONE	primary	NA	50.299794661190965	0.0	NA	NA	33.0	Male	False	True	0.0	AO	WHO III	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1886	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	11.104722792607802	1.0	NA	NA	31.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1899	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	5.782340862422998	1.0	NA	NA	45.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1901	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	17.741273100616016	1.0	NA	NA	60.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1902	no TMZ	NONE	NONE	primary	NA	48.591375770020534	0.0	NA	NA	33.0	Male	False	True	0.0	A	WHO II	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1903	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	48.427104722792606	0.0	NA	NA	24.0	Female	False	False	1.0	AOA	WHO III	Primary	NA	Codel	methylated	lower-grade glioma
+CGGA_1906	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	34.62833675564682	1.0	NA	NA	57.0	Male	False	False	0.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_1908	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	9.790554414784394	1.0	NA	NA	42.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1911	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	47.671457905544145	0.0	NA	NA	15.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1912	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	16.657084188911703	1.0	NA	NA	48.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	NA	Non-codel	methylated	glioblastoma
+CGGA_1916	no TMZ	NONE	NONE	primary	NA	NA	NA	NA	NA	33.0	Female	False	True	0.0	GBM	WHO IV	Primary	Mutant	Non-codel	NA	glioblastoma
+CGGA_1939	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	NA	NA	NA	NA	31.0	Male	False	False	NA	rA	WHO II	Recurrent	NA	Non-codel	un-methylated	lower-grade glioma
+CGGA_194	no TMZ	NONE	NONE	recurrent	NA	75.69609856262834	1.0	NA	NA	43.0	Female	False	True	0.0	rAO	WHO III	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_1946	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	4.6652977412731005	1.0	NA	NA	51.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1953	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	2.3983572895277208	1.0	NA	NA	47.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_1955	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	15.014373716632443	1.0	NA	NA	30.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	NA	Non-codel	NA	glioblastoma
+CGGA_1972	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	42.41478439425051	0.0	NA	NA	47.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1976	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	2.3983572895277208	1.0	NA	NA	53.0	Female	False	False	0.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_1985	NA	NA	NA	recurrent	NA	12.484599589322382	1.0	NA	NA	41.0	Male	False	False	NA	rGBM	WHO IV	Recurrent	Mutant	Non-codel	un-methylated	glioblastoma
+CGGA_1994	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	40.64065708418891	0.0	NA	NA	32.0	Female	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_2002	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	18.792607802874745	1.0	NA	NA	40.0	Male	False	False	1.0	rA	WHO II	Recurrent	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_2003	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	25.626283367556468	1.0	NA	NA	40.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Mutant	Non-codel	NA	glioblastoma
+CGGA_2006	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	20.566735112936346	1.0	NA	NA	43.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_2008	NA	NA	NA	recurrent	NA	1.4455852156057496	1.0	NA	NA	56.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_2013	NA	NA	NA	recurrent	NA	4.566735112936345	1.0	NA	NA	41.0	Male	False	False	NA	rA	WHO II	Recurrent	Mutant	Codel	un-methylated	lower-grade glioma
+CGGA_2024	NA	NA	NA	recurrent	NA	10.77618069815195	1.0	NA	NA	19.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_2038	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	NA	1.0	NA	NA	44.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Mutant	Non-codel	NA	glioblastoma
+CGGA_2039	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	23.06365503080082	0.0	NA	NA	28.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_2046	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	8.24640657084189	1.0	NA	NA	46.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_2047	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	19.64681724845996	1.0	NA	NA	64.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	NA	glioblastoma
+CGGA_2053	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	33.87268993839836	0.0	NA	NA	55.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Codel	NA	glioblastoma
+CGGA_2056	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	33.478439425051334	0.0	NA	NA	41.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Mutant	Non-codel	NA	glioblastoma
+CGGA_2062	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	1.3470225872689938	1.0	NA	NA	63.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Mutant	Non-codel	NA	glioblastoma
+CGGA_2075	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	8.739219712525667	1.0	NA	NA	63.0	Male	False	False	NA	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	NA	glioblastoma
+CGGA_2078	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	9.19917864476386	1.0	NA	NA	61.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	NA	glioblastoma
+CGGA_2079	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	31.67145790554415	0.0	NA	NA	45.0	Male	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Codel	NA	lower-grade glioma
+CGGA_2081	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	31.572895277207394	0.0	NA	NA	39.0	Female	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Codel	NA	lower-grade glioma
+CGGA_2082	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	18.759753593429156	0.0	NA	NA	41.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	NA	glioblastoma
+CGGA_2088	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	NA	NA	NA	NA	30.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	NA	glioblastoma
+CGGA_2106	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	29.305954825462013	0.0	NA	NA	39.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Mutant	Codel	methylated	glioblastoma
+CGGA_2115	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	5.618069815195072	1.0	NA	NA	31.0	Female	False	False	NA	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_2121	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	11.367556468172484	1.0	NA	NA	41.0	Female	False	False	NA	rA	WHO II	Recurrent	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_2129	no TMZ	NONE	NONE	recurrent	NA	27.20328542094456	0.0	NA	NA	48.0	Male	False	True	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_265	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	130.06981519507187	0.0	NA	NA	43.0	Male	False	False	1.0	rA	WHO II	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_279	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	43.17043121149897	1.0	NA	NA	49.0	Female	False	False	0.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_28	no TMZ	NONE	NONE	primary	NA	36.238193018480494	1.0	NA	NA	25.0	Male	False	True	1.0	A	WHO II	Primary	Mutant	Codel	un-methylated	lower-grade glioma
+CGGA_288	no TMZ	NONE	NONE	recurrent	NA	34.72689938398357	1.0	NA	NA	49.0	Male	False	True	0.0	rO	WHO II	Recurrent	Mutant	Codel	un-methylated	lower-grade glioma
+CGGA_290	no TMZ	NONE	NONE	primary	NA	155.23613963039014	0.0	NA	NA	37.0	Female	False	True	1.0	O	WHO II	Primary	Mutant	Codel	un-methylated	lower-grade glioma
+CGGA_320	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	98.72689938398358	1.0	NA	NA	31.0	Male	False	False	1.0	O	WHO II	Primary	Mutant	Codel	NA	lower-grade glioma
+CGGA_336	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	83.74537987679672	1.0	NA	NA	57.0	Female	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Codel	un-methylated	lower-grade glioma
+CGGA_358	no TMZ	NONE	NONE	recurrent	NA	4.008213552361396	1.0	NA	NA	30.0	Female	False	True	0.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_362	NA	NA	NA	recurrent	NA	NA	NA	NA	NA	39.0	Female	False	False	0.0	rA	WHO II	Recurrent	Mutant	Codel	un-methylated	lower-grade glioma
+CGGA_369	no TMZ	NONE	NONE	recurrent	NA	151.3264887063655	0.0	NA	NA	33.0	Male	False	True	1.0	rA	WHO II	Recurrent	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_406	no TMZ	NONE	NONE	recurrent	NA	2.9568788501026693	1.0	NA	NA	24.0	Female	False	True	0.0	rAA	WHO III	Recurrent	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_42	no TMZ	NONE	NONE	primary	NA	93.04312114989733	1.0	NA	NA	38.0	Male	False	True	1.0	A	WHO II	Primary	Mutant	Codel	un-methylated	lower-grade glioma
+CGGA_420	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	115.44969199178645	0.0	NA	NA	39.0	Female	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_457	no TMZ	NONE	NONE	recurrent	NA	2.4640657084188913	1.0	NA	NA	32.0	Male	False	True	0.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_474	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	66.6611909650924	0.0	NA	NA	NA	Male	False	False	1.0	AO	WHO III	Primary	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_482	no TMZ	NONE	NONE	primary	NA	82.49691991786447	1.0	NA	NA	45.0	Male	False	True	1.0	O	WHO II	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_487	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	5.125256673511293	1.0	NA	NA	46.0	Male	False	False	0.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_492	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	21.420944558521562	0.0	NA	NA	27.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_503	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	144.8870636550308	0.0	NA	NA	51.0	Male	False	False	1.0	A	WHO II	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_507	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	9.921971252566735	1.0	NA	NA	53.0	Female	False	False	0.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_509	no TMZ	NONE	NONE	primary	NA	20.468172484599588	1.0	NA	NA	38.0	Male	False	True	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_521	no TMZ	NONE	NONE	primary	NA	16.8870636550308	1.0	NA	NA	32.0	Male	False	True	1.0	AA	WHO III	Primary	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_530	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	16.62422997946612	1.0	NA	NA	41.0	Female	False	False	0.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_554	no TMZ	NONE	NONE	recurrent	NA	4.402464065708419	1.0	NA	NA	46.0	Female	False	True	0.0	rAOA	WHO III	Recurrent	NA	Non-codel	methylated	lower-grade glioma
+CGGA_568	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	9.363449691991786	1.0	NA	NA	14.0	Male	False	False	0.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_583	no TMZ	NONE	NONE	primary	NA	102.07802874743327	1.0	NA	NA	36.0	Female	False	True	1.0	A	WHO II	Primary	Mutant	NA	un-methylated	lower-grade glioma
+CGGA_619	no TMZ	NONE	NONE	recurrent	NA	18.069815195071868	1.0	NA	NA	40.0	Male	False	True	0.0	rA	WHO II	Recurrent	Wildtype	Non-codel	NA	lower-grade glioma
+CGGA_621	no TMZ	NONE	NONE	recurrent	NA	NA	NA	NA	NA	40.0	Male	False	True	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_625	no TMZ	NONE	NONE	recurrent	NA	80.98562628336755	1.0	NA	NA	33.0	Female	False	True	0.0	rAO	WHO III	Recurrent	Mutant	Codel	un-methylated	lower-grade glioma
+CGGA_634	no TMZ	NONE	NONE	primary	NA	86.50513347022587	1.0	NA	NA	35.0	Female	False	True	1.0	AA	WHO III	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_652	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	15.638603696098563	1.0	NA	NA	42.0	Male	False	False	0.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_663	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	138.31622176591375	0.0	NA	NA	29.0	Female	False	False	1.0	A	WHO II	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_703	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	44.51745379876797	1.0	NA	NA	31.0	Female	False	False	0.0	rAO	WHO III	Recurrent	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_705	no TMZ	NONE	NONE	primary	NA	49.51129363449692	1.0	NA	NA	41.0	Male	False	True	1.0	AA	WHO III	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_707	no TMZ	NONE	NONE	primary	NA	108.38603696098562	1.0	NA	NA	39.0	Female	False	True	1.0	O	WHO II	Primary	Mutant	Codel	NA	lower-grade glioma
+CGGA_720	no TMZ	NONE	NONE	recurrent	NA	41.3305954825462	1.0	NA	NA	46.0	Female	False	True	0.0	rA	WHO II	Recurrent	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_721	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	83.84394250513347	1.0	NA	NA	45.0	Male	False	False	1.0	A	WHO II	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_724	no TMZ	NONE	NONE	recurrent	NA	136.24640657084188	0.0	NA	NA	32.0	Male	False	True	0.0	rA	WHO II	Recurrent	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_730	no TMZ	NONE	NONE	recurrent	NA	69.58521560574948	1.0	NA	NA	51.0	Female	False	True	0.0	rO	WHO II	Recurrent	Mutant	Codel	NA	lower-grade glioma
+CGGA_763	no TMZ	NONE	NONE	recurrent	NA	10.480492813141684	0.0	NA	NA	52.0	Male	False	True	0.0	rAA	WHO III	Recurrent	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_777	no TMZ	NONE	NONE	recurrent	NA	4.7967145790554415	1.0	NA	NA	46.0	Male	False	True	0.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_780	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	30.324435318275153	1.0	NA	NA	64.0	Female	False	False	0.0	rAO	WHO III	Recurrent	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_799	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	61.37166324435318	1.0	NA	NA	53.0	Male	False	False	0.0	rAO	WHO III	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_809	no TMZ	NONE	NONE	primary	NA	41.13347022587269	1.0	NA	NA	26.0	Male	False	True	1.0	A	WHO II	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_810	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	18.102669404517453	1.0	NA	NA	20.0	Male	False	False	1.0	rAO	WHO III	Recurrent	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_825	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	27.46611909650924	1.0	NA	NA	36.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_831	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	17.93839835728953	1.0	NA	NA	55.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_846	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	98.26694045174538	0.0	NA	NA	39.0	Female	False	False	0.0	rA	WHO II	Recurrent	Wildtype	Non-codel	NA	lower-grade glioma
+CGGA_852	no TMZ	NONE	NONE	primary	NA	5.552361396303901	1.0	NA	NA	40.0	Male	False	True	1.0	AA	WHO III	Primary	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_861	no TMZ	NONE	NONE	primary	NA	29.338809034907598	1.0	NA	NA	29.0	Male	False	True	0.0	AA	WHO III	Primary	Wildtype	Non-codel	NA	lower-grade glioma
+CGGA_862	NA	NA	NA	recurrent	NA	NA	NA	NA	NA	30.0	Male	False	False	0.0	rA	WHO II	Recurrent	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_863	no TMZ	NONE	NONE	primary	NA	68.10677618069815	1.0	NA	NA	42.0	Female	False	True	1.0	A	WHO II	Primary	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_867	no TMZ	NONE	NONE	recurrent	NA	12.057494866529774	1.0	NA	NA	40.0	Female	False	True	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_869	NA	NA	NA	recurrent	NA	17.642710472279262	0.0	NA	NA	36.0	Female	False	False	NA	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_881	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	8.279260780287474	1.0	NA	NA	23.0	Female	False	False	0.0	rAA	WHO III	Recurrent	Wildtype	Non-codel	NA	lower-grade glioma
+CGGA_882	no TMZ	NONE	NONE	recurrent	NA	33.1170431211499	0.0	NA	NA	30.0	Male	False	True	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_883	NA	NA	NA	recurrent	NA	NA	NA	NA	NA	39.0	Female	False	False	0.0	rA	WHO II	Recurrent	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_887	NA	NA	NA	recurrent	NA	NA	NA	NA	NA	25.0	Male	False	False	NA	rAO	WHO III	Recurrent	Wildtype	Non-codel	NA	lower-grade glioma
+CGGA_888	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	21.97946611909651	1.0	NA	NA	29.0	Male	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Codel	NA	lower-grade glioma
+CGGA_889	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	129.5441478439425	0.0	NA	NA	23.0	Male	False	False	1.0	A	WHO II	Primary	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_890	no TMZ	NONE	NONE	primary	NA	97.97125256673512	1.0	NA	NA	39.0	Male	False	True	1.0	AA	WHO III	Primary	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_901	no TMZ	NONE	NONE	primary	NA	30.521560574948666	1.0	NA	NA	40.0	Male	False	True	0.0	AA	WHO III	Primary	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_903	no TMZ	NONE	NONE	primary	NA	47.80287474332649	1.0	NA	NA	27.0	Female	False	True	1.0	AA	WHO III	Primary	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_D19	no TMZ	NONE	NONE	recurrent	NA	9.757700205338809	1.0	NA	NA	64.0	Female	False	True	0.0	rO	WHO II	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_D28	no TMZ	NONE	NONE	primary	NA	28.254620123203285	1.0	NA	NA	25.0	Male	False	True	1.0	AA	WHO III	Primary	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_D49	NA	NA	NA	recurrent	NA	NA	NA	NA	NA	32.0	Female	False	False	NA	NA	NA	Recurrent	Mutant	Codel	NA	lower-grade glioma
+CGGA_D50	no TMZ	NONE	NONE	recurrent	NA	25.691991786447637	1.0	NA	NA	30.0	Male	False	True	0.0	rO	WHO II	Recurrent	Mutant	Codel	NA	lower-grade glioma
+CGGA_D53	NA	NA	NA	recurrent	NA	NA	NA	NA	NA	30.0	Male	False	False	NA	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_J50	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	55.62217659137577	1.0	NA	NA	27.0	Male	False	False	1.0	rOA	WHO II	Recurrent	Mutant	NA	NA	lower-grade glioma
+CGGA_J73	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	37.256673511293634	1.0	NA	NA	34.0	Female	False	False	1.0	AO	WHO III	Primary	Mutant	NA	NA	lower-grade glioma
+CGGA_P100	NA	NA	NA	primary	NA	8.804928131416839	1.0	NA	NA	67.0	Male	False	False	NA	GBM	WHO IV	Primary	Wildtype	Non-codel	NA	glioblastoma
+CGGA_P102	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	41.69199178644764	1.0	NA	NA	30.0	Male	False	False	1.0	GBM	WHO IV	Primary	Mutant	Non-codel	NA	glioblastoma
+CGGA_P103	no TMZ	NONE	NONE	primary	NA	54.24229979466119	0.0	NA	NA	34.0	Male	False	True	1.0	O	WHO II	Primary	Mutant	Codel	NA	lower-grade glioma
+CGGA_P104	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	5.486652977412731	1.0	NA	NA	36.0	Female	False	False	NA	rAOA	WHO III	Recurrent	Mutant	NA	NA	lower-grade glioma
+CGGA_P106	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	2.3326488706365502	1.0	NA	NA	24.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	NA	glioblastoma
+CGGA_P107	NA	NA	NA	primary	NA	NA	NA	NA	NA	26.0	Male	False	False	NA	A	WHO II	Primary	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P108	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	54.012320328542096	0.0	NA	NA	30.0	Female	False	False	1.0	AA	WHO III	Primary	Wildtype	Non-codel	NA	lower-grade glioma
+CGGA_P109	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	13.371663244353183	1.0	NA	NA	35.0	Male	False	False	0.0	rGBM	WHO IV	Recurrent	Mutant	Non-codel	NA	glioblastoma
+CGGA_P11	NA	NA	NA	primary	NA	NA	NA	NA	NA	38.0	Female	False	False	NA	A	WHO II	Primary	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P110	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	26.28336755646817	1.0	NA	NA	56.0	Female	False	False	1.0	AO	WHO III	Primary	Wildtype	Non-codel	NA	lower-grade glioma
+CGGA_P111	no TMZ	NONE	NONE	primary	NA	53.81519507186858	0.0	NA	NA	44.0	Female	False	True	0.0	O	WHO II	Primary	Mutant	Codel	NA	lower-grade glioma
+CGGA_P112	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	27.40041067761807	1.0	NA	NA	65.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	NA	glioblastoma
+CGGA_P113	no TMZ	NONE	NONE	primary	NA	56.114989733059545	0.0	NA	NA	32.0	Male	False	True	1.0	A	WHO II	Primary	Wildtype	Non-codel	NA	lower-grade glioma
+CGGA_P114	NA	NA	NA	primary	NA	NA	1.0	NA	NA	32.0	Male	False	False	1.0	O	WHO II	Primary	Mutant	Codel	NA	lower-grade glioma
+CGGA_P115	no TMZ	NONE	NONE	primary	NA	53.42094455852156	0.0	NA	NA	25.0	Male	False	True	1.0	A	WHO II	Primary	Wildtype	NA	NA	lower-grade glioma
+CGGA_P116	NA	NA	NA	primary	NA	10.020533880903491	1.0	NA	NA	58.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	NA	NA	glioblastoma
+CGGA_P121	no TMZ	NONE	NONE	primary	NA	52.82956878850103	0.0	NA	NA	39.0	Male	False	True	1.0	A	WHO II	Primary	Wildtype	Non-codel	NA	lower-grade glioma
+CGGA_P122	no TMZ	NONE	NONE	recurrent	NA	53.81519507186858	0.0	NA	NA	43.0	Male	False	True	1.0	rO	WHO II	Recurrent	Mutant	Codel	NA	lower-grade glioma
+CGGA_P128	no TMZ	NONE	NONE	primary	NA	52.106776180698155	0.0	NA	NA	41.0	Male	False	True	1.0	A	WHO II	Primary	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P13	no TMZ	NONE	NONE	primary	NA	63.671457905544145	0.0	NA	NA	40.0	Female	False	True	0.0	O	WHO II	Primary	Mutant	Codel	NA	lower-grade glioma
+CGGA_P131	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	52.435318275154	0.0	NA	NA	45.0	Female 	False	False	1.0	AO	WHO III	Primary	Mutant	Codel	NA	lower-grade glioma
+CGGA_P132	no TMZ	NONE	NONE	primary	NA	52.6652977412731	0.0	NA	NA	42.0	Male	False	True	1.0	O	WHO II	Primary	Mutant	Codel	NA	lower-grade glioma
+CGGA_P136	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	27.66324435318275	1.0	NA	NA	41.0	Female 	False	False	1.0	GBM	WHO IV	Primary	Wildtype	NA	NA	glioblastoma
+CGGA_P137	no TMZ	NONE	NONE	primary	NA	50.13552361396304	0.0	NA	NA	42.0	Male	False	True	0.0	A	WHO II	Primary	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P142	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	51.186858316221766	0.0	NA	NA	45.0	Male	False	False	1.0	AO	WHO III	Primary	Mutant	Codel	NA	lower-grade glioma
+CGGA_P143	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	8.574948665297741	1.0	NA	NA	66.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	NA	glioblastoma
+CGGA_P144	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	51.219712525667354	0.0	NA	NA	44.0	Male	False	False	1.0	AA	WHO III	Primary	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P145	no TMZ	NONE	NONE	primary	NA	10.119096509240247	1.0	NA	NA	53.0	Male	False	True	1.0	A	WHO II	Primary	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P146	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	NA	0.0	NA	NA	31.0	Male	False	False	1.0	rA	WHO II	Recurrent	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P147	no TMZ	NONE	NONE	primary	NA	28.35318275154004	1.0	NA	NA	52.0	Male 	False	True	1.0	A	WHO II	Primary	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P15	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	23.753593429158112	1.0	NA	NA	49.0	Male	False	False	1.0	GBM	WHO IV	Primary	NA	Non-codel	NA	glioblastoma
+CGGA_P150	no TMZ	NONE	NONE	primary	NA	NA	0.0	NA	NA	34.0	Male	False	True	1.0	A	WHO II	Primary	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P151	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	51.97535934291581	0.0	NA	NA	46.0	Female	False	False	1.0	A	WHO II	Primary	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P153	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	48.75564681724846	0.0	NA	NA	45.0	Male	False	False	1.0	A	WHO II	Primary	Mutant	NA	NA	lower-grade glioma
+CGGA_P154	NA	NA	NA	primary	NA	NA	NA	NA	NA	50.0	Male	False	False	NA	GBM	WHO IV	Primary	Mutant	NA	NA	glioblastoma
+CGGA_P155	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	48.72279260780287	0.0	NA	NA	50.0	Male	False	False	1.0	A	WHO II	Primary	Wildtype	Non-codel	NA	lower-grade glioma
+CGGA_P156	no TMZ	NONE	NONE	primary	NA	48.8870636550308	0.0	NA	NA	30.0	Male 	False	True	0.0	O	WHO II	Primary	Mutant	Codel	NA	lower-grade glioma
+CGGA_P157	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	15.441478439425051	1.0	NA	NA	55.0	Female	False	False	1.0	AA	WHO III	Primary	Wildtype	Non-codel	NA	lower-grade glioma
+CGGA_P158	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	49.609856262833674	0.0	NA	NA	27.0	Male	False	False	1.0	OA	WHO II	Primary	Mutant	NA	NA	lower-grade glioma
+CGGA_P159	no TMZ	NONE	NONE	primary	NA	6.93223819301848	1.0	NA	NA	59.0	Male	False	True	0.0	AA	WHO III	Primary	Wildtype	Non-codel	NA	lower-grade glioma
+CGGA_P16	NA	NA	NA	primary	NA	NA	NA	NA	NA	38.0	Male	False	False	NA	GBM	WHO IV	Primary	Mutant	Codel	NA	glioblastoma
+CGGA_P160	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	7.195071868583162	1.0	NA	NA	72.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	NA	glioblastoma
+CGGA_P163	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	28.09034907597536	1.0	NA	NA	45.0	Female	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_P164	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	51.02258726899384	0.0	NA	NA	27.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	NA	NA	glioblastoma
+CGGA_P165	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	19.64681724845996	1.0	NA	NA	51.0	Female	False	False	1.0	AOA	WHO III	Primary	Mutant	NA	NA	lower-grade glioma
+CGGA_P17	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	63.408624229979466	0.0	NA	NA	30.0	Male	False	False	1.0	AO	WHO III	Primary	Mutant	Codel	NA	lower-grade glioma
+CGGA_P172	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	34.46406570841889	1.0	NA	NA	33.0	Male	False	False	1.0	AA	WHO III	Primary	Mutant	NA	NA	lower-grade glioma
+CGGA_P173	no TMZ	NONE	NONE	primary	NA	47.572895277207394	0.0	NA	NA	31.0	Male	False	True	1.0	A	WHO II	Primary	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_P174	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	48.68993839835729	0.0	NA	NA	31.0	Male	False	False	1.0	O	WHO II	Primary	Mutant	Codel	NA	lower-grade glioma
+CGGA_P175	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	6.012320328542095	1.0	NA	NA	45.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	NA	NA	glioblastoma
+CGGA_P176	no TMZ	NONE	NONE	primary	NA	26.414784394250514	0.0	NA	NA	32.0	Female	False	True	1.0	O	WHO II	Primary	Mutant	Codel	NA	lower-grade glioma
+CGGA_P177	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	47.37577002053388	0.0	NA	NA	43.0	Male	False	False	1.0	A	WHO II	Primary	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_P178	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	47.37577002053388	0.0	NA	NA	52.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	NA	methylated	glioblastoma
+CGGA_P179	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	47.7700205338809	0.0	NA	NA	53.0	Female 	False	False	1.0	A	WHO II	Primary	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_P18	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	12.714579055441478	1.0	NA	NA	40.0	Male	False	False	0.0	AA	WHO III	Primary	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P180	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	8.542094455852157	1.0	NA	NA	47.0	Male	False	False	1.0	GBM	WHO IV	Primary	Mutant	NA	NA	glioblastoma
+CGGA_P181	NA	NA	NA	primary	NA	7.819301848049282	1.0	NA	NA	21.0	Female	False	False	NA	AA	WHO III	Primary	Wildtype	Non-codel	NA	lower-grade glioma
+CGGA_P182	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	49.67556468172484	0.0	NA	NA	58.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	NA	glioblastoma
+CGGA_P183	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	49.67556468172484	0.0	NA	NA	58.0	Male	False	False	1.0	AO	WHO III	Primary	Mutant	Codel	NA	lower-grade glioma
+CGGA_P185	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	16.49281314168378	1.0	NA	NA	41.0	Female	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P19	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	63.21149897330596	0.0	NA	NA	39.0	Male	False	False	1.0	A	WHO II	Primary	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P199	no TMZ	NONE	NONE	recurrent	NA	6.669404517453799	1.0	NA	NA	66.0	Male	False	True	0.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	NA	glioblastoma
+CGGA_P20	no TMZ	NONE	NONE	primary	NA	63.17864476386037	0.0	NA	NA	58.0	Female	False	True	1.0	A	WHO II	Primary	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P205	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	19.15400410677618	1.0	NA	NA	66.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	NA	NA	glioblastoma
+CGGA_P21	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	63.14579055441479	0.0	NA	NA	25.0	Male	False	False	1.0	A	WHO II	Primary	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P22	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	13.338809034907598	1.0	NA	NA	62.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	NA	glioblastoma
+CGGA_P23	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	12.878850102669405	1.0	NA	NA	62.0	Female	False	False	1.0	AA	WHO III	Primary	Wildtype	NA	NA	lower-grade glioma
+CGGA_P25	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	4.829568788501026	1.0	NA	NA	64.0	Male	False	False	1.0	GBM	WHO IV	Primary	Wildtype	NA	NA	glioblastoma
+CGGA_P265	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	25.593429158110883	1.0	NA	NA	36.0	Male	False	False	1.0	AA	WHO III	Primary	Wildtype	NA	methylated	lower-grade glioma
+CGGA_P266	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	8.31211498973306	1.0	NA	NA	28.0	Female	False	False	1.0	AA	WHO III	Primary	Wildtype	NA	methylated	lower-grade glioma
+CGGA_P269	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	16.788501026694046	1.0	NA	NA	47.0	Female	False	False	1.0	rAO	WHO III	Recurrent	Wildtype	Codel	NA	lower-grade glioma
+CGGA_P27	no TMZ	NONE	NONE	primary	NA	13.568788501026694	0.0	NA	NA	37.0	Female	False	True	1.0	A	WHO II	Primary	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P270	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	NA	1.0	NA	NA	33.0	Male	False	False	1.0	rA	WHO II	Recurrent	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_P271	no TMZ	NONE	NONE	primary	NA	45.20739219712526	0.0	NA	NA	42.0	Male	False	True	1.0	A	WHO II	Primary	Mutant	NA	methylated	lower-grade glioma
+CGGA_P279	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	43.827515400410675	0.0	NA	NA	47.0	Female	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Codel	NA	lower-grade glioma
+CGGA_P28	no TMZ	NONE	NONE	primary	NA	3.515400410677618	1.0	NA	NA	61.0	Male	False	True	0.0	GBM	WHO IV	Primary	Wildtype	Non-codel	NA	glioblastoma
+CGGA_P280	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	44.09034907597536	0.0	NA	NA	52.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_P283	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	43.728952772073924	0.0	NA	NA	38.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_P286	no TMZ	NONE	NONE	recurrent	NA	21.61806981519507	0.0	NA	NA	57.0	Female	False	True	NA	rO	WHO II	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_P29	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	3.383983572895277	1.0	NA	NA	22.0	Female	False	False	1.0	rAOA	WHO III	Recurrent	Mutant	NA	NA	lower-grade glioma
+CGGA_P295	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	8.969199178644764	1.0	NA	NA	46.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_P298	no TMZ	NONE	NONE	recurrent	NA	NA	0.0	NA	NA	50.0	Female	False	True	1.0	rAO	WHO III	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_P3	no TMZ	NONE	NONE	recurrent	NA	69.84804928131418	0.0	NA	NA	32.0	Male	False	True	1.0	rAOA	WHO III	Recurrent	Mutant	NA	NA	lower-grade glioma
+CGGA_P30	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	13.273100616016427	1.0	NA	NA	48.0	Male	False	False	1.0	A	WHO II	Primary	Wildtype	Non-codel	NA	lower-grade glioma
+CGGA_P306	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	30.29158110882957	1.0	NA	NA	49.0	Male	False	False	1.0	rO	WHO II	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_P308	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	18.496919917864478	1.0	NA	NA	38.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_P31	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	61.86447638603696	0.0	NA	NA	42.0	Male	False	False	0.0	A	WHO II	Primary	Wildtype	Non-codel	NA	lower-grade glioma
+CGGA_P310	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	7.359342915811088	1.0	NA	NA	47.0	Female	False	False	1.0	rAA	WHO III	Recurrent	NA	Codel	methylated	lower-grade glioma
+CGGA_P311	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	40.969199178644764	0.0	NA	NA	36.0	Male	False	False	0.0	rA	WHO II	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_P314	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	40.6735112936345	0.0	NA	NA	34.0	Female	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_P315	NA	NA	NA	recurrent	NA	14.817248459958932	1.0	NA	NA	47.0	Female	False	False	NA	rA	WHO II	Recurrent	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P316	NA	NA	NA	recurrent	NA	18.628336755646817	0.0	NA	NA	44.0	Male	False	False	NA	rA	WHO II	Recurrent	NA	Non-codel	NA	lower-grade glioma
+CGGA_P319	no TMZ	NONE	NONE	recurrent	NA	16.689938398357288	1.0	NA	NA	37.0	Male	False	True	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_P326	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	39.983572895277206	0.0	NA	NA	48.0	Female	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_P328	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	19.055441478439427	1.0	NA	NA	54.0	Female	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P335	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	39.52361396303901	0.0	NA	NA	42.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Mutant	Codel	methylated	glioblastoma
+CGGA_P337	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	22.636550308008214	1.0	NA	NA	61.0	Female	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_P338	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	39.35934291581109	0.0	NA	NA	51.0	Male	False	False	1.0	rO	WHO II	Recurrent	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_P346	no TMZ	NONE	NONE	recurrent	NA	17.149897330595483	0.0	NA	NA	42.0	Male	False	True	NA	rA	WHO II	Recurrent	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P356	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	18.694045174537987	1.0	NA	NA	22.0	Female	False	False	1.0	rA	WHO II	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_P358	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	38.37371663244353	0.0	NA	NA	44.0	Male	False	False	1.0	rA	WHO II	Recurrent	Mutant	Non-codel	un-methylated	lower-grade glioma
+CGGA_P364	no TMZ	NONE	NONE	recurrent	NA	16.262833675564682	1.0	NA	NA	41.0	Female	False	True	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_P385	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	36.53388090349076	0.0	NA	NA	22.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	NA	glioblastoma
+CGGA_P388	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	9.626283367556468	1.0	NA	NA	37.0	Female 	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_P392	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	36.106776180698155	0.0	NA	NA	35.0	Male 	False	False	1.0	rA	WHO II	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_P399	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	35.81108829568789	0.0	NA	NA	41.0	Female	False	False	1.0	rO	WHO II	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_P401	NA	NA	NA	recurrent	NA	25.88911704312115	1.0	NA	NA	31.0	Male  	False	False	1.0	rGBM	WHO IV	Recurrent	Mutant	Non-codel	NA	glioblastoma
+CGGA_P411	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	14.455852156057494	1.0	NA	NA	47.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Mutant	Non-codel	methylated	glioblastoma
+CGGA_P415	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	6.406570841889117	1.0	NA	NA	56.0	Female	False	False	NA	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	NA	glioblastoma
+CGGA_P416	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	35.121149897330596	0.0	NA	NA	29.0	Male	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_P421	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	10.119096509240247	1.0	NA	NA	26.0	Male	False	False	NA	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_P422	no TMZ	NONE	NONE	primary	NA	35.84394250513347	0.0	NA	NA	41.0	Female	False	True	1.0	O	WHO II	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_P437	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	33.609856262833674	0.0	NA	NA	47.0	Female	False	False	0.0	AO	WHO III	Primary	Mutant	Codel	NA	lower-grade glioma
+CGGA_P438	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	33.609856262833674	0.0	NA	NA	41.0	Male	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Codel	NA	lower-grade glioma
+CGGA_P439	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	33.57700205338809	0.0	NA	NA	45.0	Male	False	False	1.0	rA	WHO II	Recurrent	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P446	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	33.14989733059548	0.0	NA	NA	47.0	Female	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Codel	NA	lower-grade glioma
+CGGA_P461	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	19.679671457905545	1.0	NA	NA	28.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_P468	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	32.0	0.0	NA	NA	42.0	Female	False	False	1.0	AO	WHO III	Primary	Mutant	Codel	methylated	lower-grade glioma
+CGGA_P483	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	9.82340862422998	1.0	NA	NA	41.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Wildtype	Non-codel	methylated	lower-grade glioma
+CGGA_P492	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	30.817248459958932	0.0	NA	NA	44.0	Female	False	False	0.0	rO	WHO II	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_P499	NA	NA	NA	recurrent	NA	NA	NA	NA	NA	69.0	Female	False	False	NA	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	NA	glioblastoma
+CGGA_P5	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	12.41889117043121	1.0	NA	NA	45.0	Female	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P500	no TMZ	NONE	NONE	recurrent	NA	30.55441478439425	0.0	NA	NA	34.0	Female	False	True	1.0	rO	WHO II	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_P501	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	30.42299794661191	0.0	NA	NA	27.0	Male	False	False	1.0	rA	WHO II	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_P505	no TMZ	NONE	NONE	recurrent	NA	30.357289527720738	0.0	NA	NA	34.0	Male	False	True	1.0	rA	WHO II	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_P508	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	12.386036960985626	1.0	NA	NA	40.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_P510	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	29.963039014373717	0.0	NA	NA	42.0	Male 	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Non-codel	methylated	lower-grade glioma
+CGGA_P512	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	17.7741273100616	1.0	NA	NA	23.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_P520	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	29.04312114989733	0.0	NA	NA	44.0	Female 	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Codel	NA	lower-grade glioma
+CGGA_P568	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	7.162217659137577	1.0	NA	NA	23.0	Female	False	False	1.0	rAO	WHO III	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_P585	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	11.301848049281315	1.0	NA	NA	50.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	methylated	glioblastoma
+CGGA_P594	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	2.759753593429158	1.0	NA	NA	40.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_P596	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	25.527720739219713	0.0	NA	NA	60.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Mutant	Codel	methylated	glioblastoma
+CGGA_P604	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	8.607802874743326	1.0	NA	NA	15.0	Female	False	False	1.0	rAA	WHO III	Recurrent	Wildtype	Non-codel	un-methylated	lower-grade glioma
+CGGA_P609	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	23.852156057494867	0.0	NA	NA	19.0	Female	False	False	1.0	GBM	WHO IV	Primary	Wildtype	Non-codel	un-methylated	glioblastoma
+CGGA_P610	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	11.3347022587269	1.0	NA	NA	62.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	NA	methylated	glioblastoma
+CGGA_P615	NA	NA	NA	recurrent	NA	NA	NA	NA	NA	40.0	Male	False	False	NA	rO	WHO II	Recurrent	Mutant	Codel	methylated	lower-grade glioma
+CGGA_P619	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	7.753593429158111	1.0	NA	NA	66.0	Female	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	NA	glioblastoma
+CGGA_P623	NA	NA	NA	primary	NA	NA	NA	NA	NA	52.0	Male	False	False	NA	AA	WHO III	Primary	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P625	NA	NA	NA	recurrent	NA	5.28952772073922	1.0	NA	NA	46.0	Female	False	False	NA	rGBM	WHO IV	Recurrent	Mutant	Non-codel	methylated	glioblastoma
+CGGA_P633	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	22.209445585215605	0.0	NA	NA	40.0	Female	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P7	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	3.6139630390143735	1.0	NA	NA	45.0	Male	False	False	NA	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	NA	glioblastoma
+CGGA_P83	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	55.7864476386037	0.0	NA	NA	28.0	Female	False	False	1.0	A	WHO II	Primary	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P84	no TMZ	NONE	NONE	primary	NA	55.65503080082136	0.0	NA	NA	40.0	Female	False	True	1.0	A	WHO II	Primary	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P86	no TMZ	NONE	NONE	primary	NA	55.65503080082136	0.0	NA	NA	34.0	Female	False	True	1.0	O	WHO II	Primary	Mutant	Codel	NA	lower-grade glioma
+CGGA_P87	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	7.885010266940451	1.0	NA	NA	32.0	Male	False	False	NA	rGBM	WHO IV	Recurrent	Mutant	Non-codel	NA	glioblastoma
+CGGA_P89	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	9.659137577002053	1.0	NA	NA	42.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Wildtype	Non-codel	NA	glioblastoma
+CGGA_P93	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	primary	NA	55.12936344969199	0.0	NA	NA	45.0	Female	False	False	1.0	A	WHO II	Primary	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P98	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	10.414784394250514	1.0	NA	NA	44.0	Male	False	False	1.0	rAA	WHO III	Recurrent	Mutant	Non-codel	NA	lower-grade glioma
+CGGA_P99	TMZ	TEMOZOLOMIDE	TEMOZOLOMIDE	recurrent	NA	22.308008213552363	0.0	NA	NA	52.0	Male	False	False	1.0	rGBM	WHO IV	Recurrent	Mutant	Non-codel	NA	glioblastoma

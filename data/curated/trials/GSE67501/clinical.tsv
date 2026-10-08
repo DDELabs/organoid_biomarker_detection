@@ -1,0 +1,12 @@
+sample	arm	drug	drugs	setting	response	responder	os_months	os_event	pfs_months	pfs_event	sex	site	cancer
+GSM1648114	NIVOLUMAB	NIVOLUMAB	NIVOLUMAB	metastatic	SD	0	NA	NA	NA	NA	female	Primary	renal cell carcinoma (metastatic)
+GSM1648115	NIVOLUMAB	NIVOLUMAB	NIVOLUMAB	metastatic	NR	0	NA	NA	NA	NA	male	Metastasis	renal cell carcinoma (metastatic)
+GSM1648116	NIVOLUMAB	NIVOLUMAB	NIVOLUMAB	metastatic	SD	0	NA	NA	NA	NA	female	Primary	renal cell carcinoma (metastatic)
+GSM1648117	NIVOLUMAB	NIVOLUMAB	NIVOLUMAB	metastatic	NR	0	NA	NA	NA	NA	male	Primary	renal cell carcinoma (metastatic)
+GSM1648118	NIVOLUMAB	NIVOLUMAB	NIVOLUMAB	metastatic	NR	0	NA	NA	NA	NA	male	Metastasis	renal cell carcinoma (metastatic)
+GSM1648119	NIVOLUMAB	NIVOLUMAB	NIVOLUMAB	metastatic	NR	0	NA	NA	NA	NA	male	Primary	renal cell carcinoma (metastatic)
+GSM1648120	NIVOLUMAB	NIVOLUMAB	NIVOLUMAB	metastatic	NR	0	NA	NA	NA	NA	female	Primary	renal cell carcinoma (metastatic)
+GSM1648121	NIVOLUMAB	NIVOLUMAB	NIVOLUMAB	metastatic	CR	1	NA	NA	NA	NA	male	Metastasis	renal cell carcinoma (metastatic)
+GSM1648122	NIVOLUMAB	NIVOLUMAB	NIVOLUMAB	metastatic	PR	1	NA	NA	NA	NA	male	Primary	renal cell carcinoma (metastatic)
+GSM1648123	NIVOLUMAB	NIVOLUMAB	NIVOLUMAB	metastatic	PR	1	NA	NA	NA	NA	male	Metastasis	renal cell carcinoma (metastatic)
+GSM1648124	NIVOLUMAB	NIVOLUMAB	NIVOLUMAB	metastatic	CR	1	NA	NA	NA	NA	female	Metastasis	renal cell carcinoma (metastatic)

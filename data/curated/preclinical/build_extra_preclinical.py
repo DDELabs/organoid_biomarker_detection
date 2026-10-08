@@ -29,6 +29,13 @@ bp.SOURCES.update({
     # Gao et al. 2015 Nat Med 21:1318 (Novartis PDX Encyclopedia) - Supplementary Table S1 (nm.3954-S2.xlsx)
     "pdxe_xlsx": (SPRINGER.format("art%3A10.1038%2Fnm.3954/MediaObjects/41591_2015_BFnm3954_MOESM10_ESM.xlsx"),
                   "Gao2015_nm3954_TableS1.xlsx"),
+    # Isella et al. 2017 Nat Commun 8:15107 (Candiolo CRC liver-metastasis PDX): Supplementary Data 4 + GSE76402
+    "isella_sd4": ("https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5499209/supplementaryFiles",
+                   "PMC5499209_supplementary.zip"),
+    "gse76402": ("https://ftp.ncbi.nlm.nih.gov/geo/series/GSE76nnn/GSE76402/matrix/GSE76402_series_matrix.txt.gz",
+                 "GSE76402_series_matrix.txt.gz"),
+    "gpl10558": ("https://ftp.ncbi.nlm.nih.gov/geo/platforms/GPL10nnn/GPL10558/annot/GPL10558.annot.gz",
+                 "GPL10558.annot.gz"),
 })
 
 LOWER = "lower = more sensitive"
@@ -91,6 +98,7 @@ def build_pdxe():
     met["responder"] = met["mrecist"].isin(["CR", "PR"]).astype(int)
     met["tumour_type"] = met["Model"].map(ttype)
     met["paper_category"] = met["ResponseCategory"]
+    resp_rate = met["responder"].mean()
     agree = (met["mrecist"] == met["paper_category"].str.split("-").str[0]).mean()
 
     mr = met.rename(columns={"Model": "sample", "BestAvgResponse": "best_avg_response",
@@ -98,7 +106,7 @@ def build_pdxe():
     mr = mr[["sample", "drug", "best_avg_response", "mrecist", "responder", "best_response", "treatment",
              "tumour_type", "paper_category", "TimeToDouble", "Day_Last"]].rename(
         columns={"TimeToDouble": "time_to_double", "Day_Last": "day_last"})
-    mr = mr.sort_values(["drug", "sample"])
+    mr = mr.sort_values(["drug", "sample"]).round({"best_avg_response": 3, "best_response": 3})
 
     # response.tsv: BestAvgResponse. The low-dose arms (binimetinib-3.5mpk) are kept only in mrecist.tsv;
     # gemcitabine-50mpk is the only gemcitabine arm and is kept as GEMCITABINE.
@@ -157,7 +165,7 @@ PDAC pancreas, CM cutaneous melanoma).
 ## Caveats
 * No matched patient clinical response is public for PDXE (there is no `patient_response.tsv`).
 * Single animal per arm: noisy. Treat the binary responder call as the most robust endpoint.
-* Response rates are low (CR+PR ~ 6% of arms), and most arms are targeted agents.
+* Response rates are low (CR+PR {resp_rate:.0%} of arms), and most arms are targeted agents.
 
 ## Sample-ID matching
 Model IDs (`X-1004` ...) shared by both sheets. Expression models: {{n_expr_models}}; treated models:
@@ -168,14 +176,120 @@ Model IDs (`X-1004` ...) shared by both sheets. Expression models: {{n_expr_mode
                  extra_files={"mrecist.tsv": mr, "samples.tsv": samples})
 
 
+# ============================================================================ helpers for GEO arrays
+def series_matrix(path):
+    """GEO series matrix -> (data frame probes x GSM, per-sample annotation frame)."""
+    import gzip
+    meta, rows = {}, []
+    with gzip.open(path, "rt") as f:
+        for line in f:
+            if line.startswith("!series_matrix_table_begin"):
+                break
+            if line.startswith("!Sample_"):
+                k, *v = line.rstrip("\n").split("\t")
+                v = [x.strip('"') for x in v]
+                if k == "!Sample_characteristics_ch1":
+                    key = v[0].split(":")[0].strip()
+                    meta[key] = [x.split(":", 1)[1].strip() if ":" in x else x for x in v]
+                else:
+                    meta.setdefault(k[8:], v)
+        data = pd.read_csv(f, sep="\t", index_col=0, comment="!", low_memory=False)
+    data.index = data.index.astype(str)
+    ann = pd.DataFrame(meta)
+    ann.index = ann["geo_accession"]
+    return data, ann
+
+
+def probes_to_symbols(data, annot_path, col="Gene symbol"):
+    """Probe x sample (log scale) -> HGNC symbol x sample (probe with the highest mean per symbol)."""
+    import gzip
+    with gzip.open(annot_path, "rt", errors="replace") as f:
+        for line in f:
+            if line.startswith("!platform_table_begin"):
+                break
+        a = pd.read_csv(f, sep="\t", low_memory=False, dtype=str, comment=None)
+    a = a[a["ID"].notna() & ~a["ID"].str.startswith(("!", "^"))]
+    sym = a.set_index("ID")[col].dropna()
+    sym = sym[~sym.str.contains("///")]
+    g = bp.gene_tables()["symbol"]
+    return bp.collapse(data, {p: g.get(s.upper()) for p, s in sym.items()})
+
+
+# ============================================================================ CRC PDX cetuximab (Isella 2017)
+def build_isella():
+    import zipfile
+    zf = zipfile.ZipFile(bp.fetch("isella_sd4"))
+    sd4 = pd.read_excel(zf.open("ncomms15107-s5.xlsx"), header=None).iloc[4:, 1:16]
+    sd4.columns = ["barcode", "sample", "msi", "kras", "nras", "braf", "fgfr1", "pdgfra", "map2k1", "erbb2_mut",
+                   "erbb2_amp", "met_amp", "vol_change_3w", "vol_change_6w", "response_class"]
+    sd4 = sd4.dropna(subset=["barcode"])
+    data, ann = series_matrix(bp.fetch("gse76402"))
+    ann["sample"] = ann["description"].map(sd4.set_index("barcode")["sample"])
+    ann["sample"] = ann["sample"].fillna(ann["case_unique_id"] + "LM")
+    lg = np.log2(data.astype(float).clip(lower=1))
+    lg = lg.T.groupby(ann.loc[lg.columns, "sample"]).mean().T          # mean over arrays (regions / replicates)
+    expr = probes_to_symbols(lg, bp.fetch("gpl10558"))
+    r = sd4.dropna(subset=["vol_change_3w"]).drop_duplicates("sample")
+    nbar = sd4.groupby("sample")["barcode"].apply(lambda s: ",".join(sorted(s)))
+    resp = pd.DataFrame({"sample": r["sample"], "drug": "CETUXIMAB",
+                         "response": r["vol_change_3w"].astype(float), "metric": "tumour_volume_change_3w",
+                         "n_screens": 1, "screens": r["sample"],
+                         "vol_change_6w": pd.to_numeric(r["vol_change_6w"], errors="coerce"),
+                         "response_class": r["response_class"],
+                         "kras_mut": r["kras"], "nras_mut": r["nras"], "braf_mut": r["braf"]})
+    resp.loc[resp["vol_change_6w"] == 0, "vol_change_6w"] = np.nan      # 0 = not done in the source table
+    gsm = ann[["geo_accession", "title", "description", "sample"]].rename(
+        columns={"geo_accession": "gsm", "description": "array_barcode"})
+    cls = resp["response_class"].value_counts()
+    md = f"""# Colorectal cancer liver-metastasis PDX, cetuximab (Isella et al. 2017 / Bertotti et al.)
+
+**Papers**: Isella C, Brundu F, Bellomo SE, et al. *Selective analysis of cancer-cell intrinsic transcriptional traits
+defines novel clinically relevant subtypes of colorectal cancer.* Nat Commun 2017;8:15107. doi:10.1038/ncomms15107
+(PMID 28561063). PDX cetuximab trials: Bertotti A, et al. Cancer Discov 2011;1:508 and Nature 2015;526:263.
+
+**Accessions**: expression GEO **GSE76402** (Illumina HumanHT-12 v4, GPL10558, 529 arrays of 244 PDX models,
+lumi/loess-normalised, human-specific probes); response: Supplementary Data 4 (`ncomms15107-s5.xlsx`, Europe PMC
+open-access supplement of PMC5499209), keyed by array barcode (= GEO `Sample_description`).
+
+{bp.provenance(["gse76402", "gpl10558", "isella_sd4", "gene_info"])}
+
+## Derivation
+* Response: **tumour volume change after 3 weeks of cetuximab** (20 mg/kg twice weekly), as a fraction of the
+  volume at treatment start (-0.5 = 50% shrinkage; the paper's PR is < -0.5, PD > +0.35). **Lower = more
+  sensitive**. The 6-week value (`vol_change_6w`, when available) and the paper's response class
+  (`response_class`: {", ".join(f"{k} {v}" for k, v in cls.items())}) are kept. PR and SD were the paper's
+  "cetuximab-sensitive". KRAS/NRAS/BRAF status from the same table is kept.
+* Expression: series-matrix values (linear) -> log2; arrays of the same PDX model (regions A/B, replicate
+  hybridisations) averaged on the log scale (`gsm_map.tsv`); probes -> HGNC symbols via the GPL10558 GEO
+  annotation, highest-mean probe per symbol, protein-coding only. Units: **log2 (lumi-normalised intensity)**.
+
+## Caveats
+* Single agent (cetuximab, anti-EGFR antibody) only. Mostly KRAS-wild-type selected for EGFR biology; response is
+  strongly driven by RAS/BRAF status.
+* No matched patient clinical response is public for these models (no `patient_response.tsv`).
+
+## Sample-ID matching
+PDX model IDs (`CRC0014LM` ...) from Supplementary Data 4; GEO arrays matched by barcode. Expression models:
+{{n_expr_models}}; models with a cetuximab response: {{n_resp_models}}; **overlap n = {{n_both}}**.
+Genes: {{n_genes}}; drugs: {{n_drugs}}.
+"""
+    return write("colorectal_pdx_isella2017", expr, resp, md,
+                 {"type": "PDX", "tissue": "colorectal (liver metastasis)", "source": "GEO + Nat Commun supplement"},
+                 extra_files={"gsm_map.tsv": gsm})
+
+
 BUILDERS = {
     "pdx_novartis_gao2015": build_pdxe,
+    "colorectal_pdx_isella2017": build_isella,
 }
 
 bp.META.update({
     "pdx_novartis_gao2015": dict(model="PDX", tissue="pan-cancer (breast, CRC, gastric, NSCLC, pancreas, melanoma)",
                                  expression_units="log2(FPKM+1)", reference="Gao 2015 Nat Med 21:1318",
                                  accession="nm.3954 Supplementary Table S1"),
+    "colorectal_pdx_isella2017": dict(model="PDX", tissue="colorectal (liver metastasis)",
+                                      expression_units="log2(lumi intensity)", reference="Isella 2017 Nat Commun 8:15107",
+                                      accession="GSE76402; PMC5499209 Suppl. Data 4"),
 })
 
 
