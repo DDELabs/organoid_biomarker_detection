@@ -23,7 +23,8 @@ from .curated import PRECLIN, load_curated_preclinical
 from .reference import gene_sets
 from .triad import fit_prior_logistic, loco
 
-DOMAINS = {"pdx_novartis_gao2015": "pdx",
+DOMAINS = {"pdx_novartis_gao2015": "pdx", "colorectal_pdx_isella2017": "pdx",
+           "colorectal_vandewetering2015": "organoid",
            "pancreas_shi2022": "organoid", "pancreas_tiriac2018": "organoid", "liver_ji2023": "organoid",
            "bladder_lee2018": "organoid", "sarcoma_alshihabi2024": "organoid", "liver_broutier2017": "organoid",
            "ctrpv2_ccle": "cell_line", "prism_repurposing": "cell_line"}
