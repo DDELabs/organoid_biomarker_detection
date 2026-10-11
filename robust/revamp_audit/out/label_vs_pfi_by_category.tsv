@@ -1,0 +1,17 @@
+setting	endpoint_from_drug_start	recist	n_known	event_free_12m	n_all
+early	PFI-free at 12 m	CR	1193	0.9052808046940486	1456
+early	PFI-free at 12 m	PR	146	0.6917808219178082	154
+early	PFI-free at 12 m	SD	196	0.7091836734693877	222
+early	PFI-free at 12 m	PD	308	0.22077922077922077	316
+post_progression	OS-free at 12 m	CR	90	0.9888888888888889	136
+post_progression	OS-free at 12 m	PR	60	0.8166666666666667	77
+post_progression	OS-free at 12 m	SD	103	0.8058252427184466	121
+post_progression	OS-free at 12 m	PD	479	0.37995824634655534	542
+late_no_event	PFI-free at 12 m	CR	125	0.936	151
+late_no_event	PFI-free at 12 m	PR	24	0.5416666666666666	26
+late_no_event	PFI-free at 12 m	SD	25	0.56	32
+late_no_event	PFI-free at 12 m	PD	45	0.24444444444444444	47
+all	PFI-free at 12 m	CR	1323	0.9047619047619048	1612
+all	PFI-free at 12 m	PR	180	0.6333333333333333	190
+all	PFI-free at 12 m	SD	233	0.6566523605150214	266
+all	PFI-free at 12 m	PD	389	0.20308483290488433	399

@@ -1,0 +1,57 @@
+target	alpha	events	patients
+main effect HR 0.7/SD	alpha 0.05	61.696776136839624	
+main effect HR 0.7/SD, marker R2=0.3 with covariates	alpha 0.05	88.13825162405661	
+main effect HR 0.8/SD	alpha 0.05	157.63004279511372	
+interaction HR 0.7/SD (events 50:50 treated:untreated)	alpha 0.05	246.7871045473585	
+interaction HR 0.7/SD (events 20:80)	alpha 0.05	385.6048508552476	
+interaction HR 0.8/SD (50:50)	alpha 0.05	630.5201711804549	
+binary response AUROC 0.56 (prevalence 0.5)	alpha 0.05		688.7488293815717
+binary response AUROC 0.56 (prevalence 0.2)	alpha 0.05		1076.1700459087058
+binary response AUROC 0.6 (prevalence 0.5)	alpha 0.05		244.57146482940882
+binary response AUROC 0.6 (prevalence 0.2)	alpha 0.05		382.1429137959513
+binary response AUROC 0.65 (prevalence 0.5)	alpha 0.05		105.72885174972039
+binary response AUROC 0.65 (prevalence 0.2)	alpha 0.05		165.20133085893812
+binary response AUROC 0.7 (prevalence 0.5)	alpha 0.05		57.08361324065601
+binary response AUROC 0.7 (prevalence 0.2)	alpha 0.05		89.19314568852501
+main effect HR 0.7/SD	BH q=0.10, 4/40 true (alpha*=0.0099)	92.03427951317148	
+main effect HR 0.7/SD, marker R2=0.3 with covariates	BH q=0.10, 4/40 true (alpha*=0.0099)	131.47754216167357	
+main effect HR 0.8/SD	BH q=0.10, 4/40 true (alpha*=0.0099)	235.13979703092167	
+interaction HR 0.7/SD (events 50:50 treated:untreated)	BH q=0.10, 4/40 true (alpha*=0.0099)	368.13711805268593	
+interaction HR 0.7/SD (events 20:80)	BH q=0.10, 4/40 true (alpha*=0.0099)	575.2142469573217	
+interaction HR 0.8/SD (50:50)	BH q=0.10, 4/40 true (alpha*=0.0099)	940.5591881236867	
+binary response AUROC 0.56 (prevalence 0.5)	BH q=0.10, 4/40 true (alpha*=0.0099)		1027.420008738892
+binary response AUROC 0.56 (prevalence 0.2)	BH q=0.10, 4/40 true (alpha*=0.0099)		1605.3437636545186
+binary response AUROC 0.6 (prevalence 0.5)	BH q=0.10, 4/40 true (alpha*=0.0099)		364.83200524338787
+binary response AUROC 0.6 (prevalence 0.2)	BH q=0.10, 4/40 true (alpha*=0.0099)		570.0500081927936
+binary response AUROC 0.65 (prevalence 0.5)	BH q=0.10, 4/40 true (alpha*=0.0099)		157.71778209218573
+binary response AUROC 0.65 (prevalence 0.2)	BH q=0.10, 4/40 true (alpha*=0.0099)		246.4340345190402
+binary response AUROC 0.7 (prevalence 0.5)	BH q=0.10, 4/40 true (alpha*=0.0099)		85.15273480351783
+binary response AUROC 0.7 (prevalence 0.2)	BH q=0.10, 4/40 true (alpha*=0.0099)		133.0511481304966
+main effect HR 0.7/SD	BH q=0.05, 4/40 true (alpha*=0.0047)	105.87372832075093	
+main effect HR 0.7/SD, marker R2=0.3 with covariates	BH q=0.05, 4/40 true (alpha*=0.0047)	151.2481833153585	
+main effect HR 0.8/SD	BH q=0.05, 4/40 true (alpha*=0.0047)	270.4984177627582	
+interaction HR 0.7/SD (events 50:50 treated:untreated)	BH q=0.05, 4/40 true (alpha*=0.0047)	423.4949132830037	
+interaction HR 0.7/SD (events 20:80)	BH q=0.05, 4/40 true (alpha*=0.0047)	661.7108020046933	
+interaction HR 0.8/SD (50:50)	BH q=0.05, 4/40 true (alpha*=0.0047)	1081.9936710510328	
+binary response AUROC 0.56 (prevalence 0.5)	BH q=0.05, 4/40 true (alpha*=0.0047)		1181.915993170321
+binary response AUROC 0.56 (prevalence 0.2)	BH q=0.05, 4/40 true (alpha*=0.0047)		1846.7437393286264
+binary response AUROC 0.6 (prevalence 0.5)	BH q=0.05, 4/40 true (alpha*=0.0047)		419.6928015319037
+binary response AUROC 0.6 (prevalence 0.2)	BH q=0.05, 4/40 true (alpha*=0.0047)		655.7700023935995
+binary response AUROC 0.65 (prevalence 0.5)	BH q=0.05, 4/40 true (alpha*=0.0047)		181.4342405993379
+binary response AUROC 0.65 (prevalence 0.2)	BH q=0.05, 4/40 true (alpha*=0.0047)		283.49100093646547
+binary response AUROC 0.7 (prevalence 0.5)	BH q=0.05, 4/40 true (alpha*=0.0047)		97.95738672639204
+binary response AUROC 0.7 (prevalence 0.2)	BH q=0.05, 4/40 true (alpha*=0.0047)		153.05841675998758
+main effect HR 0.7/SD	Bonferroni 0.05/40	130.13554902657503	
+main effect HR 0.7/SD, marker R2=0.3 with covariates	Bonferroni 0.05/40	185.90792718082147	
+main effect HR 0.8/SD	Bonferroni 0.05/40	332.4853168458507	
+interaction HR 0.7/SD (events 50:50 treated:untreated)	Bonferroni 0.05/40	520.5421961063001	
+interaction HR 0.7/SD (events 20:80)	Bonferroni 0.05/40	813.3471814160938	
+interaction HR 0.8/SD (50:50)	Bonferroni 0.05/40	1329.9412673834029	
+binary response AUROC 0.56 (prevalence 0.5)	Bonferroni 0.05/40		1452.7615973675242
+binary response AUROC 0.56 (prevalence 0.2)	Bonferroni 0.05/40		2269.9399958867566
+binary response AUROC 0.6 (prevalence 0.5)	Bonferroni 0.05/40		515.8687997119575
+binary response AUROC 0.6 (prevalence 0.2)	Bonferroni 0.05/40		806.0449995499337
+binary response AUROC 0.65 (prevalence 0.5)	Bonferroni 0.05/40		223.01136350921206
+binary response AUROC 0.65 (prevalence 0.2)	Bonferroni 0.05/40		348.45525548314384
+binary response AUROC 0.7 (prevalence 0.5)	Bonferroni 0.05/40		120.40511376181547
+binary response AUROC 0.7 (prevalence 0.2)	Bonferroni 0.05/40		188.13299025283666

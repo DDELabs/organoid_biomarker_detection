@@ -1,0 +1,80 @@
+{
+ "n_labelled_patient_drug": 3371,
+ "n_labelled_patients": 1615,
+ "agreement": [
+  {
+   "setting": "early",
+   "endpoint": "PFI-free at 12 m from drug start",
+   "n": 1843,
+   "label_responder_rate": 0.727,
+   "event_free_rate": 0.753,
+   "raw_agreement": 0.802,
+   "kappa": 0.486,
+   "PPV_responder_eventfree": 0.882,
+   "NPV_nonresponder_event": 0.589,
+   "C_index_responder_vs_time": 0.715
+  },
+  {
+   "setting": "post_progression",
+   "endpoint": "OS-free at 12 m from drug start",
+   "n": 732,
+   "label_responder_rate": 0.205,
+   "event_free_rate": 0.551,
+   "raw_agreement": 0.622,
+   "kappa": 0.286,
+   "PPV_responder_eventfree": 0.92,
+   "NPV_nonresponder_event": 0.545,
+   "C_index_responder_vs_time": 0.629
+  },
+  {
+   "setting": "late_no_event",
+   "endpoint": "PFI-free at 12 m from drug start",
+   "n": 219,
+   "label_responder_rate": 0.68,
+   "event_free_rate": 0.708,
+   "raw_agreement": 0.799,
+   "kappa": 0.527,
+   "PPV_responder_eventfree": 0.872,
+   "NPV_nonresponder_event": 0.643,
+   "C_index_responder_vs_time": 0.706
+  },
+  {
+   "setting": "all",
+   "endpoint": "PFI-free at 12 m from drug start",
+   "n": 2125,
+   "label_responder_rate": 0.707,
+   "event_free_rate": 0.726,
+   "raw_agreement": 0.8,
+   "kappa": 0.509,
+   "PPV_responder_eventfree": 0.872,
+   "NPV_nonresponder_event": 0.627,
+   "C_index_responder_vs_time": 0.718
+  }
+ ],
+ "CR_share_among_responders_by_setting": {
+  "early": 0.903,
+  "late_no_event": 0.85,
+  "post_progression": 0.642,
+  "unknown": 0.857
+ },
+ "setting_share_of_labels": {
+  "early": 0.641,
+  "post_progression": 0.261,
+  "late_no_event": 0.079,
+  "unknown": 0.019
+ },
+ "label_vs_firstcourse_early": {
+  "n": 1485,
+  "raw_agreement": 0.9259259259259259,
+  "kappa": 0.8152884824142422,
+  "label_responder_rate": 0.7158249158249158,
+  "firstcourse_responder_rate": 0.7292929292929293
+ },
+ "frac_labelled_records_multidrug": 0.6576683476713141,
+ "frac_labelled_records_multidrug_weighted_top_drugs": 0.707377338510413,
+ "median_label_identity_with_partner": 0.9924242424242424,
+ "n_cancer_drug_pairs_jaccard_ge_0.6": 14,
+ "n_cancer_drug_pairs_jaccard_ge_0.9": 2,
+ "pairs_n_ge_20": 52,
+ "pairs_responder_rate_gt_0.85_or_lt_0.15": 14
+}
