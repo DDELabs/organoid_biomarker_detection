@@ -1,0 +1,471 @@
+{
+ "patients_with_expr": 10203,
+ "patients_with_purity": 8866,
+ "n_cancers_purity": 32,
+ "frac_pathways_abs_median_rho_gt_0.3": 0.2050520059435364,
+ "frac_pathways_abs_median_rho_gt_0.5": 0.05200594353640416,
+ "atlas_hit_purity_rho": {
+  "BCR signalling (paclitaxel response)": -0.47,
+  "RIG-I/MDA5 IFN (cisplatin resistance)": -0.322,
+  "Cell cycle (cisplatin response)": 0.245,
+  "Fanconi anaemia (topo-II response)": 0.275,
+  "FGFR3 mutants (cisplatin response)": 0.022,
+  "Prostanoid receptors (taxane resistance)": -0.321,
+  "Semaphorin interactions (antimetabolite resistance)": -0.41,
+  "CTLA4 inhibitory signalling": -0.419,
+  "Immunoregulatory lymphoid/non-lymphoid": -0.564,
+  "Collagen formation (stroma)": -0.279,
+  "IFN-gamma signalling": -0.529,
+  "Gap junction degradation": -0.27,
+  "Renal aquaporins": -0.164,
+  "IRAK2-TAK1 (oxaliplatin)": 0.009
+ },
+ "purity_auc_pairs": 37,
+ "purity_auc_median": 0.5285714285714286,
+ "purity_auc_abs_dev_median": 0.08184523809523814,
+ "purity_auc_pooled_within_cancer_rank": 0.483820577886079,
+ "final_rows_abs_rho_score_purity_median": 0.26574589642913965,
+ "final_rows_abs_rho_gt_0.3": 18,
+ "final_rows_scored": 39,
+ "final_rows_median_abs_change_logHR_OS_purity_adj": 0.048885456492538365,
+ "lgg": {
+  "rho_score_G3": -0.016360147741066366,
+  "auc_score_for_G3": 0.4905510035330376,
+  "heldout_HR_age": {
+   "HR": 0.4954579194821806,
+   "lo": 0.36240828642843764,
+   "hi": 0.6773535792926302,
+   "p": 1.0745421097935314e-05,
+   "n": 127,
+   "events": 45,
+   "adj": "age"
+  },
+  "heldout_HR_age_grade": {
+   "HR": 0.5143822717985854,
+   "lo": 0.37929983112621957,
+   "hi": 0.6975724738791842,
+   "p": 1.893795634001684e-05,
+   "n": 127,
+   "events": 45,
+   "adj": "age+G3"
+  },
+  "heldout_HR_age_grade_hist": {
+   "HR": 0.5629587134670139,
+   "lo": 0.39883649119810594,
+   "hi": 0.7946176442290906,
+   "p": 0.0010857317141815086,
+   "n": 127,
+   "events": 45,
+   "adj": "age+G3+h_Oligoastrocytoma+h_Oligodendroglioma"
+  },
+  "untreated_HR_age": {
+   "HR": 0.987155792717848,
+   "lo": 0.628770109447727,
+   "hi": 1.5498137466367847,
+   "p": 0.9552044535069495,
+   "n": 229,
+   "events": 23,
+   "adj": "age"
+  },
+  "all_LGG_HR_age": {
+   "HR": 0.6134995642285632,
+   "lo": 0.5119957117097216,
+   "hi": 0.7351266948150308,
+   "p": 1.1930617296977613e-07,
+   "n": 511,
+   "events": 125,
+   "adj": "age"
+  },
+  "all_LGG_HR_age_grade_hist": {
+   "HR": 0.6220117419941119,
+   "lo": 0.5059476502920472,
+   "hi": 0.7647008676791379,
+   "p": 6.609338010896471e-06,
+   "n": 511,
+   "events": 125,
+   "adj": "age+G3+h_Oligoastrocytoma+h_Oligodendroglioma"
+  },
+  "groups": [
+   {
+    "group": "TMZ labelled (discovery)",
+    "n": 129,
+    "frac_G3": 0.713,
+    "OS_events": 45,
+    "median_score": -0.098,
+    "frac_astrocytoma": 0.473
+   },
+   {
+    "group": "TMZ held-out",
+    "n": 128,
+    "frac_G3": 0.703,
+    "OS_events": 45,
+    "median_score": 0.082,
+    "frac_astrocytoma": 0.359
+   },
+   {
+    "group": "untreated",
+    "n": 233,
+    "frac_G3": 0.288,
+    "OS_events": 23,
+    "median_score": 0.038,
+    "frac_astrocytoma": 0.339
+   },
+   {
+    "group": "other systemic",
+    "n": 26,
+    "frac_G3": 0.615,
+    "OS_events": 12,
+    "median_score": 0.317,
+    "frac_astrocytoma": 0.308
+   }
+  ]
+ },
+ "n_pvalues_final_table": 282,
+ "n_nominal_p_lt_0.05": 34,
+ "expected_false_pos_if_all_null": 14.100000000000001,
+ "n_q_lt_0.1": 7,
+ "tests_q_lt_0.1": [
+  {
+   "cancer": "LGG",
+   "drug": "TEMOZOLOMIDE",
+   "test": "PFI_heldout_p",
+   "p": 0.0,
+   "q_BH_all": 0.0004
+  },
+  {
+   "cancer": "LGG",
+   "drug": "TEMOZOLOMIDE",
+   "test": "PFI_heldout_logrank_p",
+   "p": 0.0,
+   "q_BH_all": 0.0004
+  },
+  {
+   "cancer": "LIHC",
+   "drug": "TACE",
+   "test": "OS_untreated_p",
+   "p": 0.0,
+   "q_BH_all": 0.0004
+  },
+  {
+   "cancer": "LGG",
+   "drug": "TEMOZOLOMIDE",
+   "test": "OS_heldout_p",
+   "p": 1e-05,
+   "q_BH_all": 0.00076
+  },
+  {
+   "cancer": "SARC",
+   "drug": "DOCETAXEL",
+   "test": "PFI_interaction_p",
+   "p": 0.00118,
+   "q_BH_all": 0.06668
+  },
+  {
+   "cancer": "LGG",
+   "drug": "TEMOZOLOMIDE",
+   "test": "OS_heldout_logrank_p",
+   "p": 0.00143,
+   "q_BH_all": 0.06729
+  },
+  {
+   "cancer": "SKCM",
+   "drug": "DACARBAZINE",
+   "test": "PFI_interaction_p",
+   "p": 0.00238,
+   "q_BH_all": 0.09587
+  }
+ ],
+ "primary_tests_n": 139,
+ "primary_q_lt_0.1": [
+  {
+   "cancer": "LGG",
+   "drug": "TEMOZOLOMIDE",
+   "test": "PFI_heldout_p",
+   "p": 0.0,
+   "q_BH_primary": 0.00044
+  },
+  {
+   "cancer": "LGG",
+   "drug": "TEMOZOLOMIDE",
+   "test": "OS_heldout_p",
+   "p": 1e-05,
+   "q_BH_primary": 0.00075
+  },
+  {
+   "cancer": "SARC",
+   "drug": "DOCETAXEL",
+   "test": "PFI_interaction_p",
+   "p": 0.00118,
+   "q_BH_primary": 0.05478
+  },
+  {
+   "cancer": "SKCM",
+   "drug": "DACARBAZINE",
+   "test": "PFI_interaction_p",
+   "p": 0.00238,
+   "q_BH_primary": 0.0827
+  },
+  {
+   "cancer": "COAD",
+   "drug": "OXALIPLATIN",
+   "test": "ext_p",
+   "p": 0.00347,
+   "q_BH_primary": 0.09634
+  }
+ ],
+ "COAD_oxaliplatin_external_q": [
+  {
+   "test": "ext_p",
+   "p": 0.0035,
+   "q_BH_primary": 0.0963
+  },
+  {
+   "test": "ext_best_interaction_p",
+   "p": 0.0101,
+   "q_BH_primary": 0.1567
+  },
+  {
+   "test": "ext_interaction_p",
+   "p": 0.0101,
+   "q_BH_primary": 0.1567
+  }
+ ],
+ "rows_alltreated_only": 14,
+ "rows_alltreated_only_list": [
+  "BLCA CISPLATIN",
+  "BLCA GEMCITABINE",
+  "LUAD PACLITAXEL",
+  "LUSC PACLITAXEL",
+  "STAD CISPLATIN",
+  "STAD EPIRUBICIN",
+  "UCS CARBOPLATIN",
+  "UCS PACLITAXEL",
+  "MESO CISPLATIN",
+  "MESO PEMETREXED",
+  "SARC GEMCITABINE",
+  "SARC DOCETAXEL",
+  "SARC DOXORUBICIN",
+  "LIHC SORAFENIB",
+  "SKCM DACARBAZINE"
+ ],
+ "top10_standard": {
+  "rows": 390,
+  "median_stability": 0.03,
+  "frac_stability_ge_0.5": 0.002564102564102564,
+  "frac_local_q_lt_0.1": 0.0,
+  "frac_abs_atlas_z_gt_abs_local_z": 0.8974358974358975
+ },
+ "top10_relaxed": {
+  "rows": 600,
+  "median_stability": 0.08,
+  "frac_stability_ge_0.5": 0.07166666666666667,
+  "frac_local_q_lt_0.1": 0.013333333333333334
+ },
+ "loco_noise": [
+  {
+   "model": "atlas",
+   "pairs": 64,
+   "mean_auc": 0.5578,
+   "precision_weighted_auc": 0.548,
+   "z_vs_0.5_ignoring_dependence": 3.1755,
+   "obs_sd": 0.1665,
+   "mean_null_sd": 0.1443,
+   "Q": 71.0841,
+   "df": 63,
+   "p_heterogeneity": 0.2265,
+   "tau_between_pairs": 0.0435,
+   "frac_pairs_auc_gt_0.5": 0.625,
+   "median_n": 27.5
+  },
+  {
+   "model": "atlas_prior",
+   "pairs": 64,
+   "mean_auc": 0.5614,
+   "precision_weighted_auc": 0.5536,
+   "z_vs_0.5_ignoring_dependence": 3.5487,
+   "obs_sd": 0.1643,
+   "mean_null_sd": 0.1443,
+   "Q": 69.961,
+   "df": 63,
+   "p_heterogeneity": 0.2554,
+   "tau_between_pairs": 0.0403,
+   "frac_pairs_auc_gt_0.5": 0.6562,
+   "median_n": 27.5
+  },
+  {
+   "model": "separate",
+   "pairs": 64,
+   "mean_auc": 0.5434,
+   "precision_weighted_auc": 0.5239,
+   "z_vs_0.5_ignoring_dependence": 1.5852,
+   "obs_sd": 0.1655,
+   "mean_null_sd": 0.1443,
+   "Q": 66.2383,
+   "df": 63,
+   "p_heterogeneity": 0.3658,
+   "tau_between_pairs": 0.0275,
+   "frac_pairs_auc_gt_0.5": 0.6406,
+   "median_n": 27.5
+  }
+ ],
+ "external_dominant_axis": [
+  {
+   "cohort": "GSE104580",
+   "n": 147,
+   "responders": 81,
+   "var_PC1": 0.244,
+   "AUC_PC1": 0.683,
+   "AUC_PC2": 0.687,
+   "AUC_PC3": 0.504,
+   "frac_pathways_AUC_gt_0.65": 0.293,
+   "max_pathway_AUC": 0.784,
+   "catalog_qc_flag": false
+  },
+  {
+   "cohort": "GSE72970",
+   "n": 124,
+   "responders": 63,
+   "var_PC1": 0.263,
+   "AUC_PC1": 0.529,
+   "AUC_PC2": 0.508,
+   "AUC_PC3": 0.513,
+   "frac_pathways_AUC_gt_0.65": 0.0,
+   "max_pathway_AUC": 0.612,
+   "catalog_qc_flag": false
+  },
+  {
+   "cohort": "GSE109211",
+   "n": 140,
+   "responders": 42,
+   "var_PC1": 0.601,
+   "AUC_PC1": 0.957,
+   "AUC_PC2": 0.609,
+   "AUC_PC3": 0.526,
+   "frac_pathways_AUC_gt_0.65": 0.899,
+   "max_pathway_AUC": 0.965,
+   "catalog_qc_flag": true
+  },
+  {
+   "cohort": "EMTAB3267",
+   "n": 43,
+   "responders": 19,
+   "var_PC1": 0.264,
+   "AUC_PC1": 0.618,
+   "AUC_PC2": 0.588,
+   "AUC_PC3": 0.634,
+   "frac_pathways_AUC_gt_0.65": 0.122,
+   "max_pathway_AUC": 0.789,
+   "catalog_qc_flag": false
+  },
+  {
+   "cohort": "GSE63885",
+   "n": 75,
+   "responders": 65,
+   "var_PC1": 0.159,
+   "AUC_PC1": 0.554,
+   "AUC_PC2": 0.592,
+   "AUC_PC3": 0.606,
+   "frac_pathways_AUC_gt_0.65": 0.088,
+   "max_pathway_AUC": 0.768,
+   "catalog_qc_flag": false
+  },
+  {
+   "cohort": "GSE41998",
+   "n": 253,
+   "responders": 69,
+   "var_PC1": 0.26,
+   "AUC_PC1": 0.581,
+   "AUC_PC2": 0.667,
+   "AUC_PC3": 0.54,
+   "frac_pathways_AUC_gt_0.65": 0.052,
+   "max_pathway_AUC": 0.724,
+   "catalog_qc_flag": false
+  },
+  {
+   "cohort": "GSE20271",
+   "n": 178,
+   "responders": 26,
+   "var_PC1": 0.39,
+   "AUC_PC1": 0.537,
+   "AUC_PC2": 0.599,
+   "AUC_PC3": 0.684,
+   "frac_pathways_AUC_gt_0.65": 0.058,
+   "max_pathway_AUC": 0.725,
+   "catalog_qc_flag": false
+  },
+  {
+   "cohort": "GSE32646",
+   "n": 115,
+   "responders": 27,
+   "var_PC1": 0.247,
+   "AUC_PC1": 0.668,
+   "AUC_PC2": 0.691,
+   "AUC_PC3": 0.583,
+   "frac_pathways_AUC_gt_0.65": 0.237,
+   "max_pathway_AUC": 0.778,
+   "catalog_qc_flag": false
+  }
+ ]
+}
+   cancer              drug  rho_score_purity  n_heldout_with_purity  OS_events  OS_HR   OS_p  OS_HR_adj_purity  OS_p_adj_purity  PFI_events  PFI_HR  PFI_p  PFI_HR_adj_purity  PFI_p_adj_purity
+0    BRCA        PACLITAXEL            -0.080                    157         14  1.082  0.769             1.120            0.690          29   0.888  0.520              0.894             0.551
+1    BRCA       DOXORUBICIN             0.393                    248         18  1.651  0.042             1.566            0.089          30   1.362  0.107              1.288             0.221
+2    BRCA        EPIRUBICIN             0.393                     17          2    NaN    NaN               NaN              NaN           3     NaN    NaN                NaN               NaN
+3    BRCA  CYCLOPHOSPHAMIDE             0.393                    322         23  1.041  0.850             0.995            0.983          39   1.048  0.775              1.004             0.981
+4    BLCA         CISPLATIN            -0.535                     15          4    NaN    NaN               NaN              NaN           9     NaN    NaN                NaN               NaN
+5    BLCA       GEMCITABINE             0.548                     16          4    NaN    NaN               NaN              NaN          10     NaN    NaN                NaN               NaN
+6    HNSC         CISPLATIN             0.271                     48         22  0.530  0.026             0.495            0.016          23   0.540  0.031              0.466             0.011
+7    CESC         CISPLATIN             0.442                     53         18  0.827  0.391             0.799            0.361          15   0.959  0.861              0.817             0.462
+8    LUAD         CISPLATIN             0.454                     34         16  2.913  0.008             2.654            0.020          19   1.460  0.321              1.357             0.438
+9    LUAD       CARBOPLATIN             0.454                     32         16  1.241  0.316             0.890            0.726          19   1.604  0.039              1.176             0.567
+10   LUSC         CISPLATIN             0.616                     40         11  1.180  0.600             1.331            0.395          13   0.849  0.597              0.889             0.728
+11   LUSC       CARBOPLATIN             0.616                     27         13  1.408  0.338             1.282            0.508          14   0.867  0.662              0.677             0.298
+12   LUAD        PACLITAXEL             0.338                     15          9    NaN    NaN               NaN              NaN          11     NaN    NaN                NaN               NaN
+13   LUSC        PACLITAXEL             0.471                     18          7    NaN    NaN               NaN              NaN           8     NaN    NaN                NaN               NaN
+14   LUAD        PEMETREXED             0.087                     30          8  0.271  0.026             0.292            0.026          15   1.036  0.879              0.890             0.658
+15   STAD         CISPLATIN             0.478                     15          7    NaN    NaN               NaN              NaN           3     NaN    NaN                NaN               NaN
+16   STAD        EPIRUBICIN             0.215                      8          1    NaN    NaN               NaN              NaN           2     NaN    NaN                NaN               NaN
+17   COAD      FLUOROURACIL             0.106                     57          7    NaN    NaN               NaN              NaN          18   1.099  0.731              1.066             0.816
+18   READ      FLUOROURACIL             0.088                     22          0    NaN    NaN               NaN              NaN           5     NaN    NaN                NaN               NaN
+19   COAD       OXALIPLATIN            -0.252                     53         10  0.766  0.426             0.790            0.477          21   1.047  0.830              1.050             0.816
+20   READ       OXALIPLATIN            -0.259                     19          0    NaN    NaN               NaN              NaN           5     NaN    NaN                NaN               NaN
+21   PAAD       GEMCITABINE             0.224                     32         14  0.879  0.623             0.936            0.809          19   1.084  0.683              1.065             0.775
+22   UCEC       CARBOPLATIN             0.107                     97         25  1.017  0.938             1.037            0.866          40   1.008  0.965              1.021             0.903
+23   UCEC        PACLITAXEL             0.107                    100         24  1.111  0.616             1.116            0.602          43   0.987  0.935              0.974             0.865
+24    UCS       CARBOPLATIN             0.143                      2          2    NaN    NaN               NaN              NaN           1     NaN    NaN                NaN               NaN
+25    UCS        PACLITAXEL             0.143                      1          1    NaN    NaN               NaN              NaN           0     NaN    NaN                NaN               NaN
+26   MESO         CISPLATIN             0.397                     13         10    NaN    NaN               NaN              NaN           9     NaN    NaN                NaN               NaN
+27   MESO        PEMETREXED             0.397                     13          9    NaN    NaN               NaN              NaN           8     NaN    NaN                NaN               NaN
+28   SARC       GEMCITABINE            -0.101                      7          4    NaN    NaN               NaN              NaN           6     NaN    NaN                NaN               NaN
+29   SARC         DOCETAXEL            -0.101                      6          4    NaN    NaN               NaN              NaN           5     NaN    NaN                NaN               NaN
+30   SARC       DOXORUBICIN            -0.101                      8          5    NaN    NaN               NaN              NaN           7     NaN    NaN                NaN               NaN
+31     OV       CARBOPLATIN             0.266                     48         30  0.701  0.063             0.701            0.063          34   0.768  0.179              0.768             0.179
+32     OV        PACLITAXEL             0.266                     43         27  0.648  0.025             0.648            0.025          30   0.663  0.035              0.663             0.035
+33   LIHC              TACE             0.058                      0          0    NaN    NaN               NaN              NaN           0     NaN    NaN                NaN               NaN
+34   LIHC         SORAFENIB            -0.097                     11          5    NaN    NaN               NaN              NaN           9     NaN    NaN                NaN               NaN
+35    GBM      TEMOZOLOMIDE            -0.703                     95         69  0.915  0.509             0.762            0.095          76   1.084  0.530              0.851             0.294
+36    LGG      TEMOZOLOMIDE             0.178                    123         45  0.501  0.000             0.499            0.000          59   0.518  0.000              0.515             0.000
+37   SKCM       DACARBAZINE            -0.322                      2          0    NaN    NaN               NaN              NaN           2     NaN    NaN                NaN               NaN
+38   DLBC         RITUXIMAB             0.554                      2          1    NaN    NaN               NaN              NaN           1     NaN    NaN                NaN               NaN
+                                                                       median_rho    q10    q90  frac_cancers_abs_gt_0.3
+REACTOME_CELL_SURFACE_INTERACTIONS_AT_THE_VASCULAR_WALL                    -0.608 -0.725 -0.323                    0.938
+REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS                                 -0.604 -0.714 -0.443                    0.938
+REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION                     -0.596 -0.677 -0.262                    0.875
+REACTOME_CHEMOKINE_RECEPTORS_BIND_CHEMOKINES                               -0.589 -0.711 -0.402                    0.906
+REACTOME_G_ALPHA_I_SIGNALLING_EVENTS                                       -0.578 -0.735 -0.407                    0.906
+REACTOME_PEPTIDE_LIGAND_BINDING_RECEPTORS                                  -0.577 -0.716 -0.434                    0.906
+REACTOME_GPCR_LIGAND_BINDING                                               -0.575 -0.677 -0.388                    0.906
+REACTOME_HEMOSTASIS                                                        -0.572 -0.681 -0.373                    0.938
+REACTOME_GENERATION_OF_SECOND_MESSENGER_MOLECULES                          -0.572 -0.657 -0.370                    0.938
+REACTOME_THE_ROLE_OF_NEF_IN_HIV1_REPLICATION_AND_DISEASE_PATHOGENESIS      -0.571 -0.651 -0.375                    0.969
+                                                                       median_rho    q10    q90  frac_cancers_abs_gt_0.3
+REACTOME_RNA_POL_II_TRANSCRIPTION                                           0.326  0.084  0.524                    0.625
+REACTOME_PROCESSING_OF_CAPPED_INTRONLESS_PRE_MRNA                           0.327  0.070  0.500                    0.562
+REACTOME_REGULATORY_RNA_PATHWAYS                                            0.329  0.100  0.514                    0.625
+REACTOME_GENERIC_TRANSCRIPTION_PATHWAY                                      0.353  0.140  0.573                    0.625
+REACTOME_SYNTHESIS_OF_GLYCOSYLPHOSPHATIDYLINOSITOL_GPI                      0.354  0.082  0.541                    0.594
+REACTOME_FORMATION_OF_TRANSCRIPTION_COUPLED_NER_TC_NER_REPAIR_COMPLEX       0.357  0.094  0.451                    0.688
+REACTOME_GLOBAL_GENOMIC_NER_GG_NER                                          0.359  0.120  0.470                    0.656
+REACTOME_TRANSCRIPTION_COUPLED_NER_TC_NER                                   0.378  0.134  0.518                    0.625
+REACTOME_NUCLEOTIDE_EXCISION_REPAIR                                         0.382  0.144  0.531                    0.719
+REACTOME_DNA_REPAIR                                                         0.397  0.196  0.527                    0.688

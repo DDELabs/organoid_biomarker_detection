@@ -1,0 +1,78 @@
+cohort	source	cancer	drugs	setting	randomised	usable	qc_flag	n	n_labelled	responders	nonresponders	power_auc060	power_auc065	os_events	pfs_events	best_tte	best_tte_events	power_main_HR0.7	arm1	arm2	arm_events	power_int_tte_HR0.7	power_int_binary_auc065_vs_050	rfs_events	drfs_events
+GSE72970	trials	colorectal (metastatic)	BEVACIZUMAB;CAPECITABINE;CETUXIMAB;FLUOROURACIL;IRINOTECAN;LEUCOVORIN;OXALIPLATIN	metastatic	False	True	False	124	124	63	61	0.5138523859553366	0.8585122405189235	92.0	114.0	pfs	114	0.9677192467241069	FOLFIRI	FOLFOX	58/27	0.3341946638982664	0.22932906028315178		
+GSE109211	trials	hepatocellular carcinoma	PLACEBO;SORAFENIB	adjuvant	True	False	True	140	140	42	98	0.4931585555718863	0.8400637196589368				0		placebo	sorafenib			0.3146806391815411		
+GSE20271	trials	breast	CYCLOPHOSPHAMIDE;DOXORUBICIN;EPIRUBICIN;FLUOROURACIL;PACLITAXEL	neoadjuvant	True	True	False	178	178	26	152	0.39304203651984787	0.7283045593891152				0		FAC	T/FAC			0.22346352816096007		
+GSE41998	trials	breast	CYCLOPHOSPHAMIDE;DOXORUBICIN;IXABEPILONE;PACLITAXEL	neoadjuvant	True	True	False	279	253	69	184	0.7184082236332151	0.9712991970892175				0		AC->ixabepilone	AC->paclitaxel			0.4877694460574917		
+GSE32646	trials	breast	CYCLOPHOSPHAMIDE;EPIRUBICIN;FLUOROURACIL;PACLITAXEL	neoadjuvant	False	True	False	115	115	27	88	0.3703380405764241	0.6974099239447361				0								
+GSE20194	trials	breast	CAPECITABINE;CYCLOPHOSPHAMIDE;DOXORUBICIN;EPIRUBICIN;FLUOROURACIL;PACLITAXEL;TRASTUZUMAB	neoadjuvant	False	True	False	278	278	56	222	0.668585774538289	0.9539181767374888				0		TFAC	TFEC			0.08267557939846269		
+GSE22093	trials	breast	CYCLOPHOSPHAMIDE;DOXORUBICIN;FLUOROURACIL	neoadjuvant	False	True	False	103	97	28	69	0.3592495801798778	0.6815374869772465				0								
+GSE23988	trials	breast	CAPECITABINE;CYCLOPHOSPHAMIDE;DOCETAXEL;DOXORUBICIN;FLUOROURACIL	neoadjuvant	False	True	False	61	61	20	41	0.2595623810820246	0.5151782465691738				0								
+GSE45670	trials	oesophageal squamous cell carcinoma	CISPLATIN;VINORELBINE	neoadjuvant	False	True	False	28	28	11	17	0.15250902320299475	0.29094945507888054				0								
+GSE15622	trials	ovarian (high-grade serous)	CARBOPLATIN;PACLITAXEL	neoadjuvant	False	True	False	35	35	22	13	0.1761162470378602	0.3439655224310187				0		paclitaxel	carboplatin			0.12067103702660995		
+GSE9891	trials	ovarian (serous/endometrioid)	PACLITAXEL;PLATINUM	adjuvant	False	True	False	267	229	146	83	0.7409798929123526	0.9774674684233254	113.0		rfs	188	0.9983080046542538	platinum+taxane	platinum	141/41	0.5200671402968439	0.3684085213145436	188.0	
+GSE51373	trials	ovarian (high-grade serous)	CARBOPLATIN;PACLITAXEL	adjuvant	False	True	False	28	28	16	12	0.15532662514687412	0.2973652747419509				0								
+GSE63885	trials	ovarian	CYCLOPHOSPHAMIDE;PACLITAXEL;PLATINUM	adjuvant	False	True	False	101	75	65	10	0.18396684294656523	0.36119753495243756	66.0		os	66	0.8257953696986791	taxane/platinum	platinum/cyclophosphamide	36/30	0.30286175409274596	0.11504084634896623		
+GSE52219	trials	bladder (MIBC)	CISPLATIN;DOXORUBICIN;METHOTREXATE;VINBLASTINE	neoadjuvant	False	True	False	23	23	6	17	0.11733377152960231	0.20922162084624585				0								
+GSE169455	trials	bladder (MIBC)	CISPLATIN	neoadjuvant	False	True	False	149	149	48	101	0.533401702392605	0.8745886855570117				0		neoadjuvant	induction			0.18866842039986956		
+GSE42127	trials	NSCLC	NONE;PLATINUM	adjuvant	False	True	False	176	0	0	0			64.0		os	64	0.8141887605895554	observation	adjuvant chemo	55/9	0.16809519548417717			
+GSE103479	trials	colorectal (stage II/III)	FLUOROURACIL;NONE	adjuvant	False	True	False	156	0	0	0			60.0	42.0	os	60	0.7889641579654971	surgery only	adjuvant chemo	41/18	0.24306997536529962			
+GSE19860	trials	colorectal (advanced)	FLUOROURACIL;LEUCOVORIN;OXALIPLATIN	metastatic	False	True	False	40	40	15	25	0.1952034069471272	0.3854856682883108				0								
+GSE19862	trials	colorectal (advanced)	BEVACIZUMAB	metastatic	False	False	True	14	14	7	7	0.10284854558275484	0.17492404354226135				0								
+GSE62080	trials	colorectal (metastatic)	FLUOROURACIL;IRINOTECAN;LEUCOVORIN	metastatic	False	True	False	21	21	9	12	0.12838026930528013	0.23517213998677144				0								
+GSE104580	trials	hepatocellular carcinoma	TACE	locoregional	False	True	False	147	147	81	66	0.579551373972472	0.9076179250291532	0.0	0.0		0								
+GSE67501	trials	renal cell carcinoma (metastatic)	NIVOLUMAB	metastatic	False	True	False	11	11	4	7	0.08819470281263622	0.14006447108933268	0.0	0.0		0								
+GSE7696	trials	glioblastoma	NONE;TEMOZOLOMIDE	adjuvant	False	True	False	70	0	0	0			59.0	0.0	os	59	0.7822199906502413	RT+TMZ	RT	35/24	0.27003289504363187			
+GSE78220	trials	skin cutaneous melanoma (metastatic)	PEMBROLIZUMAB	metastatic	False	True	False	28	28	15	13	0.1570181466388672	0.301206078953319	12.0	0.0	os	12	0.2351062300985614							
+GSE91061	trials	skin cutaneous melanoma (metastatic)	NIVOLUMAB	metastatic	False	True	False	51	49	10	39	0.1727538909155093	0.3365216237712235	34.0	44.0	pfs	44	0.6576179039932611	NIV3-PROG	NIV3-NAIVE	20/24	0.21798553959922118	0.11742093636917873		
+EMTAB3267	trials	kidney renal clear cell carcinoma (metastatic)	SUNITINIB	metastatic	False	True	False	53	43	19	24	0.21471146540346508	0.4265414518606966	0.0	39.0	pfs	39	0.6054605794057528							
+CGGA693	trials	glioma (WHO II-IV; incl. GBM)	NONE;TEMOZOLOMIDE	primary/recurrent, adjuvant TMZ vs none	False	True	False	693	0	0	0			397.0	0.0	os	397	0.9999998674695656	TMZ	no TMZ	296/83	0.8190447905893826			
+BRAUN2020_CHECKMATE	trials	kidney renal clear cell carcinoma (advanced)	EVEROLIMUS;NIVOLUMAB	metastatic	True	True	False	311	281	44	237	0.5881158681522288	0.9130258884625093	231.0	276.0	pfs	276	0.9999633888860606	NIVOLUMAB	EVEROLIMUS	159/117	0.8335520946134771	0.1976332420988189		
+GSE140901	trials	hepatocellular carcinoma (advanced)	ICI_ANTI_PD1_PDL1	metastatic	False	False	False	24	24	6	18	0.11834872988819352	0.21161458428165644	20.0	21.0	pfs	21	0.372573694028367							
+enlight_Anti_PD1_Anti_CTLA4	trials	HCC	anti-PD1 +/- anti-CTLA4	advanced	False	False	False	9	9	5	4	0.08326862018623028	0.12834236425455434				0								
+enlight_Anti_PD1	trials	Melanoma	nivolumab (anti-PD1)	advanced	False	True	False	50	50	10	40	0.17340037846549802	0.3379557769393922				0								
+enlight_Anti_PD1_2	trials	GBM	anti-PD1 (pembrolizumab/nivolumab)	recurrent	False	True	False	15	15	9	6	0.10439218771982152	0.17858965897034712				0								
+enlight_Anti_PD1_3	trials	RCC	nivolumab (anti-PD1)	metastatic	False	False	False	11	11	4	7	0.08819470281263622	0.14006447108933268				0								
+enlight_Anti_PD1_4	trials	Breast	durvalumab + olaparib + paclitaxel (I-SPY2 arm)	neoadjuvant	False	True	False	71	71	29	42	0.31732634038201135	0.6167928461210128				0								
+enlight_Anti_PD1_5	trials	Melanoma	anti-PD1	advanced	False	True	False	55	55	14	41	0.21204259463159847	0.4210107681050568				0								
+enlight_BRAFi_1	trials	Melanoma	BRAF inhibitor (vemurafenib/dabrafenib)	advanced	False	False	False	17	17	14	3	0.08705201380736272	0.1373447227210381				0								
+enlight_BRAFi_2	trials	Melanoma	BRAF inhibitor +/- MEK inhibitor	advanced	False	True	False	16	16	10	6	0.10671044288606368	0.1840907753713793				0								
+enlight_BRAFi_3	trials	Melanoma	BRAF inhibitor (vemurafenib/dabrafenib)	advanced	False	True	False	20	20	14	6	0.11368439856498534	0.20060495793231148				0								
+enlight_Bevacizumab	trials	Colorectal	mFOLFOX6 + bevacizumab	metastatic	False	False	False	12	12	5	7	0.0938752738967516	0.1535856314369111				0								
+enlight_Bevacizumab_2	trials	Colorectal	bevacizumab-containing chemo	metastatic	False	False	False	18	18	15	3	0.08750080550275136	0.13841287731373975				0								
+enlight_Bevacizumab_3	trials	Breast (per drug_targets.csv; README lists Breast/read counts but values are log-scale microarray)	bevacizumab + chemo	neoadjuvant/advanced	False	True	False	21	21	7	14	0.12094488504222517	0.21772809976631047				0								
+enlight_Bevacizumab_4	trials	Colorectal	bevacizumab + chemo	metastatic	False	True	False	17	17	8	9	0.11423254085430795	0.20190039487107894				0								
+enlight_Cetuximab	trials	Head and neck	cetuximab (+ platinum/5-FU)	recurrent/metastatic	False	True	False	40	40	14	26	0.1908402671324015	0.376108455669661				0								
+enlight_Lapatinib	trials	Breast (HER2+)	lapatinib (+/- trastuzumab) + paclitaxel->FEC (CHER-LOB arms B/C)	neoadjuvant	False	True	False	65	65	21	44	0.2716927702344858	0.5377073308370911				0								
+enlight_MGH_Alpelisib	trials	Breast	alpelisib	metastatic	False	True	False	19	19	13	6	0.11221388664197839	0.1971276915195007				0								
+enlight_MGH_Ribociclib	trials	Breast	ribociclib	metastatic	False	False	False	9	9	3	6	0.07989345610594185	0.12031719418401396				0								
+enlight_MK2206	trials	Breast	MK-2206 + paclitaxel (I-SPY2 arm)	neoadjuvant	False	True	False	20	20	6	14	0.11368439856498534	0.20060495793231148				0								
+enlight_Rituximab	trials	CLL	rituximab-containing (FCR)	first-line	False	True	False	62	62	16	46	0.23476939101451524	0.4672013637873851				0								
+enlight_Selinexor	trials	GBM	selinexor	recurrent	False	True	False	24	24	8	16	0.1313613256837581	0.24213608867195024				0								
+enlight_Sorafenib	trials	HCC	sorafenib (STORM adjuvant, sorafenib arm only)	adjuvant	False	False	True	67	67	21	46	0.2748640125413891	0.5434934565232744				0								
+enlight_Sorafenib_2	trials	NSCLC	sorafenib (BATTLE)	metastatic, pretreated	False	True	False	39	39	20	19	0.2010519438215113	0.39794546275405374				0								
+enlight_Tipifarnib_1	trials	AML	tipifarnib	newly diagnosed (elderly)	False	True	False	34	34	13	21	0.17386626615004808	0.33898843993015026				0								
+enlight_Tipifarnib_2	trials	AML	tipifarnib	relapsed/refractory	False	True	False	57	57	13	44	0.2056770250706964	0.40770802927172084				0								
+enlight_Trastuzumab	trials	Breast (HER2+)	trastuzumab + chemo (NOAH, trastuzumab arm only)	neoadjuvant	False	True	False	63	63	31	32	0.2955672578085696	0.5802047481622377				0								
+enlight_Trastuzumab_2	trials	Breast (HER2+)	trastuzumab + paclitaxel->FEC (CHER-LOB arm A)	neoadjuvant	False	True	False	23	23	6	17	0.11733377152960231	0.20922162084624585				0								
+enlight_Trastuzumab_3	trials	Breast (HER2+)	trastuzumab + chemo	neoadjuvant	False	True	False	50	50	27	23	0.2434461993001271	0.48428340090262095				0								
+enlight_Trastuzumab_4	trials	Breast (HER2+)	trastuzumab + chemo	neoadjuvant	False	True	False	25	25	12	13	0.14559829005621575	0.27512108345977787				0								
+enlight_Trastuzumab_5	trials	Breast (HER2+)	trastuzumab-containing	unknown	False	True	False	65	65	19	46	0.2596179088085148	0.5152828013875189				0								
+enlight_Vismodegib	trials	Basal cell carcinoma	vismodegib	advanced	False	False	False	13	13	4	9	0.09161621114345228	0.14820876932392413				0								
+GSE25066_hatzis	trials	Breast (HER2- mostly)	taxane -> anthracycline (T/FAC, T/FEC)	neoadjuvant	False	True	False	508	488	99	389	0.8893099609547992	0.9980170601838003			drfs	111	0.9638988005017616							111.0
+GSE33072_battle	trials	NSCLC	erlotinib; sorafenib	metastatic, previously treated (adaptive randomisation)	True	True	False	64	64	28	36	0.2956288547290429	0.5803112135267154		61.0	pfs	61	0.795529887867483	sorafenib	erlotinib	36/25	0.27805049559861333	0.17459232917136883		
+GSE164458_brightness	trials	Breast (TNBC)	paclitaxel; carboplatin+paclitaxel; veliparib+carboplatin+paclitaxel (all followed by AC)	neoadjuvant	True	True	False	482	482	236	246	0.9757062790856265	0.9999709664134021				0		veliparib + carboplatin + paclitaxel	paclitaxel (+placebo)			0.6497921956853223		
+GSE194040_ispy2	trials	Breast (stage II-III, high risk)	paclitaxel +/- {neratinib, MK-2206, ganitumab, ganetespib, trebananib(AMG386), veliparib+carboplatin, pembrolizumab, pertuzumab/trastuzumab}; T-DM1+pertuzumab; then AC	neoadjuvant	True	True	False	987	987	317	670	0.9995093655863625	0.9999999991987302				0		Ctr	AMG386			0.553048353708516		
+IMmotion150_rcc	trials	RCC (clear cell)	atezolizumab; atezolizumab+bevacizumab; sunitinib	first-line metastatic	True	True	False	263	247	72	175	0.7254236649203407	0.9733230468965156		164.0	pfs	164	0.9954424127561877	sunitinib	atezolizumab+bevacizumab	55/58	0.4741930773255544	0.36892012577986993		
+IMvigor210_blca	trials	Bladder urothelial	atezolizumab	metastatic (cohort 1 cisplatin-ineligible + cohort 2 post-platinum)	False	True	False	347	298	68	230	0.737502425061443	0.9765811521303569	231.0		os	231	0.9997309394152833							
+Liu2019_mel	trials	Melanoma	pembrolizumab or nivolumab	metastatic (+/- prior ipilimumab)	False	True	False	122	122	48	74	0.4893924781035131	0.8365436688629857	62.0	87.0	pfs	87	0.9141683530829288	anti-PD1 (ipi-naive)	anti-PD1 (ipi-experienced)	49/38	0.37847450937684646	0.296085853736103		
+Gide2019_mel	trials	Melanoma	pembrolizumab/nivolumab +/- ipilimumab	metastatic	False	True	False	73	73	40	33	0.3315153371345758	0.639550086160429	29.0	22.0	os	29	0.48441330419058265	anti-PD1	anti-PD1+anti-CTLA4	24/5	0.11214434312557241	0.2015698328077426		
+Riaz2017_mel_pre	trials	Melanoma	nivolumab	metastatic (+/- prior ipilimumab)	False	True	False	51	49	10	39	0.1727538909155093	0.3365216237712235	34.0		os	34	0.5477021863173226	nivolumab (ipi-progressed)	nivolumab (ipi-naive)	16/18	0.17965225868353538	0.11742093636917873		
+Hugo2016_mel	trials	Melanoma	pembrolizumab	metastatic	False	True	False	27	27	14	13	0.1534897324765278	0.29318511853317525	12.0		os	12	0.2351062300985614							
+VanAllen2015_mel	trials	Melanoma	ipilimumab	metastatic	False	True	False	40	39	7	32	0.137794275052534	0.257099103130648	27.0	35.0	pfs	35	0.5597017191092801							
+PRINCE_paad	trials	Pancreatic adenocarcinoma	gemcitabine+nab-paclitaxel with nivolumab (+/- sotigalimab) or sotigalimab alone	first-line metastatic	True	True	False	64	56	25	31	0.26579471542093897	0.5268315407555841	15.0	55.0	pfs	55	0.7533957843514186	chemo+nivolumab(+/-sotigalimab)	chemo+sotigalimab	40/15	0.21798553959922118	0.149952654187251		
+Cloughesy2019_gbm	trials	GBM (recurrent)	pembrolizumab (neoadjuvant+adjuvant vs adjuvant only)	recurrent, surgical	True	False	False	30	28	0	28			21.0	28.0	pfs	28	0.47111492786839576	adjuvant pembrolizumab only	neoadjuvant+adjuvant pembrolizumab	15/13	0.1560309471046433			
+Choueiri2016_rcc	trials	RCC (clear cell)	nivolumab	metastatic	False	False	False	16	16	3	13	0.08654731277563497	0.13614355265409084	5.0	13.0	pfs	13	0.25075546873923193							
+Anders2022_tnbc	trials	Breast (TNBC, metastatic)	pembrolizumab + low-dose cyclophosphamide	metastatic, pretreated	False	True	False	31	31	7	24	0.13270882187466934	0.24527787320857802	27.0	29.0	pfs	29	0.48441330419058265							
+GSE14814_jbr10	trials	NSCLC (resected stage I-III)	none	adjuvant	True	True	False	133	0	0	0			60.0		os	60	0.7889641579654971	adjuvant chemo	observation	30/30	0.28185724107273674			
+GSE68465_lung_adj	trials	NSCLC (resected stage I-III)	platinum-based adjuvant chemo	adjuvant	True	True	False	426	0	0	0			225.0		os	225	0.9996507410122678	observation	adjuvant chemo	161/64	0.6749986427261865			
+GSE37745_lung_adj	trials	NSCLC (resected stage I-III)	platinum-based adjuvant chemo	adjuvant	True	True	False	99	0	0	0			73.0		os	73	0.8615852751895506	observation	adjuvant chemo	51/22	0.2875725691134018			

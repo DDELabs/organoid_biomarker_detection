@@ -1,0 +1,409 @@
+{
+ "patients_with_expr": 10203,
+ "patients_with_purity": 8866,
+ "n_cancers_purity": 32,
+ "frac_pathways_abs_median_rho_gt_0.3": 0.2050520059435364,
+ "frac_pathways_abs_median_rho_gt_0.5": 0.05200594353640416,
+ "atlas_hit_purity_rho": {
+  "BCR signalling (paclitaxel response)": -0.47,
+  "RIG-I/MDA5 IFN (cisplatin resistance)": -0.322,
+  "Cell cycle (cisplatin response)": 0.245,
+  "Fanconi anaemia (topo-II response)": 0.275,
+  "FGFR3 mutants (cisplatin response)": 0.022,
+  "Prostanoid receptors (taxane resistance)": -0.321,
+  "Semaphorin interactions (antimetabolite resistance)": -0.41,
+  "CTLA4 inhibitory signalling": -0.419,
+  "Immunoregulatory lymphoid/non-lymphoid": -0.564,
+  "Collagen formation (stroma)": -0.279,
+  "IFN-gamma signalling": -0.529,
+  "Gap junction degradation": -0.27,
+  "Renal aquaporins": -0.164,
+  "IRAK2-TAK1 (oxaliplatin)": 0.009
+ },
+ "purity_auc_pairs": 37,
+ "purity_auc_median": 0.5285714285714286,
+ "purity_auc_abs_dev_median": 0.08184523809523814,
+ "purity_auc_pooled_within_cancer_rank": 0.483820577886079,
+ "final_rows_abs_rho_score_purity_median": 0.26574589642913965,
+ "final_rows_abs_rho_gt_0.3": 18,
+ "final_rows_scored": 39,
+ "final_rows_median_abs_change_logHR_OS_purity_adj": 0.048885456492538365,
+ "lgg": {
+  "rho_score_G3": -0.016360147741066366,
+  "auc_score_for_G3": 0.4905510035330376,
+  "heldout_HR_age": {
+   "HR": 0.4954579194821806,
+   "lo": 0.36240828642843764,
+   "hi": 0.6773535792926302,
+   "p": 1.0745421097935314e-05,
+   "n": 127,
+   "events": 45,
+   "adj": "age"
+  },
+  "heldout_HR_age_grade": {
+   "HR": 0.5143822717985854,
+   "lo": 0.37929983112621957,
+   "hi": 0.6975724738791842,
+   "p": 1.893795634001684e-05,
+   "n": 127,
+   "events": 45,
+   "adj": "age+G3"
+  },
+  "heldout_HR_age_grade_hist": {
+   "HR": 0.5629587134670139,
+   "lo": 0.39883649119810594,
+   "hi": 0.7946176442290906,
+   "p": 0.0010857317141815086,
+   "n": 127,
+   "events": 45,
+   "adj": "age+G3+h_Oligoastrocytoma+h_Oligodendroglioma"
+  },
+  "untreated_HR_age": {
+   "HR": 0.987155792717848,
+   "lo": 0.628770109447727,
+   "hi": 1.5498137466367847,
+   "p": 0.9552044535069495,
+   "n": 229,
+   "events": 23,
+   "adj": "age"
+  },
+  "all_LGG_HR_age": {
+   "HR": 0.6134995642285632,
+   "lo": 0.5119957117097216,
+   "hi": 0.7351266948150308,
+   "p": 1.1930617296977613e-07,
+   "n": 511,
+   "events": 125,
+   "adj": "age"
+  },
+  "all_LGG_HR_age_grade_hist": {
+   "HR": 0.6220117419941119,
+   "lo": 0.5059476502920472,
+   "hi": 0.7647008676791379,
+   "p": 6.609338010896471e-06,
+   "n": 511,
+   "events": 125,
+   "adj": "age+G3+h_Oligoastrocytoma+h_Oligodendroglioma"
+  },
+  "groups": [
+   {
+    "group": "TMZ labelled (discovery)",
+    "n": 129,
+    "frac_G3": 0.713,
+    "OS_events": 45,
+    "median_score": -0.098,
+    "frac_astrocytoma": 0.473
+   },
+   {
+    "group": "TMZ held-out",
+    "n": 128,
+    "frac_G3": 0.703,
+    "OS_events": 45,
+    "median_score": 0.082,
+    "frac_astrocytoma": 0.359
+   },
+   {
+    "group": "untreated",
+    "n": 233,
+    "frac_G3": 0.288,
+    "OS_events": 23,
+    "median_score": 0.038,
+    "frac_astrocytoma": 0.339
+   },
+   {
+    "group": "other systemic",
+    "n": 26,
+    "frac_G3": 0.615,
+    "OS_events": 12,
+    "median_score": 0.317,
+    "frac_astrocytoma": 0.308
+   }
+  ]
+ },
+ "n_pvalues_final_table": 282,
+ "n_nominal_p_lt_0.05": 34,
+ "expected_false_pos_if_all_null": 14.100000000000001,
+ "n_q_lt_0.1": 7,
+ "tests_q_lt_0.1": [
+  {
+   "cancer": "LGG",
+   "drug": "TEMOZOLOMIDE",
+   "test": "PFI_heldout_p",
+   "p": 0.0,
+   "q_BH_all": 0.0004
+  },
+  {
+   "cancer": "LGG",
+   "drug": "TEMOZOLOMIDE",
+   "test": "PFI_heldout_logrank_p",
+   "p": 0.0,
+   "q_BH_all": 0.0004
+  },
+  {
+   "cancer": "LIHC",
+   "drug": "TACE",
+   "test": "OS_untreated_p",
+   "p": 0.0,
+   "q_BH_all": 0.0004
+  },
+  {
+   "cancer": "LGG",
+   "drug": "TEMOZOLOMIDE",
+   "test": "OS_heldout_p",
+   "p": 1e-05,
+   "q_BH_all": 0.00076
+  },
+  {
+   "cancer": "SARC",
+   "drug": "DOCETAXEL",
+   "test": "PFI_interaction_p",
+   "p": 0.00118,
+   "q_BH_all": 0.06668
+  },
+  {
+   "cancer": "LGG",
+   "drug": "TEMOZOLOMIDE",
+   "test": "OS_heldout_logrank_p",
+   "p": 0.00143,
+   "q_BH_all": 0.06729
+  },
+  {
+   "cancer": "SKCM",
+   "drug": "DACARBAZINE",
+   "test": "PFI_interaction_p",
+   "p": 0.00238,
+   "q_BH_all": 0.09587
+  }
+ ],
+ "primary_tests_n": 139,
+ "primary_q_lt_0.1": [
+  {
+   "cancer": "LGG",
+   "drug": "TEMOZOLOMIDE",
+   "test": "PFI_heldout_p",
+   "p": 0.0,
+   "q_BH_primary": 0.00044
+  },
+  {
+   "cancer": "LGG",
+   "drug": "TEMOZOLOMIDE",
+   "test": "OS_heldout_p",
+   "p": 1e-05,
+   "q_BH_primary": 0.00075
+  },
+  {
+   "cancer": "SARC",
+   "drug": "DOCETAXEL",
+   "test": "PFI_interaction_p",
+   "p": 0.00118,
+   "q_BH_primary": 0.05478
+  },
+  {
+   "cancer": "SKCM",
+   "drug": "DACARBAZINE",
+   "test": "PFI_interaction_p",
+   "p": 0.00238,
+   "q_BH_primary": 0.0827
+  },
+  {
+   "cancer": "COAD",
+   "drug": "OXALIPLATIN",
+   "test": "ext_p",
+   "p": 0.00347,
+   "q_BH_primary": 0.09634
+  }
+ ],
+ "COAD_oxaliplatin_external_q": [
+  {
+   "test": "ext_p",
+   "p": 0.0035,
+   "q_BH_primary": 0.0963
+  },
+  {
+   "test": "ext_best_interaction_p",
+   "p": 0.0101,
+   "q_BH_primary": 0.1567
+  },
+  {
+   "test": "ext_interaction_p",
+   "p": 0.0101,
+   "q_BH_primary": 0.1567
+  }
+ ],
+ "rows_alltreated_only": 14,
+ "rows_alltreated_only_list": [
+  "BLCA CISPLATIN",
+  "BLCA GEMCITABINE",
+  "LUAD PACLITAXEL",
+  "LUSC PACLITAXEL",
+  "STAD CISPLATIN",
+  "STAD EPIRUBICIN",
+  "UCS CARBOPLATIN",
+  "UCS PACLITAXEL",
+  "MESO CISPLATIN",
+  "MESO PEMETREXED",
+  "SARC GEMCITABINE",
+  "SARC DOCETAXEL",
+  "SARC DOXORUBICIN",
+  "LIHC SORAFENIB",
+  "SKCM DACARBAZINE"
+ ],
+ "top10_standard": {
+  "rows": 390,
+  "median_stability": 0.03,
+  "frac_stability_ge_0.5": 0.002564102564102564,
+  "frac_local_q_lt_0.1": 0.0,
+  "frac_abs_atlas_z_gt_abs_local_z": 0.8974358974358975
+ },
+ "top10_relaxed": {
+  "rows": 600,
+  "median_stability": 0.08,
+  "frac_stability_ge_0.5": 0.07166666666666667,
+  "frac_local_q_lt_0.1": 0.013333333333333334
+ },
+ "loco_noise": [
+  {
+   "model": "atlas",
+   "pairs": 64,
+   "mean_auc": 0.5578,
+   "precision_weighted_auc": 0.548,
+   "z_vs_0.5_ignoring_dependence": 3.1755,
+   "obs_sd": 0.1665,
+   "mean_null_sd": 0.1443,
+   "Q": 71.0841,
+   "df": 63,
+   "p_heterogeneity": 0.2265,
+   "tau_between_pairs": 0.0435,
+   "frac_pairs_auc_gt_0.5": 0.625,
+   "median_n": 27.5
+  },
+  {
+   "model": "atlas_prior",
+   "pairs": 64,
+   "mean_auc": 0.5614,
+   "precision_weighted_auc": 0.5536,
+   "z_vs_0.5_ignoring_dependence": 3.5487,
+   "obs_sd": 0.1643,
+   "mean_null_sd": 0.1443,
+   "Q": 69.961,
+   "df": 63,
+   "p_heterogeneity": 0.2554,
+   "tau_between_pairs": 0.0403,
+   "frac_pairs_auc_gt_0.5": 0.6562,
+   "median_n": 27.5
+  },
+  {
+   "model": "separate",
+   "pairs": 64,
+   "mean_auc": 0.5434,
+   "precision_weighted_auc": 0.5239,
+   "z_vs_0.5_ignoring_dependence": 1.5852,
+   "obs_sd": 0.1655,
+   "mean_null_sd": 0.1443,
+   "Q": 66.2383,
+   "df": 63,
+   "p_heterogeneity": 0.3658,
+   "tau_between_pairs": 0.0275,
+   "frac_pairs_auc_gt_0.5": 0.6406,
+   "median_n": 27.5
+  }
+ ],
+ "external_dominant_axis": [
+  {
+   "cohort": "GSE104580",
+   "n": 147,
+   "responders": 81,
+   "var_PC1": 0.244,
+   "AUC_PC1": 0.683,
+   "AUC_PC2": 0.687,
+   "AUC_PC3": 0.504,
+   "frac_pathways_AUC_gt_0.65": 0.293,
+   "max_pathway_AUC": 0.784,
+   "catalog_qc_flag": false
+  },
+  {
+   "cohort": "GSE72970",
+   "n": 124,
+   "responders": 63,
+   "var_PC1": 0.263,
+   "AUC_PC1": 0.529,
+   "AUC_PC2": 0.508,
+   "AUC_PC3": 0.513,
+   "frac_pathways_AUC_gt_0.65": 0.0,
+   "max_pathway_AUC": 0.612,
+   "catalog_qc_flag": false
+  },
+  {
+   "cohort": "GSE109211",
+   "n": 140,
+   "responders": 42,
+   "var_PC1": 0.601,
+   "AUC_PC1": 0.957,
+   "AUC_PC2": 0.609,
+   "AUC_PC3": 0.526,
+   "frac_pathways_AUC_gt_0.65": 0.899,
+   "max_pathway_AUC": 0.965,
+   "catalog_qc_flag": true
+  },
+  {
+   "cohort": "EMTAB3267",
+   "n": 43,
+   "responders": 19,
+   "var_PC1": 0.264,
+   "AUC_PC1": 0.618,
+   "AUC_PC2": 0.588,
+   "AUC_PC3": 0.634,
+   "frac_pathways_AUC_gt_0.65": 0.122,
+   "max_pathway_AUC": 0.789,
+   "catalog_qc_flag": false
+  },
+  {
+   "cohort": "GSE63885",
+   "n": 75,
+   "responders": 65,
+   "var_PC1": 0.159,
+   "AUC_PC1": 0.554,
+   "AUC_PC2": 0.592,
+   "AUC_PC3": 0.606,
+   "frac_pathways_AUC_gt_0.65": 0.088,
+   "max_pathway_AUC": 0.768,
+   "catalog_qc_flag": false
+  },
+  {
+   "cohort": "GSE41998",
+   "n": 253,
+   "responders": 69,
+   "var_PC1": 0.26,
+   "AUC_PC1": 0.581,
+   "AUC_PC2": 0.667,
+   "AUC_PC3": 0.54,
+   "frac_pathways_AUC_gt_0.65": 0.052,
+   "max_pathway_AUC": 0.724,
+   "catalog_qc_flag": false
+  },
+  {
+   "cohort": "GSE20271",
+   "n": 178,
+   "responders": 26,
+   "var_PC1": 0.39,
+   "AUC_PC1": 0.537,
+   "AUC_PC2": 0.599,
+   "AUC_PC3": 0.684,
+   "frac_pathways_AUC_gt_0.65": 0.058,
+   "max_pathway_AUC": 0.725,
+   "catalog_qc_flag": false
+  },
+  {
+   "cohort": "GSE32646",
+   "n": 115,
+   "responders": 27,
+   "var_PC1": 0.247,
+   "AUC_PC1": 0.668,
+   "AUC_PC2": 0.691,
+   "AUC_PC3": 0.583,
+   "frac_pathways_AUC_gt_0.65": 0.237,
+   "max_pathway_AUC": 0.778,
+   "catalog_qc_flag": false
+  }
+ ]
+}

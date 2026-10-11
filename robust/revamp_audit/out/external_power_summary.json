@@ -1,0 +1,44 @@
+{
+ "cohorts": 77,
+ "cohorts_power_auc065_ge_0.8": 14,
+ "cohorts_power_auc060_ge_0.8": 3,
+ "cohorts_power_main_hr07_ge_0.8": 12,
+ "cohorts_power_int_tte_ge_0.8": 2,
+ "cohorts_power_int_binary_ge_0.8": 0,
+ "list_auc065_ge_0.8": [
+  "GSE72970",
+  "GSE109211",
+  "GSE41998",
+  "GSE20194",
+  "GSE9891",
+  "GSE169455",
+  "GSE104580",
+  "BRAUN2020_CHECKMATE",
+  "GSE25066_hatzis",
+  "GSE164458_brightness",
+  "GSE194040_ispy2",
+  "IMmotion150_rcc",
+  "IMvigor210_blca",
+  "Liu2019_mel"
+ ],
+ "list_main_ge_0.8": [
+  "GSE72970",
+  "GSE9891",
+  "GSE63885",
+  "GSE42127",
+  "CGGA693",
+  "BRAUN2020_CHECKMATE",
+  "GSE25066_hatzis",
+  "IMmotion150_rcc",
+  "IMvigor210_blca",
+  "Liu2019_mel",
+  "GSE68465_lung_adj",
+  "GSE37745_lung_adj"
+ ],
+ "list_int_tte_ge_0.5": [
+  "GSE9891",
+  "CGGA693",
+  "BRAUN2020_CHECKMATE",
+  "GSE68465_lung_adj"
+ ]
+}
