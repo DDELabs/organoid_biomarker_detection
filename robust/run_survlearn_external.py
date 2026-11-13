@@ -30,7 +30,7 @@ def cohort_scores(cid):
         gs = {k: [g for g in v if g in expr.index] for k, v in gene_sets(("REACTOME",)).items()}
         return scoring.rank_score(expr, {k: v for k, v in gs.items() if len(v) >= 5})
     sc = scoring.cached(f"curated_{cid}_reactome_rank", compute).T
-    return (sc - sc.mean()) / sc.std().replace(0, 1)
+    return ((sc - sc.mean()) / sc.std().replace(0, 1)).fillna(0)
 
 
 def main():
