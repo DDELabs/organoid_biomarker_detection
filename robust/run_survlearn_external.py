@@ -36,7 +36,10 @@ def cohort_scores(cid):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--perm", type=int, default=2000)
+    ap.add_argument("--dir", default="survlearn")
     a = ap.parse_args()
+    global OUT
+    OUT = RESULTS / a.dir
     co = pd.read_csv(OUT / "coefficients.tsv.gz", sep="\t")
     cat = trial_catalog()
     cat = cat[cat["usable"].astype(str).str.lower().eq("true")]

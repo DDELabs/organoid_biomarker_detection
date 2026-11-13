@@ -66,7 +66,14 @@ def load():
     return Z, cdr, long
 
 
+PAPER = False    # True: use the authors' own proximity table (data/coad_blca_organoid_drugs_zscore_result_reactome.txt)
+
+
 def proximity(drug):
+    if PAPER:
+        from obd import network as N
+        old = N.precomputed_proximity()
+        return old[drug].dropna() if drug in old.columns else None
     f = RESULTS / "cache" / f"proximity_STRINGv12_{PROXY.get(drug, drug)}.tsv.gz"
     return pd.read_csv(f, sep="\t", index_col=0)["z"] if f.exists() else None
 
@@ -181,7 +188,11 @@ def main():
     ap.add_argument("--random", type=int, default=0, help="random pathway shortlists per drug (negative control)")
     ap.add_argument("--drugs", nargs="*")
     ap.add_argument("--jobs", type=int, default=4)
+    ap.add_argument("--paper-proximity", action="store_true", help="use the paper's own shortlists; only drugs in its table")
     a = ap.parse_args()
+    global PAPER, OUT
+    if a.paper_proximity:
+        PAPER, OUT = True, RESULTS / "survlearn_paperprox"
     OUT.mkdir(parents=True, exist_ok=True)
     Z, cdr, long = load()
     fold = SL.folds_by_patient(cdr.index, 5, seed=0)
@@ -192,7 +203,13 @@ def main():
           f"{np.exp(gt.loc['g', 'coef']):.2f}, p = {gt.loc['g', 'p']:.1e}", flush=True)
     n = long.drop_duplicates(["patient", "drug"]).groupby("drug").size().sort_values(ascending=False)
     drugs = a.drugs or list(n[n >= a.min_treated].index)
-    res = Parallel(n_jobs=a.jobs)(delayed(one_drug)(d, Z, cdr, long, fold, min_treated=a.min_treated) for d in drugs)
+    if PAPER:
+        drugs = [d for d in drugs if proximity(d) is not None]
+    fixed = {}
+    if PAPER:        # the paper's exact rule: z <= -1.2816 in the authors' table (resolved here, not in the workers)
+        fixed = {d: [p for p in proximity(d).index[proximity(d) <= -1.2816] if p in Z.columns] for d in drugs}
+    res = Parallel(n_jobs=a.jobs)(delayed(one_drug)(d, Z, cdr, long, fold, paths=fixed.get(d), tag="proximal",
+                                                    min_treated=a.min_treated) for d in drugs)
     S = pd.DataFrame([r[0] for r in res])
     S.to_csv(OUT / "summary.tsv", sep="\t", index=False)
     co = [pd.DataFrame(c).assign(drug=r["drug"]).rename_axis("pathway").reset_index() for r, c, _ in res if c]
