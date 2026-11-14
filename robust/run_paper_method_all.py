@@ -31,11 +31,11 @@ from obd.reference import gene_sets  # noqa: E402
 
 OUT = RESULTS / "paper_method_all"
 SETS = [  # organoid set, TCGA project, patient drug, organoid drug column, response column
-    ("colorectal_vandewetering2015", "COAD", "FLUOROURACIL", "5-FLUOROURACIL", "ln_ic50"),
+    ("colorectal_vandewetering2015", "COAD", "FLUOROURACIL", "FLUOROURACIL", "ln_ic50"),
     ("colorectal_vandewetering2015", "COAD", "OXALIPLATIN", "OXALIPLATIN", "ln_ic50"),
-    ("colorectal_vandewetering2015", "COAD", "IRINOTECAN", "CAMPTOTHECIN", "ln_ic50"),
+    ("colorectal_vandewetering2015", "COAD", "IRINOTECAN", "IRINOTECAN", "ln_ic50"),
     ("colorectal_vandewetering2015", "COAD", "CETUXIMAB", "CETUXIMAB", "ln_ic50"),
-    ("colorectal_vandewetering2015", "READ", "FLUOROURACIL", "5-FLUOROURACIL", "ln_ic50"),
+    ("colorectal_vandewetering2015", "READ", "FLUOROURACIL", "FLUOROURACIL", "ln_ic50"),
     ("colorectal_vandewetering2015", "READ", "OXALIPLATIN", "OXALIPLATIN", "ln_ic50"),
     ("bladder_lee2018", "BLCA", "CISPLATIN", "CISPLATIN", "response"),
     ("bladder_lee2018", "BLCA", "GEMCITABINE", "GEMCITABINE", "response"),
