@@ -1,0 +1,133 @@
+trained_on	pathways	n_pathways	tested_in	n	pfs_events	pfs_hr	pfs_p	os_events	os_hr	os_p	pfs_hr_random_mean	pfs_hr_share_random_as_good	os_hr_random_mean	os_hr_share_random_as_good	n_response	auc	rfs_events	rfs_hr	rfs_p	auc_random_mean	auc_share_random_as_good	rfs_hr_random_mean	rfs_hr_share_random_as_good
+both trials	network shortlist (STRING v12)	70	TCGA ovarian, carboplatin	328	248.0	0.9794589677530531	0.7293809418731225	204.0	0.9389443491416465	0.34300234329685986	0.9438578443338983	0.915	0.8539134608752582	0.995									
+both trials	network shortlist (STRING v12)	70	GSE9891 ovarian, platinum	243				110.0	0.9928733570300221	0.9377148902194554			0.9456277672071942	0.835	229.0	0.4676514276283215	179.0	1.020156458415252	0.7823294747647601	0.4674232546624856	0.46	1.0227203335909223	0.485
+both trials	network shortlist (STRING v12)	70	GSE63885 ovarian, platinum	75				66.0	0.9891932507968147	0.9288936515332513			1.1567237783028044	0.025	75.0	0.45538461538461544				0.4334615384615384	0.325		
+both trials	network shortlist (STRING v12)	70	GSE51373 ovarian, platinum	28											28.0	0.5989583333333334				0.6818229166666666	0.925		
+both trials	network shortlist (STRING v12)	70	GSE15622 ovarian, platinum	15																			
+both trials	network shortlist (STRING v12)	70	TCGA-UCEC, carboplatin	146	56.0	1.036363221852424	0.796410657367267	38.0	0.9257795273494646	0.6535978091331099	0.982425422800728	0.79	0.9205550359701387	0.565									
+both trials	network shortlist (STRING v12)	70	TCGA-LUAD, carboplatin	60	27.0	1.109224847601992	0.6172060552884302	23.0	1.4954652452970965	0.09355290617484538	0.9234736661555418	0.995	1.1854221842715085	0.99	33.0	0.3928571428571428				0.4682936507936508	0.96		
+both trials	network shortlist (STRING v12)	70	TCGA-LUSC, carboplatin	42																			
+both trials	network shortlist (STRING v12)	70	TCGA-HNSC, carboplatin	47	20.0	1.010253330691857	0.9638808601114837	17.0	0.9417417650871106	0.8147198091382082	0.8408611927021822	0.935	0.7668907959939416	0.915									
+both trials	network shortlist (STRING v12)	70	TCGA-UCS, carboplatin	28	17.0	0.4617772373095181	0.023209088356948366	15.0	0.42728479547328946	0.021271559706949474	0.563442729664995	0.2	0.4403291148890583	0.48									
+both trials	network shortlist (STRING v12)	70	TCGA ovarian, NO carboplatin (comparison)	91	55.0	0.9714766047051266	0.8378215916361077	57.0	1.058567922346915	0.667212905061872	0.9575078180250602	0.625	1.1415173173130224	0.15									
+both trials	paper shortlist	47	TCGA ovarian, carboplatin	328	248.0	0.9578394791564909	0.48591231973701754	204.0	0.8280259837546147	0.0055937620967507155	0.9444014328790377	0.7	0.861225397918346	0.15									
+both trials	paper shortlist	47	GSE9891 ovarian, platinum	243				110.0	0.9385074230996687	0.48669203240052716			0.9389650543005209	0.515	229.0	0.4528800132034989	179.0	1.0139355576725781	0.8487622602697247	0.4691615778181218	0.695	1.01722943554651	0.45
+both trials	paper shortlist	47	GSE63885 ovarian, platinum	75				66.0	0.9897563628340459	0.9320131459251216			1.15140294767427	0.0	75.0	0.4707692307692308				0.42836153846153846	0.195		
+both trials	paper shortlist	47	GSE51373 ovarian, platinum	28											28.0	0.5833333333333333				0.6822916666666667	0.975		
+both trials	paper shortlist	47	GSE15622 ovarian, platinum	15																			
+both trials	paper shortlist	47	TCGA-UCEC, carboplatin	146	56.0	0.8689146358508253	0.29781782969320514	38.0	0.8643093318474799	0.37195239353584897	1.0027419027698448	0.05	0.9165533588583864	0.27									
+both trials	paper shortlist	47	TCGA-LUAD, carboplatin	60	27.0	1.075114565450116	0.720725915379238	23.0	1.3483690199545066	0.19924727055960878	0.9295319780101252	0.97	1.194599959610573	0.915	33.0	0.496031746031746				0.46954365079365085	0.28		
+both trials	paper shortlist	47	TCGA-LUSC, carboplatin	42																			
+both trials	paper shortlist	47	TCGA-HNSC, carboplatin	47	20.0	1.1338115020104542	0.6142311037135257	17.0	1.5364069077230924	0.16658108754598766	0.8877213738975549	0.96	0.833635424887481	1.0									
+both trials	paper shortlist	47	TCGA-UCS, carboplatin	28	17.0	0.37449206623241194	0.007399264656558292	15.0	0.3166992708117266	0.003800215096001968	0.5814799739832582	0.015	0.4478310484545461	0.135									
+both trials	paper shortlist	47	TCGA ovarian, NO carboplatin (comparison)	91	55.0	1.124994733842729	0.42747358633233135	57.0	1.1516045180428454	0.29582381413490144	0.9464502009348946	0.99	1.1400852918346072	0.585									
+both trials	all pathways	673	TCGA ovarian, carboplatin	328	248.0	0.9185458298146915	0.1700898389030755	204.0	0.8346894470760952	0.010719596843637151													
+both trials	all pathways	673	GSE9891 ovarian, platinum	243				110.0	0.8862831143470606	0.18150037361488347					229.0	0.5022280904439677	179.0	0.9731866297758908	0.7024026908769638				
+both trials	all pathways	673	GSE63885 ovarian, platinum	75				66.0	1.1208966744561797	0.38786317431537476					75.0	0.5292307692307693							
+both trials	all pathways	673	GSE51373 ovarian, platinum	28											28.0	0.6145833333333333							
+both trials	all pathways	673	GSE15622 ovarian, platinum	15																			
+both trials	all pathways	673	TCGA-UCEC, carboplatin	146	56.0	0.9758547454140138	0.8621692218698331	38.0	1.0300872158751881	0.8590811593574186													
+both trials	all pathways	673	TCGA-LUAD, carboplatin	60	27.0	0.880533295888386	0.5017136235739112	23.0	1.1664345076701406	0.492741475080097					33.0	0.5357142857142857							
+both trials	all pathways	673	TCGA-LUSC, carboplatin	42																			
+both trials	all pathways	673	TCGA-HNSC, carboplatin	47	20.0	0.6296792854276136	0.0521469679475709	17.0	0.5665341832319958	0.042601430179223396													
+both trials	all pathways	673	TCGA-UCS, carboplatin	28	17.0	0.44650846376595127	0.028763358268859396	15.0	0.3729525507814505	0.008251835178298727													
+both trials	all pathways	673	TCGA ovarian, NO carboplatin (comparison)	91	55.0	1.0948106850332202	0.5371507717256128	57.0	1.19324401631106	0.19391524182931874													
+BrighTNess only	network shortlist (STRING v12)	70	TCGA ovarian, carboplatin	328	248.0	0.9790621814666137	0.7230562427792856	204.0	0.9364586211991811	0.31988231269860967													
+BrighTNess only	network shortlist (STRING v12)	70	GSE9891 ovarian, platinum	243				110.0	0.9962369147397767	0.9672721936500936					229.0	0.46616603399900974	179.0	1.0321727917257335	0.6607610841421223				
+BrighTNess only	network shortlist (STRING v12)	70	GSE63885 ovarian, platinum	75				66.0	1.050664065461525	0.6869906208289092					75.0	0.42153846153846153							
+BrighTNess only	network shortlist (STRING v12)	70	GSE51373 ovarian, platinum	28											28.0	0.6354166666666667							
+BrighTNess only	network shortlist (STRING v12)	70	GSE15622 ovarian, platinum	15																			
+BrighTNess only	network shortlist (STRING v12)	70	TCGA-UCEC, carboplatin	146	56.0	1.0629659094755997	0.6588788299741842	38.0	0.9199043372966403	0.6330699637576499													
+BrighTNess only	network shortlist (STRING v12)	70	TCGA-LUAD, carboplatin	60	27.0	1.0799153952279175	0.6965548010724532	23.0	1.3921204210285274	0.13506550950998064					33.0	0.40476190476190477							
+BrighTNess only	network shortlist (STRING v12)	70	TCGA-LUSC, carboplatin	42																			
+BrighTNess only	network shortlist (STRING v12)	70	TCGA-HNSC, carboplatin	47	20.0	0.96727086166557	0.8817723431701854	17.0	0.9406081528943082	0.8130947505986037													
+BrighTNess only	network shortlist (STRING v12)	70	TCGA-UCS, carboplatin	28	17.0	0.42480022563702113	0.020387718714442	15.0	0.30933194554955024	0.007936695913286291													
+BrighTNess only	network shortlist (STRING v12)	70	TCGA ovarian, NO carboplatin (comparison)	91	55.0	0.9814278070574592	0.8947398913927955	57.0	1.0817477248124474	0.5530813834105441													
+BrighTNess only	paper shortlist	47	TCGA ovarian, carboplatin	328	248.0	0.9926108594725996	0.9044856575625619	204.0	0.8636875092901772	0.027553455781961868													
+BrighTNess only	paper shortlist	47	GSE9891 ovarian, platinum	243				110.0	1.0094905645607215	0.9209417522544137					229.0	0.43439511470539693	179.0	1.0670420364043383	0.38102486911313327				
+BrighTNess only	paper shortlist	47	GSE63885 ovarian, platinum	75				66.0	0.9917848521343221	0.9459290065345592					75.0	0.4323076923076923							
+BrighTNess only	paper shortlist	47	GSE51373 ovarian, platinum	28											28.0	0.5885416666666666							
+BrighTNess only	paper shortlist	47	GSE15622 ovarian, platinum	15																			
+BrighTNess only	paper shortlist	47	TCGA-UCEC, carboplatin	146	56.0	0.8330462289424571	0.1858127776958295	38.0	0.7975108019584112	0.17524875615020152													
+BrighTNess only	paper shortlist	47	TCGA-LUAD, carboplatin	60	27.0	1.0933761543911342	0.6453221162446919	23.0	1.2735760615931724	0.2720861384437543					33.0	0.47619047619047616							
+BrighTNess only	paper shortlist	47	TCGA-LUSC, carboplatin	42																			
+BrighTNess only	paper shortlist	47	TCGA-HNSC, carboplatin	47	20.0	1.0421497994359166	0.8727810941704423	17.0	1.511252508137258	0.18935511008078232													
+BrighTNess only	paper shortlist	47	TCGA-UCS, carboplatin	28	17.0	0.4604972609580668	0.018565631773350237	15.0	0.4133686345902859	0.009995222837861334													
+BrighTNess only	paper shortlist	47	TCGA ovarian, NO carboplatin (comparison)	91	55.0	1.1733913494084063	0.2686710290088107	57.0	1.1710083846744848	0.2321631567885838													
+BrighTNess only	all pathways	673	TCGA ovarian, carboplatin	328	248.0	0.9501383819397934	0.411619290513768	204.0	0.8681172084749338	0.04450591475599693													
+BrighTNess only	all pathways	673	GSE9891 ovarian, platinum	243				110.0	0.9293261877617053	0.4243699503692352					229.0	0.47466578643340485	179.0	1.002157386322218	0.9763381652797464				
+BrighTNess only	all pathways	673	GSE63885 ovarian, platinum	75				66.0	1.1522121959025509	0.2750178278686709					75.0	0.4953846153846154							
+BrighTNess only	all pathways	673	GSE51373 ovarian, platinum	28											28.0	0.5625							
+BrighTNess only	all pathways	673	GSE15622 ovarian, platinum	15																			
+BrighTNess only	all pathways	673	TCGA-UCEC, carboplatin	146	56.0	0.9879154134892549	0.9308457538502183	38.0	0.9862253604720119	0.9331329426659394													
+BrighTNess only	all pathways	673	TCGA-LUAD, carboplatin	60	27.0	0.9171766338865207	0.6533704086900393	23.0	1.1893562961903756	0.43552245514280086					33.0	0.5476190476190477							
+BrighTNess only	all pathways	673	TCGA-LUSC, carboplatin	42																			
+BrighTNess only	all pathways	673	TCGA-HNSC, carboplatin	47	20.0	0.6622648694675056	0.09116627761113953	17.0	0.6140661557825263	0.08898118052279666													
+BrighTNess only	all pathways	673	TCGA-UCS, carboplatin	28	17.0	0.5311517742839013	0.046824006596965013	15.0	0.3956687075208189	0.015229318878933171													
+BrighTNess only	all pathways	673	TCGA ovarian, NO carboplatin (comparison)	91	55.0	1.0348156439590142	0.81161650462431	57.0	1.2001396707845495	0.17734836846943547													
+I-SPY2 only	network shortlist (STRING v12)	70	TCGA ovarian, carboplatin	328	248.0	0.9943361556563364	0.9269187608494154	204.0	0.9658376806352599	0.6133833759777789													
+I-SPY2 only	network shortlist (STRING v12)	70	GSE9891 ovarian, platinum	243				110.0	0.9551383676378218	0.6210644767014183					229.0	0.45230236012543323	179.0	1.0378849750459598	0.6069190955235352				
+I-SPY2 only	network shortlist (STRING v12)	70	GSE63885 ovarian, platinum	75				66.0	0.9898620660788956	0.9318625897636127					75.0	0.556923076923077							
+I-SPY2 only	network shortlist (STRING v12)	70	GSE51373 ovarian, platinum	28											28.0	0.515625							
+I-SPY2 only	network shortlist (STRING v12)	70	GSE15622 ovarian, platinum	15																			
+I-SPY2 only	network shortlist (STRING v12)	70	TCGA-UCEC, carboplatin	146	56.0	1.022680388637669	0.8678611482416217	38.0	0.9333663967428341	0.682084508461846													
+I-SPY2 only	network shortlist (STRING v12)	70	TCGA-LUAD, carboplatin	60	27.0	1.16880684078899	0.4431864516602271	23.0	1.2844419092091275	0.2737870687380125					33.0	0.43650793650793646							
+I-SPY2 only	network shortlist (STRING v12)	70	TCGA-LUSC, carboplatin	42																			
+I-SPY2 only	network shortlist (STRING v12)	70	TCGA-HNSC, carboplatin	47	20.0	1.5118276645477395	0.12089923597488067	17.0	1.2764157993866028	0.3818024786368398													
+I-SPY2 only	network shortlist (STRING v12)	70	TCGA-UCS, carboplatin	28	17.0	0.6567659480459697	0.15711518305102834	15.0	0.7990580392602038	0.4766582227724915													
+I-SPY2 only	network shortlist (STRING v12)	70	TCGA ovarian, NO carboplatin (comparison)	91	55.0	0.9581094361347037	0.7545499543457759	57.0	1.2016087121107641	0.18704066809654762													
+I-SPY2 only	paper shortlist	47	TCGA ovarian, carboplatin	328	248.0	0.9239431368632565	0.19749993600871818	204.0	0.8711660665962448	0.047969364476979644													
+I-SPY2 only	paper shortlist	47	GSE9891 ovarian, platinum	243				110.0	0.8626239076635298	0.10296488346891912					229.0	0.503383396600099	179.0	0.9207323902831692	0.2444888680304862				
+I-SPY2 only	paper shortlist	47	GSE63885 ovarian, platinum	75				66.0	1.0221302977280997	0.8555354179915415					75.0	0.5676923076923077							
+I-SPY2 only	paper shortlist	47	GSE51373 ovarian, platinum	28											28.0	0.47395833333333337							
+I-SPY2 only	paper shortlist	47	GSE15622 ovarian, platinum	15																			
+I-SPY2 only	paper shortlist	47	TCGA-UCEC, carboplatin	146	56.0	0.9912763365798979	0.9483252359900788	38.0	0.9998787398411557	0.9994035204259272													
+I-SPY2 only	paper shortlist	47	TCGA-LUAD, carboplatin	60	27.0	0.96085570872797	0.8321911599008474	23.0	1.1356640605736879	0.5729965273764697					33.0	0.5714285714285714							
+I-SPY2 only	paper shortlist	47	TCGA-LUSC, carboplatin	42																			
+I-SPY2 only	paper shortlist	47	TCGA-HNSC, carboplatin	47	20.0	1.2463891643556468	0.3564777232040922	17.0	1.2288168244909299	0.426374950545783													
+I-SPY2 only	paper shortlist	47	TCGA-UCS, carboplatin	28	17.0	0.7535206810009056	0.35373808366366166	15.0	0.7291993696258308	0.3441598406126616													
+I-SPY2 only	paper shortlist	47	TCGA ovarian, NO carboplatin (comparison)	91	55.0	0.969867700702396	0.8163810067473161	57.0	1.1303235582370963	0.35378823428409645													
+I-SPY2 only	all pathways	673	TCGA ovarian, carboplatin	328	248.0	0.9190172570280094	0.1801877831212424	204.0	0.8755288148911455	0.06837087730192434													
+I-SPY2 only	all pathways	673	GSE9891 ovarian, platinum	243				110.0	0.8864706141574289	0.17471845693283428					229.0	0.4951312097705893	179.0	0.961772640403727	0.580167845512682				
+I-SPY2 only	all pathways	673	GSE63885 ovarian, platinum	75				66.0	1.2233267301074078	0.11995060655411884					75.0	0.5138461538461538							
+I-SPY2 only	all pathways	673	GSE51373 ovarian, platinum	28											28.0	0.578125							
+I-SPY2 only	all pathways	673	GSE15622 ovarian, platinum	15																			
+I-SPY2 only	all pathways	673	TCGA-UCEC, carboplatin	146	56.0	0.9240812393449841	0.5731304440273066	38.0	0.9266076562358285	0.6612583175875841													
+I-SPY2 only	all pathways	673	TCGA-LUAD, carboplatin	60	27.0	0.9138906656076893	0.6386568294720781	23.0	1.0306475293297375	0.8888174606627951					33.0	0.5198412698412698							
+I-SPY2 only	all pathways	673	TCGA-LUSC, carboplatin	42																			
+I-SPY2 only	all pathways	673	TCGA-HNSC, carboplatin	47	20.0	0.8276531558089778	0.45357173447741905	17.0	0.74910989825897	0.31261507550645384													
+I-SPY2 only	all pathways	673	TCGA-UCS, carboplatin	28	17.0	0.674613242635463	0.1810938024929455	15.0	0.6447620491459993	0.13290643076343958													
+I-SPY2 only	all pathways	673	TCGA ovarian, NO carboplatin (comparison)	91	55.0	0.9570822284707944	0.7497253381943692	57.0	1.3422369808255754	0.04023973194134282													
+paclitaxel-only arms (control model)	network shortlist (STRING v12)	70	TCGA ovarian, carboplatin	328	248.0	0.9102660428815404	0.13613821710959786	204.0	0.8778189031975531	0.05296852099703481													
+paclitaxel-only arms (control model)	network shortlist (STRING v12)	70	GSE9891 ovarian, platinum	243				110.0	0.8832512058108081	0.1696422662238244					229.0	0.4903449414094735	179.0	0.9885434410233563	0.8754986548384689				
+paclitaxel-only arms (control model)	network shortlist (STRING v12)	70	GSE63885 ovarian, platinum	75				66.0	1.1149435352169226	0.3735354263641323					75.0	0.3646153846153847							
+paclitaxel-only arms (control model)	network shortlist (STRING v12)	70	GSE51373 ovarian, platinum	28											28.0	0.4895833333333333							
+paclitaxel-only arms (control model)	network shortlist (STRING v12)	70	GSE15622 ovarian, platinum	15																			
+paclitaxel-only arms (control model)	network shortlist (STRING v12)	70	TCGA-UCEC, carboplatin	146	56.0	1.0642438961312546	0.6502475974183429	38.0	0.8859406505698408	0.4610926674295486													
+paclitaxel-only arms (control model)	network shortlist (STRING v12)	70	TCGA-LUAD, carboplatin	60	27.0	0.9514566179521852	0.783779100899118	23.0	1.0613509583677811	0.7662171336306944					33.0	0.5555555555555555							
+paclitaxel-only arms (control model)	network shortlist (STRING v12)	70	TCGA-LUSC, carboplatin	42																			
+paclitaxel-only arms (control model)	network shortlist (STRING v12)	70	TCGA-HNSC, carboplatin	47	20.0	1.128694887052488	0.6277064951744395	17.0	1.366931568323027	0.2851867287917429													
+paclitaxel-only arms (control model)	network shortlist (STRING v12)	70	TCGA-UCS, carboplatin	28	17.0	0.663623052144047	0.1417261157701331	15.0	0.7006153571377695	0.2477166280223615													
+paclitaxel-only arms (control model)	network shortlist (STRING v12)	70	TCGA ovarian, NO carboplatin (comparison)	91	55.0	1.0874319375461479	0.5800910626943836	57.0	1.0873490105279113	0.5218613660829942													
+paclitaxel-only arms (control model)	paper shortlist	47	TCGA ovarian, carboplatin	328	248.0	0.9373271399477202	0.28836850872390607	204.0	0.8386400576713984	0.006591656675242117													
+paclitaxel-only arms (control model)	paper shortlist	47	GSE9891 ovarian, platinum	243				110.0	0.9094959331441171	0.32649563033444484					229.0	0.46435055289651755	179.0	1.0326248230006412	0.6744119204695384				
+paclitaxel-only arms (control model)	paper shortlist	47	GSE63885 ovarian, platinum	75				66.0	1.1508191985885667	0.3088962025989951					75.0	0.3338461538461538							
+paclitaxel-only arms (control model)	paper shortlist	47	GSE51373 ovarian, platinum	28											28.0	0.35937500000000006							
+paclitaxel-only arms (control model)	paper shortlist	47	GSE15622 ovarian, platinum	15																			
+paclitaxel-only arms (control model)	paper shortlist	47	TCGA-UCEC, carboplatin	146	56.0	0.9450711365216529	0.6862030400573144	38.0	0.8049731632419366	0.18983391135685856													
+paclitaxel-only arms (control model)	paper shortlist	47	TCGA-LUAD, carboplatin	60	27.0	1.3406050626109918	0.15467312405829478	23.0	1.147858589283253	0.564706912970403					33.0	0.5079365079365079							
+paclitaxel-only arms (control model)	paper shortlist	47	TCGA-LUSC, carboplatin	42																			
+paclitaxel-only arms (control model)	paper shortlist	47	TCGA-HNSC, carboplatin	47	20.0	1.3674733045869092	0.21815008311314676	17.0	1.6813786976928529	0.10221799886190205													
+paclitaxel-only arms (control model)	paper shortlist	47	TCGA-UCS, carboplatin	28	17.0	0.7273191993694285	0.2291302745763779	15.0	0.7827309770466857	0.3901201461057454													
+paclitaxel-only arms (control model)	paper shortlist	47	TCGA ovarian, NO carboplatin (comparison)	91	55.0	1.1584418139255663	0.2922425564120096	57.0	1.062553312401277	0.6459190382425573													
+paclitaxel-only arms (control model)	all pathways	673	TCGA ovarian, carboplatin	328	248.0	0.9132143975308373	0.13683605034836197	204.0	0.8348761284120005	0.006904356566820954													
+paclitaxel-only arms (control model)	all pathways	673	GSE9891 ovarian, platinum	243				110.0	0.9326166085163738	0.4248283595189264					229.0	0.502475656048853	179.0	0.9728987667442208	0.7057814955946835				
+paclitaxel-only arms (control model)	all pathways	673	GSE63885 ovarian, platinum	75				66.0	1.1917106548011034	0.1935209656629303					75.0	0.39999999999999997							
+paclitaxel-only arms (control model)	all pathways	673	GSE51373 ovarian, platinum	28											28.0	0.6145833333333334							
+paclitaxel-only arms (control model)	all pathways	673	GSE15622 ovarian, platinum	15																			
+paclitaxel-only arms (control model)	all pathways	673	TCGA-UCEC, carboplatin	146	56.0	0.849545221023541	0.25471747683280577	38.0	0.7754333983678099	0.13619311149164848													
+paclitaxel-only arms (control model)	all pathways	673	TCGA-LUAD, carboplatin	60	27.0	0.8441361761053702	0.41541378367827153	23.0	0.8868440474562259	0.5791080274341365					33.0	0.5595238095238095							
+paclitaxel-only arms (control model)	all pathways	673	TCGA-LUSC, carboplatin	42																			
+paclitaxel-only arms (control model)	all pathways	673	TCGA-HNSC, carboplatin	47	20.0	1.266261780692496	0.31831659522468714	17.0	0.8106271617221567	0.4336647041766486													
+paclitaxel-only arms (control model)	all pathways	673	TCGA-UCS, carboplatin	28	17.0	0.8527931323998083	0.5553297225377704	15.0	0.573174267534148	0.08126161721813399													
+paclitaxel-only arms (control model)	all pathways	673	TCGA ovarian, NO carboplatin (comparison)	91	55.0	1.0254296598149606	0.8615932226385549	57.0	1.1069969640815571	0.4520246647355862													
