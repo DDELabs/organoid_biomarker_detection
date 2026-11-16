@@ -1,0 +1,5 @@
+comparison	n_drug	n_control	shortlist	gain_high_half	gain_low_half	interaction_coef	p_interaction
+carboplatin benefit: learned in BrighTNess, tested in I-SPY2 triple-negative (network shortlist)	39	85	70	0.48272017837235226	0.16032608695652173	1.2594978921100113	0.02923500361239664
+carboplatin benefit: learned in I-SPY2, tested in BrighTNess (network shortlist)	359	123	70	0.2890710382513661	0.15164894575599208	0.2696320569604482	0.26141646729231627
+carboplatin benefit: learned in BrighTNess, tested in I-SPY2 triple-negative (all pathways)	39	85	673	0.5275397796817625	0.20952380952380956	0.8823241723653359	0.07942273056587187
+carboplatin benefit: learned in I-SPY2, tested in BrighTNess (all pathways)	359	123	673	0.277959927140255	0.16282213011353397	0.19747260388559204	0.40979990365987873
