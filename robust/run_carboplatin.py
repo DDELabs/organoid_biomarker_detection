@@ -106,7 +106,7 @@ def main():
     A = part_a(P, Z, G, short)
     pd.set_option("display.width", 250, "display.max_colwidth", 70)
     print(A.sort_values("p_combined").head(15).round(4).to_string())
-    print("paper biomarker:", A.loc[PAPER_BIOMARKER].round(4).to_dict())
+    print("paper biomarker:", {k: (round(float(v), 4) if not isinstance(v, (bool, np.bool_)) else bool(v)) for k, v in A.loc[PAPER_BIOMARKER].items()})
     for name in short:
         s = A[f"shortlist_{name}"]
         print(name, "n", int(s.sum()), "p<0.05 combined in shortlist:", int((A.loc[s, "p_combined"] < 0.05).sum()), f"({(A.loc[s, 'p_combined'] < 0.05).mean():.1%})",
