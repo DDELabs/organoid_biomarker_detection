@@ -52,7 +52,7 @@ def array_expr(gse, gpl, name=None):
 
 
 def by_symbol(e):
-    e = e[~e.index.isna()]
+    e = e[~e.index.isna()].select_dtypes("number")
     e.index = e.index.astype(str)
     e = e.groupby(level=0).mean()
     e.index.name = "gene"
@@ -136,7 +136,7 @@ def GSE163882():
     meta = read_meta(m("GSE163882"))
     e = pd.read_csv(RAW / "GSE163882" / "GSE163882_all.data.tpms_222Samples.csv.gz", index_col=0)
     e.index = e.index.map(ensembl_to_symbol())
-    e = np.log2(by_symbol(e) + 1)
+    e = np.log2(by_symbol(e.apply(pd.to_numeric, errors="coerce")) + 1)
     ids = meta["title"].str.split(":").str[0]
     keep = ids[ids.isin(e.columns)]
     e = e[keep.values]
