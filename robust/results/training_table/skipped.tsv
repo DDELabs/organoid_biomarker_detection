@@ -1,0 +1,9 @@
+accession	reason
+GSE279390	VESPER bladder trial: gene data only; arm, response and survival are not in the public record
+GSE156915	FOCUS colorectal trial: gene data only; arm and survival are not in the public record
+GSE319641	NeoTRIP breast trial: gene data only; arm and response are not in the public record
+GSE234519	NSABP B-41 breast trial: gene data only; arm and response are not in the public record
+GSE116335	CALGB 40601 breast trial: gene data only; arm and response are not in the public record
+GSE87304	bladder chemo cohort: subtype only; response and survival are not in the public record
+GSE235067	bladder chemo cohort: 66-gene panel and no response in the public record
+GSE186102	eribulin breast cohort: targeted gene panel, only 10 complete responses

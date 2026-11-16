@@ -1,0 +1,74 @@
+source	cohort	cancer_group	samples	treated	untreated_comparison	with_response	responders	with_survival	possible_duplicates	events	randomised
+TCGA	TCGA-ACC	ACC	79	1	78	1	0	79	0	43	False
+TCGA	TCGA-BLCA	bladder	405	83	322	71	45	405	0	228	False
+TCGA	TCGA-BRCA	breast	1080	752	328	202	184	1080	0	204	False
+TCGA	TCGA-CESC	cervix	291	129	162	74	60	291	0	87	False
+TCGA	TCGA-CHOL	CHOL	35	7	28	6	4	35	0	22	False
+TCGA	TCGA-COAD	colorectal	438	138	300	74	53	438	0	145	False
+TCGA	TCGA-DLBC	DLBC	47	43	4	0	0	47	0	16	False
+TCGA	TCGA-ESCA	oesophagus	184	30	154	28	22	184	0	113	False
+TCGA	TCGA-GBM	brain	155	102	53	1	0	155	0	133	False
+TCGA	TCGA-HNSC	head and neck	519	143	376	77	69	519	0	271	False
+TCGA	TCGA-KICH	kidney	65	1	64	1	0	65	0	12	False
+TCGA	TCGA-KIRC	kidney	529	37	492	7	0	529	0	222	False
+TCGA	TCGA-KIRP	kidney	285	12	273	5	2	285	0	71	False
+TCGA	TCGA-LGG	brain	511	234	277	113	22	511	0	201	False
+TCGA	TCGA-LIHC	liver	366	5	361	2	1	366	0	225	False
+TCGA	TCGA-LUAD	lung	503	134	369	79	57	503	0	258	False
+TCGA	TCGA-LUSC	lung	495	109	386	55	45	495	0	252	False
+TCGA	TCGA-MESO	MESO	83	38	45	28	10	83	0	77	False
+TCGA	TCGA-OV	ovarian	419	373	46	6	5	419	0	329	False
+TCGA	TCGA-PAAD	pancreas	177	101	76	65	32	177	0	121	False
+TCGA	TCGA-PCPG	PCPG	178	1	177	1	0	178	0	22	False
+TCGA	TCGA-PRAD	prostate	497	53	444	29	24	497	0	97	False
+TCGA	TCGA-READ	colorectal	158	58	100	29	24	158	0	45	False
+TCGA	TCGA-SARC	sarcoma	259	29	230	24	20	259	0	153	False
+TCGA	TCGA-SKCM	melanoma	449	58	391	37	23	449	0	317	False
+TCGA	TCGA-STAD	stomach	390	161	229	117	81	390	0	193	False
+TCGA	TCGA-TGCT	testis	134	43	91	43	41	134	0	36	False
+TCGA	TCGA-THCA	THCA	504	1	503	1	1	504	0	61	False
+TCGA	TCGA-THYM	THYM	119	5	114	2	1	119	0	24	False
+TCGA	TCGA-UCEC	uterus	543	171	372	55	48	543	0	150	False
+TCGA	TCGA-UCS	uterus	56	33	23	31	23	56	0	41	False
+TCGA	TCGA-UVM	UVM	79	4	75	0	0	79	0	33	False
+GEO (already in use)	GSE72970	colorectal	124	124	0	124	63	124	0	114	False
+GEO (already in use)	GSE20271	breast	178	178	0	178	26	0	0	0	True
+GEO (already in use)	GSE41998	breast	279	279	0	253	69	0	0	0	False
+GEO (already in use)	GSE32646	breast	115	115	0	115	27	0	0	0	False
+GEO (already in use)	GSE20194	breast	278	270	0	278	56	0	0	0	False
+GEO (already in use)	GSE22093	breast	103	103	0	97	28	0	0	0	False
+GEO (already in use)	GSE23988	breast	61	61	0	61	20	0	0	0	False
+GEO (already in use)	GSE45670	oesophagus	28	28	0	28	11	0	0	0	False
+GEO (already in use)	GSE15622	ovarian	35	35	0	35	22	0	0	0	False
+GEO (already in use)	GSE9891	ovarian	267	243	0	229	146	264	0	190	False
+GEO (already in use)	GSE51373	ovarian	28	28	0	28	16	0	0	0	False
+GEO (already in use)	GSE63885	ovarian	101	75	0	75	65	75	0	66	False
+GEO (already in use)	GSE52219	bladder	23	23	0	23	6	0	0	0	False
+GEO (already in use)	GSE169455	bladder	149	149	0	149	48	0	0	0	False
+GEO (already in use)	GSE42127	lung	176	49	127	0	0	176	0	64	False
+GEO (already in use)	GSE103479	colorectal	156	66	87	0	0	156	0	70	False
+GEO (already in use)	GSE19860	colorectal	40	40	0	40	15	0	0	0	False
+GEO (already in use)	GSE62080	colorectal	21	21	0	21	9	0	0	0	False
+GEO (already in use)	GSE104580	liver	147	147	0	147	81	0	0	0	
+GEO (already in use)	GSE67501	kidney	11	11	0	11	4	0	0	0	
+GEO (already in use)	GSE7696	brain	70	43	27	0	0	70	0	59	False
+GEO (already in use)	GSE78220	melanoma	28	28	0	28	15	28	0	12	
+GEO (already in use)	GSE91061	melanoma	51	51	0	49	10	51	0	45	
+GEO (already in use)	EMTAB3267	kidney	53	53	0	43	19	53	0	39	
+GEO (already in use)	CGGA693	brain	693	486	161	0	0	663	0	397	False
+GEO (already in use)	BRAUN2020_CHECKMATE	kidney	311	311	0	281	44	311	0	296	False
+GEO (new)	ISPY2	breast	986	986	0	986	319	0	0	0	True
+GEO (new)	BRIGHTNESS	breast	482	482	0	482	236	0	0	0	True
+GEO (new)	GSE25066	breast	508	508	0	488	99	508	50	111	False
+GEO (new)	GSE163882	breast	222	222	0	222	80	0	0	0	False
+GEO (new)	GSE123845	breast	112	112	0	112	42	0	0	0	False
+GEO (new)	GSE240671	breast	95	95	0	95	37	0	0	0	False
+GEO (new)	SCANB	breast	3273	2907	346	0	0	3273	0	336	False
+GEO (new)	GSE39582	colorectal	566	233	316	0	0	562	0	248	False
+GEO (new)	GSE14333	colorectal	290	117	172	0	0	226	0	50	False
+GEO (new)	GSE104645	colorectal	193	193	0	181	112	0	0	0	False
+GEO (new)	GSE87211	colorectal	203	203	0	201	35	197	0	49	False
+GEO (new)	GSE28702	colorectal	83	83	0	83	42	0	0	0	False
+GEO (new)	GSE70691	bladder	49	49	0	0	0	49	11	40	True
+GEO (new)	GSE48276	bladder	53	16	37	0	0	53	0	28	False
+GEO (new)	GSE31684	bladder	93	35	58	0	0	93	0	66	False

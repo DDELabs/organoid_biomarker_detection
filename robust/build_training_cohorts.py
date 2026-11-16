@@ -46,9 +46,24 @@ def array_expr(gse, gpl, name=None):
     raw = read_expr(m(gse, name))
     raw.index = raw.index.astype(str)
     raw = raw.apply(pd.to_numeric, errors="coerce")
-    mapping, _ = B.probe_to_symbol(gpl)
+    mapping = probe_map(gpl)
     raw, _ = B.to_log2(raw)
     return B.collapse(raw, mapping)
+
+
+def probe_map(gpl):
+    try:
+        return B.probe_to_symbol(gpl)[0]
+    except ValueError:
+        import gzip, io
+        p = B.gpl_file(gpl)
+        txt = (gzip.open(p, "rt", errors="replace") if str(p).endswith(".gz") else open(p, errors="replace")).read().split("\n")
+        a = next(i for i, l in enumerate(txt) if l.startswith("!platform_table_begin")) + 1
+        z = next((i for i, l in enumerate(txt) if l.startswith("!platform_table_end")), len(txt))
+        t = pd.read_csv(io.StringIO("\n".join(txt[a:z])), sep="\t", dtype=str, quoting=3)
+        col = next(c for c in ("GENE_SYMBOL", "ILMN_Gene", "Symbol", "SYMBOL") if c in t.columns)
+        s = pd.Series(t[col].values, index=t["ID"].astype(str)).dropna().str.strip()
+        return s[(s != "") & ~s.str.contains("///|//|,| ", regex=True)]
 
 
 def by_symbol(e):
@@ -354,6 +369,7 @@ if __name__ == "__main__":
         d = OUT / cid
         expr, clin, note = fn()
         expr = expr.loc[:, clin.index].dropna(how="all")
+        clin["drugs"] = clin["drugs"].replace("", "NONE")   # NONE = known to have had no drug; empty = unknown
         d.mkdir(parents=True, exist_ok=True)
         expr.round(4).to_csv(d / "expression.tsv.gz", sep="\t")
         clin.to_csv(d / "clinical.tsv", sep="\t")

@@ -40,6 +40,10 @@ TCGA_GROUP = {"BRCA": "breast", "COAD": "colorectal", "READ": "colorectal", "BLC
               "SARC": "sarcoma", "UCEC": "uterus", "UCS": "uterus", "CESC": "cervix", "PRAD": "prostate", "TGCT": "testis"}
 
 
+# cohorts from the same hospital: a new sample whose pathway profile correlates > 0.95 with an earlier one is flagged
+DUP_CHECK = [(["GSE25066"], ["GSE20194", "GSE20271", "GSE22093", "GSE23988"]), (["GSE48276", "GSE70691"], ["GSE52219"])]
+
+
 def group(c):
     c = str(c).lower()
     return next((g for k, g in GROUP if k in c), c)
@@ -61,11 +65,12 @@ def tidy(clin, cohort, source):
     c["cancer_group"] = c["cancer"].map(group)
     if "drugs" not in c:
         c["drugs"] = np.nan
-    c["drugs"] = c["drugs"].where(c["drugs"].notna(), np.nan)
-    c["treated"] = np.where(c["drugs"].isna(), np.nan, (c["drugs"].astype(str).str.len() > 0).astype(float))
     for x in COLS:
         if x not in c:
             c[x] = np.nan
+    none = c["drugs"].isin(["", "NONE"]) | (c["drugs"].isna() & c["control_arm"].eq(True))
+    c["drugs"] = c["drugs"].mask(none, "NONE")   # NONE = known to have had no drug; empty = not recorded
+    c["treated"] = np.where(c["drugs"].isna(), np.nan, (~none).astype(float))
     c.index = [f"{cohort}:{i}" for i in c.index]
     return c[COLS]
 
@@ -124,6 +129,13 @@ def main():
         print(cid, s.shape, "pathways missing:", int(s.isna().all().sum()), flush=True)
     P, S = pd.concat(clin_all), pd.concat(sc_all)
     P.index.name = S.index.name = "sample_id"
+    P["possible_duplicate_of"] = pd.Series(index=P.index, dtype=object)
+    for new, old in DUP_CHECK:
+        a, b = S[P["cohort"].isin(new).values].dropna(axis=1), S[P["cohort"].isin(old).values]
+        b = b[a.columns].dropna(axis=1); a = a[b.columns]
+        r = np.corrcoef(((a - a.mean()) / a.std()).values, ((b - b.mean()) / b.std()).values)[:len(a), len(a):]
+        for i in np.where(r.max(axis=1) > 0.95)[0]:
+            P.loc[a.index[i], "possible_duplicate_of"] = b.index[r[i].argmax()]
     ev = P[["os_event", "pfs_event", "rfs_event", "dfs_event"]]
     P["has_survival"], P["has_response"] = ev.notna().any(axis=1), P["responder"].notna()
     P["has_outcome"] = P["has_survival"] | P["has_response"]
@@ -135,11 +147,11 @@ def main():
     C = pd.DataFrame({"cancer_group": g["cancer_group"].agg(lambda s: s.mode().iat[0]), "samples": g.size(),
                       "treated": g["treated"].sum().astype(int), "untreated_comparison": g["treated"].apply(lambda s: int((s == 0).sum())),
                       "with_response": g["has_response"].sum(), "responders": g["responder"].sum().astype(int),
-                      "with_survival": g["has_survival"].sum(),
+                      "with_survival": g["has_survival"].sum(), "possible_duplicates": g["possible_duplicate_of"].count(),
                       "events": ev.groupby([P["source"], P["cohort"]], sort=False).max().max(axis=1).pipe(lambda _: ev.fillna(0).max(axis=1).groupby([P["source"], P["cohort"]], sort=False).sum().astype(int)),
                       "randomised": g["randomised"].first()})
     C.to_csv(OUT / "cohorts.tsv", sep="\t")
-    L = P[P["treated"].eq(1) & P["has_outcome"]].assign(drug=lambda d: d["drugs"].str.split(";")).explode("drug")
+    L = P[P["treated"].eq(1) & P["has_outcome"] & P["possible_duplicate_of"].isna()].assign(drug=lambda d: d["drugs"].str.split(";")).explode("drug")
     D = L.groupby(["cancer_group", "drug"]).agg(patients=("cohort", "size"), cohorts=("cohort", "nunique"),
                                                 with_response=("has_response", "sum"), with_survival=("has_survival", "sum"),
                                                 tcga=("source", lambda s: int((s == "TCGA").sum())))
