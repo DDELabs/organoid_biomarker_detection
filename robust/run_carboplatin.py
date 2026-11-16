@@ -50,6 +50,8 @@ def one_pathway(P, x, drug, ctrl, cov):
 def part_a(P, Z, G, short):
     rows = []
     for p in Z.columns:
+        if min(Z.loc[list(G[k][0]) + list(G[k][1]), p].std() for k in ("bright", "ispy")) < 1e-9:
+            continue                                   # pathway not measured in one of the trials
         b1, s1 = one_pathway(P, Z[p], *G["bright"], [])
         b2, s2 = one_pathway(P, Z[p], *G["ispy"], ["er"])
         w1, w2 = 1 / s1 ** 2, 1 / s2 ** 2
