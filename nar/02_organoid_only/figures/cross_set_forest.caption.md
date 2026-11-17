@@ -1,6 +1,6 @@
 # Cross-set forest plot
 
-One row per lab-model set x patient cohort x drug (14 rows). Each row uses the paper's single-pathway biomarker
+One row per lab-model set x patient cohort x drug (23 rows). Each row uses the paper's single-pathway biomarker
 (rank-1 pathway of a Ridge model trained on the lab models) and splits TCGA patients at the median prediction.
 Filled blue circles: drug-treated patients; open grey squares: untreated patients of the same cancer with the same
 biomarker and rule. Lines: 95% confidence intervals of the hazard ratio (Cox model). A hazard ratio above 1 means
