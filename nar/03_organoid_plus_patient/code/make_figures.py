@@ -56,7 +56,8 @@ def conc_bars(ax, ev, title):
         ax.bar(x + (j - 1) * 0.27, v.values, 0.27, color=PS.MODEL_COL[m], label=m)
     ax.axhline(0.5, color="k", lw=0.8, ls="--")
     ax.set_xticks(x); ax.set_xticklabels(cats, rotation=60, ha="right", fontsize=7)
-    ax.set_ylabel("held-out C-index / AUROC"); ax.set_ylim(0.2, 0.85)
+    ax.set_ylabel("held-out C-index / AUROC"); ax.set_ylim(0.2, max(0.85, float(e["C"].max()) + 0.08))
+    ax.set_xlim(-0.6, len(cats) - 0.4)
     ax.set_title(title, fontsize=8); ax.legend(fontsize=7, ncol=3, loc="upper left", frameon=False)
 
 
@@ -66,7 +67,7 @@ def hr_forest(ax, ev, title):
     e = ev[ev["model"].isin(MODELS) & ev["outcome"].str.startswith("survival") & ev["HR"].notna()].copy()
     cats = list(dict.fromkeys(e.loc[e["cohort"] != "POOLED", "cohort"])) + (["POOLED"] if (e["cohort"] == "POOLED").any() else [])
     if not cats:
-        ax.text(0.5, 0.5, "no held-out survival cohort", ha="center", transform=ax.transAxes); ax.set_axis_off(); return
+        ax.text(0.5, 0.5, "no held-out survival cohort\n(no public survival times)", ha="center", transform=ax.transAxes); ax.set_axis_off(); return
     for j, m in enumerate(MODELS):
         for i, c in enumerate(cats):
             r = e[(e["model"] == m) & (e["cohort"] == c)]
@@ -160,7 +161,7 @@ def response_panel(ax, sc, model, title):
             r = r.iloc[0]
             ax.bar(x, r["mean"], color=col if h else "white", edgecolor=col, hatch=None if h else "//", lw=1.2)
             ax.text(x, r["mean"] + 0.01, f"{int(r['sum'])}/{int(r['size'])}", ha="center", fontsize=7)
-            ticks.append(x); labs.append(f"{'drug' if g == 'treated' else 'comparison'}\n{'high' if h else 'low'} score")
+            ticks.append(x); labs.append(f"{'drug' if g == 'treated' else 'control'}\n{'high' if h else 'low'}")
             x += 1
         x += 0.5
     ax.set_xticks(ticks); ax.set_xticklabels(labs, fontsize=7); ax.set_ylabel("responder fraction")
@@ -288,13 +289,16 @@ def forest(S, I):
     for a in ax[:2]:
         a.set_yticks(range(len(units))); a.set_yticklabels(ylab, fontsize=7); a.invert_yaxis()
     ax[0].axvline(1, color="k", ls="--", lw=0.8); ax[0].set_xscale("log")
+    from matplotlib.ticker import NullFormatter
+    ax[0].set_xticks([0.5, 0.75, 1, 1.5, 2, 3]); ax[0].set_xticklabels(["0.5", "0.75", "1", "1.5", "2", "3"])
+    ax[0].xaxis.set_minor_formatter(NullFormatter())
     ax[0].set_xlabel("pooled HR per SD in held-out treated patients\n(<1 = higher score, longer survival)")
     ax[0].set_title("Survival in held-out treated patients", fontsize=9); ax[0].legend(fontsize=7, frameon=False)
     ax[1].axvline(0.5, color="k", ls="--", lw=0.8); ax[1].set_xlabel("pooled held-out concordance\n(circle = C-index, triangle = AUROC)")
     ax[1].set_title("Concordance", fontsize=9)
     h, l = ax[1].get_legend_handles_labels()
     keep = dict(zip(l, h))
-    ax[1].legend(keep.values(), keep.keys(), fontsize=6.5, frameon=False, loc="lower right")
+    ax[1].legend(keep.values(), keep.keys(), fontsize=6.5, frameon=False, loc="upper center", bbox_to_anchor=(0.5, -0.12), ncol=2)
     # interaction: joint model, every cohort with a comparison
     J = I[(I["features"] == "shortlist") & (I["model"] == "joint")].copy() if len(I) else pd.DataFrame()
     if len(J):
