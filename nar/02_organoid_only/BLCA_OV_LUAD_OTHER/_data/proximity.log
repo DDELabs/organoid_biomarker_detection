@@ -1,0 +1,11 @@
+CISPLATIN_CHECK computed on paper network, targets A2M,ATOX1,MPG,TF 674 13 s
+PEMETREXED computed on paper network, targets ATIC,DHFR,GART,TYMS 674 10 s
+ETOPOSIDE computed on paper network, targets TOP2A,TOP2B 674 8 s
+VINORELBINE computed on paper network, targets TUBB 674 7 s
+TAMOXIFEN computed on paper network, targets ESR1,ESR2 674 8 s
+TRASTUZUMAB computed on paper network, targets ERBB2 674 7 s
+DACARBAZINE computed on paper network, targets PGD,POLA2 674 9 s
+OLAPARIB computed on paper network, targets PARP1,PARP2,PARP3 674 13 s
+pathways	pearson_r	spearman_r	proximal_paper	proximal_ours	proximal_both
+674	0.9988222839713585	0.999013996117007	47	48	47
+

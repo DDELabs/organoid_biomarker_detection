@@ -4,3 +4,5 @@ __pycache__/
 *.pyc
 robust/results/atlas/inference_bootstrap_stack.npy
 nar/_cache/
+nar/**/_data/raw/
+nar/**/_cache/
