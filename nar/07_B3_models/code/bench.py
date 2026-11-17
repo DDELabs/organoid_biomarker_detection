@@ -199,7 +199,7 @@ def fit_predict(name, C, tr, te, full=False, extra=None):
         Xtr, mu, sd = B.zcols(Xo[tr])
         ytr = zy(C.y[tr])
         if name.startswith("Elastic"):
-            m = ElasticNetCV(l1_ratio=[0.1, 0.5, 0.9], n_alphas=30, cv=min(3, len(tr)), max_iter=5000,
+            m = ElasticNetCV(l1_ratio=[0.1, 0.5, 0.9], alphas=30, cv=min(3, len(tr)), max_iter=5000,
                              random_state=0).fit(Xtr, ytr)
             info = {"alpha": float(m.alpha_), "l1_ratio": float(m.l1_ratio_), "n_nonzero": int((m.coef_ != 0).sum())}
         elif name.startswith("Random"):

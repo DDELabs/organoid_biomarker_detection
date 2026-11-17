@@ -549,7 +549,7 @@ def forest(S, path):
     plt.setp(ax.get_yticklabels(), visible=False)
     axt.set_xlim(0, 1)
     axt.axis("off")
-    hdr = ["Set | cohort | drug", "n (deaths)", "p treated", "p untr.", "shuffle"]
+    hdr = ["Set | cohort | drug", "n (deaths)", "p trt.", "p untr.", "shuffle"]
     xs = [0, 0.56, 0.71, 0.83, 0.94]
     for x, h in zip(xs, hdr):
         axt.text(x, n - 0.2, h, fontweight="bold", fontsize=8.5)

@@ -125,7 +125,7 @@ def fit_pooled(name, Xc, Fd, y, seed=0):
 def perdrug_predict(name, Xtr, ytr, Xte, F):
     """Paper models trained inside one (screen, drug); F = proximal pathway column indices."""
     if name.startswith("Elastic"):
-        m = ElasticNetCV(l1_ratio=[0.1, 0.5, 0.9], n_alphas=20, cv=3, max_iter=3000, n_jobs=1).fit(Xtr, ytr)
+        m = ElasticNetCV(l1_ratio=[0.1, 0.5, 0.9], alphas=20, cv=3, max_iter=3000, n_jobs=1).fit(Xtr, ytr)
         return m.predict(Xte)
     if len(F) == 0:
         return np.full(len(Xte), np.nan)

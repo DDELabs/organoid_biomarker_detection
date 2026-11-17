@@ -1,0 +1,6 @@
+                                                     label  n_models                                                    pathway      coef  n_mut  n_wt  p_one_sided
+0  organoids, authors' NES, 3 hypermutated removed (paper)        16  REACTOME_GASTRIN_CREB_SIGNALLING_PATHWAY_VIA_PKC_AND_MAPK  0.726243     49   369     0.031432
+1                          organoids, authors' NES, all 19        19  REACTOME_GASTRIN_CREB_SIGNALLING_PATHWAY_VIA_PKC_AND_MAPK  0.778677     49   369     0.031432
+2          organoids, current data, 3 hypermutated removed        16  REACTOME_GASTRIN_CREB_SIGNALLING_PATHWAY_VIA_PKC_AND_MAPK  0.905474     50   377     0.000721
+3                             organoids, current data, all        19  REACTOME_GASTRIN_CREB_SIGNALLING_PATHWAY_VIA_PKC_AND_MAPK  0.965754     50   377     0.000721
+4                               PDX (Isella), current data       192                               REACTOME_SIGNALING_BY_NOTCH3  0.929045     50   377     0.265573

@@ -9,7 +9,7 @@ Left, in order:
 4. `python report_tables.py` -> tables/report_numbers.md; then write REPORT_GI.md (with checklist IDs).
 5. Delete nothing; `_test/` holds early test figures only.
 
-## Finisher agent status (2026-11-17 08:25)
+## Finisher agent status: DONE (REPORT_GI.md written)
 - Workers restarted 08:05 (run2_0.log / run2_1.log); plots.py tested OK on 14 pickles; extras.py all steps ran OK
   (fixed engine.logrank: singular variance -> NaN). Fig4b, Fig5a, SuppFig1, SuppFig15, regimen split done.
 - After workers end: `python plots.py; python extras.py clin s10 fig5a; python report_tables.py; python report_sections.py`

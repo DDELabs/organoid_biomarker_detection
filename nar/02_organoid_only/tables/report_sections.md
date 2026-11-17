@@ -128,3 +128,111 @@
 - Inside the lab models (leave-one-out Spearman rho, predicted vs observed): Ridge 0.37 (p = 0.025), SVR 0.47, LinearRegression 0.28.
 - What I think: With this pathway, survival of the two predicted groups of treated patients is similar. Untreated patients are not separated, which fits a drug-specific signal if one exists. Some of the other 29 model settings reach p < 0.05 (5 of 30), but 38.8% of shuffled runs find a best p at least this small, so picking the best setting is not enough on its own.
 
+#### TCGA pancreas | oxaliplatin
+- Lab models: 36 (response = AUC); proximal pathways: 47; rank-1 Ridge pathway: Synthesis of substrates in n glycan biosythesis.
+- Drug-treated patients: n = 21, deaths = 11 (8 in predicted responders, 3 in predicted non-responders); log-rank p = 0.223; HR 0.44 (95% CI 0.11-1.71).
+- Untreated patients (same split): n = 61, deaths = 35; p = 0.072; HR 0.53 (95% CI 0.26-1.07).
+- Other algorithms (rank-1): SVR p = 1.000, LinearRegression p = 0.636. Best of all 30 settings: p = 0.201 (LinearRegression k=10); settings with p < 0.05: 0 of 30.
+- Bootstrap (10,000 random pathway sets of the same size): share with p as small or smaller = 0.160. Response shuffle (1,000 runs): rank-1 share = 0.135; best-of-30 share = 0.645.
+- Inside the lab models (leave-one-out Spearman rho, predicted vs observed): Ridge 0.14 (p = 0.399), SVR -0.40, LinearRegression 0.10.
+- What I think: With this pathway, survival of the two predicted groups of treated patients is similar. Untreated patients are not separated, which fits a drug-specific signal if one exists. Only 11 deaths among treated patients, so any estimate here is fragile. Inside the lab models the pathway model predicts drug response weakly (leave-one-out rho = 0.14).
+
+#### TCGA pancreas | sn-38  (12-14 treated patients: borderline size)
+- Lab models: 36 (response = AUC); proximal pathways: 78; rank-1 Ridge pathway: Regulation of the fanconi anemia pathway.
+- Drug-treated patients: n = 13, deaths = 5 (3 in predicted responders, 2 in predicted non-responders); log-rank p = 0.570; HR 0.59 (95% CI 0.10-3.63).
+- Untreated patients (same split): n = 61, deaths = 35; p = 0.186; HR 1.58 (95% CI 0.80-3.11).
+- Other algorithms (rank-1): SVR p = 0.680, LinearRegression p = 0.570. Best of all 30 settings: p = 0.023 (Ridge k=9); settings with p < 0.05: 4 of 30.
+- Bootstrap (10,000 random pathway sets of the same size): share with p as small or smaller = 0.610. Response shuffle (1,000 runs): rank-1 share = 0.626; best-of-30 share = 0.189.
+- Inside the lab models (leave-one-out Spearman rho, predicted vs observed): Ridge 0.02 (p = 0.915), SVR 0.19, LinearRegression 0.00.
+- What I think: With this pathway, survival of the two predicted groups of treated patients is similar. Untreated patients are not separated, which fits a drug-specific signal if one exists. Some of the other 29 model settings reach p < 0.05 (4 of 30), but 18.9% of shuffled runs find a best p at least this small, so picking the best setting is not enough on its own. Only 5 deaths among treated patients, so any estimate here is fragile. Inside the lab models the pathway model predicts drug response weakly (leave-one-out rho = 0.02).
+
+### Pancreatic organoids (Shi 2022)  (`PAAD_shi/`)
+
+#### TCGA pancreas | fluorouracil
+- Lab models: 39 (response = AUC); proximal pathways: 38; rank-1 Ridge pathway: Inhibition of replication initiation of damaged dna by rb1 e2f1.
+- Drug-treated patients: n = 37, deaths = 18 (10 in predicted responders, 8 in predicted non-responders); log-rank p = 0.958; HR 0.98 (95% CI 0.38-2.48).
+- Untreated patients (same split): n = 61, deaths = 35; p = 0.412; HR 0.75 (95% CI 0.39-1.48).
+- Other algorithms (rank-1): SVR p = 0.696, LinearRegression p = 0.400. Best of all 30 settings: p = 0.097 (Ridge k=3); settings with p < 0.05: 0 of 30.
+- Bootstrap (10,000 random pathway sets of the same size): share with p as small or smaller = 0.947. Response shuffle (1,000 runs): rank-1 share = 0.945; best-of-30 share = 0.533.
+- Inside the lab models (leave-one-out Spearman rho, predicted vs observed): Ridge -0.01 (p = 0.928), SVR 0.08, LinearRegression 0.47.
+- What I think: With this pathway, survival of the two predicted groups of treated patients is similar. Untreated patients are not separated, which fits a drug-specific signal if one exists. Inside the lab models the pathway model predicts drug response weakly (leave-one-out rho = -0.01).
+
+#### TCGA pancreas | gemcitabine
+- Lab models: 39 (response = AUC); proximal pathways: 45; rank-1 Ridge pathway: G1 s specific transcription.
+- Drug-treated patients: n = 104, deaths = 51 (32 in predicted responders, 19 in predicted non-responders); log-rank p = 0.023; HR 0.52 (95% CI 0.30-0.92).
+- Untreated patients (same split): n = 61, deaths = 35; p = 0.017; HR 0.45 (95% CI 0.23-0.88).
+- Other algorithms (rank-1): SVR p = 0.146, LinearRegression p = 0.018. Best of all 30 settings: p = 0.005 (Ridge k=8); settings with p < 0.05: 6 of 30.
+- Bootstrap (10,000 random pathway sets of the same size): share with p as small or smaller = 0.022. Response shuffle (1,000 runs): rank-1 share = 0.100; best-of-30 share = 0.146.
+- Inside the lab models (leave-one-out Spearman rho, predicted vs observed): Ridge -0.08 (p = 0.643), SVR 0.04, LinearRegression 0.09.
+- What I think: The pathway splits drug-treated patients into groups with different survival, but the predicted responders are the ones who die more often (the opposite direction). In the response-shuffle test 10.0% of shuffled runs did as well, and 2.2% of random pathway sets did as well. The same split also separates untreated patients, so part of the signal may be general prognosis rather than drug response. Inside the lab models the pathway model predicts drug response weakly (leave-one-out rho = -0.08).
+
+#### TCGA pancreas | irinotecan  (12-14 treated patients: borderline size)
+- Lab models: 39 (response = AUC); proximal pathways: 78; rank-1 Ridge pathway: Fanconi anemia pathway.
+- Drug-treated patients: n = 13, deaths = 5 (4 in predicted responders, 1 in predicted non-responders); log-rank p = 0.302; HR 0.33 (95% CI 0.04-3.00).
+- Untreated patients (same split): n = 61, deaths = 35; p = 0.021; HR 2.22 (95% CI 1.11-4.43).
+- Other algorithms (rank-1): SVR p = 0.044, LinearRegression p = 0.302. Best of all 30 settings: p = 0.030 (SVR k=2); settings with p < 0.05: 3 of 30.
+- Bootstrap (10,000 random pathway sets of the same size): share with p as small or smaller = 0.310. Response shuffle (1,000 runs): rank-1 share = 0.351; best-of-30 share = 0.305.
+- Inside the lab models (leave-one-out Spearman rho, predicted vs observed): Ridge -0.27 (p = 0.102), SVR -0.08, LinearRegression -0.25.
+- What I think: With this pathway, survival of the two predicted groups of treated patients is similar. The same split also separates untreated patients, so part of the signal may be general prognosis rather than drug response. Some of the other 29 model settings reach p < 0.05 (3 of 30), but 30.5% of shuffled runs find a best p at least this small, so picking the best setting is not enough on its own. Only 5 deaths among treated patients, so any estimate here is fragile. Inside the lab models the pathway model predicts drug response weakly (leave-one-out rho = -0.27).
+
+#### TCGA pancreas | oxaliplatin
+- Lab models: 39 (response = AUC); proximal pathways: 46; rank-1 Ridge pathway: Intrinsic pathway.
+- Drug-treated patients: n = 21, deaths = 11 (7 in predicted responders, 4 in predicted non-responders); log-rank p = 0.497; HR 0.65 (95% CI 0.18-2.30).
+- Untreated patients (same split): n = 61, deaths = 35; p = 0.242; HR 1.49 (95% CI 0.76-2.91).
+- Other algorithms (rank-1): SVR p = 0.564, LinearRegression p = 0.460. Best of all 30 settings: p = 0.009 (LinearRegression k=10); settings with p < 0.05: 1 of 30.
+- Bootstrap (10,000 random pathway sets of the same size): share with p as small or smaller = 0.486. Response shuffle (1,000 runs): rank-1 share = 0.277; best-of-30 share = 0.027.
+- Inside the lab models (leave-one-out Spearman rho, predicted vs observed): Ridge -0.35 (p = 0.028), SVR -0.07, LinearRegression -0.18.
+- What I think: With this pathway, survival of the two predicted groups of treated patients is similar. Untreated patients are not separated, which fits a drug-specific signal if one exists. Some of the other 29 model settings reach p < 0.05 (1 of 30), but 2.7% of shuffled runs find a best p at least this small, so picking the best setting is not enough on its own. Only 11 deaths among treated patients, so any estimate here is fragile. Inside the lab models the pathway model predicts drug response weakly (leave-one-out rho = -0.35).
+
+### Liver cancer organoids (Ji 2023)  (`LIHC_ji/`)
+
+#### TCGA liver | sorafenib
+- Lab models: 61 (response = AUC); proximal pathways: 22; rank-1 Ridge pathway: Signaling by activated point mutants of fgfr1.
+- Drug-treated patients: n = 30, deaths = 15 (8 in predicted responders, 7 in predicted non-responders); log-rank p = 0.188; HR 0.48 (95% CI 0.15-1.47).
+- Untreated patients (same split): n = 328, deaths = 108; p = 0.129; HR 1.34 (95% CI 0.92-1.96).
+- Other algorithms (rank-1): SVR p = 0.171, LinearRegression p = 0.188. Best of all 30 settings: p = 0.013 (LinearRegression k=8); settings with p < 0.05: 4 of 30.
+- Bootstrap (10,000 random pathway sets of the same size): share with p as small or smaller = 0.397. Response shuffle (1,000 runs): rank-1 share = 0.583; best-of-30 share = 0.401.
+- Inside the lab models (leave-one-out Spearman rho, predicted vs observed): Ridge -0.16 (p = 0.215), SVR -0.38, LinearRegression -0.16.
+- What I think: With this pathway, survival of the two predicted groups of treated patients is similar. Untreated patients are not separated, which fits a drug-specific signal if one exists. Some of the other 29 model settings reach p < 0.05 (4 of 30), but 40.1% of shuffled runs find a best p at least this small, so picking the best setting is not enough on its own. Inside the lab models the pathway model predicts drug response weakly (leave-one-out rho = -0.16).
+
+### Liver cancer organoids (Broutier 2017)  (`LIHC_broutier/`)
+
+#### TCGA liver | sorafenib
+- Lab models: 5 (response = AUC); proximal pathways: 15; rank-1 Ridge pathway: Reversible hydration of carbon dioxide.
+- Drug-treated patients: n = 30, deaths = 15 (8 in predicted responders, 7 in predicted non-responders); log-rank p = 0.139; HR 0.43 (95% CI 0.14-1.35).
+- Untreated patients (same split): n = 328, deaths = 108; p = 0.374; HR 1.19 (95% CI 0.81-1.73).
+- Other algorithms (rank-1): SVR p = 0.879, LinearRegression p = 0.139. Best of all 30 settings: p = 0.093 (SVR k=4); settings with p < 0.05: 0 of 30.
+- Bootstrap (10,000 random pathway sets of the same size): share with p as small or smaller = 0.364. Response shuffle (1,000 runs): rank-1 share = 0.521; best-of-30 share = 0.828.
+- Inside the lab models (leave-one-out Spearman rho, predicted vs observed): Ridge -0.70 (p = 0.188), SVR -0.70, LinearRegression -0.70.
+- What I think: With this pathway, survival of the two predicted groups of treated patients is similar. Untreated patients are not separated, which fits a drug-specific signal if one exists. Inside the lab models the pathway model predicts drug response weakly (leave-one-out rho = -0.70).
+
+### Colorectal PDX (Isella 2017, cetuximab)  (`COAD_isella_pdx/`)
+
+#### TCGA colon (current GDC data) | cetuximab
+- Lab models: 192 (response = tumour volume change (3 wk)); proximal pathways: 41; rank-1 Ridge pathway: Signaling by notch3.
+- Drug-treated patients: n = 15, deaths = 7 (4 in predicted responders, 3 in predicted non-responders); log-rank p = 0.648; HR 0.70 (95% CI 0.15-3.22).
+- Untreated patients (same split): n = 302, deaths = 68; p = 0.046; HR 1.63 (95% CI 1.01-2.65).
+- Other algorithms (rank-1): SVR p = 0.648, LinearRegression p = 0.648. Best of all 30 settings: p = 0.370 (LinearRegression k=7); settings with p < 0.05: 0 of 30.
+- Bootstrap (10,000 random pathway sets of the same size): share with p as small or smaller = 0.831. Response shuffle (1,000 runs): rank-1 share = 0.760; best-of-30 share = 1.000.
+- Inside the lab models (leave-one-out Spearman rho, predicted vs observed): Ridge 0.50 (p = 8.2e-14), SVR 0.53, LinearRegression 0.50.
+- What I think: With this pathway, survival of the two predicted groups of treated patients is similar. The same split also separates untreated patients, so part of the signal may be general prognosis rather than drug response. Only 7 deaths among treated patients, so any estimate here is fragile.
+
+### Combinations that could not be analysed
+
+| set | cohort | drug | reason |
+|---|---|---|---|
+| Colorectal organoids (van de Wetering 2015) | READ | irinotecan | 7 treated patients with survival and expression (< 12) |
+| Pancreatic organoids (Shi 2022) | PAAD | paclitaxel | 5 treated patients with survival and expression (< 12) |
+| Liver cancer organoids (Ji 2023) | LIHC | doxorubicin | 3 treated patients with survival and expression (< 12) |
+| Liver cancer organoids (Ji 2023) | LIHC | lenvatinib | no drug response or no proximity |
+| Liver cancer organoids (Broutier 2017) | LIHC | doxorubicin | 3 treated patients with survival and expression (< 12) |
+| Liver cancer organoids (Broutier 2017) | LIHC | fluorouracil | 1 treated patients with survival and expression (< 12) |
+| Colorectal organoids (van de Wetering 2015) | COAD_authors | cetuximab | 9 treated patients with survival and expression (< 12) |
+| Colorectal organoids (van de Wetering 2015) | READ | cetuximab | 0 treated patients with survival and expression (< 12) |
+| Pancreatic organoids (Tiriac 2018) | PAAD | paclitaxel | 5 treated patients with survival and expression (< 12) |
+| Pancreatic organoids (Shi 2022) | PAAD | mitomycin | no drug response or no proximity |
+| Liver cancer organoids (Ji 2023) | LIHC | gemcitabine | 7 treated patients with survival and expression (< 12) |
+| Liver cancer organoids (Ji 2023) | LIHC | fluorouracil | 1 treated patients with survival and expression (< 12) |
+| Liver cancer organoids (Ji 2023) | LIHC | regorafenib | no drug response or no proximity |
+| Liver cancer organoids (Broutier 2017) | LIHC | gemcitabine | 7 treated patients with survival and expression (< 12) |
+| Liver cancer organoids (Broutier 2017) | LIHC | cisplatin | 4 treated patients with survival and expression (< 12) |
