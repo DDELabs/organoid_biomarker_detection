@@ -107,7 +107,12 @@ SETS = {"OV": ov_sets, "SARC": sarc_sets, "LUAD": luad_sets, "PDX": pdx_sets}
 
 def main(name):
     rows = []
+    import json
     for cfg in SETS[name]():
+        done = cfg["outdir"] / "tables" / f"{cfg['project']}_{cfg['drug']}_summary.json"
+        if done.exists():  # resume after an interruption
+            rows.append(json.load(open(done)))
+            continue
         z, src = K.proximity(cfg.pop("zdrug"))
         anyd = K.any_drug(cfg["project"])
         surv = cfg["surv"]

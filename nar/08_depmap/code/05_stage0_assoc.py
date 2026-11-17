@@ -88,7 +88,8 @@ def screen_assoc(name):
     out, ns, gsl = {}, {}, {}
     for d in R.columns:
         L = R[d].dropna().index
-        gs_loo = ((s[L] - Z.loc[L, d]) / (c[L] - 1)).values
+        gs_loo = ((s[L] - Z.loc[L, d]) / (c[L] - 1)).replace([np.inf, -np.inf], np.nan)
+        gs_loo = gs_loo.fillna(0.0).values          # lines measured with this drug only -> neutral
         lin = lineage_dummies(S.lineage.loc[L].fillna("other").values)
         C = np.column_stack([lin.values, gs_loo])
         y = resid(stats.norm.ppf((R.loc[L, d].rank() - 0.5) / len(L)).reshape(-1, 1), C)[:, 0]

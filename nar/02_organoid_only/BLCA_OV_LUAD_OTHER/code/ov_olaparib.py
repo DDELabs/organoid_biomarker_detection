@@ -33,6 +33,8 @@ def main():
     expr = K.C.to_canonical(raw)
     texpr = K.tcga_expr("OV")
     osc, tsc = K.paired_scores("OV_GSE229119", expr, texpr)
+    # ssGSEA raw ES are on an arbitrary per-pathway scale: express every pathway in units of its SD across the 28 samples
+    osc = osc.div(osc.std(axis=1).replace(0, np.nan), axis=0).dropna()
     models = sorted({c.split("_")[0] for c in osc.columns})
     times = {"D3": "olaparib day 3", "D7": "olaparib day 7", "R": "after recovery"}
     delta = {}
@@ -119,12 +121,12 @@ def main():
     ax = fig.add_subplot(gs[0, :2])
     show = up[:12] + dn[:12]
     cols = [c for o in models for c in D.columns if c.startswith(o + "|")]
-    im = ax.imshow(D.loc[show, cols].values, aspect="auto", cmap="RdBu_r", vmin=-0.15, vmax=0.15)
+    im = ax.imshow(D.loc[show, cols].values, aspect="auto", cmap="RdBu_r", vmin=-2, vmax=2)
     ax.set_yticks(range(len(show)))
     ax.set_yticklabels([E.short(p, 45) for p in show], fontsize=7)
     ax.set_xticks(range(len(cols)))
     ax.set_xticklabels([c.replace("|", "\n") for c in cols], fontsize=7, rotation=90)
-    ax.set_title("Change in pathway score after olaparib (minus the model's own DMSO control)\nrows: the signature (12 up, 12 down at day 7 in all 3 organoids)")
+    ax.set_title("Change in pathway score after olaparib (minus the model's own DMSO control; units = SD of that pathway across all 28 samples)\nrows: the signature (12 up, 12 down at day 7 in all 3 organoids)")
     plt.colorbar(im, ax=ax, fraction=0.02)
     E.panel_letter(ax, "a")
     ax = fig.add_subplot(gs[0, 2])
@@ -194,7 +196,8 @@ OVCA432, SKOV3), each treated with olaparib (a PARP inhibitor) and sampled at da
 There is one DMSO control per model. Every model got the drug, and no model has a 'how strongly did it respond' number,
 so the paper's regression step (which needs a response value per model) cannot be run on these data.
 
-**a.** Change in Reactome pathway score (ssGSEA) after olaparib, minus the same model's DMSO control. Rows are the
+**a.** Change in Reactome pathway score (ssGSEA) after olaparib, minus the same model's DMSO control, in units of that
+pathway's standard deviation across all 28 samples. Rows are the
 {len(up)} pathways that went up and {len(dn)} that went down at day 7 in all 3 organoids (the 'olaparib-response signature').
 **b.** The pathways closest to olaparib's targets PARP1/2/3 in the paper's network ({len(prox)} pass z <= -1.2816) and how much
 they changed at day 7.

@@ -85,6 +85,7 @@ UNITS = [
                   "TCGA-LUSC": dict(treated=PLAT, comparison=NONE, comp_label="no chemotherapy"),
                   "GSE42127": dict(treated=PLAT, comparison=NONE, comp_label="no adjuvant chemotherapy")}),
     dict(id="SARC_GEMCITABINE", cancer="sarcoma", drug="gemcitabine (+ docetaxel)", short="GEMCITABINE",
+         min_train=(10, 5),   # only 16 treated patients / 9 events in TCGA-SARC: smaller training folds allowed
          lab=[("sarcoma_alshihabi2024", "GEMCITABINE", None)], align_extra=[], merge={},
          cohorts={"TCGA-SARC": dict(treated="GEMCITABINE", comparison=NONE, comp_label="no chemotherapy")}),
 ]

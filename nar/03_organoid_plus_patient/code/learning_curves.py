@@ -22,7 +22,8 @@ REPS = 20
 
 def folds(u, feats):
     D, ZD, Zall = unit_data(u)
-    train_c = trainable(D)
+    mn = u.get("min_train", (None, None))
+    train_c = trainable(D, *mn)
     out = []
     if len(train_c) >= 2:
         for c in train_c:
@@ -34,7 +35,7 @@ def folds(u, feats):
         tr_idx = D.index[D["group"] == "treated"]
         fold = pd.Series(rng.permutation(len(tr_idx)) % 5, index=tr_idx)
         for f in range(5):
-            blocks, _ = blocks_for(D.drop(fold.index[fold == f]), [train_c[0]], feats, ZD)
+            blocks, _ = blocks_for(D.drop(fold.index[fold == f]), [train_c[0]], feats, ZD, *mn)
             out.append((blocks, D.loc[fold.index[fold == f]]))
     return out, ZD, Zall
 

@@ -262,7 +262,8 @@ def comparisons(D, models, texpr):
     o = pd.read_csv(K.MOESM3 / "Figure_2b.tsv", sep="\t", index_col=0)
     o.columns = [c.upper() for c in o.columns]
     ic = pd.read_csv(K.REPO / "data/organoid_COAD/drug_response/median_response.txt", sep="\t")
-    ic = ic[ic["Drug Name"].str.upper() == "5-FLUOROURACIL"].set_index(ic["Organoid"].str.upper())["median_IC50"]
+    ic = ic[ic["Drug Name"].str.upper() == "5-FLUOROURACIL"]
+    ic = pd.Series(ic["median_IC50"].values, index=ic["Organoid"].str.upper().values)
     zc = K.paper_proximity()["FLUOROURACIL"]
     Fc = [p for p in zc.index[zc <= -1.2816] if p in o.index]
     Sc = [s for s in ic.index if s in o.columns]
@@ -315,7 +316,7 @@ def clinical(D):
             s = d["c"][j] * d["P"].loc[d["tp"], j]
             g = (s > s.median()).map({True: "non-responder", False: "responder"})
             c = cl.reindex(g.index)
-            feats = {"age": pd.to_numeric(c["age_at_initial_pathologic_diagnosis"], errors="coerce").map(lambda a: np.nan if pd.isna(a) else ("<60" if a < 60 else ">=60")),
+            feats = {"age": pd.to_numeric(c["age_at_diagnosis"], errors="coerce").map(lambda a: np.nan if pd.isna(a) else ("<60" if a < 60 else ">=60")),
                      "sex": c["gender"].str.upper().where(c["gender"].str.upper().isin(["MALE", "FEMALE"])),
                      "T stage": c["ajcc_tumor_pathologic_pt"].str.extract(r"(T\d)")[0].map({"T1": "T1-T2", "T2": "T1-T2", "T3": "T3-T4", "T4": "T3-T4"}),
                      "N stage": c["ajcc_nodes_pathologic_pn"].str.extract(r"(N\d)")[0]}

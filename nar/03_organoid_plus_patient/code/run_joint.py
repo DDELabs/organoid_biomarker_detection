@@ -76,13 +76,17 @@ def lab_data(u, Zref):
     return pd.concat(Xs), pd.concat(ys), names
 
 
-def blocks_for(D, cohorts, feats, Z):
+MIN_N, MIN_EV = 15, 8          # a cohort trains as a Cox block with >= MIN_N treated patients and >= MIN_EV events
+
+
+def blocks_for(D, cohorts, feats, Z, min_n=None, min_ev=None):
     """Training blocks of the given cohorts (treated patients only)."""
+    min_n, min_ev = min_n or MIN_N, min_ev or MIN_EV
     out, used = [], []
     for c in cohorts:
         x = D[(D["unit_cohort"] == c) & (D["group"] == "treated")]
         s = x[x["has_surv"]]
-        if len(s) >= 15 and s["event"].sum() >= 8:
+        if len(s) >= min_n and s["event"].sum() >= min_ev:
             out.append(C.PatientBlock("cox", Z.loc[s.index, feats].values, s["time"], s["event"], strata=np.repeat(c, len(s))))
             used.append((c, "survival", s.index))
             continue
@@ -93,13 +97,14 @@ def blocks_for(D, cohorts, feats, Z):
     return out, used
 
 
-def trainable(D):
+def trainable(D, min_n=None, min_ev=None):
+    min_n, min_ev = min_n or MIN_N, min_ev or MIN_EV
     ok = []
     for c in D["unit_cohort"].unique():
         x = D[(D["unit_cohort"] == c) & (D["group"] == "treated")]
         s = x[x["has_surv"]]
         r = x[x["has_resp"]]
-        if (len(s) >= 15 and s["event"].sum() >= 8) or (len(r) and r["responder"].sum() >= 5 and (1 - r["responder"]).sum() >= 5):
+        if (len(s) >= min_n and s["event"].sum() >= min_ev) or (len(r) and r["responder"].sum() >= 5 and (1 - r["responder"]).sum() >= 5):
             ok.append(c)
     return ok
 
@@ -128,7 +133,8 @@ def run_unit(u, features, seed=C.SEED):
     Xo = Xo_full[feats].values
     yo_v = yo.values
     beta_org, alpha_org = C.organoid_only(Xo, yo_v)
-    train_c = trainable(D)
+    mn = u.get("min_train", (None, None))
+    train_c = trainable(D, *mn)
     models = ["organoid-only", "patient-only", "joint", "joint (w=0.5)"]
     scores = pd.DataFrame(np.nan, index=D.index, columns=models)
     scores["organoid-only"] = ZD[feats].values @ beta_org
@@ -165,7 +171,7 @@ def run_unit(u, features, seed=C.SEED):
             fold = pd.Series(rng.permutation(len(tr_idx)) % 5, index=tr_idx)
             for f in range(5):
                 Dtr = D.drop(fold.index[fold == f])
-                blocks, used = blocks_for(Dtr, [c], feats, ZD)
+                blocks, used = blocks_for(Dtr, [c], feats, ZD, *mn)
                 fits = fit_all(Xo, yo_v, blocks, seed + rep)
                 te = fold.index[fold == f]
                 comp = D.index[D["group"] != "treated"]

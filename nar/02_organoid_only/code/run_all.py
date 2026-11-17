@@ -148,7 +148,13 @@ def main():
     for i, s in enumerate(specs()):
         if i % nw != w:
             continue
-        tag, meta = run(s, cd)
+        key, cohort, mdrug, _ = s
+        done = OUT / f"{SETS[key][0]}__{cohort}__{mdrug}.pkl"
+        if done.exists():                       # resume: reuse finished results
+            with open(done, "rb") as fh:
+                tag, meta = done.stem, pickle.load(fh)["meta"]
+        else:
+            tag, meta = run(s, cd)
         rows.append(meta)
         print(tag, meta.get("skip", "done"), meta.get("n_treated"), flush=True)
     pd.DataFrame(rows).to_csv(OUT / f"run_log_{w}.tsv", sep="\t", index=False)

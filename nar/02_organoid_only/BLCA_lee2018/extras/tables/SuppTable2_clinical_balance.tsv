@@ -1,0 +1,41 @@
+version	biomarker	feature	level	responders	non_responders	chi2_p
+paper	rank 1	age	<60	10	11	0.9460209457034834
+paper	rank 1	age	>=60	30	28	0.9460209457034834
+paper	rank 1	sex	FEMALE	14	10	0.5094781461429514
+paper	rank 1	sex	MALE	26	29	0.5094781461429514
+paper	rank 1	T stage	T1-T2	5	5	1.0
+paper	rank 1	T stage	T3-T4	26	24	1.0
+paper	rank 1	N stage	N0	19	13	0.32681675889956735
+paper	rank 1	N stage	N1	5	9	0.32681675889956735
+paper	rank 1	N stage	N2	9	11	0.32681675889956735
+paper	rank 1	N stage	N3	1	0	0.32681675889956735
+paper	paper biomarker AA	age	<60	11	10	1.0
+paper	paper biomarker AA	age	>=60	29	29	1.0
+paper	paper biomarker AA	sex	FEMALE	12	12	1.0
+paper	paper biomarker AA	sex	MALE	28	27	1.0
+paper	paper biomarker AA	T stage	T1-T2	5	5	1.0
+paper	paper biomarker AA	T stage	T3-T4	25	25	1.0
+paper	paper biomarker AA	N stage	N0	16	16	0.11006912496037437
+paper	paper biomarker AA	N stage	N1	3	11	0.11006912496037437
+paper	paper biomarker AA	N stage	N2	12	8	0.11006912496037437
+paper	paper biomarker AA	N stage	N3	0	1	0.11006912496037437
+current	rank 1	age	<60	9	12	0.5638722963071348
+current	rank 1	age	>=60	31	27	0.5638722963071348
+current	rank 1	sex	FEMALE	14	10	0.5094781461429514
+current	rank 1	sex	MALE	26	29	0.5094781461429514
+current	rank 1	T stage	T1-T2	7	3	0.4178869643175003
+current	rank 1	T stage	T3-T4	25	25	0.4178869643175003
+current	rank 1	N stage	N0	18	14	0.3455360927744395
+current	rank 1	N stage	N1	9	5	0.3455360927744395
+current	rank 1	N stage	N2	8	12	0.3455360927744395
+current	rank 1	N stage	N3	0	1	0.3455360927744395
+current	paper biomarker AA	age	<60	10	11	0.9460209457034834
+current	paper biomarker AA	age	>=60	30	28	0.9460209457034834
+current	paper biomarker AA	sex	FEMALE	13	11	0.8647488217973089
+current	paper biomarker AA	sex	MALE	27	28	0.8647488217973089
+current	paper biomarker AA	T stage	T1-T2	5	5	1.0
+current	paper biomarker AA	T stage	T3-T4	24	26	1.0
+current	paper biomarker AA	N stage	N0	17	15	0.28743519487061314
+current	paper biomarker AA	N stage	N1	4	10	0.28743519487061314
+current	paper biomarker AA	N stage	N2	11	9	0.28743519487061314
+current	paper biomarker AA	N stage	N3	0	1	0.28743519487061314

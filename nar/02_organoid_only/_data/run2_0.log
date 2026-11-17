@@ -1,0 +1,17 @@
+COAD_vandewetering__COAD_authors__FLUOROURACIL done 114
+COAD_vandewetering__COAD_authors__IRINOTECAN done 22
+COAD_vandewetering__COAD__FLUOROURACIL done 129
+COAD_vandewetering__COAD__IRINOTECAN done 32
+COAD_vandewetering__READ__FLUOROURACIL done 59
+COAD_vandewetering__READ__IRINOTECAN 7 treated patients with survival and expression (< 12) 7
+COAD_vandewetering__COADREAD__FLUOROURACIL done 188
+COAD_vandewetering__COADREAD__IRINOTECAN done 39
+PAAD_tiriac__PAAD__FLUOROURACIL done 37
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
