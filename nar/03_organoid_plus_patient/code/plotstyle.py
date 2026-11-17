@@ -26,8 +26,10 @@ def setup():
 
 
 def letters(axes, x=-0.12, y=1.06):
+    import string
+    L = list(string.ascii_lowercase) + [a + b for a in string.ascii_lowercase for b in string.ascii_lowercase]
     for i, a in enumerate(axes):
-        a.text(x, y, "abcdefghijklmnop"[i], transform=a.transAxes, fontsize=11, fontweight="bold", va="bottom")
+        a.text(x, y, L[i], transform=a.transAxes, fontsize=11, fontweight="bold", va="bottom")
 
 
 def save(fig, path, caption):

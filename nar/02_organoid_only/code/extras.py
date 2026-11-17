@@ -282,7 +282,7 @@ organoids without the 3 hypermutated lines.
 
 # --------------------------------------------------------------------------- Supp Fig 15
 def gdsc_expression():
-    f = DATA / "gdsc_5FU_expression.tsv.gz"
+    f = RAW / "gdsc_5FU_expression.tsv.gz"
     if f.exists():
         return pd.read_csv(f, sep="\t", index_col=0)
     resp = pd.read_csv(RAW / "gdsc" / "GDSC1_5FU.tsv", sep="\t")

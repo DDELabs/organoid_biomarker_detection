@@ -61,6 +61,8 @@ def conc_bars(ax, ev, title):
 
 
 def hr_forest(ax, ev, title):
+    if "HR" not in ev:
+        ev = ev.assign(HR=np.nan, HR_low=np.nan, HR_high=np.nan)
     e = ev[ev["model"].isin(MODELS) & ev["outcome"].str.startswith("survival") & ev["HR"].notna()].copy()
     cats = list(dict.fromkeys(e.loc[e["cohort"] != "POOLED", "cohort"])) + (["POOLED"] if (e["cohort"] == "POOLED").any() else [])
     if not cats:

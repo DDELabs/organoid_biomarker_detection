@@ -1,0 +1,657 @@
+cohort	model	outcome	n	events	C	logrank_p	HR	HR_low	HR_high	p	n_cohorts	unit	features	cancer	drug	n_features	design
+GSE39582	organoid-only	survival (RFS)	200	75	0.5424162257495591	0.7523474393802156	0.8153016110655117	0.6523481942816789	1.0189600014727709	0.0726694621398918		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE39582	patient-only	survival (RFS)	200	75	0.5848324514991181	0.1196986228775351	0.7844043494523556	0.6496211357805832	0.9471523470375424	0.0115879348687324		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE39582	joint	survival (RFS)	200	75	0.5641093474426808	0.1549348132562215	0.7585007874535274	0.6099849385751117	0.943176475654534	0.01291159611857		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE39582	joint (w=0.5)	survival (RFS)	200	75	0.5582010582010583	0.1767315760221564	0.7708500025078374	0.6189671747271718	0.9600020011210588	0.0200936930568582		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE103479	organoid-only	survival (PFS)	66	23	0.4886731391585761	0.2144862011637685	1.0284954223101404	0.6852365972405327	1.5437045218727603	0.8921286758161566		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE103479	patient-only	survival (PFS)	66	23	0.4805825242718446	0.7747924386274524	1.1041826617247896	0.7260409773701249	1.6792707139890557	0.6431389431871508		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE103479	joint	survival (PFS)	66	23	0.4870550161812297	0.7949335713997403	1.04076975824701	0.6863120949712578	1.5782931666487725	0.8507962986937889		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE103479	joint (w=0.5)	survival (PFS)	66	23	0.4862459546925566	0.7779616898469832	1.0357117430523188	0.6847647856743357	1.5665215810420374	0.8679885095959052		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE14333	organoid-only	survival (DFS)	87	27	0.5517241379310345	0.0814783840348289	0.7475474788601181	0.5450676728944303	1.0252437650220974	0.0710256401089083		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE14333	patient-only	survival (DFS)	87	27	0.6243194192377496	0.0745442861691487	0.7111567215100993	0.5340011216581535	0.9470839330422798	0.0197035711017108		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE14333	joint	survival (DFS)	87	27	0.5977011494252874	0.0581509586363582	0.7306692945709176	0.5506280581935479	0.969579392267552	0.0297026882186926		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE14333	joint (w=0.5)	survival (DFS)	87	27	0.5789473684210527	0.0740652419264795	0.7365292545452167	0.5509292661068228	0.9846551566126984	0.0389806952860028		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+TCGA-COADREAD	organoid-only	survival (PFS)	140	28	0.516143701682583	0.5236776970923371	1.0340547956410415	0.7131058066323582	1.4994539526158954	0.8598032991404254		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+TCGA-COADREAD	organoid-only	response	73	64	0.4600694444444444					0.7057832803701076		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+TCGA-COADREAD	patient-only	survival (PFS)	140	28	0.5020463847203275	0.6415323674351991	1.0584955920657972	0.7100298422349208	1.5779800393967416	0.7802073348852736		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+TCGA-COADREAD	patient-only	response	73	64	0.4826388888888889					0.873354083094863		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+TCGA-COADREAD	joint	survival (PFS)	140	28	0.4988631195998181	0.4940102769961758	1.034309725240767	0.6995580090458545	1.5292464583269572	0.865729714202804		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+TCGA-COADREAD	joint	response	73	64	0.4670138888888889					0.7562494372747272		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+TCGA-COADREAD	joint (w=0.5)	survival (PFS)	140	28	0.5020463847203275	0.7777077182105918	1.02812795903409	0.699253163745581	1.5116801109421985	0.8878356956208948		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+TCGA-COADREAD	joint (w=0.5)	response	73	64	0.46875					0.7690400574788702		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE72970	organoid-only	survival (PFS)	124	114	0.4055592322964924	0.1699729227328131	1.2264293097095156	0.9903094851385555	1.5188472636956656	0.0613799968199511		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE72970	organoid-only	response	124	63	0.4020296643247463					0.0602081742115984		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE72970	patient-only	survival (PFS)	124	114	0.4643282594308405	0.5455809901166013	1.0686805620516426	0.878027229056941	1.3007320341690105	0.5076192818470171		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE72970	patient-only	response	124	63	0.4558938329430133					0.3982950495477827		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE72970	joint	survival (PFS)	124	114	0.4397088021178028	0.2283070707615506	1.135343391075449	0.9259091369906508	1.3921502274490618	0.2224324896197254		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE72970	joint	response	124	63	0.4280510018214936					0.1677525848087809		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE72970	joint (w=0.5)	survival (PFS)	124	114	0.4301786896095301	0.4153099190415046	1.164446145084724	0.9467518704293651	1.4321966157698092	0.1493575802055818		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE72970	joint (w=0.5)	response	124	63	0.4179026801977621					0.1153984404122354		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE28702	organoid-only	response	83	42	0.5052264808362369					0.938289407410921		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE28702	patient-only	response	83	42	0.5534262485481998					0.4046170061754257		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE28702	joint	response	83	42	0.5441347270615563					0.491659339747669		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE28702	joint (w=0.5)	response	83	42	0.5296167247386759					0.6455405841152004		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE104645	organoid-only	response	181	112	0.4829192546583851					0.7009024843255329		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE104645	patient-only	response	181	112	0.5332556935817805					0.4537252614375128		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE104645	joint	response	181	112	0.4966356107660455					0.940625468275207		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE104645	joint (w=0.5)	response	181	112	0.4919772256728778					0.8574373298161748		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE19860	organoid-only	response	40	15	0.592					0.3421807501825611		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE19860	patient-only	response	40	15	0.6746666666666666					0.069382833723475		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE19860	joint	response	40	15	0.664					0.0883493467400214		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE19860	joint (w=0.5)	response	40	15	0.64					0.1462973410590071		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE62080	organoid-only	response	21	9	0.2592592592592592					0.0699543585800102		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE62080	patient-only	response	21	9	0.4074074074074074					0.4995896164070171		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE62080	joint	response	21	9	0.3333333333333333					0.2136207303090525		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE62080	joint (w=0.5)	response	21	9	0.287037037037037					0.1098194088152371		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE87211	organoid-only	survival (DFS)	175	34	0.6068620443173696	0.1326749753552212	0.6271347269690983	0.4513876922110301	0.871308572557918	0.0054174250718061		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE87211	organoid-only	response	201	35	0.5549053356282272					0.3084679424700829		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE87211	patient-only	survival (DFS)	175	34	0.6011436740528949	0.1506873052818184	0.6480600878593403	0.4702925239253371	0.8930226531581682	0.0080100851360248		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE87211	patient-only	response	201	35	0.4905335628227194					0.8616530406291132		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE87211	joint	survival (DFS)	175	34	0.6180605194186324	0.2931017413948721	0.6165594806225901	0.4475174224624195	0.8494542872853648	0.003096502599242		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE87211	joint	response	201	35	0.5409638554216868					0.4475925112760673		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE87211	joint (w=0.5)	survival (DFS)	175	34	0.6149630688587086	0.4132546076867499	0.618993852089442	0.4478422997266537	0.8555542635396179	0.0036755017102586		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE87211	joint (w=0.5)	response	201	35	0.5444061962134251					0.4102878460260374		CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+POOLED	organoid-only	survival	792	301	0.5114620298083747		0.9311004087500332	0.8288014255122477	1.0460261583631505	0.2292830506113303	6.0	CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+POOLED	organoid-only	response	723	340	0.4903283404424164						7.0	CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+POOLED	patient-only	survival	792	301	0.5462384669978708		0.8853703098438153	0.795186891159862	0.9857815744542304	0.0263325498544765	6.0	CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+POOLED	patient-only	response	723	340	0.5084317032040472						7.0	CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+POOLED	joint	survival	792	301	0.5322924059616749		0.8897910845164867	0.7951673551207241	0.9956748965943448	0.0417944972873508	6.0	CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+POOLED	joint	response	723	340	0.5017855371490924						7.0	CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+POOLED	joint (w=0.5)	survival	792	301	0.5260113555713272		0.9005972278243624	0.8037185006132919	1.009153535903455	0.071376205113326	6.0	CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+POOLED	joint (w=0.5)	response	723	340	0.4971728995139371						7.0	CRC_5FU	shortlist	colorectal	5-FU-based chemotherapy	30	leave-one-cohort-out
+GSE39582	organoid-only	survival (RFS)	200	75	0.564726631393298	0.8680093354097842	0.7995303128587381	0.6447614354754292	0.9914499937618436	0.0415272416217769		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE39582	patient-only	survival (RFS)	200	75	0.614373897707231	0.0040600757927747	0.7262235608616511	0.5815566753126399	0.906877494041402	0.0047662880973827		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE39582	joint	survival (RFS)	200	75	0.6018518518518519	0.2021755616725729	0.719986254037755	0.5831429089452477	0.8889419695438503	0.0022537438275943		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE39582	joint (w=0.5)	survival (RFS)	200	75	0.5850088183421517	0.1047222156748919	0.7687469369807213	0.622764993511595	0.9489484143688272	0.0143772004062935		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE103479	organoid-only	survival (PFS)	66	23	0.5258899676375405	0.3919389706178345	0.9926102266685688	0.6698610313543556	1.4708648749054016	0.9705117092463424		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE103479	patient-only	survival (PFS)	66	23	0.5889967637540453	0.0511476831758516	0.8629385673664615	0.5913862790331658	1.2591820227312365	0.4445026047318237		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE103479	joint	survival (PFS)	66	23	0.5509708737864077	0.16190812127102	0.97588512848946	0.6571715220315643	1.4491677622651886	0.903689039738198		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE103479	joint (w=0.5)	survival (PFS)	66	23	0.5153721682847896	0.1878964571172887	1.0336344969774556	0.6926930642065005	1.5423862725776247	0.8713082396705258		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE14333	organoid-only	survival (DFS)	87	27	0.574107683000605	0.4362941531333427	0.737387650650111	0.5369269108564504	1.0126900632787643	0.0598233454689472		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE14333	patient-only	survival (DFS)	87	27	0.5807622504537205	0.0948017419484975	0.6998533140192635	0.4886128256978583	1.00241875649539	0.0515561380540744		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE14333	joint	survival (DFS)	87	27	0.6067755595886267	0.0045833768521754	0.7347015406419166	0.5290080288081503	1.0203745962754835	0.065820792441098		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE14333	joint (w=0.5)	survival (DFS)	87	27	0.5922565033272837	0.4849479074862546	0.7539496731716954	0.5358650576752263	1.060789655033307	0.1049657493709709		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+TCGA-COADREAD	organoid-only	survival (PFS)	140	28	0.5302410186448385	0.7840088859046093	1.0316699489509369	0.6972142754028676	1.5265649616158896	0.8760668066059		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+TCGA-COADREAD	organoid-only	response	73	64	0.4965277777777778					0.9799206803450584		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+TCGA-COADREAD	patient-only	survival (PFS)	140	28	0.5866302864938608	0.4901728632622764	0.7896150586067148	0.5299159957787133	1.1765863754730823	0.2457103971255977		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+TCGA-COADREAD	patient-only	response	73	64	0.4288194444444444					0.4967922845864109		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+TCGA-COADREAD	joint	survival (PFS)	140	28	0.540700318326512	0.6326282942747811	0.9003333692197232	0.603146060656313	1.3439533615596928	0.60747993042279		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+TCGA-COADREAD	joint	response	73	64	0.4861111111111111					0.8998571845347108		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+TCGA-COADREAD	joint (w=0.5)	survival (PFS)	140	28	0.5165984538426558	0.6744004617050721	0.9469423598254948	0.6404307875768621	1.4001510393100176	0.7846883195054967		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+TCGA-COADREAD	joint (w=0.5)	response	73	64	0.5173611111111112					0.873354083094863		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE72970	organoid-only	survival (PFS)	124	114	0.4532097948378557	0.1352933721195093	1.0816823401834417	0.8852317044418402	1.321729304535543	0.4425784160034293		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE72970	organoid-only	response	124	63	0.4663023679417122					0.5190903788933547		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE72970	patient-only	survival (PFS)	124	114	0.4946393117140966	0.7188730328279724	1.0068849257549228	0.8306447980526934	1.2205183925658958	0.9442796666780467		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE72970	patient-only	response	124	63	0.5006505334374187					0.9920244021265968		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE72970	joint	survival (PFS)	124	114	0.4627399073461284	0.2778342823595706	1.0550492252327055	0.8654011787686218	1.2862576282227884	0.5960695569442849		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE72970	joint	response	124	63	0.4691647150663544					0.5553450818572379		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE72970	joint (w=0.5)	survival (PFS)	124	114	0.4554599602911979	0.3279960042389954	1.0619344858357724	0.869292598229501	1.297267288947469	0.5562568699003339		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE72970	joint (w=0.5)	response	124	63	0.4616185271922977					0.4625142655676526		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE28702	organoid-only	response	83	42	0.5307781649245064					0.6325202921884683		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE28702	patient-only	response	83	42	0.5766550522648084					0.2310208234416756		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE28702	joint	response	83	42	0.5209059233449478					0.7464358890453132		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE28702	joint (w=0.5)	response	83	42	0.4872241579558652					0.8447454719280021		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE104645	organoid-only	response	181	112	0.484860248447205					0.7336392617377687		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE104645	patient-only	response	181	112	0.525491718426501					0.565992812435341		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE104645	joint	response	181	112	0.499611801242236					0.9941736364125742		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE104645	joint (w=0.5)	response	181	112	0.4912008281573499					0.8437000807926556		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE19860	organoid-only	response	40	15	0.6533333333333333					0.1112901240926803		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE19860	patient-only	response	40	15	0.5573333333333333					0.5574176694694897		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE19860	joint	response	40	15	0.592					0.3421807501825611		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE19860	joint (w=0.5)	response	40	15	0.5893333333333334					0.356566137895255		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE62080	organoid-only	response	21	9	0.3518518518518518					0.2706629953488259		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE62080	patient-only	response	21	9	0.3425925925925926					0.2409546687015701		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE62080	joint	response	21	9	0.3055555555555556					0.1451518374020517		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE62080	joint (w=0.5)	response	21	9	0.324074074074074					0.1885980545592216		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE87211	organoid-only	survival (DFS)	175	34	0.6259232785322849	0.0176506470725161	0.5979977990852855	0.4383078221028909	0.8158680946992091	0.0011790316190392		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE87211	organoid-only	response	201	35	0.4986230636833046					0.9808668459469602		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE87211	patient-only	survival (DFS)	175	34	0.5970931617822254	0.3369624761457782	0.701071417112581	0.5084156271524519	0.9667309690008064	0.0302810656743233		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE87211	patient-only	response	201	35	0.535972461273666					0.5049613501252466		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE87211	joint	survival (DFS)	175	34	0.6187753157016916	0.1253553248838255	0.5928427436154073	0.4292973793441705	0.8186924392465807	0.0014997274957274		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE87211	joint	response	201	35	0.487091222030981					0.8117083708384518		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE87211	joint (w=0.5)	survival (DFS)	175	34	0.613056945437217	0.3678989555907312	0.6086953267050685	0.440972836311773	0.8402104851887864	0.0025389830578509		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+GSE87211	joint (w=0.5)	response	201	35	0.4707401032702237					0.5878208373903175		CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+POOLED	organoid-only	survival	792	301	0.5400993612491128		0.8867321367617256	0.791978680058727	0.9928220319108972	0.0370745270090198	6.0	CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+POOLED	organoid-only	response	723	340	0.4919650828290844						7.0	CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+POOLED	patient-only	survival	792	301	0.5744499645138396		0.8297335471407784	0.7417901723243784	0.9281031010340236	0.0010935875169525	6.0	CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+POOLED	patient-only	response	723	340	0.524997520087293						7.0	CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+POOLED	joint	survival	792	301	0.5603619588360539		0.8414302127643093	0.7510768513187797	0.9426529411862972	0.0028920314689282	6.0	CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+POOLED	joint	response	723	340	0.4923122706080746						7.0	CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+POOLED	joint (w=0.5)	survival	792	301	0.5464868701206529		0.8710439720088715	0.7768485246371187	0.9766609282387498	0.0180574046193543	6.0	CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+POOLED	joint (w=0.5)	response	723	340	0.481003868663823						7.0	CRC_5FU	all	colorectal	5-FU-based chemotherapy	673	leave-one-cohort-out
+TCGA-COADREAD	organoid-only	survival (PFS)	133	39	0.435064935064935	0.1562680273997804	1.1870277239027711	0.8446756058529667	1.6681372204314198	0.3233328737594526		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+TCGA-COADREAD	organoid-only	response	61	44	0.3850267379679144					0.1690260413743681		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+TCGA-COADREAD	patient-only	survival (PFS)	133	39	0.4601113172541744	0.2267584537941126	1.239098846028939	0.8854552788518508	1.733984749880447	0.2111406058300068		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+TCGA-COADREAD	patient-only	response	61	44	0.4237967914438502					0.3634290713944009		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+TCGA-COADREAD	joint	survival (PFS)	133	39	0.4570191713048855	0.3210993823814037	1.215741647086571	0.8702250665454088	1.6984430916569608	0.2521412001817305		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+TCGA-COADREAD	joint	response	61	44	0.4117647058823529					0.2920555137452529		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+TCGA-COADREAD	joint (w=0.5)	survival (PFS)	133	39	0.4526901669758812	0.4532781455681571	1.2052438750585548	0.8610551368640953	1.687014845131148	0.2765617724829257		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+TCGA-COADREAD	joint (w=0.5)	response	61	44	0.4050802139037433					0.2567725967015002		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE72970	organoid-only	survival (PFS)	40	34	0.510498687664042	0.9872946395255932	0.9629959640762228	0.7036008948670401	1.318021670512994	0.8138329438172622		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE72970	organoid-only	response	40	25	0.408					0.3421807501825611		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE72970	patient-only	survival (PFS)	40	34	0.44750656167979	0.2987300250006026	1.4054038548487393	0.8990821108475643	2.196862746342171	0.1353757083886562		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE72970	patient-only	response	40	25	0.44					0.5388065881449439		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE72970	joint	survival (PFS)	40	34	0.5249343832020997	0.9737628192563916	1.051107608207403	0.7767835205916911	1.4223103023477104	0.7466760176176344		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE72970	joint	response	40	25	0.4266666666666667					0.4506662691249228		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE72970	joint (w=0.5)	survival (PFS)	40	34	0.5091863517060368	0.9737628192563916	0.9916072147002022	0.7284918745812765	1.349754063915492	0.9572753399851768		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE72970	joint (w=0.5)	response	40	25	0.416					0.3864607870204557		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE39582	organoid-only	survival (RFS)	11	6	0.5588235294117647	0.0788595140042893	0.68343747882667	0.2817812039490258	1.6576222293004717	0.3997880872249091		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE39582	patient-only	survival (RFS)	11	6	0.7058823529411765	0.1698221444859753	0.7640801087056618	0.3533863390807294	1.6520684247114756	0.4940060928841945		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE39582	joint	survival (RFS)	11	6	0.5588235294117647	0.0788595140042893	0.6009152297617163	0.2670099812822522	1.352380580027321	0.2184689938179462		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE39582	joint (w=0.5)	survival (RFS)	11	6	0.5294117647058824	0.2478933692042761	0.6021873694933957	0.2547363360736293	1.4235488881042886	0.2479031477882982		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE28702	organoid-only	response	83	42	0.6695702671312428					0.0079296278367408		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE28702	patient-only	response	83	42	0.483739837398374					0.8022188249651111		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE28702	joint	response	83	42	0.624274099883856					0.0518220583112107		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE28702	joint (w=0.5)	response	83	42	0.6393728222996515					0.029152130494443		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE19860	organoid-only	response	40	15	0.5466666666666666					0.6348350135951669		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE19860	patient-only	response	40	15	0.552					0.5955525116108034		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE19860	joint	response	40	15	0.568					0.4849081354502281		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE19860	joint (w=0.5)	response	40	15	0.552					0.5955525116108034		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE104645	organoid-only	response	113	66	0.5045132172791748					0.9373178811394586		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE104645	patient-only	response	113	66	0.498388136686009					0.9790868169082656		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE104645	joint	response	113	66	0.4980657640232108					0.9744408883002602		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE104645	joint (w=0.5)	response	113	66	0.5029013539651838					0.9605089342035216		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE87211	organoid-only	survival (DFS)	80	13	0.4641025641025641	0.4038317087397817	1.0828939690282258	0.6381866162172587	1.837486588340634	0.7678436856048841		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE87211	organoid-only	response	90	13	0.6723276723276723					0.0483640761367927		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE87211	patient-only	survival (DFS)	80	13	0.4397435897435897	0.3359682403593466	1.2135714277673504	0.7021858056658451	2.0973873274136468	0.4880400478453668		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE87211	patient-only	response	90	13	0.7042957042957043					0.0192095071481786		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE87211	joint	survival (DFS)	80	13	0.4564102564102564	0.7908105076091034	1.1394218679217951	0.6688708763998742	1.9410057141166883	0.6310508780390044		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE87211	joint	response	90	13	0.6523476523476524					0.0810540954526629		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE87211	joint (w=0.5)	survival (DFS)	80	13	0.4576923076923077	0.7693024410761706	1.1148168941597068	0.6550330907585936	1.8973342340073065	0.6887010734725196		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+GSE87211	joint (w=0.5)	response	90	13	0.6513486513486514					0.0830734902768416		CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+POOLED	organoid-only	survival	264	92	0.4525987525987526		1.039492576245511	0.8447440094573561	1.2791387733707	0.714409028635629	4.0	CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+POOLED	organoid-only	response	427	205	0.5512767991260412						6.0	CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+POOLED	patient-only	survival	264	92	0.4565488565488566		1.2362521216302562	0.9913157489557544	1.541707886559082	0.0597576967622108	4.0	CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+POOLED	patient-only	response	427	205	0.5152260002731122						6.0	CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+POOLED	joint	survival	264	92	0.4683991683991684		1.0847679164226085	0.8856783508422028	1.328610359935848	0.4315721649661493	4.0	CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+POOLED	joint	response	427	205	0.5399426464563704						6.0	CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+POOLED	joint (w=0.5)	survival	264	92	0.462993762993763		1.0532082703103507	0.8583053789414965	1.2923694618086845	0.6195195337218029	4.0	CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+POOLED	joint (w=0.5)	response	427	205	0.5433565478628977						6.0	CRC_OXALIPLATIN	shortlist	colorectal	oxaliplatin (FOLFOX)	70	leave-one-cohort-out
+TCGA-COADREAD	organoid-only	survival (PFS)	133	39	0.461038961038961	0.353599249824098	1.121050216301098	0.7914919099562696	1.5878287215066735	0.5199781932523224		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+TCGA-COADREAD	organoid-only	response	61	44	0.4010695187165775					0.2370827671304413		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+TCGA-COADREAD	patient-only	survival (PFS)	133	39	0.4888682745825602	0.8186786538621142	1.0914168683613736	0.7753378092981843	1.5363506928960204	0.6160709333086685		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+TCGA-COADREAD	patient-only	response	61	44	0.3917112299465241					0.1953509955457355		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+TCGA-COADREAD	joint	survival (PFS)	133	39	0.453308596165739	0.0886622726218633	1.1328363296746564	0.8043861990898805	1.5954005069738288	0.4752520312569801		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+TCGA-COADREAD	joint	response	61	44	0.3877005347593583					0.1792174623869135		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+TCGA-COADREAD	joint (w=0.5)	survival (PFS)	133	39	0.4412492269635126	0.007444207223463	1.1395837142150995	0.8088522706829615	1.6055478716870693	0.4550170114568629		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+TCGA-COADREAD	joint (w=0.5)	response	61	44	0.3890374331550802					0.1844813878504014		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE72970	organoid-only	survival (PFS)	40	34	0.5013123359580053	0.7116313566687313	0.9958643818867144	0.720520467202215	1.3764298340636492	0.9799768667077116		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE72970	organoid-only	response	40	25	0.376					0.1987532381713156		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE72970	patient-only	survival (PFS)	40	34	0.4763779527559055	0.2503811423097827	1.2458157040006554	0.9055544315419216	1.713929847035151	0.1768736895692405		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE72970	patient-only	response	40	25	0.4586666666666666					0.6751736149271245		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE72970	joint	survival (PFS)	40	34	0.5144356955380578	0.7903039170450809	1.098412589384481	0.8079201511228584	1.493353290967549	0.5491951607568963		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE72970	joint	response	40	25	0.3946666666666666					0.2759108624491458		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE72970	joint (w=0.5)	survival (PFS)	40	34	0.4855643044619422	0.9006410790332683	1.1298885383134116	0.8294306863342249	1.539186010411946	0.4387721408720442		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE72970	joint (w=0.5)	response	40	25	0.3813333333333333					0.2189828400360441		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE39582	organoid-only	survival (RFS)	11	6	0.4117647058823529	0.7392289553746405	0.8186259290262455	0.3430703938944954	1.9533845636361584	0.6519729283535807		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE39582	patient-only	survival (RFS)	11	6	0.5882352941176471	0.7608861741482249	0.7134082136844562	0.3092456746760856	1.645783016643772	0.4284666688492492		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE39582	joint	survival (RFS)	11	6	0.4411764705882353	0.4894389021575134	0.8592267272304672	0.3629014968618961	2.034355259405645	0.7300769092287951		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE39582	joint (w=0.5)	survival (RFS)	11	6	0.3823529411764705	0.4894389021575134	0.9571986241467182	0.3932653936519169	2.329798708094142	0.923213054740573		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE28702	organoid-only	response	83	42	0.6742160278745645					0.0063735544574218		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE28702	patient-only	response	83	42	0.5336817653890824					0.6004707091679399		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE28702	joint	response	83	42	0.6689895470383276					0.0081463455558231		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE28702	joint (w=0.5)	response	83	42	0.7003484320557491					0.0017022780330513		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE19860	organoid-only	response	40	15	0.5973333333333334					0.314540836255765		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE19860	patient-only	response	40	15	0.4746666666666667					0.8014778828537255		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE19860	joint	response	40	15	0.6426666666666667					0.1386939382550268		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE19860	joint (w=0.5)	response	40	15	0.64					0.1462973410590071		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE104645	organoid-only	response	113	66	0.5051579626047711					0.9280552225475406		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE104645	patient-only	response	113	66	0.5135396518375241					0.8089743522018806		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE104645	joint	response	113	66	0.5019342359767892					0.9744408883002602		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE104645	joint (w=0.5)	response	113	66	0.4977433913604126					0.9697958267101624		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE87211	organoid-only	survival (DFS)	80	13	0.4692307692307692	0.4920121153008318	1.0712525852312464	0.6382599828027004	1.7979853543777171	0.7944673667672779		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE87211	organoid-only	response	90	13	0.6263736263736264					0.1481257114103266		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE87211	patient-only	survival (DFS)	80	13	0.4948717948717949	0.5738439280112282	0.9521826293471276	0.5671173716160711	1.5987021470472558	0.852969217188372		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE87211	patient-only	response	90	13	0.6313686313686314					0.1326916460052123		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE87211	joint	survival (DFS)	80	13	0.45	0.2659476452834564	1.0543638769923998	0.6326177500328475	1.7572747287737691	0.8390432915269812		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE87211	joint	response	90	13	0.6423576423576424					0.1031382842983392		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE87211	joint (w=0.5)	survival (DFS)	80	13	0.4628205128205128	0.7890874808019601	1.0669559081797846	0.6414649008490796	1.7746799684486314	0.8028544111106712		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE87211	joint (w=0.5)	response	90	13	0.6323676323676324					0.129759871769385		CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+POOLED	organoid-only	survival	264	92	0.4683991683991684		1.040856013892727	0.8440315251207645	1.2835791192771453	0.7080797014070077	4.0	CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+POOLED	organoid-only	response	427	205	0.5489553461696026						6.0	CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+POOLED	patient-only	survival	264	92	0.4885654885654886		1.1063955468071305	0.9035129407624904	1.3548351670111116	0.3279402473314606	4.0	CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+POOLED	patient-only	response	427	205	0.5171377850607675						6.0	CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+POOLED	joint	survival	264	92	0.4623700623700624		1.0903984553166903	0.8887932840491187	1.3377337708273191	0.4066920076332712	4.0	CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+POOLED	joint	response	427	205	0.5504574627884746						6.0	CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+POOLED	joint (w=0.5)	survival	264	92	0.4513513513513513		1.1144638932525015	0.9080973067472268	1.3677276214070395	0.2996037860063967	4.0	CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+POOLED	joint (w=0.5)	response	427	205	0.5540079202512631						6.0	CRC_OXALIPLATIN	all	colorectal	oxaliplatin (FOLFOX)	673	leave-one-cohort-out
+GSE72970	organoid-only	survival (PFS)	88	83	0.4632159747766684	0.2624978822877211	1.015139101145529	0.7941899274825928	1.2975578750300123	0.9044983929307464		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+GSE72970	organoid-only	response	88	42	0.4860248447204969					0.8247967425974346		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+GSE72970	patient-only	survival (PFS)	88	83	0.4169732002101944	0.0371012041842586	1.1931473897377298	0.9562899849824568	1.4886705037113552	0.1177857852442109		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+GSE72970	patient-only	response	88	42	0.4446169772256729					0.3736291111502483		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+GSE72970	joint	survival (PFS)	88	83	0.4658434051497635	0.1008834067821506	1.0177165487549251	0.7977601479156795	1.2983187695145568	0.8875919498305992		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+GSE72970	joint	response	88	42	0.4958592132505175					0.95004150887414		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+GSE72970	joint (w=0.5)	survival (PFS)	88	83	0.4613767735155018	0.1857151004268354	1.0378578365934843	0.8145200471453309	1.3224338587535305	0.7637466781298218		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+GSE72970	joint (w=0.5)	response	88	42	0.4937888198757764					0.9234646072008794		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+GSE39582	organoid-only	survival (OS)	11	7	0.4102564102564102	0.8329573188768942	1.5039209007440515	0.5851694047705289	3.86516803041291	0.3968062307269479		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+GSE39582	patient-only	survival (OS)	11	7	0.7948717948717948	0.0461913916335705	0.3268654172580942	0.0962383114695739	1.1101711924059074	0.0730584232649072		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+GSE39582	joint	survival (OS)	11	7	0.3846153846153846	0.0632573893541431	1.462524293294721	0.4249448747450946	5.033540667504932	0.5465961333499496		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+GSE39582	joint (w=0.5)	survival (OS)	11	7	0.358974358974359	0.0632573893541431	1.9237729563439965	0.6670002679934035	5.548577062336533	0.2260222270116989		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+TCGA-COADREAD	organoid-only	survival (PFS)	19	10	0.603448275862069	0.8311148237763386	0.5439219548471523	0.2596083765316772	1.13960534292948	0.1065932029705852		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+TCGA-COADREAD	organoid-only	response	15	7	0.5178571428571429					0.9550893550893552		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+TCGA-COADREAD	patient-only	survival (PFS)	19	10	0.5775862068965517	0.9395013655785583	0.6716081398585948	0.3276683406726424	1.37656720999772	0.2769588612479792		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+TCGA-COADREAD	patient-only	response	15	7	0.4821428571428571					0.9550893550893552		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+TCGA-COADREAD	joint	survival (PFS)	19	10	0.75	0.4301582087801235	0.3877439877997131	0.1831081390471201	0.8210743709002193	0.0133231557065975		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+TCGA-COADREAD	joint	response	15	7	0.6071428571428571					0.5358197358197359		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+TCGA-COADREAD	joint (w=0.5)	survival (PFS)	19	10	0.6810344827586207	0.4301582087801235	0.4005300732460977	0.1812263030343148	0.885215539292596	0.0237385310970507		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+TCGA-COADREAD	joint (w=0.5)	response	15	7	0.5892857142857143					0.6125874125874127		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+GSE62080	organoid-only	response	21	9	0.3518518518518518					0.2706629953488259		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+GSE62080	patient-only	response	21	9	0.3055555555555556					0.1451518374020517		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+GSE62080	joint	response	21	9	0.1296296296296296					0.0049983084305151		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+GSE62080	joint (w=0.5)	response	21	9	0.25					0.0596633812504026		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+GSE104645	organoid-only	response	54	38	0.5296052631578947					0.7402599206195855		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+GSE104645	patient-only	response	54	38	0.4901315789473684					0.9170196852326032		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+GSE104645	joint	response	54	38	0.5361842105263158					0.6838003775141008		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+GSE104645	joint (w=0.5)	response	54	38	0.5361842105263158					0.6838003775141008		CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+POOLED	organoid-only	survival	118	100	0.466801312799798		0.9805778725142312	0.7846211412702001	1.22547419829644	0.8630988870889567	3.0	CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+POOLED	organoid-only	response	178	96	0.4911242603550296						4.0	CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+POOLED	patient-only	survival	118	100	0.4253976268619036		1.0739509025183258	0.8742259054371679	1.3193049231859229	0.4967584223741936	3.0	CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+POOLED	patient-only	response	178	96	0.4500739644970414						4.0	CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+POOLED	joint	survival	118	100	0.473365311789952		0.947117283759982	0.7556003720324461	1.187176690747271	0.6373637129388117	3.0	CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+POOLED	joint	response	178	96	0.492603550295858						4.0	CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+POOLED	joint (w=0.5)	survival	118	100	0.466801312799798		0.992589864050042	0.7931455140419428	1.2421864850423652	0.9481820203221424	3.0	CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+POOLED	joint (w=0.5)	response	178	96	0.4955621301775147						4.0	CRC_IRINOTECAN	shortlist	colorectal	irinotecan (FOLFIRI)	53	leave-one-cohort-out
+GSE72970	organoid-only	survival (PFS)	88	83	0.464529689963216	0.3837162153865211	1.0216749082840175	0.7994811070782533	1.3056213698805852	0.863923496913618		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+GSE72970	organoid-only	response	88	42	0.5093167701863354					0.8837680935959169		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+GSE72970	patient-only	survival (PFS)	88	83	0.5656857593273779	0.2079184257726192	0.8221371569397871	0.6624562722353111	1.0203081065869148	0.0754812478002279		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+GSE72970	patient-only	response	88	42	0.5289855072463768					0.6429025204663382		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+GSE72970	joint	survival (PFS)	88	83	0.4947451392538097	0.5502783695706925	0.9811919286476776	0.7759909470573535	1.2406557118922077	0.8739738922364007		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+GSE72970	joint	response	88	42	0.5124223602484472					0.8443613443376363		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+GSE72970	joint (w=0.5)	survival (PFS)	88	83	0.4787178139779295	0.7708861878255902	1.0572226800163418	0.8357087794037407	1.3374513020413692	0.6427421573564969		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+GSE72970	joint (w=0.5)	response	88	42	0.4989648033126294					0.9900020257581432		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+GSE39582	organoid-only	survival (OS)	11	7	0.3076923076923077	0.5418702733891647	3.271172624083329	0.737928167546132	14.500829223168608	0.1187659609296924		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+GSE39582	patient-only	survival (OS)	11	7	0.7948717948717948	0.0461913916335705	0.2750017937376556	0.0774376046744276	0.9766054474035426	0.0458673806668808		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+GSE39582	joint	survival (OS)	11	7	0.6410256410256411	0.5438336631909888	0.7063944323654994	0.2500151426291851	1.9958514865520265	0.5118836785814469		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+GSE39582	joint (w=0.5)	survival (OS)	11	7	0.358974358974359	0.442072114336409	1.5040370976454025	0.7393149599843205	3.0597616895802853	0.2599794182845997		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+TCGA-COADREAD	organoid-only	survival (PFS)	19	10	0.603448275862069	0.64539391943942	0.7753312026748533	0.3926490422124863	1.5309816380907455	0.4635251305372495		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+TCGA-COADREAD	organoid-only	response	15	7	0.5714285714285714					0.6943278943278944		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+TCGA-COADREAD	patient-only	survival (PFS)	19	10	0.6896551724137931	0.220794266018815	0.407310606602585	0.1710211161013917	0.9700669369542004	0.0424949995771273		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+TCGA-COADREAD	patient-only	response	15	7	0.6428571428571429					0.3968919968919969		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+TCGA-COADREAD	joint	survival (PFS)	19	10	0.7327586206896551	0.1448334222108455	0.6005803213540549	0.3005516785716461	1.2001154813439388	0.1488707102481452		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+TCGA-COADREAD	joint	response	15	7	0.5714285714285714					0.6943278943278944		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+TCGA-COADREAD	joint (w=0.5)	survival (PFS)	19	10	0.6724137931034483	0.9306008647046348	0.8994837930107218	0.4956113764254299	1.632470787342163	0.7275717551346496		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+TCGA-COADREAD	joint (w=0.5)	response	15	7	0.5178571428571429					0.9550893550893552		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+GSE62080	organoid-only	response	21	9	0.324074074074074					0.1885980545592216		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+GSE62080	patient-only	response	21	9	0.5185185185185185					0.9151060344205056		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+GSE62080	joint	response	21	9	0.3888888888888889					0.4137744825729498		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+GSE62080	joint (w=0.5)	response	21	9	0.3333333333333333					0.2136207303090525		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+GSE104645	organoid-only	response	54	38	0.506578947368421					0.9471375241840532		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+GSE104645	patient-only	response	54	38	0.4835526315789473					0.8571823086627359		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+GSE104645	joint	response	54	38	0.5032894736842105					0.977331104022832		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+GSE104645	joint (w=0.5)	response	54	38	0.5213815789473685					0.8128179568275147		CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+POOLED	organoid-only	survival	118	100	0.4670537742994193		1.0453519282926027	0.8379459173054044	1.3040944903688658	0.6942559640513544	3.0	CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+POOLED	organoid-only	response	178	96	0.5025887573964497						4.0	CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+POOLED	patient-only	survival	118	100	0.5715728351426408		0.7546919902598247	0.61681878305757	0.9233830353528264	0.0062484014662896	3.0	CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+POOLED	patient-only	response	178	96	0.5207100591715976						4.0	CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+POOLED	joint	survival	118	100	0.5031557687452664		0.9218478421339048	0.7456850213267713	1.139627885423944	0.4520131425058069	3.0	CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+POOLED	joint	response	178	96	0.5066568047337278						4.0	CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+POOLED	joint (w=0.5)	survival	118	100	0.483211310275183		1.069568855433825	0.8676302338397697	1.318508152316517	0.5287055141768786	3.0	CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+POOLED	joint (w=0.5)	response	178	96	0.4977810650887574						4.0	CRC_IRINOTECAN	all	colorectal	irinotecan (FOLFIRI)	673	leave-one-cohort-out
+TCGA-BLCA	organoid-only	survival (PFS)	68	33	0.5006493506493507	0.3486184211730032	0.9854350688701136	0.7018385437178103	1.3836263107109863	0.9324724251157432		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+TCGA-BLCA	organoid-only	response	57	38	0.4058171745152354					0.2531854929234399		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+TCGA-BLCA	patient-only	survival (PFS)	68	33	0.5077922077922078	0.4959761177820129	0.789431079256885	0.5621098577313033	1.108682618397683	0.1723891347843456		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+TCGA-BLCA	patient-only	response	57	38	0.4958448753462603					0.9662434172180566		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+TCGA-BLCA	joint	survival (PFS)	68	33	0.4857142857142857	0.2283276686771779	0.8366963137626604	0.6017829635584323	1.1633109673368969	0.2889813861709699		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+TCGA-BLCA	joint	response	57	38	0.4155124653739612					0.3057646172243978		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+TCGA-BLCA	joint (w=0.5)	survival (PFS)	68	33	0.4714285714285714	0.9049018731573985	0.8523611300840347	0.60985756956748	1.1912937255060898	0.3496708341788317		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+TCGA-BLCA	joint (w=0.5)	response	57	38	0.4030470914127423					0.239394158143543		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+GSE31684	organoid-only	survival (RFS)	35	26	0.5018181818181818	0.4549647958426379	0.8730846075208467	0.5930249376099035	1.2854041770352371	0.4916138883314933		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+GSE31684	patient-only	survival (RFS)	35	26	0.5418181818181819	0.8780554195641828	0.9136093726128988	0.6248897949813786	1.3357268632479544	0.6410449164024727		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+GSE31684	joint	survival (RFS)	35	26	0.5509090909090909	0.7723024730238617	0.8616229820540234	0.5941178397062156	1.2495739289208574	0.4322935476129975		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+GSE31684	joint (w=0.5)	survival (RFS)	35	26	0.5472727272727272	0.7723024730238617	0.8440658455252399	0.5784719497482654	1.231601898574814	0.3791906576173253		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+GSE48276	organoid-only	survival (OS)	16	8	0.7714285714285715	0.0467658204873565	0.3719948792790993	0.1538260581439378	0.8995887425028259	0.0281730299801125		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+GSE48276	patient-only	survival (OS)	16	8	0.7285714285714285	0.1172663798822707	0.2695169456498157	0.077312276517313	0.9395582081474356	0.0396042106447744		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+GSE48276	joint	survival (OS)	16	8	0.7857142857142857	0.027671191971211	0.2253063114194483	0.0622617487308632	0.815314940556338	0.0231369514664297		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+GSE48276	joint (w=0.5)	survival (OS)	16	8	0.7857142857142857	0.027671191971211	0.2900027922828818	0.1005111896523306	0.8367388727839833	0.022038738637196		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+GSE70691	organoid-only	survival (OS)	38	32	0.4969604863221885	0.3382649598291507	1.053915963421264	0.7728881303443028	1.437127592397316	0.7399853320433658		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+GSE70691	patient-only	survival (OS)	38	32	0.6793313069908815	0.0230909364010563	0.5088691540564688	0.3415848501833354	0.7580775781219917	0.0008939543243232		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+GSE70691	joint	survival (OS)	38	32	0.5805471124620061	0.1415740188381875	0.8492339154829495	0.6230107748129872	1.1576015574096414	0.3011341461095572		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+GSE70691	joint (w=0.5)	survival (OS)	38	32	0.5319148936170213	0.1415740188381875	0.9350288429419068	0.6894466500109909	1.2680878747026232	0.665637777597959		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+GSE169455	organoid-only	response	149	48	0.510519801980198					0.8374610054877328		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+GSE169455	patient-only	response	149	48	0.5901402640264026					0.0762021911252212		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+GSE169455	joint	response	149	48	0.5497112211221122					0.3285867437013215		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+GSE169455	joint (w=0.5)	response	149	48	0.5360973597359736					0.4784127283846539		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+GSE52219	organoid-only	response	23	6	0.6274509803921569					0.3916906891735267		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+GSE52219	patient-only	response	23	6	0.6862745098039216					0.2010956244365855		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+GSE52219	joint	response	23	6	0.7254901960784313					0.1171307715930141		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+GSE52219	joint (w=0.5)	response	23	6	0.696078431372549					0.1770037742577788		BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+POOLED	organoid-only	survival	157	99	0.5067423704755145		0.9307551714395274	0.7723660102604274	1.121625210914346	0.4508549669261477	4.0	BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+POOLED	organoid-only	response	229	92	0.4992947813822285						3.0	BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+POOLED	patient-only	survival	157	99	0.559971611071682		0.690149427819614	0.5598504664321837	0.8507740214188726	0.0005130702280598	4.0	BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+POOLED	patient-only	response	229	92	0.5798660084626234						3.0	BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+POOLED	joint	survival	157	99	0.5280340667139816		0.8058349124525475	0.6683097187450661	0.9716601269045944	0.0237515976736308	4.0	BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+POOLED	joint	response	229	92	0.5357898448519041						3.0	BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+POOLED	joint (w=0.5)	survival	157	99	0.5081618168914124		0.8390173188511167	0.6964684557690617	1.0107422030403277	0.0646699953096678	4.0	BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+POOLED	joint (w=0.5)	response	229	92	0.5220380818053597						3.0	BLCA_CISPLATIN	shortlist	bladder	cisplatin-based chemotherapy	70	leave-one-cohort-out
+TCGA-BLCA	organoid-only	survival (PFS)	68	33	0.4441558441558441	0.8298984828113463	1.0965501290261097	0.7771276891332134	1.5472646288132206	0.5998185128094149		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+TCGA-BLCA	organoid-only	response	57	38	0.3240997229916897					0.0322414951426773		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+TCGA-BLCA	patient-only	survival (PFS)	68	33	0.4993506493506494	0.3664670322174475	0.8072056313688832	0.5728173564829391	1.1375020745081843	0.2210176911982684		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+TCGA-BLCA	patient-only	response	57	38	0.4584487534626039					0.6175125982793034		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+TCGA-BLCA	joint	survival (PFS)	68	33	0.4571428571428571	0.7756638439052808	0.8942174708062386	0.6328568259330554	1.2635162525365442	0.5261497887214535		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+TCGA-BLCA	joint	response	57	38	0.371191135734072					0.117384072308325		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+TCGA-BLCA	joint (w=0.5)	survival (PFS)	68	33	0.4649350649350649	0.4687818738843298	0.8524239410841425	0.6020568960793321	1.2069068223706143	0.3681249907794293		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+TCGA-BLCA	joint (w=0.5)	response	57	38	0.389196675900277					0.1783723913964761		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+GSE31684	organoid-only	survival (RFS)	35	26	0.5490909090909091	0.0511449346968113	0.7864057856476981	0.5239474491403346	1.180336044606892	0.2461502532528051		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+GSE31684	patient-only	survival (RFS)	35	26	0.5418181818181819	0.6546548514753238	0.8545145387896838	0.5719681973721108	1.2766358345757745	0.4427225868178557		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+GSE31684	joint	survival (RFS)	35	26	0.5490909090909091	0.272522620802092	0.8105930053945153	0.5417635936727044	1.2128187055541848	0.307041895416311		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+GSE31684	joint (w=0.5)	survival (RFS)	35	26	0.5581818181818182	0.3518607585126824	0.7877149058949364	0.5268703220692457	1.177699230679989	0.2448739672695826		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+GSE48276	organoid-only	survival (OS)	16	8	0.7285714285714285	0.0467658204873565	0.503745135422606	0.2227609718129763	1.139154491007467	0.0995485262410409		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+GSE48276	patient-only	survival (OS)	16	8	0.6142857142857143	0.18120017683409	0.5163681413603234	0.219458871549689	1.2149705114634393	0.1300343276867809		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+GSE48276	joint	survival (OS)	16	8	0.6857142857142857	0.0359960009236626	0.403020447201088	0.141544847094978	1.147519561437484	0.0887083819108393		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+GSE48276	joint (w=0.5)	survival (OS)	16	8	0.6571428571428571	0.0359960009236626	0.4749527207019799	0.1916408539356835	1.177098109664653	0.1078616824913337		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+GSE70691	organoid-only	survival (OS)	38	32	0.541033434650456	0.3866833907011286	0.9587683640600886	0.7009690379810791	1.3113799984233698	0.7921581899936185		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+GSE70691	patient-only	survival (OS)	38	32	0.682370820668693	0.1054007204284108	0.5913500582754553	0.4067085683683358	0.8598168777838067	0.0059437857280961		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+GSE70691	joint	survival (OS)	38	32	0.6428571428571429	0.0944552107006451	0.7210921457370046	0.511606305244657	1.016355500925539	0.0618522817604855		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+GSE70691	joint (w=0.5)	survival (OS)	38	32	0.6671732522796353	0.0788392378089657	0.6799792682537431	0.4792470750373525	0.964787954561556	0.0307083809780848		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+GSE169455	organoid-only	response	149	48	0.5276402640264026					0.5876072549211214		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+GSE169455	patient-only	response	149	48	0.5932343234323433					0.0666401344135922		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+GSE169455	joint	response	149	48	0.5724009900990099					0.1545017921004665		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+GSE169455	joint (w=0.5)	response	149	48	0.5563118811881188					0.2683131330901114		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+GSE52219	organoid-only	response	23	6	0.6470588235294118					0.3192566396227723		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+GSE52219	patient-only	response	23	6	0.8137254901960784					0.024329598700308		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+GSE52219	joint	response	23	6	0.803921568627451					0.0298374394484234		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+GSE52219	joint (w=0.5)	response	23	6	0.7745098039215687					0.0523839242374711		BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+POOLED	organoid-only	survival	157	99	0.4943222143364088		0.9155498155632166	0.7590281387228722	1.10434833969164	0.3563345223349412	4.0	BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+POOLED	organoid-only	response	229	92	0.5038787023977433						3.0	BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+POOLED	patient-only	survival	157	99	0.5532292405961675		0.720907357872897	0.5855156714239736	0.8876063340394511	0.0020465730489146	4.0	BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+POOLED	patient-only	response	229	92	0.5800423131170663						3.0	BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+POOLED	joint	survival	157	99	0.5241305890702626		0.7730916819681489	0.6323822439799264	0.9451099464255566	0.0120471251269445	4.0	BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+POOLED	joint	response	229	92	0.5509520451339915						3.0	BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+POOLED	joint (w=0.5)	survival	157	99	0.5351312987934705		0.7445590453926569	0.6077364479699849	0.91218516501318	0.0044104718028674	4.0	BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+POOLED	joint (w=0.5)	response	229	92	0.5389633286318759						3.0	BLCA_CISPLATIN	all	bladder	cisplatin-based chemotherapy	673	leave-one-cohort-out
+TCGA-BLCA	organoid-only	survival (PFS)	64	30	0.4234303215926493	0.2288244139622105	1.1061468651436748	0.7688122932170532	1.5914949566522338	0.5867674474515046		BLCA_GEMCITABINE	shortlist	bladder	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-BLCA	organoid-only	response	54	36	0.3564814814814814					0.089636340957863		BLCA_GEMCITABINE	shortlist	bladder	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-BLCA	patient-only	survival (PFS)	64	30	0.6316998468606432	0.0191536520100927	0.6468334798141306	0.4644040586693471	0.90092569777981	0.0099610910871607		BLCA_GEMCITABINE	shortlist	bladder	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-BLCA	patient-only	response	54	36	0.720679012345679					0.0089282607283997		BLCA_GEMCITABINE	shortlist	bladder	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-BLCA	joint	survival (PFS)	64	30	0.5941807044410413	0.0351100018056815	0.6542472249465408	0.466998895082353	0.9165748267450756	0.0136476953143912		BLCA_GEMCITABINE	shortlist	bladder	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-BLCA	joint	response	54	36	0.6419753086419753					0.0931579409742947		BLCA_GEMCITABINE	shortlist	bladder	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-BLCA	joint (w=0.5)	survival (PFS)	64	30	0.5681470137825421	0.0344376291397654	0.6644136123769478	0.4719471927808311	0.9353704292861196	0.0191365309497308		BLCA_GEMCITABINE	shortlist	bladder	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-BLCA	joint (w=0.5)	response	54	36	0.566358024691358					0.4354795641227131		BLCA_GEMCITABINE	shortlist	bladder	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	organoid-only	survival	64	30	0.4234303215926493		1.1061468651436746	0.7688122932170532	1.5914949566522336	0.5867674474515048	1.0	BLCA_GEMCITABINE	shortlist	bladder	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	organoid-only	response	54	36	0.3564814814814814						1.0	BLCA_GEMCITABINE	shortlist	bladder	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	patient-only	survival	64	30	0.6316998468606432		0.6468334798141306	0.4644040586693471	0.90092569777981	0.0099610910871607	1.0	BLCA_GEMCITABINE	shortlist	bladder	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	patient-only	response	54	36	0.720679012345679						1.0	BLCA_GEMCITABINE	shortlist	bladder	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint	survival	64	30	0.5941807044410413		0.6542472249465408	0.466998895082353	0.9165748267450756	0.0136476953143912	1.0	BLCA_GEMCITABINE	shortlist	bladder	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint	response	54	36	0.6419753086419753						1.0	BLCA_GEMCITABINE	shortlist	bladder	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint (w=0.5)	survival	64	30	0.5681470137825421		0.6644136123769478	0.4719471927808311	0.9353704292861196	0.0191365309497308	1.0	BLCA_GEMCITABINE	shortlist	bladder	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint (w=0.5)	response	54	36	0.566358024691358						1.0	BLCA_GEMCITABINE	shortlist	bladder	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-BLCA	organoid-only	survival (PFS)	64	30	0.4226646248085758	0.3991995545571604	1.0584048704442597	0.7340262131895088	1.526131968656158	0.7611291035675816		BLCA_GEMCITABINE	all	bladder	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-BLCA	organoid-only	response	54	36	0.3564814814814814					0.089636340957863		BLCA_GEMCITABINE	all	bladder	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-BLCA	patient-only	survival (PFS)	64	30	0.7243491577335375	0.0008251070634809	0.4276591660422832	0.2872674384742332	0.6366623494517145	2.863838729075914e-05		BLCA_GEMCITABINE	all	bladder	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-BLCA	patient-only	response	54	36	0.7685185185185185					0.0014544570169082		BLCA_GEMCITABINE	all	bladder	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-BLCA	joint	survival (PFS)	64	30	0.6891271056661562	0.0299262159761341	0.441154572395787	0.2925216734722022	0.665309186959112	9.461432934156244e-05		BLCA_GEMCITABINE	all	bladder	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-BLCA	joint	response	54	36	0.6851851851851852					0.0283251919855945		BLCA_GEMCITABINE	all	bladder	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-BLCA	joint (w=0.5)	survival (PFS)	64	30	0.6730474732006125	0.0080679794392135	0.4389671191281022	0.2892628623188581	0.6661488797107264	0.0001092695224373		BLCA_GEMCITABINE	all	bladder	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-BLCA	joint (w=0.5)	response	54	36	0.691358024691358					0.0234421752836021		BLCA_GEMCITABINE	all	bladder	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	organoid-only	survival	64	30	0.4226646248085758		1.0584048704442597	0.7340262131895088	1.5261319686561583	0.7611291035675812	1.0	BLCA_GEMCITABINE	all	bladder	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	organoid-only	response	54	36	0.3564814814814814						1.0	BLCA_GEMCITABINE	all	bladder	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	patient-only	survival	64	30	0.7243491577335375		0.4276591660422833	0.2872674384742333	0.6366623494517146	2.863838729075914e-05	1.0	BLCA_GEMCITABINE	all	bladder	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	patient-only	response	54	36	0.7685185185185185						1.0	BLCA_GEMCITABINE	all	bladder	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint	survival	64	30	0.6891271056661562		0.441154572395787	0.2925216734722022	0.665309186959112	9.461432934156244e-05	1.0	BLCA_GEMCITABINE	all	bladder	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint	response	54	36	0.6851851851851852						1.0	BLCA_GEMCITABINE	all	bladder	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint (w=0.5)	survival	64	30	0.6730474732006125		0.4389671191281021	0.2892628623188581	0.6661488797107263	0.0001092695224373	1.0	BLCA_GEMCITABINE	all	bladder	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint (w=0.5)	response	54	36	0.691358024691358						1.0	BLCA_GEMCITABINE	all	bladder	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-PAAD	organoid-only	survival (PFS)	92	57	0.3709281961471103	0.0313549693368778	1.3944222487633484	1.038993558027974	1.871439329745952	0.0267724612515124		PAAD_GEMCITABINE	shortlist	pancreas	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-PAAD	organoid-only	response	59	29	0.432183908045977					0.3750925159360059		PAAD_GEMCITABINE	shortlist	pancreas	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-PAAD	patient-only	survival (PFS)	92	57	0.5768826619964974	0.3077730947730665	0.9199363172792944	0.6963242018873671	1.215357480833733	0.5569853902200763		PAAD_GEMCITABINE	shortlist	pancreas	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-PAAD	patient-only	response	59	29	0.5195402298850574					0.8024540636184877		PAAD_GEMCITABINE	shortlist	pancreas	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-PAAD	joint	survival (PFS)	92	57	0.5211908931698774	0.9016040605758396	1.136811526643868	0.8530563391989593	1.5149532190615933	0.3814539853049754		PAAD_GEMCITABINE	shortlist	pancreas	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-PAAD	joint	response	59	29	0.4908045977011494					0.909463954016306		PAAD_GEMCITABINE	shortlist	pancreas	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-PAAD	joint (w=0.5)	survival (PFS)	92	57	0.3397548161120841	0.151465214915824	1.816152991361495	1.3624617359886888	2.4209206034236037	4.7193992510197625e-05		PAAD_GEMCITABINE	shortlist	pancreas	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-PAAD	joint (w=0.5)	response	59	29	0.4022988505747126					0.200128449923806		PAAD_GEMCITABINE	shortlist	pancreas	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	organoid-only	survival	92	57	0.3709281961471103		1.3944222487633484	1.038993558027974	1.871439329745952	0.0267724612515124	1.0	PAAD_GEMCITABINE	shortlist	pancreas	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	organoid-only	response	59	29	0.432183908045977						1.0	PAAD_GEMCITABINE	shortlist	pancreas	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	patient-only	survival	92	57	0.5768826619964974		0.9199363172792944	0.6963242018873672	1.215357480833733	0.5569853902200768	1.0	PAAD_GEMCITABINE	shortlist	pancreas	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	patient-only	response	59	29	0.5195402298850574						1.0	PAAD_GEMCITABINE	shortlist	pancreas	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint	survival	92	57	0.5211908931698774		1.136811526643868	0.8530563391989593	1.5149532190615933	0.3814539853049754	1.0	PAAD_GEMCITABINE	shortlist	pancreas	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint	response	59	29	0.4908045977011494						1.0	PAAD_GEMCITABINE	shortlist	pancreas	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint (w=0.5)	survival	92	57	0.3397548161120841		1.816152991361495	1.3624617359886888	2.420920603423604	4.7193992510197896e-05	1.0	PAAD_GEMCITABINE	shortlist	pancreas	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint (w=0.5)	response	59	29	0.4022988505747126						1.0	PAAD_GEMCITABINE	shortlist	pancreas	gemcitabine	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-PAAD	organoid-only	survival (PFS)	92	57	0.3751313485113835	0.0423839196537054	1.4283314254991777	1.0602892223249372	1.924126566706996	0.019022768985597		PAAD_GEMCITABINE	all	pancreas	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-PAAD	organoid-only	response	59	29	0.4528735632183908					0.5391760657144591		PAAD_GEMCITABINE	all	pancreas	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-PAAD	patient-only	survival (PFS)	92	57	0.5761821366024519	0.0967882024415095	0.880434014899058	0.6719558224443387	1.1535937761079305	0.3556761480371577		PAAD_GEMCITABINE	all	pancreas	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-PAAD	patient-only	response	59	29	0.5080459770114942					0.9214933907823586		PAAD_GEMCITABINE	all	pancreas	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-PAAD	joint	survival (PFS)	92	57	0.4665499124343257	0.1572643448383323	1.2282967688460835	0.9269615912503816	1.6275894994987024	0.1521799763099456		PAAD_GEMCITABINE	all	pancreas	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-PAAD	joint	response	59	29	0.4436781609195402					0.4621232578916692		PAAD_GEMCITABINE	all	pancreas	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-PAAD	joint (w=0.5)	survival (PFS)	92	57	0.497723292469352	0.9845600637325684	1.1124528655869548	0.8378394281003808	1.4770746477741048	0.4612610286465196		PAAD_GEMCITABINE	all	pancreas	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-PAAD	joint (w=0.5)	response	59	29	0.4735632183908046					0.7329950885751295		PAAD_GEMCITABINE	all	pancreas	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	organoid-only	survival	92	57	0.3751313485113835		1.4283314254991777	1.0602892223249372	1.924126566706996	0.019022768985597	1.0	PAAD_GEMCITABINE	all	pancreas	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	organoid-only	response	59	29	0.4528735632183908						1.0	PAAD_GEMCITABINE	all	pancreas	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	patient-only	survival	92	57	0.5761821366024519		0.880434014899058	0.6719558224443387	1.1535937761079305	0.3556761480371578	1.0	PAAD_GEMCITABINE	all	pancreas	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	patient-only	response	59	29	0.5080459770114942						1.0	PAAD_GEMCITABINE	all	pancreas	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint	survival	92	57	0.4665499124343257		1.2282967688460835	0.9269615912503816	1.6275894994987026	0.1521799763099457	1.0	PAAD_GEMCITABINE	all	pancreas	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint	response	59	29	0.4436781609195402						1.0	PAAD_GEMCITABINE	all	pancreas	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint (w=0.5)	survival	92	57	0.497723292469352		1.1124528655869548	0.8378394281003808	1.4770746477741048	0.4612610286465196	1.0	PAAD_GEMCITABINE	all	pancreas	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint (w=0.5)	response	59	29	0.4735632183908046						1.0	PAAD_GEMCITABINE	all	pancreas	gemcitabine	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+GSE109211	organoid-only	response	67	21	0.9648033126293996					1.345078660694184e-09		LIHC_SORAFENIB	shortlist	liver	sorafenib	22	5-fold cross-fitting by patient within the single cohort (5 repeats)
+GSE109211	patient-only	response	67	21	0.9472049689440992					5.471893585425317e-09		LIHC_SORAFENIB	shortlist	liver	sorafenib	22	5-fold cross-fitting by patient within the single cohort (5 repeats)
+GSE109211	joint	response	67	21	0.9472049689440992					5.471893585425317e-09		LIHC_SORAFENIB	shortlist	liver	sorafenib	22	5-fold cross-fitting by patient within the single cohort (5 repeats)
+GSE109211	joint (w=0.5)	response	67	21	0.9099378881987578					9.013252469425996e-08		LIHC_SORAFENIB	shortlist	liver	sorafenib	22	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	organoid-only	response	67	21	0.9648033126293996						1.0	LIHC_SORAFENIB	shortlist	liver	sorafenib	22	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	patient-only	response	67	21	0.9472049689440992						1.0	LIHC_SORAFENIB	shortlist	liver	sorafenib	22	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint	response	67	21	0.9472049689440992						1.0	LIHC_SORAFENIB	shortlist	liver	sorafenib	22	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint (w=0.5)	response	67	21	0.9099378881987578						1.0	LIHC_SORAFENIB	shortlist	liver	sorafenib	22	5-fold cross-fitting by patient within the single cohort (5 repeats)
+GSE109211	organoid-only	response	67	21	0.8219461697722568					2.7081748006318503e-05		LIHC_SORAFENIB	all	liver	sorafenib	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+GSE109211	patient-only	response	67	21	0.9368530020703932					1.2194365337013334e-08		LIHC_SORAFENIB	all	liver	sorafenib	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+GSE109211	joint	response	67	21	0.9047619047619048					1.306079099599036e-07		LIHC_SORAFENIB	all	liver	sorafenib	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+GSE109211	joint (w=0.5)	response	67	21	0.7587991718426501					0.0007456012325299		LIHC_SORAFENIB	all	liver	sorafenib	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	organoid-only	response	67	21	0.8219461697722568						1.0	LIHC_SORAFENIB	all	liver	sorafenib	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	patient-only	response	67	21	0.9368530020703932						1.0	LIHC_SORAFENIB	all	liver	sorafenib	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint	response	67	21	0.9047619047619048						1.0	LIHC_SORAFENIB	all	liver	sorafenib	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint (w=0.5)	response	67	21	0.7587991718426501						1.0	LIHC_SORAFENIB	all	liver	sorafenib	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-OV	organoid-only	survival (PFS)	332	252	0.5086851628468034	0.8723245995797559	1.0003260254623658	0.8789586056696296	1.1384519711880998	0.9960587800838704		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+TCGA-OV	patient-only	survival (PFS)	332	252	0.5434740651387213	0.1766812073167111	0.8304876988357779	0.7238699036512484	0.9528090813537116	0.0080594405012451		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+TCGA-OV	joint	survival (PFS)	332	252	0.5524487334137516	0.239656853837629	0.8663884745726915	0.7616302036691335	0.98555570046495	0.0291624657594378		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+TCGA-OV	joint (w=0.5)	survival (PFS)	332	252	0.5479855247285886	0.116255580313423	0.8809617990992429	0.7744866633478505	1.0020749590669225	0.053797856116646		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE9891	organoid-only	survival (RFS)	191	138	0.4885285608558165	0.4863223294480929	1.0546285047284112	0.8924265608407896	1.2463112728713484	0.5324630563627157		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE9891	organoid-only	response	183	120	0.490079365079365					0.8267941630831213		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE9891	patient-only	survival (RFS)	191	138	0.600753549081612	0.0014549997775069	0.7699860374797082	0.6573294000805198	0.9019503734977892	0.0012010279452766		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE9891	patient-only	response	183	120	0.6355820105820106					0.0026204582927524		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE9891	joint	survival (RFS)	191	138	0.5566171028729059	0.0592152885294411	0.8476852417212356	0.7165276846235078	1.0028506706053584	0.0540035912640717		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE9891	joint	response	183	120	0.5830687830687831					0.0653233049600015		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE9891	joint (w=0.5)	survival (RFS)	191	138	0.5235147682163762	0.4652539424846464	0.9476596103903504	0.7967882728638194	1.1270983368484886	0.5434233965059118		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE9891	joint (w=0.5)	response	183	120	0.5378306878306879					0.4017240864516248		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE63885	organoid-only	survival (OS)	41	36	0.428388746803069	0.1629977375865975	1.174216338839124	0.8686515407520264	1.5872694005735464	0.2963296292305009		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE63885	organoid-only	response	41	38	0.4210526315789473					0.6874296435272045		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE63885	patient-only	survival (OS)	41	36	0.5319693094629157	0.5636437018519511	1.0429056565186108	0.7411435286263345	1.467532490520984	0.8095046783708122		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE63885	patient-only	response	41	38	0.5350877192982456					0.8690431519699813		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE63885	joint	survival (OS)	41	36	0.4884910485933504	0.7828165622780083	1.180211044229207	0.8063541869255523	1.7274023394501163	0.3939077237443734		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE63885	joint	response	41	38	0.4649122807017544					0.8690431519699813		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE63885	joint (w=0.5)	survival (OS)	41	36	0.4833759590792839	0.8639755720100651	1.141664776419593	0.7700624843244314	1.692587924031462	0.5096016736513506		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE63885	joint (w=0.5)	response	41	38	0.4473684210526316					0.7953095684803002		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE51373	organoid-only	response	28	16	0.5989583333333334					0.3904282775842992		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE51373	patient-only	response	28	16	0.5520833333333334					0.659193864409487		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE51373	joint	response	28	16	0.6927083333333334					0.0901760151412739		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE51373	joint (w=0.5)	response	28	16	0.6927083333333334					0.0901760151412739		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE15622	organoid-only	response	20	13	0.4945054945054945					1.0		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE15622	patient-only	response	20	13	0.5604395604395604					0.6991744066047472		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE15622	joint	response	20	13	0.5604395604395604					0.6991744066047472		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+GSE15622	joint (w=0.5)	response	20	13	0.5384615384615384					0.816795665634675		OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+POOLED	organoid-only	survival	564	426	0.5023382082494089		1.0350374945980334	0.9393057598949848	1.1405259724411214	0.4867535335636338	3.0	OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+POOLED	organoid-only	response	272	187	0.4917682543672238						4.0	OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+POOLED	patient-only	survival	564	426	0.5582275155442683		0.8218089026887888	0.7440508005757261	0.907693227419376	0.000108959416863	3.0	OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+POOLED	patient-only	response	272	187	0.6312680658539651						4.0	OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+POOLED	joint	survival	564	426	0.5526578509501707		0.8780508159705293	0.7954411078101847	0.969239869371308	0.0098870304039883	3.0	OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+POOLED	joint	response	272	187	0.5837627246449667						4.0	OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+POOLED	joint (w=0.5)	survival	564	426	0.5407303616779052		0.9178929264265144	0.8308582305002752	1.0140447472928436	0.0918729235852861	3.0	OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+POOLED	joint (w=0.5)	response	272	187	0.5402789996229734						4.0	OV_PACLITAXEL	shortlist	ovarian	paclitaxel (with platinum)	86	leave-one-cohort-out
+TCGA-OV	organoid-only	survival (PFS)	332	252	0.5218817852834741	0.6481607615912615	0.9233627889808956	0.8156536410719888	1.0452952051486375	0.2076810521535729		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+TCGA-OV	patient-only	survival (PFS)	332	252	0.5636429433051869	0.0019645330819302	0.8018734854034267	0.7021750483345152	0.9157276210799148	0.0011155245762195		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+TCGA-OV	joint	survival (PFS)	332	252	0.5649215922798553	7.59891978546721e-05	0.8143687151516971	0.7147038100958946	0.9279318157389456	0.0020492461485446		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+TCGA-OV	joint (w=0.5)	survival (PFS)	332	252	0.5609891435464415	0.0058956953877866	0.825093729150434	0.7244853085427979	0.9396735225075354	0.0037570399632147		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE9891	organoid-only	survival (RFS)	191	138	0.5395276862006324	0.7103098051396436	0.945606673733757	0.8016964965211943	1.1153497430634969	0.5067063487386108		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE9891	organoid-only	response	183	120	0.5654761904761905					0.1463896082868032		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE9891	patient-only	survival (RFS)	191	138	0.610374756105766	0.0005500667842339	0.7533241709995149	0.6342083029015995	0.8948121682036009	0.0012569751794984		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE9891	patient-only	response	183	120	0.6728835978835979					0.0001243744542218		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE9891	joint	survival (RFS)	191	138	0.5481396757047702	0.2158313624685053	0.9154770938880537	0.7779919391770541	1.0772583457872855	0.2874856649119607		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE9891	joint	response	183	120	0.5783068783068783					0.0823337071575883		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE9891	joint (w=0.5)	survival (RFS)	191	138	0.5698042118011168	0.0403657888000028	0.8529220602375877	0.7222103777968357	1.0072910376324953	0.0608743900342567		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE9891	joint (w=0.5)	response	183	120	0.6112433862433863					0.0135625928723323		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE63885	organoid-only	survival (OS)	41	36	0.459079283887468	0.0390809131105987	1.133771204429857	0.8544317391987845	1.5044351526544473	0.3843358833018993		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE63885	organoid-only	response	41	38	0.4210526315789473					0.6874296435272045		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE63885	patient-only	survival (OS)	41	36	0.4948849104859335	0.0991477600491397	1.026719855383603	0.7193604815505331	1.4654039087145423	0.8844933776689254		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE63885	patient-only	response	41	38	0.4385964912280701					0.7589118198874296		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE63885	joint	survival (OS)	41	36	0.4782608695652174	0.3363675830892082	1.0902420493497662	0.779978418885683	1.5239238642891075	0.6130877443652636		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE63885	joint	response	41	38	0.3859649122807017					0.551219512195122		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE63885	joint (w=0.5)	survival (OS)	41	36	0.4629156010230179	0.2054005343821447	1.1358727425027304	0.8235779183339959	1.566587518240673	0.4373381384946918		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE63885	joint (w=0.5)	response	41	38	0.3684210526315789					0.4876172607879926		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE51373	organoid-only	response	28	16	0.6770833333333334					0.119898811633492		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE51373	patient-only	response	28	16	0.6614583333333334					0.1567968924025301		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE51373	joint	response	28	16	0.7291666666666666					0.043441839630424		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE51373	joint (w=0.5)	response	28	16	0.7864583333333334					0.0114030352512231		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE15622	organoid-only	response	20	13	0.3516483516483517					0.3113777089783281		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE15622	patient-only	response	20	13	0.5274725274725275					0.877296181630547		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE15622	joint	response	20	13	0.5164835164835165					0.938467492260062		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+GSE15622	joint (w=0.5)	response	20	13	0.5054945054945055					1.0		OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+POOLED	organoid-only	survival	564	426	0.5256152027322883		0.951290777401374	0.8664354652847488	1.0444564880218783	0.2948521911786441	3.0	OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+POOLED	organoid-only	response	272	187	0.5636546437099409						4.0	OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+POOLED	patient-only	survival	564	426	0.5748664506524214		0.7999550143851172	0.7230573183633832	0.8850308388944176	1.5010753828707586e-05	3.0	OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+POOLED	patient-only	response	272	187	0.6675882870428553						4.0	OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+POOLED	joint	survival	564	426	0.5593659689990367		0.8691126749560348	0.7880705054425412	0.9584889125435084	0.0049704908888121	3.0	OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+POOLED	joint	response	272	187	0.5784843533995224						4.0	OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+POOLED	joint (w=0.5)	survival	564	426	0.5619406252736667		0.8575785705289042	0.7773038226547848	0.9461435582789122	0.0021836390305806	3.0	OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+POOLED	joint (w=0.5)	response	272	187	0.6107829584014076						4.0	OV_PACLITAXEL	all	ovarian	paclitaxel (with platinum)	673	leave-one-cohort-out
+TCGA-OV	organoid-only	survival (PFS)	370	278	0.5059942205560762	0.587385846883735	0.9862631230377492	0.8766440006286935	1.1095894652408305	0.818013864832791		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+TCGA-OV	patient-only	survival (PFS)	370	278	0.5402218056857232	0.3139256424150621	0.8601560273669675	0.7539809050558108	0.9812826643944744	0.0250197744508066		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+TCGA-OV	joint	survival (PFS)	370	278	0.5422719462667916	0.017982424632286	0.8560531768262948	0.7527452087745095	0.9735392972443554	0.0178505966283863		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+TCGA-OV	joint (w=0.5)	survival (PFS)	370	278	0.5302054045610747	0.0071198218991555	0.9140304212539856	0.8084927673754009	1.0333445699085886	0.1509993130614343		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE9891	organoid-only	survival (RFS)	238	179	0.5504984093319194	0.0415804469890937	0.8873322494549579	0.7638844587597786	1.030729859593071	0.1178201615956894		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE9891	organoid-only	response	229	146	0.5882158772074599					0.0266160929724278		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE9891	patient-only	survival (RFS)	238	179	0.5748886532343584	0.0058506426378769	0.786947918954332	0.6740545349195255	0.9187491442669248	0.0024244949879522		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE9891	patient-only	response	229	146	0.6080211255982836					0.0066256851271896		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE9891	joint	survival (RFS)	238	179	0.5690774125132556	0.1248756840156728	0.8334845367070357	0.7138222659918713	0.9732065053538872	0.0212523284268557		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE9891	joint	response	229	146	0.6199042746327776					0.0025792145333243		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE9891	joint (w=0.5)	survival (RFS)	238	179	0.5586426299045599	0.0597785762446676	0.8625346391187533	0.7406457729235557	1.0044828862562143	0.0571114198908307		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE9891	joint (w=0.5)	response	229	146	0.6028222478956924					0.0097556616726668		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE63885	organoid-only	survival (OS)	75	66	0.524952380952381	0.183231509856746	0.9364067088281588	0.7346311239438427	1.1936024703541064	0.595650892507158		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE63885	organoid-only	response	75	65	0.48					0.8455325923200008		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE63885	patient-only	survival (OS)	75	66	0.5302857142857142	0.7197046109569427	0.920576358184282	0.7227900994000654	1.17248538953598	0.5024885913635271		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE63885	patient-only	response	75	65	0.6538461538461539					0.1209543826489961		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE63885	joint	survival (OS)	75	66	0.5382857142857143	0.1184849614684244	0.889834879919875	0.6937801919661585	1.141292476624414	0.3579935371635917		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE63885	joint	response	75	65	0.5846153846153846					0.3956463570585595		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE63885	joint (w=0.5)	survival (OS)	75	66	0.5455238095238095	0.2100118621512307	0.9212191740443504	0.7214201112586148	1.176353075528182	0.5106252042518153		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE63885	joint (w=0.5)	response	75	65	0.5015384615384615					0.9937822562631824		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE51373	organoid-only	response	28	16	0.5572916666666666					0.6259392816271419		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE51373	patient-only	response	28	16	0.6302083333333334					0.2553778154001015		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE51373	joint	response	28	16	0.640625					0.2186103839844196		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE51373	joint (w=0.5)	response	28	16	0.59375					0.4165523348116849		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE15622	organoid-only	response	15	9	0.7962962962962963					0.0663336663336663		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE15622	patient-only	response	15	9	0.4814814814814814					0.9546453546453546		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE15622	joint	response	15	9	0.4629629629629629					0.8639360639360639		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE15622	joint (w=0.5)	response	15	9	0.7962962962962963					0.0663336663336663		OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+POOLED	organoid-only	survival	683	523	0.520189624883745		0.9452277296757312	0.8669746618469852	1.0305439135263053	0.2013889956020617	3.0	OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+POOLED	organoid-only	response	347	236	0.5832180728446289						4.0	OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+POOLED	patient-only	survival	683	523	0.5504417691433295		0.8414705702207662	0.7671393562711203	0.923004034090276	0.0002541579718127	3.0	OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+POOLED	patient-only	response	347	236	0.6101121868756724						4.0	OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+POOLED	joint	survival	683	523	0.5502996796527849		0.8524184926957418	0.7775655465742624	0.934477215317672	0.0006612214514933	3.0	OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+POOLED	joint	response	347	236	0.6177962194559705						4.0	OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+POOLED	joint (w=0.5)	survival	683	523	0.5393846233336778		0.8968874748821238	0.8207378019121595	0.9801024647899976	0.0162179100211004	3.0	OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+POOLED	joint (w=0.5)	response	347	236	0.5984324573536192						4.0	OV_PLATINUM	shortlist	ovarian	carboplatin / platinum (cell-line proxy)	70	leave-one-cohort-out
+TCGA-OV	organoid-only	survival (PFS)	370	278	0.500156201187129	0.9923955618861636	0.9895527920337448	0.8824144510146015	1.109699333568118	0.8574416143638554		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+TCGA-OV	patient-only	survival (PFS)	370	278	0.5659950015620119	0.0038455527025554	0.7940769898017175	0.6969743895335074	0.904707942216638	0.0005305234269092		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+TCGA-OV	joint	survival (PFS)	370	278	0.5677327397688222	0.0002109389251191	0.7827766082509482	0.6887292533479334	0.8896663172738996	0.0001767087047803		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+TCGA-OV	joint (w=0.5)	survival (PFS)	370	278	0.5477194626679163	0.0023445629262298	0.8441546428547319	0.7469826091460151	0.9539674047671252	0.0066219008518258		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE9891	organoid-only	survival (RFS)	238	179	0.5359915164369035	0.2423937454829577	0.9234784824885938	0.8000368532505131	1.0659665291098752	0.2768584044352615		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE9891	organoid-only	response	229	146	0.5693183693678825					0.0815198285081487		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE9891	patient-only	survival (RFS)	238	179	0.6282078472958642	0.0013957557008238	0.7093933674362987	0.6087097778532984	0.8267305176817683	1.1004248116947366e-05		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE9891	patient-only	response	229	146	0.7091104142597788					1.4648056015646466e-07		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE9891	joint	survival (RFS)	238	179	0.6248992576882291	4.040478712285392e-05	0.7334030968187405	0.6312460208626014	0.8520926622053038	5.090045727168757e-05		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE9891	joint	response	229	146	0.7056444957913847					2.3436883566377158e-07		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE9891	joint (w=0.5)	survival (RFS)	238	179	0.583711558854719	0.0920691421086121	0.8056453060337921	0.6956815696582224	0.9329905914471154	0.0038971627244429		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE9891	joint (w=0.5)	response	229	146	0.6477966661165209					0.0002030199655597		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE63885	organoid-only	survival (OS)	75	66	0.5127619047619048	0.8372935463108272	0.9886867923279464	0.7801459180093	1.252972746198579	0.9250018933242892		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE63885	organoid-only	response	75	65	0.4430769230769231					0.5694381590975299		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE63885	patient-only	survival (OS)	75	66	0.5081904761904762	0.8554906342049077	0.9465131421620956	0.7301873942001589	1.226927683772069	0.6779830346809999		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE63885	patient-only	response	75	65	0.5169230769230769					0.8700065510327506		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE63885	joint	survival (OS)	75	66	0.512	0.8704501500202035	0.8940791893730848	0.6888109547637878	1.1605181237922688	0.4001600259783652		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE63885	joint	response	75	65	0.4646153846153846					0.725829238047825		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE63885	joint (w=0.5)	survival (OS)	75	66	0.5379047619047619	0.8905843978126361	0.90259426717305	0.7052366606244718	1.1551815959372804	0.4156011076451044		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE63885	joint (w=0.5)	response	75	65	0.4230769230769231					0.4404143935873786		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE51373	organoid-only	response	28	16	0.4895833333333333					0.9444835801635668		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE51373	patient-only	response	28	16	0.703125					0.07388616616611		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE51373	joint	response	28	16	0.625					0.2752904346391588		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE51373	joint (w=0.5)	response	28	16	0.59375					0.4165523348116849		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE15622	organoid-only	response	15	9	0.7592592592592593					0.1134865134865135		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE15622	patient-only	response	15	9	0.5185185185185185					0.9546453546453546		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE15622	joint	response	15	9	0.5555555555555556					0.7756243756243756		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE15622	joint (w=0.5)	response	15	9	0.5370370370370371					0.8639360639360639		OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+POOLED	organoid-only	survival	683	523	0.5114963315076987		0.9662376700347576	0.8885377747771688	1.050732182127353	0.4219787185479194	3.0	OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+POOLED	organoid-only	response	347	236	0.5626248655294298						4.0	OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+POOLED	patient-only	survival	683	523	0.5829802624780407		0.7767263691498495	0.7069124736535787	0.8534350078937161	1.4544131071723425e-07	3.0	OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+POOLED	patient-only	response	347	236	0.698632242200707						4.0	OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+POOLED	joint	survival	683	523	0.5832515242327168		0.775400553513431	0.7072526097927743	0.8501149519477925	5.967049966524226e-08	3.0	OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+POOLED	joint	response	347	236	0.6917934532042416						4.0	OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+POOLED	joint (w=0.5)	survival	683	523	0.558347111708174		0.836820228061863	0.7663295917570585	0.9137949279603274	7.249756009163921e-05	3.0	OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+POOLED	joint (w=0.5)	response	347	236	0.6353158137390502						4.0	OV_PLATINUM	all	ovarian	carboplatin / platinum (cell-line proxy)	673	leave-one-cohort-out
+TCGA-LUAD	organoid-only	survival (PFS)	124	56	0.504390243902439	0.5726131488688655	0.9973482277422816	0.7751120145821483	1.2833028887017064	0.9835290684136192		LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+TCGA-LUAD	organoid-only	response	74	55	0.4899521531100478					0.901523004310438		LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+TCGA-LUAD	patient-only	survival (PFS)	124	56	0.5458536585365854	0.8201151811784586	0.9211181856860382	0.7216130819791325	1.175780668602228	0.5094071860441474		LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+TCGA-LUAD	patient-only	response	74	55	0.5607655502392345					0.4356574664422925		LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+TCGA-LUAD	joint	survival (PFS)	124	56	0.5521951219512196	0.9323142371163864	0.9202670586180351	0.7235433961185215	1.1704777677754712	0.4983049352822373		LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+TCGA-LUAD	joint	response	74	55	0.5645933014354066					0.4070805163491929		LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+TCGA-LUAD	joint (w=0.5)	survival (PFS)	124	56	0.5634146341463414	0.8704684331476737	0.9189857536306504	0.7273447246602074	1.1611204243911089	0.4789189330519785		LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+TCGA-LUAD	joint (w=0.5)	response	74	55	0.5732057416267943					0.3470092935117561		LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+TCGA-LUSC	organoid-only	survival (PFS)	104	32	0.4369627507163324	0.3006214646708463	1.267730995419577	0.8915057511142472	1.8027274358452847	0.1866140795781288		LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+TCGA-LUSC	organoid-only	response	52	44	0.4886363636363636					0.9306379032079632		LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+TCGA-LUSC	patient-only	survival (PFS)	104	32	0.5854823304680038	0.3135578715474905	0.731267406309041	0.5091343171058611	1.0503161966565384	0.0902175104326054		LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+TCGA-LUSC	patient-only	response	52	44	0.6931818181818182					0.0870825592031447		LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+TCGA-LUSC	joint	survival (PFS)	104	32	0.4909264565425024	0.8948575987444433	1.0216151442342882	0.7218985184031891	1.4457676201323464	0.9039273822135924		LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+TCGA-LUSC	joint	response	52	44	0.5909090909090909					0.4316048296023264		LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+TCGA-LUSC	joint (w=0.5)	survival (PFS)	104	32	0.5377268385864374	0.6070822582347766	0.8474993131442259	0.5948334251245909	1.2074894507306688	0.3596076430082739		LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+TCGA-LUSC	joint (w=0.5)	response	52	44	0.6818181818181818					0.1083057623058711		LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE42127	organoid-only	survival (OS)	49	9	0.4820359281437126	0.7227033722625711	1.310918333512351	0.6397099861544531	2.686384321541417	0.4595535900548297		LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE42127	patient-only	survival (OS)	49	9	0.4161676646706587	0.0736454087098512	1.2683595808598664	0.6954785333371555	2.313135415754277	0.4380858064744518		LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE42127	joint	survival (OS)	49	9	0.3892215568862275	0.2719986920549517	1.296616894083363	0.7160256979948739	2.3479818877037326	0.3912196958111549		LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+GSE42127	joint (w=0.5)	survival (OS)	49	9	0.3622754491017964	0.2719986920549517	1.4118277481051549	0.746311834040452	2.6708106442964867	0.2889818056387673		LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+POOLED	organoid-only	survival	277	97	0.4816176470588235		1.1001999902080302	0.9008504739279236	1.3436636306311096	0.3491433637192891	3.0	LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+POOLED	organoid-only	response	126	99	0.4896206156048676						2.0	LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+POOLED	patient-only	survival	277	97	0.5519301470588235		0.8871971619957262	0.733739707369245	1.0727493637701735	0.2167401009485251	3.0	LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+POOLED	patient-only	response	126	99	0.5941302791696492						2.0	LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+POOLED	joint	survival	277	97	0.524203431372549		0.9801231682231404	0.8115803223972052	1.183667713936523	0.8348050598475125	3.0	LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+POOLED	joint	response	126	99	0.5712240515390121						2.0	LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+POOLED	joint (w=0.5)	survival	277	97	0.5448835784313726		0.931823258296932	0.7745216540590169	1.1210720580278943	0.4541457636048724	3.0	LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+POOLED	joint (w=0.5)	response	126	99	0.6005726556907659						2.0	LUNG_PLATINUM	shortlist	lung	platinum (cell-line proxy)	70	leave-one-cohort-out
+TCGA-LUAD	organoid-only	survival (PFS)	124	56	0.5629268292682926	0.2134870663922163	0.8488135572462883	0.6713831064629355	1.0731346202034246	0.1706731805338652		LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+TCGA-LUAD	organoid-only	response	74	55	0.554066985645933					0.4883529722517915		LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+TCGA-LUAD	patient-only	survival (PFS)	124	56	0.4878048780487805	0.8048775776069416	1.025134932239996	0.7785593111088317	1.3498029171367782	0.8596318928479123		LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+TCGA-LUAD	patient-only	response	74	55	0.4803827751196172					0.8045404126162667		LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+TCGA-LUAD	joint	survival (PFS)	124	56	0.5153658536585366	0.9251203751639844	0.9362686126485248	0.728014533825031	1.2040953501643594	0.6079225305551738		LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+TCGA-LUAD	joint	response	74	55	0.5253588516746411					0.7476664334635204		LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+TCGA-LUAD	joint (w=0.5)	survival (PFS)	124	56	0.5153658536585366	0.9251203751639844	0.9362686126485248	0.728014533825031	1.2040953501643594	0.6079225305551738		LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+TCGA-LUAD	joint (w=0.5)	response	74	55	0.5253588516746411					0.7476664334635204		LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+TCGA-LUSC	organoid-only	survival (PFS)	104	32	0.5214899713467048	0.8292116656830572	1.073739918599914	0.7598122230063898	1.5173715003335158	0.6867791187361437		LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+TCGA-LUSC	organoid-only	response	52	44	0.6136363636363636					0.322922995996947		LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+TCGA-LUSC	patient-only	survival (PFS)	104	32	0.5620821394460362	0.7233401255790111	0.8886513597247699	0.6304963045940339	1.252507323812402	0.5001940104036912		LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+TCGA-LUSC	patient-only	response	52	44	0.5965909090909091					0.4026921930801779		LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+TCGA-LUSC	joint	survival (PFS)	104	32	0.5510983763132761	0.3998588531227001	0.9802128658160928	0.6849508716063522	1.402753543561572	0.9129733402283648		LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+TCGA-LUSC	joint	response	52	44	0.6363636363636364					0.233221539665464		LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+TCGA-LUSC	joint (w=0.5)	survival (PFS)	104	32	0.558261700095511	0.4734363940652547	0.9221095194525858	0.6474377737876308	1.3133091708423936	0.6531176423253324		LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+TCGA-LUSC	joint (w=0.5)	response	52	44	0.6193181818181818					0.2987065492958728		LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE42127	organoid-only	survival (OS)	49	9	0.2724550898203592	0.0376561605277196	2.7875808100368418	1.105629510341858	7.028219398813806	0.0297933894781429		LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE42127	patient-only	survival (OS)	49	9	0.4640718562874251	0.69308280328838	1.1817498841801135	0.6071341288601663	2.300204719806418	0.6231016972667978		LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE42127	joint	survival (OS)	49	9	0.3203592814371258	0.1941306011600417	2.249679932981508	0.9774307444940094	5.177921637281486	0.0566077784617299		LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+GSE42127	joint (w=0.5)	survival (OS)	49	9	0.374251497005988	0.8775353345012632	1.7116522181866691	0.7974414782985277	3.673941468751356	0.1678416909851408		LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+POOLED	organoid-only	survival	277	97	0.5347732843137255		0.9812691588997772	0.8078965238223716	1.19184714108212	0.8488166245467537	3.0	LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+POOLED	organoid-only	response	126	99	0.56907659269864						2.0	LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+POOLED	patient-only	survival	277	97	0.5104166666666666		0.9881601939031596	0.8060432693826555	1.2114245052410104	0.9087636448209884	3.0	LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+POOLED	patient-only	response	126	99	0.5096635647816751						2.0	LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+POOLED	joint	survival	277	97	0.5168504901960784		1.0075631202685624	0.8251770119518952	1.2302614186063912	0.9410473206545886	3.0	LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+POOLED	joint	response	126	99	0.5533285612025769						2.0	LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+POOLED	joint (w=0.5)	survival	277	97	0.5219056372549019		0.9751695978030296	0.8003955197768445	1.1881072806909954	0.8029568040698677	3.0	LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+POOLED	joint (w=0.5)	response	126	99	0.5490336435218325						2.0	LUNG_PLATINUM	all	lung	platinum (cell-line proxy)	673	leave-one-cohort-out
+TCGA-SARC	organoid-only	survival (PFS)	16	9	0.3125	0.2360850926807113	1.6077190147752718	0.7143811190912828	3.618181334016602	0.2512566694802843		SARC_GEMCITABINE	shortlist	sarcoma	gemcitabine (+ docetaxel)	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-SARC	patient-only	survival (PFS)	16	9	0.6375	0.4228143826066092	1.134075658387984	0.5877418736481806	2.1882524567545247	0.707523421702426		SARC_GEMCITABINE	shortlist	sarcoma	gemcitabine (+ docetaxel)	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-SARC	joint	survival (PFS)	16	9	0.45	0.94317037879327	1.641966764003567	0.735286716087903	3.666671510722675	0.2263493934206559		SARC_GEMCITABINE	shortlist	sarcoma	gemcitabine (+ docetaxel)	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-SARC	joint (w=0.5)	survival (PFS)	16	9	0.475	0.94317037879327	1.725442802518058	0.8294647977657524	3.589245586769484	0.1443805501869788		SARC_GEMCITABINE	shortlist	sarcoma	gemcitabine (+ docetaxel)	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	organoid-only	survival	16	9	0.3125		1.607719014775272	0.714381119091283	3.618181334016602	0.251256669480284	1.0	SARC_GEMCITABINE	shortlist	sarcoma	gemcitabine (+ docetaxel)	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	patient-only	survival	16	9	0.6375		1.134075658387984	0.5877418736481806	2.1882524567545247	0.707523421702426	1.0	SARC_GEMCITABINE	shortlist	sarcoma	gemcitabine (+ docetaxel)	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint	survival	16	9	0.45		1.641966764003567	0.735286716087903	3.666671510722674	0.2263493934206559	1.0	SARC_GEMCITABINE	shortlist	sarcoma	gemcitabine (+ docetaxel)	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint (w=0.5)	survival	16	9	0.475		1.725442802518058	0.8294647977657524	3.589245586769484	0.1443805501869788	1.0	SARC_GEMCITABINE	shortlist	sarcoma	gemcitabine (+ docetaxel)	36	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-SARC	organoid-only	survival (PFS)	16	9	0.3375	0.2360850926807113	1.1964950717645029	0.56199402498171	2.547358856356763	0.64170877472532		SARC_GEMCITABINE	all	sarcoma	gemcitabine (+ docetaxel)	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-SARC	patient-only	survival (PFS)	16	9	0.575	0.2156366161884519	0.9679032541499822	0.5564148338653833	1.6837018935781638	0.9080510040108856		SARC_GEMCITABINE	all	sarcoma	gemcitabine (+ docetaxel)	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-SARC	joint	survival (PFS)	16	9	0.5875	0.568260137060488	1.0081992696902502	0.5560754798344145	1.8279276901521213	0.9785407218005256		SARC_GEMCITABINE	all	sarcoma	gemcitabine (+ docetaxel)	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+TCGA-SARC	joint (w=0.5)	survival (PFS)	16	9	0.575	0.568260137060488	0.9576802450647552	0.5324987194177991	1.7223542862038157	0.8851848643170986		SARC_GEMCITABINE	all	sarcoma	gemcitabine (+ docetaxel)	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	organoid-only	survival	16	9	0.3375		1.1964950717645029	0.56199402498171	2.547358856356763	0.64170877472532	1.0	SARC_GEMCITABINE	all	sarcoma	gemcitabine (+ docetaxel)	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	patient-only	survival	16	9	0.575		0.9679032541499822	0.5564148338653832	1.6837018935781638	0.9080510040108852	1.0	SARC_GEMCITABINE	all	sarcoma	gemcitabine (+ docetaxel)	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint	survival	16	9	0.5875		1.0081992696902502	0.5560754798344145	1.8279276901521213	0.9785407218005256	1.0	SARC_GEMCITABINE	all	sarcoma	gemcitabine (+ docetaxel)	673	5-fold cross-fitting by patient within the single cohort (5 repeats)
+POOLED	joint (w=0.5)	survival	16	9	0.575		0.9576802450647552	0.5324987194177991	1.7223542862038157	0.8851848643170985	1.0	SARC_GEMCITABINE	all	sarcoma	gemcitabine (+ docetaxel)	673	5-fold cross-fitting by patient within the single cohort (5 repeats)

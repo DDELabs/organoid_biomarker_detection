@@ -121,7 +121,7 @@ def heatmap(F, D, S):
             N[i, j] = r.n_sources
             frozen = ((F.drug == d) & (F.pathway == p)).any()
             M[i, j] = np.sign(r.expr_meta_z) * (r.n_sources if frozen else 0.35 * r.n_sources)
-    fig, axes = plt.subplots(1, 2, figsize=(max(9, 0.33 * len(pws) + 4), 7.2), gridspec_kw={"width_ratios": [len(pws) or 1, 3]})
+    fig, axes = plt.subplots(1, 2, figsize=(max(9, 0.33 * len(pws) + 4), 7.2), gridspec_kw={"width_ratios": [len(pws) or 1, 7]})
     ax = axes[0]
     panel(ax, "a")
     if pws:
@@ -151,7 +151,7 @@ def heatmap(F, D, S):
     ax.invert_yaxis()
     ax.set_xscale("symlog")
     ax.set_xlabel("Number of pathways")
-    ax.legend(frameon=False, fontsize=7, loc="lower right")
+    ax.legend(frameon=False, fontsize=7, loc="upper center", bbox_to_anchor=(0.5, -0.12), ncol=2)
     ax.set_title("Evidence funnel per drug", fontsize=9)
     fig.tight_layout()
     savefig(fig, "fig5_anchor_stage0_frozen_hypotheses", """
@@ -168,5 +168,20 @@ Numbers: `tables/frozen_hypotheses.tsv`, `tables/B_stage0_summary.tsv`, `tables/
     plt.close(fig)
 
 
+def plot_only():
+    """Redraw the figure from the already frozen table (does not re-freeze)."""
+    E = pd.read_csv(TAB / "B_source1_expression_association.tsv.gz", sep="\t")
+    C = pd.read_csv(TAB / "B_source2_crispr_codependency.tsv.gz", sep="\t")
+    Z = pd.read_csv(TAB / "B_network_proximity_z.tsv", sep="\t", index_col=0)
+    D = E.merge(C, on=["drug", "pathway"], how="left")
+    D["proximity_z_v12"] = [Z.at[p, d] if p in Z.index else np.nan for p, d in zip(D.pathway, D.drug)]
+    D["n_sources"] = ((D.expr_q < 0.05) & (D.screens_same_sign >= np.minimum(2, D.screens_total))).astype(int) + \
+        (D.crispr_q < 0.05).astype(int) + (D.proximity_z_v12 <= CUT).astype(int)
+    heatmap(pd.read_csv(TAB / "frozen_hypotheses.tsv", sep="\t"), D, pd.read_csv(TAB / "B_stage0_summary.tsv", sep="\t"))
+
+
 if __name__ == "__main__":
-    main()
+    if "--plot-only" in sys.argv:
+        plot_only()
+    else:
+        main()
