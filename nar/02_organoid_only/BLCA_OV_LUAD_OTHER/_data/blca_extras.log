@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/home/user/organoid_biomarker_detection/nar/02_organoid_only/BLCA_OV_LUAD_OTHER/code/blca_extras.py", line 457, in <module>
+    main()
+    ~~~~^^
+  File "/home/user/organoid_biomarker_detection/nar/02_organoid_only/BLCA_OV_LUAD_OTHER/code/blca_extras.py", line 448, in main
+    comparisons(D, models, texpr)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/user/organoid_biomarker_detection/nar/02_organoid_only/BLCA_OV_LUAD_OTHER/code/blca_extras.py", line 265, in comparisons
+    ic = ic[ic["Drug Name"].str.upper() == "5-FLUOROURACIL"].set_index(ic["Organoid"].str.upper())["median_IC50"]
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/frame.py", line 7041, in set_index
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Length mismatch: Expected 19 rows, received array of length 1577

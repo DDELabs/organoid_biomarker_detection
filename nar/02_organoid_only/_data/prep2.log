@@ -1,3 +1,4 @@
 shi {'models': (664, 87), 'PAAD': (664, 178)}
 ji {'models': (667, 62), 'LIHC': (667, 371)}
 broutier {'models': (648, 7), 'LIHC': (648, 371)}
+isella {'models': (669, 248), 'COAD': (669, 458), 'READ': (669, 166)}

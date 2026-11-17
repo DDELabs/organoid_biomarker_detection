@@ -1,0 +1,1 @@
+PDX PACLITAXEL {'n_models': 37, 'n_proximal': 150, 'biomarker': 'REACTOME_THE_ROLE_OF_NEF_IN_HIV1_REPLICATION_AND_DISEASE_PATHOGENESIS', 'treated_n': np.int64(231), 'treated_p': np.float64(0.6414237741366029), 'treated_hr': np.float64(1.227996822974149), 'untreated_p': np.float64(0.6795848727595823), 'perm_empirical_p': np.float64(0.6433566433566433), 'skipped': None}

@@ -1,0 +1,10 @@
+unit	PAAD_GEMCITABINE
+features	shortlist
+n_features	36
+feature_source	STRING v12 proximity shortlist of GEMCITABINE (robust/results/survlearn, z <= -1.28)
+design	5-fold cross-fitting by patient within the single cohort (5 repeats)
+trainable_cohorts	TCGA-PAAD
+organoid_alpha	1000.0
+lab	pancreas_tiriac2018:GEMCITABINE n=36 dropped_axes=3;pancreas_shi2022:GEMCITABINE n=39 dropped_axes=4
+n_lab	75
+seconds	58.8

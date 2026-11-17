@@ -42,12 +42,12 @@ def logrank(T, E, g):
     return float(survdiff(T, E, g)[1])
 
 
-def surv_stats(T, E, g):
+def surv_stats(T, E, g, hr=True):
     """g = 1 predicted non-responder (prediction above the median), 0 predicted responder."""
     out = {"n": int(len(T)), "events": int(E.sum()), "n_resp": int((g == 0).sum()), "n_nonresp": int((g == 1).sum()),
            "events_resp": int(E[g == 0].sum()), "events_nonresp": int(E[g == 1].sum()), "p": logrank(T, E, g),
            "HR": np.nan, "HR_lo": np.nan, "HR_hi": np.nan}
-    if 0 < g.sum() < len(g) and E[g == 0].sum() > 0 and E[g == 1].sum() > 0:
+    if hr and 0 < g.sum() < len(g) and E[g == 0].sum() > 0 and E[g == 1].sum() > 0:
         try:
             r = PHReg(T, g.reshape(-1, 1).astype(float), status=E, ties="efron").fit(disp=False)
             b, se = float(r.params[0]), float(r.bse[0])
@@ -104,7 +104,7 @@ class Combo:
         pred = Pmat[:, order] @ coef[order]
         return split(pred), [feats[i] for i in order], coef[order]
 
-    def evaluate(self, feats=None, y=None, untreated=True):
+    def evaluate(self, feats=None, y=None, untreated=True, hr=True):
         """Every (model, k) test: k = 1 is the paper's single-pathway biomarker, k = 2..10 multi-pathway."""
         feats = self.feats if feats is None else feats
         cf = self.coefs(feats, y)
@@ -115,7 +115,7 @@ class Combo:
             for k in range(1, min(KMAX, len(feats)) + 1):
                 g, used, cu = self.predict_split(feats, cf[ml], k, Pt)
                 r = {"model": ml, "k": k, "pathways": ";".join(used), "coefs": ";".join(f"{c:.4g}" for c in cu)}
-                r.update({f"treated_{a}": b for a, b in surv_stats(self.T, self.E, g).items()})
+                r.update({f"treated_{a}": b for a, b in surv_stats(self.T, self.E, g, hr).items()})
                 if untreated and len(self.up):
                     gu = self.predict_split(feats, cf[ml], k, Pu)[0]
                     r.update({f"untreated_{a}": b for a, b in surv_stats(self.Tu, self.Eu, gu).items()})
@@ -151,18 +151,42 @@ class Combo:
         pred = c[i] * self.P.loc[self.tp, feats[i]].values
         return logrank(self.T, self.E, split(pred))
 
-    def bootstrap(self, n=10000, seed=0):
-        """Paper Fig. 4e/f: random pathways matched in number to the proximal set -> Ridge -> rank-1 -> log-rank."""
+    def single_pathway_p(self, sign=1):
+        """Log-rank p of every pathway used alone (median split of sign * score). The coefficient's sign only
+        decides on which side the median patient falls, so p is precomputed for both signs; reused by the
+        bootstrap and by Supp. Fig. 10."""
+        Pa = sign * self.P.loc[self.tp].values
+        return pd.Series([logrank(self.T, self.E, split(Pa[:, j])) for j in range(len(self.common))], index=self.common)
+
+    def top_rank(self, coef, feats, pvec, iso_p=None, alpha=0.05):
+        """Paper's Fig. 4e statistic: first rank (by |coefficient|) whose pathway gives survival p < alpha in treated
+        patients (and, when isogenic cell lines exist, isogenic t-test p < alpha). len(feats) + 1 = none found."""
+        order = np.argsort(-np.abs(coef), kind="stable")
+        for r, i in enumerate(order, 1):
+            f = feats[i]
+            if pvec[f] < alpha and (iso_p is None or (f in iso_p.index and iso_p[f] < alpha)):
+                return r
+        return len(feats) + 1
+
+    def bootstrap(self, n=10000, seed=0, iso_p=None):
+        """Paper Fig. 4e/f: random pathways matched in number to the proximal set -> Ridge. Returns, per random set,
+        the rank-1 pathway's log-rank p and the paper's 'top rank' statistic."""
         rng = np.random.default_rng(seed)
         m = len(self.feats)
-        Xa, Pa = self.X.values, self.P.loc[self.tp].values
-        ps = np.empty(n)
+        Xa = self.X.values
+        pp, pn = self.single_pathway_p(1).values, self.single_pathway_p(-1).values
+        iso_ok = np.ones(len(self.common), bool) if iso_p is None else iso_p.reindex(self.common).fillna(1).values < 0.05
+        ps, tr = np.empty(n), np.empty(n, dtype=int)
         for b in range(n):
             idx = rng.choice(len(self.common), m, replace=False)
             c = ridgecv_coef(Xa[:, idx], self.y)[0]
-            i = int(np.argmax(np.abs(c)))
-            ps[b] = logrank(self.T, self.E, split(c[i] * Pa[:, idx[i]]))
-        return ps
+            o = np.argsort(-np.abs(c), kind="stable")
+            order = idx[o]
+            pv = np.where(c[o] > 0, pp[order], pn[order])
+            ps[b] = pv[0]
+            hit = np.nonzero((pv < 0.05) & iso_ok[order])[0]
+            tr[b] = hit[0] + 1 if len(hit) else m + 1
+        return ps, tr
 
     def permutation(self, n=1000, seed=1):
         """Shuffle the lab-model response n times; rerun rank-1 (Ridge) and the full 3 models x k=1..10 grid."""
@@ -170,7 +194,7 @@ class Combo:
         r1, best = np.empty(n), np.empty(n)
         for b in range(n):
             yp = rng.permutation(self.y)
-            ev, _ = self.evaluate(y=yp, untreated=False)
+            ev, _ = self.evaluate(y=yp, untreated=False, hr=False)
             r1[b] = ev.loc[(ev.model == "Ridge") & (ev.k == 1), "treated_p"].iloc[0]
             best[b] = ev["treated_p"].min()
         return r1, best

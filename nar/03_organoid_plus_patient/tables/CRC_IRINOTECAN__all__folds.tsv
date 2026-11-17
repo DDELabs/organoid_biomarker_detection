@@ -1,0 +1,16 @@
+heldout	model	train_cohorts	w	lam	unit	features
+GSE72970	patient-only	TCGA-COADREAD:survival;GSE62080:response;GSE104645:response	0.0	10.0	CRC_IRINOTECAN	all
+GSE72970	joint	TCGA-COADREAD:survival;GSE62080:response;GSE104645:response	0.25	10.0	CRC_IRINOTECAN	all
+GSE72970	joint (w=0.5)	TCGA-COADREAD:survival;GSE62080:response;GSE104645:response	0.5	10.0	CRC_IRINOTECAN	all
+TCGA-COADREAD	patient-only	GSE72970:survival;GSE62080:response;GSE104645:response	0.0	10.0	CRC_IRINOTECAN	all
+TCGA-COADREAD	joint	GSE72970:survival;GSE62080:response;GSE104645:response	0.25	10.0	CRC_IRINOTECAN	all
+TCGA-COADREAD	joint (w=0.5)	GSE72970:survival;GSE62080:response;GSE104645:response	0.5	10.0	CRC_IRINOTECAN	all
+GSE62080	patient-only	GSE72970:survival;TCGA-COADREAD:survival;GSE104645:response	0.0	10.0	CRC_IRINOTECAN	all
+GSE62080	joint	GSE72970:survival;TCGA-COADREAD:survival;GSE104645:response	0.25	10.0	CRC_IRINOTECAN	all
+GSE62080	joint (w=0.5)	GSE72970:survival;TCGA-COADREAD:survival;GSE104645:response	0.5	10.0	CRC_IRINOTECAN	all
+GSE104645	patient-only	GSE72970:survival;TCGA-COADREAD:survival;GSE62080:response	0.0	10.0	CRC_IRINOTECAN	all
+GSE104645	joint	GSE72970:survival;TCGA-COADREAD:survival;GSE62080:response	0.25	10.0	CRC_IRINOTECAN	all
+GSE104645	joint (w=0.5)	GSE72970:survival;TCGA-COADREAD:survival;GSE62080:response	0.5	10.0	CRC_IRINOTECAN	all
+GSE39582	patient-only	all trainable	0.0	10.0	CRC_IRINOTECAN	all
+GSE39582	joint	all trainable	0.25	10.0	CRC_IRINOTECAN	all
+GSE39582	joint (w=0.5)	all trainable	0.5	10.0	CRC_IRINOTECAN	all

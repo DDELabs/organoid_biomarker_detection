@@ -40,8 +40,13 @@ def fmt_p(p):
     return f"{p:.2g}" if p < 0.001 else f"{p:.3f}"
 
 
+def hr_ok(h, lo, hi):
+    """Cox fits with (near) zero deaths in one group do not converge; such HRs are reported as not estimable."""
+    return bool(np.isfinite(h) and np.isfinite(lo) and np.isfinite(hi) and hi / max(lo, 1e-300) < 1e4)
+
+
 def fmt_hr(h, lo, hi):
-    if not np.isfinite(h):
+    if not hr_ok(h, lo, hi):
         return "HR not estimable (0 deaths in one group)"
     return f"HR {h:.2f} (95% CI {lo:.2f}-{hi:.2f})"
 
@@ -175,6 +180,22 @@ def p_null(ax, null, obs, emp, title, what):
     ax.set_title(title, loc="left")
 
 
+def p_rank(ax, r):
+    m = len(r["feats"])
+    br = r["boot_rank"]
+    vals = np.arange(1, m + 2)
+    cnt = np.bincount(br, minlength=m + 2)[1:m + 2]
+    ax.bar(vals, cnt, color=SKY, width=0.9)
+    o = r["obs_rank"]
+    ax.axvline(o, color=VERM, lw=2, label=f"real proximal pathways: {'rank ' + str(o) if o <= m else 'none found'}")
+    ax.set_yscale("log")
+    ax.set_xlabel(f"First rank meeting the criteria ({m + 1} = none found)")
+    ax.set_ylabel(f"Random sets (of {len(br):,}; log scale)")
+    crit = "survival p<0.05 & isogenic p<0.05" if r.get("iso_tab") is not None else "survival p<0.05"
+    ax.set_title(f"Paper's Fig. 4e statistic ({crit})\nshare as good or better: {fmt_p(r['boot_rank_emp_p'])}", loc="left")
+    ax.legend(frameon=False, loc="upper center")
+
+
 def p_cut(ax, r):
     c = r["cut"].copy()
     x = np.arange(len(c))
@@ -199,8 +220,8 @@ def title_of(r):
 # --------------------------------------------------------------------------- per combo
 def supp_figure(tag, r, outdir):
     m = r["meta"]
-    fig = plt.figure(figsize=(17, 27))
-    gs = GridSpec(5, 3, figure=fig, hspace=0.55, wspace=0.55, height_ratios=[1.2, 1.3, 1, 1, 1])
+    fig = plt.figure(figsize=(17, 32))
+    gs = GridSpec(6, 3, figure=fig, hspace=0.55, wspace=0.55, height_ratios=[1.2, 1.3, 1, 1, 1, 0.8], top=0.975, bottom=0.02)
     axes = {}
     axes["a"] = fig.add_subplot(gs[0, :2]); p_prox(axes["a"], r)
     axes["b"] = fig.add_subplot(gs[0, 2]); p_cut(axes["b"], r)
@@ -227,7 +248,8 @@ def supp_figure(tag, r, outdir):
     best = r["ev"]["treated_p"].min()
     p_null(axes["l"], r["perm_best"], best, r["perm_best_emp_p"], "Shuffled response, best of all 3 models x\n"
            "1-10 pathways (the 'pick the best' search)", "shuffles")
-    axl = fig.add_subplot(gs[4, 2]); axl.axis("off")
+    axn = fig.add_subplot(gs[4, 2]); p_rank(axn, r)
+    axl = fig.add_subplot(gs[5, :]); axl.axis("off")
     txt = (f"Lab models: {m['n_models']}\nProximal pathways: {m['n_proximal']} of {m['n_pathways_total']}\n"
            f"Treated patients: {m['n_treated']} ({m['treated_events']} deaths)\n"
            f"Untreated patients: {m['n_untreated']}\n\nRank-1 Ridge biomarker:\n{textwrap.fill(short(used[0], 90), 40)}\n\n"
@@ -238,10 +260,12 @@ def supp_figure(tag, r, outdir):
     axl.text(0, 1, txt, va="top", fontsize=9, family="DejaVu Sans")
     for L, ax in axes.items():
         letter(ax, L)
-    letter(axl, "m")
+    letter(axn, "m")
+    letter(axl, "n")
     fig.suptitle(title_of(r), fontsize=12, y=0.995)
     cap = caption_supp(r, st, su, used[0], best)
-    save(fig, outdir / f"supp_{m['cohort']}_{m['model_drug']}", cap)
+    extra = "_SuppFig11" if m["patient_drug"] == "CETUXIMAB" else ""
+    save(fig, outdir / f"Fig2a_Fig2d_Fig4e_SuppFig17_panels_{m['cohort']}_{m['model_drug']}{extra}", cap)
     return st, su
 
 
@@ -276,7 +300,13 @@ machine learning on lab models -> median split of drug-treated patients -> survi
   Share of shuffles as good or better = {fmt_p(r['perm_rank1_emp_p'])}.
 - **l** The same shuffles, but keeping the best of all 30 tests (3 learners x 1-10 pathways), which mirrors picking
   the best result. Real best p = {fmt_p(best)}; share of shuffles as good or better = {fmt_p(r['perm_best_emp_p'])}.
-- **m** Key numbers.
+- **m** The paper's own bootstrap statistic (Fig. 4e): for each random set, the first rank (by |coefficient|) whose
+  pathway alone gives p < 0.05 in treated patients{' and a t-test p < 0.05 between 5-FU-sensitive and -resistant isogenic HCT-8 cells' if r.get('iso_tab') is not None else ''}.
+  Real proximal pathways: first such rank = {r['obs_rank'] if r['obs_rank'] <= len(r['feats']) else 'none found'};
+  share of random sets reaching that rank or better = {fmt_p(r['boot_rank_emp_p'])} (paper, colon 5-FU: 0.0012).
+- **n** Key numbers. The rank-1 pathway's own proximity z = {r['z'].get(pw, float('nan')):.4f} (cut-off {PAPER_CUTOFF}).
+- Panels d-f stand in for the paper's Supp. Fig. 17 (a 60/10/30 split of the organoids); leave-one-out uses every
+  model once as test data, which is more stable at these sample sizes.
 
 Data: {m['data']}. Lab-model response metric: {m['metric']}.
 """
@@ -315,7 +345,47 @@ SVR and LinearRegression results for every k are in the table `all_tests_{m['coh
 
 {lines}
 """
-    save(fig, outdir / f"supp_KMgrid_{m['cohort']}_{m['model_drug']}", cap)
+    save(fig, outdir / f"SuppFig5_SourceData-multipathway_KMgrid_{m['cohort']}_{m['model_drug']}", cap)
+
+
+def coef_figure(tag, r, outdir, cap=40):
+    """Paper Fig. 2b (Ridge coefficients), Supp. Fig. 2 (LinearRegression, SVR) and Supp. Fig. 3 (agreement)."""
+    m = r["meta"]
+    C = pd.DataFrame(r["coefs"])
+    order = C["Ridge"].abs().sort_values(ascending=False).index
+    shown = list(order[:cap])
+    fig = plt.figure(figsize=(20, 0.24 * len(shown) + 7))
+    gs = GridSpec(2, 3, figure=fig, height_ratios=[0.24 * len(shown) + 1, 4.2], hspace=0.25, wspace=0.9)
+    for j, ml in enumerate(MLS):
+        ax = fig.add_subplot(gs[0, j])
+        v = C.loc[shown, ml]
+        top = C[ml].abs().idxmax()
+        ax.barh(range(len(v)), v.abs().values, color=[ORANGE if p == top else MLC[ml] for p in v.index])
+        ax.set_yticks(range(len(v)))
+        ax.set_yticklabels([short(p, 45) + (" (-)" if c < 0 else " (+)") for p, c in zip(v.index, v.values)])
+        ax.invert_yaxis()
+        ax.set_xlabel("|coefficient| (predictive ability)")
+        ax.set_title(f"{ml}: rank-1 = {short(top, 40)}", loc="left")
+        letter(ax, "abc"[j])
+    pairs = [("Ridge", "LinearRegression"), ("Ridge", "SVR"), ("LinearRegression", "SVR")]
+    for j, (a, b) in enumerate(pairs):
+        ax = fig.add_subplot(gs[1, j])
+        ax.scatter(C[a], C[b], s=14, color=PURPLE)
+        r2 = np.corrcoef(C[a], C[b])[0, 1] ** 2 if len(C) > 2 else np.nan
+        ax.set_xlabel(f"{a} coefficient"); ax.set_ylabel(f"{b} coefficient")
+        ax.set_title(f"R2 = {r2:.3f}", loc="left")
+        letter(ax, "def"[j])
+    fig.suptitle(title_of(r) + " - organoid model coefficients", fontsize=12)
+    top = {ml: C[ml].abs().idxmax() for ml in MLS}
+    save(fig, outdir / f"Fig2b_SuppFig2_SuppFig3_coefficients_{m['cohort']}_{m['model_drug']}", f"""# Model coefficients: {title_of(r)}
+
+(a-c) Absolute regression coefficients ("predictive ability" in the paper) of every proximal pathway
+({len(C)}{', top ' + str(cap) + ' shown' if len(C) > cap else ''}) for Ridge (paper Fig. 2b), LinearRegression and linear SVR (paper Supp. Fig. 2),
+trained on {m['n_models']} lab models ({m['metric']}). (+) = higher pathway score goes with higher (more
+resistant) response; (-) = with lower (more sensitive). Orange bar = rank-1 pathway. Rank-1: Ridge
+{short(top['Ridge'], 80)}; SVR {short(top['SVR'], 80)}; LinearRegression {short(top['LinearRegression'], 80)}.
+(d-f) Agreement of the coefficients between learners (paper Supp. Fig. 3; R2 = squared Pearson correlation).
+""")
 
 
 def tables(tag, r, tdir):
@@ -408,7 +478,7 @@ three learners (solid = treated, dashed = untreated; dotted line p = 0.05); (6) 
 
 {chr(10).join(lines)}
 """
-    save(fig, outdir / "main_figure", cap)
+    save(fig, outdir / f"Fig2d_main_composite_{folder}", cap)
 
 
 def prox_heatmap(folder, items, outdir, cap_rows=60):
@@ -461,12 +531,12 @@ def forest(S, path):
     y = np.arange(n)[::-1]
     for i, r in S.iterrows():
         yy = y[i]
-        if np.isfinite(r.treated_HR):
+        if hr_ok(r.treated_HR, r.treated_HR_lo, r.treated_HR_hi):
             ax.errorbar(r.treated_HR, yy + 0.12, xerr=[[r.treated_HR - r.treated_HR_lo], [r.treated_HR_hi - r.treated_HR]],
                         fmt="o", color=BLUE, ms=5, capsize=2, lw=1.2)
         else:
             ax.text(1, yy + 0.12, "treated HR not estimable (0 deaths in one group)", fontsize=7, color=BLUE, va="center", ha="center")
-        if np.isfinite(r.untreated_HR):
+        if hr_ok(r.untreated_HR, r.untreated_HR_lo, r.untreated_HR_hi):
             ax.errorbar(r.untreated_HR, yy - 0.18, xerr=[[r.untreated_HR - r.untreated_HR_lo], [r.untreated_HR_hi - r.untreated_HR]],
                         fmt="s", mfc="white", color=GREY, ms=4, capsize=2, lw=1)
     ax.axvline(1, color="k", lw=0.8)
@@ -516,6 +586,7 @@ def main():
         d = ROOT / m["folder"]
         supp_figure(tag, r, d / "figures")
         km_grid(tag, r, d / "figures")
+        coef_figure(tag, r, d / "figures")
         tables(tag, r, d / "tables")
         rows.append(summary_row(r))
         by_folder.setdefault(m["folder"], []).append((tag, r))
@@ -530,7 +601,7 @@ def main():
             fig_dir = ROOT / folder / "figures"
             main_figure(folder, extra, fig_dir / "_tmp")
             for ext in ("png", "pdf", "caption.md"):
-                (fig_dir / "_tmp" / f"main_figure.{ext}").rename(fig_dir / f"supp_composite_READ_and_pooled.{ext}")
+                (fig_dir / "_tmp" / f"Fig2d_main_composite_{folder}.{ext}").rename(fig_dir / f"Fig2d_supp_composite_READ_and_pooled.{ext}")
             (fig_dir / "_tmp").rmdir()
         prox_heatmap(folder, items, ROOT / folder / "figures")
     S = pd.DataFrame(rows)

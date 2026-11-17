@@ -1,0 +1,5 @@
+screen	all_lines_in_screen	lines_with_5FU	5FU_and_RNAseq	colorectal_5FU_RNAseq	colorectal_plus_CRISPR	colorectal_plus_mutation_data	bladder_lines_any_drug
+GDSC1	970	907	903	44	35	44	18
+GDSC2	969	968	962	48	36	48	18
+CTRP	844	799	775	43	31	39	24
+PRISM	480	433	429	22	15	18	23

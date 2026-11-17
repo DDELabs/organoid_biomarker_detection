@@ -1,0 +1,10 @@
+unit	LUNG_PLATINUM
+features	shortlist
+n_features	70
+feature_source	STRING v12 proximity shortlist of CISPLATIN (robust/results/survlearn, z <= -1.28)
+design	leave-one-cohort-out
+trainable_cohorts	TCGA-LUAD;TCGA-LUSC;GSE42127
+organoid_alpha	10000.0
+lab	ctrpv2_ccle:CARBOPLATIN/lung n=138 dropped_axes=1;prism_repurposing:CISPLATIN/lung n=93 dropped_axes=0
+n_lab	231
+seconds	21.1

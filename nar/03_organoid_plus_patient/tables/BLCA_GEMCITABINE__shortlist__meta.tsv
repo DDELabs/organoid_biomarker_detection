@@ -1,0 +1,10 @@
+unit	BLCA_GEMCITABINE
+features	shortlist
+n_features	36
+feature_source	STRING v12 proximity shortlist of GEMCITABINE (robust/results/survlearn, z <= -1.28)
+design	5-fold cross-fitting by patient within the single cohort (5 repeats)
+trainable_cohorts	TCGA-BLCA
+organoid_alpha	100.0
+lab	bladder_lee2018:GEMCITABINE n=11 dropped_axes=6
+n_lab	11
+seconds	120.2

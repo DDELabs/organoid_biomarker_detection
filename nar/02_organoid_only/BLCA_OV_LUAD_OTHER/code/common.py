@@ -77,6 +77,10 @@ def any_drug(project):
 @lru_cache(None)
 def survival_current(project):
     """Current GDC survival (Xena GDC hub, OS in months), primary tumour patients."""
+    if project == "SKCM":  # most SKCM tumours are metastases (-06): one row per patient, any tumour sample type
+        sur = pd.read_csv(RAW / "TCGA-SKCM.survival.tsv.gz", sep="\t")
+        sur = sur[sur["sample"].str[13:15].isin(["01", "06"])].drop_duplicates("_PATIENT").set_index("_PATIENT")
+        return pd.DataFrame({"T": sur["OS.time"] / (365 / 12), "E": sur["OS"]}).dropna()
     s = C.tcga_xena_clinical(project)
     return s.rename(columns={"months": "T", "event": "E"})
 
@@ -221,3 +225,8 @@ def proximity(drug, targets=None):
     z.to_frame("z").to_csv(f, sep="\t")
     open(str(f) + ".targets", "w").write(",".join(targets))
     return z, f"computed on paper network, targets {','.join(targets)}"
+
+
+def os_env(k, default):
+    import os
+    return os.environ.get(k, default)

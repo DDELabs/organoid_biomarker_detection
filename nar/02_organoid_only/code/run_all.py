@@ -92,7 +92,17 @@ def run(spec, cd):
     meta["borderline"] = len(c.tp) < 15
     ev, cf = c.evaluate()
     loo = c.loo()
-    boot = c.bootstrap(N_BOOT, seed=0)
+    # isogenic HCT-8 5-FU-sensitive/-resistant cells exist only for colorectal 5-FU (paper Fig. 4b/4e)
+    iso_p, iso_tab = None, None
+    if meta["patient_drug"] == "FLUOROURACIL" and meta["cohort"] in ("COAD_authors", "COAD", "READ", "COADREAD"):
+        import iso
+        iso_tab = iso.iso_table(iso.authors_nes() if meta["cohort"] == "COAD_authors" else iso.current_nes())[0]
+        iso_p = iso_tab["p"]
+    boot, boot_rank = c.bootstrap(N_BOOT, seed=0, iso_p=iso_p)
+    pp, pn = c.single_pathway_p(1), c.single_pathway_p(-1)
+    co = cf["Ridge"]
+    signed = pd.Series([pp[f] if co[i] > 0 else pn[f] for i, f in enumerate(c.feats)], index=c.feats)
+    obs_rank = c.top_rank(co, c.feats, signed, iso_p)
     r1, best = c.permutation(N_PERM, seed=1)
     cut = []
     for cu in ALT_CUTOFFS:
@@ -118,7 +128,10 @@ def run(spec, cd):
                loo={m: (pd.Series(v[0], index=c.samples), v[1], v[2]) for m, v in loo.items()},
                y=pd.Series(c.y, index=c.samples), boot=boot, perm_rank1=r1, perm_best=best,
                cut=pd.DataFrame(cut), km=km, nes=c.osc.loc[c.feats], z=c.z_all.reindex(c.common).dropna(),
-               feats=c.feats,
+               feats=c.feats, tp=c.tp, up=c.up, Pall=c.P[c.feats], iso_tab=iso_tab,
+               single_p=pd.DataFrame({"p_pos": pp, "p_neg": pn, "z": c.z_all.reindex(c.common)}),
+               boot_rank=boot_rank, obs_rank=obs_rank,
+               boot_rank_emp_p=float((boot_rank <= obs_rank).mean()) if obs_rank <= len(c.feats) else np.nan,
                boot_emp_p=float((boot <= obs + 1e-12).mean()),
                perm_rank1_emp_p=float((np.sum(r1 <= obs + 1e-12) + 1) / (N_PERM + 1)),
                perm_best_emp_p=float((np.sum(best <= ev["treated_p"].min() + 1e-12) + 1) / (N_PERM + 1)))

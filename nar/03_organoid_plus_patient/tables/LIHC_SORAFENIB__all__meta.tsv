@@ -1,0 +1,10 @@
+unit	LIHC_SORAFENIB
+features	all
+n_features	673
+feature_source	all 673 Reactome pathways
+design	5-fold cross-fitting by patient within the single cohort (5 repeats)
+trainable_cohorts	GSE109211
+organoid_alpha	10000.0
+lab	liver_ji2023:SORAFENIB n=61 dropped_axes=4;liver_broutier2017:SORAFENIB n=5 dropped_axes=4
+n_lab	66
+seconds	198.2

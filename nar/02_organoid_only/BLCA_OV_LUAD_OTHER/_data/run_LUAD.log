@@ -1,0 +1,231 @@
+LUAD CISPLATIN {'n_models': 40, 'n_proximal': 47, 'biomarker': 'REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION', 'treated_n': np.int64(84), 'treated_p': np.float64(0.5759765707325029), 'treated_hr': np.float64(1.2404964481765304), 'untreated_p': np.float64(0.9239182837801206), 'perm_empirical_p': np.float64(0.5204795204795205), 'skipped': None}
+LUAD PEMETREXED {'n_models': 45, 'n_proximal': 47, 'biomarker': 'REACTOME_METABOLISM_OF_AMINO_ACIDS_AND_DERIVATIVES', 'treated_n': np.int64(59), 'treated_p': np.float64(0.004847146277911385), 'treated_hr': np.float64(0.1934077259248048), 'untreated_p': np.float64(0.5428000536773344), 'perm_empirical_p': np.float64(0.11788211788211789), 'skipped': None}
+LUAD PACLITAXEL {'n_models': 46, 'n_proximal': 150, 'biomarker': 'REACTOME_HDL_MEDIATED_LIPID_TRANSPORT', 'treated_n': np.int64(44), 'treated_p': np.float64(0.7050198989593796), 'treated_hr': np.float64(0.8427295260427597), 'untreated_p': np.float64(0.08028672228348255), 'perm_empirical_p': np.float64(0.6963036963036963), 'skipped': None}
+LUAD VINORELBINE {'n_models': 46, 'n_proximal': 24, 'biomarker': 'REACTOME_CELL_CYCLE_MITOTIC', 'treated_n': np.int64(24), 'treated_p': np.float64(0.33682461210151604), 'treated_hr': np.float64(1.7364376119248457), 'untreated_p': np.float64(0.012909026356867637), 'perm_empirical_p': np.float64(0.2547452547452547), 'skipped': None}
+LUAD GEMCITABINE {'n_models': 46, 'n_proximal': 45, 'biomarker': 'REACTOME_G1_S_SPECIFIC_TRANSCRIPTION', 'treated_n': np.int64(25), 'treated_p': np.float64(0.029743366015640427), 'treated_hr': np.float64(3.1668404417443665), 'untreated_p': np.float64(0.024772789027097453), 'perm_empirical_p': np.float64(0.13786213786213786), 'skipped': None}
+LUAD DOCETAXEL {'n_models': 46, 'n_proximal': 150, 'biomarker': 'REACTOME_ENDOGENOUS_STEROLS', 'treated_n': np.int64(22), 'treated_p': np.float64(0.34134193306340865), 'treated_hr': np.float64(1.7955773783307638), 'untreated_p': np.float64(0.1311428621963554), 'perm_empirical_p': np.float64(0.6293706293706294), 'skipped': None}
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+LUAD ETOPOSIDE {'n_models': 46, 'n_proximal': 40, 'biomarker': 'REACTOME_BASE_EXCISION_REPAIR', 'treated_n': np.int64(15), 'treated_p': np.float64(0.8000730029118501), 'treated_hr': np.float64(1.2967637603554936), 'untreated_p': np.float64(0.5135444493796584), 'perm_empirical_p': np.float64(0.6193806193806194), 'skipped': None}
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+LUAD ERLOTINIB {'n_models': 46, 'n_proximal': 54, 'biomarker': 'REACTOME_PI3K_EVENTS_IN_ERBB2_SIGNALING', 'treated_n': np.int64(21), 'treated_p': np.float64(0.5141397974502788), 'treated_hr': np.float64(0.5678156371882979), 'untreated_p': np.float64(0.34741829237020694), 'perm_empirical_p': np.float64(0.6353646353646354), 'skipped': None}
+LUAD CARBOPLATIN {'n_models': 43, 'n_proximal': 47, 'biomarker': 'REACTOME_REVERSIBLE_HYDRATION_OF_CARBON_DIOXIDE', 'treated_n': np.int64(77), 'treated_p': np.float64(0.5792403026696147), 'treated_hr': np.float64(0.8211210084541298), 'untreated_p': np.float64(0.5404555175211914), 'perm_empirical_p': np.float64(0.5144855144855145), 'skipped': None}
