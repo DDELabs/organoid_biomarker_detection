@@ -1,0 +1,14 @@
+saved BLCA_paper {'CISPLATIN': (9, 79)} genes 17650 patients 406
+BLCA_current METHOTREXATE skipped 12 9
+BLCA_current VINBLASTINE skipped 12 9
+BLCA_current PACLITAXEL skipped 10 9
+saved BLCA_current {'CISPLATIN': (9, 79), 'GEMCITABINE': (11, 88), 'DOXORUBICIN': (9, 16), 'CARBOPLATIN': (9, 22)} genes 17650 patients 401
+saved OV_vias {'CARBOPLATIN': (14, 347), 'PACLITAXEL': (14, 348), 'CISPLATIN': (14, 123), 'DOXORUBICIN': (14, 117), 'GEMCITABINE': (14, 102), 'DOCETAXEL': (14, 82)} genes 18007 patients 420
+saved SARC_alshihabi {'GEMCITABINE': (14, 42), 'DOCETAXEL': (14, 37)} genes 16826 patients 256
+saved LUAD_cells {'CISPLATIN': (40, 84), 'PEMETREXED': (45, 59), 'PACLITAXEL': (46, 44), 'VINORELBINE': (46, 24), 'GEMCITABINE': (46, 25), 'DOCETAXEL': (46, 22), 'ETOPOSIDE': (46, 15), 'ERLOTINIB': (46, 21), 'CARBOPLATIN': (43, 77)} genes 17757 patients 503
+saved PDX_BRCA {'PACLITAXEL': (37, 231), 'TAMOXIFEN': (37, 253), 'TRASTUZUMAB': (36, 74)} genes 17181 patients 1073
+saved PDX_PDAC {'GEMCITABINE': (33, 104)} genes 16930 patients 177
+PDX_CRC CETUXIMAB skipped 14 41
+saved PDX_CRC {'FLUOROURACIL': (41, 129)} genes 17027 patients 434
+saved PDX_NSCLC {'PACLITAXEL': (24, 44), 'ERLOTINIB': (25, 21)} genes 17128 patients 503
+saved PDX_CM {'DACARBAZINE': (31, 32)} genes 17129 patients 455

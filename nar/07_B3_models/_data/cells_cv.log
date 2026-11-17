@@ -1,0 +1,3 @@
+pairs 73108 drugs 55 units 86
+cell 0 Fingerprint MLP (cell lines) 7 s
+cell 0 XGBoost (pathways + fingerprint) 78 s

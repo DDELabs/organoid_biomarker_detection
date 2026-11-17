@@ -1,0 +1,9 @@
+saved COAD_paper {'FLUOROURACIL': (19, 114), 'OXALIPLATIN': (19, 100), 'IRINOTECAN': (19, 22)} genes 10474 patients 445
+saved COADREAD_vdW {'FLUOROURACIL': (19, 188), 'OXALIPLATIN': (19, 154), 'IRINOTECAN': (19, 39), 'CETUXIMAB': (19, 15)} genes 10475 patients 620
+saved PAAD_tiriac {'GEMCITABINE': (36, 104), 'FLUOROURACIL': (36, 37), 'OXALIPLATIN': (36, 21)} genes 17617 patients 178
+saved PAAD_shi {'GEMCITABINE': (39, 104), 'FLUOROURACIL': (39, 37), 'OXALIPLATIN': (39, 21)} genes 14000 patients 178
+LIHC_ji GEMCITABINE skipped 7 61
+LIHC_ji DOXORUBICIN skipped 3 61
+LIHC_ji FLUOROURACIL skipped 1 61
+saved LIHC_ji {'SORAFENIB': (61, 30)} genes 15627 patients 370
+saved COAD_isella {'CETUXIMAB': (192, 15)} genes 17385 patients 455
