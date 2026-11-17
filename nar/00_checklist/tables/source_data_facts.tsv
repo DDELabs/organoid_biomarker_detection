@@ -1,0 +1,41 @@
+fact	value
+MOESM3_sha256	c1e065aa9490694abb9183c51388c29881190180691bbc2d71506032e3cbc657
+STRING_edge_rows	647548
+STRING_distinct_uniprot	13825
+proximity_pathways	674
+proximity_drug_columns	44
+drugs_per_pathway_mean	4.861
+drugs_per_pathway_median	4.0
+pathways_proximal_to_>=22_drugs	3
+pathways_proximal_to_0_drugs	111
+max_drugs_per_pathway	31
+FLUOROURACIL_proximal_all	38
+FLUOROURACIL_proximal_with_organoid_NES	37
+FLUOROURACIL_proximal_with_organoid_and_TCGA_NES	37
+FLUOROURACIL_biomarker_z	-1.2857
+CISPLATIN_proximal_all	47
+CISPLATIN_proximal_with_organoid_NES	30
+CISPLATIN_proximal_with_organoid_and_TCGA_NES	30
+CISPLATIN_biomarker_z	-2.1155
+Figure 2b_n_pathways	612
+Figure 2b_n_sample_columns	22
+Figure 2e_n_pathways	488
+Figure 2e_n_sample_columns	11
+Figure 2g_n_pathways	674
+Figure 2g_n_sample_columns	449
+Figure 2h_n_pathways	490
+Figure 2h_n_sample_columns	407
+Figure 4b_n_pathways	674
+Figure 4b_n_sample_columns	12
+Figure 4c_n_pathways	674
+Figure 4c_n_sample_columns	6
+Bolis_COAD_5FU_selected features	15
+Bolis_BLCA_cisplatin_selected_features	8
+Figure 4e_iterations	10000
+Figure 4e_rank1	12
+Figure 4e_rank<=2	25
+Figure 4e_NA(top_rank>37)	8927
+Figure 4f_iterations	10000
+Figure 4f_rank1	66
+Figure 4f_rank<=2	140
+Figure 4f_NA(top_rank>30)	6366
