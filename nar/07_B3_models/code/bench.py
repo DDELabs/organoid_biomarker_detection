@@ -124,9 +124,9 @@ def zy(y):
     return (y - y.mean()) / (y.std() or 1)
 
 
-def rank_model(Xo, Xp, tr, te, cols, k, full):
+def rank_model(Xo, Xp, y, tr, te, cols, k, full):
     Xtr, mu, sd = B.zcols(Xo[tr][:, cols])
-    c = ridge_paper(Xtr, zy(Xo[:, 0][tr] * 0 + Y[tr]))
+    c = ridge_paper(Xtr, zy(y[tr]))
     o = np.argsort(-np.abs(c), kind="stable")[: (len(c) if k is None else k)]
     po = B.zcols(Xo[te][:, cols], mu, sd)[0][:, o] @ c[o]
     pp = Xp[:, cols][:, o] @ c[o] if full else None
@@ -158,21 +158,19 @@ def bolis(Xtr, ytr, rng, n_rep=10, p_cut=0.05):
 # ------------------------------------------------------------------------------------------------ one model, one fold
 def fit_predict(name, C, tr, te, full=False, extra=None):
     """Returns (pred on lab models te, pred on all patients or None, info)."""
-    global Y
-    Y = C.y
     info = {}
     if name.startswith("Paper: single") or name.startswith("Paper: top-2") or name.startswith("Ridge: all network"):
         Xo = C.Xo_pwA if "alignment" in name else C.Xo_pw
         k = 1 if "single" in name else (2 if "top-2" in name else None)
-        po, pp, cols, c = rank_model(Xo, C.Xp_pw, tr, te, C.F, k, full)
+        po, pp, cols, c = rank_model(Xo, C.Xp_pw, C.y, tr, te, C.F, k, full)
         info = {"pathways": [C.U[i] for i in cols], "coef": list(c)}
         return po, pp, info
     if name.startswith("All pathways"):
-        po, pp, _, _ = rank_model(C.Xo_pw, C.Xp_pw, tr, te, list(range(len(C.U))), None, full)
+        po, pp, _, _ = rank_model(C.Xo_pw, C.Xp_pw, C.y, tr, te, list(range(len(C.U))), None, full)
         return po, pp, info
     if "central" in name:
         key = name.split("-")[0].lower()
-        po, pp, cols, c = rank_model(C.Xo_pw, C.Xp_pw, tr, te, C.central[key], 1, full)
+        po, pp, cols, c = rank_model(C.Xo_pw, C.Xp_pw, C.y, tr, te, C.central[key], 1, full)
         return po, pp, {"pathways": [C.U[i] for i in cols]}
     if name.startswith("Whole transcriptome") or name.startswith("First-neighbour") or name.startswith("Network propagation") \
             or name.startswith("Bolis"):
@@ -326,8 +324,8 @@ def run_pair(bname, drug):
         cols = list(rng.choice(len(C.U), k, replace=False))
         oof = np.full(len(C.S), np.nan)
         for tr, te in C.folds:
-            oof[te] = rank_model(C.Xo_pw, C.Xp_pw, tr, te, cols, 1, False)[0]
-        _, pp, sel, _ = rank_model(C.Xo_pw, C.Xp_pw, np.arange(len(C.S)), np.arange(len(C.S)), cols, 1, True)
+            oof[te] = rank_model(C.Xo_pw, C.Xp_pw, C.y, tr, te, cols, 1, False)[0]
+        _, pp, sel, _ = rank_model(C.Xo_pw, C.Xp_pw, C.y, np.arange(len(C.S)), np.arange(len(C.S)), cols, 1, True)
         m = patient_metrics(C, pp, boot=False)
         m.update({f"loo_{a}": b for a, b in B.spearman_ci(oof, C.y).items()}, pathway=C.U[sel[0]])
         rr.append(m)
