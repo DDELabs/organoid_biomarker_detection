@@ -1,0 +1,10 @@
+unit	SARC_GEMCITABINE
+features	shortlist
+n_features	36
+feature_source	STRING v12 proximity shortlist of GEMCITABINE (robust/results/survlearn, z <= -1.28)
+design	5-fold cross-fitting by patient within the single cohort (5 repeats)
+trainable_cohorts	TCGA-SARC
+organoid_alpha	1000.0
+lab	sarcoma_alshihabi2024:GEMCITABINE n=14 dropped_axes=8
+n_lab	14
+seconds	86.2
