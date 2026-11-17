@@ -1,0 +1,40 @@
+paper CISPLATIN {'n_models': 9, 'n_proximal': 30, 'biomarker': 'REACTOME_TRANSPORT_OF_GLUCOSE_AND_OTHER_SUGARS_BILE_SALTS_AND_ORGANIC_ACIDS_METAL_IONS_AND_AMINE_COMPOUNDS', 'treated_n': np.int64(79), 'treated_p': np.float64(0.043517695375197896), 'treated_hr': np.float64(2.6302833339619083), 'untreated_p': np.float64(0.9293850010469458), 'perm_empirical_p': np.float64(0.2967032967032967)}
+current CISPLATIN {'n_models': 9, 'n_proximal': 47, 'biomarker': 'REACTOME_TRANSPORT_OF_ORGANIC_ANIONS', 'treated_n': np.int64(79), 'treated_p': np.float64(0.06721122529548618), 'treated_hr': np.float64(2.0254690727423403), 'untreated_p': np.float64(0.10669954217352573), 'perm_empirical_p': np.float64(0.03596403596403597)}
+current GEMCITABINE {'n_models': 11, 'n_proximal': 45, 'biomarker': 'REACTOME_ACTIVATION_OF_BH3_ONLY_PROTEINS', 'treated_n': np.int64(88), 'treated_p': np.float64(0.508673828524056), 'treated_hr': np.float64(0.7968656222565418), 'untreated_p': np.float64(0.9975369865192104), 'perm_empirical_p': np.float64(0.45354645354645357)}
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+current METHOTREXATE {'n_models': 9, 'n_proximal': 60, 'biomarker': 'REACTOME_SIGNALING_BY_TGF_BETA_RECEPTOR_COMPLEX', 'treated_n': np.int64(12), 'treated_p': np.float64(0.6141638541354472), 'treated_hr': np.float64(0.6325667909922975), 'untreated_p': np.float64(0.04070925527568048), 'perm_empirical_p': np.float64(0.8011988011988012)}
+current DOXORUBICIN {'n_models': 9, 'n_proximal': 14, 'biomarker': 'REACTOME_CYTOSOLIC_TRNA_AMINOACYLATION', 'treated_n': np.int64(16), 'treated_p': np.float64(0.3680034678299299), 'treated_hr': np.float64(0.4998337634368768), 'untreated_p': np.float64(0.8986703271237304), 'perm_empirical_p': np.float64(0.4085914085914086)}
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+current VINBLASTINE {'n_models': 9, 'n_proximal': 62, 'biomarker': 'REACTOME_SHC_MEDIATED_SIGNALLING', 'treated_n': np.int64(12), 'treated_p': np.float64(0.6014735846314108), 'treated_hr': np.float64(1.6065064469298214), 'untreated_p': np.float64(0.928507406190876), 'perm_empirical_p': np.float64(0.5014985014985015)}
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+current PACLITAXEL {'n_models': 9, 'n_proximal': 150, 'biomarker': 'REACTOME_ENDOGENOUS_STEROLS', 'treated_n': np.int64(10), 'treated_p': np.float64(0.35930975939593357), 'treated_hr': np.float64(0.45907432668525133), 'untreated_p': np.float64(0.19958939967724765), 'perm_empirical_p': np.float64(0.6243756243756243)}
+current CARBOPLATIN {'n_models': 9, 'n_proximal': 47, 'biomarker': 'REACTOME_TRANSPORT_OF_ORGANIC_ANIONS', 'treated_n': np.int64(22), 'treated_p': np.float64(0.2577938722909139), 'treated_hr': np.float64(2.0750732199174267), 'untreated_p': np.float64(0.10669954217352573), 'perm_empirical_p': np.float64(0.32367632367632365)}

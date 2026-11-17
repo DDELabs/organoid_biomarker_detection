@@ -1,0 +1,915 @@
+{
+ "named_biomarker": [
+  {
+   "version": "paper",
+   "group": "treated",
+   "ridge_rank_of_AA": 6,
+   "coef": -0.14713652465773913,
+   "n": 79,
+   "events": 20,
+   "n_nonresp": 39,
+   "n_resp": 40,
+   "events_nonresp": 13,
+   "events_resp": 7,
+   "p": 0.031077013373841167,
+   "hr": 2.6564485771329505,
+   "hr_lo": 1.055595585308815,
+   "hr_hi": 6.685059260537956,
+   "surv5_resp": 0.7038251156608645,
+   "surv5_nonresp": 0.4873733449491026
+  },
+  {
+   "version": "paper",
+   "group": "untreated",
+   "ridge_rank_of_AA": 6,
+   "coef": -0.14713652465773913,
+   "n": 288,
+   "events": 79,
+   "n_nonresp": 144,
+   "n_resp": 144,
+   "events_nonresp": 28,
+   "events_resp": 51,
+   "p": 0.08707584482982289,
+   "hr": 0.6700017110271167,
+   "hr_lo": 0.4221655746073172,
+   "hr_hi": 1.0633323032007436,
+   "surv5_resp": 0.4063230587600293,
+   "surv5_nonresp": 0.5850866137265992
+  },
+  {
+   "version": "current",
+   "group": "treated",
+   "ridge_rank_of_AA": 30,
+   "coef": -0.03332997983914692,
+   "n": 79,
+   "events": 28,
+   "n_nonresp": 39,
+   "n_resp": 40,
+   "events_nonresp": 17,
+   "events_resp": 11,
+   "p": 0.06340563603576621,
+   "hr": 2.026821053854423,
+   "hr_lo": 0.9467593864170291,
+   "hr_hi": 4.339015428084763,
+   "surv5_resp": 0.6628940615835778,
+   "surv5_nonresp": 0.5003712381445744
+  },
+  {
+   "version": "current",
+   "group": "untreated",
+   "ridge_rank_of_AA": 30,
+   "coef": -0.03332997983914692,
+   "n": 283,
+   "events": 131,
+   "n_nonresp": 141,
+   "n_resp": 142,
+   "events_nonresp": 52,
+   "events_resp": 79,
+   "p": 0.02120485916525261,
+   "hr": 0.6640541540610254,
+   "hr_lo": 0.46757572355685895,
+   "hr_hi": 0.9430941285215821,
+   "surv5_resp": 0.3141679752785283,
+   "surv5_nonresp": 0.42165516105813794
+  }
+ ],
+ "paper_bootstrap": {
+  "iterations": 10000,
+  "not_found": 0,
+  "rank1": 66,
+  "rank2": 74,
+  "empirical_p_rank<=1": 0.0066,
+  "empirical_p_rank<=2": 0.014
+ },
+ "isogenic": [
+  {
+   "label": "paper biomarker",
+   "pathway": "REACTOME_AMINO_ACID_SYNTHESIS_AND_INTERCONVERSION_TRANSAMINATION",
+   "proximity_z": -2.11548969435,
+   "mean_sensitive": 0.32402178528956366,
+   "mean_resistant": 0.26345091752056,
+   "t_sensitive_minus_resistant": 12.722235606847262,
+   "p": 0.00021989623787217597,
+   "coef_paperdata": -0.14713652465773913,
+   "coef_currentdata": -0.03332997983914692
+  },
+  {
+   "label": "our rank 1 (paper data)",
+   "pathway": "REACTOME_TRANSPORT_OF_GLUCOSE_AND_OTHER_SUGARS_BILE_SALTS_AND_ORGANIC_ACIDS_METAL_IONS_AND_AMINE_COMPOUNDS",
+   "proximity_z": -2.72614560705,
+   "mean_sensitive": -0.09034623801599877,
+   "mean_resistant": -0.121829126993234,
+   "t_sensitive_minus_resistant": 3.953588296250685,
+   "p": 0.016767478969281418,
+   "coef_paperdata": 0.4261148051777608,
+   "coef_currentdata": 0.14131091039725194
+  },
+  {
+   "label": "our rank 1 (current data)",
+   "pathway": "REACTOME_TRANSPORT_OF_ORGANIC_ANIONS",
+   "proximity_z": -2.83683845422,
+   "mean_sensitive": -0.155419426845021,
+   "mean_resistant": -0.14004028434601634,
+   "t_sensitive_minus_resistant": -1.965083681232835,
+   "p": 0.12084832401329777,
+   "coef_paperdata": NaN,
+   "coef_currentdata": -0.16529735791016345
+  },
+  {
+   "label": "most proximal #1",
+   "pathway": "REACTOME_METAL_ION_SLC_TRANSPORTERS",
+   "proximity_z": -4.02815036677,
+   "mean_sensitive": 0.07799706908102068,
+   "mean_resistant": 0.059532984995503725,
+   "t_sensitive_minus_resistant": 4.1660921602812735,
+   "p": 0.014075601844499165,
+   "coef_paperdata": 0.0035685765092455753,
+   "coef_currentdata": 0.061954368746949456
+  },
+  {
+   "label": "most proximal #2",
+   "pathway": "REACTOME_RESPONSE_TO_ELEVATED_PLATELET_CYTOSOLIC_CA2_",
+   "proximity_z": -3.75078116864,
+   "mean_sensitive": 0.13838765445640433,
+   "mean_resistant": 0.11733593967358734,
+   "t_sensitive_minus_resistant": 10.117264943346727,
+   "p": 0.0005371920243531892,
+   "coef_paperdata": -0.029430980240387976,
+   "coef_currentdata": 0.017910049668279217
+  },
+  {
+   "label": "most proximal #3",
+   "pathway": "REACTOME_RECYCLING_OF_BILE_ACIDS_AND_SALTS",
+   "proximity_z": -3.73370798502,
+   "mean_sensitive": -0.2806256455996307,
+   "mean_resistant": -0.216541849732753,
+   "t_sensitive_minus_resistant": -4.598397367334034,
+   "p": 0.010043015520646369,
+   "coef_paperdata": NaN,
+   "coef_currentdata": -0.09559007651456464
+  }
+ ],
+ "ercc2": [
+  {
+   "feature_set": "whole transcriptome",
+   "n_features": 17717,
+   "n_mut": 36,
+   "n_wt": 366,
+   "median_mut": 0.0007285464264907594,
+   "median_wt": 0.0667386416464137,
+   "p_one_sided": 0.06474952234010609
+  },
+  {
+   "feature_set": "whole pathway (paper data)",
+   "n_features": 488,
+   "n_mut": 36,
+   "n_wt": 367,
+   "median_mut": -0.3630961317174831,
+   "median_wt": 0.08687901167252834,
+   "p_one_sided": 0.010284228466800105
+  },
+  {
+   "feature_set": "whole pathway (current data)",
+   "n_features": 668,
+   "n_mut": 36,
+   "n_wt": 366,
+   "median_mut": -0.17301707446627712,
+   "median_wt": 0.0727188918515117,
+   "p_one_sided": 0.022180333821148857
+  },
+  {
+   "feature_set": "neighbours up to 1",
+   "n_features": 317,
+   "n_mut": 36,
+   "n_wt": 366,
+   "median_mut": -0.044001242210655364,
+   "median_wt": 0.08344828810503184,
+   "p_one_sided": 0.0813849348149478
+  },
+  {
+   "feature_set": "neighbours up to 2",
+   "n_features": 5569,
+   "n_mut": 36,
+   "n_wt": 366,
+   "median_mut": -0.022538602087069953,
+   "median_wt": 0.06987003532433866,
+   "p_one_sided": 0.03451341859286377
+  },
+  {
+   "feature_set": "neighbours up to 3",
+   "n_features": 11784,
+   "n_mut": 36,
+   "n_wt": 366,
+   "median_mut": 0.0032126803566629716,
+   "median_wt": 0.07399018709156896,
+   "p_one_sided": 0.051674719261108115
+  },
+  {
+   "feature_set": "network rank 1 (paper data)",
+   "n_features": 1,
+   "n_mut": 36,
+   "n_wt": 367,
+   "median_mut": 0.1893475900632069,
+   "median_wt": 0.01144825138010712,
+   "p_one_sided": 0.8784509261004525
+  },
+  {
+   "feature_set": "paper biomarker AA (paper data)",
+   "n_features": 1,
+   "n_mut": 36,
+   "n_wt": 367,
+   "median_mut": -0.09582742507836825,
+   "median_wt": 0.01775898532438555,
+   "p_one_sided": 0.0030150566703329397
+  },
+  {
+   "feature_set": "network rank 1 (current data)",
+   "n_features": 1,
+   "n_mut": 36,
+   "n_wt": 366,
+   "median_mut": -0.017913677210142292,
+   "median_wt": 0.0009055561462918283,
+   "p_one_sided": 0.32952715379083974
+  },
+  {
+   "feature_set": "paper biomarker AA (current data)",
+   "n_features": 1,
+   "n_mut": 36,
+   "n_wt": 366,
+   "median_mut": -0.02564002452706983,
+   "median_wt": 0.0013396796350965724,
+   "p_one_sided": 0.0005455373829338435
+  }
+ ],
+ "comparisons": [
+  {
+   "model": "whole transcriptome",
+   "n_features": 17717,
+   "survival": "current GDC",
+   "n": 79,
+   "events": 28,
+   "n_nonresp": 39,
+   "n_resp": 40,
+   "events_nonresp": 14,
+   "events_resp": 14,
+   "p": 0.7048267736759048,
+   "hr": 1.1555807703875893,
+   "hr_lo": 0.5465090408254005,
+   "hr_hi": 2.4434489041073326,
+   "surv5_resp": 0.6593431122448979,
+   "surv5_nonresp": 0.4644278432748069
+  },
+  {
+   "model": "whole pathway (paper data)",
+   "n_features": 488,
+   "survival": "paper-era biotab",
+   "n": 79,
+   "events": 20,
+   "n_nonresp": 39,
+   "n_resp": 40,
+   "events_nonresp": 10,
+   "events_resp": 10,
+   "p": 0.5923180447890737,
+   "hr": 1.2717730181664546,
+   "hr_lo": 0.5264464632973934,
+   "hr_hi": 3.0723097646161377,
+   "surv5_resp": 0.6602850122850124,
+   "surv5_nonresp": 0.45967991061158764
+  },
+  {
+   "model": "whole pathway (current data)",
+   "n_features": 668,
+   "survival": "current GDC",
+   "n": 79,
+   "events": 28,
+   "n_nonresp": 39,
+   "n_resp": 40,
+   "events_nonresp": 13,
+   "events_resp": 15,
+   "p": 0.8626614105363865,
+   "hr": 0.9362405564166921,
+   "hr_lo": 0.4437531117233345,
+   "hr_hi": 1.9753019332649437,
+   "surv5_resp": 0.588477366255144,
+   "surv5_nonresp": 0.5710103006237459
+  },
+  {
+   "model": "neighbours up to 1",
+   "n_features": 317,
+   "survival": "current GDC",
+   "n": 79,
+   "events": 28,
+   "n_nonresp": 39,
+   "n_resp": 40,
+   "events_nonresp": 14,
+   "events_resp": 14,
+   "p": 0.6956174133776141,
+   "hr": 1.1614596316344064,
+   "hr_lo": 0.5483622857438527,
+   "hr_hi": 2.4600314627517283,
+   "surv5_resp": 0.6074694536232998,
+   "surv5_nonresp": 0.5568021133278487
+  },
+  {
+   "model": "neighbours up to 2",
+   "n_features": 5569,
+   "survival": "current GDC",
+   "n": 79,
+   "events": 28,
+   "n_nonresp": 39,
+   "n_resp": 40,
+   "events_nonresp": 13,
+   "events_resp": 15,
+   "p": 0.9418362224505812,
+   "hr": 0.9724763057360576,
+   "hr_lo": 0.45947336420572293,
+   "hr_hi": 2.058248070272516,
+   "surv5_resp": 0.6312033414954611,
+   "surv5_nonresp": 0.4956747534872536
+  },
+  {
+   "model": "neighbours up to 3",
+   "n_features": 11784,
+   "survival": "current GDC",
+   "n": 79,
+   "events": 28,
+   "n_nonresp": 39,
+   "n_resp": 40,
+   "events_nonresp": 13,
+   "events_resp": 15,
+   "p": 0.9861392031033239,
+   "hr": 1.0066805191781825,
+   "hr_lo": 0.4749561508123933,
+   "hr_hi": 2.1336825851385766,
+   "surv5_resp": 0.6086244113029827,
+   "surv5_nonresp": 0.5573134119297682
+  },
+  {
+   "model": "network rank 1 (paper data)",
+   "n_features": 1,
+   "survival": "paper-era biotab",
+   "n": 79,
+   "events": 20,
+   "n_nonresp": 39,
+   "n_resp": 40,
+   "events_nonresp": 14,
+   "events_resp": 6,
+   "p": 0.043517695375197896,
+   "hr": 2.6302833339619083,
+   "hr_lo": 0.9937820015700239,
+   "hr_hi": 6.961678120541295,
+   "surv5_resp": 0.7500290258910948,
+   "surv5_nonresp": 0.4428510042745288
+  },
+  {
+   "model": "network rank 1 (current data)",
+   "n_features": 1,
+   "survival": "current GDC",
+   "n": 79,
+   "events": 28,
+   "n_nonresp": 39,
+   "n_resp": 40,
+   "events_nonresp": 17,
+   "events_resp": 11,
+   "p": 0.06721122529548618,
+   "hr": 2.0254690727423403,
+   "hr_lo": 0.9374079932146868,
+   "hr_hi": 4.376456136848994,
+   "surv5_resp": 0.6814326533564815,
+   "surv5_nonresp": 0.4977814526327468
+  },
+  {
+   "model": "cross-test: colorectal 5-FU biomarker BH3 (paper data)",
+   "n_features": 1,
+   "survival": "paper-era biotab",
+   "n": 79,
+   "events": 20,
+   "n_nonresp": 39,
+   "n_resp": 40,
+   "events_nonresp": 9,
+   "events_resp": 11,
+   "p": 0.9818181464755955,
+   "hr": 0.9897139855792937,
+   "hr_lo": 0.4067460719888959,
+   "hr_hi": 2.408219379873916,
+   "surv5_resp": 0.5743020981507825,
+   "surv5_nonresp": 0.6081149121149121
+  },
+  {
+   "model": "cross-test: colorectal 5-FU biomarker BH3 (current data)",
+   "n_features": 1,
+   "survival": "current GDC",
+   "n": 79,
+   "events": 28,
+   "n_nonresp": 39,
+   "n_resp": 40,
+   "events_nonresp": 13,
+   "events_resp": 15,
+   "p": 0.4451528615835292,
+   "hr": 0.7482150053241143,
+   "hr_lo": 0.35444489079053454,
+   "hr_hi": 1.5794435432361846,
+   "surv5_resp": 0.5959809447128288,
+   "surv5_nonresp": 0.5943351093192237
+  },
+  {
+   "model": "target gene A2M (high = resistant)",
+   "n_features": 1,
+   "survival": "current GDC",
+   "n": 79,
+   "events": 28,
+   "n_nonresp": 39,
+   "n_resp": 40,
+   "events_nonresp": 14,
+   "events_resp": 14,
+   "p": 0.7398479823971762,
+   "hr": 0.8818116178092075,
+   "hr_lo": 0.4195073821737312,
+   "hr_hi": 1.8535829459641466,
+   "surv5_resp": 0.6252835753176045,
+   "surv5_nonresp": 0.5574995563203012
+  },
+  {
+   "model": "target gene ATOX1 (high = resistant)",
+   "n_features": 1,
+   "survival": "current GDC",
+   "n": 79,
+   "events": 28,
+   "n_nonresp": 39,
+   "n_resp": 40,
+   "events_nonresp": 12,
+   "events_resp": 16,
+   "p": 0.36501154567583516,
+   "hr": 0.7074684988068821,
+   "hr_lo": 0.3333820426008124,
+   "hr_hi": 1.5013156464560085,
+   "surv5_resp": 0.45279029336251364,
+   "surv5_nonresp": 0.6990495137046862
+  },
+  {
+   "model": "target gene MPG (high = resistant)",
+   "n_features": 1,
+   "survival": "current GDC",
+   "n": 79,
+   "events": 28,
+   "n_nonresp": 39,
+   "n_resp": 40,
+   "events_nonresp": 13,
+   "events_resp": 15,
+   "p": 0.6805697087855677,
+   "hr": 0.8554298261458336,
+   "hr_lo": 0.4064394594438146,
+   "hr_hi": 1.800416200880831,
+   "surv5_resp": 0.5731343707002936,
+   "surv5_nonresp": 0.6170106861606033
+  },
+  {
+   "model": "target gene TF (high = resistant)",
+   "n_features": 1,
+   "survival": "current GDC",
+   "n": 79,
+   "events": 28,
+   "n_nonresp": 39,
+   "n_resp": 40,
+   "events_nonresp": 13,
+   "events_resp": 15,
+   "p": 0.6530097074704162,
+   "hr": 0.8422076641737447,
+   "hr_lo": 0.3980078953992832,
+   "hr_hi": 1.7821599968046073,
+   "surv5_resp": 0.5791251109139307,
+   "surv5_nonresp": 0.5904877897222396
+  }
+ ],
+ "clinical": [
+  {
+   "version": "current",
+   "biomarker": "paper biomarker AA",
+   "feature": "N stage",
+   "chi2_p": 0.28743519487061314
+  },
+  {
+   "version": "current",
+   "biomarker": "paper biomarker AA",
+   "feature": "T stage",
+   "chi2_p": 1.0
+  },
+  {
+   "version": "current",
+   "biomarker": "paper biomarker AA",
+   "feature": "age",
+   "chi2_p": 0.9460209457034834
+  },
+  {
+   "version": "current",
+   "biomarker": "paper biomarker AA",
+   "feature": "sex",
+   "chi2_p": 0.8647488217973089
+  },
+  {
+   "version": "current",
+   "biomarker": "rank 1",
+   "feature": "N stage",
+   "chi2_p": 0.3455360927744395
+  },
+  {
+   "version": "current",
+   "biomarker": "rank 1",
+   "feature": "T stage",
+   "chi2_p": 0.4178869643175003
+  },
+  {
+   "version": "current",
+   "biomarker": "rank 1",
+   "feature": "age",
+   "chi2_p": 0.5638722963071348
+  },
+  {
+   "version": "current",
+   "biomarker": "rank 1",
+   "feature": "sex",
+   "chi2_p": 0.5094781461429514
+  },
+  {
+   "version": "paper",
+   "biomarker": "paper biomarker AA",
+   "feature": "N stage",
+   "chi2_p": 0.11006912496037437
+  },
+  {
+   "version": "paper",
+   "biomarker": "paper biomarker AA",
+   "feature": "T stage",
+   "chi2_p": 1.0
+  },
+  {
+   "version": "paper",
+   "biomarker": "paper biomarker AA",
+   "feature": "age",
+   "chi2_p": 1.0
+  },
+  {
+   "version": "paper",
+   "biomarker": "paper biomarker AA",
+   "feature": "sex",
+   "chi2_p": 1.0
+  },
+  {
+   "version": "paper",
+   "biomarker": "rank 1",
+   "feature": "N stage",
+   "chi2_p": 0.32681675889956735
+  },
+  {
+   "version": "paper",
+   "biomarker": "rank 1",
+   "feature": "T stage",
+   "chi2_p": 1.0
+  },
+  {
+   "version": "paper",
+   "biomarker": "rank 1",
+   "feature": "age",
+   "chi2_p": 0.9460209457034834
+  },
+  {
+   "version": "paper",
+   "biomarker": "rank 1",
+   "feature": "sex",
+   "chi2_p": 0.5094781461429514
+  }
+ ],
+ "multik_vs_paper": [
+  {
+   "model": "Ridge",
+   "k": 2,
+   "p_paper": 0.0218449146082596,
+   "p_ours_paper_data": 0.060391200780329,
+   "p_ours_current_data": 0.0706818968215627
+  },
+  {
+   "model": "Ridge",
+   "k": 3,
+   "p_paper": 0.495645113288533,
+   "p_ours_paper_data": 0.0639285742076545,
+   "p_ours_current_data": 0.0268609352976384
+  },
+  {
+   "model": "Ridge",
+   "k": 4,
+   "p_paper": 0.160717686344971,
+   "p_ours_paper_data": 0.2797049020689981,
+   "p_ours_current_data": 0.1053892055443824
+  },
+  {
+   "model": "Ridge",
+   "k": 5,
+   "p_paper": 0.480139772848578,
+   "p_ours_paper_data": 0.077942842284935,
+   "p_ours_current_data": 0.119717008169966
+  },
+  {
+   "model": "Ridge",
+   "k": 6,
+   "p_paper": 0.708972810347374,
+   "p_ours_paper_data": 0.1703679120892473,
+   "p_ours_current_data": 0.2464136616527754
+  },
+  {
+   "model": "Ridge",
+   "k": 7,
+   "p_paper": 0.34176026094499,
+   "p_ours_paper_data": 0.0803946840052614,
+   "p_ours_current_data": 0.1952318990189666
+  },
+  {
+   "model": "Ridge",
+   "k": 8,
+   "p_paper": 0.639314856140702,
+   "p_ours_paper_data": 0.076223766315542,
+   "p_ours_current_data": 0.015309630020827
+  },
+  {
+   "model": "Ridge",
+   "k": 9,
+   "p_paper": 0.126330100613611,
+   "p_ours_paper_data": 0.1192613165378051,
+   "p_ours_current_data": 0.0082144056618937
+  },
+  {
+   "model": "Ridge",
+   "k": 10,
+   "p_paper": 0.256403995315027,
+   "p_ours_paper_data": 0.0170628611639351,
+   "p_ours_current_data": 0.0265651517245051
+  },
+  {
+   "model": "SVR",
+   "k": 2,
+   "p_paper": 0.0218449146082596,
+   "p_ours_paper_data": 0.060391200780329,
+   "p_ours_current_data": 0.7038530184386456
+  },
+  {
+   "model": "SVR",
+   "k": 3,
+   "p_paper": 0.495645113288533,
+   "p_ours_paper_data": 0.100911592016522,
+   "p_ours_current_data": 0.1126003854191151
+  },
+  {
+   "model": "SVR",
+   "k": 4,
+   "p_paper": 0.160717686344971,
+   "p_ours_paper_data": 0.1365853607152868,
+   "p_ours_current_data": 0.1053892055443824
+  },
+  {
+   "model": "SVR",
+   "k": 5,
+   "p_paper": 0.413655714656926,
+   "p_ours_paper_data": 0.077942842284935,
+   "p_ours_current_data": 0.1644539234715515
+  },
+  {
+   "model": "SVR",
+   "k": 6,
+   "p_paper": 0.708972810347374,
+   "p_ours_paper_data": 0.1703679120892473,
+   "p_ours_current_data": 0.255430281016223
+  },
+  {
+   "model": "SVR",
+   "k": 7,
+   "p_paper": 0.789417106696259,
+   "p_ours_paper_data": 0.0803946840052614,
+   "p_ours_current_data": 0.1952318990189666
+  },
+  {
+   "model": "SVR",
+   "k": 8,
+   "p_paper": 0.951680390113213,
+   "p_ours_paper_data": 0.076223766315542,
+   "p_ours_current_data": 0.0118064813039575
+  },
+  {
+   "model": "SVR",
+   "k": 9,
+   "p_paper": 0.664017148447982,
+   "p_ours_paper_data": 0.1192613165378051,
+   "p_ours_current_data": 0.0237716405496009
+  },
+  {
+   "model": "SVR",
+   "k": 10,
+   "p_paper": 0.231578460422952,
+   "p_ours_paper_data": 0.1886839642701238,
+   "p_ours_current_data": 0.0861122649499657
+  },
+  {
+   "model": "LinearRegression",
+   "k": 2,
+   "p_paper": 0.0218449146082596,
+   "p_ours_paper_data": 0.060391200780329,
+   "p_ours_current_data": 0.0706818968215627
+  },
+  {
+   "model": "LinearRegression",
+   "k": 3,
+   "p_paper": 0.495645113288533,
+   "p_ours_paper_data": 0.100911592016522,
+   "p_ours_current_data": 0.0268609352976384
+  },
+  {
+   "model": "LinearRegression",
+   "k": 4,
+   "p_paper": 0.160717686344971,
+   "p_ours_paper_data": 0.2797049020689981,
+   "p_ours_current_data": 0.1053892055443824
+  },
+  {
+   "model": "LinearRegression",
+   "k": 5,
+   "p_paper": 0.297522102850334,
+   "p_ours_paper_data": 0.077942842284935,
+   "p_ours_current_data": 0.119717008169966
+  },
+  {
+   "model": "LinearRegression",
+   "k": 6,
+   "p_paper": 0.655738977668427,
+   "p_ours_paper_data": 0.1703679120892473,
+   "p_ours_current_data": 0.2464136616527754
+  },
+  {
+   "model": "LinearRegression",
+   "k": 7,
+   "p_paper": 0.34176026094499,
+   "p_ours_paper_data": 0.0396078113315281,
+   "p_ours_current_data": 0.1952318990189666
+  },
+  {
+   "model": "LinearRegression",
+   "k": 8,
+   "p_paper": 0.808991986474431,
+   "p_ours_paper_data": 0.076223766315542,
+   "p_ours_current_data": 0.015309630020827
+  },
+  {
+   "model": "LinearRegression",
+   "k": 9,
+   "p_paper": 0.126330100613611,
+   "p_ours_paper_data": 0.1192613165378051,
+   "p_ours_current_data": 0.0082144056618937
+  },
+  {
+   "model": "LinearRegression",
+   "k": 10,
+   "p_paper": 0.0625034193999905,
+   "p_ours_paper_data": 0.1267003267809199,
+   "p_ours_current_data": 0.0265651517245051
+  }
+ ],
+ "pca": [
+  {
+   "level": "genes (current data)",
+   "scaled": false,
+   "pc1": 15.47971158409894,
+   "pc2": 12.822236074796109
+  },
+  {
+   "level": "genes (current data)",
+   "scaled": true,
+   "pc1": 8.82143026515892,
+   "pc2": 6.55924483397907
+  },
+  {
+   "level": "pathways (paper NES)",
+   "scaled": false,
+   "pc1": 27.11466034634008,
+   "pc2": 17.774146286709787
+  },
+  {
+   "level": "pathways (paper NES)",
+   "scaled": true,
+   "pc1": 20.711571206409438,
+   "pc2": 18.78796768207658
+  }
+ ],
+ "gdsc": [
+  {
+   "training": "all GDSC lines",
+   "n_lines": 473,
+   "rank": 1,
+   "pathway": "REACTOME_LIPOPROTEIN_METABOLISM",
+   "coef": -0.46316359251746614,
+   "n": 79,
+   "events": 28,
+   "n_nonresp": 39,
+   "n_resp": 40,
+   "events_nonresp": 13,
+   "events_resp": 15,
+   "p": 0.8189542754204747,
+   "hr": 0.9165545157656501,
+   "hr_lo": 0.43452817631978796,
+   "hr_hi": 1.9332973697709308,
+   "surv5_resp": 0.5614175718475074,
+   "surv5_nonresp": 0.620768031968032
+  },
+  {
+   "training": "all GDSC lines",
+   "n_lines": 473,
+   "rank": 2,
+   "pathway": "REACTOME_BASE_FREE_SUGAR_PHOSPHATE_REMOVAL_VIA_THE_SINGLE_NUCLEOTIDE_REPLACEMENT_PATHWAY",
+   "coef": 0.361081289542018,
+   "n": 79,
+   "events": 28,
+   "n_nonresp": 39,
+   "n_resp": 40,
+   "events_nonresp": 8,
+   "events_resp": 20,
+   "p": 0.011835972818778573,
+   "hr": 0.36388694604020644,
+   "hr_lo": 0.16012482847594567,
+   "hr_hi": 0.8269405235825725,
+   "surv5_resp": 0.41780722293174405,
+   "surv5_nonresp": 0.7761159436097402
+  },
+  {
+   "training": "all GDSC lines",
+   "n_lines": 473,
+   "rank": 3,
+   "pathway": "REACTOME_RESOLUTION_OF_AP_SITES_VIA_THE_SINGLE_NUCLEOTIDE_REPLACEMENT_PATHWAY",
+   "coef": -0.3194003684168643,
+   "n": 79,
+   "events": 28,
+   "n_nonresp": 39,
+   "n_resp": 40,
+   "events_nonresp": 20,
+   "events_resp": 8,
+   "p": 0.01137892528594342,
+   "hr": 2.7614132374998803,
+   "hr_lo": 1.2153821167658778,
+   "hr_hi": 6.274078714051435,
+   "surv5_resp": 0.7777328518255938,
+   "surv5_nonresp": 0.4254732199115966
+  },
+  {
+   "training": "bladder GDSC lines",
+   "n_lines": 14,
+   "rank": 1,
+   "pathway": "REACTOME_BMAL1_CLOCK_NPAS2_ACTIVATES_CIRCADIAN_EXPRESSION",
+   "coef": 0.2656591554662516,
+   "n": 79,
+   "events": 28,
+   "n_nonresp": 39,
+   "n_resp": 40,
+   "events_nonresp": 17,
+   "events_resp": 11,
+   "p": 0.21263128413886567,
+   "hr": 1.614341727954369,
+   "hr_lo": 0.754769766355547,
+   "hr_hi": 3.4528399662832423,
+   "surv5_resp": 0.6749090909090909,
+   "surv5_nonresp": 0.4958120247975321
+  },
+  {
+   "training": "bladder GDSC lines",
+   "n_lines": 14,
+   "rank": 2,
+   "pathway": "REACTOME_DIGESTION_OF_DIETARY_CARBOHYDRATE",
+   "coef": 0.21538408711996393,
+   "n": 79,
+   "events": 28,
+   "n_nonresp": 39,
+   "n_resp": 40,
+   "events_nonresp": 14,
+   "events_resp": 14,
+   "p": 0.6943473739112226,
+   "hr": 1.1634487032345735,
+   "hr_lo": 0.546392778249837,
+   "hr_hi": 2.4773623278733634,
+   "surv5_resp": 0.6254549114331723,
+   "surv5_nonresp": 0.5554313193880985
+  },
+  {
+   "training": "bladder GDSC lines",
+   "n_lines": 14,
+   "rank": 3,
+   "pathway": "REACTOME_GLUCONEOGENESIS",
+   "coef": -0.20495723619326875,
+   "n": 79,
+   "events": 28,
+   "n_nonresp": 39,
+   "n_resp": 40,
+   "events_nonresp": 17,
+   "events_resp": 11,
+   "p": 0.23506825437335577,
+   "hr": 1.5792526260112074,
+   "hr_lo": 0.7380197054462632,
+   "hr_hi": 3.3793662125257313,
+   "surv5_resp": 0.6420689655172415,
+   "surv5_nonresp": 0.5418341995031026
+  }
+ ]
+}

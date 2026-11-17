@@ -33,6 +33,25 @@ def main():
     (OUT / "tables").mkdir(parents=True, exist_ok=True)
     S.to_csv(OUT / "tables" / "cross_set_summary.tsv", sep="\t", index=False)
     S = S[S.treated_p.notna()].reset_index(drop=True)
+    forest(S, OUT / "figures" / "cross_set_forest", "Organoid-only strategy (Kong et al. 2020), rank-1 Ridge pathway, every set and drug")
+    for folder, sub in S.groupby("folder"):
+        top = folder.split("/")[0]
+        forest(sub.reset_index(drop=True), K.PARENT / top / f"MAIN_{folder.replace('/', '_')}_forest",
+               f"{sub.set_label.iloc[0] if sub.set.nunique() == 1 else 'Novartis PDX (Gao 2015), several tumour types'}: all drugs (rank-1 Ridge pathway)")
+    n05 = int((S.treated_p < 0.05).sum())
+    nperm = int((S.perm_empirical_p < 0.05).sum())
+    nright = int(((S.treated_p < 0.05) & (S.treated_hr > 1)).sum())
+    open(OUT / "figures" / "cross_set_forest.caption.md", "w").write(
+        "# All sets and drugs in one plot\n\nEach row is one lab-model set and one drug. The paper's procedure picked one pathway "
+        "from the lab models; TCGA patients were split at the median of that pathway. Red circles: patients given the drug; "
+        "blue squares: patients with no drug record. HR > 1 means predicted non-responders died sooner (the expected direction). "
+        f"Rows: {len(S)}; log-rank p < 0.05 in treated patients: {n05} (of which {nright} in the expected direction); "
+        f"permutation empirical p < 0.05: {nperm}. Numbers in `SUMMARY/tables/cross_set_summary.tsv`.\n")
+    print(S[["set", "project", "drug", "n_models", "treated_n", "treated_p", "treated_hr", "untreated_p", "perm_empirical_p"]].to_string())
+
+
+def forest(S, stem, title):
+    stem.parent.mkdir(parents=True, exist_ok=True)
     fig, ax = plt.subplots(figsize=(10, 0.36 * len(S) + 1.8))
     lab = []
     for i, r in S.iterrows():
@@ -53,20 +72,19 @@ def main():
     ax.plot([], [], "o", color=E.OK["verm"], label="patients given the drug")
     ax.plot([], [], "s", color=E.OK["blue"], mfc="white", label="patients with no drug record")
     ax.legend(frameon=False, loc="lower right", fontsize=8)
-    ax.set_title("Organoid-only strategy (Kong et al. 2020), rank-1 Ridge pathway, every set and drug")
+    ax.set_title(title)
     fig.tight_layout()
-    fig.savefig(OUT / "figures" / "cross_set_forest.png", dpi=300)
-    fig.savefig(OUT / "figures" / "cross_set_forest.pdf")
-    n05 = int((S.treated_p < 0.05).sum())
-    nperm = int((S.perm_empirical_p < 0.05).sum())
-    nright = int(((S.treated_p < 0.05) & (S.treated_hr > 1)).sum())
-    open(OUT / "figures" / "cross_set_forest.caption.md", "w").write(
-        "# All sets and drugs in one plot\n\nEach row is one lab-model set and one drug. The paper's procedure picked one pathway "
-        "from the lab models; TCGA patients were split at the median of that pathway. Red circles: patients given the drug; "
-        "blue squares: patients with no drug record. HR > 1 means predicted non-responders died sooner (the expected direction). "
-        f"Rows: {len(S)}; log-rank p < 0.05 in treated patients: {n05} (of which {nright} in the expected direction); "
-        f"permutation empirical p < 0.05: {nperm}. Numbers in `SUMMARY/tables/cross_set_summary.tsv`.\n")
-    print(S[["set", "project", "drug", "n_models", "treated_n", "treated_p", "treated_hr", "untreated_p", "perm_empirical_p"]].to_string())
+    fig.savefig(f"{stem}.png", dpi=300)
+    fig.savefig(f"{stem}.pdf")
+    plt.close(fig)
+    if "cross_set" not in str(stem):
+        lines = [f"# {title}", "", "Hazard ratio (95% CI) of predicted non-responders vs responders for each drug. Red circles: patients given "
+                 "the drug; blue squares: patients with no drug record. HR > 1 = expected direction.", ""]
+        for _, r in S.iterrows():
+            lines.append(f"- {r.project} {r.drug.lower()}: treated n = {int(r.treated_n)}, deaths = {int(r.treated_events)}, p = {r.treated_p:.3g}, "
+                         f"HR = {r.treated_hr:.2f} ({r.treated_hr_lo:.2f}-{r.treated_hr_hi:.2f}); untreated p = {r.untreated_p:.3g}; "
+                         f"permutation p = {r.perm_empirical_p:.3g}.")
+        open(f"{stem}.caption.md", "w").write("\n".join(lines) + "\n")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,205 @@
+unit	axis	fraction	n	rep	model	concordance
+SARC_GEMCITABINE	lab models	0.25	4	0	organoid-only	
+SARC_GEMCITABINE	lab models	0.25	4	0	joint	
+SARC_GEMCITABINE	lab models	0.25	4	1	organoid-only	
+SARC_GEMCITABINE	lab models	0.25	4	1	joint	
+SARC_GEMCITABINE	lab models	0.25	4	2	organoid-only	
+SARC_GEMCITABINE	lab models	0.25	4	2	joint	
+SARC_GEMCITABINE	lab models	0.25	4	3	organoid-only	
+SARC_GEMCITABINE	lab models	0.25	4	3	joint	
+SARC_GEMCITABINE	lab models	0.25	4	4	organoid-only	
+SARC_GEMCITABINE	lab models	0.25	4	4	joint	
+SARC_GEMCITABINE	lab models	0.25	4	5	organoid-only	
+SARC_GEMCITABINE	lab models	0.25	4	5	joint	
+SARC_GEMCITABINE	lab models	0.25	4	6	organoid-only	
+SARC_GEMCITABINE	lab models	0.25	4	6	joint	
+SARC_GEMCITABINE	lab models	0.25	4	7	organoid-only	
+SARC_GEMCITABINE	lab models	0.25	4	7	joint	
+SARC_GEMCITABINE	lab models	0.25	4	8	organoid-only	
+SARC_GEMCITABINE	lab models	0.25	4	8	joint	
+SARC_GEMCITABINE	lab models	0.25	4	9	organoid-only	
+SARC_GEMCITABINE	lab models	0.25	4	9	joint	
+SARC_GEMCITABINE	lab models	0.25	4	10	organoid-only	
+SARC_GEMCITABINE	lab models	0.25	4	10	joint	
+SARC_GEMCITABINE	lab models	0.25	4	11	organoid-only	
+SARC_GEMCITABINE	lab models	0.25	4	11	joint	
+SARC_GEMCITABINE	lab models	0.25	4	12	organoid-only	
+SARC_GEMCITABINE	lab models	0.25	4	12	joint	
+SARC_GEMCITABINE	lab models	0.25	4	13	organoid-only	
+SARC_GEMCITABINE	lab models	0.25	4	13	joint	
+SARC_GEMCITABINE	lab models	0.25	4	14	organoid-only	
+SARC_GEMCITABINE	lab models	0.25	4	14	joint	
+SARC_GEMCITABINE	lab models	0.25	4	15	organoid-only	
+SARC_GEMCITABINE	lab models	0.25	4	15	joint	
+SARC_GEMCITABINE	lab models	0.25	4	16	organoid-only	
+SARC_GEMCITABINE	lab models	0.25	4	16	joint	
+SARC_GEMCITABINE	lab models	0.25	4	17	organoid-only	
+SARC_GEMCITABINE	lab models	0.25	4	17	joint	
+SARC_GEMCITABINE	lab models	0.25	4	18	organoid-only	
+SARC_GEMCITABINE	lab models	0.25	4	18	joint	
+SARC_GEMCITABINE	lab models	0.25	4	19	organoid-only	
+SARC_GEMCITABINE	lab models	0.25	4	19	joint	
+SARC_GEMCITABINE	lab models	0.5	7	0	organoid-only	
+SARC_GEMCITABINE	lab models	0.5	7	0	joint	
+SARC_GEMCITABINE	lab models	0.5	7	1	organoid-only	
+SARC_GEMCITABINE	lab models	0.5	7	1	joint	
+SARC_GEMCITABINE	lab models	0.5	7	2	organoid-only	
+SARC_GEMCITABINE	lab models	0.5	7	2	joint	
+SARC_GEMCITABINE	lab models	0.5	7	3	organoid-only	
+SARC_GEMCITABINE	lab models	0.5	7	3	joint	
+SARC_GEMCITABINE	lab models	0.5	7	4	organoid-only	
+SARC_GEMCITABINE	lab models	0.5	7	4	joint	
+SARC_GEMCITABINE	lab models	0.5	7	5	organoid-only	
+SARC_GEMCITABINE	lab models	0.5	7	5	joint	
+SARC_GEMCITABINE	lab models	0.5	7	6	organoid-only	
+SARC_GEMCITABINE	lab models	0.5	7	6	joint	
+SARC_GEMCITABINE	lab models	0.5	7	7	organoid-only	
+SARC_GEMCITABINE	lab models	0.5	7	7	joint	
+SARC_GEMCITABINE	lab models	0.5	7	8	organoid-only	
+SARC_GEMCITABINE	lab models	0.5	7	8	joint	
+SARC_GEMCITABINE	lab models	0.5	7	9	organoid-only	
+SARC_GEMCITABINE	lab models	0.5	7	9	joint	
+SARC_GEMCITABINE	lab models	0.5	7	10	organoid-only	
+SARC_GEMCITABINE	lab models	0.5	7	10	joint	
+SARC_GEMCITABINE	lab models	0.5	7	11	organoid-only	
+SARC_GEMCITABINE	lab models	0.5	7	11	joint	
+SARC_GEMCITABINE	lab models	0.5	7	12	organoid-only	
+SARC_GEMCITABINE	lab models	0.5	7	12	joint	
+SARC_GEMCITABINE	lab models	0.5	7	13	organoid-only	
+SARC_GEMCITABINE	lab models	0.5	7	13	joint	
+SARC_GEMCITABINE	lab models	0.5	7	14	organoid-only	
+SARC_GEMCITABINE	lab models	0.5	7	14	joint	
+SARC_GEMCITABINE	lab models	0.5	7	15	organoid-only	
+SARC_GEMCITABINE	lab models	0.5	7	15	joint	
+SARC_GEMCITABINE	lab models	0.5	7	16	organoid-only	
+SARC_GEMCITABINE	lab models	0.5	7	16	joint	
+SARC_GEMCITABINE	lab models	0.5	7	17	organoid-only	
+SARC_GEMCITABINE	lab models	0.5	7	17	joint	
+SARC_GEMCITABINE	lab models	0.5	7	18	organoid-only	
+SARC_GEMCITABINE	lab models	0.5	7	18	joint	
+SARC_GEMCITABINE	lab models	0.5	7	19	organoid-only	
+SARC_GEMCITABINE	lab models	0.5	7	19	joint	
+SARC_GEMCITABINE	lab models	0.75	10	0	organoid-only	
+SARC_GEMCITABINE	lab models	0.75	10	0	joint	
+SARC_GEMCITABINE	lab models	0.75	10	1	organoid-only	
+SARC_GEMCITABINE	lab models	0.75	10	1	joint	
+SARC_GEMCITABINE	lab models	0.75	10	2	organoid-only	
+SARC_GEMCITABINE	lab models	0.75	10	2	joint	
+SARC_GEMCITABINE	lab models	0.75	10	3	organoid-only	
+SARC_GEMCITABINE	lab models	0.75	10	3	joint	
+SARC_GEMCITABINE	lab models	0.75	10	4	organoid-only	
+SARC_GEMCITABINE	lab models	0.75	10	4	joint	
+SARC_GEMCITABINE	lab models	0.75	10	5	organoid-only	
+SARC_GEMCITABINE	lab models	0.75	10	5	joint	
+SARC_GEMCITABINE	lab models	0.75	10	6	organoid-only	
+SARC_GEMCITABINE	lab models	0.75	10	6	joint	
+SARC_GEMCITABINE	lab models	0.75	10	7	organoid-only	
+SARC_GEMCITABINE	lab models	0.75	10	7	joint	
+SARC_GEMCITABINE	lab models	0.75	10	8	organoid-only	
+SARC_GEMCITABINE	lab models	0.75	10	8	joint	
+SARC_GEMCITABINE	lab models	0.75	10	9	organoid-only	
+SARC_GEMCITABINE	lab models	0.75	10	9	joint	
+SARC_GEMCITABINE	lab models	0.75	10	10	organoid-only	
+SARC_GEMCITABINE	lab models	0.75	10	10	joint	
+SARC_GEMCITABINE	lab models	0.75	10	11	organoid-only	
+SARC_GEMCITABINE	lab models	0.75	10	11	joint	
+SARC_GEMCITABINE	lab models	0.75	10	12	organoid-only	
+SARC_GEMCITABINE	lab models	0.75	10	12	joint	
+SARC_GEMCITABINE	lab models	0.75	10	13	organoid-only	
+SARC_GEMCITABINE	lab models	0.75	10	13	joint	
+SARC_GEMCITABINE	lab models	0.75	10	14	organoid-only	
+SARC_GEMCITABINE	lab models	0.75	10	14	joint	
+SARC_GEMCITABINE	lab models	0.75	10	15	organoid-only	
+SARC_GEMCITABINE	lab models	0.75	10	15	joint	
+SARC_GEMCITABINE	lab models	0.75	10	16	organoid-only	
+SARC_GEMCITABINE	lab models	0.75	10	16	joint	
+SARC_GEMCITABINE	lab models	0.75	10	17	organoid-only	
+SARC_GEMCITABINE	lab models	0.75	10	17	joint	
+SARC_GEMCITABINE	lab models	0.75	10	18	organoid-only	
+SARC_GEMCITABINE	lab models	0.75	10	18	joint	
+SARC_GEMCITABINE	lab models	0.75	10	19	organoid-only	
+SARC_GEMCITABINE	lab models	0.75	10	19	joint	
+SARC_GEMCITABINE	lab models	1.0	14	0	organoid-only	
+SARC_GEMCITABINE	lab models	1.0	14	0	joint	
+SARC_GEMCITABINE	patients	0.1	10	0	patient-only	
+SARC_GEMCITABINE	patients	0.1	10	0	joint	
+SARC_GEMCITABINE	patients	0.1	10	1	patient-only	
+SARC_GEMCITABINE	patients	0.1	10	1	joint	
+SARC_GEMCITABINE	patients	0.1	10	2	patient-only	
+SARC_GEMCITABINE	patients	0.1	10	2	joint	
+SARC_GEMCITABINE	patients	0.1	10	3	patient-only	
+SARC_GEMCITABINE	patients	0.1	10	3	joint	
+SARC_GEMCITABINE	patients	0.1	10	4	patient-only	
+SARC_GEMCITABINE	patients	0.1	10	4	joint	
+SARC_GEMCITABINE	patients	0.1	10	5	patient-only	
+SARC_GEMCITABINE	patients	0.1	10	5	joint	
+SARC_GEMCITABINE	patients	0.1	10	6	patient-only	
+SARC_GEMCITABINE	patients	0.1	10	6	joint	
+SARC_GEMCITABINE	patients	0.1	10	7	patient-only	
+SARC_GEMCITABINE	patients	0.1	10	7	joint	
+SARC_GEMCITABINE	patients	0.1	10	8	patient-only	
+SARC_GEMCITABINE	patients	0.1	10	8	joint	
+SARC_GEMCITABINE	patients	0.1	10	9	patient-only	
+SARC_GEMCITABINE	patients	0.1	10	9	joint	
+SARC_GEMCITABINE	patients	0.25	10	0	patient-only	
+SARC_GEMCITABINE	patients	0.25	10	0	joint	
+SARC_GEMCITABINE	patients	0.25	10	1	patient-only	
+SARC_GEMCITABINE	patients	0.25	10	1	joint	
+SARC_GEMCITABINE	patients	0.25	10	2	patient-only	
+SARC_GEMCITABINE	patients	0.25	10	2	joint	
+SARC_GEMCITABINE	patients	0.25	10	3	patient-only	
+SARC_GEMCITABINE	patients	0.25	10	3	joint	
+SARC_GEMCITABINE	patients	0.25	10	4	patient-only	
+SARC_GEMCITABINE	patients	0.25	10	4	joint	
+SARC_GEMCITABINE	patients	0.25	10	5	patient-only	
+SARC_GEMCITABINE	patients	0.25	10	5	joint	
+SARC_GEMCITABINE	patients	0.25	10	6	patient-only	
+SARC_GEMCITABINE	patients	0.25	10	6	joint	
+SARC_GEMCITABINE	patients	0.25	10	7	patient-only	
+SARC_GEMCITABINE	patients	0.25	10	7	joint	
+SARC_GEMCITABINE	patients	0.25	10	8	patient-only	
+SARC_GEMCITABINE	patients	0.25	10	8	joint	
+SARC_GEMCITABINE	patients	0.25	10	9	patient-only	
+SARC_GEMCITABINE	patients	0.25	10	9	joint	
+SARC_GEMCITABINE	patients	0.5	10	0	patient-only	
+SARC_GEMCITABINE	patients	0.5	10	0	joint	
+SARC_GEMCITABINE	patients	0.5	10	1	patient-only	
+SARC_GEMCITABINE	patients	0.5	10	1	joint	
+SARC_GEMCITABINE	patients	0.5	10	2	patient-only	
+SARC_GEMCITABINE	patients	0.5	10	2	joint	
+SARC_GEMCITABINE	patients	0.5	10	3	patient-only	
+SARC_GEMCITABINE	patients	0.5	10	3	joint	
+SARC_GEMCITABINE	patients	0.5	10	4	patient-only	
+SARC_GEMCITABINE	patients	0.5	10	4	joint	
+SARC_GEMCITABINE	patients	0.5	10	5	patient-only	
+SARC_GEMCITABINE	patients	0.5	10	5	joint	
+SARC_GEMCITABINE	patients	0.5	10	6	patient-only	
+SARC_GEMCITABINE	patients	0.5	10	6	joint	
+SARC_GEMCITABINE	patients	0.5	10	7	patient-only	
+SARC_GEMCITABINE	patients	0.5	10	7	joint	
+SARC_GEMCITABINE	patients	0.5	10	8	patient-only	
+SARC_GEMCITABINE	patients	0.5	10	8	joint	
+SARC_GEMCITABINE	patients	0.5	10	9	patient-only	
+SARC_GEMCITABINE	patients	0.5	10	9	joint	
+SARC_GEMCITABINE	patients	0.75	10	0	patient-only	
+SARC_GEMCITABINE	patients	0.75	10	0	joint	
+SARC_GEMCITABINE	patients	0.75	10	1	patient-only	
+SARC_GEMCITABINE	patients	0.75	10	1	joint	
+SARC_GEMCITABINE	patients	0.75	10	2	patient-only	
+SARC_GEMCITABINE	patients	0.75	10	2	joint	
+SARC_GEMCITABINE	patients	0.75	10	3	patient-only	
+SARC_GEMCITABINE	patients	0.75	10	3	joint	
+SARC_GEMCITABINE	patients	0.75	10	4	patient-only	
+SARC_GEMCITABINE	patients	0.75	10	4	joint	
+SARC_GEMCITABINE	patients	0.75	10	5	patient-only	
+SARC_GEMCITABINE	patients	0.75	10	5	joint	
+SARC_GEMCITABINE	patients	0.75	10	6	patient-only	
+SARC_GEMCITABINE	patients	0.75	10	6	joint	
+SARC_GEMCITABINE	patients	0.75	10	7	patient-only	
+SARC_GEMCITABINE	patients	0.75	10	7	joint	
+SARC_GEMCITABINE	patients	0.75	10	8	patient-only	
+SARC_GEMCITABINE	patients	0.75	10	8	joint	
+SARC_GEMCITABINE	patients	0.75	10	9	patient-only	
+SARC_GEMCITABINE	patients	0.75	10	9	joint	
+SARC_GEMCITABINE	patients	1.0	13	0	patient-only	
+SARC_GEMCITABINE	patients	1.0	13	0	joint	

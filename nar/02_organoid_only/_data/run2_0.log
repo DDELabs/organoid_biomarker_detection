@@ -15,3 +15,21 @@ PAAD_tiriac__PAAD__FLUOROURACIL done 37
   fit_rslts = super().fit(**args)
 /usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
   fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+PAAD_tiriac__PAAD__SN-38 done 13
+PAAD_shi__PAAD__GEMCITABINE done 104
+PAAD_shi__PAAD__OXALIPLATIN done 21
+PAAD_shi__PAAD__PACLITAXEL 5 treated patients with survival and expression (< 12) 5
+LIHC_ji__LIHC__SORAFENIB done 30
+LIHC_ji__LIHC__DOXORUBICIN 3 treated patients with survival and expression (< 12) 3
+LIHC_ji__LIHC__LENVATINIB no drug response or no proximity None
+LIHC_broutier__LIHC__SORAFENIB done 30
+LIHC_broutier__LIHC__DOXORUBICIN 3 treated patients with survival and expression (< 12) 3
+LIHC_broutier__LIHC__FLUOROURACIL 1 treated patients with survival and expression (< 12) 1

@@ -1,0 +1,33 @@
+          cohort                                        subgroup    n  events  n_resp  n_nonresp  events_resp  events_nonresp         p        HR     HR_lo      HR_hi
+0       COADREAD                  with oxaliplatin (FOLFOX-type)  146    22.0    72.0       74.0         10.0            12.0  0.478266  1.354390  0.583739   3.142455
+1       COADREAD             no oxaliplatin or irinotecan record   31     1.0    15.0       16.0          0.0             1.0  0.405381       NaN       NaN        NaN
+2       COADREAD  with irinotecan, no oxaliplatin (FOLFIRI-type)   11     7.0     7.0        4.0          4.0             3.0  0.979809  0.979086  0.190511   5.031765
+3           COAD                  with oxaliplatin (FOLFOX-type)  106    18.0    52.0       54.0          8.0            10.0  0.583122  1.296676  0.511394   3.287817
+4           COAD             no oxaliplatin or irinotecan record   12     0.0     6.0        6.0          0.0             0.0  1.000000       NaN       NaN        NaN
+5           COAD  with irinotecan, no oxaliplatin (FOLFIRI-type)   11     7.0     7.0        4.0          4.0             3.0  0.979809  0.979086  0.190511   5.031765
+6   COAD_authors                  with oxaliplatin (FOLFOX-type)   94     6.0    50.0       44.0          0.0             6.0  0.035831       NaN       NaN        NaN
+7   COAD_authors             no oxaliplatin or irinotecan record   11     0.0     4.0        7.0          0.0             0.0  1.000000       NaN       NaN        NaN
+8   COAD_authors  with irinotecan, no oxaliplatin (FOLFIRI-type)    9     2.0     3.0        6.0          0.0             2.0       NaN       NaN       NaN        NaN
+9           READ                  with oxaliplatin (FOLFOX-type)   40     4.0    21.0       19.0          2.0             2.0  0.502221  1.974821  0.261899  14.890940
+10          READ             no oxaliplatin or irinotecan record   19     1.0     9.0       10.0          0.0             1.0  0.479500       NaN       NaN        NaN
+11          READ  with irinotecan, no oxaliplatin (FOLFIRI-type)    0     NaN     NaN        NaN          NaN             NaN       NaN       NaN       NaN        NaN
+                                                     label  n_models                                                    pathway      coef  n_mut  n_wt  p_one_sided
+0  organoids, authors' NES, 3 hypermutated removed (paper)        16  REACTOME_GASTRIN_CREB_SIGNALLING_PATHWAY_VIA_PKC_AND_MAPK  0.726243     49   369     0.031432
+1                          organoids, authors' NES, all 19        19  REACTOME_GASTRIN_CREB_SIGNALLING_PATHWAY_VIA_PKC_AND_MAPK  0.778677     49   369     0.031432
+2          organoids, current data, 3 hypermutated removed        16  REACTOME_GASTRIN_CREB_SIGNALLING_PATHWAY_VIA_PKC_AND_MAPK  0.905474     50   377     0.000721
+3                             organoids, current data, all        19  REACTOME_GASTRIN_CREB_SIGNALLING_PATHWAY_VIA_PKC_AND_MAPK  0.965754     50   377     0.000721
+4                               PDX (Isella), current data       192                               REACTOME_SIGNALING_BY_NOTCH3  0.929045     50   377     0.265573
+2026-11-17 08:20:50,215 [WARNING] Input data contains NA, filled NA with 0
+                  training  n_lines      patients  rank                                                                     pathway    n  events  n_resp  n_nonresp  events_resp  events_nonresp         p        HR     HR_lo     HR_hi
+0          all GDSC1 lines      903          COAD     1                       REACTOME_CDC6_ASSOCIATION_WITH_THE_ORC_ORIGIN_COMPLEX  129      25      65         64           13              12  0.707783  0.859236  0.388398  1.900852
+1          all GDSC1 lines      903          COAD     2                         REACTOME_E2F_MEDIATED_REGULATION_OF_DNA_REPLICATION  129      25      65         64           15              10  0.218624  0.605961  0.270589  1.356998
+2          all GDSC1 lines      903          COAD     3  REACTOME_ASSOCIATION_OF_LICENSING_FACTORS_WITH_THE_PRE_REPLICATIVE_COMPLEX  129      25      65         64           11              14  0.420001  1.386916  0.624216  3.081526
+3          all GDSC1 lines      903  COAD_authors     1                       REACTOME_CDC6_ASSOCIATION_WITH_THE_ORC_ORIGIN_COMPLEX  114       8      57         57            3               5  0.582921  1.490664  0.355192  6.255992
+4          all GDSC1 lines      903  COAD_authors     2                         REACTOME_E2F_MEDIATED_REGULATION_OF_DNA_REPLICATION  114       8      57         57            5               3  0.553642  0.650663  0.155241  2.727122
+5          all GDSC1 lines      903  COAD_authors     3  REACTOME_ASSOCIATION_OF_LICENSING_FACTORS_WITH_THE_PRE_REPLICATIVE_COMPLEX  114       8      57         57            3               5  0.593237  1.475012  0.351218  6.194611
+6   colorectal GDSC1 lines       43          COAD     1        REACTOME_E2F_ENABLED_INHIBITION_OF_PRE_REPLICATION_COMPLEX_FORMATION  129      25      65         64           14              11  0.403344  0.713081  0.321444  1.581876
+7   colorectal GDSC1 lines       43          COAD     2                                              REACTOME_PYRIMIDINE_METABOLISM  129      25      65         64           10              15  0.257326  1.589761  0.707985  3.569764
+8   colorectal GDSC1 lines       43          COAD     3                                             REACTOME_MITOTIC_G1_G1_S_PHASES  129      25      65         64           13              12  0.774368  1.123449  0.506673  2.491029
+9   colorectal GDSC1 lines       43  COAD_authors     1        REACTOME_E2F_ENABLED_INHIBITION_OF_PRE_REPLICATION_COMPLEX_FORMATION  114       8      57         57            5               3  0.505687  0.616146  0.146040  2.599528
+10  colorectal GDSC1 lines       43  COAD_authors     2                                              REACTOME_PYRIMIDINE_METABOLISM  114       8      57         57            4               4  0.251395  2.268040  0.541013  9.508101
+11  colorectal GDSC1 lines       43  COAD_authors     3                                             REACTOME_MITOTIC_G1_G1_S_PHASES  114       8      57         57            4               4  0.855874  1.137242  0.283609  4.560222

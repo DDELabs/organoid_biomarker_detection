@@ -6,3 +6,48 @@ COAD_vandewetering__READ__OXALIPLATIN done 42
 COAD_vandewetering__READ__CETUXIMAB 0 treated patients with survival and expression (< 12) 0
 COAD_vandewetering__COADREAD__OXALIPLATIN done 154
 PAAD_tiriac__PAAD__GEMCITABINE done 104
+PAAD_tiriac__PAAD__OXALIPLATIN done 21
+PAAD_tiriac__PAAD__PACLITAXEL 5 treated patients with survival and expression (< 12) 5
+PAAD_shi__PAAD__FLUOROURACIL done 37
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+PAAD_shi__PAAD__IRINOTECAN done 13
+PAAD_shi__PAAD__MITOMYCIN no drug response or no proximity None
+LIHC_ji__LIHC__GEMCITABINE 7 treated patients with survival and expression (< 12) 7
+LIHC_ji__LIHC__FLUOROURACIL 1 treated patients with survival and expression (< 12) 1
+LIHC_ji__LIHC__REGORAFENIB no drug response or no proximity None
+LIHC_broutier__LIHC__GEMCITABINE 7 treated patients with survival and expression (< 12) 7
+LIHC_broutier__LIHC__CISPLATIN 4 treated patients with survival and expression (< 12) 4
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+COAD_isella_pdx__COAD__CETUXIMAB done 15

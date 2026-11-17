@@ -102,7 +102,7 @@ def named_biomarker(D):
 # ---------------------------------------------------------------- 2 paper's bootstrap table
 def paper_bootstrap():
     b = pd.read_csv(K.MOESM3 / "Figure_4f.tsv", sep="\t")
-    tr = pd.to_numeric(b.top_rank, errors="coerce")
+    tr = pd.to_numeric(b.top_rank, errors="coerce").where(b.feature != "not_found")  # paper codes 'not found' as rank 31
     out = {"iterations": len(b), "not_found": int(tr.isna().sum()), "rank1": int((tr == 1).sum()), "rank2": int((tr == 2).sum()),
            "empirical_p_rank<=1": float((tr <= 1).mean()), "empirical_p_rank<=2": float((tr <= 2).mean())}
     pd.DataFrame([out]).to_csv(TAB / "paper_bootstrap_Fig4f_recount.tsv", sep="\t", index=False)
@@ -439,6 +439,10 @@ def pca(D, oexpr, texpr):
 
 
 def main():
+    import sys
+    if "--bootstrap-only" in sys.argv:
+        paper_bootstrap()
+        return
     D = {v: setup(v) for v in ("paper", "current")}
     named_biomarker(D)
     paper_bootstrap()

@@ -39,7 +39,10 @@ def fit(ml, X, y):
 def logrank(T, E, g):
     if g.sum() in (0, len(g)) or E.sum() == 0:
         return 1.0
-    return float(survdiff(T, E, g)[1])
+    try:
+        return float(survdiff(T, E, g)[1])
+    except np.linalg.LinAlgError:          # zero variance (e.g. all deaths when only one group is at risk)
+        return np.nan
 
 
 def surv_stats(T, E, g, hr=True):

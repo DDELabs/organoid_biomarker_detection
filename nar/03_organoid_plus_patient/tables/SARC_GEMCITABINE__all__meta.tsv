@@ -1,0 +1,10 @@
+unit	SARC_GEMCITABINE
+features	all
+n_features	673
+feature_source	all 673 Reactome pathways
+design	5-fold cross-fitting by patient within the single cohort (5 repeats)
+trainable_cohorts	TCGA-SARC
+organoid_alpha	10000.0
+lab	sarcoma_alshihabi2024:GEMCITABINE n=14 dropped_axes=8
+n_lab	14
+seconds	334.6

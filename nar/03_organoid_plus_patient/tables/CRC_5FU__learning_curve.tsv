@@ -1,0 +1,205 @@
+unit	axis	fraction	n	rep	model	concordance
+CRC_5FU	lab models	0.25	5	0	organoid-only	0.5342271665835804
+CRC_5FU	lab models	0.25	5	0	joint	0.5291632776218088
+CRC_5FU	lab models	0.25	5	1	organoid-only	0.4487707606328549
+CRC_5FU	lab models	0.25	5	1	joint	0.5020071891480598
+CRC_5FU	lab models	0.25	5	2	organoid-only	0.5168577650670375
+CRC_5FU	lab models	0.25	5	2	joint	0.5317083409860153
+CRC_5FU	lab models	0.25	5	3	organoid-only	0.5320231941857109
+CRC_5FU	lab models	0.25	5	3	joint	0.5375856007136672
+CRC_5FU	lab models	0.25	5	4	organoid-only	0.5408390837771889
+CRC_5FU	lab models	0.25	5	4	joint	0.5380316427465694
+CRC_5FU	lab models	0.25	5	5	organoid-only	0.5169364783669614
+CRC_5FU	lab models	0.25	5	5	joint	0.540497992810852
+CRC_5FU	lab models	0.25	5	6	organoid-only	0.5111641697058746
+CRC_5FU	lab models	0.25	5	6	joint	0.5222889827617874
+CRC_5FU	lab models	0.25	5	7	organoid-only	0.4665599664156587
+CRC_5FU	lab models	0.25	5	7	joint	0.48789127069503846
+CRC_5FU	lab models	0.25	5	8	organoid-only	0.486553144596332
+CRC_5FU	lab models	0.25	5	8	joint	0.5001443077165272
+CRC_5FU	lab models	0.25	5	9	organoid-only	0.49636606932017946
+CRC_5FU	lab models	0.25	5	9	joint	0.5295306063547871
+CRC_5FU	lab models	0.25	5	10	organoid-only	0.5058903786109726
+CRC_5FU	lab models	0.25	5	10	joint	0.5238632487602656
+CRC_5FU	lab models	0.25	5	11	organoid-only	0.5274578227901241
+CRC_5FU	lab models	0.25	5	11	joint	0.5355128171490042
+CRC_5FU	lab models	0.25	5	12	organoid-only	0.5281137669561566
+CRC_5FU	lab models	0.25	5	12	joint	0.5303964526539501
+CRC_5FU	lab models	0.25	5	13	organoid-only	0.530737543620287
+CRC_5FU	lab models	0.25	5	13	joint	0.5356964815154934
+CRC_5FU	lab models	0.25	5	14	organoid-only	0.45039750216461577
+CRC_5FU	lab models	0.25	5	14	joint	0.4523915724293548
+CRC_5FU	lab models	0.25	5	15	organoid-only	0.5039487838795161
+CRC_5FU	lab models	0.25	5	15	joint	0.5196127305643744
+CRC_5FU	lab models	0.25	5	16	organoid-only	0.5132107155038963
+CRC_5FU	lab models	0.25	5	16	joint	0.5263295988245481
+CRC_5FU	lab models	0.25	5	17	organoid-only	0.5402618529110802
+CRC_5FU	lab models	0.25	5	17	joint	0.5427019652087214
+CRC_5FU	lab models	0.25	5	18	organoid-only	0.503843832812951
+CRC_5FU	lab models	0.25	5	18	joint	0.5118988271718311
+CRC_5FU	lab models	0.25	5	19	organoid-only	0.43460236664655105
+CRC_5FU	lab models	0.25	5	19	joint	0.4911447537585601
+CRC_5FU	lab models	0.5	10	0	organoid-only	0.5276414871566132
+CRC_5FU	lab models	0.5	10	0	joint	0.5344370687167108
+CRC_5FU	lab models	0.5	10	1	organoid-only	0.5319182431191457
+CRC_5FU	lab models	0.5	10	1	joint	0.5351979639493086
+CRC_5FU	lab models	0.5	10	2	organoid-only	0.5036864062131031
+CRC_5FU	lab models	0.5	10	2	joint	0.5269330674572981
+CRC_5FU	lab models	0.5	10	3	organoid-only	0.5178023246661244
+CRC_5FU	lab models	0.5	10	3	joint	0.5314459633196023
+CRC_5FU	lab models	0.5	10	4	organoid-only	0.5344370687167108
+CRC_5FU	lab models	0.5	10	4	joint	0.5402880906777215
+CRC_5FU	lab models	0.5	10	5	organoid-only	0.5171726182667331
+CRC_5FU	lab models	0.5	10	5	joint	0.5280350536562328
+CRC_5FU	lab models	0.5	10	6	organoid-only	0.5237582976937003
+CRC_5FU	lab models	0.5	10	6	joint	0.5317870542859392
+CRC_5FU	lab models	0.5	10	7	organoid-only	0.5080156377089182
+CRC_5FU	lab models	0.5	10	7	joint	0.5340435022170913
+CRC_5FU	lab models	0.5	10	8	organoid-only	0.529871697321124
+CRC_5FU	lab models	0.5	10	8	joint	0.534883110749613
+CRC_5FU	lab models	0.5	10	9	organoid-only	0.5028467976805814
+CRC_5FU	lab models	0.5	10	9	joint	0.5297405084879175
+CRC_5FU	lab models	0.5	10	10	organoid-only	0.5318132920525804
+CRC_5FU	lab models	0.5	10	10	joint	0.5372445097473303
+CRC_5FU	lab models	0.5	10	11	organoid-only	0.5227350247946895
+CRC_5FU	lab models	0.5	10	11	joint	0.5261984099913415
+CRC_5FU	lab models	0.5	10	12	organoid-only	0.5109542675727442
+CRC_5FU	lab models	0.5	10	12	joint	0.5246241439928633
+CRC_5FU	lab models	0.5	10	13	organoid-only	0.5044735392123423
+CRC_5FU	lab models	0.5	10	13	joint	0.5190092619316243
+CRC_5FU	lab models	0.5	10	14	organoid-only	0.5135518064702332
+CRC_5FU	lab models	0.5	10	14	joint	0.5195602550310917
+CRC_5FU	lab models	0.5	10	15	organoid-only	0.5320494319523522
+CRC_5FU	lab models	0.5	10	15	joint	0.5365360900480152
+CRC_5FU	lab models	0.5	10	16	organoid-only	0.48411303229869074
+CRC_5FU	lab models	0.5	10	16	joint	0.5275627738566894
+CRC_5FU	lab models	0.5	10	17	organoid-only	0.5266182142576024
+CRC_5FU	lab models	0.5	10	17	joint	0.5332038936845696
+CRC_5FU	lab models	0.5	10	18	organoid-only	0.47655655550599535
+CRC_5FU	lab models	0.5	10	18	joint	0.5250177104924829
+CRC_5FU	lab models	0.5	10	19	organoid-only	0.516464198567418
+CRC_5FU	lab models	0.5	10	19	joint	0.5217904651956026
+CRC_5FU	lab models	0.75	14	0	organoid-only	0.49201060005772307
+CRC_5FU	lab models	0.75	14	0	joint	0.5252276126256133
+CRC_5FU	lab models	0.75	14	1	organoid-only	0.5221315561619395
+CRC_5FU	lab models	0.75	14	1	joint	0.5297667462545588
+CRC_5FU	lab models	0.75	14	2	organoid-only	0.5276677249232545
+CRC_5FU	lab models	0.75	14	2	joint	0.5334400335843413
+CRC_5FU	lab models	0.75	14	3	organoid-only	0.5243880040930916
+CRC_5FU	lab models	0.75	14	3	joint	0.5301078372208957
+CRC_5FU	lab models	0.75	14	4	organoid-only	0.49980321675019024
+CRC_5FU	lab models	0.75	14	4	joint	0.5253325636921785
+CRC_5FU	lab models	0.75	14	5	organoid-only	0.4964185448534621
+CRC_5FU	lab models	0.75	14	5	joint	0.524414241859733
+CRC_5FU	lab models	0.75	14	6	organoid-only	0.4815154934012017
+CRC_5FU	lab models	0.75	14	6	joint	0.5192454018313961
+CRC_5FU	lab models	0.75	14	7	organoid-only	0.5265657387243198
+CRC_5FU	lab models	0.75	14	7	joint	0.5318920053525044
+CRC_5FU	lab models	0.75	14	8	organoid-only	0.48007241623593
+CRC_5FU	lab models	0.75	14	8	joint	0.5226825492614069
+CRC_5FU	lab models	0.75	14	9	organoid-only	0.5315509143861674
+CRC_5FU	lab models	0.75	14	9	joint	0.5348306352163303
+CRC_5FU	lab models	0.75	14	10	organoid-only	0.5097210925406029
+CRC_5FU	lab models	0.75	14	10	joint	0.5241256264266786
+CRC_5FU	lab models	0.75	14	11	organoid-only	0.5077007845092226
+CRC_5FU	lab models	0.75	14	11	joint	0.5228399758612546
+CRC_5FU	lab models	0.75	14	12	organoid-only	0.4996195523837011
+CRC_5FU	lab models	0.75	14	12	joint	0.5243617663264503
+CRC_5FU	lab models	0.75	14	13	organoid-only	0.5005903497494293
+CRC_5FU	lab models	0.75	14	13	joint	0.5225775981948416
+CRC_5FU	lab models	0.75	14	14	organoid-only	0.49403090808910344
+CRC_5FU	lab models	0.75	14	14	joint	0.5206884789966678
+CRC_5FU	lab models	0.75	14	15	organoid-only	0.5130532889040484
+CRC_5FU	lab models	0.75	14	15	joint	0.5241256264266786
+CRC_5FU	lab models	0.75	14	16	organoid-only	0.5212919476294178
+CRC_5FU	lab models	0.75	14	16	joint	0.5267756408574502
+CRC_5FU	lab models	0.75	14	17	organoid-only	0.5238370109936242
+CRC_5FU	lab models	0.75	14	17	joint	0.5292944664550153
+CRC_5FU	lab models	0.75	14	18	organoid-only	0.49778290871880987
+CRC_5FU	lab models	0.75	14	18	joint	0.5253588014588199
+CRC_5FU	lab models	0.75	14	19	organoid-only	0.5239419620601894
+CRC_5FU	lab models	0.75	14	19	joint	0.5298454595544827
+CRC_5FU	lab models	1.0	19	0	organoid-only	0.5054705743447118
+CRC_5FU	lab models	1.0	19	0	joint	0.5263295988245481
+CRC_5FU	patients	0.1	122	0	patient-only	0.5138141841366463
+CRC_5FU	patients	0.1	122	0	joint	0.5097998058405269
+CRC_5FU	patients	0.1	122	1	patient-only	0.5320231941857109
+CRC_5FU	patients	0.1	122	1	joint	0.5240469131267547
+CRC_5FU	patients	0.1	122	2	patient-only	0.5532233096318842
+CRC_5FU	patients	0.1	122	2	joint	0.5361687613150369
+CRC_5FU	patients	0.1	122	3	patient-only	0.5273528717235589
+CRC_5FU	patients	0.1	122	3	joint	0.5249127594259176
+CRC_5FU	patients	0.1	122	4	patient-only	0.4972581533859838
+CRC_5FU	patients	0.1	122	4	joint	0.5253063259255372
+CRC_5FU	patients	0.1	122	5	patient-only	0.524597906226222
+CRC_5FU	patients	0.1	122	5	joint	0.5186944087319287
+CRC_5FU	patients	0.1	122	6	patient-only	0.49295515965681
+CRC_5FU	patients	0.1	122	6	joint	0.5144438905360376
+CRC_5FU	patients	0.1	122	7	patient-only	0.5400781885445911
+CRC_5FU	patients	0.1	122	7	joint	0.5182746044656679
+CRC_5FU	patients	0.1	122	8	patient-only	0.5079631621756356
+CRC_5FU	patients	0.1	122	8	joint	0.5246241439928633
+CRC_5FU	patients	0.1	122	9	patient-only	0.5049195812452444
+CRC_5FU	patients	0.1	122	9	joint	0.5256211791252329
+CRC_5FU	patients	0.25	274	0	patient-only	0.5276414871566132
+CRC_5FU	patients	0.25	274	0	joint	0.5308687324534935
+CRC_5FU	patients	0.25	274	1	patient-only	0.5547451000970798
+CRC_5FU	patients	0.25	274	1	joint	0.5316821032193739
+CRC_5FU	patients	0.25	274	2	patient-only	0.5454831684726996
+CRC_5FU	patients	0.25	274	2	joint	0.5289271377220371
+CRC_5FU	patients	0.25	274	3	patient-only	0.5419935455094063
+CRC_5FU	patients	0.25	274	3	joint	0.5357751948154174
+CRC_5FU	patients	0.25	274	4	patient-only	0.520793430063233
+CRC_5FU	patients	0.25	274	4	joint	0.527798913756461
+CRC_5FU	patients	0.25	274	5	patient-only	0.4861858158633537
+CRC_5FU	patients	0.25	274	5	joint	0.5196389683310156
+CRC_5FU	patients	0.25	274	6	patient-only	0.5266969275575263
+CRC_5FU	patients	0.25	274	6	joint	0.5290583265552437
+CRC_5FU	patients	0.25	274	7	patient-only	0.5293994175215806
+CRC_5FU	patients	0.25	274	7	joint	0.5265919764909611
+CRC_5FU	patients	0.25	274	8	patient-only	0.4870516621625167
+CRC_5FU	patients	0.25	274	8	joint	0.5215018497625482
+CRC_5FU	patients	0.25	274	9	patient-only	0.5208983811297982
+CRC_5FU	patients	0.25	274	9	joint	0.5257786057250807
+CRC_5FU	patients	0.5	549	0	patient-only	0.5490252669692756
+CRC_5FU	patients	0.5	549	0	joint	0.5287697111221893
+CRC_5FU	patients	0.5	549	1	patient-only	0.529005851021961
+CRC_5FU	patients	0.5	549	1	joint	0.5279301025896675
+CRC_5FU	patients	0.5	549	2	patient-only	0.5379266916800042
+CRC_5FU	patients	0.5	549	2	joint	0.5265919764909611
+CRC_5FU	patients	0.5	549	3	patient-only	0.5366672788812217
+CRC_5FU	patients	0.5	549	3	joint	0.5238894865269068
+CRC_5FU	patients	0.5	549	4	patient-only	0.5446435599401779
+CRC_5FU	patients	0.5	549	4	joint	0.5277464382231785
+CRC_5FU	patients	0.5	549	5	patient-only	0.5297405084879175
+CRC_5FU	patients	0.5	549	5	joint	0.5267494030908089
+CRC_5FU	patients	0.5	549	6	patient-only	0.5443287067404823
+CRC_5FU	patients	0.5	549	6	joint	0.5280875291895154
+CRC_5FU	patients	0.5	549	7	patient-only	0.5455618817726235
+CRC_5FU	patients	0.5	549	7	joint	0.529950410621048
+CRC_5FU	patients	0.5	549	8	patient-only	0.529005851021961
+CRC_5FU	patients	0.5	549	8	joint	0.5266182142576024
+CRC_5FU	patients	0.5	549	9	patient-only	0.52173798966232
+CRC_5FU	patients	0.5	549	9	joint	0.5276677249232545
+CRC_5FU	patients	0.75	822	0	patient-only	0.536614803347939
+CRC_5FU	patients	0.75	822	0	joint	0.528402382389211
+CRC_5FU	patients	0.75	822	1	patient-only	0.5400519507779498
+CRC_5FU	patients	0.75	822	1	joint	0.5269855429905806
+CRC_5FU	patients	0.75	822	2	patient-only	0.5449059376065909
+CRC_5FU	patients	0.75	822	2	joint	0.5296617951879936
+CRC_5FU	patients	0.75	822	3	patient-only	0.5377430273135151
+CRC_5FU	patients	0.75	822	3	joint	0.5258310812583633
+CRC_5FU	patients	0.75	822	4	patient-only	0.5414950279432215
+CRC_5FU	patients	0.75	822	4	joint	0.5264870254243958
+CRC_5FU	patients	0.75	822	5	patient-only	0.5494713090021778
+CRC_5FU	patients	0.75	822	5	joint	0.5287434733555479
+CRC_5FU	patients	0.75	822	6	patient-only	0.546637630204917
+CRC_5FU	patients	0.75	822	6	joint	0.5282449557893633
+CRC_5FU	patients	0.75	822	7	patient-only	0.5377430273135151
+CRC_5FU	patients	0.75	822	7	joint	0.5259097945582872
+CRC_5FU	patients	0.75	822	8	patient-only	0.548972791435993
+CRC_5FU	patients	0.75	822	8	joint	0.5288484244221132
+CRC_5FU	patients	0.75	822	9	patient-only	0.5416524545430693
+CRC_5FU	patients	0.75	822	9	joint	0.5267494030908089
+CRC_5FU	patients	1.0	1096	0	patient-only	0.5425707763755149
+CRC_5FU	patients	1.0	1096	0	joint	0.5263295988245481

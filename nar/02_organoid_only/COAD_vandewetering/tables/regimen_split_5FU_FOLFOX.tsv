@@ -1,0 +1,13 @@
+cohort	subgroup	n	events	n_resp	n_nonresp	events_resp	events_nonresp	p	HR	HR_lo	HR_hi
+COADREAD	with oxaliplatin (FOLFOX-type)	146	22.0	72.0	74.0	10.0	12.0	0.47826552927051424	1.3543903773492738	0.5837389274207556	3.142454971028689
+COADREAD	no oxaliplatin or irinotecan record	31	1.0	15.0	16.0	0.0	1.0	0.40538055645894244			
+COADREAD	with irinotecan, no oxaliplatin (FOLFIRI-type)	11	7.0	7.0	4.0	4.0	3.0	0.979808822454374	0.9790855122268081	0.19051138627077147	5.031764552329554
+COAD	with oxaliplatin (FOLFOX-type)	106	18.0	52.0	54.0	8.0	10.0	0.5831217898283552	1.2966759875153886	0.5113936326137676	3.287816877979921
+COAD	no oxaliplatin or irinotecan record	12	0.0	6.0	6.0	0.0	0.0	1.0			
+COAD	with irinotecan, no oxaliplatin (FOLFIRI-type)	11	7.0	7.0	4.0	4.0	3.0	0.979808822454374	0.9790855122268081	0.19051138627077147	5.031764552329554
+COAD_authors	with oxaliplatin (FOLFOX-type)	94	6.0	50.0	44.0	0.0	6.0	0.03583082569710627			
+COAD_authors	no oxaliplatin or irinotecan record	11	0.0	4.0	7.0	0.0	0.0	1.0			
+COAD_authors	with irinotecan, no oxaliplatin (FOLFIRI-type)	9	2.0	3.0	6.0	0.0	2.0				
+READ	with oxaliplatin (FOLFOX-type)	40	4.0	21.0	19.0	2.0	2.0	0.5022205704985953	1.9748213235064693	0.2618987922197398	14.890940224358548
+READ	no oxaliplatin or irinotecan record	19	1.0	9.0	10.0	0.0	1.0	0.47950012218695337			
+READ	with irinotecan, no oxaliplatin (FOLFIRI-type)	0									
