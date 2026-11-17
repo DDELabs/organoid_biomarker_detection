@@ -1,0 +1,45 @@
+unit	axis	model	0.1	0.25	0.5	0.75	1.0
+BLCA_CISPLATIN	lab models	joint		0.557	0.554	0.548	0.548
+BLCA_CISPLATIN	lab models	organoid-only		0.52	0.506	0.511	0.511
+BLCA_CISPLATIN	patients	joint	0.538	0.544	0.548	0.542	0.548
+BLCA_CISPLATIN	patients	patient-only	0.558	0.565	0.574	0.571	0.581
+BLCA_GEMCITABINE	lab models	joint		0.627	0.619	0.612	0.599
+BLCA_GEMCITABINE	lab models	organoid-only		0.434	0.427	0.394	0.401
+BLCA_GEMCITABINE	patients	joint	0.547	0.588	0.607	0.613	0.599
+BLCA_GEMCITABINE	patients	patient-only	0.557	0.606	0.629	0.652	0.668
+CRC_5FU	lab models	joint		0.519	0.53	0.526	0.526
+CRC_5FU	lab models	organoid-only		0.504	0.516	0.509	0.505
+CRC_5FU	patients	joint	0.522	0.528	0.527	0.528	0.526
+CRC_5FU	patients	patient-only	0.519	0.524	0.537	0.543	0.543
+CRC_IRINOTECAN	lab models	joint		0.476	0.468	0.461	0.463
+CRC_IRINOTECAN	lab models	organoid-only		0.489	0.48	0.477	0.473
+CRC_IRINOTECAN	patients	joint	0.471	0.454	0.454	0.461	0.463
+CRC_IRINOTECAN	patients	patient-only	0.49	0.483	0.46	0.459	0.428
+CRC_OXALIPLATIN	lab models	joint		0.489	0.502	0.508	0.508
+CRC_OXALIPLATIN	lab models	organoid-only		0.493	0.506	0.509	0.509
+CRC_OXALIPLATIN	patients	joint	0.512	0.51	0.51	0.506	0.508
+CRC_OXALIPLATIN	patients	patient-only	0.501	0.498	0.489	0.476	0.477
+LIHC_SORAFENIB	lab models	joint		0.9	0.921	0.933	0.945
+LIHC_SORAFENIB	lab models	organoid-only		0.565	0.76	0.758	0.962
+LIHC_SORAFENIB	patients	joint	0.811	0.842	0.919	0.93	0.945
+LIHC_SORAFENIB	patients	patient-only	0.929	0.952	0.94	0.95	0.951
+LUNG_PLATINUM	lab models	joint		0.549	0.55	0.551	0.55
+LUNG_PLATINUM	lab models	organoid-only		0.492	0.496	0.484	0.482
+LUNG_PLATINUM	patients	joint	0.514	0.542	0.544	0.543	0.55
+LUNG_PLATINUM	patients	patient-only	0.517	0.544	0.545	0.546	0.553
+OV_PACLITAXEL	lab models	joint		0.551	0.55	0.554	0.558
+OV_PACLITAXEL	lab models	organoid-only		0.512	0.502	0.498	0.503
+OV_PACLITAXEL	patients	joint	0.527	0.533	0.552	0.553	0.558
+OV_PACLITAXEL	patients	patient-only	0.527	0.537	0.552	0.556	0.56
+OV_PLATINUM	lab models	joint		0.542	0.545	0.549	0.55
+OV_PLATINUM	lab models	organoid-only		0.513	0.519	0.521	0.52
+OV_PLATINUM	patients	joint	0.529	0.539	0.546	0.546	0.55
+OV_PLATINUM	patients	patient-only	0.53	0.54	0.548	0.546	0.55
+PAAD_GEMCITABINE	lab models	joint		0.514	0.52	0.521	0.513
+PAAD_GEMCITABINE	lab models	organoid-only		0.427	0.387	0.38	0.382
+PAAD_GEMCITABINE	patients	joint	0.461	0.508	0.519	0.511	0.513
+PAAD_GEMCITABINE	patients	patient-only	0.497	0.549	0.552	0.555	0.556
+SARC_GEMCITABINE	lab models	joint					
+SARC_GEMCITABINE	lab models	organoid-only					
+SARC_GEMCITABINE	patients	joint					
+SARC_GEMCITABINE	patients	patient-only					

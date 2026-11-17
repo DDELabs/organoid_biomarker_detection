@@ -99,7 +99,7 @@ def int_forest(ax, it, title):
                         color=PS.MODEL_COL[m], ms=4, lw=1, capsize=2, label=m if i == 0 else None)
     ax.axvline(1, color="k", lw=0.8, ls="--"); ax.set_xscale("log")
     ax.set_yticks(range(len(cats))); ax.set_yticklabels(cats, fontsize=7); ax.invert_yaxis()
-    ax.set_xlabel("treatment x score interaction\n(HR, or OR for response)")
+    ax.set_xlabel("treatment x score interaction\nHR (drug-specific < 1) / OR for resp. (drug-specific > 1)", fontsize=7)
     ax.set_title(title, fontsize=8); ax.legend(fontsize=7, frameon=False, loc="best")
 
 
@@ -205,7 +205,7 @@ Patients enter training only through cross-fitting ({meta['design']}): every sco
 (d) Held-out concordance in every cohort (C-index for survival, AUROC for response; 0.5 = chance, higher = better) for the organoid-only model (orange), the patient-only model (light blue) and the joint model (green). POOLED counts pairs within cohorts only.
 (e) Hazard ratio (HR) per standard deviation of the score in held-out treated patients, with 95% confidence interval. HR below 1 means patients with a higher score lived longer without an event.
 (f) Kaplan-Meier curves (fraction still event-free over time) of held-out treated patients split at the within-cohort median of the joint score; (g) the same for the organoid-only score. For liver (no survival times public) the panels show the fraction of responders in the high and low score halves in the sorafenib and placebo arms.
-(h) Interaction test where a comparison group exists: ratio below 1 means the score separates outcomes more strongly in drug-treated patients than in the comparison group (untreated, placebo or another drug), which is what a drug-specific marker should do.
+(h) Interaction test where a comparison group exists (untreated, placebo or another drug). For survival the number is an interaction hazard ratio: below 1 means the score separates outcomes more strongly in drug-treated patients than in the comparison group, which is what a drug-specific marker should do. For response the number is an interaction odds ratio: here ABOVE 1 is the drug-specific direction (a higher score raises the odds of response more with the drug).
 """
 
 
@@ -241,7 +241,7 @@ def supp_fig(unit):
     fig.tight_layout()
     PS.save(fig, C.FIGS / "supp" / f"unit_{unit}", caption=f"""**Supplementary figure for {unit} ({u['cancer']}, {u['drug']}).**
 Lab models: {meta['lab']}. Design: {meta['design']}.
-(a) Held-out concordance per cohort using the {meta['n_features']} network-proximal pathways (C-index for survival, AUROC for response; 0.5 = chance) for organoid-only (orange), patient-only (light blue) and joint (green) models. (b) The same using all 673 pathways. (c) Treatment x score interaction (ratio < 1: the score matters more in drug-treated patients than in the comparison group), network shortlist.
+(a) Held-out concordance per cohort using the {meta['n_features']} network-proximal pathways (C-index for survival, AUROC for response; 0.5 = chance) for organoid-only (orange), patient-only (light blue) and joint (green) models. (b) The same using all 673 pathways. (c) Treatment x score interaction, network shortlist. Drug-specific direction: interaction HR below 1 (survival) or interaction OR above 1 (response).
 (d, e) Hazard ratio per SD of the score in held-out treated patients with 95% CI, shortlist and all pathways. (f) Interaction, all pathways.
 Remaining rows: Kaplan-Meier curves in each held-out survival cohort, treated patients split at the cohort median score, one column per model (shortlist features). Log-rank p in each title.
 """)
@@ -315,7 +315,7 @@ def forest(S, I):
     PS.save(fig, C.FIGS / "forest_cross_cancer", caption="""**Cross-cancer summary (network-proximal pathways).**
 (a) Pooled hazard ratio per SD of the score in held-out treated patients (Cox model stratified by cohort; 95% CI), for the organoid-only (orange), patient-only (light blue) and joint (green) models, one row per cancer x drug unit. HR below 1 means a higher score goes with longer event-free survival.
 (b) Pooled held-out concordance (pairs compared only within a cohort): circles are C-index for survival, triangles are AUROC for response. 0.5 = chance.
-(c) Treatment x score interaction of the joint model in every cohort that has a comparison group (untreated, placebo, or another drug). Below 1 means the score separates outcomes more in drug-treated patients than in the comparison group. p-values printed at the right.
+(c) Treatment x score interaction of the joint model in every cohort that has a comparison group (untreated, placebo, or another drug). Drug-specific direction: HR below 1 for survival rows (PFS/RFS/DFS/OS), OR above 1 for response rows ('resp.'). p-values printed at the right.
 """)
 
 

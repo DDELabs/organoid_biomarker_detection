@@ -14,3 +14,16 @@ plotted COAD_vandewetering__COAD_authors__OXALIPLATIN
 plotted COAD_vandewetering__READ__FLUOROURACIL
 plotted COAD_vandewetering__READ__OXALIPLATIN
 plotted LIHC_broutier__LIHC__SORAFENIB
+plotted LIHC_ji__LIHC__SORAFENIB
+plotted PAAD_shi__PAAD__FLUOROURACIL
+plotted PAAD_shi__PAAD__GEMCITABINE
+plotted PAAD_shi__PAAD__IRINOTECAN
+plotted PAAD_shi__PAAD__OXALIPLATIN
+plotted PAAD_tiriac__PAAD__FLUOROURACIL
+plotted PAAD_tiriac__PAAD__GEMCITABINE
+plotted PAAD_tiriac__PAAD__OXALIPLATIN
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+plotted PAAD_tiriac__PAAD__SN-38
