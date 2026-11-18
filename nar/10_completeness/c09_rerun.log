@@ -1,0 +1,20 @@
+section
+DepMap / registered test / other                                                                        317
+Fig. 1 (method, schematics, data map)                                                                     7
+Fig. 2 (network pathway biomarker, survival)                                                            353
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)                                   65
+Fig. 4 (isogenic cells, bootstrap)                                                                      118
+Fig. 5 / Supp 12, 13, 18 (mutation concordance)                                                          16
+Supp. Figs 1, 14 (batch / PCA)                                                                           24
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)    357
+Supp. Tables 1-4 (clinical balance, isogenic, bootstrap)                                                  7
+cancer
+PDX (Gao) / breast / melanoma    115
+all sets / cross-cancer          257
+bladder                          181
+colon / rectum                   252
+liver                             59
+lung                             129
+ovarian                          119
+pancreas                         127
+sarcoma                           25

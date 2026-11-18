@@ -105,6 +105,27 @@ Fig. 4 (isogenic cells, bootstrap)	bladder	02_organoid_only/BLCA_lee2018/paper/t
 Fig. 2 (network pathway biomarker, survival)	bladder	02_organoid_only/BLCA_lee2018/paper/tables/BLCA_CISPLATIN_rank1_tests.tsv	table: n, events, n_nonresp, n_resp, events_nonresp, events_resp, p
 Fig. 2 (network pathway biomarker, survival)	bladder	02_organoid_only/BLCA_lee2018/paper/tables/BLCA_CISPLATIN_summary.json	JSON summary: set, set_label, project, drug, model_drug, n_models
 Fig. 2 (network pathway biomarker, survival)	bladder	02_organoid_only/BLCA_lee2018/paper/tables/BLCA_CISPLATIN_zcutoff_sensitivity.tsv	table: cutoff, n_proximal, pathway, treated_p, treated_hr, treated_hr_lo, treated_hr_hi
+Fig. 2 (network pathway biomarker, survival)	bladder	02_organoid_only/BLCA_lee2018/sensitivity_one_line_per_patient/all9/figures/BLCA_CISPLATIN_full.png	all 9 lines (7 patients), as main run -> TCGA-BLCA, cisplatin
+Fig. 2 (network pathway biomarker, survival)	bladder	02_organoid_only/BLCA_lee2018/sensitivity_one_line_per_patient/all9/figures/BLCA_CISPLATIN_supp_zcutoff_KM.png	Cut-off sensitivity, all 9 lines (7 patients), as main run -> TCGA-BLCA cisplatin
+Fig. 4 (isogenic cells, bootstrap)	bladder	02_organoid_only/BLCA_lee2018/sensitivity_one_line_per_patient/all9/tables/BLCA_CISPLATIN_bootstrap_random_pathways.tsv.gz	table: iteration, top_rank, feature, rank1_p, rank1_pathway
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	bladder	02_organoid_only/BLCA_lee2018/sensitivity_one_line_per_patient/all9/tables/BLCA_CISPLATIN_coefficients.tsv	table: pathway, coef_Ridge, coef_SVR, coef_LinearRegression, proximity_z
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	bladder	02_organoid_only/BLCA_lee2018/sensitivity_one_line_per_patient/all9/tables/BLCA_CISPLATIN_loo_predictions.tsv	table: Unnamed: 0, Ridge, SVR, LinearRegression, observed
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	bladder	02_organoid_only/BLCA_lee2018/sensitivity_one_line_per_patient/all9/tables/BLCA_CISPLATIN_multipathway_k.tsv	table: n, events, n_nonresp, n_resp, events_nonresp, events_resp, p
+Fig. 4 (isogenic cells, bootstrap)	bladder	02_organoid_only/BLCA_lee2018/sensitivity_one_line_per_patient/all9/tables/BLCA_CISPLATIN_permutation_null.tsv.gz	table: p, hr, pathway
+Fig. 2 (network pathway biomarker, survival)	bladder	02_organoid_only/BLCA_lee2018/sensitivity_one_line_per_patient/all9/tables/BLCA_CISPLATIN_rank1_tests.tsv	table: n, events, n_nonresp, n_resp, events_nonresp, events_resp, p
+Fig. 2 (network pathway biomarker, survival)	bladder	02_organoid_only/BLCA_lee2018/sensitivity_one_line_per_patient/all9/tables/BLCA_CISPLATIN_summary.json	JSON summary: set, set_label, project, drug, model_drug, n_models
+Fig. 2 (network pathway biomarker, survival)	bladder	02_organoid_only/BLCA_lee2018/sensitivity_one_line_per_patient/all9/tables/BLCA_CISPLATIN_zcutoff_sensitivity.tsv	table: cutoff, n_proximal, pathway, treated_p, treated_hr, treated_hr_lo, treated_hr_hi
+Fig. 2 (network pathway biomarker, survival)	bladder	02_organoid_only/BLCA_lee2018/sensitivity_one_line_per_patient/onepp/figures/BLCA_CISPLATIN_full.png	7 lines, one per patient (recurrence lines SCBO-3_2, SCBO-11_2 dropped) -> TCGA-BLCA, cisplatin
+Fig. 2 (network pathway biomarker, survival)	bladder	02_organoid_only/BLCA_lee2018/sensitivity_one_line_per_patient/onepp/figures/BLCA_CISPLATIN_supp_zcutoff_KM.png	Cut-off sensitivity, 7 lines, one per patient (recurrence lines SCBO-3_2, SCBO-11_2 dropped) -> TCGA-BLCA cisplatin
+Fig. 4 (isogenic cells, bootstrap)	bladder	02_organoid_only/BLCA_lee2018/sensitivity_one_line_per_patient/onepp/tables/BLCA_CISPLATIN_bootstrap_random_pathways.tsv.gz	table: iteration, top_rank, feature, rank1_p, rank1_pathway
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	bladder	02_organoid_only/BLCA_lee2018/sensitivity_one_line_per_patient/onepp/tables/BLCA_CISPLATIN_coefficients.tsv	table: pathway, coef_Ridge, coef_SVR, coef_LinearRegression, proximity_z
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	bladder	02_organoid_only/BLCA_lee2018/sensitivity_one_line_per_patient/onepp/tables/BLCA_CISPLATIN_loo_predictions.tsv	table: Unnamed: 0, Ridge, SVR, LinearRegression, observed
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	bladder	02_organoid_only/BLCA_lee2018/sensitivity_one_line_per_patient/onepp/tables/BLCA_CISPLATIN_multipathway_k.tsv	table: n, events, n_nonresp, n_resp, events_nonresp, events_resp, p
+Fig. 4 (isogenic cells, bootstrap)	bladder	02_organoid_only/BLCA_lee2018/sensitivity_one_line_per_patient/onepp/tables/BLCA_CISPLATIN_permutation_null.tsv.gz	table: p, hr, pathway
+Fig. 2 (network pathway biomarker, survival)	bladder	02_organoid_only/BLCA_lee2018/sensitivity_one_line_per_patient/onepp/tables/BLCA_CISPLATIN_rank1_tests.tsv	table: n, events, n_nonresp, n_resp, events_nonresp, events_resp, p
+Fig. 2 (network pathway biomarker, survival)	bladder	02_organoid_only/BLCA_lee2018/sensitivity_one_line_per_patient/onepp/tables/BLCA_CISPLATIN_summary.json	JSON summary: set, set_label, project, drug, model_drug, n_models
+Fig. 2 (network pathway biomarker, survival)	bladder	02_organoid_only/BLCA_lee2018/sensitivity_one_line_per_patient/onepp/tables/BLCA_CISPLATIN_zcutoff_sensitivity.tsv	table: cutoff, n_proximal, pathway, treated_p, treated_hr, treated_hr_lo, treated_hr_hi
+DepMap / registered test / other	bladder	02_organoid_only/BLCA_lee2018/tables/BLCA_cisplatin_one_line_per_patient.tsv	table: analysis, lines, n_models, n_proximal, biomarker, treated_n, treated_events
 Fig. 2 (network pathway biomarker, survival)	bladder	02_organoid_only/BLCA_lee2018/tables/BLCA_summary.tsv	table: set, set_label, project, drug, model_drug, n_models, proximity_source
 Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	PDX (Gao) / breast / melanoma	02_organoid_only/COAD_isella_pdx/figures/Fig2a_Fig2d_Fig4e_SuppFig17_panels_COAD_CETUXIMAB_SuppFig11.png	Supplementary figure: Colorectal PDX (Isella 2017, cetuximab) | COAD (current GDC) | CETUXIMAB
 Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	PDX (Gao) / breast / melanoma	02_organoid_only/COAD_isella_pdx/figures/Fig2b_SuppFig2_SuppFig3_coefficients_COAD_CETUXIMAB.png	Model coefficients: Colorectal PDX (Isella 2017, cetuximab) | COAD (current GDC) | CETUXIMAB
@@ -672,6 +693,7 @@ Fig. 2 (network pathway biomarker, survival)	pancreas	02_organoid_only/SARC_alsh
 Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	02_organoid_only/figures/cross_set_cutoff_sensitivity.png	Cut-off sensitivity across all sets
 Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	02_organoid_only/figures/cross_set_forest.png	Cross-set forest plot
 Supp. Tables 1-4 (clinical balance, isogenic, bootstrap)	all sets / cross-cancer	02_organoid_only/tables/SuppTable1_clinical_features_by_predicted_group.tsv	table: folder, cohort, drug, feature, level, responder, non_responder
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	02_organoid_only/tables/cross_set_best_direction.tsv	table: folder, cohort, model_drug, best_setting, best_p, best_HR, best_HR_lo
 Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	02_organoid_only/tables/cross_set_cutoff_sensitivity.tsv	table: cutoff, n_pathways, rank1_pathway, treated_p, treated_HR, treated_HR_lo, treated_HR_hi
 Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	02_organoid_only/tables/cross_set_summary.tsv	table: set, folder, cohort, model_drug, patient_drug, proximity_from, metric
 Supp. Figs 1, 14 (batch / PCA)	bladder	03_organoid_plus_patient/figures/alignment_bladder.png	**Alignment of lab models with patient tumours (bladder).** Each dot is one sample. Grey dots are patient tumours from all cohorts used for bladder; c
@@ -709,6 +731,10 @@ DepMap / registered test / other	bladder	03_organoid_plus_patient/tables/BLCA_CI
 DepMap / registered test / other	bladder	03_organoid_plus_patient/tables/BLCA_CISPLATIN__shortlist__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
 Fig. 2 (network pathway biomarker, survival)	bladder	03_organoid_plus_patient/tables/BLCA_CISPLATIN__shortlist__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
 DepMap / registered test / other	bladder	03_organoid_plus_patient/tables/BLCA_CISPLATIN__shortlist__meta.tsv	table: unit, BLCA_CISPLATIN
+DepMap / registered test / other	bladder	03_organoid_plus_patient/tables/BLCA_CISPLATIN__shortlist_foldalign__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	bladder	03_organoid_plus_patient/tables/BLCA_CISPLATIN__shortlist_foldalign__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	bladder	03_organoid_plus_patient/tables/BLCA_CISPLATIN__shortlist_foldalign__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	bladder	03_organoid_plus_patient/tables/BLCA_CISPLATIN__shortlist_foldalign__meta.tsv	table: unit, BLCA_CISPLATIN
 DepMap / registered test / other	bladder	03_organoid_plus_patient/tables/BLCA_GEMCITABINE__all__eval.tsv	table: cohort, model, outcome, n, events, C, num
 DepMap / registered test / other	bladder	03_organoid_plus_patient/tables/BLCA_GEMCITABINE__all__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
 Fig. 2 (network pathway biomarker, survival)	bladder	03_organoid_plus_patient/tables/BLCA_GEMCITABINE__all__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
@@ -727,6 +753,10 @@ DepMap / registered test / other	colon / rectum	03_organoid_plus_patient/tables/
 DepMap / registered test / other	colon / rectum	03_organoid_plus_patient/tables/CRC_5FU__shortlist__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
 Fig. 2 (network pathway biomarker, survival)	colon / rectum	03_organoid_plus_patient/tables/CRC_5FU__shortlist__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
 DepMap / registered test / other	colon / rectum	03_organoid_plus_patient/tables/CRC_5FU__shortlist__meta.tsv	table: unit, CRC_5FU
+DepMap / registered test / other	colon / rectum	03_organoid_plus_patient/tables/CRC_5FU__shortlist_foldalign__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	colon / rectum	03_organoid_plus_patient/tables/CRC_5FU__shortlist_foldalign__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	colon / rectum	03_organoid_plus_patient/tables/CRC_5FU__shortlist_foldalign__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	colon / rectum	03_organoid_plus_patient/tables/CRC_5FU__shortlist_foldalign__meta.tsv	table: unit, CRC_5FU
 DepMap / registered test / other	colon / rectum	03_organoid_plus_patient/tables/CRC_IRINOTECAN__all__eval.tsv	table: cohort, model, outcome, n, events, C, num
 DepMap / registered test / other	colon / rectum	03_organoid_plus_patient/tables/CRC_IRINOTECAN__all__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
 Fig. 2 (network pathway biomarker, survival)	colon / rectum	03_organoid_plus_patient/tables/CRC_IRINOTECAN__all__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
@@ -754,6 +784,10 @@ DepMap / registered test / other	liver	03_organoid_plus_patient/tables/LIHC_SORA
 DepMap / registered test / other	liver	03_organoid_plus_patient/tables/LIHC_SORAFENIB__shortlist__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
 Fig. 2 (network pathway biomarker, survival)	liver	03_organoid_plus_patient/tables/LIHC_SORAFENIB__shortlist__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
 DepMap / registered test / other	liver	03_organoid_plus_patient/tables/LIHC_SORAFENIB__shortlist__meta.tsv	table: unit, LIHC_SORAFENIB
+DepMap / registered test / other	liver	03_organoid_plus_patient/tables/LIHC_SORAFENIB__shortlist_foldalign__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	liver	03_organoid_plus_patient/tables/LIHC_SORAFENIB__shortlist_foldalign__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	liver	03_organoid_plus_patient/tables/LIHC_SORAFENIB__shortlist_foldalign__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	liver	03_organoid_plus_patient/tables/LIHC_SORAFENIB__shortlist_foldalign__meta.tsv	table: unit, LIHC_SORAFENIB
 DepMap / registered test / other	lung	03_organoid_plus_patient/tables/LUNG_PLATINUM__all__eval.tsv	table: cohort, model, outcome, n, events, C, num
 DepMap / registered test / other	lung	03_organoid_plus_patient/tables/LUNG_PLATINUM__all__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
 Fig. 2 (network pathway biomarker, survival)	lung	03_organoid_plus_patient/tables/LUNG_PLATINUM__all__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
@@ -763,6 +797,10 @@ DepMap / registered test / other	lung	03_organoid_plus_patient/tables/LUNG_PLATI
 DepMap / registered test / other	lung	03_organoid_plus_patient/tables/LUNG_PLATINUM__shortlist__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
 Fig. 2 (network pathway biomarker, survival)	lung	03_organoid_plus_patient/tables/LUNG_PLATINUM__shortlist__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
 DepMap / registered test / other	lung	03_organoid_plus_patient/tables/LUNG_PLATINUM__shortlist__meta.tsv	table: unit, LUNG_PLATINUM
+DepMap / registered test / other	lung	03_organoid_plus_patient/tables/LUNG_PLATINUM__shortlist_foldalign__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	lung	03_organoid_plus_patient/tables/LUNG_PLATINUM__shortlist_foldalign__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	lung	03_organoid_plus_patient/tables/LUNG_PLATINUM__shortlist_foldalign__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	lung	03_organoid_plus_patient/tables/LUNG_PLATINUM__shortlist_foldalign__meta.tsv	table: unit, LUNG_PLATINUM
 DepMap / registered test / other	ovarian	03_organoid_plus_patient/tables/OV_PACLITAXEL__all__eval.tsv	table: cohort, model, outcome, n, events, C, num
 DepMap / registered test / other	ovarian	03_organoid_plus_patient/tables/OV_PACLITAXEL__all__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
 Fig. 2 (network pathway biomarker, survival)	ovarian	03_organoid_plus_patient/tables/OV_PACLITAXEL__all__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
@@ -772,6 +810,10 @@ DepMap / registered test / other	ovarian	03_organoid_plus_patient/tables/OV_PACL
 DepMap / registered test / other	ovarian	03_organoid_plus_patient/tables/OV_PACLITAXEL__shortlist__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
 Fig. 2 (network pathway biomarker, survival)	ovarian	03_organoid_plus_patient/tables/OV_PACLITAXEL__shortlist__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
 DepMap / registered test / other	ovarian	03_organoid_plus_patient/tables/OV_PACLITAXEL__shortlist__meta.tsv	table: unit, OV_PACLITAXEL
+DepMap / registered test / other	ovarian	03_organoid_plus_patient/tables/OV_PACLITAXEL__shortlist_foldalign__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	ovarian	03_organoid_plus_patient/tables/OV_PACLITAXEL__shortlist_foldalign__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	ovarian	03_organoid_plus_patient/tables/OV_PACLITAXEL__shortlist_foldalign__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	ovarian	03_organoid_plus_patient/tables/OV_PACLITAXEL__shortlist_foldalign__meta.tsv	table: unit, OV_PACLITAXEL
 DepMap / registered test / other	ovarian	03_organoid_plus_patient/tables/OV_PLATINUM__all__eval.tsv	table: cohort, model, outcome, n, events, C, num
 DepMap / registered test / other	ovarian	03_organoid_plus_patient/tables/OV_PLATINUM__all__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
 Fig. 2 (network pathway biomarker, survival)	ovarian	03_organoid_plus_patient/tables/OV_PLATINUM__all__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
@@ -790,6 +832,10 @@ DepMap / registered test / other	pancreas	03_organoid_plus_patient/tables/PAAD_G
 DepMap / registered test / other	pancreas	03_organoid_plus_patient/tables/PAAD_GEMCITABINE__shortlist__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
 Fig. 2 (network pathway biomarker, survival)	pancreas	03_organoid_plus_patient/tables/PAAD_GEMCITABINE__shortlist__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
 DepMap / registered test / other	pancreas	03_organoid_plus_patient/tables/PAAD_GEMCITABINE__shortlist__meta.tsv	table: unit, PAAD_GEMCITABINE
+DepMap / registered test / other	pancreas	03_organoid_plus_patient/tables/PAAD_GEMCITABINE__shortlist_foldalign__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	pancreas	03_organoid_plus_patient/tables/PAAD_GEMCITABINE__shortlist_foldalign__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	pancreas	03_organoid_plus_patient/tables/PAAD_GEMCITABINE__shortlist_foldalign__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	pancreas	03_organoid_plus_patient/tables/PAAD_GEMCITABINE__shortlist_foldalign__meta.tsv	table: unit, PAAD_GEMCITABINE
 DepMap / registered test / other	sarcoma	03_organoid_plus_patient/tables/SARC_GEMCITABINE__all__eval.tsv	table: cohort, model, outcome, n, events, C, num
 DepMap / registered test / other	sarcoma	03_organoid_plus_patient/tables/SARC_GEMCITABINE__all__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
 Fig. 2 (network pathway biomarker, survival)	sarcoma	03_organoid_plus_patient/tables/SARC_GEMCITABINE__all__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
@@ -799,6 +845,10 @@ DepMap / registered test / other	sarcoma	03_organoid_plus_patient/tables/SARC_GE
 DepMap / registered test / other	sarcoma	03_organoid_plus_patient/tables/SARC_GEMCITABINE__shortlist__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
 Fig. 2 (network pathway biomarker, survival)	sarcoma	03_organoid_plus_patient/tables/SARC_GEMCITABINE__shortlist__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
 DepMap / registered test / other	sarcoma	03_organoid_plus_patient/tables/SARC_GEMCITABINE__shortlist__meta.tsv	table: unit, SARC_GEMCITABINE
+DepMap / registered test / other	sarcoma	03_organoid_plus_patient/tables/SARC_GEMCITABINE__shortlist_foldalign__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	sarcoma	03_organoid_plus_patient/tables/SARC_GEMCITABINE__shortlist_foldalign__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	sarcoma	03_organoid_plus_patient/tables/SARC_GEMCITABINE__shortlist_foldalign__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	sarcoma	03_organoid_plus_patient/tables/SARC_GEMCITABINE__shortlist_foldalign__meta.tsv	table: unit, SARC_GEMCITABINE
 Supp. Figs 1, 14 (batch / PCA)	all sets / cross-cancer	03_organoid_plus_patient/tables/alignment_metrics.tsv	table: cancer, stage, n_tumours, n_models, model_vs_tumour_AUROC, tumour_share_of_model_neighbours, tumour_share_expected
 DepMap / registered test / other	all sets / cross-cancer	03_organoid_plus_patient/tables/data_versions.tsv	table: file, bytes, sha256
 Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	03_organoid_plus_patient/tables/interaction_all.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
@@ -813,24 +863,96 @@ DepMap / registered test / other	all sets / cross-cancer	05_A3_B1/figures/A3_Fig
 DepMap / registered test / other	all sets / cross-cancer	05_A3_B1/figures/A3_Fig3_adjusted_vs_unadjusted.png	**Does adjusting for clinical factors change the hazard ratios?** Each dot is one analysis (dot size = number of
 Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	05_A3_B1/figures/A3_Fig4_interaction_forest.png	**Is the score linked to survival more strongly in drug-treated than in untreated patients?** For each analysis a
 DepMap / registered test / other	all sets / cross-cancer	05_A3_B1/figures/A3_Fig5_power_vs_events.png	**How much could each analysis detect?** (a) Power of the median-split log-rank test (Schoenfeld formula, equal
+Fig. 2 (network pathway biomarker, survival)	colon / rectum	05_A3_B1/figures/B1_Fig1_forest_colorectal.png	**External validation, colorectal.** Each row = one frozen organoid-trained signature (right label; [rank1] = the
+Fig. 2 (network pathway biomarker, survival)	bladder	05_A3_B1/figures/B1_Fig2_forest_bladder.png	**External validation, bladder.** Each row = one frozen organoid-trained signature (right label; [rank1] = the
+Fig. 2 (network pathway biomarker, survival)	ovarian	05_A3_B1/figures/B1_Fig3_forest_ovarian.png	**External validation, ovarian.** Each row = one frozen organoid-trained signature (right label; [rank1] = the
+Fig. 2 (network pathway biomarker, survival)	liver	05_A3_B1/figures/B1_Fig4_forest_liver_and_lung.png	**External validation, liver and lung.** Each row = one frozen organoid-trained signature (right label; [rank1] = the
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	05_A3_B1/figures/B1_Fig5_KM_main_cohorts.png	**Kaplan-Meier curves in the main external cohorts.** Left column = patients who got the drug; right column = the
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	05_A3_B1/figures/B1_Fig5b_KM_main_cohorts.png	(Second part of Fig. 5: cohorts 4-6, panels continue the lettering.)
+DepMap / registered test / other	liver	05_A3_B1/figures/B1_Fig6_STORM_sorafenib.png	**Liver: STORM trial (GSE109211, sorafenib vs placebo, randomised).** Share of responders (as defined in the
+DepMap / registered test / other	all sets / cross-cancer	05_A3_B1/figures/B1_Fig7_heatmap_signature_by_cohort.png	**Summary heatmap: every frozen signature in every matching cohort.** Rows = signatures (organoid set, drug,
 DepMap / registered test / other	all sets / cross-cancer	05_A3_B1/tables/A3_adjusted_cox_all_terms.tsv	table: analysis_id, term, coef, se, HR, lo, hi
+DepMap / registered test / other	all sets / cross-cancer	05_A3_B1/tables/A3_adjusted_cox_epv.tsv	table: analysis_id, deaths, n_terms_full, deaths_per_term_full, low_epv_full, reduced_covariates, n_terms_reduced
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	05_A3_B1/tables/A3_adjusted_cox_epv_summary.tsv	table: set, n, same_direction
 DepMap / registered test / other	all sets / cross-cancer	05_A3_B1/tables/A3_expected_by_chance.tsv	table: family, n_tests, observed_p_below_0.05, expected_by_chance, binomial_p_at_least_observed, observed_p_below_0.01, expected_0.01
 DepMap / registered test / other	all sets / cross-cancer	05_A3_B1/tables/A3_master_results.tsv	table: analysis_id, set_label, project, drug, model_drug, n_models, pathway
 DepMap / registered test / other	all sets / cross-cancer	05_A3_B1/tables/A3_winners_curse.tsv	table: analysis_id, treated_n, events, treated_p, observed_HR, observed_HR_lo, observed_HR_hi
+DepMap / registered test / other	all sets / cross-cancer	05_A3_B1/tables/B1_external_results.tsv	table: n, events, effect, logrank_p_median, est, lo, hi
 DepMap / registered test / other	all sets / cross-cancer	05_A3_B1/tables/B1_frozen_signatures.tsv	table: group, analysis_id, kind, sig_id, pathways, coefs
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	05_A3_B1/tables/B1_summary_counts.tsv	table: group, tests, treated_p<0.05, treated_p<0.05_expected_dir, treated_expected_dir, with_comparator, interaction_p<0.05
 DepMap / registered test / other	all sets / cross-cancer	05_A3_B1/tables/data_versions.tsv	table: file, bytes, sha256
+Supp. Figs 1, 14 (batch / PCA)	all sets / cross-cancer	07_B3_models/figures/B3_alignment_with_without.png	**With versus without the lab-model-to-tumour alignment (B3 item h).** Each dot is one set x drug pair. x = model trained on the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	all sets / cross-cancer	07_B3_models/figures/B3_benchmark_heatmap.png	**Benchmark heatmap: every model (rows) on every task (columns).** Numbers are averages over the 46 lab-model set x drug pairs
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	all sets / cross-cancer	07_B3_models/figures/B3_learning_curves.png	**Learning curves: how performance changes with the amount of training data.** (a, b) The larger lab-model sets
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	07_B3_models/figures/B3_main_figure.png	**Main figure: the paper's network method next to its comparison methods and modern models, on identical splits.**
+Fig. 4 (isogenic cells, bootstrap)	all sets / cross-cancer	07_B3_models/figures/B3_random_pathway_sets.png	**Paper network pathway (blue line) versus 100 random pathway sets of the same size (grey histogram).** For each random set the
+DepMap / registered test / other	all sets / cross-cancer	07_B3_models/figures/B3_supp_heatmap_Cindex.png	**C-index in treated patients for every model (rows) and every lab-model set x drug pair (columns).** Printed numbers are the raw values;
+DepMap / registered test / other	all sets / cross-cancer	07_B3_models/figures/B3_supp_heatmap_LOO.png	**Held-out spearman in lab models for every model (rows) and every lab-model set x drug pair (columns).** Printed numbers are the raw values;
+DepMap / registered test / other	all sets / cross-cancer	07_B3_models/figures/B3_task_bars.png	**Each task separately, with 95% confidence intervals.** (a) Held-out Spearman correlation in lab models, mean over the
 Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	colon / rectum	07_B3_models/figures/SuppFig6_replica_COAD_paper_FLUOROURACIL.png	**Paper Supp Fig 6 replica (COAD organoids, fluorouracil; paper source data).** Instead of the
 Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	all sets / cross-cancer	07_B3_models/figures/SuppFig7_network_centrality_profile.png	**Network centrality of the drug targets and of the selected pathways (STRING>700, the paper's network).** Rows: colorectal
 Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	bladder	07_B3_models/figures/SuppFig7_replica_BLCA_paper_CISPLATIN.png	**Paper Supp Fig 7 replica (BLCA organoids, cisplatin; paper source data).** Instead of the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	bladder	07_B3_models/figures/fig3_replica/Fig3_BLCA_current_CARBOPLATIN.png	**Paper Fig. 3 (b-f) replica for BLCA organoids | carboplatin.** Each panel trains one model on the 9 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	bladder	07_B3_models/figures/fig3_replica/Fig3_BLCA_current_CISPLATIN.png	**Paper Fig. 3 (b-f) replica for BLCA organoids | cisplatin.** Each panel trains one model on the 9 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	bladder	07_B3_models/figures/fig3_replica/Fig3_BLCA_current_DOXORUBICIN.png	**Paper Fig. 3 (b-f) replica for BLCA organoids | doxorubicin.** Each panel trains one model on the 9 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	bladder	07_B3_models/figures/fig3_replica/Fig3_BLCA_current_GEMCITABINE.png	**Paper Fig. 3 (b-f) replica for BLCA organoids | gemcitabine.** Each panel trains one model on the 11 lab models and applies it to the
 Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	bladder	07_B3_models/figures/fig3_replica/Fig3_BLCA_paper_CISPLATIN.png	**Paper Fig. 3 (b-f) replica for BLCA organoids (paper data) | cisplatin.** Each panel trains one model on the 9 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	colon / rectum	07_B3_models/figures/fig3_replica/Fig3_COADREAD_vdW_CETUXIMAB.png	**Paper Fig. 3 (b-f) replica for CRC organoids | cetuximab.** Each panel trains one model on the 19 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	colon / rectum	07_B3_models/figures/fig3_replica/Fig3_COADREAD_vdW_FLUOROURACIL.png	**Paper Fig. 3 (b-f) replica for CRC organoids | fluorouracil.** Each panel trains one model on the 19 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	colon / rectum	07_B3_models/figures/fig3_replica/Fig3_COADREAD_vdW_IRINOTECAN.png	**Paper Fig. 3 (b-f) replica for CRC organoids | irinotecan.** Each panel trains one model on the 19 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	colon / rectum	07_B3_models/figures/fig3_replica/Fig3_COADREAD_vdW_OXALIPLATIN.png	**Paper Fig. 3 (b-f) replica for CRC organoids | oxaliplatin.** Each panel trains one model on the 19 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	colon / rectum	07_B3_models/figures/fig3_replica/Fig3_COAD_isella_CETUXIMAB.png	**Paper Fig. 3 (b-f) replica for CRC PDX (Isella) | cetuximab.** Each panel trains one model on the 192 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	colon / rectum	07_B3_models/figures/fig3_replica/Fig3_COAD_paper_FLUOROURACIL.png	**Paper Fig. 3 (b-f) replica for COAD organoids (paper data) | fluorouracil.** Each panel trains one model on the 19 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	colon / rectum	07_B3_models/figures/fig3_replica/Fig3_COAD_paper_IRINOTECAN.png	**Paper Fig. 3 (b-f) replica for COAD organoids (paper data) | irinotecan.** Each panel trains one model on the 19 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	colon / rectum	07_B3_models/figures/fig3_replica/Fig3_COAD_paper_OXALIPLATIN.png	**Paper Fig. 3 (b-f) replica for COAD organoids (paper data) | oxaliplatin.** Each panel trains one model on the 19 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	liver	07_B3_models/figures/fig3_replica/Fig3_LIHC_broutier_SORAFENIB.png	**Paper Fig. 3 (b-f) replica for LIHC org. (Broutier) | sorafenib.** Each panel trains one model on the 5 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	liver	07_B3_models/figures/fig3_replica/Fig3_LIHC_ji_SORAFENIB.png	**Paper Fig. 3 (b-f) replica for LIHC org. (Ji) | sorafenib.** Each panel trains one model on the 61 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	lung	07_B3_models/figures/fig3_replica/Fig3_LUAD_cells_CARBOPLATIN.png	**Paper Fig. 3 (b-f) replica for LUAD cell lines | carboplatin.** Each panel trains one model on the 43 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	lung	07_B3_models/figures/fig3_replica/Fig3_LUAD_cells_CISPLATIN.png	**Paper Fig. 3 (b-f) replica for LUAD cell lines | cisplatin.** Each panel trains one model on the 40 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	lung	07_B3_models/figures/fig3_replica/Fig3_LUAD_cells_DOCETAXEL.png	**Paper Fig. 3 (b-f) replica for LUAD cell lines | docetaxel.** Each panel trains one model on the 46 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	lung	07_B3_models/figures/fig3_replica/Fig3_LUAD_cells_ERLOTINIB.png	**Paper Fig. 3 (b-f) replica for LUAD cell lines | erlotinib.** Each panel trains one model on the 46 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	lung	07_B3_models/figures/fig3_replica/Fig3_LUAD_cells_ETOPOSIDE.png	**Paper Fig. 3 (b-f) replica for LUAD cell lines | etoposide.** Each panel trains one model on the 46 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	lung	07_B3_models/figures/fig3_replica/Fig3_LUAD_cells_GEMCITABINE.png	**Paper Fig. 3 (b-f) replica for LUAD cell lines | gemcitabine.** Each panel trains one model on the 46 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	lung	07_B3_models/figures/fig3_replica/Fig3_LUAD_cells_PACLITAXEL.png	**Paper Fig. 3 (b-f) replica for LUAD cell lines | paclitaxel.** Each panel trains one model on the 46 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	lung	07_B3_models/figures/fig3_replica/Fig3_LUAD_cells_PEMETREXED.png	**Paper Fig. 3 (b-f) replica for LUAD cell lines | pemetrexed.** Each panel trains one model on the 45 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	lung	07_B3_models/figures/fig3_replica/Fig3_LUAD_cells_VINORELBINE.png	**Paper Fig. 3 (b-f) replica for LUAD cell lines | vinorelbine.** Each panel trains one model on the 46 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	ovarian	07_B3_models/figures/fig3_replica/Fig3_OV_vias_CARBOPLATIN.png	**Paper Fig. 3 (b-f) replica for OV organoids | carboplatin.** Each panel trains one model on the 14 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	ovarian	07_B3_models/figures/fig3_replica/Fig3_OV_vias_CISPLATIN.png	**Paper Fig. 3 (b-f) replica for OV organoids | cisplatin.** Each panel trains one model on the 14 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	ovarian	07_B3_models/figures/fig3_replica/Fig3_OV_vias_DOCETAXEL.png	**Paper Fig. 3 (b-f) replica for OV organoids | docetaxel.** Each panel trains one model on the 14 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	ovarian	07_B3_models/figures/fig3_replica/Fig3_OV_vias_DOXORUBICIN.png	**Paper Fig. 3 (b-f) replica for OV organoids | doxorubicin.** Each panel trains one model on the 14 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	ovarian	07_B3_models/figures/fig3_replica/Fig3_OV_vias_GEMCITABINE.png	**Paper Fig. 3 (b-f) replica for OV organoids | gemcitabine.** Each panel trains one model on the 14 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	ovarian	07_B3_models/figures/fig3_replica/Fig3_OV_vias_PACLITAXEL.png	**Paper Fig. 3 (b-f) replica for OV organoids | paclitaxel.** Each panel trains one model on the 14 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	colon / rectum	07_B3_models/figures/fig3_replica/Fig3_PAAD_shi_FLUOROURACIL.png	**Paper Fig. 3 (b-f) replica for PAAD org. (Shi) | fluorouracil.** Each panel trains one model on the 39 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	pancreas	07_B3_models/figures/fig3_replica/Fig3_PAAD_shi_GEMCITABINE.png	**Paper Fig. 3 (b-f) replica for PAAD org. (Shi) | gemcitabine.** Each panel trains one model on the 39 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	pancreas	07_B3_models/figures/fig3_replica/Fig3_PAAD_shi_OXALIPLATIN.png	**Paper Fig. 3 (b-f) replica for PAAD org. (Shi) | oxaliplatin.** Each panel trains one model on the 39 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	colon / rectum	07_B3_models/figures/fig3_replica/Fig3_PAAD_tiriac_FLUOROURACIL.png	**Paper Fig. 3 (b-f) replica for PAAD org. (Tiriac) | fluorouracil.** Each panel trains one model on the 36 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	pancreas	07_B3_models/figures/fig3_replica/Fig3_PAAD_tiriac_GEMCITABINE.png	**Paper Fig. 3 (b-f) replica for PAAD org. (Tiriac) | gemcitabine.** Each panel trains one model on the 36 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	pancreas	07_B3_models/figures/fig3_replica/Fig3_PAAD_tiriac_OXALIPLATIN.png	**Paper Fig. 3 (b-f) replica for PAAD org. (Tiriac) | oxaliplatin.** Each panel trains one model on the 36 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	PDX (Gao) / breast / melanoma	07_B3_models/figures/fig3_replica/Fig3_PDX_BRCA_PACLITAXEL.png	**Paper Fig. 3 (b-f) replica for BRCA PDX | paclitaxel.** Each panel trains one model on the 37 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	PDX (Gao) / breast / melanoma	07_B3_models/figures/fig3_replica/Fig3_PDX_BRCA_TAMOXIFEN.png	**Paper Fig. 3 (b-f) replica for BRCA PDX | tamoxifen.** Each panel trains one model on the 37 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	PDX (Gao) / breast / melanoma	07_B3_models/figures/fig3_replica/Fig3_PDX_BRCA_TRASTUZUMAB.png	**Paper Fig. 3 (b-f) replica for BRCA PDX | trastuzumab.** Each panel trains one model on the 36 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	PDX (Gao) / breast / melanoma	07_B3_models/figures/fig3_replica/Fig3_PDX_CM_DACARBAZINE.png	**Paper Fig. 3 (b-f) replica for melanoma PDX | dacarbazine.** Each panel trains one model on the 31 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	PDX (Gao) / breast / melanoma	07_B3_models/figures/fig3_replica/Fig3_PDX_CRC_FLUOROURACIL.png	**Paper Fig. 3 (b-f) replica for CRC PDX (Gao) | fluorouracil.** Each panel trains one model on the 41 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	PDX (Gao) / breast / melanoma	07_B3_models/figures/fig3_replica/Fig3_PDX_NSCLC_ERLOTINIB.png	**Paper Fig. 3 (b-f) replica for NSCLC PDX | erlotinib.** Each panel trains one model on the 25 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	PDX (Gao) / breast / melanoma	07_B3_models/figures/fig3_replica/Fig3_PDX_NSCLC_PACLITAXEL.png	**Paper Fig. 3 (b-f) replica for NSCLC PDX | paclitaxel.** Each panel trains one model on the 24 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	PDX (Gao) / breast / melanoma	07_B3_models/figures/fig3_replica/Fig3_PDX_PDAC_GEMCITABINE.png	**Paper Fig. 3 (b-f) replica for PDAC PDX | gemcitabine.** Each panel trains one model on the 33 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	pancreas	07_B3_models/figures/fig3_replica/Fig3_SARC_alshihabi_DOCETAXEL.png	**Paper Fig. 3 (b-f) replica for SARC organoids | docetaxel.** Each panel trains one model on the 14 lab models and applies it to the
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	pancreas	07_B3_models/figures/fig3_replica/Fig3_SARC_alshihabi_GEMCITABINE.png	**Paper Fig. 3 (b-f) replica for SARC organoids | gemcitabine.** Each panel trains one model on the 14 lab models and applies it to the
 Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	all sets / cross-cancer	07_B3_models/tables/SuppFig6_7_centrality_selection.tsv	table: pair, centrality, n_selected, rank, pathway, coef, n
 Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	all sets / cross-cancer	07_B3_models/tables/SuppFig7_centrality_profile.tsv	table: pair, centrality, n_targets, targets, median_targets, median_proximal_genes, median_all_pathway_genes
 Supp. Tables 1-4 (clinical balance, isogenic, bootstrap)	all sets / cross-cancer	07_B3_models/tables/SuppTable4_DL_grid_all_pairs.tsv	table: pair, batch_size, nodes, lr, dropout, weight_decay, gamma
 Supp. Tables 1-4 (clinical balance, isogenic, bootstrap)	all sets / cross-cancer	07_B3_models/tables/SuppTable4_DL_selected.tsv	table: pair, batch_size, nodes, lr, dropout, weight_decay, gamma
 Supp. Figs 1, 14 (batch / PCA)	all sets / cross-cancer	07_B3_models/tables/alignment_with_vs_without.tsv	table: model, n_pairs, mean_C_without, mean_C_with, mean_delta_C, wilcoxon_p_C, mean_loo_without
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	all sets / cross-cancer	07_B3_models/tables/benchmark_heatmap_values.tsv	table: Unnamed: 0, Lab models: held-out Spearman, Patients: C-index - 0.5, Patients: log HR per SD, Cell lines: cell-blind Spearman, Cell lines: dr
 Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	all sets / cross-cancer	07_B3_models/tables/benchmark_long.tsv	table: bundle, drug, pair, n_models, cv, n_proximal, model
 Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	all sets / cross-cancer	07_B3_models/tables/benchmark_model_summary.tsv	table: model, family, n_pairs, loo_rho_mean, loo_rho_lo, loo_rho_hi, C_mean
 DepMap / registered test / other	all sets / cross-cancer	07_B3_models/tables/bolis_selected_genes.tsv	table: pair, n_genes, genes
+DepMap / registered test / other	all sets / cross-cancer	07_B3_models/tables/cellline_cv_per_unit.tsv	table: task, fold, model, screen, drug, n, rho
+DepMap / registered test / other	all sets / cross-cancer	07_B3_models/tables/cellline_cv_per_unit_gcn.tsv	table: task, fold, model, screen, drug, n, rho
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	07_B3_models/tables/cellline_cv_summary.tsv	table: task, model, n_units, mean_rho, lo, hi, share_units_rho_pos
+DepMap / registered test / other	all sets / cross-cancer	07_B3_models/tables/data_versions.tsv	table: file, bytes, sha256
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	all sets / cross-cancer	07_B3_models/tables/learning_curve_cell_lines.tsv	table: frac, rep, n_cells, model, mean_rho
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	all sets / cross-cancer	07_B3_models/tables/learning_curve_lab_models.tsv	table: bundle, drug, fold, frac, rep, n_train, model
 Fig. 4 (isogenic cells, bootstrap)	all sets / cross-cancer	07_B3_models/tables/random_sets_vs_paper_pathway.tsv	table: pair, paper_C, paper_lr_p, paper_loo_rho, random_C_median, share_random_C_ge_paper, share_random_lr_p_le_paper
 Fig. 1 (method, schematics, data map)	all sets / cross-cancer	08_depmap/figures/S1_data_matching_flow.png	**Supplementary Figure S1. How many cell lines survive each matching step.** From all lines in each screen, to
 DepMap / registered test / other	all sets / cross-cancer	08_depmap/figures/S2_gdsc1_vs_gdsc2.png	**Supplementary Figure S2. Do the screens agree on 5-FU?** (a) 5-FU ln IC50 of the same cell lines in GDSC1 and
@@ -892,10 +1014,12 @@ Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	09_register
 Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	09_registered_test/tables/stage1_primary.tsv	table: drug, projects, n_projects, PFI_HR_int, PFI_lo, PFI_hi, PFI_z
 Fig. 4 (isogenic cells, bootstrap)	all sets / cross-cancer	09_registered_test/tables/stage1_random_null_z.tsv.gz	table: FLUOROURACIL, OXALIPLATIN, IRINOTECAN, GEMCITABINE, PACLITAXEL, PEMETREXED, SORAFENIB
 Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	09_registered_test/tables/stage1_sensitivity.tsv	table: drug, analysis, n, events_exposed, events_unexposed, HR_int, lo
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	09_registered_test/tables/stage1_sensitivity_no_missing_start.tsv	table: drug, analysis, n, n_exposed, n_dropped, events_exposed, events_unexposed
 Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	09_registered_test/tables/stage1_specificity_matrix.tsv	table: exposure, score, HR_int, lo, hi, z, p
 Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	09_registered_test/tables/stage2_controlled.tsv	table: drug, cohort, drug_arm, comparator, endpoint, kind, role
 Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	09_registered_test/tables/stage2_gate_G3.tsv	table: drug, n_controlled_primary, n_adequately_powered, n_one_sided_p_lt_0.025, n_same_direction, G3_powered_hit, G3_all_same_direction
 Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	09_registered_test/tables/stage2_pooled.tsv	table: drug, kind, k, cohorts, FE, FE_lo, FE_hi
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	09_registered_test/tables/stage2_sensitivity_GSE39582_harmonised.tsv	table: definition, endpoint, n, n_drug_arm, n_comparator, events_drug_arm, events_comparator
 Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	09_registered_test/tables/stage2_single_arm_supportive.tsv	table: drug, cohort, arm, endpoint, kind, n, events
 Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	09_registered_test/tables/summary_drug_by_cohort.tsv	table: drug, col, z, p
 DepMap / registered test / other	all sets / cross-cancer	10_completeness/completeness.tsv	table: ID, type, cancer_drug, paper_before, paper_after, paper_paths, paper_files_found
@@ -936,3 +1060,206 @@ DepMap / registered test / other	all sets / cross-cancer	10_completeness/tables/
 DepMap / registered test / other	all sets / cross-cancer	10_completeness/tables/data_versions.tsv	table: file, bytes, sha256
 DepMap / registered test / other	all sets / cross-cancer	10_completeness/tables/results_index.tsv	table: section, cancer, path, description
 Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	10_completeness/tables/verify_headline_biomarkers.tsv	table: key, label, bundle, drug, pathway, ridge_coef, treated_n
+DepMap / registered test / other	all sets / cross-cancer	11_review/GAP_LIST.tsv	table: rank, gap_id, priority, what, why, data_available, data_path
+DepMap / registered test / other	all sets / cross-cancer	12_audit/issues.tsv	table: id, severity, area, folder, issue, evidence, exact_fix
+DepMap / registered test / other	all sets / cross-cancer	12_audit/tables/MASTER_NUMBERS.tsv	table: id, description, authoritative_value, source_table, expected_text, reports_quoting, note
+DepMap / registered test / other	all sets / cross-cancer	12_audit/tables/STATISTICAL_HIERARCHY.tsv	table: tier, analysis_family, folder, n_tests, primary_statistic, multiplicity_correction, what_it_can_claim
+DepMap / registered test / other	all sets / cross-cancer	12_audit/tables/data_versions_02GI_sha256.tsv	table: file, bytes, sha256
+DepMap / registered test / other	all sets / cross-cancer	13_gaps_bio/figures/G13_odd_pathway_composition.png	"What is inside the ""HIV"" pathways among the frozen hypotheses?"
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	all sets / cross-cancer	13_gaps_bio/figures/G14_SuppFig15_cell_line_models.png	Supp. Fig. 15 for the other cancers: models trained on cancer cell lines instead of organoids
+DepMap / registered test / other	colon / rectum	13_gaps_bio/figures/G2_decomposition_colon_5FU.png	What changed between the 2019 colon 5-FU result and today's data
+DepMap / registered test / other	all sets / cross-cancer	13_gaps_bio/figures/G3_bh3_vs_bh3_mimetics_organoids.png	BH3-only pathway score and drug response in the 19 colorectal organoids (van de Wetering 2015)
+DepMap / registered test / other	all sets / cross-cancer	13_gaps_bio/figures/G5_folfox_question.png	Is the paper's 5-FU marker really a 5-FU marker, or an oxaliplatin / FOLFOX marker?
+DepMap / registered test / other	all sets / cross-cancer	13_gaps_bio/figures/G7_bh3_beyond_simple_markers.png	Does the BH3-only pathway tell us more than BCL2-family genes and proliferation?
+Fig. 5 / Supp 12, 13, 18 (mutation concordance)	all sets / cross-cancer	13_gaps_bio/figures/G8_mutation_concordance_null_and_adjustment.png	Are the mutation checks special to the organoid pathways, and do they survive adjustment?
+DepMap / registered test / other	all sets / cross-cancer	13_gaps_bio/tables/G13_data_versions.tsv	table: file, bytes, sha256
+DepMap / registered test / other	all sets / cross-cancer	13_gaps_bio/tables/G13_frozen_pathway_composition.tsv	table: pathway, n_genes, odd, n_proteasome (PSM*), share_proteasome (PSM*), n_nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+DepMap / registered test / other	all sets / cross-cancer	13_gaps_bio/tables/G13_most_overlapping_pathways.tsv	table: pathway, other, jaccard, overlap, n_other
+DepMap / registered test / other	all sets / cross-cancer	13_gaps_bio/tables/G13_purity_immune_correlation.tsv	table: pathway, odd, vs, n_cancer_types, median_rho, q10, q90
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	all sets / cross-cancer	13_gaps_bio/tables/G14_SuppFig15_cell_line_models.tsv	table: setting, project, patient_drugs, line_drug, proximity_column, training, n_lines
+DepMap / registered test / other	all sets / cross-cancer	13_gaps_bio/tables/G14_data_versions.tsv	table: file, bytes, sha256
+DepMap / registered test / other	all sets / cross-cancer	13_gaps_bio/tables/G2_data_versions.tsv	table: file, bytes, sha256
+DepMap / registered test / other	colon / rectum	13_gaps_bio/tables/G2_decomposition_colon_5FU.tsv	table: frozen_sign, n_proximal, bh3_proximal, rank1, n, deaths, p_rank1
+DepMap / registered test / other	all sets / cross-cancer	13_gaps_bio/tables/G2_gene_universe_sizes.tsv	table: Unnamed: 0, 0
+DepMap / registered test / other	all sets / cross-cancer	13_gaps_bio/tables/G3_bh3_vs_all_drugs_organoids_AUC.tsv	table: drug, n, rho, p, rank_most_negative
+DepMap / registered test / other	all sets / cross-cancer	13_gaps_bio/tables/G3_bh3_vs_drugs_organoids.tsv	table: score, metric, drug, n, rho, lo, hi
+DepMap / registered test / other	all sets / cross-cancer	13_gaps_bio/tables/G3_data_versions.tsv	table: file, bytes, sha256
+DepMap / registered test / other	all sets / cross-cancer	13_gaps_bio/tables/G3_response_range_organoids.tsv	table: drug, n, max_conc_uM, auc_min, auc_median, auc_max, auc_sd
+DepMap / registered test / other	all sets / cross-cancer	13_gaps_bio/tables/G3_single_genes_vs_bh3_mimetics_organoids.tsv	table: gene, drug, n, rho, lo, hi, p
+DepMap / registered test / other	all sets / cross-cancer	13_gaps_bio/tables/G5_cell_lines_bh3_vs_oxaliplatin.tsv	table: screen, drug, scope, n, rho, lo, hi
+DepMap / registered test / other	all sets / cross-cancer	13_gaps_bio/tables/G5_data_versions.tsv	table: file, bytes, sha256
+DepMap / registered test / other	all sets / cross-cancer	13_gaps_bio/tables/G5_folfox_patients.tsv	table: frozen_sign, subset, n, events, cohort, setup, endpoint
+DepMap / registered test / other	all sets / cross-cancer	13_gaps_bio/tables/G7_partial_correlations.tsv	table: screen, drug, n, adjusted_for, var, r, lo
+DepMap / registered test / other	all sets / cross-cancer	13_gaps_bio/tables/G7_regression_added_value.tsv	table: screen, drug, n, R2_markers, R2_markers_plus_BH3, dR2, F
+Fig. 5 / Supp 12, 13, 18 (mutation concordance)	all sets / cross-cancer	13_gaps_bio/tables/G8_BRAF_data_versions.tsv	table: file, bytes, sha256
+Fig. 5 / Supp 12, 13, 18 (mutation concordance)	all sets / cross-cancer	13_gaps_bio/tables/G8_BRAF_null_and_adjustment.tsv	table: test, version, model, pathway, coef, n_proximal, n_mut
+Fig. 5 / Supp 12, 13, 18 (mutation concordance)	all sets / cross-cancer	13_gaps_bio/tables/G8_ERCC2_data_versions.tsv	table: file, bytes, sha256
+Fig. 5 / Supp 12, 13, 18 (mutation concordance)	all sets / cross-cancer	13_gaps_bio/tables/G8_ERCC2_null_and_adjustment.tsv	table: test, version, model, pathway, coef, ridge_rank, n_proximal
+DepMap / registered test / other	all sets / cross-cancer	13_gaps_bio/tables/check_ssgsea_fast_vs_gseapy.tsv	table: set, r, fast0, gseapy0
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	14_gaps_stats/figures/G10_meta_forest.png	**Figure G10. Pooled effect of the organoid scores across the 57 analyses.**
+DepMap / registered test / other	all sets / cross-cancer	14_gaps_stats/figures/G12_baseline_treated_vs_untreated.png	**Figure G12. Treated patients and patients with no drug record are different groups.**
+Fig. 4 (isogenic cells, bootstrap)	all sets / cross-cancer	14_gaps_stats/figures/G16_joint_model_bootstrap.png	**Figure G16. Does adding organoid data to a patient model improve prediction in unseen patients?**
+DepMap / registered test / other	all sets / cross-cancer	14_gaps_stats/figures/G17_PFI_vs_OS.png	**Figure G17. The 57-analysis survey with progression-free interval (PFI) instead of overall survival (OS).**
+DepMap / registered test / other	all sets / cross-cancer	14_gaps_stats/figures/G18_score_agreement.png	**Figure G18. Do the two pathway scores agree in TCGA?**
+Fig. 4 (isogenic cells, bootstrap)	all sets / cross-cancer	14_gaps_stats/figures/G9_permutation_null.png	**Figure G9. How many small p-values would the 57-analysis survey give by chance, taking shared patients into account?**
+DepMap / registered test / other	all sets / cross-cancer	14_gaps_stats/tables/G10_equivalence_counts.tsv	table: bound, n_analyses, n_upper_bound_below, n_two_sided_equivalent
+DepMap / registered test / other	all sets / cross-cancer	14_gaps_stats/tables/G10_per_analysis_equivalence.tsv	table: analysis_id, drug, drug_class, project, treated_n, treated_events, cont_HR
+Fig. 4 (isogenic cells, bootstrap)	all sets / cross-cancer	14_gaps_stats/tables/G10_random_effects_meta.tsv	table: effect, subset, k, HR, lo_HKSJ, hi_HKSJ, p_HKSJ
+DepMap / registered test / other	all sets / cross-cancer	14_gaps_stats/tables/G12_baseline_readable.tsv	table: cohort, treated with, n treated / untreated, age treated, age untreated, p age, % stage III-IV treated / untreated
+DepMap / registered test / other	all sets / cross-cancer	14_gaps_stats/tables/G12_baseline_treated_vs_untreated.tsv	table: cohort, treated_with, treated_n, treated_age_median, treated_age_q1, treated_age_q3, treated_pct_male
+DepMap / registered test / other	all sets / cross-cancer	14_gaps_stats/tables/G15_literature_related_to_Kong2020.tsv	table: pmid, doi, year, journal, title, found_by, relation_to_Kong2020
+DepMap / registered test / other	all sets / cross-cancer	14_gaps_stats/tables/G16_check_pooled_C_vs_original.tsv	table: unit, outcome, model, C_original_table, C_recomputed, abs_diff
+DepMap / registered test / other	all sets / cross-cancer	14_gaps_stats/tables/G16_extended_grid_chosen_weight.tsv	table: unit, n_fits, chosen_w_0.0, chosen_w_0.05, chosen_w_0.1, chosen_w_0.25, chosen_w_0.5
+Fig. 4 (isogenic cells, bootstrap)	all sets / cross-cancer	14_gaps_stats/tables/G16_paired_bootstrap_cindex_diff.tsv	table: unit, outcome, n_cohorts, n_patients, cohorts, C_organoid-only, C_patient-only
+DepMap / registered test / other	all sets / cross-cancer	14_gaps_stats/tables/G17_PFI_events_power.tsv	table: median_events_OS, median_events_PFI, median_ratio_PFI_over_OS, median_MDHR_OS, median_MDHR_PFI, n_power80_HR1.5_PFI, n_same_side_p0.05_OS_an
+DepMap / registered test / other	all sets / cross-cancer	14_gaps_stats/tables/G17_PFI_survey_57.tsv	table: analysis_id, drug, project, os_treated_n, os_treated_events, os_treated_p, os_cont_HR
+DepMap / registered test / other	all sets / cross-cancer	14_gaps_stats/tables/G17_PFI_vs_OS_counts.tsv	table: family, n_tests, p_below_0.05, expected, binomial_p, BH_q_below_0.05, min_p
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	14_gaps_stats/tables/G18_correlation_summary_by_cohort.tsv	table: project, count, mean, std, min, 10%, 25%
+DepMap / registered test / other	all sets / cross-cancer	14_gaps_stats/tables/G18_hit_counts_ssgsea_vs_rank.tsv	table: family, ssgsea, rank_score, n_rank, both
+DepMap / registered test / other	all sets / cross-cancer	14_gaps_stats/tables/G18_pathway_correlation_ssgsea_vs_rank.tsv	table: project, pathway, spearman, n, n_sources
+DepMap / registered test / other	all sets / cross-cancer	14_gaps_stats/tables/G18_rerun_57_with_rank_score.tsv	table: analysis_id, pathway, ssgsea_treated_p, direction_ssgsea, n_with_rank_score, n_total, spearman_ssgsea_vs_rank_patients
+DepMap / registered test / other	all sets / cross-cancer	14_gaps_stats/tables/G9_null_count_distribution.tsv	table: k, perm_null_prob, binomial_57_0.05_prob, perm_null_untreated_prob
+Fig. 4 (isogenic cells, bootstrap)	all sets / cross-cancer	14_gaps_stats/tables/G9_per_analysis_permutation.tsv	table: analysis_id, cluster, treated_p_obs, untreated_p_obs, treated_perm_p_single, familywise_minP_adjusted_p, null_share_p_below_0.05
+Fig. 4 (isogenic cells, bootstrap)	all sets / cross-cancer	14_gaps_stats/tables/G9_permutation_null_summary.tsv	table: statistic, observed, null_mean, null_median, null_2.5pct, null_97.5pct, null_95pct
+DepMap / registered test / other	all sets / cross-cancer	14_gaps_stats/tables/data_versions.tsv	table: file, bytes, sha256
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	15_fixes/backup/03/figures/forest_cross_cancer.png	**Cross-cancer summary (network-proximal pathways).**
+Fig. 2 (network pathway biomarker, survival)	colon / rectum	15_fixes/backup/03/figures/main_colorectal.png	**Colorectal, 5-FU-based chemotherapy: a model that learns from lab models and patients together.**
+DepMap / registered test / other	bladder	15_fixes/backup/03/tables/BLCA_CISPLATIN__all__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	bladder	15_fixes/backup/03/tables/BLCA_CISPLATIN__all__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	bladder	15_fixes/backup/03/tables/BLCA_CISPLATIN__all__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	bladder	15_fixes/backup/03/tables/BLCA_CISPLATIN__all__meta.tsv	table: unit, BLCA_CISPLATIN
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	bladder	15_fixes/backup/03/tables/BLCA_CISPLATIN__learning_curve.tsv	table: unit, axis, fraction, n, rep, model, concordance
+DepMap / registered test / other	bladder	15_fixes/backup/03/tables/BLCA_CISPLATIN__shortlist__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	bladder	15_fixes/backup/03/tables/BLCA_CISPLATIN__shortlist__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	bladder	15_fixes/backup/03/tables/BLCA_CISPLATIN__shortlist__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	bladder	15_fixes/backup/03/tables/BLCA_CISPLATIN__shortlist__meta.tsv	table: unit, BLCA_CISPLATIN
+DepMap / registered test / other	bladder	15_fixes/backup/03/tables/BLCA_GEMCITABINE__all__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	bladder	15_fixes/backup/03/tables/BLCA_GEMCITABINE__all__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	bladder	15_fixes/backup/03/tables/BLCA_GEMCITABINE__all__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	bladder	15_fixes/backup/03/tables/BLCA_GEMCITABINE__all__meta.tsv	table: unit, BLCA_GEMCITABINE
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	bladder	15_fixes/backup/03/tables/BLCA_GEMCITABINE__learning_curve.tsv	table: unit, axis, fraction, n, rep, model, concordance
+DepMap / registered test / other	bladder	15_fixes/backup/03/tables/BLCA_GEMCITABINE__shortlist__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	bladder	15_fixes/backup/03/tables/BLCA_GEMCITABINE__shortlist__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	bladder	15_fixes/backup/03/tables/BLCA_GEMCITABINE__shortlist__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	bladder	15_fixes/backup/03/tables/BLCA_GEMCITABINE__shortlist__meta.tsv	table: unit, BLCA_GEMCITABINE
+DepMap / registered test / other	colon / rectum	15_fixes/backup/03/tables/CRC_5FU__all__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	colon / rectum	15_fixes/backup/03/tables/CRC_5FU__all__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	colon / rectum	15_fixes/backup/03/tables/CRC_5FU__all__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	colon / rectum	15_fixes/backup/03/tables/CRC_5FU__all__meta.tsv	table: unit, CRC_5FU
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	colon / rectum	15_fixes/backup/03/tables/CRC_5FU__learning_curve.tsv	table: unit, axis, fraction, n, rep, model, concordance
+DepMap / registered test / other	colon / rectum	15_fixes/backup/03/tables/CRC_5FU__shortlist__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	colon / rectum	15_fixes/backup/03/tables/CRC_5FU__shortlist__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	colon / rectum	15_fixes/backup/03/tables/CRC_5FU__shortlist__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	colon / rectum	15_fixes/backup/03/tables/CRC_5FU__shortlist__meta.tsv	table: unit, CRC_5FU
+DepMap / registered test / other	colon / rectum	15_fixes/backup/03/tables/CRC_IRINOTECAN__all__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	colon / rectum	15_fixes/backup/03/tables/CRC_IRINOTECAN__all__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	colon / rectum	15_fixes/backup/03/tables/CRC_IRINOTECAN__all__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	colon / rectum	15_fixes/backup/03/tables/CRC_IRINOTECAN__all__meta.tsv	table: unit, CRC_IRINOTECAN
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	colon / rectum	15_fixes/backup/03/tables/CRC_IRINOTECAN__learning_curve.tsv	table: unit, axis, fraction, n, rep, model, concordance
+DepMap / registered test / other	colon / rectum	15_fixes/backup/03/tables/CRC_IRINOTECAN__shortlist__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	colon / rectum	15_fixes/backup/03/tables/CRC_IRINOTECAN__shortlist__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	colon / rectum	15_fixes/backup/03/tables/CRC_IRINOTECAN__shortlist__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	colon / rectum	15_fixes/backup/03/tables/CRC_IRINOTECAN__shortlist__meta.tsv	table: unit, CRC_IRINOTECAN
+DepMap / registered test / other	colon / rectum	15_fixes/backup/03/tables/CRC_OXALIPLATIN__all__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	colon / rectum	15_fixes/backup/03/tables/CRC_OXALIPLATIN__all__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	colon / rectum	15_fixes/backup/03/tables/CRC_OXALIPLATIN__all__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	colon / rectum	15_fixes/backup/03/tables/CRC_OXALIPLATIN__all__meta.tsv	table: unit, CRC_OXALIPLATIN
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	colon / rectum	15_fixes/backup/03/tables/CRC_OXALIPLATIN__learning_curve.tsv	table: unit, axis, fraction, n, rep, model, concordance
+DepMap / registered test / other	colon / rectum	15_fixes/backup/03/tables/CRC_OXALIPLATIN__shortlist__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	colon / rectum	15_fixes/backup/03/tables/CRC_OXALIPLATIN__shortlist__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	colon / rectum	15_fixes/backup/03/tables/CRC_OXALIPLATIN__shortlist__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	colon / rectum	15_fixes/backup/03/tables/CRC_OXALIPLATIN__shortlist__meta.tsv	table: unit, CRC_OXALIPLATIN
+DepMap / registered test / other	liver	15_fixes/backup/03/tables/LIHC_SORAFENIB__all__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	liver	15_fixes/backup/03/tables/LIHC_SORAFENIB__all__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	liver	15_fixes/backup/03/tables/LIHC_SORAFENIB__all__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	liver	15_fixes/backup/03/tables/LIHC_SORAFENIB__all__meta.tsv	table: unit, LIHC_SORAFENIB
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	liver	15_fixes/backup/03/tables/LIHC_SORAFENIB__learning_curve.tsv	table: unit, axis, fraction, n, rep, model, concordance
+DepMap / registered test / other	liver	15_fixes/backup/03/tables/LIHC_SORAFENIB__shortlist__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	liver	15_fixes/backup/03/tables/LIHC_SORAFENIB__shortlist__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	liver	15_fixes/backup/03/tables/LIHC_SORAFENIB__shortlist__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	liver	15_fixes/backup/03/tables/LIHC_SORAFENIB__shortlist__meta.tsv	table: unit, LIHC_SORAFENIB
+DepMap / registered test / other	lung	15_fixes/backup/03/tables/LUNG_PLATINUM__all__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	lung	15_fixes/backup/03/tables/LUNG_PLATINUM__all__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	lung	15_fixes/backup/03/tables/LUNG_PLATINUM__all__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	lung	15_fixes/backup/03/tables/LUNG_PLATINUM__all__meta.tsv	table: unit, LUNG_PLATINUM
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	lung	15_fixes/backup/03/tables/LUNG_PLATINUM__learning_curve.tsv	table: unit, axis, fraction, n, rep, model, concordance
+DepMap / registered test / other	lung	15_fixes/backup/03/tables/LUNG_PLATINUM__shortlist__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	lung	15_fixes/backup/03/tables/LUNG_PLATINUM__shortlist__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	lung	15_fixes/backup/03/tables/LUNG_PLATINUM__shortlist__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	lung	15_fixes/backup/03/tables/LUNG_PLATINUM__shortlist__meta.tsv	table: unit, LUNG_PLATINUM
+DepMap / registered test / other	ovarian	15_fixes/backup/03/tables/OV_PACLITAXEL__all__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	ovarian	15_fixes/backup/03/tables/OV_PACLITAXEL__all__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	ovarian	15_fixes/backup/03/tables/OV_PACLITAXEL__all__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	ovarian	15_fixes/backup/03/tables/OV_PACLITAXEL__all__meta.tsv	table: unit, OV_PACLITAXEL
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	ovarian	15_fixes/backup/03/tables/OV_PACLITAXEL__learning_curve.tsv	table: unit, axis, fraction, n, rep, model, concordance
+DepMap / registered test / other	ovarian	15_fixes/backup/03/tables/OV_PACLITAXEL__shortlist__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	ovarian	15_fixes/backup/03/tables/OV_PACLITAXEL__shortlist__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	ovarian	15_fixes/backup/03/tables/OV_PACLITAXEL__shortlist__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	ovarian	15_fixes/backup/03/tables/OV_PACLITAXEL__shortlist__meta.tsv	table: unit, OV_PACLITAXEL
+DepMap / registered test / other	ovarian	15_fixes/backup/03/tables/OV_PLATINUM__all__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	ovarian	15_fixes/backup/03/tables/OV_PLATINUM__all__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	ovarian	15_fixes/backup/03/tables/OV_PLATINUM__all__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	ovarian	15_fixes/backup/03/tables/OV_PLATINUM__all__meta.tsv	table: unit, OV_PLATINUM
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	ovarian	15_fixes/backup/03/tables/OV_PLATINUM__learning_curve.tsv	table: unit, axis, fraction, n, rep, model, concordance
+DepMap / registered test / other	ovarian	15_fixes/backup/03/tables/OV_PLATINUM__shortlist__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	ovarian	15_fixes/backup/03/tables/OV_PLATINUM__shortlist__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	ovarian	15_fixes/backup/03/tables/OV_PLATINUM__shortlist__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	ovarian	15_fixes/backup/03/tables/OV_PLATINUM__shortlist__meta.tsv	table: unit, OV_PLATINUM
+DepMap / registered test / other	pancreas	15_fixes/backup/03/tables/PAAD_GEMCITABINE__all__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	pancreas	15_fixes/backup/03/tables/PAAD_GEMCITABINE__all__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	pancreas	15_fixes/backup/03/tables/PAAD_GEMCITABINE__all__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	pancreas	15_fixes/backup/03/tables/PAAD_GEMCITABINE__all__meta.tsv	table: unit, PAAD_GEMCITABINE
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	pancreas	15_fixes/backup/03/tables/PAAD_GEMCITABINE__learning_curve.tsv	table: unit, axis, fraction, n, rep, model, concordance
+DepMap / registered test / other	pancreas	15_fixes/backup/03/tables/PAAD_GEMCITABINE__shortlist__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	pancreas	15_fixes/backup/03/tables/PAAD_GEMCITABINE__shortlist__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	pancreas	15_fixes/backup/03/tables/PAAD_GEMCITABINE__shortlist__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	pancreas	15_fixes/backup/03/tables/PAAD_GEMCITABINE__shortlist__meta.tsv	table: unit, PAAD_GEMCITABINE
+DepMap / registered test / other	sarcoma	15_fixes/backup/03/tables/SARC_GEMCITABINE__all__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	sarcoma	15_fixes/backup/03/tables/SARC_GEMCITABINE__all__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	sarcoma	15_fixes/backup/03/tables/SARC_GEMCITABINE__all__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	sarcoma	15_fixes/backup/03/tables/SARC_GEMCITABINE__all__meta.tsv	table: unit, SARC_GEMCITABINE
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	sarcoma	15_fixes/backup/03/tables/SARC_GEMCITABINE__learning_curve.tsv	table: unit, axis, fraction, n, rep, model, concordance
+DepMap / registered test / other	sarcoma	15_fixes/backup/03/tables/SARC_GEMCITABINE__shortlist__eval.tsv	table: cohort, model, outcome, n, events, C, num
+DepMap / registered test / other	sarcoma	15_fixes/backup/03/tables/SARC_GEMCITABINE__shortlist__folds.tsv	table: heldout, model, train_cohorts, w, lam, unit, features
+Fig. 2 (network pathway biomarker, survival)	sarcoma	15_fixes/backup/03/tables/SARC_GEMCITABINE__shortlist__interaction.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	sarcoma	15_fixes/backup/03/tables/SARC_GEMCITABINE__shortlist__meta.tsv	table: unit, SARC_GEMCITABINE
+Supp. Figs 1, 14 (batch / PCA)	all sets / cross-cancer	15_fixes/backup/03/tables/alignment_metrics.tsv	table: cancer, stage, n_tumours, n_models, model_vs_tumour_AUROC, tumour_share_of_model_neighbours, tumour_share_expected
+DepMap / registered test / other	all sets / cross-cancer	15_fixes/backup/03/tables/data_versions.tsv	table: file, bytes, sha256
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	15_fixes/backup/03/tables/interaction_all.tsv	table: cohort, model, outcome, n_treated, n_comparison, events_treated, events_comparison
+DepMap / registered test / other	all sets / cross-cancer	15_fixes/backup/03/tables/joint_weight_chosen.tsv	table: unit, w
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	all sets / cross-cancer	15_fixes/backup/03/tables/learning_curves.tsv	table: unit, axis, fraction, n, rep, model, concordance
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	all sets / cross-cancer	15_fixes/backup/03/tables/learning_curves_mean.tsv	table: unit, axis, model, 0.1, 0.25, 0.5, 0.75
+DepMap / registered test / other	all sets / cross-cancer	15_fixes/backup/03/tables/storm_auroc_by_arm.tsv	table: model, arm, n, responders, AUROC, p
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	15_fixes/backup/03/tables/summary_all.tsv	table: cohort, model, outcome, n, events, C, logrank_p
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	15_fixes/backup/03/tables/summary_main.tsv	table: cancer, unit, drug, features, n_features, model, outcome
+DepMap / registered test / other	all sets / cross-cancer	15_fixes/backup/05/b1_patient_scores.tsv.gz	table: cohort, comparison, endpoint, sig_id, sample, arm1, score
+DepMap / registered test / other	all sets / cross-cancer	15_fixes/backup/05/tables/A3_adjusted_cox_all_terms.tsv	table: analysis_id, term, coef, se, HR, lo, hi
+DepMap / registered test / other	all sets / cross-cancer	15_fixes/backup/05/tables/A3_expected_by_chance.tsv	table: family, n_tests, observed_p_below_0.05, expected_by_chance, binomial_p_at_least_observed, observed_p_below_0.01, expected_0.01
+DepMap / registered test / other	all sets / cross-cancer	15_fixes/backup/05/tables/A3_master_results.tsv	table: analysis_id, set_label, project, drug, model_drug, n_models, pathway
+DepMap / registered test / other	all sets / cross-cancer	15_fixes/backup/05/tables/A3_winners_curse.tsv	table: analysis_id, treated_n, events, treated_p, observed_HR, observed_HR_lo, observed_HR_hi
+DepMap / registered test / other	all sets / cross-cancer	15_fixes/backup/05/tables/B1_external_results.tsv	table: n, events, effect, logrank_p_median, est, lo, hi
+DepMap / registered test / other	all sets / cross-cancer	15_fixes/backup/05/tables/B1_frozen_signatures.tsv	table: group, analysis_id, kind, sig_id, pathways, coefs
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	15_fixes/backup/05/tables/B1_summary_counts.tsv	table: group, tests, treated_p<0.05, treated_p<0.05_expected_dir, treated_expected_dir, with_comparator, interaction_p<0.05
+DepMap / registered test / other	all sets / cross-cancer	15_fixes/backup/05/tables/data_versions.tsv	table: file, bytes, sha256
+DepMap / registered test / other	all sets / cross-cancer	15_fixes/backup/09/tables/data_versions.tsv	table: file, bytes, sha256
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	15_fixes/backup/09/tables/stage1_gate_G2.tsv	table: drug, G2_1_holm_and_direction, G2_2_purity_ipw_robust, G2_3_negative_controls_null, G2_4_weaker_in_comparator, G2_pass
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	15_fixes/backup/09/tables/stage1_ipw_weights.tsv	table: drug, w_min, w_max, w_mean, ess, n
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	15_fixes/backup/09/tables/stage1_km_logrank.tsv	table: drug, group, n, n_high, events, logrank_chi2, logrank_p
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	15_fixes/backup/09/tables/stage1_meta_analysis.tsv	table: drug, k, HR_re, lo_re, hi_re, p_re, HR_fe
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	15_fixes/backup/09/tables/stage1_negative_controls.tsv	table: drug, control, n, HR_int, lo, hi, z
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	15_fixes/backup/09/tables/stage1_per_cancer.tsv	table: drug, project, n, n_exposed, events_exposed, events_unexposed, fitted
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	15_fixes/backup/09/tables/stage1_power.tsv	table: drug, endpoint, test, n, events_exposed, events_unexposed, expected_se
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	15_fixes/backup/09/tables/stage1_primary.tsv	table: drug, projects, n_projects, PFI_HR_int, PFI_lo, PFI_hi, PFI_z
+Fig. 4 (isogenic cells, bootstrap)	all sets / cross-cancer	15_fixes/backup/09/tables/stage1_random_null_z.tsv.gz	table: FLUOROURACIL, OXALIPLATIN, IRINOTECAN, GEMCITABINE, PACLITAXEL, PEMETREXED, SORAFENIB
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	15_fixes/backup/09/tables/stage1_sensitivity.tsv	table: drug, analysis, n, events_exposed, events_unexposed, HR_int, lo
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	15_fixes/backup/09/tables/stage1_specificity_matrix.tsv	table: exposure, score, HR_int, lo, hi, z, p
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	15_fixes/backup/09/tables/stage2_controlled.tsv	table: drug, cohort, drug_arm, comparator, endpoint, kind, role
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	15_fixes/backup/09/tables/stage2_gate_G3.tsv	table: drug, n_controlled_primary, n_adequately_powered, n_one_sided_p_lt_0.025, n_same_direction, G3_powered_hit, G3_all_same_direction
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	15_fixes/backup/09/tables/stage2_pooled.tsv	table: drug, kind, k, cohorts, FE, FE_lo, FE_hi
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	15_fixes/backup/09/tables/stage2_single_arm_supportive.tsv	table: drug, cohort, arm, endpoint, kind, n, events
+Fig. 2 (network pathway biomarker, survival)	all sets / cross-cancer	15_fixes/backup/09/tables/summary_drug_by_cohort.tsv	table: drug, col, z, p
+Supp. Figs 2-5, 10, 11, 15-17 (models, multi-pathway, size, cell lines, proximity, inner validation)	all sets / cross-cancer	15_fixes/backup/10/SuppFig4_cross_test_matrix_all_sets.png	figure (no caption file)
+DepMap / registered test / other	all sets / cross-cancer	15_fixes/backup/MASTER_NUMBERS_before.tsv	table: id, description, authoritative_value, source_table, expected_text, reports_quoting, note
+DepMap / registered test / other	all sets / cross-cancer	15_fixes/definitions/GSE39582_treatment.tsv	table: subset, rule_plain_words, drugs_regex, arms_included, n_all_stages, n_stage_II_III, n_stage_II_III_with_RFS
+Fig. 3 / Supp 6-9 (comparison feature sets, centrality, deep learning)	all sets / cross-cancer	15_fixes/tables/03_foldalign_comparison.tsv	table: unit, model, outcome, n, C_transductive, C_fold_aligned, C_diff
+DepMap / registered test / other	all sets / cross-cancer	15_fixes/tables/MASTER_NUMBERS.tsv	table: id, description, authoritative_value, source_table, expected_text, reports_quoting, note
