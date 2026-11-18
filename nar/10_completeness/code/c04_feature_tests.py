@@ -57,7 +57,7 @@ Paper: p = 0.16 and 0.86. Blank = pathway not scored in that cohort. Numbers inc
 tables/SuppFig4_cross_test_matrix.tsv.
 """)
 spec = X.dropna(subset=["p"])
-own = spec[spec.own]; off = spec[~spec.own]
+spec = spec.assign(own=spec["own"].fillna(False).astype(bool)); own = spec[spec.own]; off = spec[~spec.own]
 summ = dict(n_own=len(own), own_p_below_005=int((own.p < 0.05).sum()), n_off=len(off),
             off_p_below_005=int((off.p < 0.05).sum()), off_share=float((off.p < 0.05).mean()))
 pc = X[(X.biomarker == "BLCA_paper_AMINO") & (X.cohort == "COAD_paper_5FU")].p.values

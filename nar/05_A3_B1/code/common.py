@@ -85,8 +85,13 @@ def cox(T, E, X, names=None, check=1):
     if E.sum() < 2:
         return None
     try:
-        r = PHReg(T, X, status=E, ties="efron").fit(disp=False)
+        mod = PHReg(T, X, status=E, ties="efron")
+        r = mod.fit(disp=False)
         b, se = np.asarray(r.params, float), np.asarray(r.bse, float)
+        if not np.all(np.isfinite(b)):        # Newton can diverge near separation: BFGS fallback
+            r = mod.fit(disp=False, method="bfgs", maxiter=2000)
+            b = np.asarray(r.params, float)
+            se = np.sqrt(np.diag(np.linalg.pinv(-mod.hessian(b))))
         if not np.all(np.isfinite(se[:check])) or np.any(se[:check] > 20):
             return None
         z = b / se
