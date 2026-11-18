@@ -1,0 +1,3 @@
+id	filename	md5	size	state
+59015dfd-045b-4a80-9b4a-3cc3a41707f0	59015dfd-045b-4a80-9b4a-3cc3a41707f0/nationwidechildrens.org_clinical_drug_luad.txt	788d81f9481e42ea6571a253d3fa3cf6	191001	validated
+\N	59015dfd-045b-4a80-9b4a-3cc3a41707f0/annotations.txt	a035a060b9a535305f4a2fe475182238	20409	\N
