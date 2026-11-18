@@ -10,6 +10,20 @@ COHORTS = {
  "lung": ["GSE14814","GSE68465","GSE37745","GSE29013","GSE31210","GSE50081","GSE8894","GSE3141","GSE30219","GSE72094",
           "GSE41271","GSE157011","GSE33072","GSE161537","GSE162520","GSE135222","GSE126044","GSE218989","GSE207422",
           "GSE232569","GSE81089"],
+ # other cancers (nar/18_other_cohorts): verified rows of nar/16_plan/COHORTS_TO_ADD.tsv, in the order given for W2
+ "other_breast": ["GSE16446","GSE50948","GSE34138","GSE17705","GSE66305","GSE42822","GSE6861","GSE4779","GSE32603","GSE6532","GSE58644",
+                  "GSE7390","GSE11121","GSE37946","GSE76360","GSE21974","GSE18728","GSE173839","GSE18864","GSE103668","GSE9195",
+                  "GSE12093","GSE16391","GSE45255","GSE31519","GSE59515","GSE20181","GSE87455","GSE2034"],
+ "other_ovarian": ["GSE140082","GSE32062","GSE26712","GSE49997","GSE17260","GSE30161","GSE13876","GSE3149"],
+ "other_rectal": ["GSE35452","GSE119409","GSE150082","GSE94104","GSE45404","GSE145037","GSE133057"],
+ "other_melanoma": ["GSE115821","GSE100797","GSE168204"],
+ "other_bladder": ["GSE13507","GSE176307","GSE32894"],
+ "other_headneck": ["GSE65858","GSE41613"],
+ "other_colorectal": ["GSE5851","GSE17536","GSE33113","GSE38832"],
+ "other_stomach": ["GSE26253","GSE14210","GSE62254","GSE84437","GSE15459"],
+ "other_oesophagus": ["GSE104958"],
+ "other_myeloma": ["GSE9782"],
+ "other_prostate": ["GSE116918","GSE111177"],
 }
 def get(url, dest=None, tries=4):
     for i in range(tries):

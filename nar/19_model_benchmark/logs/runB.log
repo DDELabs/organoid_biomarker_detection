@@ -11,3 +11,6 @@ GCN_prior GSE32646 {'wd': 0.0001, 'steps': 150} 0.771 978s
 GCN_prior GSE41998 {'wd': 0.0001, 'steps': 150} 0.635 1079s
 GCN_prior ISPY2 {'wd': 0.0001, 'steps': 150} 0.620 1177s
 GCN_prior TCGA-BRCA {'wd': 0.0001, 'steps': 150} 0.693 1276s
+XGBoost BRIGHTNESS {'depth': 4, 'lam': 30} 0.681 55s
+XGBoost GSE123845 {'depth': 4, 'lam': 1} 0.702 114s
+XGBoost GSE163882 {'depth': 4, 'lam': 1} 0.708 168s

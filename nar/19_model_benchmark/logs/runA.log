@@ -31,3 +31,5 @@ ElasticNet GSE20194 {'C': 0.03, 'l1_ratio': 0.2} 0.808 514s
 ElasticNet GSE20271 {'C': 0.03, 'l1_ratio': 0.2} 0.802 649s
 ElasticNet GSE22093 {'C': 0.01, 'l1_ratio': 0.2} 0.760 785s
 ElasticNet GSE23988 {'C': 0.01, 'l1_ratio': 0.2} 0.835 916s
+ElasticNet GSE240671 {'C': 0.01, 'l1_ratio': 0.2} 0.740 1046s
+ElasticNet GSE25066 {'C': 0.01, 'l1_ratio': 0.2} 0.794 1163s
