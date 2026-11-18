@@ -1,0 +1,65 @@
+bundle	label	level	scaled	n_lab	n_patients	n_features	pc1	pc2
+BLCA_current	Bladder organoids (Lee 2018) - current GDC data	pathways	False	21	401	668	29.796457	14.487759
+BLCA_current	Bladder organoids (Lee 2018) - current GDC data	pathways	True	21	401	668	19.409552	16.511982
+BLCA_current	Bladder organoids (Lee 2018) - current GDC data	genes	False	21	401	17650	15.422933	12.783621
+BLCA_current	Bladder organoids (Lee 2018) - current GDC data	genes	True	21	401	17650	8.931274	6.6029153
+BLCA_paper	Bladder organoids (Lee 2018) - paper source data	pathways	False	11	406	488	26.985651	17.831078
+BLCA_paper	Bladder organoids (Lee 2018) - paper source data	pathways	True	11	406	488	20.634441	18.80467
+BLCA_paper	Bladder organoids (Lee 2018) - paper source data	genes	False	21	404	17650	15.362363	12.864354
+BLCA_paper	Bladder organoids (Lee 2018) - paper source data	genes	True	21	404	17650	8.980476	6.680142
+COADREAD_vdW	Colorectal organoids (van de Wetering 2015)	pathways	False	22	620	533	27.399027	15.098982
+COADREAD_vdW	Colorectal organoids (van de Wetering 2015)	pathways	True	22	620	533	22.943789	13.209525
+COADREAD_vdW	Colorectal organoids (van de Wetering 2015)	genes	False	22	620	10475	77.21972	2.7884164
+COADREAD_vdW	Colorectal organoids (van de Wetering 2015)	genes	True	22	620	10475	12.5318365	8.393813
+COAD_isella	Colorectal PDX (Isella 2017, cetuximab)	pathways	False	248	455	669	65.680176	5.644883
+COAD_isella	Colorectal PDX (Isella 2017, cetuximab)	pathways	True	248	455	669	20.19408	10.478132
+COAD_isella	Colorectal PDX (Isella 2017, cetuximab)	genes	False	248	455	17385	97.87761	0.19016643
+COAD_isella	Colorectal PDX (Isella 2017, cetuximab)	genes	True	248	455	17385	8.131143	6.183827
+COAD_paper	Colorectal organoids (van de Wetering 2015) - paper source data	pathways	False	22	445	612	49.817543	13.22146
+COAD_paper	Colorectal organoids (van de Wetering 2015) - paper source data	pathways	True	22	445	612	27.068743	10.677962
+COAD_paper	Colorectal organoids (van de Wetering 2015) - paper source data	genes	False	22	445	10474	82.29296	2.0256114
+COAD_paper	Colorectal organoids (van de Wetering 2015) - paper source data	genes	True	22	445	10474	11.938953	8.801827
+LIHC_ji	Liver cancer organoids (Ji 2023)	pathways	False	62	370	667	46.342052	13.715303
+LIHC_ji	Liver cancer organoids (Ji 2023)	pathways	True	62	370	667	17.682175	15.20826
+LIHC_ji	Liver cancer organoids (Ji 2023)	genes	False	62	370	15627	41.451794	6.5004406
+LIHC_ji	Liver cancer organoids (Ji 2023)	genes	True	62	370	15627	9.284529	7.643147
+LUAD_cells	Lung adenocarcinoma cell lines (GDSC/CTRP; substitute for GSE165611)	pathways	False	46	503	668	50.41998	9.391563
+LUAD_cells	Lung adenocarcinoma cell lines (GDSC/CTRP; substitute for GSE165611)	pathways	True	46	503	668	22.549335	10.958812
+LUAD_cells	Lung adenocarcinoma cell lines (GDSC/CTRP; substitute for GSE165611)	genes	False	46	503	17757	32.361202	4.9503384
+LUAD_cells	Lung adenocarcinoma cell lines (GDSC/CTRP; substitute for GSE165611)	genes	True	46	503	17757	7.0001984	5.508836
+OV_vias	Ovarian HGSOC organoids (Vias 2023)	pathways	False	14	420	669	25.686539	13.335955
+OV_vias	Ovarian HGSOC organoids (Vias 2023)	pathways	True	14	420	669	20.091919	13.429215
+OV_vias	Ovarian HGSOC organoids (Vias 2023)	genes	False	14	420	18007	69.10649	2.4574316
+OV_vias	Ovarian HGSOC organoids (Vias 2023)	genes	True	14	420	18007	7.104774	5.9300227
+PAAD_shi	Pancreatic organoids (Shi 2022)	pathways	False	87	178	664	66.379005	7.735003
+PAAD_shi	Pancreatic organoids (Shi 2022)	pathways	True	87	178	664	19.81382	16.209225
+PAAD_shi	Pancreatic organoids (Shi 2022)	genes	False	87	178	14000	47.666786	7.510204
+PAAD_shi	Pancreatic organoids (Shi 2022)	genes	True	87	178	14000	11.083039	9.184391
+PAAD_tiriac	Pancreatic organoids (Tiriac 2018)	pathways	False	46	178	668	65.98846	7.501051
+PAAD_tiriac	Pancreatic organoids (Tiriac 2018)	pathways	True	46	178	668	22.897343	14.638085
+PAAD_tiriac	Pancreatic organoids (Tiriac 2018)	genes	False	46	178	17617	52.060627	5.9312105
+PAAD_tiriac	Pancreatic organoids (Tiriac 2018)	genes	True	46	178	17617	10.545987	9.167138
+PDX_BRCA	Novartis PDX (BRCA, Gao 2015)	pathways	False	37	1073	668	29.869139	15.9505625
+PDX_BRCA	Novartis PDX (BRCA, Gao 2015)	pathways	True	37	1073	668	20.979403	12.808168
+PDX_BRCA	Novartis PDX (BRCA, Gao 2015)	genes	False	37	1073	17181	14.280955	9.113746
+PDX_BRCA	Novartis PDX (BRCA, Gao 2015)	genes	True	37	1073	17181	10.113758	7.6413684
+PDX_CM	Novartis PDX (CM, Gao 2015)	pathways	False	32	455	668	38.992134	10.212461
+PDX_CM	Novartis PDX (CM, Gao 2015)	pathways	True	32	455	668	17.93512	12.57737
+PDX_CM	Novartis PDX (CM, Gao 2015)	genes	False	32	455	17129	14.720295	9.585604
+PDX_CM	Novartis PDX (CM, Gao 2015)	genes	True	32	455	17129	11.779604	5.7890167
+PDX_CRC	Novartis PDX (CRC, Gao 2015)	pathways	False	43	434	668	43.118332	10.216333
+PDX_CRC	Novartis PDX (CRC, Gao 2015)	pathways	True	43	434	668	24.367355	11.193281
+PDX_CRC	Novartis PDX (CRC, Gao 2015)	genes	False	43	434	17027	24.249454	7.5495996
+PDX_CRC	Novartis PDX (CRC, Gao 2015)	genes	True	43	434	17027	11.358369	8.487569
+PDX_NSCLC	Novartis PDX (NSCLC, Gao 2015)	pathways	False	25	503	668	34.869255	13.128619
+PDX_NSCLC	Novartis PDX (NSCLC, Gao 2015)	pathways	True	25	503	668	23.171482	11.29328
+PDX_NSCLC	Novartis PDX (NSCLC, Gao 2015)	genes	False	25	503	17128	14.810695	6.4584985
+PDX_NSCLC	Novartis PDX (NSCLC, Gao 2015)	genes	True	25	503	17128	7.3660383	5.8745294
+PDX_PDAC	Novartis PDX (PDAC, Gao 2015)	pathways	False	38	177	668	56.66682	9.406004
+PDX_PDAC	Novartis PDX (PDAC, Gao 2015)	pathways	True	38	177	668	21.188662	15.617475
+PDX_PDAC	Novartis PDX (PDAC, Gao 2015)	genes	False	38	177	16930	39.74061	7.799725
+PDX_PDAC	Novartis PDX (PDAC, Gao 2015)	genes	True	38	177	16930	11.747779	10.103415
+SARC_alshihabi	Sarcoma organoids (Al Shihabi 2024)	pathways	False	16	256	669	27.658848	15.797637
+SARC_alshihabi	Sarcoma organoids (Al Shihabi 2024)	pathways	True	16	256	669	17.727924	16.62526
+SARC_alshihabi	Sarcoma organoids (Al Shihabi 2024)	genes	False	16	256	16826	27.562199	10.63324
+SARC_alshihabi	Sarcoma organoids (Al Shihabi 2024)	genes	True	16	256	16826	11.010518	5.937795

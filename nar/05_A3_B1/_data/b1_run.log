@@ -1,0 +1,16 @@
+identical signature, skipped: OV_vias2023__OV__CISPLATIN rank1 = OV_vias2023__OV__CARBOPLATIN|rank1
+identical signature, skipped: OV_vias2023__OV__CISPLATIN top10 = OV_vias2023__OV__CARBOPLATIN|top10
+identical signature, skipped: OV_vias2023__OV__DOCETAXEL rank1 = OV_vias2023__OV__PACLITAXEL|rank1
+identical signature, skipped: OV_vias2023__OV__DOCETAXEL top10 = OV_vias2023__OV__PACLITAXEL|top10
+GSE39582 5-FU-based vs no chemo (stage II-III) rfs n treated 202 comp 294
+GSE39582 5-FU-based vs no chemo (stage II-III) os n treated 203 comp 298
+GSE39582 5FU alone vs no chemo rfs n treated 76 comp 294
+GSE39582 FUFOL vs no chemo rfs n treated 50 comp 294
+GSE39582 FOLFOX vs no chemo rfs n treated 12 comp 294
+GSE103479 5-FU adjuvant vs surgery only os n treated 66 comp 86
+GSE103479 5-FU adjuvant vs surgery only pfs n treated 66 comp 84
+GSE14333 adjuvant chemo vs none (stage I-III) dfs n treated 87 comp 139
+GSE72970 all 5-FU-based (metastatic) pfs n treated 124 comp 0
+GSE72970 all 5-FU-based (metastatic) resp n treated 124 comp 0
+GSE87211 5-FU chemoradiotherapy (rectal) dfs n treated 189 comp 0
+GSE87211 5-FU chemoradiotherapy (rectal) resp n treated 201 comp 0

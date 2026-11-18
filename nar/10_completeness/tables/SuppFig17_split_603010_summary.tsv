@@ -1,0 +1,17 @@
+key	label	n_models	n_test	median_spearman	share_positive
+BLCA_cur_CIS	Bladder organoids, current data | cisplatin	9	3	1.0	0.92
+BLCA_paper_CIS	Bladder organoids, paper data | cisplatin	9	3	0.5	0.83
+COADREAD_5FU	Colorectal organoids, current data | 5-FU	19	6	0.4285714285714286	0.8
+COAD_isella_CET	Colorectal PDX (Isella) | cetuximab	192	58	0.45010959575123766	1.0
+COAD_paper_5FU	Colon organoids, paper data | 5-FU	19	6	0.3714285714285715	0.81
+LIHC_ji_SOR	Liver organoids (Ji) | sorafenib	61	18	-0.10270875850204739	0.29
+LUAD_cells_CIS	Lung adenocarcinoma cell lines (substitute) | cisplatin	40	12	0.0	0.49
+OV_vias_CARBO	Ovarian organoids (Vias) | carboplatin	14	4	0.39999999999999997	0.65
+PAAD_shi_GEM	Pancreas organoids (Shi) | gemcitabine	39	12	0.0034965034965034965	0.5
+PAAD_tiriac_GEM	Pancreas organoids (Tiriac) | gemcitabine	36	11	0.20909090909090913	0.72
+PDX_BRCA_PTX	Breast PDX (Gao) | paclitaxel	37	11	0.09545454545454546	0.64
+PDX_CM_DTIC	Melanoma PDX (Gao) | dacarbazine	31	9	0.08333333333333334	0.58
+PDX_CRC_5FU	Colorectal PDX (Gao) | 5-FU	41	12	0.16433566433566435	0.66
+PDX_NSCLC_ERL	Lung PDX (Gao) | erlotinib	25	8	0.04761904761904763	0.54
+PDX_PDAC_GEM	Pancreas PDX (Gao) | gemcitabine	33	10	0.09090909090909091	0.57
+SARC_GEM	Sarcoma organoids | gemcitabine	14	4	0.0	0.49

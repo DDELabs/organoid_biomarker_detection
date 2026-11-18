@@ -1,0 +1,33 @@
+cancer	tcga	level	scaled	n_cell_lines	n_patients	n_features	pc1	pc2
+Colorectal Carcinoma	COAD	genes	False	67	445	10473	38.6663	6.764342
+Colorectal Carcinoma	COAD	genes	True	67	445	10473	11.057369	8.537669
+Colorectal Carcinoma	COAD	pathways	False	67	445	533	77.14659	6.826688
+Colorectal Carcinoma	COAD	pathways	True	67	445	533	25.349438	14.1891775
+Bladder Carcinoma	BLCA	genes	False	28	404	17648	20.408436	11.898823
+Bladder Carcinoma	BLCA	genes	True	28	404	17648	8.865098	6.603834
+Bladder Carcinoma	BLCA	pathways	False	28	404	672	64.055756	12.460954
+Bladder Carcinoma	BLCA	pathways	True	28	404	672	22.44951	17.123518
+Pancreatic Carcinoma	PAAD	genes	False	44	178	17617	47.886703	6.308712
+Pancreatic Carcinoma	PAAD	genes	True	44	178	17617	10.581121	9.371306
+Pancreatic Carcinoma	PAAD	pathways	False	44	178	672	84.96744	4.2396502
+Pancreatic Carcinoma	PAAD	pathways	True	44	178	672	23.639587	18.054417
+Hepatocellular Carcinoma	LIHC	genes	False	27	370	15626	29.808266	7.1281204
+Hepatocellular Carcinoma	LIHC	genes	True	27	370	15626	9.38382	8.08973
+Hepatocellular Carcinoma	LIHC	pathways	False	27	370	670	65.82052	9.140927
+Hepatocellular Carcinoma	LIHC	pathways	True	27	370	670	23.773571	17.659756
+Ovarian Carcinoma	OV	genes	False	57	420	17778	32.080547	4.6302013
+Ovarian Carcinoma	OV	genes	True	57	420	17778	6.6325865	5.469124
+Ovarian Carcinoma	OV	pathways	False	57	420	672	77.05468	5.7704134
+Ovarian Carcinoma	OV	pathways	True	57	420	672	20.968908	15.182371
+Non-Small Cell Lung Carcinoma	LUAD	genes	False	106	503	17755	41.292736	3.7963402
+Non-Small Cell Lung Carcinoma	LUAD	genes	True	106	503	17755	6.4801297	5.1379166
+Non-Small Cell Lung Carcinoma	LUAD	pathways	False	106	503	672	83.773155	3.8647573
+Non-Small Cell Lung Carcinoma	LUAD	pathways	True	106	503	672	21.835558	16.81188
+Melanoma	SKCM	genes	False	76	455	17128	35.607815	6.655108
+Melanoma	SKCM	genes	True	76	455	17128	11.192731	5.6612926
+Melanoma	SKCM	pathways	False	76	455	672	79.227516	7.2743783
+Melanoma	SKCM	pathways	True	76	455	672	19.932526	13.904699
+Breast Carcinoma	BRCA	genes	False	61	1073	17180	20.468376	9.240068
+Breast Carcinoma	BRCA	genes	True	61	1073	17180	9.836235	7.584613
+Breast Carcinoma	BRCA	pathways	False	61	1073	672	64.6462	9.591841
+Breast Carcinoma	BRCA	pathways	True	61	1073	672	22.721193	16.901297

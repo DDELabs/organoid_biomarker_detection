@@ -1,0 +1,23 @@
+{
+ "paper_before": {
+  "DONE": 42,
+  "MISSING": 27,
+  "PARTIAL": 8
+ },
+ "paper_after": {
+  "DONE": 63,
+  "IN_PROGRESS_B3": 14
+ },
+ "generalisation_before": {
+  "MISSING": 37,
+  "DONE": 22,
+  "PARTIAL": 15,
+  "N/A": 3
+ },
+ "generalisation_after": {
+  "DONE": 49,
+  "IN_PROGRESS_B3": 16,
+  "PARTIAL": 9,
+  "N/A": 3
+ }
+}

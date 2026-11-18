@@ -1,0 +1,93 @@
+key	label	feature	level	responder	non_responder	chi2_p
+COAD_paper_5FU	Colon organoids, paper data | 5-FU	age	<60	30	23	0.25987753955743365
+COAD_paper_5FU	Colon organoids, paper data | 5-FU	age	>=60	27	34	0.25987753955743365
+COAD_paper_5FU	Colon organoids, paper data | 5-FU	sex	FEMALE	30	22	0.18807533567646456
+COAD_paper_5FU	Colon organoids, paper data | 5-FU	sex	MALE	27	35	0.18807533567646456
+COAD_paper_5FU	Colon organoids, paper data | 5-FU	stage	I-II	13	5	0.0721842843245777
+COAD_paper_5FU	Colon organoids, paper data | 5-FU	stage	III-IV	44	52	0.0721842843245777
+BLCA_paper_CIS	Bladder organoids, paper data | cisplatin	age	<60	10	11	0.9460209457034834
+BLCA_paper_CIS	Bladder organoids, paper data | cisplatin	age	>=60	30	28	0.9460209457034834
+BLCA_paper_CIS	Bladder organoids, paper data | cisplatin	sex	FEMALE	14	10	0.5094781461429514
+BLCA_paper_CIS	Bladder organoids, paper data | cisplatin	sex	MALE	26	29	0.5094781461429514
+BLCA_paper_CIS	Bladder organoids, paper data | cisplatin	stage	I-II	13	9	0.5885260398719323
+BLCA_paper_CIS	Bladder organoids, paper data | cisplatin	stage	III-IV	27	28	0.5885260398719323
+COADREAD_5FU	Colorectal organoids, current data | 5-FU	age	<60	45	38	0.37818543268074745
+COADREAD_5FU	Colorectal organoids, current data | 5-FU	age	>=60	49	56	0.37818543268074745
+COADREAD_5FU	Colorectal organoids, current data | 5-FU	sex	FEMALE	40	41	1.0
+COADREAD_5FU	Colorectal organoids, current data | 5-FU	sex	MALE	54	53	1.0
+COADREAD_5FU	Colorectal organoids, current data | 5-FU	stage	I-II	15	17	0.9262759331786237
+COADREAD_5FU	Colorectal organoids, current data | 5-FU	stage	III-IV	75	76	0.9262759331786237
+BLCA_cur_CIS	Bladder organoids, current data | cisplatin	age	<60	9	12	0.5638722963071348
+BLCA_cur_CIS	Bladder organoids, current data | cisplatin	age	>=60	31	27	0.5638722963071348
+BLCA_cur_CIS	Bladder organoids, current data | cisplatin	sex	FEMALE	14	10	0.5094781461429514
+BLCA_cur_CIS	Bladder organoids, current data | cisplatin	sex	MALE	26	29	0.5094781461429514
+BLCA_cur_CIS	Bladder organoids, current data | cisplatin	stage	I-II	12	10	0.9712306246249612
+BLCA_cur_CIS	Bladder organoids, current data | cisplatin	stage	III-IV	28	27	0.9712306246249612
+PAAD_tiriac_GEM	Pancreas organoids (Tiriac) | gemcitabine	age	<60	20	16	0.5363466644355528
+PAAD_tiriac_GEM	Pancreas organoids (Tiriac) | gemcitabine	age	>=60	32	36	0.5363466644355528
+PAAD_tiriac_GEM	Pancreas organoids (Tiriac) | gemcitabine	sex	FEMALE	20	25	0.42855289550909204
+PAAD_tiriac_GEM	Pancreas organoids (Tiriac) | gemcitabine	sex	MALE	32	27	0.42855289550909204
+PAAD_tiriac_GEM	Pancreas organoids (Tiriac) | gemcitabine	stage	I-II	48	49	1.0
+PAAD_tiriac_GEM	Pancreas organoids (Tiriac) | gemcitabine	stage	III-IV	3	3	1.0
+PAAD_shi_GEM	Pancreas organoids (Shi) | gemcitabine	age	<60	17	19	0.8367005762838118
+PAAD_shi_GEM	Pancreas organoids (Shi) | gemcitabine	age	>=60	35	33	0.8367005762838118
+PAAD_shi_GEM	Pancreas organoids (Shi) | gemcitabine	sex	FEMALE	24	21	0.6922266134789787
+PAAD_shi_GEM	Pancreas organoids (Shi) | gemcitabine	sex	MALE	28	31	0.6922266134789787
+PAAD_shi_GEM	Pancreas organoids (Shi) | gemcitabine	stage	I-II	49	48	0.691959087840861
+PAAD_shi_GEM	Pancreas organoids (Shi) | gemcitabine	stage	III-IV	2	4	0.691959087840861
+LIHC_ji_SOR	Liver organoids (Ji) | sorafenib	age	<60	8	3	0.12965330542364764
+LIHC_ji_SOR	Liver organoids (Ji) | sorafenib	age	>=60	7	12	0.12965330542364764
+LIHC_ji_SOR	Liver organoids (Ji) | sorafenib	sex	FEMALE	7	9	0.7143930376343263
+LIHC_ji_SOR	Liver organoids (Ji) | sorafenib	sex	MALE	8	6	0.7143930376343263
+LIHC_ji_SOR	Liver organoids (Ji) | sorafenib	stage	I-II	4	4	1.0
+LIHC_ji_SOR	Liver organoids (Ji) | sorafenib	stage	III-IV	11	10	1.0
+OV_vias_CARBO	Ovarian organoids (Vias) | carboplatin	age	<60	99	90	0.4215915479840795
+OV_vias_CARBO	Ovarian organoids (Vias) | carboplatin	age	>=60	75	83	0.4215915479840795
+OV_vias_CARBO	Ovarian organoids (Vias) | carboplatin	sex	FEMALE	174	173	
+OV_vias_CARBO	Ovarian organoids (Vias) | carboplatin	stage	I-II	12	12	1.0
+OV_vias_CARBO	Ovarian organoids (Vias) | carboplatin	stage	III-IV	162	160	1.0
+LUAD_cells_CIS	Lung adenocarcinoma cell lines (substitute) | cisplatin	age	<60	22	17	0.3815157805604449
+LUAD_cells_CIS	Lung adenocarcinoma cell lines (substitute) | cisplatin	age	>=60	20	25	0.3815157805604449
+LUAD_cells_CIS	Lung adenocarcinoma cell lines (substitute) | cisplatin	sex	FEMALE	23	22	1.0
+LUAD_cells_CIS	Lung adenocarcinoma cell lines (substitute) | cisplatin	sex	MALE	19	20	1.0
+LUAD_cells_CIS	Lung adenocarcinoma cell lines (substitute) | cisplatin	stage	I-II	33	23	0.0372425445959793
+LUAD_cells_CIS	Lung adenocarcinoma cell lines (substitute) | cisplatin	stage	III-IV	9	19	0.0372425445959793
+SARC_GEM	Sarcoma organoids | gemcitabine	age	<60	9	18	0.009987991787754374
+SARC_GEM	Sarcoma organoids | gemcitabine	age	>=60	12	3	0.009987991787754374
+SARC_GEM	Sarcoma organoids | gemcitabine	sex	FEMALE	10	17	0.05333685282913989
+SARC_GEM	Sarcoma organoids | gemcitabine	sex	MALE	11	4	0.05333685282913989
+COAD_isella_CET	Colorectal PDX (Isella) | cetuximab	age	<60	6	4	0.8548127198282508
+COAD_isella_CET	Colorectal PDX (Isella) | cetuximab	age	>=60	2	3	0.8548127198282508
+COAD_isella_CET	Colorectal PDX (Isella) | cetuximab	sex	FEMALE	2	2	1.0
+COAD_isella_CET	Colorectal PDX (Isella) | cetuximab	sex	MALE	6	5	1.0
+COAD_isella_CET	Colorectal PDX (Isella) | cetuximab	stage	III-IV	8	7	
+PDX_CM_DTIC	Melanoma PDX (Gao) | dacarbazine	age	<60	9	6	0.4786398352857738
+PDX_CM_DTIC	Melanoma PDX (Gao) | dacarbazine	age	>=60	7	10	0.4786398352857738
+PDX_CM_DTIC	Melanoma PDX (Gao) | dacarbazine	sex	FEMALE	8	4	0.273321678292295
+PDX_CM_DTIC	Melanoma PDX (Gao) | dacarbazine	sex	MALE	8	12	0.273321678292295
+PDX_CM_DTIC	Melanoma PDX (Gao) | dacarbazine	stage	I-II	4	9	0.24327330651911744
+PDX_CM_DTIC	Melanoma PDX (Gao) | dacarbazine	stage	III-IV	9	6	0.24327330651911744
+PDX_NSCLC_ERL	Lung PDX (Gao) | erlotinib	age	<60	2	3	0.9027991893078308
+PDX_NSCLC_ERL	Lung PDX (Gao) | erlotinib	age	>=60	9	7	0.9027991893078308
+PDX_NSCLC_ERL	Lung PDX (Gao) | erlotinib	sex	FEMALE	6	8	0.43988171285153466
+PDX_NSCLC_ERL	Lung PDX (Gao) | erlotinib	sex	MALE	5	2	0.43988171285153466
+PDX_NSCLC_ERL	Lung PDX (Gao) | erlotinib	stage	I-II	8	6	0.8772323872120549
+PDX_NSCLC_ERL	Lung PDX (Gao) | erlotinib	stage	III-IV	3	4	0.8772323872120549
+PDX_PDAC_GEM	Pancreas PDX (Gao) | gemcitabine	age	<60	21	15	0.30273864588611277
+PDX_PDAC_GEM	Pancreas PDX (Gao) | gemcitabine	age	>=60	31	37	0.30273864588611277
+PDX_PDAC_GEM	Pancreas PDX (Gao) | gemcitabine	sex	FEMALE	21	24	0.6922266134789787
+PDX_PDAC_GEM	Pancreas PDX (Gao) | gemcitabine	sex	MALE	31	28	0.6922266134789787
+PDX_PDAC_GEM	Pancreas PDX (Gao) | gemcitabine	stage	I-II	48	49	1.0
+PDX_PDAC_GEM	Pancreas PDX (Gao) | gemcitabine	stage	III-IV	3	3	1.0
+PDX_BRCA_PTX	Breast PDX (Gao) | paclitaxel	age	<60	86	86	1.0
+PDX_BRCA_PTX	Breast PDX (Gao) | paclitaxel	age	>=60	30	29	1.0
+PDX_BRCA_PTX	Breast PDX (Gao) | paclitaxel	sex	FEMALE	113	115	0.24819854315564488
+PDX_BRCA_PTX	Breast PDX (Gao) | paclitaxel	sex	MALE	3	0	0.24819854315564488
+PDX_BRCA_PTX	Breast PDX (Gao) | paclitaxel	stage	I-II	73	69	0.6221006388606862
+PDX_BRCA_PTX	Breast PDX (Gao) | paclitaxel	stage	III-IV	41	46	0.6221006388606862
+PDX_CRC_5FU	Colorectal PDX (Gao) | 5-FU	age	<60	29	29	1.0
+PDX_CRC_5FU	Colorectal PDX (Gao) | 5-FU	age	>=60	36	35	1.0
+PDX_CRC_5FU	Colorectal PDX (Gao) | 5-FU	sex	FEMALE	29	28	1.0
+PDX_CRC_5FU	Colorectal PDX (Gao) | 5-FU	sex	MALE	36	36	1.0
+PDX_CRC_5FU	Colorectal PDX (Gao) | 5-FU	stage	I-II	10	9	0.9703095812354579
+PDX_CRC_5FU	Colorectal PDX (Gao) | 5-FU	stage	III-IV	53	55	0.9703095812354579

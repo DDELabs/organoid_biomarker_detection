@@ -1,0 +1,9 @@
+{
+ "n_own": 17,
+ "own_p_below_005": 6,
+ "n_off": 245,
+ "off_p_below_005": 9,
+ "off_share": 0.036734693877551024,
+ "paper_SuppFig4a_COAD_with_BLCA_amino": 0.16430334836354454,
+ "paper_SuppFig4b_BLCA_with_COAD_BH3": 0.9818181464755953
+}
