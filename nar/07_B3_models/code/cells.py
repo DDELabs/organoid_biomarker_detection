@@ -103,7 +103,7 @@ def per_unit(T, pred):
 POOLED = ["Fingerprint MLP (cell lines)", "XGBoost (pathways + fingerprint)", "Elastic net (pathways + fingerprint)",
           "Random forest (pathways + fingerprint)"]
 PERDRUG = ["Paper: single network pathway", "Paper: top-2 network pathways", "Ridge: all network pathways",
-           "Elastic net (all pathways)"]
+]   # per-drug elastic net dropped: too slow on 4 shared CPUs (86 units x 5 folds)
 
 
 def fit_pooled(name, Xc, Fd, y, seed=0):

@@ -88,8 +88,8 @@ drug-specific prediction. The 57 tests share patients (e.g. colon and colon + re
 
 | Analysis | n / deaths | HR (95% CI) | p | BH q | Holm | perm. p | bootstrap p | direction |
 |---|---|---|---|---|---|---|---|---|
-| Novartis PDX melanoma, dacarbazine (SKCM) | 32 / 21 | 0.21 (0.07-0.60) | 0.0011 | 0.063 | 0.063 | 0.065 | 0.013 | opposite |
-| Lung cell lines, pemetrexed (LUAD) | 59 / 15 | 0.19 (0.05-0.70) | 0.0048 | 0.14 | 0.27 | 0.12 | 0.11 | opposite |
+| Novartis PDX melanoma, dacarbazine (SKCM) | 32 / 21 | 0.21 (0.07-0.58) | 0.0011 | 0.063 | 0.063 | 0.065 | 0.013 | opposite |
+| Lung cell lines, pemetrexed (LUAD) | 59 / 15 | 0.19 (0.05-0.69) | 0.0048 | 0.14 | 0.27 | 0.12 | 0.11 | opposite |
 | vdW colon, 5-FU (authors' 2019 files) | 114 / 8 | not estimable (0 vs 8 deaths) | 0.014 | 0.27 | 0.79 | 0.034 | 0.007 | expected |
 | Shi pancreas, gemcitabine | 104 / 51 | 0.52 | 0.023 | 0.32 | 1.0 | 0.10 | 0.022 | opposite |
 | Lung cell lines, gemcitabine | 25 / 16 | 3.17 | 0.030 | 0.34 | 1.0 | 0.14 | 0.048 | expected |
@@ -201,7 +201,7 @@ Expected by chance at 0.05: 9.8 of 196.
 1.57, p = 0.37; GSE48276 OS 1.28, p = 0.40 (16 treated); GSE70691 1.22, p = 0.25; GSE31684 1.16, p = 0.52. All in the
 expected direction, none below 0.05. Current-data cisplatin rank-1: GSE31684 interaction 1.82 (1.07-3.09), p = 0.028,
 null p = 0.033; but GSE169455 OR 0.73 (p = 0.078) and GSE48276 HR 0.43 (p = 0.021) go the other way.
-What I think: the paper bladder signature leans the right way in all 5 cohorts, each with a small, non-significant
+What I think: the paper bladder signature leans the right way in all 5 cohorts, each with a small
 effect; that consistency is worth a pooled pre-specified test.
 
 **Ovarian (Fig. 3, Fig. 5i-j).** Platinum (Vias, oxaliplatin screen) rank-1: GSE9891 RFS HR 1.23 (1.06-1.43),

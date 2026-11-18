@@ -1,5 +1,2 @@
 pairs 73108 drugs 55 units 86
-cell 0 Fingerprint MLP (cell lines) 27 s
-cell 0 XGBoost (pathways + fingerprint) 106 s
-cell 0 Elastic net (pathways + fingerprint) 3 s
-cell 0 Random forest (pathways + fingerprint) 51 s
+cell 0 Fingerprint MLP (cell lines) 9 s
