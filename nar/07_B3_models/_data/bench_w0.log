@@ -98,3 +98,4 @@ done COADREAD_vdW CETUXIMAB 19 models 202 s
   fit_rslts = super().fit(**args)
 done COAD_isella CETUXIMAB 192 models 739 s
 done PAAD_tiriac GEMCITABINE 36 models 413 s
+done PAAD_tiriac FLUOROURACIL 36 models 417 s
