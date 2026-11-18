@@ -1,2 +1,42 @@
 pair	batch_size	nodes	lr	dropout	weight_decay	gamma	epochs	margin	n_folds	average_AUC
+COAD organoids (paper data) | fluorouracil	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.5000000000000001
+COAD organoids (paper data) | oxaliplatin	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.8333333333333334
+COAD organoids (paper data) | irinotecan	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.3333333333333333
 BLCA organoids (paper data) | cisplatin	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.8333333333333334
+CRC organoids | fluorouracil	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.6574074074074074
+CRC organoids | oxaliplatin	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.7129629629629631
+CRC organoids | irinotecan	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.29629629629629634
+CRC organoids | cetuximab	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.6388888888888888
+CRC PDX (Isella) | cetuximab	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.85791015625
+PAAD org. (Tiriac) | gemcitabine	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.7824074074074074
+PAAD org. (Tiriac) | fluorouracil	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.7361111111111113
+PAAD org. (Tiriac) | oxaliplatin	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.7685185185185185
+PAAD org. (Shi) | gemcitabine	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.41269841269841273
+PAAD org. (Shi) | fluorouracil	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.7936507936507936
+PAAD org. (Shi) | oxaliplatin	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.6865079365079364
+LIHC org. (Ji) | sorafenib	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.630909090909091
+BLCA organoids | cisplatin	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.8333333333333334
+BLCA organoids | gemcitabine	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.9166666666666666
+BLCA organoids | doxorubicin	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.16666666666666666
+BLCA organoids | carboplatin	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.8333333333333334
+OV organoids | carboplatin	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.5
+OV organoids | paclitaxel	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.5277777777777778
+OV organoids | cisplatin	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.5
+OV organoids | doxorubicin	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.5555555555555555
+OV organoids | gemcitabine	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.40277777777777773
+OV organoids | docetaxel	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.5277777777777778
+SARC organoids | gemcitabine	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.611111111111111
+SARC organoids | docetaxel	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.2777777777777778
+LUAD cell lines | cisplatin	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.6626984126984127
+LUAD cell lines | pemetrexed	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.7559523809523809
+LUAD cell lines | paclitaxel	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.5654761904761905
+LUAD cell lines | vinorelbine	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.7953869047619048
+LUAD cell lines | gemcitabine	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.8020833333333334
+LUAD cell lines | docetaxel	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.7090773809523809
+LUAD cell lines | etoposide	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.5178571428571429
+LUAD cell lines | erlotinib	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.5297619047619048
+LUAD cell lines | carboplatin	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.5799319727891157
+BRCA PDX | paclitaxel	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.6904761904761904
+BRCA PDX | tamoxifen	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.6798941798941799
+PDAC PDX | gemcitabine	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.6999999999999998
+melanoma PDX | dacarbazine	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.5022222222222222

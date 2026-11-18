@@ -46,7 +46,9 @@ def km(ax, T, E, risk, title):
     ax.set_ylabel("overall survival")
     ax.set_title(title, fontsize=8.5)
     hr = ms["split_HR"]
-    ax.text(0.03, 0.04, f"log-rank p = {ms['lr_p']:.3g}\nHR = {hr:.2f} ({ms['split_HR_lo']:.2f}-{ms['split_HR_hi']:.2f})",
+    hrs = (f"HR = {hr:.2f} ({ms['split_HR_lo']:.2f}-{ms['split_HR_hi']:.2f})" if np.isfinite(hr) and hr < 1000
+           else "HR not estimable (no deaths in one group)")
+    ax.text(0.03, 0.04, f"log-rank p = {ms['lr_p']:.3g}\n{hrs}",
             transform=ax.transAxes, fontsize=7.5)
     ax.legend(fontsize=6.5, loc="upper right", frameon=False)
 
@@ -61,7 +63,7 @@ def task_matrix(S, cells):
     M["Patients: log HR per SD"] = np.log(St["HR_geomean"])
     if cs is not None:
         mp = {"Paper: single network pathway": "Paper: single network pathway", "Paper: top-2 network pathways": "Paper: top-2 network pathways",
-              "Ridge: all network pathways": "Ridge: all network pathways", "Elastic net (all pathways)": "Elastic net (all pathways)",
+              "Ridge: all network pathways": "Ridge: all network pathways", "Elastic net (all pathways)": "Elastic net (pathways + fingerprint)",
               "XGBoost (all pathways)": "XGBoost (pathways + fingerprint)", "Random forest (all pathways)": "Random forest (pathways + fingerprint)",
               "Fingerprint MLP: cell lines only (zero-shot)": "Fingerprint MLP (cell lines)",
               "Fingerprint MLP: fine-tuned on lab models": "Fingerprint MLP (cell lines)", "GCN on STRING (genes)": "GCN on STRING (per drug)"}
@@ -79,7 +81,7 @@ def heatmap(res, L, S, cells):
     fig, ax = plt.subplots(figsize=(7.6, 7.2))
     V = M.values.astype(float)
     norm = TwoSlopeNorm(vmin=-0.25, vcenter=0, vmax=0.25)
-    im = ax.imshow(np.clip(V, -0.25, 0.25), cmap="PuOr_r", norm=norm, aspect="auto")
+    im = ax.imshow(np.clip(V, -0.25, 0.25), cmap="PuOr", norm=norm, aspect="auto")
     for i in range(V.shape[0]):
         for j in range(V.shape[1]):
             ax.text(j, i, "n/a" if np.isnan(V[i, j]) else f"{V[i, j]:+.3f}", ha="center", va="center", fontsize=7,
@@ -113,7 +115,7 @@ response data for the drug, so it has no drug-blind version). Values are clipped
         P = P[pairs]
         V = P.values - (0.5 if metric == "C_index" else 0)
         fig, ax = plt.subplots(figsize=(14, 6.8))
-        im = ax.imshow(np.clip(V, -lim, lim), cmap="PuOr_r", norm=TwoSlopeNorm(vmin=-lim, vcenter=0, vmax=lim), aspect="auto")
+        im = ax.imshow(np.clip(V, -lim, lim), cmap="PuOr", norm=TwoSlopeNorm(vmin=-lim, vcenter=0, vmax=lim), aspect="auto")
         for i in range(V.shape[0]):
             for j in range(V.shape[1]):
                 if np.isfinite(P.values[i, j]):
@@ -333,7 +335,7 @@ def main_fig(res, L, S, cells):
     ax = fig.add_subplot(gs[0, :2])
     M = task_matrix(S, cells)
     V = M.values.astype(float)
-    ax.imshow(np.clip(V, -0.25, 0.25), cmap="PuOr_r", norm=TwoSlopeNorm(vmin=-0.25, vcenter=0, vmax=0.25), aspect="auto")
+    ax.imshow(np.clip(V, -0.25, 0.25), cmap="PuOr", norm=TwoSlopeNorm(vmin=-0.25, vcenter=0, vmax=0.25), aspect="auto")
     for i in range(V.shape[0]):
         for j in range(V.shape[1]):
             ax.text(j, i, "n/a" if np.isnan(V[i, j]) else f"{V[i, j]:+.2f}", ha="center", va="center", fontsize=6.3)
@@ -374,7 +376,7 @@ def main_fig(res, L, S, cells):
         if k in res and m in res[k]["risk"]:
             r = res[k]
             km(ax, r["T"], r["E"], np.asarray(r["risk"][m]), f"{pair_label(*k)}\n{sh(m)}")
-        letter(ax, lt)
+        letter(ax, lt, x=-0.3, y=1.12)
     B.savefig(fig, "B3_main_figure", f"""
 **Main figure: the paper's network method next to its comparison methods and modern models, on identical splits.**
 (a) Summary heatmap (rows = models, columns = tasks; numbers as in the full benchmark heatmap). Lab-model task = held-out Spearman;

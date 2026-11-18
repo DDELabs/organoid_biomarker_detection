@@ -25,7 +25,7 @@ def main():
     for b, d in PAIRS:
         C = Ctx(b, d)
         n = len(C.S)
-        for fo, (tr0, te) in enumerate(KFold(5, shuffle=True, random_state=fo).split(np.arange(n))):
+        for fo, (tr0, te) in enumerate(KFold(5, shuffle=True, random_state=0).split(np.arange(n))):
             for frac in (0.25, 0.5, 0.75, 1.0):
                 for rep in range(2 if frac < 1 else 1):
                     m = max(6, int(round(frac * len(tr0))))

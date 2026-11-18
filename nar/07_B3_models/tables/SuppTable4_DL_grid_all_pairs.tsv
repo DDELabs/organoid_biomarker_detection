@@ -1,4 +1,100 @@
 pair	batch_size	nodes	lr	dropout	weight_decay	gamma	epochs	margin	n_folds	average_AUC	selected
+COAD organoids (paper data) | fluorouracil	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.3611111111111111	False
+COAD organoids (paper data) | fluorouracil	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.3888888888888889	False
+COAD organoids (paper data) | fluorouracil	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.3333333333333333	False
+COAD organoids (paper data) | fluorouracil	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.3703703703703704	False
+COAD organoids (paper data) | fluorouracil	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.3333333333333333	False
+COAD organoids (paper data) | fluorouracil	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.29629629629629634	False
+COAD organoids (paper data) | fluorouracil	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.36111111111111116	False
+COAD organoids (paper data) | fluorouracil	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.29629629629629634	False
+COAD organoids (paper data) | fluorouracil	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.2777777777777778	False
+COAD organoids (paper data) | fluorouracil	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.3796296296296296	False
+COAD organoids (paper data) | fluorouracil	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.22685185185185186	False
+COAD organoids (paper data) | fluorouracil	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.2592592592592593	False
+COAD organoids (paper data) | fluorouracil	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.39814814814814814	False
+COAD organoids (paper data) | fluorouracil	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.36111111111111116	False
+COAD organoids (paper data) | fluorouracil	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.3333333333333333	False
+COAD organoids (paper data) | fluorouracil	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.3333333333333333	False
+COAD organoids (paper data) | fluorouracil	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.28703703703703703	False
+COAD organoids (paper data) | fluorouracil	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.3333333333333333	False
+COAD organoids (paper data) | fluorouracil	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.39814814814814814	False
+COAD organoids (paper data) | fluorouracil	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.3333333333333333	False
+COAD organoids (paper data) | fluorouracil	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.29629629629629634	False
+COAD organoids (paper data) | fluorouracil	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.3703703703703704	False
+COAD organoids (paper data) | fluorouracil	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.29629629629629634	False
+COAD organoids (paper data) | fluorouracil	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.3703703703703704	False
+COAD organoids (paper data) | fluorouracil	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.2222222222222222	False
+COAD organoids (paper data) | fluorouracil	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.425925925925926	False
+COAD organoids (paper data) | fluorouracil	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.3796296296296296	False
+COAD organoids (paper data) | fluorouracil	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.5000000000000001	True
+COAD organoids (paper data) | fluorouracil	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.25925925925925924	False
+COAD organoids (paper data) | fluorouracil	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.40740740740740744	False
+COAD organoids (paper data) | fluorouracil	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.40740740740740744	False
+COAD organoids (paper data) | fluorouracil	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.3703703703703704	False
+COAD organoids (paper data) | oxaliplatin	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.6944444444444445	False
+COAD organoids (paper data) | oxaliplatin	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.7685185185185185	False
+COAD organoids (paper data) | oxaliplatin	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.6574074074074074	False
+COAD organoids (paper data) | oxaliplatin	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.8055555555555557	False
+COAD organoids (paper data) | oxaliplatin	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.7314814814814815	False
+COAD organoids (paper data) | oxaliplatin	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.7685185185185185	False
+COAD organoids (paper data) | oxaliplatin	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.7592592592592592	False
+COAD organoids (paper data) | oxaliplatin	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.7222222222222223	False
+COAD organoids (paper data) | oxaliplatin	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.6712962962962964	False
+COAD organoids (paper data) | oxaliplatin	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.6111111111111112	False
+COAD organoids (paper data) | oxaliplatin	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.7083333333333334	False
+COAD organoids (paper data) | oxaliplatin	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.7222222222222223	False
+COAD organoids (paper data) | oxaliplatin	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.7314814814814815	False
+COAD organoids (paper data) | oxaliplatin	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.6944444444444443	False
+COAD organoids (paper data) | oxaliplatin	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.7962962962962964	False
+COAD organoids (paper data) | oxaliplatin	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.8333333333333334	True
+COAD organoids (paper data) | oxaliplatin	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.7962962962962963	False
+COAD organoids (paper data) | oxaliplatin	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.7314814814814815	False
+COAD organoids (paper data) | oxaliplatin	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.7962962962962964	False
+COAD organoids (paper data) | oxaliplatin	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.7962962962962964	False
+COAD organoids (paper data) | oxaliplatin	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.7685185185185186	False
+COAD organoids (paper data) | oxaliplatin	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.7314814814814815	False
+COAD organoids (paper data) | oxaliplatin	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.7962962962962964	False
+COAD organoids (paper data) | oxaliplatin	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.8055555555555557	False
+COAD organoids (paper data) | oxaliplatin	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.7222222222222222	False
+COAD organoids (paper data) | oxaliplatin	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.6944444444444445	False
+COAD organoids (paper data) | oxaliplatin	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.7916666666666666	False
+COAD organoids (paper data) | oxaliplatin	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.6898148148148149	False
+COAD organoids (paper data) | oxaliplatin	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.7777777777777778	False
+COAD organoids (paper data) | oxaliplatin	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.7129629629629629	False
+COAD organoids (paper data) | oxaliplatin	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.7592592592592592	False
+COAD organoids (paper data) | oxaliplatin	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.6574074074074074	False
+COAD organoids (paper data) | irinotecan	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.14814814814814817	False
+COAD organoids (paper data) | irinotecan	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.16666666666666666	False
+COAD organoids (paper data) | irinotecan	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.16666666666666666	False
+COAD organoids (paper data) | irinotecan	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.16666666666666666	False
+COAD organoids (paper data) | irinotecan	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.16666666666666666	False
+COAD organoids (paper data) | irinotecan	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.17592592592592593	False
+COAD organoids (paper data) | irinotecan	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.23148148148148148	False
+COAD organoids (paper data) | irinotecan	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.17592592592592593	False
+COAD organoids (paper data) | irinotecan	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.12037037037037036	False
+COAD organoids (paper data) | irinotecan	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.17592592592592593	False
+COAD organoids (paper data) | irinotecan	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.12962962962962962	False
+COAD organoids (paper data) | irinotecan	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.3333333333333333	True
+COAD organoids (paper data) | irinotecan	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.1388888888888889	False
+COAD organoids (paper data) | irinotecan	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.19444444444444445	False
+COAD organoids (paper data) | irinotecan	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.24074074074074078	False
+COAD organoids (paper data) | irinotecan	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.1388888888888889	False
+COAD organoids (paper data) | irinotecan	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.20370370370370372	False
+COAD organoids (paper data) | irinotecan	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.23148148148148148	False
+COAD organoids (paper data) | irinotecan	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.14814814814814817	False
+COAD organoids (paper data) | irinotecan	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.10185185185185186	False
+COAD organoids (paper data) | irinotecan	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.14814814814814817	False
+COAD organoids (paper data) | irinotecan	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.17592592592592593	False
+COAD organoids (paper data) | irinotecan	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.14814814814814817	False
+COAD organoids (paper data) | irinotecan	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.17592592592592593	False
+COAD organoids (paper data) | irinotecan	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.17592592592592593	False
+COAD organoids (paper data) | irinotecan	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.2175925925925926	False
+COAD organoids (paper data) | irinotecan	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.20370370370370372	False
+COAD organoids (paper data) | irinotecan	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.22222222222222224	False
+COAD organoids (paper data) | irinotecan	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.19444444444444445	False
+COAD organoids (paper data) | irinotecan	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.1388888888888889	False
+COAD organoids (paper data) | irinotecan	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.25925925925925924	False
+COAD organoids (paper data) | irinotecan	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.19444444444444445	False
 BLCA organoids (paper data) | cisplatin	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.6666666666666666	False
 BLCA organoids (paper data) | cisplatin	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.5	False
 BLCA organoids (paper data) | cisplatin	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.6666666666666666	False
@@ -31,3 +127,1187 @@ BLCA organoids (paper data) | cisplatin	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.8333
 BLCA organoids (paper data) | cisplatin	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.8333333333333334	False
 BLCA organoids (paper data) | cisplatin	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.8333333333333334	False
 BLCA organoids (paper data) | cisplatin	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.75	False
+CRC organoids | fluorouracil	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.5925925925925927	False
+CRC organoids | fluorouracil	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.47222222222222227	False
+CRC organoids | fluorouracil	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.6574074074074074	True
+CRC organoids | fluorouracil	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.47222222222222215	False
+CRC organoids | fluorouracil	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.5740740740740741	False
+CRC organoids | fluorouracil	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.5092592592592592	False
+CRC organoids | fluorouracil	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.5277777777777778	False
+CRC organoids | fluorouracil	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.5370370370370371	False
+CRC organoids | fluorouracil	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.6111111111111112	False
+CRC organoids | fluorouracil	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.46296296296296297	False
+CRC organoids | fluorouracil	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.5	False
+CRC organoids | fluorouracil	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.5277777777777778	False
+CRC organoids | fluorouracil	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.5972222222222222	False
+CRC organoids | fluorouracil	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.5370370370370371	False
+CRC organoids | fluorouracil	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.5462962962962963	False
+CRC organoids | fluorouracil	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.638888888888889	False
+CRC organoids | fluorouracil	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.49074074074074076	False
+CRC organoids | fluorouracil	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.5370370370370371	False
+CRC organoids | fluorouracil	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.5648148148148148	False
+CRC organoids | fluorouracil	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.5277777777777778	False
+CRC organoids | fluorouracil	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.4351851851851852	False
+CRC organoids | fluorouracil	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.5092592592592592	False
+CRC organoids | fluorouracil	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.47222222222222227	False
+CRC organoids | fluorouracil	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.5648148148148148	False
+CRC organoids | fluorouracil	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.46296296296296297	False
+CRC organoids | fluorouracil	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.5833333333333334	False
+CRC organoids | fluorouracil	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.5185185185185185	False
+CRC organoids | fluorouracil	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.5370370370370371	False
+CRC organoids | fluorouracil	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.5046296296296297	False
+CRC organoids | fluorouracil	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.5185185185185185	False
+CRC organoids | fluorouracil	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.4259259259259259	False
+CRC organoids | fluorouracil	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.47685185185185186	False
+CRC organoids | oxaliplatin	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.6759259259259259	False
+CRC organoids | oxaliplatin	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.6018518518518519	False
+CRC organoids | oxaliplatin	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.5648148148148149	False
+CRC organoids | oxaliplatin	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.601851851851852	False
+CRC organoids | oxaliplatin	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.638888888888889	False
+CRC organoids | oxaliplatin	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.611111111111111	False
+CRC organoids | oxaliplatin	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.6851851851851851	False
+CRC organoids | oxaliplatin	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.6759259259259259	False
+CRC organoids | oxaliplatin	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.6018518518518519	False
+CRC organoids | oxaliplatin	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.5925925925925926	False
+CRC organoids | oxaliplatin	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.6018518518518519	False
+CRC organoids | oxaliplatin	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.7129629629629631	True
+CRC organoids | oxaliplatin	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.6203703703703703	False
+CRC organoids | oxaliplatin	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.6944444444444445	False
+CRC organoids | oxaliplatin	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.638888888888889	False
+CRC organoids | oxaliplatin	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.6111111111111112	False
+CRC organoids | oxaliplatin	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.6759259259259259	False
+CRC organoids | oxaliplatin	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.638888888888889	False
+CRC organoids | oxaliplatin	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.6759259259259259	False
+CRC organoids | oxaliplatin	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.6018518518518519	False
+CRC organoids | oxaliplatin	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.6759259259259259	False
+CRC organoids | oxaliplatin	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.638888888888889	False
+CRC organoids | oxaliplatin	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.611111111111111	False
+CRC organoids | oxaliplatin	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.6851851851851851	False
+CRC organoids | oxaliplatin	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.5092592592592593	False
+CRC organoids | oxaliplatin	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.6851851851851851	False
+CRC organoids | oxaliplatin	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.6666666666666666	False
+CRC organoids | oxaliplatin	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.5879629629629629	False
+CRC organoids | oxaliplatin	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.5370370370370371	False
+CRC organoids | oxaliplatin	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.5740740740740741	False
+CRC organoids | oxaliplatin	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.5925925925925926	False
+CRC organoids | oxaliplatin	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.5370370370370371	False
+CRC organoids | irinotecan	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.1574074074074074	False
+CRC organoids | irinotecan	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.1111111111111111	False
+CRC organoids | irinotecan	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.1851851851851852	False
+CRC organoids | irinotecan	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.13888888888888887	False
+CRC organoids | irinotecan	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.12037037037037036	False
+CRC organoids | irinotecan	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.17592592592592593	False
+CRC organoids | irinotecan	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.1574074074074074	False
+CRC organoids | irinotecan	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.1111111111111111	False
+CRC organoids | irinotecan	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.22222222222222224	False
+CRC organoids | irinotecan	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.1851851851851852	False
+CRC organoids | irinotecan	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.29629629629629634	True
+CRC organoids | irinotecan	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.212962962962963	False
+CRC organoids | irinotecan	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.12037037037037036	False
+CRC organoids | irinotecan	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.1111111111111111	False
+CRC organoids | irinotecan	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.1851851851851852	False
+CRC organoids | irinotecan	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.12037037037037036	False
+CRC organoids | irinotecan	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.1851851851851852	False
+CRC organoids | irinotecan	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.1851851851851852	False
+CRC organoids | irinotecan	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.1851851851851852	False
+CRC organoids | irinotecan	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.2222222222222222	False
+CRC organoids | irinotecan	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.17592592592592593	False
+CRC organoids | irinotecan	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.1851851851851852	False
+CRC organoids | irinotecan	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.14814814814814814	False
+CRC organoids | irinotecan	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.1111111111111111	False
+CRC organoids | irinotecan	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.13425925925925927	False
+CRC organoids | irinotecan	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.29629629629629634	False
+CRC organoids | irinotecan	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.05555555555555555	False
+CRC organoids | irinotecan	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.125	False
+CRC organoids | irinotecan	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.16203703703703703	False
+CRC organoids | irinotecan	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.1712962962962963	False
+CRC organoids | irinotecan	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.23611111111111113	False
+CRC organoids | irinotecan	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.1574074074074074	False
+CRC organoids | cetuximab	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.5185185185185185	False
+CRC organoids | cetuximab	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.4074074074074074	False
+CRC organoids | cetuximab	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.46296296296296297	False
+CRC organoids | cetuximab	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.40740740740740744	False
+CRC organoids | cetuximab	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.5092592592592592	False
+CRC organoids | cetuximab	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.40740740740740744	False
+CRC organoids | cetuximab	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.5	False
+CRC organoids | cetuximab	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.3611111111111111	False
+CRC organoids | cetuximab	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.5555555555555556	False
+CRC organoids | cetuximab	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.5185185185185185	False
+CRC organoids | cetuximab	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.6388888888888888	True
+CRC organoids | cetuximab	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.5648148148148148	False
+CRC organoids | cetuximab	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.5185185185185185	False
+CRC organoids | cetuximab	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.4351851851851852	False
+CRC organoids | cetuximab	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.4074074074074074	False
+CRC organoids | cetuximab	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.3842592592592593	False
+CRC organoids | cetuximab	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.4351851851851852	False
+CRC organoids | cetuximab	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.5	False
+CRC organoids | cetuximab	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.4444444444444445	False
+CRC organoids | cetuximab	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.47222222222222227	False
+CRC organoids | cetuximab	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.46296296296296297	False
+CRC organoids | cetuximab	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.4444444444444445	False
+CRC organoids | cetuximab	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.5370370370370371	False
+CRC organoids | cetuximab	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.5740740740740741	False
+CRC organoids | cetuximab	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.5416666666666666	False
+CRC organoids | cetuximab	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.5648148148148148	False
+CRC organoids | cetuximab	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.41203703703703703	False
+CRC organoids | cetuximab	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.5092592592592592	False
+CRC organoids | cetuximab	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.5	False
+CRC organoids | cetuximab	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.5324074074074074	False
+CRC organoids | cetuximab	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.4583333333333333	False
+CRC organoids | cetuximab	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.4953703703703704	False
+CRC PDX (Isella) | cetuximab	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.8440755208333334	False
+CRC PDX (Isella) | cetuximab	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.8518880208333334	False
+CRC PDX (Isella) | cetuximab	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.8509114583333334	False
+CRC PDX (Isella) | cetuximab	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.84765625	False
+CRC PDX (Isella) | cetuximab	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.8557942708333334	False
+CRC PDX (Isella) | cetuximab	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.8544921875	False
+CRC PDX (Isella) | cetuximab	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.8448893229166666	False
+CRC PDX (Isella) | cetuximab	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.85546875	False
+CRC PDX (Isella) | cetuximab	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.8460286458333334	False
+CRC PDX (Isella) | cetuximab	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.8390299479166666	False
+CRC PDX (Isella) | cetuximab	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.8439127604166666	False
+CRC PDX (Isella) | cetuximab	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.8486328125	False
+CRC PDX (Isella) | cetuximab	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.8414713541666666	False
+CRC PDX (Isella) | cetuximab	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.849609375	False
+CRC PDX (Isella) | cetuximab	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.8440755208333334	False
+CRC PDX (Isella) | cetuximab	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.8440755208333334	False
+CRC PDX (Isella) | cetuximab	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.8440755208333334	False
+CRC PDX (Isella) | cetuximab	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.841796875	False
+CRC PDX (Isella) | cetuximab	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.84716796875	False
+CRC PDX (Isella) | cetuximab	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.8518880208333334	False
+CRC PDX (Isella) | cetuximab	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.8426106770833334	False
+CRC PDX (Isella) | cetuximab	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.8525390625	False
+CRC PDX (Isella) | cetuximab	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.8486328125	False
+CRC PDX (Isella) | cetuximab	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.8486328125	False
+CRC PDX (Isella) | cetuximab	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.85205078125	False
+CRC PDX (Isella) | cetuximab	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.8212890625	False
+CRC PDX (Isella) | cetuximab	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.8375651041666666	False
+CRC PDX (Isella) | cetuximab	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.8326822916666666	False
+CRC PDX (Isella) | cetuximab	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.8426106770833334	False
+CRC PDX (Isella) | cetuximab	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.84619140625	False
+CRC PDX (Isella) | cetuximab	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.8518880208333334	False
+CRC PDX (Isella) | cetuximab	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.85791015625	True
+PAAD org. (Tiriac) | gemcitabine	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.6481481481481483	False
+PAAD org. (Tiriac) | gemcitabine	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.6574074074074074	False
+PAAD org. (Tiriac) | gemcitabine	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.638888888888889	False
+PAAD org. (Tiriac) | gemcitabine	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.6574074074074074	False
+PAAD org. (Tiriac) | gemcitabine	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.6851851851851852	False
+PAAD org. (Tiriac) | gemcitabine	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.638888888888889	False
+PAAD org. (Tiriac) | gemcitabine	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.7037037037037038	False
+PAAD org. (Tiriac) | gemcitabine	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.6759259259259259	False
+PAAD org. (Tiriac) | gemcitabine	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.6759259259259259	False
+PAAD org. (Tiriac) | gemcitabine	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.6481481481481483	False
+PAAD org. (Tiriac) | gemcitabine	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.638888888888889	False
+PAAD org. (Tiriac) | gemcitabine	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.6296296296296297	False
+PAAD org. (Tiriac) | gemcitabine	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.6481481481481483	False
+PAAD org. (Tiriac) | gemcitabine	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.6481481481481483	False
+PAAD org. (Tiriac) | gemcitabine	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.6851851851851852	False
+PAAD org. (Tiriac) | gemcitabine	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.7037037037037038	False
+PAAD org. (Tiriac) | gemcitabine	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.7129629629629631	False
+PAAD org. (Tiriac) | gemcitabine	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.6759259259259259	False
+PAAD org. (Tiriac) | gemcitabine	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.7037037037037037	False
+PAAD org. (Tiriac) | gemcitabine	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.638888888888889	False
+PAAD org. (Tiriac) | gemcitabine	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.7129629629629629	False
+PAAD org. (Tiriac) | gemcitabine	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.7037037037037037	False
+PAAD org. (Tiriac) | gemcitabine	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.675925925925926	False
+PAAD org. (Tiriac) | gemcitabine	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.6666666666666666	False
+PAAD org. (Tiriac) | gemcitabine	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.7824074074074074	True
+PAAD org. (Tiriac) | gemcitabine	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.7361111111111112	False
+PAAD org. (Tiriac) | gemcitabine	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.6620370370370371	False
+PAAD org. (Tiriac) | gemcitabine	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.7314814814814815	False
+PAAD org. (Tiriac) | gemcitabine	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.6851851851851852	False
+PAAD org. (Tiriac) | gemcitabine	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.763888888888889	False
+PAAD org. (Tiriac) | gemcitabine	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.7129629629629629	False
+PAAD org. (Tiriac) | gemcitabine	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.6481481481481483	False
+PAAD org. (Tiriac) | fluorouracil	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.6851851851851851	False
+PAAD org. (Tiriac) | fluorouracil	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.6574074074074074	False
+PAAD org. (Tiriac) | fluorouracil	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.6666666666666666	False
+PAAD org. (Tiriac) | fluorouracil	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.6203703703703703	False
+PAAD org. (Tiriac) | fluorouracil	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.5925925925925927	False
+PAAD org. (Tiriac) | fluorouracil	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.6944444444444443	False
+PAAD org. (Tiriac) | fluorouracil	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.6759259259259259	False
+PAAD org. (Tiriac) | fluorouracil	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.6203703703703703	False
+PAAD org. (Tiriac) | fluorouracil	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.6111111111111112	False
+PAAD org. (Tiriac) | fluorouracil	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.5740740740740741	False
+PAAD org. (Tiriac) | fluorouracil	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.6574074074074074	False
+PAAD org. (Tiriac) | fluorouracil	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.6203703703703703	False
+PAAD org. (Tiriac) | fluorouracil	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.6203703703703703	False
+PAAD org. (Tiriac) | fluorouracil	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.6851851851851852	False
+PAAD org. (Tiriac) | fluorouracil	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.6481481481481483	False
+PAAD org. (Tiriac) | fluorouracil	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.638888888888889	False
+PAAD org. (Tiriac) | fluorouracil	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.6574074074074074	False
+PAAD org. (Tiriac) | fluorouracil	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.5833333333333334	False
+PAAD org. (Tiriac) | fluorouracil	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.6018518518518519	False
+PAAD org. (Tiriac) | fluorouracil	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.6481481481481483	False
+PAAD org. (Tiriac) | fluorouracil	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.6111111111111112	False
+PAAD org. (Tiriac) | fluorouracil	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.6203703703703705	False
+PAAD org. (Tiriac) | fluorouracil	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.638888888888889	False
+PAAD org. (Tiriac) | fluorouracil	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.6203703703703703	False
+PAAD org. (Tiriac) | fluorouracil	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.5277777777777778	False
+PAAD org. (Tiriac) | fluorouracil	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.7361111111111113	True
+PAAD org. (Tiriac) | fluorouracil	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.6666666666666666	False
+PAAD org. (Tiriac) | fluorouracil	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.5740740740740741	False
+PAAD org. (Tiriac) | fluorouracil	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.5555555555555556	False
+PAAD org. (Tiriac) | fluorouracil	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.6620370370370371	False
+PAAD org. (Tiriac) | fluorouracil	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.587962962962963	False
+PAAD org. (Tiriac) | fluorouracil	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.6018518518518519	False
+PAAD org. (Tiriac) | oxaliplatin	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.7314814814814815	False
+PAAD org. (Tiriac) | oxaliplatin	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.7592592592592592	False
+PAAD org. (Tiriac) | oxaliplatin	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.6666666666666666	False
+PAAD org. (Tiriac) | oxaliplatin	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.648148148148148	False
+PAAD org. (Tiriac) | oxaliplatin	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.6851851851851851	False
+PAAD org. (Tiriac) | oxaliplatin	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.6666666666666666	False
+PAAD org. (Tiriac) | oxaliplatin	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.6481481481481481	False
+PAAD org. (Tiriac) | oxaliplatin	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.7222222222222222	False
+PAAD org. (Tiriac) | oxaliplatin	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.6296296296296297	False
+PAAD org. (Tiriac) | oxaliplatin	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.7222222222222223	False
+PAAD org. (Tiriac) | oxaliplatin	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.6296296296296297	False
+PAAD org. (Tiriac) | oxaliplatin	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.7685185185185185	True
+PAAD org. (Tiriac) | oxaliplatin	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.6944444444444445	False
+PAAD org. (Tiriac) | oxaliplatin	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.7129629629629629	False
+PAAD org. (Tiriac) | oxaliplatin	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.7129629629629631	False
+PAAD org. (Tiriac) | oxaliplatin	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.6851851851851851	False
+PAAD org. (Tiriac) | oxaliplatin	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.6388888888888888	False
+PAAD org. (Tiriac) | oxaliplatin	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.7314814814814815	False
+PAAD org. (Tiriac) | oxaliplatin	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.7129629629629629	False
+PAAD org. (Tiriac) | oxaliplatin	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.6759259259259259	False
+PAAD org. (Tiriac) | oxaliplatin	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.6203703703703703	False
+PAAD org. (Tiriac) | oxaliplatin	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.7222222222222222	False
+PAAD org. (Tiriac) | oxaliplatin	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.6203703703703703	False
+PAAD org. (Tiriac) | oxaliplatin	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.6666666666666666	False
+PAAD org. (Tiriac) | oxaliplatin	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.648148148148148	False
+PAAD org. (Tiriac) | oxaliplatin	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.6018518518518517	False
+PAAD org. (Tiriac) | oxaliplatin	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.6342592592592592	False
+PAAD org. (Tiriac) | oxaliplatin	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.6944444444444443	False
+PAAD org. (Tiriac) | oxaliplatin	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.5972222222222222	False
+PAAD org. (Tiriac) | oxaliplatin	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.6064814814814815	False
+PAAD org. (Tiriac) | oxaliplatin	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.6666666666666666	False
+PAAD org. (Tiriac) | oxaliplatin	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.7268518518518517	False
+PAAD org. (Shi) | gemcitabine	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.34920634920634924	False
+PAAD org. (Shi) | gemcitabine	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.3650793650793651	False
+PAAD org. (Shi) | gemcitabine	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.38095238095238093	False
+PAAD org. (Shi) | gemcitabine	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.3650793650793651	False
+PAAD org. (Shi) | gemcitabine	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.41269841269841273	True
+PAAD org. (Shi) | gemcitabine	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.3650793650793651	False
+PAAD org. (Shi) | gemcitabine	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.3412698412698412	False
+PAAD org. (Shi) | gemcitabine	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.3650793650793651	False
+PAAD org. (Shi) | gemcitabine	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.373015873015873	False
+PAAD org. (Shi) | gemcitabine	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.3571428571428572	False
+PAAD org. (Shi) | gemcitabine	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.38095238095238093	False
+PAAD org. (Shi) | gemcitabine	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.3174603174603175	False
+PAAD org. (Shi) | gemcitabine	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.35714285714285715	False
+PAAD org. (Shi) | gemcitabine	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.35714285714285715	False
+PAAD org. (Shi) | gemcitabine	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.41269841269841273	False
+PAAD org. (Shi) | gemcitabine	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.38888888888888884	False
+PAAD org. (Shi) | gemcitabine	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.3888888888888889	False
+PAAD org. (Shi) | gemcitabine	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.35714285714285715	False
+PAAD org. (Shi) | gemcitabine	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.380952380952381	False
+PAAD org. (Shi) | gemcitabine	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.373015873015873	False
+PAAD org. (Shi) | gemcitabine	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.373015873015873	False
+PAAD org. (Shi) | gemcitabine	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.34126984126984133	False
+PAAD org. (Shi) | gemcitabine	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.35714285714285715	False
+PAAD org. (Shi) | gemcitabine	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.35714285714285715	False
+PAAD org. (Shi) | gemcitabine	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.39285714285714285	False
+PAAD org. (Shi) | gemcitabine	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.35714285714285715	False
+PAAD org. (Shi) | gemcitabine	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.30952380952380953	False
+PAAD org. (Shi) | gemcitabine	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.380952380952381	False
+PAAD org. (Shi) | gemcitabine	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.34126984126984133	False
+PAAD org. (Shi) | gemcitabine	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.3650793650793651	False
+PAAD org. (Shi) | gemcitabine	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.373015873015873	False
+PAAD org. (Shi) | gemcitabine	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.32142857142857145	False
+PAAD org. (Shi) | fluorouracil	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.7142857142857144	False
+PAAD org. (Shi) | fluorouracil	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.753968253968254	False
+PAAD org. (Shi) | fluorouracil	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.7301587301587302	False
+PAAD org. (Shi) | fluorouracil	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.7380952380952381	False
+PAAD org. (Shi) | fluorouracil	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.7380952380952381	False
+PAAD org. (Shi) | fluorouracil	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.746031746031746	False
+PAAD org. (Shi) | fluorouracil	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.753968253968254	False
+PAAD org. (Shi) | fluorouracil	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.7380952380952381	False
+PAAD org. (Shi) | fluorouracil	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.7222222222222223	False
+PAAD org. (Shi) | fluorouracil	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.7380952380952381	False
+PAAD org. (Shi) | fluorouracil	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.7777777777777778	False
+PAAD org. (Shi) | fluorouracil	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.6984126984126983	False
+PAAD org. (Shi) | fluorouracil	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.746031746031746	False
+PAAD org. (Shi) | fluorouracil	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.753968253968254	False
+PAAD org. (Shi) | fluorouracil	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.753968253968254	False
+PAAD org. (Shi) | fluorouracil	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.7936507936507936	True
+PAAD org. (Shi) | fluorouracil	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.7142857142857143	False
+PAAD org. (Shi) | fluorouracil	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.7619047619047619	False
+PAAD org. (Shi) | fluorouracil	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.7380952380952381	False
+PAAD org. (Shi) | fluorouracil	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.753968253968254	False
+PAAD org. (Shi) | fluorouracil	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.7777777777777778	False
+PAAD org. (Shi) | fluorouracil	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.7222222222222222	False
+PAAD org. (Shi) | fluorouracil	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.7619047619047619	False
+PAAD org. (Shi) | fluorouracil	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.7380952380952381	False
+PAAD org. (Shi) | fluorouracil	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.746031746031746	False
+PAAD org. (Shi) | fluorouracil	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.6904761904761904	False
+PAAD org. (Shi) | fluorouracil	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.6507936507936508	False
+PAAD org. (Shi) | fluorouracil	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.7420634920634921	False
+PAAD org. (Shi) | fluorouracil	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.6944444444444445	False
+PAAD org. (Shi) | fluorouracil	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.7341269841269842	False
+PAAD org. (Shi) | fluorouracil	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.7579365079365079	False
+PAAD org. (Shi) | fluorouracil	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.746031746031746	False
+PAAD org. (Shi) | oxaliplatin	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.6190476190476191	False
+PAAD org. (Shi) | oxaliplatin	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.6111111111111112	False
+PAAD org. (Shi) | oxaliplatin	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.6031746031746031	False
+PAAD org. (Shi) | oxaliplatin	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.634920634920635	False
+PAAD org. (Shi) | oxaliplatin	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.6507936507936508	False
+PAAD org. (Shi) | oxaliplatin	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.6428571428571429	False
+PAAD org. (Shi) | oxaliplatin	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.6190476190476191	False
+PAAD org. (Shi) | oxaliplatin	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.6666666666666666	False
+PAAD org. (Shi) | oxaliplatin	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.6507936507936507	False
+PAAD org. (Shi) | oxaliplatin	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.6865079365079364	True
+PAAD org. (Shi) | oxaliplatin	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.6587301587301587	False
+PAAD org. (Shi) | oxaliplatin	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.6547619047619048	False
+PAAD org. (Shi) | oxaliplatin	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.6190476190476191	False
+PAAD org. (Shi) | oxaliplatin	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.5992063492063492	False
+PAAD org. (Shi) | oxaliplatin	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.6428571428571429	False
+PAAD org. (Shi) | oxaliplatin	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.6468253968253969	False
+PAAD org. (Shi) | oxaliplatin	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.6309523809523809	False
+PAAD org. (Shi) | oxaliplatin	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.6428571428571429	False
+PAAD org. (Shi) | oxaliplatin	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.5952380952380952	False
+PAAD org. (Shi) | oxaliplatin	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.6507936507936508	False
+PAAD org. (Shi) | oxaliplatin	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.6468253968253969	False
+PAAD org. (Shi) | oxaliplatin	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.638888888888889	False
+PAAD org. (Shi) | oxaliplatin	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.6309523809523809	False
+PAAD org. (Shi) | oxaliplatin	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.5873015873015873	False
+PAAD org. (Shi) | oxaliplatin	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.5555555555555555	False
+PAAD org. (Shi) | oxaliplatin	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.623015873015873	False
+PAAD org. (Shi) | oxaliplatin	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.6706349206349206	False
+PAAD org. (Shi) | oxaliplatin	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.6468253968253969	False
+PAAD org. (Shi) | oxaliplatin	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.6428571428571428	False
+PAAD org. (Shi) | oxaliplatin	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.6785714285714285	False
+PAAD org. (Shi) | oxaliplatin	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.6825396825396824	False
+PAAD org. (Shi) | oxaliplatin	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.630952380952381	False
+LIHC org. (Ji) | sorafenib	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.5621212121212121	False
+LIHC org. (Ji) | sorafenib	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.5790909090909091	False
+LIHC org. (Ji) | sorafenib	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.5754545454545456	False
+LIHC org. (Ji) | sorafenib	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.583030303030303	False
+LIHC org. (Ji) | sorafenib	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.5809090909090909	False
+LIHC org. (Ji) | sorafenib	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.5596969696969697	False
+LIHC org. (Ji) | sorafenib	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.6027272727272727	False
+LIHC org. (Ji) | sorafenib	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.5696969696969697	False
+LIHC org. (Ji) | sorafenib	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.5796969696969697	False
+LIHC org. (Ji) | sorafenib	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.5618181818181819	False
+LIHC org. (Ji) | sorafenib	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.5472727272727272	False
+LIHC org. (Ji) | sorafenib	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.5763636363636363	False
+LIHC org. (Ji) | sorafenib	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.6196969696969696	False
+LIHC org. (Ji) | sorafenib	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.5772727272727273	False
+LIHC org. (Ji) | sorafenib	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.5421212121212121	False
+LIHC org. (Ji) | sorafenib	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.5666666666666667	False
+LIHC org. (Ji) | sorafenib	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.5927272727272728	False
+LIHC org. (Ji) | sorafenib	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.5757575757575757	False
+LIHC org. (Ji) | sorafenib	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.5566666666666666	False
+LIHC org. (Ji) | sorafenib	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.5793939393939395	False
+LIHC org. (Ji) | sorafenib	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.5566666666666668	False
+LIHC org. (Ji) | sorafenib	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.6027272727272727	False
+LIHC org. (Ji) | sorafenib	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.59	False
+LIHC org. (Ji) | sorafenib	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.573030303030303	False
+LIHC org. (Ji) | sorafenib	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.5668181818181818	False
+LIHC org. (Ji) | sorafenib	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.5627272727272726	False
+LIHC org. (Ji) | sorafenib	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.618030303030303	False
+LIHC org. (Ji) | sorafenib	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.5887878787878787	False
+LIHC org. (Ji) | sorafenib	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.630909090909091	True
+LIHC org. (Ji) | sorafenib	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.6015151515151514	False
+LIHC org. (Ji) | sorafenib	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.5854545454545454	False
+LIHC org. (Ji) | sorafenib	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.561969696969697	False
+BLCA organoids | cisplatin	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.6666666666666666	False
+BLCA organoids | cisplatin	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.5	False
+BLCA organoids | cisplatin	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.6666666666666666	False
+BLCA organoids | cisplatin	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.5	False
+BLCA organoids | cisplatin	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.5	False
+BLCA organoids | cisplatin	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.8333333333333334	True
+BLCA organoids | cisplatin	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.5	False
+BLCA organoids | cisplatin	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.3333333333333333	False
+BLCA organoids | cisplatin	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.5	False
+BLCA organoids | cisplatin	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.8333333333333334	False
+BLCA organoids | cisplatin	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.6666666666666666	False
+BLCA organoids | cisplatin	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.8333333333333334	False
+BLCA organoids | cisplatin	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.6666666666666666	False
+BLCA organoids | cisplatin	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.6666666666666666	False
+BLCA organoids | cisplatin	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.8333333333333334	False
+BLCA organoids | cisplatin	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.3333333333333333	False
+BLCA organoids | cisplatin	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.8333333333333334	False
+BLCA organoids | cisplatin	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.5	False
+BLCA organoids | cisplatin	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.5	False
+BLCA organoids | cisplatin	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.6666666666666666	False
+BLCA organoids | cisplatin	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.6666666666666666	False
+BLCA organoids | cisplatin	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.5	False
+BLCA organoids | cisplatin	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.5	False
+BLCA organoids | cisplatin	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.5	False
+BLCA organoids | cisplatin	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.8333333333333334	False
+BLCA organoids | cisplatin	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.6666666666666666	False
+BLCA organoids | cisplatin	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.8333333333333334	False
+BLCA organoids | cisplatin	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.5833333333333334	False
+BLCA organoids | cisplatin	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.8333333333333334	False
+BLCA organoids | cisplatin	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.8333333333333334	False
+BLCA organoids | cisplatin	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.8333333333333334	False
+BLCA organoids | cisplatin	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.75	False
+BLCA organoids | gemcitabine	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.8333333333333334	False
+BLCA organoids | gemcitabine	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.8333333333333334	False
+BLCA organoids | gemcitabine	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.8333333333333334	False
+BLCA organoids | gemcitabine	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.8333333333333334	False
+BLCA organoids | gemcitabine	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.8333333333333334	False
+BLCA organoids | gemcitabine	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.8333333333333334	False
+BLCA organoids | gemcitabine	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.8333333333333334	False
+BLCA organoids | gemcitabine	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.75	False
+BLCA organoids | gemcitabine	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.9166666666666666	True
+BLCA organoids | gemcitabine	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.9166666666666666	False
+BLCA organoids | gemcitabine	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.875	False
+BLCA organoids | gemcitabine	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.8333333333333334	False
+BLCA organoids | gemcitabine	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.9166666666666666	False
+BLCA organoids | gemcitabine	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.875	False
+BLCA organoids | gemcitabine	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.8333333333333334	False
+BLCA organoids | gemcitabine	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.875	False
+BLCA organoids | gemcitabine	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.8333333333333334	False
+BLCA organoids | gemcitabine	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.8333333333333334	False
+BLCA organoids | gemcitabine	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.8333333333333334	False
+BLCA organoids | gemcitabine	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.8333333333333334	False
+BLCA organoids | gemcitabine	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.8333333333333334	False
+BLCA organoids | gemcitabine	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.9166666666666666	False
+BLCA organoids | gemcitabine	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.8333333333333334	False
+BLCA organoids | gemcitabine	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.8333333333333334	False
+BLCA organoids | gemcitabine	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.7916666666666666	False
+BLCA organoids | gemcitabine	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.8333333333333334	False
+BLCA organoids | gemcitabine	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.875	False
+BLCA organoids | gemcitabine	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.875	False
+BLCA organoids | gemcitabine	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.875	False
+BLCA organoids | gemcitabine	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.7916666666666666	False
+BLCA organoids | gemcitabine	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.7916666666666666	False
+BLCA organoids | gemcitabine	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.7916666666666666	False
+BLCA organoids | doxorubicin	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.0	False
+BLCA organoids | doxorubicin	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.16666666666666666	True
+BLCA organoids | doxorubicin	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.16666666666666666	False
+BLCA organoids | doxorubicin	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.16666666666666666	False
+BLCA organoids | doxorubicin	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.16666666666666666	False
+BLCA organoids | doxorubicin	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.16666666666666666	False
+BLCA organoids | doxorubicin	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.0	False
+BLCA organoids | doxorubicin	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.0	False
+BLCA organoids | doxorubicin	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.16666666666666666	False
+BLCA organoids | doxorubicin	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.0	False
+BLCA organoids | doxorubicin	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.16666666666666666	False
+BLCA organoids | doxorubicin	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.0	False
+BLCA organoids | doxorubicin	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.16666666666666666	False
+BLCA organoids | doxorubicin	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.16666666666666666	False
+BLCA organoids | doxorubicin	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.16666666666666666	False
+BLCA organoids | doxorubicin	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.16666666666666666	False
+BLCA organoids | doxorubicin	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.0	False
+BLCA organoids | doxorubicin	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.0	False
+BLCA organoids | doxorubicin	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.0	False
+BLCA organoids | doxorubicin	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.0	False
+BLCA organoids | doxorubicin	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.0	False
+BLCA organoids | doxorubicin	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.0	False
+BLCA organoids | doxorubicin	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.0	False
+BLCA organoids | doxorubicin	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.16666666666666666	False
+BLCA organoids | doxorubicin	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.08333333333333333	False
+BLCA organoids | doxorubicin	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.08333333333333333	False
+BLCA organoids | doxorubicin	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.0	False
+BLCA organoids | doxorubicin	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.0	False
+BLCA organoids | doxorubicin	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.0	False
+BLCA organoids | doxorubicin	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.16666666666666666	False
+BLCA organoids | doxorubicin	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.0	False
+BLCA organoids | doxorubicin	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.0	False
+BLCA organoids | carboplatin	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.6666666666666666	False
+BLCA organoids | carboplatin	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.5	False
+BLCA organoids | carboplatin	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.6666666666666666	False
+BLCA organoids | carboplatin	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.5	False
+BLCA organoids | carboplatin	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.5	False
+BLCA organoids | carboplatin	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.8333333333333334	True
+BLCA organoids | carboplatin	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.5	False
+BLCA organoids | carboplatin	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.3333333333333333	False
+BLCA organoids | carboplatin	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.5	False
+BLCA organoids | carboplatin	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.8333333333333334	False
+BLCA organoids | carboplatin	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.6666666666666666	False
+BLCA organoids | carboplatin	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.8333333333333334	False
+BLCA organoids | carboplatin	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.6666666666666666	False
+BLCA organoids | carboplatin	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.6666666666666666	False
+BLCA organoids | carboplatin	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.8333333333333334	False
+BLCA organoids | carboplatin	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.3333333333333333	False
+BLCA organoids | carboplatin	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.8333333333333334	False
+BLCA organoids | carboplatin	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.5	False
+BLCA organoids | carboplatin	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.5	False
+BLCA organoids | carboplatin	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.6666666666666666	False
+BLCA organoids | carboplatin	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.6666666666666666	False
+BLCA organoids | carboplatin	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.5	False
+BLCA organoids | carboplatin	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.5	False
+BLCA organoids | carboplatin	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.5	False
+BLCA organoids | carboplatin	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.8333333333333334	False
+BLCA organoids | carboplatin	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.6666666666666666	False
+BLCA organoids | carboplatin	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.8333333333333334	False
+BLCA organoids | carboplatin	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.5833333333333334	False
+BLCA organoids | carboplatin	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.8333333333333334	False
+BLCA organoids | carboplatin	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.8333333333333334	False
+BLCA organoids | carboplatin	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.8333333333333334	False
+BLCA organoids | carboplatin	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.75	False
+OV organoids | carboplatin	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.3611111111111111	False
+OV organoids | carboplatin	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.4444444444444444	False
+OV organoids | carboplatin	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.3055555555555555	False
+OV organoids | carboplatin	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.38888888888888884	False
+OV organoids | carboplatin	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.4444444444444444	False
+OV organoids | carboplatin	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.4444444444444444	False
+OV organoids | carboplatin	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.3611111111111111	False
+OV organoids | carboplatin	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.4166666666666667	False
+OV organoids | carboplatin	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.34722222222222215	False
+OV organoids | carboplatin	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.40277777777777773	False
+OV organoids | carboplatin	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.40277777777777773	False
+OV organoids | carboplatin	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.40277777777777773	False
+OV organoids | carboplatin	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.4583333333333333	False
+OV organoids | carboplatin	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.4583333333333333	False
+OV organoids | carboplatin	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.34722222222222215	False
+OV organoids | carboplatin	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.40277777777777773	False
+OV organoids | carboplatin	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.38888888888888884	False
+OV organoids | carboplatin	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.38888888888888884	False
+OV organoids | carboplatin	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.3055555555555555	False
+OV organoids | carboplatin	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.3611111111111111	False
+OV organoids | carboplatin	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.4444444444444444	False
+OV organoids | carboplatin	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.3055555555555555	False
+OV organoids | carboplatin	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.5	True
+OV organoids | carboplatin	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.3611111111111111	False
+OV organoids | carboplatin	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.40277777777777773	False
+OV organoids | carboplatin	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.40277777777777773	False
+OV organoids | carboplatin	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.34722222222222215	False
+OV organoids | carboplatin	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.34722222222222227	False
+OV organoids | carboplatin	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.40277777777777773	False
+OV organoids | carboplatin	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.40277777777777773	False
+OV organoids | carboplatin	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.4583333333333333	False
+OV organoids | carboplatin	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.4583333333333333	False
+OV organoids | paclitaxel	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.5277777777777778	True
+OV organoids | paclitaxel	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.5277777777777778	False
+OV organoids | paclitaxel	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.3888888888888889	False
+OV organoids | paclitaxel	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.47222222222222227	False
+OV organoids | paclitaxel	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.5277777777777778	False
+OV organoids | paclitaxel	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.5277777777777778	False
+OV organoids | paclitaxel	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.4444444444444444	False
+OV organoids | paclitaxel	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.5277777777777778	False
+OV organoids | paclitaxel	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.47222222222222227	False
+OV organoids | paclitaxel	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.47222222222222227	False
+OV organoids | paclitaxel	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.4583333333333333	False
+OV organoids | paclitaxel	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.4305555555555556	False
+OV organoids | paclitaxel	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.4861111111111111	False
+OV organoids | paclitaxel	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.4305555555555556	False
+OV organoids | paclitaxel	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.40277777777777773	False
+OV organoids | paclitaxel	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.4583333333333333	False
+OV organoids | paclitaxel	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.5277777777777778	False
+OV organoids | paclitaxel	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.5277777777777778	False
+OV organoids | paclitaxel	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.5277777777777778	False
+OV organoids | paclitaxel	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.5277777777777778	False
+OV organoids | paclitaxel	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.5277777777777778	False
+OV organoids | paclitaxel	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.5277777777777778	False
+OV organoids | paclitaxel	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.4861111111111111	False
+OV organoids | paclitaxel	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.4861111111111111	False
+OV organoids | paclitaxel	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.47222222222222227	False
+OV organoids | paclitaxel	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.5	False
+OV organoids | paclitaxel	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.47222222222222227	False
+OV organoids | paclitaxel	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.5277777777777778	False
+OV organoids | paclitaxel	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.4166666666666667	False
+OV organoids | paclitaxel	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.4166666666666667	False
+OV organoids | paclitaxel	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.4444444444444444	False
+OV organoids | paclitaxel	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.4166666666666667	False
+OV organoids | cisplatin	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.3611111111111111	False
+OV organoids | cisplatin	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.4444444444444444	False
+OV organoids | cisplatin	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.3055555555555555	False
+OV organoids | cisplatin	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.38888888888888884	False
+OV organoids | cisplatin	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.4444444444444444	False
+OV organoids | cisplatin	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.4444444444444444	False
+OV organoids | cisplatin	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.3611111111111111	False
+OV organoids | cisplatin	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.4166666666666667	False
+OV organoids | cisplatin	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.34722222222222215	False
+OV organoids | cisplatin	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.40277777777777773	False
+OV organoids | cisplatin	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.40277777777777773	False
+OV organoids | cisplatin	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.40277777777777773	False
+OV organoids | cisplatin	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.4583333333333333	False
+OV organoids | cisplatin	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.4583333333333333	False
+OV organoids | cisplatin	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.34722222222222215	False
+OV organoids | cisplatin	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.40277777777777773	False
+OV organoids | cisplatin	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.38888888888888884	False
+OV organoids | cisplatin	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.38888888888888884	False
+OV organoids | cisplatin	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.3055555555555555	False
+OV organoids | cisplatin	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.3611111111111111	False
+OV organoids | cisplatin	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.4444444444444444	False
+OV organoids | cisplatin	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.3055555555555555	False
+OV organoids | cisplatin	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.5	True
+OV organoids | cisplatin	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.3611111111111111	False
+OV organoids | cisplatin	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.40277777777777773	False
+OV organoids | cisplatin	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.40277777777777773	False
+OV organoids | cisplatin	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.34722222222222215	False
+OV organoids | cisplatin	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.34722222222222227	False
+OV organoids | cisplatin	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.40277777777777773	False
+OV organoids | cisplatin	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.40277777777777773	False
+OV organoids | cisplatin	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.4583333333333333	False
+OV organoids | cisplatin	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.4583333333333333	False
+OV organoids | doxorubicin	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.5555555555555555	True
+OV organoids | doxorubicin	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.5555555555555555	False
+OV organoids | doxorubicin	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.5555555555555555	False
+OV organoids | doxorubicin	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.5555555555555555	False
+OV organoids | doxorubicin	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.5555555555555555	False
+OV organoids | doxorubicin	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.5555555555555555	False
+OV organoids | doxorubicin	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.5555555555555555	False
+OV organoids | doxorubicin	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.5555555555555555	False
+OV organoids | doxorubicin	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.36111111111111116	False
+OV organoids | doxorubicin	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.5	False
+OV organoids | doxorubicin	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.5	False
+OV organoids | doxorubicin	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.5	False
+OV organoids | doxorubicin	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.5	False
+OV organoids | doxorubicin	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.5555555555555555	False
+OV organoids | doxorubicin	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.4444444444444444	False
+OV organoids | doxorubicin	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.5	False
+OV organoids | doxorubicin	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.5555555555555555	False
+OV organoids | doxorubicin	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.5555555555555555	False
+OV organoids | doxorubicin	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.5	False
+OV organoids | doxorubicin	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.5555555555555555	False
+OV organoids | doxorubicin	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.5	False
+OV organoids | doxorubicin	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.5555555555555555	False
+OV organoids | doxorubicin	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.5555555555555555	False
+OV organoids | doxorubicin	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.5555555555555555	False
+OV organoids | doxorubicin	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.47222222222222227	False
+OV organoids | doxorubicin	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.4444444444444444	False
+OV organoids | doxorubicin	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.5	False
+OV organoids | doxorubicin	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.40277777777777773	False
+OV organoids | doxorubicin	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.4166666666666667	False
+OV organoids | doxorubicin	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.4166666666666667	False
+OV organoids | doxorubicin	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.47222222222222227	False
+OV organoids | doxorubicin	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.375	False
+OV organoids | gemcitabine	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.22222222222222224	False
+OV organoids | gemcitabine	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.38888888888888884	False
+OV organoids | gemcitabine	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.13888888888888887	False
+OV organoids | gemcitabine	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.3055555555555556	False
+OV organoids | gemcitabine	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.16666666666666666	False
+OV organoids | gemcitabine	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.25	False
+OV organoids | gemcitabine	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.25	False
+OV organoids | gemcitabine	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.16666666666666666	False
+OV organoids | gemcitabine	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.2638888888888889	False
+OV organoids | gemcitabine	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.2916666666666667	False
+OV organoids | gemcitabine	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.3194444444444444	False
+OV organoids | gemcitabine	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.2916666666666667	False
+OV organoids | gemcitabine	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.125	False
+OV organoids | gemcitabine	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.3194444444444445	False
+OV organoids | gemcitabine	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.2638888888888889	False
+OV organoids | gemcitabine	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.20833333333333334	False
+OV organoids | gemcitabine	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.2222222222222222	False
+OV organoids | gemcitabine	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.16666666666666666	False
+OV organoids | gemcitabine	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.3055555555555556	False
+OV organoids | gemcitabine	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.2777777777777778	False
+OV organoids | gemcitabine	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.22222222222222224	False
+OV organoids | gemcitabine	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.3055555555555556	False
+OV organoids | gemcitabine	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.16666666666666666	False
+OV organoids | gemcitabine	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.23611111111111113	False
+OV organoids | gemcitabine	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.40277777777777773	True
+OV organoids | gemcitabine	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.20833333333333334	False
+OV organoids | gemcitabine	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.2916666666666667	False
+OV organoids | gemcitabine	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.3194444444444444	False
+OV organoids | gemcitabine	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.20833333333333334	False
+OV organoids | gemcitabine	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.2638888888888889	False
+OV organoids | gemcitabine	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.34722222222222215	False
+OV organoids | gemcitabine	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.20833333333333334	False
+OV organoids | docetaxel	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.5277777777777778	True
+OV organoids | docetaxel	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.5277777777777778	False
+OV organoids | docetaxel	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.3888888888888889	False
+OV organoids | docetaxel	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.47222222222222227	False
+OV organoids | docetaxel	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.5277777777777778	False
+OV organoids | docetaxel	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.5277777777777778	False
+OV organoids | docetaxel	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.4444444444444444	False
+OV organoids | docetaxel	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.5277777777777778	False
+OV organoids | docetaxel	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.47222222222222227	False
+OV organoids | docetaxel	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.47222222222222227	False
+OV organoids | docetaxel	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.4583333333333333	False
+OV organoids | docetaxel	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.4305555555555556	False
+OV organoids | docetaxel	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.4861111111111111	False
+OV organoids | docetaxel	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.4305555555555556	False
+OV organoids | docetaxel	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.40277777777777773	False
+OV organoids | docetaxel	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.4583333333333333	False
+OV organoids | docetaxel	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.5277777777777778	False
+OV organoids | docetaxel	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.5277777777777778	False
+OV organoids | docetaxel	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.5277777777777778	False
+OV organoids | docetaxel	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.5277777777777778	False
+OV organoids | docetaxel	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.5277777777777778	False
+OV organoids | docetaxel	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.5277777777777778	False
+OV organoids | docetaxel	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.4861111111111111	False
+OV organoids | docetaxel	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.4861111111111111	False
+OV organoids | docetaxel	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.47222222222222227	False
+OV organoids | docetaxel	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.5	False
+OV organoids | docetaxel	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.47222222222222227	False
+OV organoids | docetaxel	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.5277777777777778	False
+OV organoids | docetaxel	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.4166666666666667	False
+OV organoids | docetaxel	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.4166666666666667	False
+OV organoids | docetaxel	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.4444444444444444	False
+OV organoids | docetaxel	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.4166666666666667	False
+SARC organoids | gemcitabine	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.47222222222222227	False
+SARC organoids | gemcitabine	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.4166666666666667	False
+SARC organoids | gemcitabine	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.47222222222222227	False
+SARC organoids | gemcitabine	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.5	False
+SARC organoids | gemcitabine	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.611111111111111	True
+SARC organoids | gemcitabine	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.5	False
+SARC organoids | gemcitabine	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.47222222222222227	False
+SARC organoids | gemcitabine	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.47222222222222227	False
+SARC organoids | gemcitabine	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.47222222222222227	False
+SARC organoids | gemcitabine	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.5277777777777778	False
+SARC organoids | gemcitabine	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.4166666666666667	False
+SARC organoids | gemcitabine	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.5277777777777778	False
+SARC organoids | gemcitabine	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.5833333333333334	False
+SARC organoids | gemcitabine	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.5277777777777778	False
+SARC organoids | gemcitabine	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.5555555555555556	False
+SARC organoids | gemcitabine	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.4444444444444445	False
+SARC organoids | gemcitabine	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.4166666666666667	False
+SARC organoids | gemcitabine	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.4166666666666667	False
+SARC organoids | gemcitabine	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.4166666666666667	False
+SARC organoids | gemcitabine	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.4166666666666667	False
+SARC organoids | gemcitabine	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.5277777777777778	False
+SARC organoids | gemcitabine	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.47222222222222227	False
+SARC organoids | gemcitabine	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.47222222222222227	False
+SARC organoids | gemcitabine	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.5277777777777778	False
+SARC organoids | gemcitabine	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.4166666666666667	False
+SARC organoids | gemcitabine	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.3611111111111111	False
+SARC organoids | gemcitabine	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.3333333333333333	False
+SARC organoids | gemcitabine	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.27777777777777773	False
+SARC organoids | gemcitabine	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.4444444444444445	False
+SARC organoids | gemcitabine	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.4305555555555556	False
+SARC organoids | gemcitabine	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.4444444444444445	False
+SARC organoids | gemcitabine	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.5	False
+SARC organoids | docetaxel	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.1388888888888889	False
+SARC organoids | docetaxel	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.22222222222222224	False
+SARC organoids | docetaxel	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.1388888888888889	False
+SARC organoids | docetaxel	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.22222222222222224	False
+SARC organoids | docetaxel	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.1388888888888889	False
+SARC organoids | docetaxel	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.2777777777777778	True
+SARC organoids | docetaxel	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.22222222222222224	False
+SARC organoids | docetaxel	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.22222222222222224	False
+SARC organoids | docetaxel	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.19444444444444445	False
+SARC organoids | docetaxel	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.19444444444444445	False
+SARC organoids | docetaxel	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.22222222222222224	False
+SARC organoids | docetaxel	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.1388888888888889	False
+SARC organoids | docetaxel	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.2777777777777778	False
+SARC organoids | docetaxel	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.2777777777777778	False
+SARC organoids | docetaxel	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.2777777777777778	False
+SARC organoids | docetaxel	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.2777777777777778	False
+SARC organoids | docetaxel	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.1388888888888889	False
+SARC organoids | docetaxel	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.1388888888888889	False
+SARC organoids | docetaxel	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.1388888888888889	False
+SARC organoids | docetaxel	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.1388888888888889	False
+SARC organoids | docetaxel	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.1388888888888889	False
+SARC organoids | docetaxel	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.1388888888888889	False
+SARC organoids | docetaxel	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.19444444444444445	False
+SARC organoids | docetaxel	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.19444444444444445	False
+SARC organoids | docetaxel	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.1388888888888889	False
+SARC organoids | docetaxel	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.22222222222222224	False
+SARC organoids | docetaxel	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.1388888888888889	False
+SARC organoids | docetaxel	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.22222222222222224	False
+SARC organoids | docetaxel	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.19444444444444445	False
+SARC organoids | docetaxel	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.19444444444444445	False
+SARC organoids | docetaxel	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.1388888888888889	False
+SARC organoids | docetaxel	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.1388888888888889	False
+LUAD cell lines | cisplatin	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.5929705215419501	False
+LUAD cell lines | cisplatin	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.6337868480725625	False
+LUAD cell lines | cisplatin	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.6009070294784581	False
+LUAD cell lines | cisplatin	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.5963718820861678	False
+LUAD cell lines | cisplatin	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.5986394557823128	False
+LUAD cell lines | cisplatin	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.5929705215419502	False
+LUAD cell lines | cisplatin	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.5873015873015873	False
+LUAD cell lines | cisplatin	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.5884353741496599	False
+LUAD cell lines | cisplatin	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.5816326530612245	False
+LUAD cell lines | cisplatin	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.5833333333333334	False
+LUAD cell lines | cisplatin	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.6031746031746031	False
+LUAD cell lines | cisplatin	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.5742630385487528	False
+LUAD cell lines | cisplatin	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.5963718820861678	False
+LUAD cell lines | cisplatin	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.5918367346938774	False
+LUAD cell lines | cisplatin	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.5793650793650794	False
+LUAD cell lines | cisplatin	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.63718820861678	False
+LUAD cell lines | cisplatin	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.5714285714285715	False
+LUAD cell lines | cisplatin	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.5691609977324262	False
+LUAD cell lines | cisplatin	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.5952380952380952	False
+LUAD cell lines | cisplatin	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.5918367346938775	False
+LUAD cell lines | cisplatin	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.6303854875283447	False
+LUAD cell lines | cisplatin	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.54421768707483	False
+LUAD cell lines | cisplatin	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.5997732426303856	False
+LUAD cell lines | cisplatin	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.5918367346938775	False
+LUAD cell lines | cisplatin	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.5816326530612245	False
+LUAD cell lines | cisplatin	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.598639455782313	False
+LUAD cell lines | cisplatin	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.5674603174603176	False
+LUAD cell lines | cisplatin	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.5975056689342403	False
+LUAD cell lines | cisplatin	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.489795918367347	False
+LUAD cell lines | cisplatin	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.6626984126984127	True
+LUAD cell lines | cisplatin	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.5459183673469388	False
+LUAD cell lines | cisplatin	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.5873015873015873	False
+LUAD cell lines | pemetrexed	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.6845238095238094	False
+LUAD cell lines | pemetrexed	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.744047619047619	False
+LUAD cell lines | pemetrexed	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.7023809523809522	False
+LUAD cell lines | pemetrexed	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.7261904761904762	False
+LUAD cell lines | pemetrexed	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.7559523809523809	True
+LUAD cell lines | pemetrexed	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.7321428571428572	False
+LUAD cell lines | pemetrexed	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.7083333333333331	False
+LUAD cell lines | pemetrexed	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.7202380952380952	False
+LUAD cell lines | pemetrexed	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.6845238095238094	False
+LUAD cell lines | pemetrexed	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.6994047619047619	False
+LUAD cell lines | pemetrexed	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.7083333333333334	False
+LUAD cell lines | pemetrexed	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.6845238095238094	False
+LUAD cell lines | pemetrexed	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.7202380952380952	False
+LUAD cell lines | pemetrexed	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.7142857142857143	False
+LUAD cell lines | pemetrexed	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.7083333333333334	False
+LUAD cell lines | pemetrexed	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.6904761904761904	False
+LUAD cell lines | pemetrexed	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.744047619047619	False
+LUAD cell lines | pemetrexed	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.7142857142857143	False
+LUAD cell lines | pemetrexed	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.7261904761904763	False
+LUAD cell lines | pemetrexed	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.7202380952380952	False
+LUAD cell lines | pemetrexed	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.7023809523809522	False
+LUAD cell lines | pemetrexed	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.7023809523809524	False
+LUAD cell lines | pemetrexed	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.6904761904761904	False
+LUAD cell lines | pemetrexed	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.7023809523809522	False
+LUAD cell lines | pemetrexed	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.6398809523809523	False
+LUAD cell lines | pemetrexed	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.6785714285714285	False
+LUAD cell lines | pemetrexed	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.6934523809523809	False
+LUAD cell lines | pemetrexed	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.7053571428571429	False
+LUAD cell lines | pemetrexed	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.7232142857142857	False
+LUAD cell lines | pemetrexed	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.6755952380952381	False
+LUAD cell lines | pemetrexed	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.7351190476190476	False
+LUAD cell lines | pemetrexed	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.6696428571428571	False
+LUAD cell lines | paclitaxel	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.5386904761904762	False
+LUAD cell lines | paclitaxel	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.4851190476190476	False
+LUAD cell lines | paclitaxel	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.49627976190476186	False
+LUAD cell lines | paclitaxel	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.5133928571428571	False
+LUAD cell lines | paclitaxel	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.49776785714285704	False
+LUAD cell lines | paclitaxel	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.4858630952380952	False
+LUAD cell lines | paclitaxel	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.4851190476190476	False
+LUAD cell lines | paclitaxel	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.5200892857142857	False
+LUAD cell lines | paclitaxel	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.4866071428571428	False
+LUAD cell lines | paclitaxel	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.4375	False
+LUAD cell lines | paclitaxel	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.5654761904761905	True
+LUAD cell lines | paclitaxel	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.49665178571428575	False
+LUAD cell lines | paclitaxel	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.46279761904761907	False
+LUAD cell lines | paclitaxel	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.46874999999999994	False
+LUAD cell lines | paclitaxel	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.5632440476190476	False
+LUAD cell lines | paclitaxel	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.5029761904761905	False
+LUAD cell lines | paclitaxel	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.5148809523809523	False
+LUAD cell lines | paclitaxel	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.5014880952380952	False
+LUAD cell lines | paclitaxel	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.5498511904761905	False
+LUAD cell lines | paclitaxel	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.5081845238095238	False
+LUAD cell lines | paclitaxel	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.5022321428571429	False
+LUAD cell lines | paclitaxel	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.43303571428571425	False
+LUAD cell lines | paclitaxel	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.4702380952380953	False
+LUAD cell lines | paclitaxel	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.46279761904761907	False
+LUAD cell lines | paclitaxel	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.45424107142857145	False
+LUAD cell lines | paclitaxel	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.44196428571428575	False
+LUAD cell lines | paclitaxel	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.5353422619047619	False
+LUAD cell lines | paclitaxel	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.5148809523809524	False
+LUAD cell lines | paclitaxel	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.47991071428571425	False
+LUAD cell lines | paclitaxel	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.4516369047619047	False
+LUAD cell lines | paclitaxel	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.46465773809523814	False
+LUAD cell lines | paclitaxel	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.5033482142857143	False
+LUAD cell lines | vinorelbine	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.7849702380952381	False
+LUAD cell lines | vinorelbine	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.7425595238095238	False
+LUAD cell lines | vinorelbine	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.7834821428571429	False
+LUAD cell lines | vinorelbine	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.7886904761904762	False
+LUAD cell lines | vinorelbine	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.7537202380952381	False
+LUAD cell lines | vinorelbine	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.7410714285714287	False
+LUAD cell lines | vinorelbine	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.7574404761904763	False
+LUAD cell lines | vinorelbine	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.7581845238095237	False
+LUAD cell lines | vinorelbine	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.7284226190476191	False
+LUAD cell lines | vinorelbine	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.7872023809523809	False
+LUAD cell lines | vinorelbine	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.7607886904761906	False
+LUAD cell lines | vinorelbine	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.7648809523809522	False
+LUAD cell lines | vinorelbine	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.7455357142857144	False
+LUAD cell lines | vinorelbine	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.7953869047619048	True
+LUAD cell lines | vinorelbine	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.7619047619047619	False
+LUAD cell lines | vinorelbine	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.7745535714285715	False
+LUAD cell lines | vinorelbine	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.7604166666666666	False
+LUAD cell lines | vinorelbine	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.7901785714285715	False
+LUAD cell lines | vinorelbine	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.7611607142857143	False
+LUAD cell lines | vinorelbine	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.7901785714285715	False
+LUAD cell lines | vinorelbine	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.7619047619047619	False
+LUAD cell lines | vinorelbine	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.7619047619047619	False
+LUAD cell lines | vinorelbine	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.7849702380952381	False
+LUAD cell lines | vinorelbine	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.7686011904761906	False
+LUAD cell lines | vinorelbine	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.7700892857142857	False
+LUAD cell lines | vinorelbine	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.7425595238095237	False
+LUAD cell lines | vinorelbine	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.7269345238095237	False
+LUAD cell lines | vinorelbine	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.740327380952381	False
+LUAD cell lines | vinorelbine	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.7276785714285715	False
+LUAD cell lines | vinorelbine	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.7581845238095237	False
+LUAD cell lines | vinorelbine	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.7481398809523809	False
+LUAD cell lines | vinorelbine	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.7410714285714285	False
+LUAD cell lines | gemcitabine	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.7083333333333334	False
+LUAD cell lines | gemcitabine	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.7537202380952381	False
+LUAD cell lines | gemcitabine	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.7559523809523809	False
+LUAD cell lines | gemcitabine	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.7872023809523809	False
+LUAD cell lines | gemcitabine	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.7872023809523809	False
+LUAD cell lines | gemcitabine	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.7730654761904763	False
+LUAD cell lines | gemcitabine	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.7306547619047619	False
+LUAD cell lines | gemcitabine	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.8005952380952381	False
+LUAD cell lines | gemcitabine	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.7470238095238096	False
+LUAD cell lines | gemcitabine	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.7946428571428571	False
+LUAD cell lines | gemcitabine	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.7410714285714285	False
+LUAD cell lines | gemcitabine	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.7113095238095237	False
+LUAD cell lines | gemcitabine	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.7559523809523809	False
+LUAD cell lines | gemcitabine	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.7485119047619048	False
+LUAD cell lines | gemcitabine	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.7232142857142857	False
+LUAD cell lines | gemcitabine	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.7276785714285715	False
+LUAD cell lines | gemcitabine	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.7462797619047619	False
+LUAD cell lines | gemcitabine	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.734375	False
+LUAD cell lines | gemcitabine	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.7306547619047619	False
+LUAD cell lines | gemcitabine	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.765625	False
+LUAD cell lines | gemcitabine	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.7641369047619048	False
+LUAD cell lines | gemcitabine	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.7522321428571429	False
+LUAD cell lines | gemcitabine	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.7648809523809524	False
+LUAD cell lines | gemcitabine	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.8020833333333334	True
+LUAD cell lines | gemcitabine	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.7671130952380952	False
+LUAD cell lines | gemcitabine	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.7537202380952381	False
+LUAD cell lines | gemcitabine	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.7284226190476191	False
+LUAD cell lines | gemcitabine	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.7924107142857143	False
+LUAD cell lines | gemcitabine	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.7418154761904763	False
+LUAD cell lines | gemcitabine	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.7239583333333334	False
+LUAD cell lines | gemcitabine	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.7373511904761904	False
+LUAD cell lines | gemcitabine	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.7373511904761904	False
+LUAD cell lines | docetaxel	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.6748511904761904	False
+LUAD cell lines | docetaxel	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.7090773809523809	True
+LUAD cell lines | docetaxel	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.6785714285714285	False
+LUAD cell lines | docetaxel	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.6555059523809523	False
+LUAD cell lines | docetaxel	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.6927083333333334	False
+LUAD cell lines | docetaxel	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.6510416666666666	False
+LUAD cell lines | docetaxel	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.671875	False
+LUAD cell lines | docetaxel	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.6934523809523809	False
+LUAD cell lines | docetaxel	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.6808035714285715	False
+LUAD cell lines | docetaxel	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.6748511904761906	False
+LUAD cell lines | docetaxel	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.6659226190476191	False
+LUAD cell lines | docetaxel	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.6651785714285715	False
+LUAD cell lines | docetaxel	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.6584821428571428	False
+LUAD cell lines | docetaxel	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.6800595238095238	False
+LUAD cell lines | docetaxel	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.640625	False
+LUAD cell lines | docetaxel	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.6763392857142857	False
+LUAD cell lines | docetaxel	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.6413690476190477	False
+LUAD cell lines | docetaxel	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.6681547619047619	False
+LUAD cell lines | docetaxel	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.6793154761904763	False
+LUAD cell lines | docetaxel	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.6800595238095238	False
+LUAD cell lines | docetaxel	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.6867559523809524	False
+LUAD cell lines | docetaxel	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.6517857142857143	False
+LUAD cell lines | docetaxel	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.6696428571428572	False
+LUAD cell lines | docetaxel	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.6785714285714285	False
+LUAD cell lines | docetaxel	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.6436011904761906	False
+LUAD cell lines | docetaxel	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.6715029761904763	False
+LUAD cell lines | docetaxel	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.6276041666666666	False
+LUAD cell lines | docetaxel	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.6592261904761905	False
+LUAD cell lines | docetaxel	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.6852678571428572	False
+LUAD cell lines | docetaxel	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.6283482142857143	False
+LUAD cell lines | docetaxel	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.6607142857142857	False
+LUAD cell lines | docetaxel	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.6409970238095238	False
+LUAD cell lines | etoposide	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.5081845238095238	False
+LUAD cell lines | etoposide	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.43452380952380953	False
+LUAD cell lines | etoposide	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.4516369047619047	False
+LUAD cell lines | etoposide	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.4925595238095238	False
+LUAD cell lines | etoposide	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.45610119047619047	False
+LUAD cell lines | etoposide	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.4397321428571428	False
+LUAD cell lines | etoposide	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.48660714285714285	False
+LUAD cell lines | etoposide	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.47991071428571425	False
+LUAD cell lines | etoposide	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.4828869047619048	False
+LUAD cell lines | etoposide	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.45014880952380953	False
+LUAD cell lines | etoposide	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.47172619047619047	False
+LUAD cell lines | etoposide	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.4739583333333333	False
+LUAD cell lines | etoposide	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.4947916666666667	False
+LUAD cell lines | etoposide	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.4858630952380952	False
+LUAD cell lines | etoposide	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.47767857142857145	False
+LUAD cell lines | etoposide	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.45684523809523814	False
+LUAD cell lines | etoposide	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.46875	False
+LUAD cell lines | etoposide	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.44717261904761907	False
+LUAD cell lines | etoposide	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.490327380952381	False
+LUAD cell lines | etoposide	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.44047619047619047	False
+LUAD cell lines | etoposide	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.44122023809523814	False
+LUAD cell lines | etoposide	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.4635416666666667	False
+LUAD cell lines | etoposide	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.4397321428571428	False
+LUAD cell lines | etoposide	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.4933035714285714	False
+LUAD cell lines | etoposide	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.5178571428571429	True
+LUAD cell lines | etoposide	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.49702380952380953	False
+LUAD cell lines | etoposide	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.4125744047619048	False
+LUAD cell lines | etoposide	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.5085565476190476	False
+LUAD cell lines | etoposide	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.5133928571428571	False
+LUAD cell lines | etoposide	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.4925595238095238	False
+LUAD cell lines | etoposide	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.4702380952380953	False
+LUAD cell lines | etoposide	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.4516369047619048	False
+LUAD cell lines | erlotinib	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.5029761904761905	False
+LUAD cell lines | erlotinib	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.4866071428571428	False
+LUAD cell lines | erlotinib	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.47098214285714285	False
+LUAD cell lines | erlotinib	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.453125	False
+LUAD cell lines | erlotinib	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.4635416666666667	False
+LUAD cell lines | erlotinib	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.4985119047619048	False
+LUAD cell lines | erlotinib	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.49330357142857145	False
+LUAD cell lines | erlotinib	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.48065476190476186	False
+LUAD cell lines | erlotinib	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.529389880952381	False
+LUAD cell lines | erlotinib	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.46502976190476186	False
+LUAD cell lines | erlotinib	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.46502976190476186	False
+LUAD cell lines | erlotinib	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.4367559523809524	False
+LUAD cell lines | erlotinib	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.44345238095238093	False
+LUAD cell lines | erlotinib	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.46279761904761907	False
+LUAD cell lines | erlotinib	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.5044642857142857	False
+LUAD cell lines | erlotinib	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.46279761904761907	False
+LUAD cell lines | erlotinib	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.44717261904761907	False
+LUAD cell lines | erlotinib	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.4769345238095238	False
+LUAD cell lines | erlotinib	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.5148809523809524	False
+LUAD cell lines | erlotinib	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.4910714285714286	False
+LUAD cell lines | erlotinib	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.46428571428571425	False
+LUAD cell lines | erlotinib	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.45014880952380953	False
+LUAD cell lines | erlotinib	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.4568452380952381	False
+LUAD cell lines | erlotinib	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.4702380952380952	False
+LUAD cell lines | erlotinib	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.45200892857142855	False
+LUAD cell lines | erlotinib	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.5297619047619048	True
+LUAD cell lines | erlotinib	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.4453125	False
+LUAD cell lines | erlotinib	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.4847470238095238	False
+LUAD cell lines | erlotinib	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.48214285714285715	False
+LUAD cell lines | erlotinib	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.43154761904761907	False
+LUAD cell lines | erlotinib	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.5238095238095238	False
+LUAD cell lines | erlotinib	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.46577380952380953	False
+LUAD cell lines | carboplatin	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.5085034013605442	False
+LUAD cell lines | carboplatin	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.5246598639455783	False
+LUAD cell lines | carboplatin	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.46853741496598644	False
+LUAD cell lines | carboplatin	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.48639455782312924	False
+LUAD cell lines | carboplatin	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.4200680272108843	False
+LUAD cell lines | carboplatin	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.504251700680272	False
+LUAD cell lines | carboplatin	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.49404761904761907	False
+LUAD cell lines | carboplatin	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.5340136054421768	False
+LUAD cell lines | carboplatin	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.5178571428571428	False
+LUAD cell lines | carboplatin	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.5034013605442177	False
+LUAD cell lines | carboplatin	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.4787414965986394	False
+LUAD cell lines | carboplatin	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.4421768707482993	False
+LUAD cell lines | carboplatin	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.4566326530612245	False
+LUAD cell lines | carboplatin	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.4931972789115646	False
+LUAD cell lines | carboplatin	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.5034013605442177	False
+LUAD cell lines | carboplatin	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.48554421768707484	False
+LUAD cell lines | carboplatin	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.457482993197279	False
+LUAD cell lines | carboplatin	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.48384353741496594	False
+LUAD cell lines | carboplatin	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.5790816326530611	False
+LUAD cell lines | carboplatin	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.4761904761904761	False
+LUAD cell lines | carboplatin	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.48384353741496594	False
+LUAD cell lines | carboplatin	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.4795918367346939	False
+LUAD cell lines | carboplatin	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.5178571428571428	False
+LUAD cell lines | carboplatin	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.49404761904761907	False
+LUAD cell lines | carboplatin	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.44472789115646255	False
+LUAD cell lines | carboplatin	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.4600340136054421	False
+LUAD cell lines | carboplatin	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.47704081632653056	False
+LUAD cell lines | carboplatin	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.4812925170068027	False
+LUAD cell lines | carboplatin	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.5799319727891157	True
+LUAD cell lines | carboplatin	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.5017006802721088	False
+LUAD cell lines | carboplatin	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.46853741496598644	False
+LUAD cell lines | carboplatin	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.46938775510204084	False
+BRCA PDX | paclitaxel	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.611111111111111	False
+BRCA PDX | paclitaxel	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.6243386243386243	False
+BRCA PDX | paclitaxel	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.6124338624338624	False
+BRCA PDX | paclitaxel	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.634920634920635	False
+BRCA PDX | paclitaxel	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.6243386243386243	False
+BRCA PDX | paclitaxel	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.5912698412698413	False
+BRCA PDX | paclitaxel	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.6362433862433864	False
+BRCA PDX | paclitaxel	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.6547619047619048	False
+BRCA PDX | paclitaxel	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.6071428571428572	False
+BRCA PDX | paclitaxel	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.6335978835978836	False
+BRCA PDX | paclitaxel	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.5873015873015873	False
+BRCA PDX | paclitaxel	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.5555555555555555	False
+BRCA PDX | paclitaxel	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.5727513227513228	False
+BRCA PDX | paclitaxel	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.6164021164021164	False
+BRCA PDX | paclitaxel	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.5687830687830688	False
+BRCA PDX | paclitaxel	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.626984126984127	False
+BRCA PDX | paclitaxel	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.6111111111111112	False
+BRCA PDX | paclitaxel	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.6190476190476192	False
+BRCA PDX | paclitaxel	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.6005291005291006	False
+BRCA PDX | paclitaxel	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.6177248677248678	False
+BRCA PDX | paclitaxel	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.6455026455026455	False
+BRCA PDX | paclitaxel	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.6547619047619048	False
+BRCA PDX | paclitaxel	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.6190476190476191	False
+BRCA PDX | paclitaxel	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.6455026455026455	False
+BRCA PDX | paclitaxel	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.6904761904761904	True
+BRCA PDX | paclitaxel	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.5826719576719578	False
+BRCA PDX | paclitaxel	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.6666666666666666	False
+BRCA PDX | paclitaxel	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.6375661375661376	False
+BRCA PDX | paclitaxel	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.6355820105820106	False
+BRCA PDX | paclitaxel	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.6752645502645502	False
+BRCA PDX | paclitaxel	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.5462962962962963	False
+BRCA PDX | paclitaxel	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.6481481481481483	False
+BRCA PDX | tamoxifen	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.6375661375661377	False
+BRCA PDX | tamoxifen	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.6203703703703703	False
+BRCA PDX | tamoxifen	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.671957671957672	False
+BRCA PDX | tamoxifen	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.6798941798941799	True
+BRCA PDX | tamoxifen	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.6455026455026455	False
+BRCA PDX | tamoxifen	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.6732804232804233	False
+BRCA PDX | tamoxifen	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.619047619047619	False
+BRCA PDX | tamoxifen	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.6653439153439155	False
+BRCA PDX | tamoxifen	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.6481481481481481	False
+BRCA PDX | tamoxifen	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.6005291005291006	False
+BRCA PDX | tamoxifen	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.6177248677248678	False
+BRCA PDX | tamoxifen	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.6044973544973545	False
+BRCA PDX | tamoxifen	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.6084656084656085	False
+BRCA PDX | tamoxifen	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.6150793650793651	False
+BRCA PDX | tamoxifen	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.619047619047619	False
+BRCA PDX | tamoxifen	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.6018518518518517	False
+BRCA PDX | tamoxifen	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.6626984126984127	False
+BRCA PDX | tamoxifen	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.6349206349206349	False
+BRCA PDX | tamoxifen	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.6468253968253969	False
+BRCA PDX | tamoxifen	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.6071428571428571	False
+BRCA PDX | tamoxifen	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.6190476190476191	False
+BRCA PDX | tamoxifen	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.6097883597883599	False
+BRCA PDX | tamoxifen	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.6269841269841271	False
+BRCA PDX | tamoxifen	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.6084656084656085	False
+BRCA PDX | tamoxifen	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.6349206349206349	False
+BRCA PDX | tamoxifen	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.6084656084656085	False
+BRCA PDX | tamoxifen	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.6732804232804233	False
+BRCA PDX | tamoxifen	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.6164021164021164	False
+BRCA PDX | tamoxifen	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.5952380952380953	False
+BRCA PDX | tamoxifen	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.5978835978835979	False
+BRCA PDX | tamoxifen	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.6468253968253969	False
+BRCA PDX | tamoxifen	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.6441798941798943	False
+PDAC PDX | gemcitabine	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.5555555555555555	False
+PDAC PDX | gemcitabine	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.5444444444444444	False
+PDAC PDX | gemcitabine	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.5	False
+PDAC PDX | gemcitabine	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.5888888888888889	False
+PDAC PDX | gemcitabine	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.6333333333333333	False
+PDAC PDX | gemcitabine	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.6333333333333334	False
+PDAC PDX | gemcitabine	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.5888888888888889	False
+PDAC PDX | gemcitabine	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.5666666666666668	False
+PDAC PDX | gemcitabine	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.5666666666666667	False
+PDAC PDX | gemcitabine	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.5888888888888889	False
+PDAC PDX | gemcitabine	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.6222222222222222	False
+PDAC PDX | gemcitabine	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.6055555555555555	False
+PDAC PDX | gemcitabine	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.6	False
+PDAC PDX | gemcitabine	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.6777777777777777	False
+PDAC PDX | gemcitabine	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.6111111111111112	False
+PDAC PDX | gemcitabine	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.6999999999999998	True
+PDAC PDX | gemcitabine	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.5777777777777778	False
+PDAC PDX | gemcitabine	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.5777777777777778	False
+PDAC PDX | gemcitabine	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.5777777777777778	False
+PDAC PDX | gemcitabine	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.6222222222222221	False
+PDAC PDX | gemcitabine	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.6222222222222222	False
+PDAC PDX | gemcitabine	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.6333333333333334	False
+PDAC PDX | gemcitabine	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.6	False
+PDAC PDX | gemcitabine	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.611111111111111	False
+PDAC PDX | gemcitabine	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.6444444444444445	False
+PDAC PDX | gemcitabine	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.6388888888888888	False
+PDAC PDX | gemcitabine	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.6944444444444445	False
+PDAC PDX | gemcitabine	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.5888888888888889	False
+PDAC PDX | gemcitabine	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.6277777777777778	False
+PDAC PDX | gemcitabine	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.6333333333333334	False
+PDAC PDX | gemcitabine	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.6611111111111111	False
+PDAC PDX | gemcitabine	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.6777777777777777	False
+melanoma PDX | dacarbazine	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.4022222222222222	False
+melanoma PDX | dacarbazine	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.41333333333333333	False
+melanoma PDX | dacarbazine	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.44222222222222224	False
+melanoma PDX | dacarbazine	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.4155555555555555	False
+melanoma PDX | dacarbazine	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.36000000000000004	False
+melanoma PDX | dacarbazine	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.38888888888888884	False
+melanoma PDX | dacarbazine	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.40222222222222226	False
+melanoma PDX | dacarbazine	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.41111111111111115	False
+melanoma PDX | dacarbazine	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.4533333333333333	False
+melanoma PDX | dacarbazine	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.3544444444444444	False
+melanoma PDX | dacarbazine	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.44	False
+melanoma PDX | dacarbazine	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.38888888888888884	False
+melanoma PDX | dacarbazine	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.44222222222222224	False
+melanoma PDX | dacarbazine	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.3244444444444444	False
+melanoma PDX | dacarbazine	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.41111111111111115	False
+melanoma PDX | dacarbazine	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.43555555555555553	False
+melanoma PDX | dacarbazine	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.39999999999999997	False
+melanoma PDX | dacarbazine	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.41111111111111115	False
+melanoma PDX | dacarbazine	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.5022222222222222	True
+melanoma PDX | dacarbazine	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.4533333333333333	False
+melanoma PDX | dacarbazine	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.4288888888888889	False
+melanoma PDX | dacarbazine	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.4000000000000001	False
+melanoma PDX | dacarbazine	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.38888888888888884	False
+melanoma PDX | dacarbazine	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.4155555555555556	False
+melanoma PDX | dacarbazine	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.43333333333333335	False
+melanoma PDX | dacarbazine	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.40444444444444444	False
+melanoma PDX | dacarbazine	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.34222222222222226	False
+melanoma PDX | dacarbazine	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.3888888888888889	False
+melanoma PDX | dacarbazine	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.42444444444444446	False
+melanoma PDX | dacarbazine	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.4022222222222222	False
+melanoma PDX | dacarbazine	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.3644444444444444	False
+melanoma PDX | dacarbazine	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.42444444444444446	False

@@ -4,6 +4,43 @@ Layout follows the paper's source data (MOESM3 sheet 'Figure 3f'): one row per h
 average_AUC = mean AUC over 3 stratified folds of the lab models (label = response above the median).
 The setting with the highest average AUC (bold) was used for the patient prediction.
 
+## COAD organoids (paper data) | fluorouracil (all 32 settings)
+
+| batch_size | nodes | lr | dropout | weight_decay | gamma | epochs | n_folds | margin | average_AUC |
+|---|---|---|---|---|---|---|---|---|---|
+| 8 | 32 | 0.01 | 0.3 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.361 |
+| 8 | 32 | 0.01 | 0.3 | 0.001 | 0.1 | 60 | 3 | 1.5 | 0.389 |
+| 8 | 32 | 0.01 | 0.3 | 0.001 | 0.5 | 60 | 3 | 0.5 | 0.333 |
+| 8 | 32 | 0.01 | 0.3 | 0.001 | 0.5 | 60 | 3 | 1.5 | 0.370 |
+| 8 | 32 | 0.01 | 0.6 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.333 |
+| 8 | 32 | 0.01 | 0.6 | 0.001 | 0.1 | 60 | 3 | 1.5 | 0.296 |
+| 8 | 32 | 0.01 | 0.6 | 0.001 | 0.5 | 60 | 3 | 0.5 | 0.361 |
+| 8 | 32 | 0.01 | 0.6 | 0.001 | 0.5 | 60 | 3 | 1.5 | 0.296 |
+| 8 | 32 | 0.05 | 0.3 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.278 |
+| 8 | 32 | 0.05 | 0.3 | 0.001 | 0.1 | 60 | 3 | 1.5 | 0.380 |
+| 8 | 32 | 0.05 | 0.3 | 0.001 | 0.5 | 60 | 3 | 0.5 | 0.227 |
+| 8 | 32 | 0.05 | 0.3 | 0.001 | 0.5 | 60 | 3 | 1.5 | 0.259 |
+| 8 | 32 | 0.05 | 0.6 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.398 |
+| 8 | 32 | 0.05 | 0.6 | 0.001 | 0.1 | 60 | 3 | 1.5 | 0.361 |
+| 8 | 32 | 0.05 | 0.6 | 0.001 | 0.5 | 60 | 3 | 0.5 | 0.333 |
+| 8 | 32 | 0.05 | 0.6 | 0.001 | 0.5 | 60 | 3 | 1.5 | 0.333 |
+| 8 | 128 | 0.01 | 0.3 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.287 |
+| 8 | 128 | 0.01 | 0.3 | 0.001 | 0.1 | 60 | 3 | 1.5 | 0.333 |
+| 8 | 128 | 0.01 | 0.3 | 0.001 | 0.5 | 60 | 3 | 0.5 | 0.398 |
+| 8 | 128 | 0.01 | 0.3 | 0.001 | 0.5 | 60 | 3 | 1.5 | 0.333 |
+| 8 | 128 | 0.01 | 0.6 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.296 |
+| 8 | 128 | 0.01 | 0.6 | 0.001 | 0.1 | 60 | 3 | 1.5 | 0.370 |
+| 8 | 128 | 0.01 | 0.6 | 0.001 | 0.5 | 60 | 3 | 0.5 | 0.296 |
+| 8 | 128 | 0.01 | 0.6 | 0.001 | 0.5 | 60 | 3 | 1.5 | 0.370 |
+| 8 | 128 | 0.05 | 0.3 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.222 |
+| 8 | 128 | 0.05 | 0.3 | 0.001 | 0.1 | 60 | 3 | 1.5 | 0.426 |
+| 8 | 128 | 0.05 | 0.3 | 0.001 | 0.5 | 60 | 3 | 0.5 | 0.380 |
+| **8** | **128** | **0.05** | **0.3** | **0.001** | **0.5** | **60** | **3** | **1.5** | **0.500** |
+| 8 | 128 | 0.05 | 0.6 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.259 |
+| 8 | 128 | 0.05 | 0.6 | 0.001 | 0.1 | 60 | 3 | 1.5 | 0.407 |
+| 8 | 128 | 0.05 | 0.6 | 0.001 | 0.5 | 60 | 3 | 0.5 | 0.407 |
+| 8 | 128 | 0.05 | 0.6 | 0.001 | 0.5 | 60 | 3 | 1.5 | 0.370 |
+
 ## BLCA organoids (paper data) | cisplatin (all 32 settings)
 
 | batch_size | nodes | lr | dropout | weight_decay | gamma | epochs | n_folds | margin | average_AUC |
@@ -45,4 +82,44 @@ The setting with the highest average AUC (bold) was used for the patient predict
 
 | pair | batch_size | nodes | lr | dropout | weight_decay | gamma | epochs | n_folds | margin | average_AUC |
 |---|---|---|---|---|---|---|---|---|---|---|
+| COAD organoids (paper data) | fluorouracil | 8 | 128 | 0.05 | 0.3 | 0.001 | 0.5 | 60 | 3 | 1.5 | 0.500 |
+| COAD organoids (paper data) | oxaliplatin | 8 | 32 | 0.05 | 0.6 | 0.001 | 0.5 | 60 | 3 | 1.5 | 0.833 |
+| COAD organoids (paper data) | irinotecan | 8 | 32 | 0.05 | 0.3 | 0.001 | 0.5 | 60 | 3 | 1.5 | 0.333 |
 | BLCA organoids (paper data) | cisplatin | 8 | 32 | 0.01 | 0.6 | 0.001 | 0.1 | 60 | 3 | 1.5 | 0.833 |
+| CRC organoids | fluorouracil | 8 | 32 | 0.01 | 0.3 | 0.001 | 0.5 | 60 | 3 | 0.5 | 0.657 |
+| CRC organoids | oxaliplatin | 8 | 32 | 0.05 | 0.3 | 0.001 | 0.5 | 60 | 3 | 1.5 | 0.713 |
+| CRC organoids | irinotecan | 8 | 32 | 0.05 | 0.3 | 0.001 | 0.5 | 60 | 3 | 0.5 | 0.296 |
+| CRC organoids | cetuximab | 8 | 32 | 0.05 | 0.3 | 0.001 | 0.5 | 60 | 3 | 0.5 | 0.639 |
+| CRC PDX (Isella) | cetuximab | 8 | 128 | 0.05 | 0.6 | 0.001 | 0.5 | 60 | 3 | 1.5 | 0.858 |
+| PAAD org. (Tiriac) | gemcitabine | 8 | 128 | 0.05 | 0.3 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.782 |
+| PAAD org. (Tiriac) | fluorouracil | 8 | 128 | 0.05 | 0.3 | 0.001 | 0.1 | 60 | 3 | 1.5 | 0.736 |
+| PAAD org. (Tiriac) | oxaliplatin | 8 | 32 | 0.05 | 0.3 | 0.001 | 0.5 | 60 | 3 | 1.5 | 0.769 |
+| PAAD org. (Shi) | gemcitabine | 8 | 32 | 0.01 | 0.6 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.413 |
+| PAAD org. (Shi) | fluorouracil | 8 | 32 | 0.05 | 0.6 | 0.001 | 0.5 | 60 | 3 | 1.5 | 0.794 |
+| PAAD org. (Shi) | oxaliplatin | 8 | 32 | 0.05 | 0.3 | 0.001 | 0.1 | 60 | 3 | 1.5 | 0.687 |
+| LIHC org. (Ji) | sorafenib | 8 | 128 | 0.05 | 0.6 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.631 |
+| BLCA organoids | cisplatin | 8 | 32 | 0.01 | 0.6 | 0.001 | 0.1 | 60 | 3 | 1.5 | 0.833 |
+| BLCA organoids | gemcitabine | 8 | 32 | 0.05 | 0.3 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.917 |
+| BLCA organoids | doxorubicin | 8 | 32 | 0.01 | 0.3 | 0.001 | 0.1 | 60 | 3 | 1.5 | 0.167 |
+| BLCA organoids | carboplatin | 8 | 32 | 0.01 | 0.6 | 0.001 | 0.1 | 60 | 3 | 1.5 | 0.833 |
+| OV organoids | carboplatin | 8 | 128 | 0.01 | 0.6 | 0.001 | 0.5 | 60 | 3 | 0.5 | 0.500 |
+| OV organoids | paclitaxel | 8 | 32 | 0.01 | 0.3 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.528 |
+| OV organoids | cisplatin | 8 | 128 | 0.01 | 0.6 | 0.001 | 0.5 | 60 | 3 | 0.5 | 0.500 |
+| OV organoids | doxorubicin | 8 | 32 | 0.01 | 0.3 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.556 |
+| OV organoids | gemcitabine | 8 | 128 | 0.05 | 0.3 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.403 |
+| OV organoids | docetaxel | 8 | 32 | 0.01 | 0.3 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.528 |
+| SARC organoids | gemcitabine | 8 | 32 | 0.01 | 0.6 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.611 |
+| SARC organoids | docetaxel | 8 | 32 | 0.01 | 0.6 | 0.001 | 0.1 | 60 | 3 | 1.5 | 0.278 |
+| LUAD cell lines | cisplatin | 8 | 128 | 0.05 | 0.6 | 0.001 | 0.1 | 60 | 3 | 1.5 | 0.663 |
+| LUAD cell lines | pemetrexed | 8 | 32 | 0.01 | 0.6 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.756 |
+| LUAD cell lines | paclitaxel | 8 | 32 | 0.05 | 0.3 | 0.001 | 0.5 | 60 | 3 | 0.5 | 0.565 |
+| LUAD cell lines | vinorelbine | 8 | 32 | 0.05 | 0.6 | 0.001 | 0.1 | 60 | 3 | 1.5 | 0.795 |
+| LUAD cell lines | gemcitabine | 8 | 128 | 0.01 | 0.6 | 0.001 | 0.5 | 60 | 3 | 1.5 | 0.802 |
+| LUAD cell lines | docetaxel | 8 | 32 | 0.01 | 0.3 | 0.001 | 0.1 | 60 | 3 | 1.5 | 0.709 |
+| LUAD cell lines | etoposide | 8 | 128 | 0.05 | 0.3 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.518 |
+| LUAD cell lines | erlotinib | 8 | 128 | 0.05 | 0.3 | 0.001 | 0.1 | 60 | 3 | 1.5 | 0.530 |
+| LUAD cell lines | carboplatin | 8 | 128 | 0.05 | 0.6 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.580 |
+| BRCA PDX | paclitaxel | 8 | 128 | 0.05 | 0.3 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.690 |
+| BRCA PDX | tamoxifen | 8 | 32 | 0.01 | 0.3 | 0.001 | 0.5 | 60 | 3 | 1.5 | 0.680 |
+| PDAC PDX | gemcitabine | 8 | 32 | 0.05 | 0.6 | 0.001 | 0.5 | 60 | 3 | 1.5 | 0.700 |
+| melanoma PDX | dacarbazine | 8 | 128 | 0.01 | 0.3 | 0.001 | 0.5 | 60 | 3 | 0.5 | 0.502 |

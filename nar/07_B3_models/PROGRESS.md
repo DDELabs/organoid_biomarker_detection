@@ -1,5 +1,4 @@
 # B3 progress
-Code complete in code/. Running (relaunch if dead; all steps resume/skip finished outputs):
-1. `cd code; python3 bench.py 0 1` (organoid benchmark, one pickle per pair in _data/bench/)
-2. chain: `python3 cells.py cv; python3 cells.py gcn; python3 cells.py lc; python3 bench.py 0 1 --reverse; python3 learning.py` (writes _data/chain2.done)
-Then: `python3 tables.py; python3 figures.py all; python3 suppfig7.py` (suppfig7 already done) and write REPORT.md.
+Done: bundles, centrality, cell-line CV (+GCN, learning curve), suppfig7.py, 41/45 bench pairs.
+Running (relaunch if dead; resume-safe): `cd code; python3 bench.py 0 1` and `python3 learning.py` (writes _data/learning.done).
+Then: `python3 tables.py; python3 figures.py all` and write REPORT.md.
