@@ -1,0 +1,31 @@
+# GSE25055 matrix files: ['GSE25055_series_matrix.txt.gz']
+## GSE25055_series_matrix.txt.gz
+title: Discovery cohort for genomic predictor of response and survival following neoadjuvant taxane-anthracycline chemotherapy in breast cancer
+platform: GPL96
+n_samples: 310
+  [!Sample_source_name_ch1] distinct=310 :: breast cancer, sample ISPY-1002(1) | breast cancer, sample ISPY-1005(1) | breast cancer, sample ISPY-1009(1) | breast cancer, sample ISPY-1011(1) | breast cancer, sample ISPY-1016(1) | breast cancer, sample ISPY-1019(1)
+  [sample id] distinct=310 :: 1002(1) | 1005(1) | 1009(1) | 1011(1) | 1016(1) | 1019(1)
+  [source] distinct=2 :: MDACC(227) | ISPY(83)
+  [age_years] distinct=113 :: 46.0(12) | 51.0(12) | 50.0(11) | 47.0(10) | 49.0(10) | 57.0(9)
+  [er_status_ihc] distinct=4 :: P(174) | N(131) | I(4) | NA(1)
+  [pr_status_ihc] distinct=4 :: N(162) | P(142) | I(5) | NA(1)
+  [her2_status] distinct=4 :: N(291) | NA(11) | I(4) | P(4)
+  [er_status_ihc_esr1_for indeterminate] distinct=2 :: P(176) | N(134)
+  [clinical_t_stage] distinct=5 :: T2(165) | T3(74) | T4(49) | T1(20) | T0(2)
+  [clinical_nodal_status] distinct=4 :: N1(153) | N0(87) | N2(39) | N3(31)
+  [clinical_ajcc_stage] distinct=7 :: IIB(92) | IIA(73) | IIIA(68) | IIIB(53) | IIIC(14) | I(6)
+  [grade] distinct=5 :: 3(151) | 2(117) | 1(19) | 4=Indeterminate(15) | NA(8)
+  [pathologic_response_pcr_rd] distinct=3 :: RD(249) | pCR(57) | NA(4)
+  [pathologic_response_rcb_class] distinct=4 :: RCB-II(136) | RCB-0/I(86) | RCB-III(79) | NA(9)
+  [drfs_1_event_0_censored] distinct=2 :: 0(244) | 1(66)
+  [drfs_even_time_years] distinct=291 :: 2.198(3) | 4.597(2) | 2.872(2) | 2.533(2) | 2.669(2) | 1.133(2)
+  [esr1_status] distinct=2 :: P(175) | N(135)
+  [erbb2_status] distinct=2 :: N(298) | P(12)
+  [set_class] distinct=3 :: SET-Low(261) | SET-Int(28) | SET-High(21)
+  [chemosensitivity_prediction] distinct=2 :: Rx Insensitive(197) | Rx Sensitive(113)
+  [ggi_class] distinct=2 :: High(209) | Low(101)
+  [pam50_class] distinct=5 :: Basal(122) | LumA(99) | LumB(44) | Normal(25) | Her2(20)
+  [dlda30_prediction] distinct=2 :: RD(188) | pCR(122)
+  [rcb_0_i_prediction] distinct=2 :: RCB-II/III(183) | RCB-0/I(127)
+  [tissue] distinct=1 :: breast cancer tumor(86)
+  [!Sample_characteristics_ch1] distinct=1 :: (224)

@@ -1,0 +1,11 @@
+# GSE150082 matrix files: ['GSE150082_series_matrix.txt.gz']
+## GSE150082_series_matrix.txt.gz
+title: Pre-existing tumoral B cell infiltration and impaired genome maintenance correlate with response to chemoradiotherapy in locally advanced rectal cancer (LARC)
+platform: GPL13497
+n_samples: 39
+  [!Sample_source_name_ch1] distinct=1 :: Rectal tumor pre-treatment biopsy(39)
+  [Sex] distinct=2 :: M(29) | F(10)
+  [tissue] distinct=1 :: rectal cancer(39)
+  [age] distinct=25 :: 66(4) | 61(3) | 64(3) | 74(2) | 45(2) | 57(2)
+  [ptrg] distinct=7 :: 2(15) | 1(8) | 0(5) | 3(5) | Unresectable(3) | Complete_clinical_response_nonOperative(2)
+  [response] distinct=2 :: Poor(23) | Good(16)

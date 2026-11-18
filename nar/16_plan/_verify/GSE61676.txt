@@ -1,0 +1,15 @@
+# GSE61676 matrix files: ['GSE61676_series_matrix.txt.gz']
+## GSE61676_series_matrix.txt.gz
+title: 24h-response to bevacizumab erlortinib in non-small cell lung cancer from blood-based exon array profiling
+platform: GPL5188
+n_samples: 86
+  [!Sample_source_name_ch1] distinct=1 :: Peripheral blood(86)
+  [overall survival time (months)] distinct=42 :: 5.224(4) | 3.581(2) | 4.994(2) | 11.14(2) | 13.4(2) | 32.86(2)
+  [overall survival event (0] distinct=2 :: alive, 1: dead): 1(68) | alive, 1: dead): 0(18)
+  [tissue] distinct=1 :: peripheral blood(86)
+  [upn] distinct=43 :: 002(2) | 023(2) | 038(2) | 049(2) | 051(2) | 055(2)
+  [age] distinct=23 :: 61(8) | 64(8) | 53(6) | 56(6) | 55(6) | 66(6)
+  [gender] distinct=2 :: F(48) | M(38)
+  [Stage] distinct=2 :: IV(78) | IIIB(8)
+  [time] distinct=2 :: Baseline(43) | 24h(43)
+  [responder] distinct=2 :: Responder(46) | Non-responder(40)

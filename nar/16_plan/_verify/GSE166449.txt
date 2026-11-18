@@ -1,0 +1,10 @@
+# GSE166449 matrix files: ['GSE166449_series_matrix.txt.gz']
+## GSE166449_series_matrix.txt.gz
+title: Synthetic lethality-mediated precision oncology via the tumor transcriptome
+platform: GPL11154
+n_samples: 22
+  [!Sample_source_name_ch1] distinct=1 :: Lung cancer(22)
+  [tissue] distinct=1 :: lung(22)
+  [treatment] distinct=1 :: pre-treatment(22)
+  [disease state] distinct=1 :: advanced stage(22)
+  [!Sample_description] distinct=22 :: SMC_IO_C001(1) | SMC_IO_C002(1) | SMC_IO_C003(1) | SMC_IO_C004(1) | SMC_IO_C005(1) | SMC_IO_C006(1)

@@ -1,0 +1,21 @@
+# GSE21974 matrix files: ['GSE21974_series_matrix.txt.gz']
+## GSE21974_series_matrix.txt.gz
+title: Molecular Subtype Predicts Response to Neoadjuvant Chemotherapy in Breast Cancer
+platform: GPL6480
+n_samples: 57
+  [!Sample_source_name_ch1] distinct=57 :: 1_before_R(1) | 1_after_R(1) | 2_before_R(1) | 2_after_R(1) | 3_before_NR(1) | 3_after_NR(1)
+  [patient no] distinct=32 :: 1(2) | 2(2) | 3(2) | 4(2) | 5(2) | 6(2)
+  [tissue] distinct=1 :: Breast cancer tissue(57)
+  [gender] distinct=1 :: female(57)
+  [before/after chemotherapy] distinct=2 :: before(32) | after(25)
+  [response] distinct=2 :: NR(39) | R(18)
+  [initial cm] distinct=18 :: 2.5(8) | 3(8) | 2.2(7) | 3.3(6) | 4(4) | 1.7(3)
+  [post cht cm] distinct=18 :: 0(13) | 0.6(6) | 0.7(4) | 0.4(4) | 1.4(3) | 1.7(3)
+  [sinn] distinct=4 :: 1(25) | 2(14) | 3(10) | 4(8)
+  [ypt] distinct=8 :: 1c(13) | 0(12) | 1b(9) | 1a(9) | 2(6) | is(4)
+  [ypn] distinct=7 :: 0(41) | 1a(7) | 2a(3) | 3(2) | 2(2) | x(1)
+  [grade] distinct=3 :: 3(28) | 2(27) | 1(2)
+  [er(%)] distinct=10 :: 0(24) | 50(8) | 90(6) | 80(5) | 60(5) | 15(2)
+  [pr(%)] distinct=12 :: 0(24) | 10(5) | 60(4) | 50(4) | 90(4) | 80(4)
+  [her2neu score] distinct=4 :: 1(24) | 0(18) | 3(13) | 2(2)
+  [!Sample_description] distinct=57 :: Gene expression of patient 1 before neoa(1) | Gene expression of patient 1 after neoad(1) | Gene expression of patient 2 before neoa(1) | Gene expression of patient 2 after neoad(1) | Gene expression of patient 3 before neoa(1) | Gene expression of patient 3 after neoad(1)

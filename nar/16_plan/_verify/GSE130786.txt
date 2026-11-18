@@ -1,0 +1,7 @@
+# GSE130786 matrix files: ['GSE130786_series_matrix.txt.gz']
+## GSE130786_series_matrix.txt.gz
+title: A Phase II Randomized Trial of Neoadjuvant Trastuzumab or Lapatinib or the Combination of Trastuzumab and Lapatinib, Followed by Docetaxel and Carboplatin with Trastuzumab and/or Lapatinib in Patients with HER2+ Breast Cancer [Baseline]
+platform: GPL6480
+n_samples: 110
+  [!Sample_source_name_ch1] distinct=1 :: BrTuRefMix(110)
+  [sample type] distinct=1 :: tumor reference mix(110)

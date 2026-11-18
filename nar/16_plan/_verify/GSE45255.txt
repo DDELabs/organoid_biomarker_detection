@@ -1,0 +1,25 @@
+# GSE45255 matrix files: ['GSE45255_series_matrix.txt.gz']
+## GSE45255_series_matrix.txt.gz
+title: Expression Profiles of Breast Tumors from Singapore and Europe
+platform: GPL96
+n_samples: 139
+  [!Sample_source_name_ch1] distinct=1 :: Breast tumor(139)
+  [ln status] distinct=2 :: LN-(94) | LN+(45)
+  [er status] distinct=3 :: ER+(89) | ER-(48) | NA(2)
+  [pgr status] distinct=3 :: PgR+(72) | PgR-(60) | NA(7)
+  [her2 status] distinct=3 :: He-(69) | He+(62) | NA(8)
+  [histological grade] distinct=4 :: G3(67) | G2(52) | G1(17) | NA(3)
+  [size (mm)] distinct=34 :: 20(17) | 25(14) | 30(13) | 35(13) | 40(11) | 15(9)
+  [patient age] distinct=45 :: 46(10) | 48(8) | 55(6) | 62(5) | 54(5) | 52(5)
+  [histology] distinct=8 :: invasive ductal carcinoma(85) | NA(44) | invasive lobular carcinoma(4) | medullary carcinoma(2) | invasive ductal and lobular carcinoma(1) | mucinous carcinoma(1)
+  [adjuvant treated? (0=no, 1=yes)] distinct=3 :: 1(121) | 0(10) | NA(8)
+  [characteristics] distinct=3 :: endocrine? (0=no, 1=yes): 1(77) | endocrine? (0=no, 1=yes): 0(54) | endocrine? (0=no, 1=yes): NA(8)
+  [chemo? (0=no, 1=yes)] distinct=3 :: 1(76) | 0(55) | NA(8)
+  [treatment type] distinct=31 :: tamoxifen(23) | Tamoxifen(20) | ACx4 cycles(18) | none(10) | CAF(9) | Tam+ACx4 cycles(8)
+  [dfs time] distinct=69 :: NA(45) | 5.83(4) | 5.58(4) | 4.00(4) | 5.88(3) | 4.67(3)
+  [dfs event (defined as any type of recurrence or death from breast cancer)] distinct=3 :: 0(73) | NA(44) | 1(22)
+  [dmfs time] distinct=107 :: 5.83(4) | 5.58(4) | 4.00(4) | 5.88(3) | NA(3) | 4.67(3)
+  [dmfs event (defined as distant metastasis or death from breast cancer)] distinct=3 :: 0(104) | 1(32) | NA(3)
+  [DSS time] distinct=105 :: NA(5) | 5.83(4) | 5.58(4) | 5.79(3) | 5.00(3) | 4.67(3)
+  [dss event (defined as death from breast cancer)] distinct=3 :: 0(116) | 1(18) | NA(5)
+  [!Sample_description] distinct=181 :: (202) | included in study population (n=1,954) o(136) | reanalysis of:(38) | not included in study population (n=1,95(3) | SIN_BT009(1) | SIN_BT014(1)

@@ -1,0 +1,13 @@
+# GSE76360 matrix files: ['GSE76360_series_matrix.txt.gz']
+## GSE76360_series_matrix.txt.gz
+title: 03-311 Trastzumab preoperative Trial of Early Stage HER2+ BRCA
+platform: GPL6947
+n_samples: 100
+  [!Sample_source_name_ch1] distinct=2 :: HER2+ Breast Cancer_baseline(50) | HER2+ Breast Cancer_post(50)
+  [subject id] distinct=50 :: 119(2) | 120(2) | 122(2) | 123(2) | 125(2) | 126(2)
+  [patient status] distinct=1 :: HER2+ Breast Cancer(100)
+  [timepoint] distinct=2 :: baseline(50) | post(50)
+  [response at surgery] distinct=4 :: OBJR(66) | pCR(18) | NOR(12) | NA(4)
+  [er status] distinct=2 :: Neg(56) | Pos(44)
+  [pr status] distinct=2 :: Neg(72) | Pos(28)
+  [!Sample_description] distinct=100 :: 4493594804_C(1) | 4493594804_D(1) | 4493594782_K(1) | 4493594782_L(1) | 4493594804_A(1) | 4493594804_B(1)

@@ -1,0 +1,18 @@
+# GSE41271 matrix files: ['GSE41271_series_matrix.txt.gz']
+## GSE41271_series_matrix.txt.gz
+title: Expression profiling of 275 lung cancer specimens
+platform: GPL6884
+n_samples: 275
+  [!Sample_source_name_ch1] distinct=1 :: Lung cancer specimen(275)
+  [histology] distinct=10 :: Adenocarcinoma(183) | Squamous(80) | LCC-NE(3) | Adenosquamous(2) | Sarcomatoid(2) | Sarcomatoid-Adenocarcinoma(1)
+  [gender] distinct=2 :: M(148) | F(127)
+  [race] distinct=4 :: Caucasian(244) | African American(16) | Hispanic(8) | Asian(7)
+  [tobacco history] distinct=2 :: Y(244) | N(28)
+  [final patient stage] distinct=8 :: IB(84) | IIIA(51) | IA(48) | IIB(39) | IIIB(35) | IIA(11)
+  [date of birth] distinct=269 :: 1925-12-07(2) | 1941-01-11(2) | 1946-12-24(2) | 1945-05-29(2) | 1927-08-24(2) | 1938-08-28(2)
+  [date of surgery] distinct=256 :: 2004-06-07(3) | 1999-10-06(2) | 2000-02-14(2) | 2000-04-04(2) | 2000-05-04(2) | 2003-10-30(2)
+  [vital statistics] distinct=2 :: A(151) | D(124)
+  [last follow-up survival] distinct=240 :: 2010-05-12(4) | 2010-04-14(3) | 2010-04-13(3) | 2010-04-22(3) | 2009-02-27(2) | 2010-02-22(2)
+  [recurrence] distinct=2 :: N(153) | Y(122)
+  [!Sample_characteristics_ch1] distinct=1 :: (6)
+  [last follow-up recurrence] distinct=247 :: 2010-04-14(3) | 2010-02-22(2) | 2001-02-15(2) | 2010-02-24(2) | 2010-02-03(2) | 2009-03-19(2)

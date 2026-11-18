@@ -1,0 +1,15 @@
+# GSE84437 matrix files: ['GSE84437_series_matrix.txt.gz']
+## GSE84437_series_matrix.txt.gz
+title: Molecular subtypes in gastric cancer.
+platform: GPL6947
+n_samples: 483
+  [!Sample_source_name_ch1] distinct=1 :: Human gastric cancer(483)
+  [tissue] distinct=1 :: gastric cancer(483)
+  [age] distinct=56 :: 68(26) | 63(20) | 61(19) | 64(19) | 65(16) | 66(16)
+  [!Sample_characteristics_ch1] distinct=1 :: (300)
+  [Sex] distinct=2 :: male(296) | female(137)
+  [ptstage] distinct=4 :: T4(292) | T3(92) | T2(38) | T1(11)
+  [pnstage] distinct=4 :: N1(188) | N2(132) | N0(80) | N3(33)
+  [death] distinct=2 :: 0(224) | 1(209)
+  [duration overall survival] distinct=138 :: 23(9) | 37(9) | 12(8) | 77(8) | 33(7) | 70(6)
+  [!Sample_description] distinct=407 :: SAMPLE 1(2) | SAMPLE 2(2) | SAMPLE 3(2) | SAMPLE 4(2) | SAMPLE 5(2) | SAMPLE 6(2)

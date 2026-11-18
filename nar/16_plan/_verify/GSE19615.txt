@@ -1,0 +1,24 @@
+# GSE19615 matrix files: ['GSE19615_series_matrix.txt.gz']
+## GSE19615_series_matrix.txt.gz
+title: Integrated genomic and function characterization of the 8q22 gain
+platform: GPL570
+n_samples: 115
+  [!Sample_source_name_ch1] distinct=1 :: tumor breast tissue(115)
+  [tissue] distinct=1 :: breast tumor tissue(115)
+  [tumor recurrence (36mo)] distinct=2 :: no(100) | yes(15)
+  [patientid] distinct=115 :: 292(1) | 310(1) | 316(1) | 325(1) | 330(1) | 343(1)
+  [age] distinct=39 :: 45(9) | 46(8) | 58(7) | 53(6) | 49(6) | 54(6)
+  [histology type] distinct=3 :: Ductal(89) | Lobular(14) | Mixed(12)
+  [grade (modified, bloom, richardson)] distinct=3 :: III(64) | II(28) | I(23)
+  [er] distinct=3 :: pos(66) | neg(45) | pos-low(4)
+  [pr] distinct=3 :: pos(52) | neg(51) | pos-low(12)
+  [her.2] distinct=3 :: neg(79) | pos (3+)(30) | low pos (2+)(6)
+  [tumor size (cm)] distinct=32 :: 2.5(12) | 1.1(9) | 2.3(7) | 3(7) | 1.5(7) | 2.1(6)
+  [lymph nodes] distinct=3 :: negative(62) | positive(51) | pos.micromet(2)
+  [adjuvant chemotherapy] distinct=12 :: AC x 4(39) | none(28) | AC-taxol(25) | Unknown(6) | CMF(4) | AC-taxol/Herceptin(3)
+  [chemo class] distinct=5 :: Anthracycline-based(74) | none(28) | Unknown(6) | Other(4) | Trastuzumab(3)
+  [hormonal rx] distinct=4 :: Tam(62) | none(47) | unknown(4) | Arimidex(2)
+  [time of followup (mo)] distinct=41 :: NA(14) | 81(6) | 83(6) | 53(5) | 71(5) | 54(4)
+  [distant recurrence free survival (mo)] distinct=13 :: NA(101) | 18(3) | 24(1) | 9(1) | 16(1) | 27(1)
+  [distant recur (yn)] distinct=2 :: N(101) | Y(14)
+  [!Sample_description] distinct=1 :: affymetrix u133plus expression for tumor(115)

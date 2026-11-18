@@ -1,0 +1,22 @@
+# GSE13213 matrix files: ['GSE13213_series_matrix.txt.gz']
+## GSE13213_series_matrix.txt.gz
+title: Relapse-related molecular signature in lung adenocarcinomas identifies patients with dismal prognosis
+platform: GPL6480
+n_samples: 117
+  [!Sample_source_name_ch1] distinct=1 :: Primary lung tumor(117)
+  [Annotation] distinct=117 :: AD001(1) | AD002(1) | AD003(1) | AD004(1) | AD005(1) | AD006(1)
+  [Cohort] distinct=2 :: dataset I(87) | dataset II(30)
+  [Age] distinct=37 :: 60(9) | 61(8) | 67(6) | 62(6) | 49(5) | 66(5)
+  [Sex] distinct=2 :: M(60) | F(57)
+  [Histology] distinct=1 :: AD(117)
+  [Smoking (BI)] distinct=48 :: 0(56) | 800(4) | 900(4) | 400(3) | 1020(2) | 120(2)
+  [TNM (Pathological)] distinct=11 :: T1N0M0(42) | T2N0M0(37) | T2N2M0(10) | T1N2M0(8) | T3N0M0(6) | T1N1M0(4)
+  [Stage (Pathological )] distinct=6 :: IA(42) | IB(37) | IIIA(20) | IIB(9) | IIIB(5) | IIA(4)
+  [Status] distinct=2 :: Alive(68) | Dead(49)
+  [Survival (days)] distinct=115 :: 3245(2) | 2702(2) | 1326(1) | 3275(1) | 1687(1) | 3214(1)
+  [Evidence of relapse] distinct=3 :: Y(58) | N(58) | Unknown(1)
+  [Site of relapse] distinct=15 :: (61) | PM(22) | Brain(8) | Bone(6) | Local rec.(5) | LN (neck)(4)
+  [EGFR status] distinct=2 :: Wt(72) | Mut(45)
+  [K-ras Status] distinct=2 :: Wt(102) | Mut(15)
+  [p53 Status] distinct=3 :: Wt(78) | Mut(38) | N/A(1)
+  [!Sample_description] distinct=2 :: dataset I(87) | dataset II(30)

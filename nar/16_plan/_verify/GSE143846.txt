@@ -1,0 +1,10 @@
+# GSE143846 matrix files: ['GSE143846_series_matrix.txt.gz']
+## GSE143846_series_matrix.txt.gz
+title: Stromal cell signature associated with response to neoadjuvant chemotherapy in locally advanced breast cancer
+platform: GPL14550
+n_samples: 44
+  [!Sample_source_name_ch1] distinct=2 :: Stromal cell from Tissue, Breast Cancer_(43) | Stromal cell from Tissue Breast Cancer_N(1)
+  [gender] distinct=1 :: female(44)
+  [age] distinct=2 :: >40(27) | ≤40(17)
+  [histologic_type] distinct=5 :: Ductal(38) | Lobular(3) | D/L(1) | D/oth(1) | D/IS(1)
+  [tumor_subtype] distinct=6 :: Luminal B(23) | Triple negative(8) | Luminal A(7) | HER2(4) | Luminal(1) | triple negative(1)

@@ -1,0 +1,17 @@
+# GSE111177 matrix files: ['GSE111177_series_matrix.txt.gz']
+## GSE111177_series_matrix.txt.gz
+title: Identification of Transcription Factor Relationships Associated with Androgen Deprivation Therapy Response and Metastatic Progression in Prostate Cancer
+platform: GPL16791
+n_samples: 48
+  [!Sample_source_name_ch1] distinct=1 :: Prostate Tumor Tissue(48)
+  [sample type] distinct=3 :: Biopsy(21) | Radical Prostatectomy(20) | TURP(7)
+  [treatment] distinct=2 :: post-ADT(24) | pre-ADT(24)
+  [age at diagnosis (years)] distinct=14 :: 63(8) | 66(6) | 68(4) | 59(4) | 67(4) | 57(4)
+  [race] distinct=1 :: white(48)
+  [psa at time of diagnosis] distinct=23 :: ng/ml, unknown = 999: 21(4) | ng/ml, unknown = 999: 23(2) | ng/ml, unknown = 999: 15.61(2) | ng/ml, unknown = 999: 29.13(2) | ng/ml, unknown = 999: 5.51(2) | ng/ml, unknown = 999: 5.4(2)
+  [primary gleason grade] distinct=6 :: 3, 4, 5,  unknown=999, n/a=888: 3(32) | 3, 4, 5,  unknown=999, n/a=888: 2(6) | 3, 4, 5,  unknown=999, n/a=888: 888(4) | 3, 4, 5,  unknown=999, n/a=888: 4(2) | 3, 4, 5,  unknown=999, n/a=888: 5(2) | 3, 4, 5,  unknown=999, n/a=888: 9(2)
+  [secondary gleason grade] distinct=6 :: 3, 4, 5,  unknown=999, n/a=888: 4(16) | 3, 4, 5,  unknown=999, n/a=888: 3(14) | 3, 4, 5,  unknown=999, n/a=888: 5(6) | 3, 4, 5,  unknown=999, n/a=888: 2(6) | 3, 4, 5,  unknown=999, n/a=888: 888(4) | 3, 4, 5,  unknown=999, n/a=888: 9(2)
+  [neoadjuvant adt duration] distinct=8 :: months,  none=0, unknown=999, na=888: 3(14) | months,  none=0, unknown=999, na=888: 8(10) | months,  none=0, unknown=999, na=888: 2(6) | months,  none=0, unknown=999, na=888: 1(6) | months,  none=0, unknown=999, na=888: 6(4) | months,  none=0, unknown=999, na=888: 88(4)
+  [recurrence] distinct=1 :: none=0, biochemical=1, local=2, distal =(48)
+  [metastasis] distinct=2 :: no=0, yes=1: 0(30) | no=0, yes=1: 1(18)
+  [!Sample_description] distinct=1 :: Movreadcounts.csv(48)

@@ -1,0 +1,16 @@
+# GSE58812 matrix files: ['GSE58812_series_matrix.txt.gz']
+## GSE58812_series_matrix.txt.gz
+title: Gene-expression molecular subtyping of triple-negative breast cancer tumours: importance of immune response
+platform: GPL570
+n_samples: 107
+  [!Sample_source_name_ch1] distinct=1 :: Breast tumor biospsie(107)
+  [diagnosis] distinct=1 :: triple negative breast cancer(107)
+  [age at diag] distinct=107 :: 72.79124(1) | 66.26421(1) | 67.75633(1) | 49.54963(1) | 84.63245(1) | 36.98015(1)
+  [meta] distinct=2 :: 0(76) | 1(31)
+  [mfs (days)] distinct=105 :: 2009(2) | 783(2) | 1184(1) | 984(1) | 877(1) | 905(1)
+  [death] distinct=2 :: 0(78) | 1(29)
+  [os (days)] distinct=105 :: 1430(2) | 1632(2) | 1520(1) | 1281(1) | 1066(1) | 1050(1)
+  [er-ihc] distinct=1 :: 0(107)
+  [pr-ihc] distinct=1 :: 0(107)
+  [her2-ihc] distinct=1 :: 0(107)
+  [!Sample_description] distinct=1 :: Triple-negative breast cancer tumours(107)

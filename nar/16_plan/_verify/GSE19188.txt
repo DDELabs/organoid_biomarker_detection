@@ -1,0 +1,12 @@
+# GSE19188 matrix files: ['GSE19188_series_matrix.txt.gz']
+## GSE19188_series_matrix.txt.gz
+title: Expression data for early stage NSCLC
+platform: GPL570
+n_samples: 156
+  [!Sample_source_name_ch1] distinct=1 :: frozen tissue(156)
+  [tissue type] distinct=2 :: tumor(91) | healthy(65)
+  [cell type] distinct=4 :: healthy(65) | ADC(45) | SCC(27) | LCC(19)
+  [overall survival] distinct=81 :: Not available(74) | 20.37(2) | 110.8(2) | 12.5(1) | 127(1) | 12.57(1)
+  [status] distinct=3 :: Not available(74) | deceased(50) | alive(32)
+  [gender] distinct=3 :: M(100) | F(34) | Not available(22)
+  [!Sample_description] distinct=2 :: Gene expression data from primary NSCLC(91) | Gene expression data from normal lung(65)

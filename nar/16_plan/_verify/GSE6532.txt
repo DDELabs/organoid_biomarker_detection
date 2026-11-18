@@ -1,0 +1,63 @@
+# GSE6532 matrix files: ['GSE6532-GPL570_series_matrix.txt.gz', 'GSE6532-GPL96_series_matrix.txt.gz', 'GSE6532-GPL97_series_matrix.txt.gz']
+## GSE6532-GPL570_series_matrix.txt.gz
+title: Definition of clinically distinct molecular subtypes in estrogen receptor positive breast carcinomas using genomic grade
+platform: GPL570
+n_samples: 87
+  [!Sample_source_name_ch1] distinct=1 :: breast(87)
+  [samplename] distinct=87 :: GUYT_50102(1) | GUYT_50105(1) | GUYT_50106(1) | GUYT_50107(1) | GUYT_50108(1) | GUYT_50109(1)
+  [ID] distinct=87 :: 50102(1) | 50105(1) | 50106(1) | 50107(1) | 50108(1) | 50109(1)
+  [series] distinct=1 :: GUYT(87)
+  [age] distinct=34 :: 67(7) | 61(7) | 58(6) | 53(5) | 59(5) | 62(5)
+  [grade] distinct=4 :: 2(37) | NA(17) | 1(17) | 3(16)
+  [size] distinct=26 :: 2.00(13) | 3.00(12) | 1.50(12) | 2.50(11) | 1.30(4) | 4.00(4)
+  [er] distinct=1 :: 1(87)
+  [pgr] distinct=3 :: 1(64) | 0(21) | NA(2)
+  [node] distinct=2 :: 1(58) | 0(29)
+  [t.rfs] distinct=84 :: 5189(3) | 2622(2) | 3821(1) | 3023(1) | 6037(1) | 4370(1)
+  [e.rfs] distinct=2 :: 0(59) | 1(28)
+  [t.dmfs] distinct=84 :: 5189(3) | 2622(2) | 3821(1) | 3023(1) | 6037(1) | 4370(1)
+  [e.dmfs] distinct=2 :: 0(59) | 1(28)
+  [!Sample_description] distinct=1 :: Tumor samples from tamoxifen treated pri(87)
+## GSE6532-GPL96_series_matrix.txt.gz
+title: Definition of clinically distinct molecular subtypes in estrogen receptor positive breast carcinomas using genomic grade
+platform: GPL570
+n_samples: 327
+  [!Sample_source_name_ch1] distinct=1 :: breast(327)
+  [sample name] distinct=189 :: KIT_82A83(1) | KIT_6B85(1) | KIT_8B87(1) | KIT_289C75(1) | KIT_39C24(1) | KIT_104B91(1)
+  [samplename] distinct=138 :: OXFU_23(1) | OXFU_337(1) | OXFU_359(1) | OXFU_446(1) | OXFU_471(1) | OXFU_485(1)
+  [grade] distinct=5 :: 2(143) | 1(68) | 3(64) | NA(35) | ?(17)
+  [node] distinct=3 :: 0(193) | 1(55) | NA(15)
+  [ID] distinct=138 :: 23(1) | 337(1) | 359(1) | 446(1) | 471(1) | 485(1)
+  [ggi] distinct=189 :: 0.621223(1) | 0.510982(1) | -2.23099(1) | -1.6602(1) | -1.22899(1) | 0.712751(1)
+  [size] distinct=69 :: 2(14) | 3.000(12) | 1(11) | NA(11) | 2.200(9) | 1.3(8)
+  [series] distinct=4 :: OXFT(69) | KIT(57) | OXFU(8) | KIU(4)
+  [!Sample_characteristics_ch1] distinct=1 :: (1140)
+  [age] distinct=56 :: 61(16) | NA(11) | 71(10) | 64(9) | 69(9) | 63(8)
+  [er] distinct=4 :: 1(200) | 0(45) | NA(12) | ?(6)
+  [time rfs] distinct=116 :: 2280(2) | 2675(2) | 3648(2) | 3162(2) | 2158(2) | 2189(2)
+  [pgr] distinct=3 :: NA(90) | 1(46) | 0(2)
+  [distant rfs] distinct=2 :: 0(76) | 1(49)
+  [t.rfs] distinct=116 :: NA(11) | 336(3) | 1613(3) | 3588(3) | 2920(2) | 3679(2)
+  [e.rfs] distinct=3 :: 0(75) | 1(44) | NA(19)
+  [t.dmfs] distinct=117 :: NA(11) | 1612(3) | 3589(3) | 2920(2) | 3680(2) | 2373(2)
+  [e.dmfs] distinct=3 :: 0(86) | 1(28) | NA(24)
+  [!Sample_description] distinct=3 :: Tumor samples from untreated primary bre(137) | Tumor samples from tamoxifen treated pri(126) | Tumor samples from Tamoxifen-only treate(64)
+## GSE6532-GPL97_series_matrix.txt.gz
+title: Definition of clinically distinct molecular subtypes in estrogen receptor positive breast carcinomas using genomic grade
+platform: GPL570
+n_samples: 327
+  [!Sample_source_name_ch1] distinct=1 :: breast(327)
+  [samplename] distinct=327 :: OXFU_104(1) | OXFU_1065(1) | OXFU_1183(1) | OXFU_1210(1) | OXFU_1248(1) | OXFU_126(1)
+  [ID] distinct=327 :: 104(1) | 1065(1) | 1183(1) | 1210(1) | 1248(1) | 126(1)
+  [series] distinct=4 :: OXFT(109) | KIT(81) | OXFU(69) | KIU(68)
+  [age] distinct=55 :: 61(18) | 57(14) | NA(13) | 71(12) | 69(12) | 64(11)
+  [grade] distinct=4 :: 2(145) | 1(65) | 3(60) | NA(57)
+  [size] distinct=75 :: 2.0(14) | 2.000(14) | 1.0(13) | NA(13) | 3.000(13) | 2.200(11)
+  [er] distinct=3 :: 1(262) | 0(45) | NA(20)
+  [pgr] distinct=3 :: NA(195) | 1(121) | 0(11)
+  [node] distinct=3 :: 0(221) | 1(85) | NA(21)
+  [t.rfs] distinct=273 :: NA(13) | 182(3) | 942(3) | 336(3) | 1613(3) | 3468(3)
+  [e.rfs] distinct=3 :: 0(195) | 1(111) | NA(21)
+  [t.dmfs] distinct=273 :: NA(13) | 882(3) | 61(3) | 213(3) | 2373(3) | 1612(3)
+  [e.dmfs] distinct=3 :: 0(225) | 1(68) | NA(34)
+  [!Sample_description] distinct=2 :: Tumor samples from tamoxifen treated pri(190) | Tumor samples from untreated primary bre(137)

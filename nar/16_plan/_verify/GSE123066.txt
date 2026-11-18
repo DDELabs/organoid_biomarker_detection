@@ -1,0 +1,9 @@
+# GSE123066 matrix files: ['GSE123066_series_matrix.txt.gz']
+## GSE123066_series_matrix.txt.gz
+title: Transcriptomic analysis of gefitinib-resistant EGFR-mutant NSCLC cells
+platform: GPL10904
+n_samples: 9
+  [!Sample_source_name_ch1] distinct=1 :: HCC4006 cell line(9)
+  [cell line] distinct=1 :: HCC4006(9)
+  [treatment] distinct=3 :: parental(3) | Gefitinib resistant (6 months)(3) | Gefitinib resistant, TGFBR inhibitor tre(3)
+  [!Sample_description] distinct=3 :: replicate 1(3) | replicate 2(3) | replicate 3(3)

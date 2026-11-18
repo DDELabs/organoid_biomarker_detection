@@ -1,0 +1,12 @@
+# GSE28796 matrix files: ['GSE28796_series_matrix.txt.gz']
+## GSE28796_series_matrix.txt.gz
+title: Gene expression profiles of pretreatment biopsies from dose-dense-docetaxel-treated breast cancers
+platform: GPL570
+n_samples: 24
+  [!Sample_source_name_ch1] distinct=2 :: breast needle biopsy, pretreatment, non-(22) | breast needle biopsy, pretreatment, pCR(2)
+  [tissue] distinct=1 :: breast tumor biopsy(24)
+  [treatment] distinct=1 :: pre-dose-dense docetaxel(24)
+  [pathological complete response] distinct=2 :: no(22) | yes(2)
+  [sample] distinct=12 :: 1(2) | 2(2) | 3(2) | 4(2) | 5(2) | 6(2)
+  [replicate] distinct=2 :: 1(12) | 2(12)
+  [!Sample_description] distinct=25 :: Gene expression data from pretreatment b(24) | 6807-A- 589JP35(1) | 6807-B- 589JP53(1) | 6811-A- 589JP40(1) | 6811-B- 589JP41(1) | 6812-A- 589JP42(1)

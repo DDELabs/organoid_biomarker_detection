@@ -1,0 +1,12 @@
+# GSE38832 matrix files: ['GSE38832_series_matrix.txt.gz']
+## GSE38832_series_matrix.txt.gz
+title: NFAT transcriptional activity is associated with metastatic capacity in colon cancer
+platform: GPL570
+n_samples: 122
+  [!Sample_source_name_ch1] distinct=3 :: Vanderbilt University Medical Center(104) | University of Alabama at Birmingham(14) | Nashville Veterans Affairs Medical Cente(4)
+  [ajcc_stage] distinct=4 :: 3(39) | 2(35) | 4(30) | 1(18)
+  [dfs_event (disease free survival)] distinct=3 :: 0 (no recurrence)(83) | NA(30) | 1 (cancer recurrence)(9)
+  [dfs_time (disease free survival time, months)] distinct=91 :: NA(30) | 95.03(2) | 11.43(2) | 0.43(1) | 84.43(1) | 43.83(1)
+  [dss_event (disease specific survival)] distinct=2 :: 0 (no death)(94) | 1 (death from cancer)(28)
+  [dss_time (disease specific survival time, months)] distinct=118 :: 3.57(2) | 95.03(2) | 11.43(2) | 30.8(2) | 1.57(1) | 17.6(1)
+  [!Sample_description] distinct=122 :: 197RDB0002(1) | 197RDB0003(1) | 197RDB0004(1) | 197RDB0005(1) | 197RDB0006(1) | 197RDB0007(1)

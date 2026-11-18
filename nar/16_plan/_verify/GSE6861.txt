@@ -1,0 +1,8 @@
+# GSE6861 matrix files: ['GSE6861_series_matrix.txt.gz']
+## GSE6861_series_matrix.txt.gz
+title: Prediction of breast cancer pathological complete response to anthracycline/taxane chemotherapy.
+platform: GPL1352
+n_samples: 161
+  [!Sample_source_name_ch1] distinct=1 :: Human Breast Tumor(161)
+  [!Sample_characteristics_ch1] distinct=2 :: npCR - no pathological complete response(95) | pCR - pathological complete response(66)
+  [!Sample_description] distinct=1 :: Series of 161 tumours(161)

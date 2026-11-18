@@ -1,0 +1,11 @@
+# GSE55374 matrix files: ['GSE55374_series_matrix.txt.gz']
+## GSE55374_series_matrix.txt.gz
+title: Molecular changes in lobular breast cancers in response to endocrine therapy
+platform: GPL10558
+n_samples: 36
+  [!Sample_source_name_ch1] distinct=6 :: Pre.ILC(7) | 3m.ILC(7) | Pre.IDC(6) | 2w.IDC(6) | 3m.IDC(6) | 2w.ILC(4)
+  [subject] distinct=13 :: patient 299(3) | patient 309(3) | patient 343(3) | patient 374(3) | patient 200(3) | patient 209(3)
+  [tissue] distinct=2 :: breat tumor ILC(18) | breat tumor IDC(18)
+  [treatment] distinct=3 :: pre-treatment(13) | 3 mo endocrine therapy(13) | 2 wk endocrine therapy(10)
+  [gender] distinct=1 :: Female(36)
+  [clinical response] distinct=1 :: Responder(36)

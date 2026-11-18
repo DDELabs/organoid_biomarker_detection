@@ -1,0 +1,12 @@
+# GSE13876 matrix files: ['GSE13876_series_matrix.txt.gz']
+## GSE13876_series_matrix.txt.gz
+title: Survival Related Profile, Pathways and Transcription Factors in Ovarian Cancer
+platform: GPL7759
+n_samples: 415
+  [!Sample_source_name_ch1] distinct=1 :: Advanced stage serous ovarian cancer(415)
+  [assigned unique patient id] distinct=157 :: 8(6) | 26(6) | 91(6) | 9(5) | 85(5) | 115(5)
+  [status] distinct=2 :: 1(302) | 0(113)
+  [fumnd] distinct=72 :: 12(24) | 13(19) | 16(19) | 9(15) | 14(13) | 11(13)
+  [age] distinct=49 :: 71(26) | 66(26) | 42(21) | 61(20) | 48(18) | 65(18)
+  [sample nr] distinct=177 :: 336(5) | 384(4) | 343(4) | 193(4) | 217(4) | 199(4)
+  [!Sample_description] distinct=2 :: Channel 1 in raw data file ; Characteris(211) | Channel 2 in raw data file ; Characteris(204)

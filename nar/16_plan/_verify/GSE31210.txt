@@ -1,0 +1,27 @@
+# GSE31210 matrix files: ['GSE31210_series_matrix.txt.gz']
+## GSE31210_series_matrix.txt.gz
+title: Gene expression data for pathological stage I-II lung adenocarcinomas
+platform: GPL570
+n_samples: 246
+  [!Sample_source_name_ch1] distinct=17 :: frozen tissue of primary lung tumors(226) | Frozen normal lung tissue(5) | Frozen normal lung tissue for KH007(1) | Frozen normal lung tissue for KH009(1) | Frozen normal lung tissue for KH017(1) | Frozen normal lung tissue for KH039(1)
+  [tissue] distinct=2 :: primary lung tumor(226) | normal lung(20)
+  [age (years)] distinct=35 :: 64(20) | 61(15) | 68(14) | 66(14) | 62(14) | 60(12)
+  [age] distinct=5 :: 54(1) | 89(1) | 75(1) | 70(1) | 74(1)
+  [gender] distinct=2 :: female(130) | male(116)
+  [smoking status] distinct=2 :: Never-smoker(123) | Ever-smoker(123)
+  [bi] distinct=72 :: 0(116) | 820(5) | 800(5) | 840(4) | 880(3) | 1200(3)
+  [!Sample_characteristics_ch1] distinct=1 :: (600)
+  [pathological stage] distinct=3 :: IA(114) | II(58) | IB(54)
+  [pstage iorii] distinct=2 :: I(168) | II(58)
+  [gene alteration status] distinct=4 :: EGFR mutation +(127) | EGFR/KRAS/ALK -(68) | KRAS mutation +(20) | ALK-fusion +(11)
+  [myc] distinct=3 :: Low(207) | High(17) | nd(2)
+  [myc_copy] distinct=173 :: 1.09(5) | 1.005(4) | 1.148(3) | 0.988(3) | 1.075(3) | 1.009(3)
+  [cluster] distinct=2 :: Cluster1(47) | Cluster2(32)
+  [relapse] distinct=2 :: not relapsed(162) | relapsed(64)
+  [days before relapse/censor] distinct=213 :: 1856(4) | 538(2) | 1475(2) | 253(2) | 1859(2) | 1941(2)
+  [group] distinct=2 :: GroupA(36) | GroupB(32)
+  [months before relapse/censor] distinct=272 :: 61.8666666666667(8) | 49.1666666666667(4) | 61.9666666666667(4) | 64.7(4) | 41.0333333333333(4) | 66.6(4)
+  [death] distinct=2 :: alive(191) | dead(35)
+  [days before death/censor] distinct=210 :: 1856(4) | 1841(2) | 1475(2) | 1317(2) | 1482(2) | 1042(2)
+  [exclude for prognosis analysis due to incomplete resection or adjuvant therapy] distinct=2 :: none(204) | exclude(22)
+  [!Sample_description] distinct=2 :: Gene expression data from primary lung A(226) | Gene expression data from normal lung.(20)

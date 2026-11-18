@@ -1,0 +1,27 @@
+# GSE115821 matrix files: ['GSE115821-GPL11154_series_matrix.txt.gz', 'GSE115821-GPL18573_series_matrix.txt.gz']
+## GSE115821-GPL11154_series_matrix.txt.gz
+title: Robust prediction of response to immune checkpoint blockade therapy in metastatic melanoma
+platform: GPL18573
+n_samples: 23
+  [!Sample_source_name_ch1] distinct=1 :: metastatic melanoma(23)
+  [treatment state] distinct=3 :: On Immune Checkpoint Blockade Therapy(15) | PRE Immune Checkpoint Blockade Therapy(6) | PRE Immune Checkpoint Blockade Therapy ((2)
+  [timepoint] distinct=12 :: 0(5) | 21(5) | 73(3) | 38(2) | -6(1) | 22(1)
+  [antibody] distinct=3 :: anti-PD-1(17) | anti-CTLA-4(4) | anti-PD-1+anti-CTLA-4(2)
+  [response] distinct=2 :: NR(21) | R(2)
+  [age at the baseline] distinct=6 :: 46(7) | 72(7) | 84(3) | 67(2) | 48(2) | 28(2)
+  [batch] distinct=3 :: 3(13) | 2(6) | 4(4)
+  [tumor type] distinct=1 :: metastatic melanoma(23)
+  [patient id] distinct=6 :: MGH Patient 39(7) | MGH Patient 42(7) | MGH Patient 208(3) | MGH Patient 115(2) | MGH Patient 272(2) | MGH Patient 422(2)
+## GSE115821-GPL18573_series_matrix.txt.gz
+title: Robust prediction of response to immune checkpoint blockade therapy in metastatic melanoma
+platform: GPL18573
+n_samples: 14
+  [!Sample_source_name_ch1] distinct=1 :: metastatic melanoma(14)
+  [treatment state] distinct=3 :: On Immune Checkpoint Blockade Therapy(8) | PRE Immune Checkpoint Blockade Therapy(5) | PRE Immune Checkpoint Blockade Therapy ((1)
+  [timepoint] distinct=11 :: 0(4) | 42(1) | 63(1) | 88(1) | -1(1) | 21(1)
+  [antibody] distinct=3 :: anti-PD-1(10) | anti-CTLA-4(2) | anti-PD-1+anti-CTLA-4(2)
+  [response] distinct=2 :: NR(13) | R(1)
+  [age at the baseline] distinct=6 :: 84(4) | 46(3) | 72(3) | 77(2) | 81(1) | 76(1)
+  [batch] distinct=1 :: 1(14)
+  [tumor type] distinct=1 :: metastatic melanoma(14)
+  [patient id] distinct=5 :: MGH Patient 208(4) | MGH Patient 39(3) | MGH Patient 42(3) | MGH Patient 62(3) | MGH Patient 148(1)

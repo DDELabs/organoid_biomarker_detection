@@ -1,0 +1,15 @@
+# GSE34138 matrix files: ['GSE34138_series_matrix.txt.gz']
+## GSE34138_series_matrix.txt.gz
+title: SERPINA6, BEX1, AGTR1, SLC26A3, and LAPTM4B are markers of resistance to neoadjuvant chemotherapy in HER2-negative breast cancer
+platform: GPL6884
+n_samples: 178
+  [!Sample_source_name_ch1] distinct=1 :: 14G core needle breast tumor biopsy(178)
+  [response breast] distinct=3 :: PR+NR(119) | pCR+npCR mamma(58) | NA(1)
+  [response] distinct=5 :: NOCR(137) | CR(28) | CR+kl(10) | PD(2) | NE(1)
+  [ihc er percentage] distinct=12 :: 100(97) | 0(57) | 90(8) | 80(4) | 30(2) | 60(2)
+  [ihc pr percentage] distinct=19 :: 0(86) | 100(31) | 50(12) | 10(8) | 20(5) | NA(5)
+  [intrinsic molecular subtype] distinct=5 :: LumA(68) | Basal(46) | LumB(44) | Normal(13) | Her2(7)
+  [treatment] distinct=1 :: AC(178)
+  [clinical subtype] distinct=2 :: LUM(120) | TN(58)
+  [tissue] distinct=1 :: breast cancer tumor(178)
+  [!Sample_description] distinct=178 :: BC_4531933092_C(1) | BC_4531933092_D(1) | BC_4531933092_E(1) | BC_4531933069_D(1) | BC_4531933069_E(1) | BC_4531933046_B(1)

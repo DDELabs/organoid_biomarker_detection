@@ -1,0 +1,27 @@
+# GSE168204 matrix files: ['GSE168204-GPL11154_series_matrix.txt.gz', 'GSE168204-GPL18573_series_matrix.txt.gz']
+## GSE168204-GPL11154_series_matrix.txt.gz
+title: Pathway Signatures Derived from On-treatment Tumor Specimens Predict Response to Anti-PD1 Blockade in Metastatic Melanoma
+platform: GPL18573
+n_samples: 7
+  [!Sample_source_name_ch1] distinct=1 :: frozen or formalin-fixed tumor(7)
+  [treatment state] distinct=2 :: ON(5) | PRE(2)
+  [timepoint (days)] distinct=7 :: 342(1) | 589(1) | -47(1) | 25(1) | 0(1) | 44(1)
+  [antibody] distinct=2 :: anti-PDL1(4) | anti-PD1(3)
+  [response immune checkpoint blockade therapy] distinct=2 :: NR(5) | R(2)
+  [age at the baseline] distinct=4 :: 62(2) | 71(2) | 69(2) | 81(1)
+  [batch] distinct=2 :: 4(6) | 5(1)
+  [tumor type] distinct=1 :: metastatic melanoma(7)
+  [!Sample_description] distinct=4 :: MGH Patient 51(2) | MGH Patient 98(2) | MGH Patient PDL002(2) | MGH Patient 148(1)
+## GSE168204-GPL18573_series_matrix.txt.gz
+title: Pathway Signatures Derived from On-treatment Tumor Specimens Predict Response to Anti-PD1 Blockade in Metastatic Melanoma
+platform: GPL18573
+n_samples: 20
+  [!Sample_source_name_ch1] distinct=1 :: frozen or formalin-fixed tumor(20)
+  [treatment state] distinct=2 :: ON(12) | PRE(8)
+  [timepoint (days)] distinct=13 :: 0(4) | 439(3) | 21(2) | 434(2) | 131(1) | 207(1)
+  [antibody] distinct=3 :: anti-PD1(8) | anti-PD1+anti-CTLA4(8) | anti-PDL1(4)
+  [response immune checkpoint blockade therapy] distinct=2 :: NR(13) | R(7)
+  [age at the baseline] distinct=9 :: 21(7) | 70(3) | 56(2) | 51(2) | 61(2) | 58(1)
+  [batch] distinct=3 :: 2(8) | 3(7) | 1(5)
+  [tumor type] distinct=1 :: metastatic melanoma(20)
+  [!Sample_description] distinct=9 :: MGH Patient IPIPD1001(7) | MGH Patient 530(3) | MGH Patient 200(2) | MGH Patient 27(2) | MGH Patient 253(2) | MGH Patient BI1(1)

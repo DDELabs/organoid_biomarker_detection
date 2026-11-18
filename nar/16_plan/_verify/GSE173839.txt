@@ -1,0 +1,12 @@
+# GSE173839 matrix files: ['GSE173839_series_matrix.txt.gz']
+## GSE173839_series_matrix.txt.gz
+title: Durvalumab with olaparib and paclitaxel for high-risk HER2-negative stage II/III breast cancer: Results from the adaptively randomized I-SPY2 platform trial 
+platform: GPL20078
+n_samples: 105
+  [!Sample_source_name_ch1] distinct=1 :: Breast cancer biopsy (pre-treatment)(105)
+  [tissue] distinct=1 :: breast cancer(105)
+  [her2] distinct=1 :: 0(105)
+  [hr] distinct=2 :: 1(65) | 0(40)
+  [pcr] distinct=3 :: 0(64) | 1(36) | -1(5)
+  [mp] distinct=2 :: 1(71) | 0(34)
+  [arm] distinct=2 :: durvalumab/olaparib(71) | control(34)

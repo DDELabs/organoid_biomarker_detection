@@ -1,0 +1,29 @@
+# GSE11969 matrix files: ['GSE11969_series_matrix.txt.gz']
+## GSE11969_series_matrix.txt.gz
+title: Expression Profile-Defined Classification of Lung Adenocarcinoma
+platform: GPL7015
+n_samples: 163
+  [!Sample_source_name_ch1] distinct=2 :: Primary lung tumor(158) | Normal lung tissue(5)
+  [Annotation] distinct=163 :: AD001(1) | AD002(1) | AD003(1) | AD004(1) | AD005(1) | AD006(1)
+  [Position in Figure 1 (L to R)] distinct=150 :: NA(14) | 90(1) | 71(1) | 96(1) | 119(1) | 56(1)
+  [Age] distinct=39 :: NA(14) | 63(9) | 60(8) | 62(7) | 61(7) | 71(6)
+  [Sex] distinct=3 :: M(101) | F(48) | NA(14)
+  [Histology] distinct=7 :: AD(90) | SQ(35) | LA(18) | SCLC(9) | Normal lung tissue(5) | AS(4)
+  [Smoking (BI)] distinct=74 :: 0(49) | NA(14) | 1200(4) | 400(4) | 800(4) | 940(4)
+  [pTNM] distinct=14 :: T2N0M0(42) | T1N0M0(36) | T2N2M0(20) | NA(14) | T3N0M0(12) | T1N2M0(9)
+  [pStage] distinct=7 :: IB(42) | IA(36) | IIIA(35) | IIB(21) | NA(14) | IIIB(10)
+  [Status] distinct=3 :: Alive(75) | Dead(74) | NA(14)
+  [Survival (days)] distinct=140 :: NA(14) | 3245(2) | 2910(2) | 2702(2) | 2533(2) | 2528(2)
+  [Evidence of relapse] distinct=4 :: Y(78) | N(69) | NA(14) | Unknown(2)
+  [Site of relapse] distinct=22 :: (71) | PM(24) | NA(14) | Brain(10) | LN (mediastinal)(9) | Bone(7)
+  [EGFR status] distinct=3 :: Wt(115) | Mut(34) | NA(14)
+  [K-ras Status] distinct=3 :: Wt(137) | NA(14) | Mut(12)
+  [p53 Status] distinct=3 :: Wt(81) | Mut(68) | NA(14)
+  [Gefitinib treatment] distinct=3 :: (139) | NA(14) | Y(10)
+  [Position in Figure 2 (L to R)] distinct=92 :: (59) | NA(14) | 68(1) | 54(1) | 65(1) | 90(1)
+  [Expression profile-based classification] distinct=5 :: (59) | Non-TRU(37) | TRU-a(34) | TRU-b(19) | NA(14)
+  [Invasion] distinct=6 :: Definite(65) | (59) | Definite but focal(15) | NA(14) | Not obvious(8) | Negative(2)
+  [Necrosis] distinct=5 :: Negative(59) | (59) | Positive(23) | NA(14) | Focal(8)
+  [Grade] distinct=5 :: (59) | Poorly(34) | Moderately(31) | Well(25) | NA(14)
+  [BAC features] distinct=4 :: -(64) | (59) | +(26) | NA(14)
+  [!Sample_description] distinct=1 :: n/a(163)

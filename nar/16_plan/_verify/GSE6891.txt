@@ -1,0 +1,25 @@
+# GSE6891 matrix files: ['GSE6891_series_matrix.txt.gz']
+## GSE6891_series_matrix.txt.gz
+title: Acute myeloid leukemia samples of samples =< 60yrs on HG-U133 plus 2
+platform: GPL570
+n_samples: 537
+  [!Sample_source_name_ch1] distinct=2 :: Blasts and mononuclear cells, AML patien(461) | mononuclear cells from bone marrow(76)
+  [disease state] distinct=1 :: Acute myeloid leukemia(537)
+  [cell type] distinct=2 :: blasts and mononuclear cells(461) | mononuclear cells from bone marrow(76)
+  [idh1] distinct=2 :: neg(423) | pos(34)
+  [gender] distinct=2 :: male(231) | female(230)
+  [!Sample_characteristics_ch1] distinct=1 :: (1148)
+  [idh2] distinct=2 :: neg(419) | pos(38)
+  [age] distinct=47 :: 56 years(20) | 53 years(19) | 55 years(19) | 59 years(19) | 37 years(17) | 54 years(17)
+  [score] distinct=12 :: FAB M2(106) | FAB M5(104) | FAB M1(95) | FAB M4(79) | FAB M3(24) | FAB M0(16)
+  [risk] distinct=4 :: cytogenetic intermediate(261) | cytogenetic good(97) | cytogenetic poor(93) | unknown(10)
+  [cebpa] distinct=4 :: wild type(426) | double mutant(24) | single mutant(10) | wilde type(1)
+  [karyotype] distinct=18 :: NN(187) | Other(53) | t(8;21)(35) | idt(16)(34) | -5/7(q)(29) | (25)
+  [npm1] distinct=2 :: Neg(321) | Pos(140)
+  [flt3 itd mutation] distinct=2 :: Neg(335) | Pos(126)
+  [flt3 tkd mutation] distinct=3 :: Neg(411) | Pos(49) | Pos?(1)
+  [n-ras mutation] distinct=3 :: Neg(415) | Pos(45) | NULL(1)
+  [k-ras mutation] distinct=2 :: Neg(457) | Pos(4)
+  [evi1 expression] distinct=2 :: Neg(430) | Pos(31)
+  [cebpa mutation] distinct=5 :: Neg(231) | neg(195) | Pos(16) | pos(15) | nd(4)
+  [!Sample_description] distinct=4 :: (1073) | Blasts and mononuclear cells were purifi(461) | AML(76) | The CEL file for this Sample is not avai(1)

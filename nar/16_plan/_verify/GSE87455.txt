@@ -1,0 +1,9 @@
+# GSE87455 matrix files: ['GSE87455_series_matrix.txt.gz']
+## GSE87455_series_matrix.txt.gz
+title: Assessment of tumor pathological and transcriptional biomarkers in pre- and on-treatment core biopsies predictive of response and outcome after neoadjuvant chemotherapy plus Bevacizumab in patients with HER2-negative breast cancer
+platform: GPL10558
+n_samples: 275
+  [!Sample_source_name_ch1] distinct=1 :: Primary breast cancer(275)
+  [treatment] distinct=3 :: Baseline (no treatment)(122) | Cycle 2 (chemo only)(83) | Surgery (chemo+bevacizumab)(70)
+  [tissue] distinct=1 :: Breast(275)
+  [!Sample_description] distinct=1 :: Direct Hyb(275)

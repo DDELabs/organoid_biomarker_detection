@@ -1,0 +1,11 @@
+# GSE66305 matrix files: ['GSE66305_series_matrix.txt.gz']
+## GSE66305_series_matrix.txt.gz
+title: Prospective biomarker analysis of the randomized CHER-LOB study evaluating the dual anti-HER2 treatment with chemotherapy plus trastuzumab and lapatinib as neoadjuvant therapy for HER2-positive breast cancer [expression]
+platform: GPL570
+n_samples: 88
+  [!Sample_source_name_ch1] distinct=3 :: Breast cancer, CHER-LOB Arm C, pre-treat(34) | Breast cancer, CHER-LOB Arm B, pre-treat(31) | Breast cancer, CHER-LOB Arm A, pre-treat(23)
+  [disease state] distinct=1 :: HER2-positive breast cancer(88)
+  [tissue] distinct=1 :: breast cancer(88)
+  [cher-lob arm] distinct=3 :: C(34) | B(31) | A(23)
+  [arm description] distinct=3 :: chemotherapy+trastuzumab+lapatinib(34) | chemotherapy+lapatinib(31) | chemotherapy+trastuzumab(23)
+  [pcr (1=yes)] distinct=2 :: 0(61) | 1(27)

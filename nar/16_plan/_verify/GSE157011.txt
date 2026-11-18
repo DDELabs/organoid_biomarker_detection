@@ -1,0 +1,14 @@
+# GSE157011 matrix files: ['GSE157011_series_matrix.txt.gz']
+## GSE157011_series_matrix.txt.gz
+title: Multi-institutional prospective validation of prognostic mRNA signatures in early stage squamous lung cancer (Alliance)
+platform: GPL570
+n_samples: 484
+  [!Sample_source_name_ch1] distinct=1 :: Squamous Cell Carcinoma of Lung(484)
+  [diagnosis] distinct=1 :: Squamous Cell Carcinoma of Lung(484)
+  [tissue] distinct=1 :: lung(484)
+  [age] distinct=45 :: 71(26) | 65(25) | 66(24) | 72(24) | 63(24) | 73(23)
+  [Sex] distinct=2 :: Male(314) | Female(170)
+  [Stage] distinct=6 :: T2a(152) | T1b(113) | T2b(95) | T1a(73) | T3(49) | NA(2)
+  [os_mo] distinct=444 :: 51.1232876712329(3) | 69.041095890411(3) | 60.6904109589041(3) | 55.6931506849315(3) | 12.7890410958904(2) | 85.9068493150685(2)
+  [os_event] distinct=2 :: 1(264) | 0(220)
+  [!Sample_description] distinct=1 :: Lung cancer patient who underwent surger(484)

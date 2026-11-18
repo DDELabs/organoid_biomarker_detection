@@ -1,0 +1,8 @@
+# GSE190265 matrix files: ['GSE190265_series_matrix.txt.gz']
+## GSE190265_series_matrix.txt.gz
+title: MEK inhibition overcomes chemoimmunotherapy resistance by inducing CXCL10 in cancer cells [France3]
+platform: GPL18573
+n_samples: 34
+  [!Sample_source_name_ch1] distinct=1 :: biopsy(34)
+  [tissue] distinct=1 :: lung tumor tissue(34)
+  [disease state] distinct=3 :: non-squamous(14) | squamous(11) | NA(9)

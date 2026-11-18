@@ -1,0 +1,18 @@
+# GSE50081 matrix files: ['GSE50081_series_matrix.txt.gz']
+## GSE50081_series_matrix.txt.gz
+title: Validation of a histology-independent prognostic gene signature for early stage, non-small cell lung cancer including stage IA patients
+platform: GPL570
+n_samples: 181
+  [!Sample_source_name_ch1] distinct=1 :: Primary NSCLC(181)
+  [Sex] distinct=2 :: M(98) | F(83)
+  [histology] distinct=7 :: adenocarcinoma(127) | squamous cell carcinoma(42) | large cell carcinoma(7) | adenosquamous carcinoma(2) | NSClarge cell carcinoma-mixed(1) | NSCLC-favor adenocarcinoma(1)
+  [t-stage] distinct=3 :: 2(122) | 1(57) | 3(2)
+  [n-stage] distinct=2 :: 0(129) | 1(52)
+  [m-stage] distinct=1 :: 0(181)
+  [Stage] distinct=4 :: 1B(79) | 1A(48) | 2B(45) | 2A(9)
+  [age] distinct=173 :: 70.56(2) | 72.96(2) | 73.23(2) | 61.13(2) | 63.1(2) | 69.07(2)
+  [smoking] distinct=4 :: Ex-smoker(79) | Current(57) | Never(24) | Unable to determine(21)
+  [survival time] distinct=162 :: 5.84(3) | 5.18(3) | 1.91(2) | 5.32(2) | 4.95(2) | 6.37(2)
+  [status] distinct=2 :: alive(106) | dead(75)
+  [disease-free survival time] distinct=176 :: 0.709(2) | 5.843(2) | 2.927(2) | 2.708(2) | 0.093(2) | 4.115(1)
+  [recurrence] distinct=3 :: N(126) | Y(51) | U(4)

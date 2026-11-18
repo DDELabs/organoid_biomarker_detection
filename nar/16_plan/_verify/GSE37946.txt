@@ -1,0 +1,15 @@
+# GSE37946 matrix files: ['GSE37946_series_matrix.txt.gz']
+## GSE37946_series_matrix.txt.gz
+title: HER2-enriched tumor initiating cell (HTIC) genomic predictor of response following neoadjuvant trastuzumab-based chemotherapy in HER2+ breast cancer
+platform: GPL96
+n_samples: 50
+  [!Sample_source_name_ch1] distinct=1 :: Human breast cancer(50)
+  [age] distinct=30 :: 56(4) | 50(3) | 52(3) | 30(3) | 51(3) | 38(2)
+  [er] distinct=2 :: NEG(32) | POS(18)
+  [pr] distinct=2 :: NEG(37) | POS(13)
+  [her2] distinct=1 :: POS(50)
+  [clin_stage] distinct=7 :: IIIC(15) | IIA(11) | IIIA(9) | IIB(6) | IIIB(5) | I(2)
+  [path_stage] distinct=8 :: 0(27) | I(6) | IIA(5) | IIIC(5) | IIB(3) | IIIA(2)
+  [path_response] distinct=2 :: pCR(27) | RD(23)
+  [!Sample_characteristics_ch1] distinct=1 :: (1)
+  [!Sample_description] distinct=1 :: Gene expression data from breast cancer (50)

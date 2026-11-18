@@ -1,0 +1,17 @@
+# GSE37745 matrix files: ['GSE37745_series_matrix.txt.gz']
+## GSE37745_series_matrix.txt.gz
+title: Biomarker discovery in non-small cell lung cancer: integrating gene expression profiling, meta-analysis and tissue microarray validation
+platform: GPL570
+n_samples: 196
+  [!Sample_source_name_ch1] distinct=196 :: cancer cells from patient 6(1) | cancer cells from patient 11(1) | cancer cells from patient 12(1) | cancer cells from patient 13(1) | cancer cells from patient 14(1) | cancer cells from patient 19(1)
+  [dead] distinct=2 :: yes(145) | no(51)
+  [days to determined death status] distinct=191 :: 281(3) | 6(2) | 556(2) | 912(2) | 3418(1) | 3186(1)
+  [histology] distinct=3 :: adeno(106) | squamous(66) | large(24)
+  [tumor stage] distinct=7 :: 1b(90) | 1a(40) | 2b(29) | 3a(21) | 3b(6) | 2a(6)
+  [performance status corresponding to who criteria] distinct=4 :: 0(105) | 1(75) | 2(12) | 3(4)
+  [age] distinct=41 :: 70(14) | 66(12) | 67(11) | 62(9) | 65(8) | 68(7)
+  [gender] distinct=2 :: male(107) | female(89)
+  [adjuvant treatment] distinct=3 :: not known(96) | no(71) | yes(29)
+  [recurrence] distinct=3 :: not known(100) | yes(49) | no(47)
+  [days to recurrence / to last visit] distinct=93 :: not known(100) | 245(2) | 239(2) | 54(2) | 2086(2) | 2637(1)
+  [!Sample_description] distinct=1 :: gene expression data from non small lung(196)

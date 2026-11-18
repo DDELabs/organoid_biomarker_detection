@@ -1,0 +1,8 @@
+# GSE14210 matrix files: ['GSE14210_series_matrix.txt.gz']
+## GSE14210_series_matrix.txt.gz
+title: Expression data from human endoscopic biopsy samples
+platform: GPL571
+n_samples: 167
+  [!Sample_source_name_ch1] distinct=3 :: Pretreatment sample_Training set(118) | Pretreatment sample_Validation set(27) | Posttreatment sample(22)
+  [!Sample_characteristics_ch1] distinct=2 :: Pretreatment endoscopic biopsy samples c(145) | Collected at the progressive disease(22)
+  [!Sample_description] distinct=5 :: (123) | Training set to identify the signature f(118) | This sample uses the same CEL data as GS(44) | Validation set for the signature for the(27) | Post-CF(22)

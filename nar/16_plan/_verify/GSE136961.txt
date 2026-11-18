@@ -1,0 +1,10 @@
+# GSE136961 matrix files: ['GSE136961_series_matrix.txt.gz']
+## GSE136961_series_matrix.txt.gz
+title: Immune gene signatures for predicting durable clinical benefit of anti-PD-1 immunotherapy in patients with non-small cell lung cancer
+platform: GPL24014
+n_samples: 21
+  [!Sample_source_name_ch1] distinct=1 :: non-small cell lung cancer cells(21)
+  [tissue] distinct=1 :: lung(21)
+  [tumor type] distinct=4 :: adenocarcinoma(9) | squamous cell carcinoma(8) | Large cell neuroendocarine carcinoma(3) | adenocarcinoma-squamous cell carcinoma(1)
+  [Sex] distinct=2 :: male(15) | female(6)
+  [survival] distinct=2 :: recurrence:1, progression-free-survival_(18) | recurrence:0, progression-free-survival_(3)

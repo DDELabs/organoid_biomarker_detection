@@ -1,0 +1,16 @@
+# GSE207422 matrix files: ['GSE207422_series_matrix.txt.gz']
+## GSE207422_series_matrix.txt.gz
+title: Tumor microenvironment remodeling after neoadjuvant immunotherapy in non-small cell lung cancer revealed by single-cell RNA sequencing
+platform: GPL24676
+n_samples: 39
+  [!Sample_source_name_ch1] distinct=1 :: non-small cell lung cancer (NSCLC)(39)
+  [treatment group] distinct=2 :: NSCLC before anti-PD-1 + chemotherapy(27) | NSCLC after anti-PD-1 + chemotherapy(12)
+  [cell type] distinct=1 :: non-small cell lung cancer (NSCLC)(39)
+  [patient] distinct=36 :: P05(2) | P07(2) | P08(2) | P01(1) | P02(1) | P03(1)
+  [Sex] distinct=2 :: Male(29) | Female(10)
+  [age] distinct=24 :: 67(4) | 66(3) | 61(3) | 68(2) | 34(2) | 45(2)
+  [clinical_stage] distinct=4 :: IIIA(27) | IIB(8) | IIIB(2) | IB(2)
+  [sampling_time] distinct=2 :: Pre-treatment biopsy(27) | Post-treatment surgery(12)
+  [pathologic_sub] distinct=4 :: Squamous(19) | Adeno(16) | NSCLC(3) | Carcinosarcomatoid(1)
+  [pathologic_response] distinct=4 :: NMPR(25) | MPR(7) | MPR (pCR)(6) | Not available(1)
+  [!Sample_description] distinct=2 :: Bulk RNAseq(24) | BD Rhapsody platform(15)

@@ -1,0 +1,13 @@
+# GSE135222 matrix files: ['GSE135222_series_matrix.txt.gz']
+## GSE135222_series_matrix.txt.gz
+title: DNA methylation loss coupled with mitotic cell division promotes immune evasion of tumours with high mutation load [RNA-seq]
+platform: GPL16791
+n_samples: 27
+  [!Sample_source_name_ch1] distinct=1 :: NSCLC(27)
+  [subject status] distinct=1 :: advanced non-small cell lung carcinoma ((27)
+  [gender] distinct=2 :: male(22) | female(5)
+  [age] distinct=18 :: 68(3) | 66(2) | 73(2) | 56(2) | 61(2) | 59(2)
+  [progression-free survival (pfs)] distinct=2 :: 1(21) | 0(6)
+  [pfs.time] distinct=26 :: 37(2) | 95(1) | 618(1) | 43(1) | 45(1) | 412(1)
+  [tissue] distinct=1 :: tumor tissue(27)
+  [!Sample_description] distinct=27 :: R_17_00348_RT_WTS(1) | R_17_00344_RT_WTS(1) | R_17_00828_RT_WTS(1) | R_17_00558_RT_WTS(1) | R_17_00002_RT_WTS(1) | R_18_00583_RT_WTS(1)

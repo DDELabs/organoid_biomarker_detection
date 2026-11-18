@@ -1,0 +1,17 @@
+# GSE9782 matrix files: ['GSE9782-GPL96_series_matrix.txt.gz', 'GSE9782-GPL97_series_matrix.txt.gz']
+## GSE9782-GPL96_series_matrix.txt.gz
+title: Gene expression profiling and correlation with outcome in clinical trials of the proteasome inhibitor bortezomib
+platform: GPL97
+n_samples: 264
+  [!Sample_source_name_ch1] distinct=1 :: tumor sample(264)
+  [!Sample_characteristics_ch1] distinct=1424 :: (719) | race = White(229) | PGx_Progression(0=No,1=Yes) = 1(189) | treatment = PS341(188) | sex = Male(159) | studyCode = 39(156)
+  [PGx_Alternative_Therapy = CYTOXAN] distinct=1 :: PREDNISONE(1)
+  [!Sample_description] distinct=1 :: Gene expression profiling and correlatio(264)
+## GSE9782-GPL97_series_matrix.txt.gz
+title: Gene expression profiling and correlation with outcome in clinical trials of the proteasome inhibitor bortezomib
+platform: GPL97
+n_samples: 264
+  [!Sample_source_name_ch1] distinct=1 :: tumor sample(264)
+  [!Sample_characteristics_ch1] distinct=1424 :: (719) | race = White(229) | PGx_Progression(0=No,1=Yes) = 1(189) | treatment = PS341(188) | sex = Male(159) | studyCode = 39(156)
+  [PGx_Alternative_Therapy = CYTOXAN] distinct=1 :: PREDNISONE(1)
+  [!Sample_description] distinct=1 :: Gene expression profiling and correlatio(264)

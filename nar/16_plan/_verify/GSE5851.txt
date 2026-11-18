@@ -1,0 +1,8 @@
+# GSE5851 matrix files: ['GSE5851_series_matrix.txt.gz']
+## GSE5851_series_matrix.txt.gz
+title: Phase II exploratory pharmacogenomics study of cetuximab monotherapy in patients with advanced metastatic CRC
+platform: GPL571
+n_samples: 80
+  [!Sample_source_name_ch1] distinct=1 :: Pre-treatment metastatic biopsy of CRC(80)
+  [Tissue] distinct=14 :: Liver(61) | Abdomen(5) | Lung(3) | Rectum(1) | Bone(1) | Colon(1)
+  [!Sample_description] distinct=1 :: Gene expression data from pre-cetuximab (80)

@@ -1,0 +1,18 @@
+# GSE31519 matrix files: ['GSE31519_series_matrix.txt.gz']
+## GSE31519_series_matrix.txt.gz
+title: A Clinically Relevant Gene Signature in Triple-Negative and Basal-Like Breast Cancer
+platform: GPL96
+n_samples: 67
+  [!Sample_source_name_ch1] distinct=1 :: primary breast cancer tissue(67)
+  [tissue] distinct=1 :: triple-negative breast cancer(67)
+  [lymph node status (0] distinct=2 :: negative, 1: positive): 0(44) | negative, 1: positive): 1(21)
+  [grade (12] distinct=2 :: G1 or G2, 3: G3): 3(45) | G1 or G2, 3: G3): 12(18)
+  [cohort] distinct=4 :: FRA(24) | HH(22) | FRA-2(19) | FRA-3(2)
+  [tumor size (1] distinct=2 :: up to 1 cm, 2: >1cm): 2(48) | up to 1 cm, 2: >1cm): 1(16)
+  [biopsy type (1] distinct=2 :: surgical, 2: core needle): 1(48) | surgical, 2: core needle): 2(19)
+  [event-free interval (months)] distinct=41 :: 23(5) | 45(5) | 10(4) | 11(3) | 37(2) | 31(2)
+  [chemotherapy treatment (yes/no)] distinct=2 :: YES(58) | NO(9)
+  [event (1] distinct=2 :: yes, 0: no): 0(41) | yes, 0: no): 1(23)
+  [neoadjuvant chemotherapy (yes/no)] distinct=2 :: NO(48) | YES(19)
+  [!Sample_characteristics_ch1] distinct=1 :: (15)
+  [!Sample_description] distinct=68 :: Gene expression data from primary breast(67) | TNBC_001(1) | TNBC_002(1) | TNBC_003(1) | TNBC_004(1) | TNBC_005(1)

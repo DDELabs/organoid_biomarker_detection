@@ -1,0 +1,13 @@
+# GSE133057 matrix files: ['GSE133057_series_matrix.txt.gz']
+## GSE133057_series_matrix.txt.gz
+title: Transcriptomic analysis of pretreated rectal cancer biopsies and association to the tumor regression score.
+platform: GPL6102
+n_samples: 33
+  [!Sample_source_name_ch1] distinct=1 :: Frozen rectal cancer biopsy(33)
+  [subject status] distinct=1 :: patient with rectal adenocarcinoma(33)
+  [ajcc score] distinct=4 :: 2(13) | 1(7) | 3(7) | 0(6)
+  [gender] distinct=2 :: Male(23) | Female(10)
+  [overall survival (in days)] distinct=33 :: 3182(1) | 4584(1) | 4452(1) | 3789(1) | 2960(1) | 125(1)
+  [dead (1)/alive(0)] distinct=2 :: 0(22) | 1(11)
+  [age] distinct=23 :: 51(4) | 63(3) | 66(2) | 65(2) | 46(2) | 54(2)
+  [!Sample_description] distinct=1 :: Gene expression in pretreated rectal can(33)

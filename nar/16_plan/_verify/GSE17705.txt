@@ -1,0 +1,15 @@
+# GSE17705 matrix files: ['GSE17705_series_matrix.txt.gz']
+## GSE17705_series_matrix.txt.gz
+title: Endocrine Sensitivity Index Validation Dataset
+platform: GPL96
+n_samples: 298
+  [!Sample_source_name_ch1] distinct=1 :: tissue from breast tumor excision(298)
+  [patient id] distinct=298 :: 1070(1) | 1089(1) | 1097(1) | 1103(1) | 1107(1) | 1120(1)
+  [profiling lab] distinct=2 :: MDA(195) | JBI(103)
+  [tissue] distinct=1 :: breast cancer(298)
+  [estrogen receptor (er) status] distinct=1 :: ER+(298)
+  [endocrine therapy] distinct=1 :: Tamoxifen treatment for 5 years(298)
+  [nodal status (0=negative, 1=positive, na=not applicable)] distinct=3 :: 0(175) | 1(112) | NA(11)
+  [distant relapse (1=dr, 0 censored)] distinct=2 :: 0(227) | 1(71)
+  [event time (years)] distinct=280 :: 4.493150685(2) | 8(2) | 1.350684932(2) | 4.953424658(2) | 8.458333333(2) | 9.766666667(2)
+  [!Sample_description] distinct=298 :: 1070.CEL(1) | 1089.CEL(1) | 1097.CEL(1) | 1103.CEL(1) | 1107.CEL(1) | 1120.CEL(1)

@@ -1,0 +1,15 @@
+# GSE20181 matrix files: ['GSE20181_series_matrix.txt.gz']
+## GSE20181_series_matrix.txt.gz
+title: Letrozole (Femara) early and late responses to treatment
+platform: GPL96
+n_samples: 176
+  [!Sample_source_name_ch1] distinct=176 :: 10A;pretreatment;female;breast tumor(1) | 10B;female;breast tumor;Letrozole, 2.5mg(1) | 11A;pretreatment;female;breast tumor(1) | 11B;female;breast tumor;Letrozole, 2.5mg(1) | 12A;pretreatment;female;breast tumor(1) | 12B;female;breast tumor;Letrozole, 2.5mg(1)
+  [!Sample_characteristics_ch1] distinct=117 :: (696) | 10A;pretreatment;female;breast tumor(1) | 10B;female;breast tumor;Letrozole, 2.5mg(1) | 11A;pretreatment;female;breast tumor(1) | 11B;female;breast tumor;Letrozole, 2.5mg(1) | 12A;pretreatment;female;breast tumor(1)
+  [subject] distinct=60 :: 2(1) | 3(1) | 4(1) | 5(1) | 6(1) | 29(1)
+  [gender] distinct=1 :: female(60)
+  [tissue] distinct=1 :: breast tumor(60)
+  [agent] distinct=1 :: Letrozol(60)
+  [dose] distinct=1 :: 2.5mg/day(60)
+  [administration] distinct=1 :: oral(60)
+  [time] distinct=1 :: 90 days(60)
+  [!Sample_description] distinct=1 :: breast tumor biopsy(176)

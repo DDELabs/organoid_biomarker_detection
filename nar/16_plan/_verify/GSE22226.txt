@@ -1,0 +1,15 @@
+# GSE22226 matrix files: ['GSE22226-GPL1708_series_matrix.txt.gz', 'GSE22226-GPL4133_series_matrix.txt.gz']
+## GSE22226-GPL1708_series_matrix.txt.gz
+title: Heterogeneity of Response to Chemotherapy and Recurrence-free Survival in Neoadjuvant Breast Cancer: Results from the I-SPY 1 TRIAL
+platform: GPL4133
+n_samples: 130
+  [!Sample_source_name_ch1] distinct=1 :: Human Reference B(130)
+  [reference] distinct=1 :: Stratagene Human Universal Reference tha(130)
+  [!Sample_description] distinct=130 :: 226342(1) | 218367(1) | 215630(1) | 216826(1) | 216719(1) | 217419(1)
+## GSE22226-GPL4133_series_matrix.txt.gz
+title: Heterogeneity of Response to Chemotherapy and Recurrence-free Survival in Neoadjuvant Breast Cancer: Results from the I-SPY 1 TRIAL
+platform: GPL4133
+n_samples: 20
+  [!Sample_source_name_ch1] distinct=1 :: Human Reference B(20)
+  [reference] distinct=1 :: Stratagene Human Universal Reference tha(20)
+  [!Sample_description] distinct=20 :: 228306-2008(1) | 226218-2008(1) | 229123-2008(1) | 229104-2008(1) | 229507-2008(1) | 229879-2008(1)

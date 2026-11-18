@@ -1,0 +1,12 @@
+# GSE59515 matrix files: ['GSE59515_series_matrix.txt.gz']
+## GSE59515_series_matrix.txt.gz
+title: Accurate prediction and validation of response to endocrine therapy in breast cancer
+platform: GPL10558
+n_samples: 75
+  [!Sample_source_name_ch1] distinct=3 :: PreLet(25) | 2wLet(25) | 3mLet(25)
+  [patient id] distinct=25 :: 150(3) | 171(3) | 172(3) | 179(3) | 203(3) | 214(3)
+  [gender] distinct=1 :: Female(75)
+  [clinical response] distinct=2 :: Responder(51) | Non-responder(24)
+  [time point] distinct=3 :: pre-treatment(25) | 2 wks of letrozole treatment(25) | 3 months of letrozole treatment(25)
+  [tissue] distinct=1 :: tumour biopsies(75)
+  [!Sample_description] distinct=75 :: X150.1(1) | X150.2(1) | X150.3(1) | X171.1(1) | X171.2(1) | X171.3(1)

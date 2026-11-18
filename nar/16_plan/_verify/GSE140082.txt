@@ -1,0 +1,22 @@
+# GSE140082 matrix files: ['GSE140082_series_matrix.txt.gz']
+## GSE140082_series_matrix.txt.gz
+title: Bevacizumab may differentially improve ovarian cancer outcome in patients with proliferative and mesenchymal molecular subtypes
+platform: GPL14951
+n_samples: 380
+  [!Sample_source_name_ch1] distinct=1 :: FFPE Ovarian Cancer(380)
+  [tissue] distinct=1 :: ovarian cancer(380)
+  [tissue preparation] distinct=1 :: FFPE(380)
+  [treatment] distinct=2 :: bevacizumab(199) | standard(181)
+  [t1_cluster_name] distinct=4 :: immunoreactive(124) | proliferative(97) | differentiated(86) | mesenchymal(73)
+  [debulking_status] distinct=3 :: OPTIMAL(290) | SUB-OPTIMAL(88) | Inoperable(2)
+  [figo_stage] distinct=4 :: III(266) | IV(63) | II(31) | I(20)
+  [histology.serous] distinct=2 :: serous(277) | other(103)
+  [newgrade] distinct=3 :: high.grade(281) | low.grade(74) | NA(25)
+  [age] distinct=51 :: 65(18) | 66(18) | 57(17) | 68(16) | 64(15) | 70(15)
+  [final_pfstm] distinct=325 :: 274(3) | 658(3) | 719(3) | 518(3) | 263(3) | 386(3)
+  [final_pfsid] distinct=2 :: 1(235) | 0(145)
+  [final_ostm] distinct=306 :: 645(5) | 730(4) | 722(4) | 765(4) | 821(3) | 675(3)
+  [final_osid] distinct=2 :: 0(284) | 1(96)
+  [manuscript_analysis359] distinct=2 :: 1(359) | 0(21)
+  [sentrix_id] distinct=40 :: 5800710001(12) | 5800710009(12) | 5800701030(12) | 5800701019(12) | 5800710047(11) | 5800710052(11)
+  [plate] distinct=6 :: 2(88) | 1(85) | 3(83) | 4(82) | 5(26) | 6(16)

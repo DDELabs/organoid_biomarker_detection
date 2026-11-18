@@ -1,0 +1,10 @@
+# GSE126044 matrix files: ['GSE126044_series_matrix.txt.gz']
+## GSE126044_series_matrix.txt.gz
+title: Genome-wide identification of differentially methylated promoters and enhancers associated with response to anti-PD-1 therapy in non-small cell lung cancer
+platform: GPL16791
+n_samples: 16
+  [!Sample_source_name_ch1] distinct=1 :: NSCLC biopsies(16)
+  [tissue] distinct=1 :: NSCLC(16)
+  [treatment status] distinct=1 :: pre-treatment(16)
+  [patient response] distinct=2 :: non-responder(11) | responder(5)
+  [sample] distinct=2 :: fresh(11) | FFPE(5)

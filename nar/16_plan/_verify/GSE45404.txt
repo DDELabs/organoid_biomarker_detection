@@ -1,0 +1,25 @@
+# GSE45404 matrix files: ['GSE45404-GPL4133_series_matrix.txt.gz', 'GSE45404-GPL570_series_matrix.txt.gz']
+## GSE45404-GPL4133_series_matrix.txt.gz
+title: Integrative computational biology and molecular determinants of rectal cancer resistance to chemoradiotherapies
+platform: GPL4133
+n_samples: 38
+  [!Sample_source_name_ch1] distinct=1 :: Pre Treatment biopsies(38)
+  [tissue] distinct=1 :: CRC sample(38)
+  [disease state] distinct=1 :: Rectal cancer(38)
+  [name] distinct=38 :: E100(1) | E101(1) | E102(1) | E103(1) | E105(1) | E107(1)
+  [age] distinct=21 :: 73(5) | 72(4) | 61(3) | 68(2) | 63(2) | 59(2)
+  [Sex] distinct=2 :: Male(25) | Female(13)
+  [class] distinct=2 :: Non Responder(22) | Responder(16)
+  [!Sample_description] distinct=1 :: Gene expression data from CRC patients a(38)
+## GSE45404-GPL570_series_matrix.txt.gz
+title: Integrative computational biology and molecular determinants of rectal cancer resistance to chemoradiotherapies
+platform: GPL4133
+n_samples: 42
+  [!Sample_source_name_ch1] distinct=1 :: Pre Treatment biopsies(42)
+  [tissue] distinct=1 :: CRC sample(42)
+  [disease state] distinct=1 :: Rectal cancer(42)
+  [name] distinct=42 :: PD_10(1) | PD_14(1) | PD_15(1) | PD_16(1) | PD_19(1) | PD_2(1)
+  [age] distinct=28 :: 50(3) | 65(3) | 53(2) | 55(2) | 59(2) | 72(2)
+  [Sex] distinct=2 :: Male(24) | Female(18)
+  [class] distinct=2 :: Non Responder(23) | Responder(19)
+  [!Sample_description] distinct=1 :: Gene expression data from CRC patients a(42)

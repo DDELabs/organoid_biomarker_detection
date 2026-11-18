@@ -1,0 +1,13 @@
+# GSE62452 matrix files: ['GSE62452_series_matrix.txt.gz']
+## GSE62452_series_matrix.txt.gz
+title: Microarray gene-expression profiles of 69 pancreatic tumors and 61 adjacent non-tumor tissue from patients with pancreatic ductal adenocarcinoma
+platform: GPL6244
+n_samples: 130
+  [!Sample_source_name_ch1] distinct=70 :: human pancreatic Non-tumor tissue sample(61) | human pancreatic tumor tissue 1(1) | human pancreatic tumor tissue 3(1) | human pancreatic tumor tissue 5(1) | human pancreatic tumor tissue 7(1) | human pancreatic tumor tissue 9(1)
+  [tissue] distinct=2 :: Pancreatic tumor(69) | adjacent pancreatic non-tumor(61)
+  [grading] distinct=5 :: G2(64) | G3(59) | G1(3) | G4(2) | Gx(2)
+  [Stage] distinct=8 :: IIB(64) | III(26) | IIA(18) | IV(7) | IB(7) | IVA(4)
+  [survival months] distinct=66 :: ?(3) | 9.8(2) | 51.1(1) | 6.9(1) | 2.7(1) | 41.6(1)
+  [!Sample_characteristics_ch1] distinct=1 :: (122)
+  [survival status] distinct=3 :: 1(50) | 0(16) | ?(3)
+  [!Sample_description] distinct=1 :: Gene expression data from PDAC tumor and(130)

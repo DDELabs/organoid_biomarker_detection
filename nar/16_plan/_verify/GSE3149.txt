@@ -1,0 +1,8 @@
+# GSE3149 matrix files: ['GSE3149_series_matrix.txt.gz']
+## GSE3149_series_matrix.txt.gz
+title: Ovarian Cancer Dataset
+platform: GPL96
+n_samples: 153
+  [!Sample_source_name_ch1] distinct=1 :: ovarian tumors(153)
+  [!Sample_characteristics_ch1] distinct=1 :: frozen tissue of ovarian tumors(153)
+  [!Sample_description] distinct=1 :: frozen tissue of ovarian tumors(153)

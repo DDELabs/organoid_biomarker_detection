@@ -1,0 +1,12 @@
+# GSE145037 matrix files: ['GSE145037_series_matrix.txt.gz']
+## GSE145037_series_matrix.txt.gz
+title: Hypermethylation and downregulation of UTP6 are associated with stemness properties, chemoradiotherapy resistance and prognosis in rectal cancer: A co-expression network analysis
+platform: GPL28140
+n_samples: 31
+  [!Sample_source_name_ch1] distinct=1 :: primary rectalcancer(31)
+  [tissue] distinct=1 :: primary rectalcancer(31)
+  [Sex] distinct=2 :: Male(16) | Female(15)
+  [age] distinct=22 :: 53(3) | 60(3) | 63(3) | 44(2) | 58(2) | 41(2)
+  [response to the crt] distinct=2 :: response(20) | non-response(11)
+  [clincal t stage] distinct=3 :: 3(16) | 4(14) | 2(1)
+  [clincal n positive] distinct=2 :: 1(30) | 0(1)

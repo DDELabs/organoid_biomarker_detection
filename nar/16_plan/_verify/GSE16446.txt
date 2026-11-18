@@ -1,0 +1,24 @@
+# GSE16446 matrix files: ['GSE16446_series_matrix.txt.gz']
+## GSE16446_series_matrix.txt.gz
+title: Multifactorial Approach to Predicting Resistance to Anthracyclines
+platform: GPL570
+n_samples: 120
+  [!Sample_source_name_ch1] distinct=120 :: XXX_6772(1) | XXX_2024(1) | XXX_993(1) | XXX_2325(1) | XXX_3731(1) | XXX_4984(1)
+  [agebin] distinct=2 :: 0(70) | 1(50)
+  [t] distinct=4 :: T2(83) | T1(17) | T4(15) | T3(5)
+  [n] distinct=4 :: N1(60) | N0(55) | N2(3) | N3(2)
+  [grade] distinct=3 :: 3(92) | 2(20) | 1(2)
+  [her2fish] distinct=66 :: NA(27) | 1(5) | 1.06(5) | 1.08(4) | 1.09(4) | 0.98(3)
+  [her2fishbin] distinct=3 :: 0(62) | 1(31) | NA(27)
+  [top2atri] distinct=4 :: 0(69) | NA(28) | 1(12) | -1(11)
+  [topoihc] distinct=18 :: NA(32) | 10(18) | 20(12) | 5(9) | 15(8) | 30(7)
+  [esr1bimod] distinct=2 :: 0(118) | 1(2)
+  [erbb2bimod] distinct=2 :: 0(90) | 1(28)
+  [final_analysis] distinct=2 :: YES(114) | NO(6)
+  [pcr] distinct=3 :: 0(98) | 1(16) | NA(6)
+  [dmfs_event] distinct=3 :: 0(89) | 1(25) | NA(6)
+  [dmfs_time] distinct=105 :: NA(13) | 1404(2) | 1336(2) | 1998(2) | 553(1) | 2114(1)
+  [os_event] distinct=3 :: 0(98) | 1(16) | NA(6)
+  [os_time] distinct=105 :: NA(13) | 1404(2) | 1336(2) | 1998(2) | 2128(1) | 2114(1)
+  [!Sample_characteristics_ch1] distinct=1 :: (8)
+  [!Sample_description] distinct=1 :: Please see the GSE16446_TOP_README.txt s(120)

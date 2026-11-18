@@ -1,0 +1,23 @@
+# GSE16391 matrix files: ['GSE16391_series_matrix.txt.gz']
+## GSE16391_series_matrix.txt.gz
+title: GGI: a potential predictor of relapse for endocrine-treated breast cancer patients in the BIG 1-98 trial
+platform: GPL570
+n_samples: 55
+  [!Sample_source_name_ch1] distinct=55 :: BIG1_98_X1(1) | BIG1_98_X2(1) | BIG1_98_X3(1) | BIG1_98_X4(1) | BIG1_98_X5(1) | BIG1_98_X6(1)
+  [sample name] distinct=55 :: BIG1_98_X1(1) | BIG1_98_X2(1) | BIG1_98_X3(1) | BIG1_98_X4(1) | BIG1_98_X5(1) | BIG1_98_X6(1)
+  [case control 0- case, 1 - control] distinct=3 :: 1(38) | 0(10) | NA(7)
+  [cluster.id] distinct=11 :: YT3(7) | YT4(7) | CNT(7) | NT2(6) | NL1(5) | YL4(5)
+  [ggi] distinct=55 :: 577.55(1) | 842.26(1) | 733.24(1) | 669.71(1) | 674.66(1) | 668.11(1)
+  [age] distinct=25 :: 56(5) | 65(4) | 58(4) | 52(3) | 67(3) | 69(3)
+  [post menopausal status] distinct=2 :: 1(48) | 2(7)
+  [er pgr] distinct=2 :: 1(41) | 2(14)
+  [adj neoadj chemotherapy received] distinct=2 :: 0(35) | 1(20)
+  [grade] distinct=3 :: 2(35) | 3(18) | 1(2)
+  [local therapy] distinct=4 :: 1(34) | 3(14) | 4(6) | 2(1)
+  [node] distinct=2 :: 1(33) | 0(22)
+  [treatment] distinct=2 :: 0(32) | 1(23)
+  [t rfs months] distinct=50 :: 24.986(5) | 25.363(2) | 25.265(1) | 39.786(1) | 62.16(1) | 54.407(1)
+  [her2 status] distinct=3 :: 0(42) | NA(10) | 1(3)
+  [size] distinct=2 :: 2(35) | 1(20)
+  [tissue] distinct=1 :: primary breast tumor(55)
+  [!Sample_description] distinct=16 :: samplename: unique (anonymous) id for th(55) | Case.control: case = 0, control = 1(55) | Cluster.ID: cluster ID(55) | GGI: raw values of the Gene expression G(55) | size(55) | age: age in years(55)

@@ -1,0 +1,15 @@
+# GSE79668 matrix files: ['GSE79668_series_matrix.txt.gz']
+## GSE79668_series_matrix.txt.gz
+title: RNA-sequencing of human pancreatic adenocarcinoma cancer tissues
+platform: GPL11154
+n_samples: 51
+  [!Sample_source_name_ch1] distinct=1 :: pancreatic adenocarcinoma cancer tissue(51)
+  [patient survival status] distinct=2 :: Dead(45) | Alive(6)
+  [survival time (days)] distinct=51 :: 393(1) | 449(1) | 697(1) | 734(1) | 543(1) | 572(1)
+  [age] distinct=27 :: 77(4) | 68(4) | 64(3) | 76(3) | 79(3) | 49(3)
+  [patient race] distinct=3 :: white(44) | black(6) | NA(1)
+  [patient gender] distinct=2 :: male(32) | female(19)
+  [t (tnm score)] distinct=4 :: T3(31) | T2(12) | T4(5) | T1(3)
+  [n (tnm score)] distinct=2 :: N1(37) | N0(14)
+  [m (tnm score)] distinct=3 :: M0(48) | MX(2) | M1(1)
+  [diabetes status] distinct=2 :: no(29) | yes(22)

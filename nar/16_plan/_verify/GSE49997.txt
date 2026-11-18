@@ -1,0 +1,20 @@
+# GSE49997 matrix files: ['GSE49997_series_matrix.txt.gz']
+## GSE49997_series_matrix.txt.gz
+title: Validating the Impact of a Molecular Subtype in Epithelial Ovarian Cancer (EOC) on Progression Free and Overall Survival
+platform: GPL2986
+n_samples: 204
+  [!Sample_source_name_ch1] distinct=1 :: Ovarian tumor tissue(204)
+  [excluded] distinct=2 :: no(194) | yes(10)
+  [subclass] distinct=2 :: 2(104) | 1(100)
+  [age] distinct=51 :: 64(10) | 67(9) | 56(8) | 54(8) | 55(8) | 57(7)
+  [!Sample_characteristics_ch1] distinct=1 :: (100)
+  [histology] distinct=2 :: Serous(171) | Non-serous(23)
+  [figo grade] distinct=3 :: III(154) | IV(31) | II(9)
+  [grade] distinct=3 :: 3(143) | 1&2(50) | #NULL!(1)
+  [peritoneal carcinomatosis] distinct=2 :: Yes(137) | No(57)
+  [residual tumor] distinct=2 :: No(137) | Yes(57)
+  [pfs event] distinct=2 :: 1(124) | 0(70)
+  [pfs month] distinct=44 :: 12(14) | 15(11) | 11(10) | 14(10) | 16(9) | 10(9)
+  [os event] distinct=2 :: 0(137) | 1(57)
+  [os month] distinct=44 :: 19(10) | 22(9) | 21(9) | 27(8) | 16(8) | 20(7)
+  [!Sample_description] distinct=1 :: Human Genome Survey Microarray V2.0 (App(204)

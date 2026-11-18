@@ -1,0 +1,27 @@
+# GSE13507 matrix files: ['GSE13507_series_matrix.txt.gz']
+## GSE13507_series_matrix.txt.gz
+title: Predective Value of Prognosis-Related Gene Expression Study in Primary Bladder Cancer
+platform: GPL6102
+n_samples: 256
+  [!Sample_source_name_ch1] distinct=5 :: Primary bladder cancer(165) | Bladder mucosae surrounding cancer(58) | Recurrent non-muscle invasive tumor(23) | Normal bladder mucosae(9) | Multipotent Progenitor Cells (MPPs)(1)
+  [biological source] distinct=4 :: primary bladder cancer(165) | bladder mucosae surrounding cancer(58) | recurrent non-muscle invasive tumor(23) | normal bladder mucosae(9)
+  [strain] distinct=1 :: C57BL/6(1)
+  [!Sample_characteristics_ch1] distinct=1 :: (1211)
+  [genotype] distinct=1 :: Wild-type(1)
+  [SEX] distinct=2 :: M(135) | F(30)
+  [age] distinct=1 :: 8-weeks(1)
+  [AGE] distinct=51 :: 67(11) | 66(10) | 68(8) | 63(8) | 80(7) | 64(7)
+  [cre-driver] distinct=1 :: Vav-CRE(1)
+  [invasiveness] distinct=2 :: non-muscle invasive(103) | muscle invasive(62)
+  [cell type] distinct=1 :: Multipotent Progenitor Cells (MPPs)(1)
+  [intravesical therapy] distinct=2 :: Yes(56) | No(47)
+  [systemic chemo] distinct=2 :: No(138) | Yes(27)
+  [indexes] distinct=1 :: CGTCGCT(1)
+  [stage] distinct=23 :: T1N0M0(80) | TaN0M0(23) | T2N0M0(22) | T3bN0M0(6) | T3aN0M0(4) | T4N0M0(4)
+  [grade] distinct=2 :: low(105) | high(60)
+  [progression] distinct=2 :: No(134) | Yes(31)
+  [recurrence] distinct=2 :: No(67) | Yes(36)
+  [overall survival] distinct=2 :: survival(96) | death(69)
+  [cancer specific survival] distinct=2 :: survival(133) | death(32)
+  [survival month] distinct=158 :: 15.1(2) | 65.93(2) | 120.6(2) | 83.63(2) | 75.13(2) | 23.57(2)
+  [!Sample_description] distinct=1 :: To export to gene expression data based (256)

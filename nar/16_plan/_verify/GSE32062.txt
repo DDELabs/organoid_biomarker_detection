@@ -1,0 +1,22 @@
+# GSE32062 matrix files: ['GSE32062-GPL570_series_matrix.txt.gz', 'GSE32062-GPL6480_series_matrix.txt.gz']
+## GSE32062-GPL570_series_matrix.txt.gz
+title: Immune-activation as a therapeutic direction for patients with high-risk ovarian cancer based on gene expression signature (1)
+platform: GPL6480
+n_samples: 10
+  [!Sample_source_name_ch1] distinct=1 :: high-grade serous ovarian cancer(10)
+  [tissue] distinct=1 :: high-grade serous ovarian cancer tumor(10)
+## GSE32062-GPL6480_series_matrix.txt.gz
+title: Immune-activation as a therapeutic direction for patients with high-risk ovarian cancer based on gene expression signature (1)
+platform: GPL6480
+n_samples: 260
+  [!Sample_source_name_ch1] distinct=1 :: high-grade serous ovarian cancer(260)
+  [tissue] distinct=1 :: high-grade serous ovarian cancer tumor(260)
+  [grading] distinct=2 :: 2(131) | 3(129)
+  [Stage] distinct=4 :: IIIc(180) | IV(56) | IIIb(20) | IIIa(4)
+  [surgery status] distinct=3 :: suboptimal(157) | optimal(102) | Optimal(1)
+  [taxane] distinct=1 :: 1(260)
+  [platinum] distinct=1 :: 1(260)
+  [pfs (m)] distinct=79 :: 12(15) | 14(12) | 19(12) | 6(11) | 15(9) | 5(9)
+  [rec (1)] distinct=2 :: 1(193) | 0(67)
+  [os (m)] distinct=91 :: 28(7) | 49(7) | 36(7) | 42(6) | 21(6) | 57(6)
+  [death (1)] distinct=2 :: 0(139) | 1(121)

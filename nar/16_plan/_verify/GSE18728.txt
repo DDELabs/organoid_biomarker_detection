@@ -1,0 +1,16 @@
+# GSE18728 matrix files: ['GSE18728_series_matrix.txt.gz']
+## GSE18728_series_matrix.txt.gz
+title: Expression data from human breast cancers pre and post chemothrapy
+platform: GPL570
+n_samples: 61
+  [!Sample_source_name_ch1] distinct=60 :: pt27.c2(2) | pt1.c2(1) | pt3.bl(1) | pt3.or(1) | pt4.bl(1) | pt5.or(1)
+  [tissue type] distinct=1 :: breast tumor biopsies(61)
+  [upin] distinct=28 :: 6(3) | 8(3) | 12(3) | 13(3) | 15(3) | 17(3)
+  [time point] distinct=4 :: or(22) | bl(21) | c2(17) | C2(1)
+  [include in paired] distinct=2 :: N(33) | Y(28)
+  [include in bl] distinct=2 :: N(40) | Y(21)
+  [response category] distinct=2 :: NR(38) | R(23)
+  [er original] distinct=3 :: pos(30) | neg(29) | focally pos(2)
+  [pr] distinct=3 :: neg(36) | pos(22) | focally pos(3)
+  [her2 summary] distinct=2 :: neg(44) | pos(17)
+  [!Sample_description] distinct=60 :: pt27.c2(2) | pt1.c2(1) | pt3.bl(1) | pt3.or(1) | pt4.bl(1) | pt5.or(1)

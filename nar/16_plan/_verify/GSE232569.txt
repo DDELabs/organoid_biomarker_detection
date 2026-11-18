@@ -1,0 +1,7 @@
+# GSE232569 matrix files: ['GSE232569_series_matrix.txt.gz']
+## GSE232569_series_matrix.txt.gz
+title: Association of Antifolate Response Signature Status and Clinical Activity of Pemetrexed-Platinum Chemotherapy in Non-Small Cell Lung Cancer - The Piedmont Study
+platform: GPL24676
+n_samples: 95
+  [!Sample_source_name_ch1] distinct=1 :: lung adenocarcinoma(95)
+  [tissue] distinct=1 :: lung adenocarcinoma(95)

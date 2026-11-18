@@ -1,0 +1,15 @@
+# GSE33113 matrix files: ['GSE33113_series_matrix.txt.gz']
+## GSE33113_series_matrix.txt.gz
+title: AMC colon cancer AJCCII
+platform: GPL570
+n_samples: 96
+  [!Sample_source_name_ch1] distinct=2 :: Primary tumor resection(90) | Normal colon mucosa(6)
+  [disease status] distinct=1 :: AJCC stage II CRC(96)
+  [tissue] distinct=2 :: primary tumor resection(90) | normal colon mucosa(6)
+  [age at diagnosis] distinct=90 :: 41,6(1) | 66,06(1) | 80,19(1) | 87,36(1) | 60,49(1) | 76,55(1)
+  [matching tumor sample] distinct=4 :: col015(1) | col006(1) | col004(1) | col026(1)
+  [!Sample_characteristics_ch1] distinct=1 :: (20)
+  [Sex] distinct=2 :: f(48) | m(42)
+  [meta or recurrence within 3 years] distinct=3 :: no(71) | yes(18) | na(1)
+  [time to meta or recurrence] distinct=88 :: 1175(2) | 446(2) | 2000(1) | 140(1) | 62(1) | 832(1)
+  [!Sample_description] distinct=96 :: COL001.CEL(1) | COL002.CEL(1) | COL003.CEL(1) | COL004.CEL(1) | COL005.CEL(1) | COL006.CEL(1)

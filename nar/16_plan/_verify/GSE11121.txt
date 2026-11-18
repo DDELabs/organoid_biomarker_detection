@@ -1,0 +1,14 @@
+# GSE11121 matrix files: ['GSE11121_series_matrix.txt.gz']
+## GSE11121_series_matrix.txt.gz
+title: The humoral immune system has a key prognostic impact in node-negative breast cancer
+platform: GPL96
+n_samples: 200
+  [!Sample_source_name_ch1] distinct=1 :: primary breast cancer tissue(200)
+  [storage] distinct=1 :: fresh frozen(200)
+  [node] distinct=1 :: 0(200)
+  [grade] distinct=3 :: 2(136) | 3(35) | 1(29)
+  [size_in_cm] distinct=37 :: 2.2(17) | 1.8(16) | 1.5(15) | 2.5(14) | 2(13) | 1.7(12)
+  [t.dmfs] distinct=130 :: 93(5) | 79(5) | 72(4) | 122(4) | 45(4) | 71(3)
+  [e.dmfs] distinct=2 :: 0(154) | 1(46)
+  [clinic] distinct=1 :: Mainz(200)
+  [!Sample_description] distinct=1 :: Gene expression data from primary breast(200)

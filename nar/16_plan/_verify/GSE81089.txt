@@ -1,0 +1,17 @@
+# GSE81089 matrix files: ['GSE81089_series_matrix.txt.gz']
+## GSE81089_series_matrix.txt.gz
+title: Next Generation Sequencing (RNAseq) of non-small cell lung cancer
+platform: GPL16791
+n_samples: 218
+  [!Sample_source_name_ch1] distinct=2 :: Human NSCLC tissue(199) | Human non-malignant tissue(19)
+  [tumor (t) or normal (n)] distinct=218 :: L400T(1) | L401T(1) | L404T(1) | L406T(1) | L413T(1) | L414T(1)
+  [stage tnm] distinct=6 :: 1(70) | 2(45) | 5(33) | 3(25) | 4(23) | 7(3)
+  [!Sample_characteristics_ch1] distinct=1 :: (171)
+  [histology] distinct=3 :: 2(108) | 1(67) | 3(24)
+  [surgery date] distinct=192 :: 2008-12-18(2) | 2010-06-03(2) | 2010-04-21(2) | 2010-08-11(2) | 2010-12-07(2) | 2010-10-11(2)
+  [age] distinct=37 :: 65(13) | 74(12) | 67(12) | 62(12) | 71(11) | 69(11)
+  [gender] distinct=2 :: female(103) | male(96)
+  [vital date] distinct=95 :: 2013-04-28(76) | 2013-04-10(29) | 2008-03-26(2) | 2010-02-19(1) | 2011-05-01(1) | 2012-09-19(1)
+  [dead] distinct=3 :: 0(105) | 1(93) | n/a(1)
+  [smoking] distinct=3 :: 1(96) | 2(84) | 3(19)
+  [ps who] distinct=3 :: 0(120) | 1(77) | 2(2)

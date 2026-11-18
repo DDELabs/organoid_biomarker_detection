@@ -1,0 +1,19 @@
+# GSE30219 matrix files: ['GSE30219_series_matrix.txt.gz']
+## GSE30219_series_matrix.txt.gz
+title: Off-context"" gene expression in lung cancer identifies a group of metastatic-prone tumors
+platform: GPL570
+n_samples: 307
+  [!Sample_source_name_ch1] distinct=2 :: Lung Tumour(293) | Non Tumoral Lung(14)
+  [tissue] distinct=2 :: lung tumour(296) | Lung Tumour(11)
+  [age at surgery] distinct=55 :: 71(14) | NTL(14) | 65(13) | 56(13) | 60(12) | 70(12)
+  [gender] distinct=3 :: M(250) | F(43) | NTL(14)
+  [histology] distinct=9 :: ADC(85) | SQC(61) | LCNE(56) | BAS(39) | CARCI(24) | SCC(21)
+  [pt stage] distinct=6 :: T1(166) | T2(69) | T3(31) | T4(21) | NTL(14) | TX(6)
+  [pn stage] distinct=6 :: N0(198) | N1(53) | N2(30) | NTL(14) | N3(10) | NX(2)
+  [pm stage] distinct=4 :: M0(282) | NTL(14) | M1(8) | MX(3)
+  [follow-up time (months)] distinct=141 :: NTL(14) | 11(11) | 14(9) | 13(8) | 2(7) | 8(6)
+  [status] distinct=3 :: DEAD(200) | ALIVE(93) | NTL(14)
+  [disease free survival in months] distinct=132 :: na(15) | 5(10) | 2(9) | 13(8) | 3(8) | 11(8)
+  [!Sample_characteristics_ch1] distinct=1 :: (28)
+  [relapse (event=1; no event=0)] distinct=3 :: 0(164) | 1(114) | na(15)
+  [!Sample_description] distinct=307 :: CBA_001(1) | CBA_002(1) | CBA_003(1) | CBA_004(1) | CBA_005(1) | CBA_006(1)

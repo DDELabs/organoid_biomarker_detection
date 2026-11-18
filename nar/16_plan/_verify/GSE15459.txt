@@ -1,0 +1,8 @@
+# GSE15459 matrix files: ['GSE15459_series_matrix.txt.gz']
+## GSE15459_series_matrix.txt.gz
+title: Gastric Cancer Project '08 (Singapore Patient Cohort)
+platform: GPL570
+n_samples: 200
+  [!Sample_source_name_ch1] distinct=200 :: primary gastric tumor, GC-011LGE-T(1) | primary gastric tumor, GC-017TPC-T(1) | primary gastric tumor, GC-021LAH-T(1) | primary gastric tumor, GC-024-SWM-T(1) | primary gastric tumor, GC-025-PHW-T(1) | primary gastric tumor, GC-026-GJK-T(1)
+  [tissue] distinct=1 :: gastric tumor(200)
+  [!Sample_description] distinct=1 :: Series of 200 primary gastric tumors(200)

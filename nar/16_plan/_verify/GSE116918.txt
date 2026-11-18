@@ -1,0 +1,15 @@
+# GSE116918 matrix files: ['GSE116918_series_matrix.txt.gz']
+## GSE116918_series_matrix.txt.gz
+title: Using biopsies to improve risk stratification in patients with prostate cancer treated with radical radiation therapy
+platform: GPL25318
+n_samples: 248
+  [!Sample_source_name_ch1] distinct=1 :: Primary Prostate Cancer(248)
+  [tissue] distinct=1 :: Primary Prostate Cancer(248)
+  [patient age (years)] distinct=31 :: 73(19) | 70(17) | 67(17) | 72(16) | 66(14) | 74(13)
+  [psa (ng/ml)] distinct=172 :: 9.6(6) | 19(5) | 15(5) | 6.4(4) | 8(4) | 11.5(4)
+  [t-stage] distinct=5 :: T3(92) | T2(76) | T1(51) | Unknown(25) | T4(4)
+  [gleason grade] distinct=5 :: 7(99) | 9(54) | 8(52) | 6(42) | 10(1)
+  [bcr event (1=yes, 0=no)] distinct=2 :: 0(192) | 1(56)
+  [follow-up time (bcr, months)] distinct=91 :: 94(8) | 80(8) | 91(8) | 78(8) | 92(6) | 106(6)
+  [met event (1=yes, 0=no)] distinct=2 :: 0(226) | 1(22)
+  [follow-up time (met, months)] distinct=85 :: 79(10) | 94(9) | 80(8) | 96(7) | 78(7) | 98(6)

@@ -1,0 +1,11 @@
+# GSE218989 matrix files: ['GSE218989_series_matrix.txt.gz']
+## GSE218989_series_matrix.txt.gz
+title: Systematic dissection of tumor-normal single-cell ecosystems across a thousand tumors of 30 cancer types
+platform: GPL24676
+n_samples: 355
+  [!Sample_source_name_ch1] distinct=1 :: Lung cancer tissue(355)
+  [tissue] distinct=1 :: Lung cancer tissue(355)
+  [ethnicity] distinct=1 :: Korean(355)
+  [treatment outcome] distinct=2 :: Non-responder(187) | Responder(168)
+  [treatment] distinct=1 :: PD-1/PD-L1 inhibitor(355)
+  [!Sample_description] distinct=2 :: (263) | *** Raw data not provided for this sampl(92)

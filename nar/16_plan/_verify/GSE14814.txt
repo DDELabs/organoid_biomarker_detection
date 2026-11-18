@@ -1,0 +1,22 @@
+# GSE14814 matrix files: ['GSE14814_series_matrix.txt.gz']
+## GSE14814_series_matrix.txt.gz
+title: Prognostic and Predictive Gene Signature for Adjuvant Chemotherapy in Resected Non-Small-Cell Lung Cancer
+platform: GPL96
+n_samples: 133
+  [!Sample_source_name_ch1] distinct=1 :: primary lung cancer(133)
+  [tissue] distinct=1 :: primary lung cancer(133)
+  [Post Surgical Treatment] distinct=2 :: ACT(71) | OBS(62)
+  [Stage] distinct=5 :: II(45) | I(45) | 1B(28) | 2B(11) | 2A(4)
+  [age] distinct=112 :: 62.1(3) | 66.5(3) | 53.4(2) | 64.1(2) | 65.7(2) | 69.2(2)
+  [Sex] distinct=2 :: Male(91) | Female(42)
+  [Cause of death] distinct=3 :: Alive(73) | Lung cancer(50) | Other conditions(10)
+  [Histology type] distinct=3 :: ADC(71) | SQCC(52) | LCUC(10)
+  [OS time] distinct=126 :: 8.71(2) | 6.09(2) | 8.02(2) | 7.94(2) | 7.43(2) | 1.18(2)
+  [OS status] distinct=2 :: Alive(73) | Dead(60)
+  [DSS time] distinct=88 :: 6.09(2) | 7.94(2) | 8.52(1) | 9.03(1) | 1.32(1) | 8.66(1)
+  [dss survival time] distinct=43 :: 8.06(1) | 8.02(1) | 9.09(1) | 6.49(1) | 8.81(1) | 0.39(1)
+  [DSS status] distinct=3 :: Alive(83) | dead(29) | Dead(21)
+  [predominant subtype] distinct=9 :: not applicable(60) | Unknown(20) | Solid(19) | Acinar(14) | Papillary(9) | Lepidic(4)
+  [dcc sample] distinct=1 :: Yes(43)
+  [!Sample_characteristics_ch1] distinct=1 :: (90)
+  [!Sample_description] distinct=91 :: (43) | patient_sample_CL2004110925AA(1) | patient_sample_CL2004111006AA(1) | patient_sample_CL2004111014AA(1) | patient_sample_CL2004111015AA(1) | patient_sample_CL2004111016AA(1)

@@ -1,0 +1,8 @@
+# GSE35452 matrix files: ['GSE35452_series_matrix.txt.gz']
+## GSE35452_series_matrix.txt.gz
+title: Prediction of sensitivity of rectal cancer cells in response to preoperative chemoradiotherapy by DNA microarray analysis of gene expression profiles.
+platform: GPL570
+n_samples: 46
+  [!Sample_source_name_ch1] distinct=46 :: Patient 102 Rad(1) | Patient K102(1) | Patient K104(1) | Patient 105 Rad(1) | Patient 106 Rad(1) | Patient 107 Rad(1)
+  [tissue] distinct=1 :: Rectal Cancer(46)
+  [response to preoperative chemoradiotherapy] distinct=2 :: Responder(24) | Non-responder(22)

@@ -1,0 +1,18 @@
+# GSE162520 matrix files: ['GSE162520_series_matrix.txt.gz']
+## GSE162520_series_matrix.txt.gz
+title: Immunologically active phenotype is associated with response to PD-1/PD-L1 inhibitors in patients with advanced non-small cell lung cancer
+platform: GPL18573
+n_samples: 92
+  [!Sample_source_name_ch1] distinct=1 :: tumor(92)
+  [patient diagnosis] distinct=1 :: non-small cell lung cancer(92)
+  [tissue] distinct=1 :: tumor(92)
+  [age] distinct=84 :: NA(9) | 65.8575342465753(1) | 71.758904109589(1) | 75.2547945205479(1) | 70.4575342465753(1) | 87.441095890411(1)
+  [Sex] distinct=2 :: Male(58) | Female(34)
+  [os (month)] distinct=90 :: 38(2) | 26.4666666666667(2) | 84.0333333333333(1) | 19.3666666666667(1) | 87.9666666666667(1) | 87.9(1)
+  [os (event)] distinct=2 :: 0(71) | 1(21)
+  [pfs (month)] distinct=90 :: 38(2) | 26.4666666666667(2) | 84.0333333333333(1) | 12.3666666666667(1) | 87.9666666666667(1) | 34.3333333333333(1)
+  [pfs (event)] distinct=2 :: 0(57) | 1(35)
+  [histology] distinct=2 :: ADK(47) | SCC(45)
+  [hot score] distinct=92 :: 0.379592872100757(1) | 0.60872243311042(1) | 0.521566039941741(1) | 0.0107355552182017(1) | -0.438783091294414(1) | -0.467239950868718(1)
+  [hot phenotype] distinct=2 :: COLD(48) | HOT(44)
+  [!Sample_description] distinct=92 :: CLB_1(1) | CLB_2(1) | CLB_3(1) | CLB_4(1) | CLB_5(1) | CLB_6(1)

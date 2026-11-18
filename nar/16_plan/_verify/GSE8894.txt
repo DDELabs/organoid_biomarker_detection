@@ -1,0 +1,14 @@
+# GSE8894 matrix files: ['GSE8894_series_matrix.txt.gz']
+## GSE8894_series_matrix.txt.gz
+title: Prediction of Recurrence-Free Survival in Postoperative NSCLC Patients—a Useful Prospective Clinical Practice
+platform: GPL570
+n_samples: 138
+  [!Sample_source_name_ch1] distinct=1 :: frozen tissue of primary lung tumor(138)
+  [status (1=recurrence, 0=non-recurrence)] distinct=2 :: 0(69) | 1(69)
+  [tissue] distinct=1 :: frozen tissue of primary lung tumor(3)
+  [age] distinct=36 :: 69(12) | 60(9) | 59(9) | 67(8) | 62(7) | 66(6)
+  [gender] distinct=2 :: Male(104) | Female(34)
+  [cell type] distinct=2 :: squamous cell carcinoma(75) | Adenocarcinoma(63)
+  [recurrence free survival time (month)] distinct=133 :: 49.6(2) | 40.3(2) | 7.9(2) | 11.16667(2) | 4.7(2) | 46.96667(1)
+  [!Sample_characteristics_ch1] distinct=1 :: (137)
+  [!Sample_description] distinct=1 :: frozen tissue of primary lung tumors(138)

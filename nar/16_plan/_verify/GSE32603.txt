@@ -1,0 +1,18 @@
+# GSE32603 matrix files: ['GSE32603_series_matrix.txt.gz']
+## GSE32603_series_matrix.txt.gz
+title: Serial gene expression analysis in locally advanced breast cancer patients who failed to respond to neoadjuvant chemotherapy
+platform: GPL14668
+n_samples: 248
+  [!Sample_source_name_ch1] distinct=3 :: pretreatment Breast Tumor biopsy (T1)(141) | Breast Tumor biopsy after chemotherapy ((62) | 24-72 hours after initiation of treatmen(45)
+  [patient] distinct=166 :: 1016(3) | 1009(3) | 1004(3) | 1032(3) | 1049(3) | 1044(3)
+  [tissue] distinct=1 :: Breast(248)
+  [treatment] distinct=5 :: F1(130) | FS(62) | F3(40) | F2(11) | F4(5)
+  [biopsy time] distinct=3 :: T1(141) | TS(62) | T2(45)
+  [rfs_days] distinct=154 :: 179(5) | 1802(4) | 1679(4) | 1190(4) | 759(3) | 2355(3)
+  [recurrence_yes is 1] distinct=2 :: 0(169) | 1(79)
+  [hr-positive_yes is 1] distinct=3 :: 1(154) | 0(91) | NA(3)
+  [her2-positive_yes is 1] distinct=3 :: 0(186) | 1(55) | NA(7)
+  [pcr_yes is 1] distinct=3 :: 0(193) | 1(51) | NA(4)
+  [rcb class] distinct=5 :: 2(99) | 3(65) | 0(50) | NA(20) | 1(14)
+  [rcb index] distinct=114 :: 0(50) | NA(20) | 1.5(3) | 1.764(3) | 2.84(3) | 4.048(3)
+  [!Sample_description] distinct=248 :: 1001_F2_T1_209515(1) | 1012_F1_T1_211738(1) | 1013_F1_T1_211720(1) | 1002_F1_T1_209534(1) | 1005_F1_T1_209633(1) | 1022_F1_T1_214441(1)

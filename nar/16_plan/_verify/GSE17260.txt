@@ -1,0 +1,16 @@
+# GSE17260 matrix files: ['GSE17260_series_matrix.txt.gz']
+## GSE17260_series_matrix.txt.gz
+title: Prediction of progression-free survival in patients with advanced-stage serous ovarian cancer
+platform: GPL6480
+n_samples: 110
+  [!Sample_source_name_ch1] distinct=1 :: serous ovarian cancer(110)
+  [tumor grade] distinct=3 :: 3(43) | 2(41) | 1(26)
+  [Stage] distinct=4 :: IIIc(69) | IIIb(18) | IV(17) | IIIa(6)
+  [cytoreductive surgery] distinct=2 :: optimal(57) | not optimal(53)
+  [progression-free survival (m)] distinct=47 :: 8(7) | 15(6) | 12(6) | 1(5) | 17(5) | 14(5)
+  [recurrence (1)] distinct=2 :: 1(76) | 0(34)
+  [overall survival (m)] distinct=56 :: 26(6) | 33(5) | 1(4) | 24(4) | 51(4) | 17(4)
+  [death (1)] distinct=2 :: 0(64) | 1(46)
+  [disease state] distinct=1 :: serous ovarian cancer(110)
+  [tissue] distinct=1 :: cancer tumor(110)
+  [!Sample_description] distinct=1 :: n/a(110)

@@ -1,0 +1,19 @@
+# GSE32894 matrix files: ['GSE32894_series_matrix.txt.gz']
+## GSE32894_series_matrix.txt.gz
+title: A Molecular Taxonomy of Urothelial Carcinoma
+platform: GPL6947
+n_samples: 308
+  [!Sample_source_name_ch1] distinct=308 :: Bladder Tumor UC_0001_1(1) | Bladder Tumor UC_0002_1(1) | Bladder Tumor UC_0003_1(1) | Bladder Tumor UC_0006_2(1) | Bladder Tumor UC_0007_1(1) | Bladder Tumor UC_0008_1(1)
+  [gender] distinct=2 :: M(228) | F(80)
+  [age] distinct=54 :: 75(16) | 76(13) | 71(12) | 67(12) | 79(12) | 65(12)
+  [hyb_slide] distinct=37 :: S25(12) | S27(12) | S21(11) | S9(11) | S18(11) | S31(11)
+  [labeling_plate] distinct=5 :: P4(83) | P5(78) | P1(63) | P2(56) | P6(28)
+  [molecular_subtype] distinct=7 :: MS1b(78) | MS2a.2(55) | MS1a(53) | MS2b.1(43) | MS2a.1(30) | MS2b2.2(29)
+  [tumor_stage] distinct=9 :: Ta(116) | T1(97) | T2(82) | T3b(6) | T2b(2) | Tx(2)
+  [tumor_grade] distinct=5 :: G3(154) | G2(103) | G1(48) | Gx(2) | G4(1)
+  [progression_to_higher_stage_or_radiotherapy_(yes/no)] distinct=12 :: no(258) | yes (T2)(13) | yes (T1)(5) | yes (T3)(5) | yes (CIS)(4) | yes (T3b)(4)
+  [dod_excluded_(yes/no)] distinct=2 :: no(224) | yes(80)
+  [!Sample_characteristics_ch1] distinct=1 :: (419)
+  [time_to_dod_(months)] distinct=212 :: 17.68767123(3) | 55.03561644(2) | 6.575342466(2) | 29.49041096(2) | 69.50136986(2) | 54.34520548(2)
+  [node_status] distinct=8 :: pN0(47) | pN2(10) | N+(7) | pN1(3) | pN3(1) | N0(1)
+  [dod_event_(yes/no)] distinct=2 :: no(199) | yes(25)

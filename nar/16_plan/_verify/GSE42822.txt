@@ -1,0 +1,23 @@
+# GSE42822 matrix files: ['GSE42822_series_matrix.txt.gz']
+## GSE42822_series_matrix.txt.gz
+title: Expression data from breast cancer FNA biopsies from patients ( (USO samples)
+platform: GPL96
+n_samples: 91
+  [!Sample_source_name_ch1] distinct=1 :: breast cancer FNA biopsy, pre-treatment(91)
+  [pcr (1) vs rd (0)] distinct=2 :: 0(54) | 1(37)
+  [tx.score (lower score, greater chemo sensitive)] distinct=91 :: 0.155014032(1) | 0.087161695(1) | 0.197031521(1) | 0.172906955(1) | 0.19922513(1) | 0.197368304(1)
+  [fec.score (lower score, greater chemo sensitive)] distinct=91 :: 0.179757904(1) | 0.058320898(1) | 0.283910448(1) | 0.186693445(1) | 0.191064477(1) | 0.197020321(1)
+  [tfec.score (lower score, greater chemo sensitive)] distinct=91 :: 0.38069662(1) | 0.24578594(1) | 0.41011664(1) | 0.30750584(1) | 0.38911652(1) | 0.36102924(1)
+  [mammaprint.score (lower score, greater chemo sensitive)] distinct=67 :: NA(25) | 0.0244744664494047(1) | -0.115118172540107(1) | 0.23582620400556(1) | 0.157247485138212(1) | 0.126829740320001(1)
+  [ror.s.score (higher score, greater chemo sensitive)] distinct=67 :: NA(25) | 15.9754120854922(1) | 49.3426131177281(1) | 28.1266055250552(1) | 33.1950868289823(1) | 66.982131708747(1)
+  [ror.p.score (higher score, greater chemo sensitive)] distinct=67 :: NA(25) | -25.911896863762(1) | 77.9506577419859(1) | -2.06039251061458(1) | 77.55305856232(1) | 63.6296063365448(1)
+  [age] distinct=51 :: 44(6) | 50(6) | 49(5) | 51(4) | 58(4) | 56(4)
+  [prechemo t] distinct=4 :: 3(47) | 2(34) | 4(9) | 1(1)
+  [prechemo n] distinct=5 :: N1(45) | N0(29) | N2(9) | N3(5) | NA(3)
+  [prechemo n.status (1] distinct=3 :: positive, 0: negative): 1(59) | positive, 0: negative): 0(29) | positive, 0: negative): NA(3)
+  [bmn.grade] distinct=3 :: G3(53) | G1/2(23) | NA(15)
+  [er.status (1] distinct=3 :: positive, 0: negative): 0(52) | positive, 0: negative): 1(38) | positive, 0: negative): NA(1)
+  [pr.status (1] distinct=3 :: positive, 0: negative): 0(50) | positive, 0: negative): 1(40) | positive, 0: negative): NA(1)
+  [her2.status (1] distinct=3 :: positive, 0: negative): 0(54) | positive, 0: negative): 1(34) | positive, 0: negative): NA(3)
+  [treatment.type] distinct=2 :: FEC/TX(66) | FEC/TX+H(25)
+  [!Sample_description] distinct=1 :: Gene expression data from breast cancer (91)

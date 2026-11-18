@@ -1,0 +1,21 @@
+# GSE93157 matrix files: ['GSE93157_series_matrix.txt.gz']
+## GSE93157_series_matrix.txt.gz
+title: Programmed death 1 receptor blockade and immune-related gene expression profiling in non-small cell lung carcinoma, head and neck squamous cell carcinoma and melanoma
+platform: GPL19965
+n_samples: 65
+  [!Sample_source_name_ch1] distinct=4 :: MELANOMA(25) | LUNG NON-SQUAMOUS CANCER(22) | SQUAMOUS LUNG CANCER(13) | HEADNECK(5)
+  [age] distinct=36 :: 59(4) | 61(4) | 47(4) | 46(3) | 70(3) | 72(2)
+  [prev. lines] distinct=7 :: 1(22) | 0(17) | 2(13) | 3(9) | 4(2) | 6(1)
+  [braf] distinct=3 :: NA(40) | WT(16) | MUT(9)
+  [nras] distinct=3 :: NA(55) | WT(8) | MUT(2)
+  [egfr] distinct=3 :: NA(34) | WT(30) | MUT(1)
+  [alk] distinct=2 :: NA(35) | NEG(30)
+  [biopsy] distinct=2 :: BASELINE(33) | ARCHIVAL(32)
+  [smoking] distinct=3 :: FS(28) | NS(21) | CS(16)
+  [ecog] distinct=3 :: 1(43) | 0(20) | 2(2)
+  [Sex] distinct=2 :: M(50) | F(15)
+  [drug] distinct=2 :: PEMBROLIZUMAB(37) | NIVOLUMAB(28)
+  [best.resp] distinct=4 :: PD(29) | PR(17) | SD(16) | CR(3)
+  [response] distinct=2 :: RC_RP_SD(60) | PD(5)
+  [pfse] distinct=2 :: 1(45) | 0(20)
+  [pfs] distinct=55 :: 2.8(3) | 2.56666667(3) | 0(2) | 4.9(2) | 6.3(2) | 0.7(2)

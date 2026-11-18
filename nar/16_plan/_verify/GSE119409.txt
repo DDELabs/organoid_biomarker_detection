@@ -1,0 +1,12 @@
+# GSE119409 matrix files: ['GSE119409_series_matrix.txt.gz']
+## GSE119409_series_matrix.txt.gz
+title: Expression data from rectal cancer
+platform: GPL570
+n_samples: 66
+  [!Sample_source_name_ch1] distinct=1 :: RECTAL CANCER(66)
+  [disease state] distinct=1 :: rectal cancer(66)
+  [tissue] distinct=1 :: rectal cancer biopsy(66)
+  [sensitivity] distinct=3 :: resistant(41) | sensitive(15) | unknown(10)
+  [patient age] distinct=35 :: 57(4) | 61(4) | 51(4) | 52(3) | 65(3) | 63(3)
+  [tumor stage] distinct=10 :: T3N2M0(29) | T3N1M0(16) | T4N2M0(6) | T3N0M0(5) | T3N2MO(2) | T2N1MO(2)
+  [!Sample_description] distinct=1 :: Gene expression data from rectal cancer (66)

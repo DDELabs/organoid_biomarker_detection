@@ -1,0 +1,13 @@
+# GSE41613 matrix files: ['GSE41613_series_matrix.txt.gz']
+## GSE41613_series_matrix.txt.gz
+title: A 13-gene signature prognostic of HPV-negative OSCC: discovery and external validation
+platform: GPL570
+n_samples: 97
+  [!Sample_source_name_ch1] distinct=1 :: HPV-negative OSCC patient(97)
+  [tissue type] distinct=1 :: HPV-negative oral squamous cell carcinom(97)
+  [tumor stage] distinct=2 :: III/IV(56) | I/II(41)
+  [age] distinct=4 :: 60-88(47) | 50-59(28) | 40-49(16) | 19-39(6)
+  [Sex] distinct=2 :: M(66) | F(31)
+  [vital] distinct=4 :: Alive(46) | Dead-oral ca(30) | Dead-non OC(14) | Dead -unk cause(7)
+  [fu time] distinct=94 :: 62.85(2) | 6.54(2) | 70.08(2) | 55.66(1) | 3.38(1) | 28.62(1)
+  [treatment] distinct=3 :: multii-modality(53) | uni-modality(43) | unknown(1)

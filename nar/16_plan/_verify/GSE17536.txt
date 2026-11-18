@@ -1,0 +1,18 @@
+# GSE17536 matrix files: ['GSE17536_series_matrix.txt.gz']
+## GSE17536_series_matrix.txt.gz
+title: Metastasis Gene Expression Profile Predicts Recurrence and Death in Colon Cancer Patients (Moffitt Samples)
+platform: GPL570
+n_samples: 177
+  [!Sample_source_name_ch1] distinct=1 :: Moffitt Cancer Center(177)
+  [age] distinct=52 :: 63(10) | 78(10) | 71(10) | 66(8) | 74(8) | 58(7)
+  [gender] distinct=2 :: male(96) | female(81)
+  [ethnicity] distinct=4 :: caucasian(151) | other (not caucasian, black, or hispanic(16) | black(9) | hispanic(1)
+  [ajcc_stage] distinct=4 :: 2(57) | 3(57) | 4(39) | 1(24)
+  [grade] distinct=3 :: 2 - Moderately differentiated (MD)(134) | 3 - Poorly differentiated (PD)(27) | 1 - Well differentiated (WD)(16)
+  [overall_event (death from any cause)] distinct=2 :: no death(104) | death(73)
+  [dss_event (disease specific survival; death from cancer)] distinct=2 :: no death(122) | death(55)
+  [dfs_event (disease free survival; cancer recurrence)] distinct=3 :: no recurrence(109) | recurrence(36) | NA(32)
+  [overall survival follow-up time] distinct=170 :: 67.82(2) | 37.31(2) | 83.99(2) | 58.45(2) | 95.07(2) | 0.92(2)
+  [dss_time] distinct=170 :: 67.82(2) | 37.31(2) | 83.99(2) | 58.45(2) | 95.07(2) | 0.92(2)
+  [dfs_time] distinct=143 :: 0(32) | 37.31(2) | 22.38(2) | 36.92(2) | 142.55(1) | 122.72(1)
+  [!Sample_description] distinct=1 :: Gene expression(177)

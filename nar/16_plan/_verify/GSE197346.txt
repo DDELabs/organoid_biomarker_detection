@@ -1,0 +1,17 @@
+# GSE197346 matrix files: ['GSE197346_series_matrix.txt.gz']
+## GSE197346_series_matrix.txt.gz
+title: Characterization of a new genetic signature associated with copy number variation that determines outcome in lung adenocarcinoma patients
+platform: GPL24676
+n_samples: 40
+  [!Sample_source_name_ch1] distinct=2 :: Tumor(20) | Adjacent normal(20)
+  [age] distinct=16 :: 55(6) | 57(4) | 61(4) | 41(2) | 69(2) | 36(2)
+  [gender] distinct=2 :: female(22) | male(18)
+  [tissue] distinct=1 :: lung(40)
+  [t stage] distinct=6 :: 1c(5) | 2a(5) | 1b(5) | 1(2) | 2b(1) | Tis(1)
+  [disease state] distinct=1 :: lung adenocarcinoma(40)
+  [n stage] distinct=3 :: 0(14) | 2(4) | 1(1)
+  [!Sample_characteristics_ch1] distinct=1 :: (106)
+  [m stage] distinct=2 :: 0(18) | 1a(1)
+  [tumor stage] distinct=7 :: Ia3(4) | IB(4) | IIIa(3) | Ia2(3) | I(2) | IVa(1)
+  [smoking] distinct=2 :: 1(10) | 2(9)
+  [!Sample_description] distinct=2 :: (39) | breast cancer lung metastasis(1)

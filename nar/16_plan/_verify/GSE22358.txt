@@ -1,0 +1,8 @@
+# GSE22358 matrix files: ['GSE22358_series_matrix.txt.gz']
+## GSE22358_series_matrix.txt.gz
+title: Clinical and Pathologic Response of the Primary Tumor in Women Receiving Neoadjuvant Docetaxel-Capecitabine (+/- Trastuzumab) Chemotherapy
+platform: GPL5325
+n_samples: 158
+  [!Sample_source_name_ch1] distinct=1 :: Human Reference B(158)
+  [reference] distinct=1 :: Stratagene Human Universal Reference tha(158)
+  [!Sample_description] distinct=158 :: J018786(1) | K282369(1) | J018788(1) | K826609(1) | M228989(1) | M228995(1)

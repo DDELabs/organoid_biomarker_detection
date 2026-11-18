@@ -1,0 +1,106 @@
+accession	cancer	platform	n	treatment	endpoint	verified	why_useful	priority	note
+GSE14814	lung (NSCLC)	GPL96	133	randomised: cisplatin+vinorelbine 71 vs observation 62 (JBR.10)	OS (60 deaths), DSS	yes	the only randomised chemo-vs-observation lung trial with expression; true score x treatment test	1	stage I-II; ADC 71, SQCC 52
+GSE68465	lung (adenocarcinoma)	GPL96	462 (443 tumour)	adjuvant chemo yes 89 / no 341 / unknown 13; adjuvant RT flag	OS (236 deaths), first relapse (205)	yes	largest lung treated-vs-untreated cohort (Director's Challenge)	1	not randomised; stage from pTN
+GSE37745	lung (NSCLC)	GPL570	196	adjuvant yes 29 / no 71 / not known 96	OS (145 deaths), recurrence (49)	yes	second Affymetrix treated-vs-untreated set	2	treatment unknown for half
+GSE29013	lung (NSCLC)	GPL570	55	adjuvant chemo yes 34 / no 21	OS (18 deaths), progression (28)	yes	small, FFPE; adds treated patients	3	
+GSE31210	lung (adenocarcinoma)	GPL570	226 tumour	22 flagged 'incomplete resection or adjuvant therapy' (the two are not separated); rest surgery only	relapse (64), OS (35 deaths)	yes	large mostly-untreated control arm; EGFR/KRAS/ALK status	2	untreated prognostic control
+GSE50081	lung (NSCLC)	GPL570	181	not recorded in GEO (paper: surgery only; unverified)	OS (75 deaths), DFS (51 recurrences)	yes (outcome); treatment no	untreated control	3	
+GSE8894	lung (NSCLC)	GPL570	138	not recorded	RFS (69 events)	yes (outcome); treatment no	untreated/unknown control	3	
+GSE3141	lung (NSCLC)	GPL570	111	not recorded	OS (packed in one free-text field)	yes (outcome); treatment no	untreated/unknown control	4	parse 'Surv(months); STATUS' text
+GSE30219	lung (mixed, incl. neuroendocrine)	GPL570	307 (296 tumour)	not recorded (paper: surgery only; unverified)	OS (200 deaths), DFS (114 relapses)	yes (outcome); treatment no	untreated control; keep NSCLC histologies only	3	
+GSE72094	lung (adenocarcinoma)	GPL15048	442	not recorded	OS (122 deaths)	yes (outcome); treatment no	large untreated control; KRAS/EGFR/STK11/TP53	3	Rosetta custom array
+GSE11969	lung (NSCLC + SCLC)	GPL7015	163	gefitinib yes 10	OS (74 deaths), relapse (78); EGFR status	yes	tiny gefitinib subgroup; prognostic control	4	two-colour Agilent
+GSE13213	lung (adenocarcinoma)	GPL6480	117	not recorded	OS (49 deaths), relapse (58); EGFR/KRAS/TP53	yes (outcome); treatment no	untreated control	4	
+GSE26939	lung (adenocarcinoma)	GPL9053	116	not recorded	OS (66 deaths); EGFR/KRAS/TP53/STK11	yes (outcome); treatment no	untreated control	4	
+GSE41271	lung (NSCLC)	GPL6884	275	not recorded in GEO	OS (124 deaths), recurrence (122) as dates	yes (outcome); treatment no	untreated/unknown control; times from dates	3	
+GSE157011	lung (squamous)	GPL570	484	not recorded	OS (264 events)	yes (outcome); treatment no	large squamous control (Alliance)	3	
+GSE19188	lung (NSCLC)	GPL570	91 tumour	not recorded	OS (50 deaths, 82 with data)	yes (outcome); treatment no	untreated control	4	
+GSE81089	lung (NSCLC)	RNA-seq GPL16791	218	not recorded	vital status (93 dead); time field to check	partial	RNA-seq untreated control	4	
+GSE33072	lung (NSCLC, BATTLE)	GPL6244	131	erlotinib 25, sorafenib 39, erlotinib+bexarotene 1	8-week disease control (sparse), PFS	yes	only public tumour cohort with EGFR-TKI / sorafenib outcome	2	many fields sparse; check per-arm n with outcome
+GSE161537	lung (NSCLC)	RNA-seq GPL18573	82	anti-PD-1/PD-L1 (lines 1-6)	best response RECIST (CR 1, PR 19, SD 22, PD 34, NA 6), OS (61), PFS	yes	largest open lung immunotherapy response set	1	
+GSE162520	lung (NSCLC)	RNA-seq GPL18573	92	not recorded in GEO (title refers to PD-1/PD-L1; 21 deaths suggests a resected cohort)	OS (21), PFS (35)	partial	companion of GSE161537; check paper before use	3	
+GSE135222	lung (NSCLC)	RNA-seq GPL16791	27	anti-PD-1 (per series)	PFS (21 events)	yes	small immunotherapy set	3	
+GSE126044	lung (NSCLC)	RNA-seq GPL16791	16	anti-PD-1, pre-treatment	responder 5 / non-responder 11	yes	very small immunotherapy set	4	
+GSE136961	lung (NSCLC)	AmpliSeq GPL24014	21	anti-PD-1	recurrence/PFS (18 events)	yes	very small immunotherapy set	4	
+GSE218989	lung (NSCLC)	GPL24676	355	PD-1/PD-L1 inhibitor	responder 168 / non-responder 187	yes	large immunotherapy response set; CHECK assay is bulk (series sits in a single-cell atlas SuperSeries)	1	verify bulk vs single-cell before building
+GSE93157	lung + head and neck + melanoma	NanoString GPL19965 (~770 genes)	65	pembrolizumab 37, nivolumab 28	best response, PFS (45)	yes	panel only: few Reactome pathways; same reason GSE140901 was dropped	4	
+GSE207422	lung (NSCLC)	scRNA-seq GPL24676	39 (27 pre-treatment)	neoadjuvant anti-PD-1 + chemotherapy	major pathological response (MPR/pCR 13 vs NMPR 25)	yes	neoadjuvant chemo-immunotherapy; needs pseudo-bulk	3	single-cell
+GSE232569	lung (adenocarcinoma)	RNA-seq GPL24676	95	pemetrexed + platinum (Piedmont)	response/PFS NOT in the GEO record	partial	first-line pemetrexed cohort if outcome found in supplement	2	check suppl files
+GSE190265	lung (NSCLC)	RNA-seq GPL18573	34	chemo-immunotherapy	outcome NOT in the GEO record	partial	only if outcome is in supplement	4	
+GSE166449	lung (NSCLC)	RNA-seq GPL11154	22	pre-treatment, advanced stage	outcome NOT in the GEO record	partial	only if outcome is in supplement	4	
+GSE61676	lung (NSCLC)	GPL5188	86	bevacizumab + erlotinib	responder 46/40, OS	yes	NOT USABLE: peripheral blood, not tumour	-	exclude
+GSE43580	lung (NSCLC)	GPL570	150	not recorded	no outcome	yes	NOT USABLE: no outcome	-	exclude
+CPTAC-3 (GDC)	lung (LUAD, LSCC) and others	RNA-seq	1,824 cases pan-cancer with expression	treatment_type: chemotherapy 728, immunotherapy 116, targeted 22 (pan-cancer); drug names missing in facet	vital status/days to death (to check)	partial	second open lung RNA-seq cohort with treatment type; run GDC query per project	2	checked via GDC API facets only
+POPLAR/OAK (EGA, Patil et al.)	lung (NSCLC)	RNA-seq	~ 1,000 (reported)	atezolizumab vs docetaxel (randomised)	OS, PFS, response	no	best lung randomised immunotherapy trial; controlled access (application)	-	not reachable from here
+GSE16446	breast (ER-negative)	GPL570	120	epirubicin monotherapy, neoadjuvant	pCR (16), DMFS (25), OS	yes	single-drug anthracycline response	1	
+GSE50948	breast (NOAH)	GPL570	156	doxorubicin/paclitaxel +/- trastuzumab (HER2+ randomised 63 vs 51; HER2- 42)	pCR (53)	yes	randomised trastuzumab test	1	
+GSE66305	breast (HER2+, CHER-LOB)	GPL570	88	randomised: chemo+trastuzumab 23, +lapatinib 31, +both 34	pCR (27)	yes	randomised anti-HER2 trial	2	
+GSE37946	breast (HER2+)	GPL96	50	trastuzumab-based neoadjuvant chemo	pCR (27)	yes	anti-HER2 response	3	
+GSE76360	breast (HER2+)	GPL6947	100 (50 baseline)	trastuzumab preoperative (03-311)	pCR 18, objective response 66	yes	anti-HER2 response (baseline only)	3	
+GSE21974	breast	GPL6480	57 (32 pre)	neoadjuvant chemotherapy	response R 18 / NR 39	yes	small, adds platform diversity	4	
+GSE18728	breast	GPL570	61 (21 baseline)	neoadjuvant capecitabine-docetaxel (per paper)	response R 23 / NR 38	yes	small	4	
+GSE42822	breast	GPL96	91	neoadjuvant FEC / TFEC	pCR (37)	yes	adds 91 pCR-labelled patients	2	check overlap with MDACC sets (GSE20194/25066)
+GSE34138	breast (HER2-)	GPL6884	178	AC (doxorubicin+cyclophosphamide)	CR 28 (+10 near CR)	yes	large AC-only response set (no taxane)	1	
+GSE6861	breast	GPL1352	161	anthracycline/taxane (EORTC 10994)	pCR (66)	yes	large pCR set on another platform	2	check overlap with GSE4779
+GSE4779	breast	GPL1352	102	epirubicin-containing (FEC)	pCR (39)	yes	anthracycline response	3	possible overlap with GSE6861
+GSE32603	breast (I-SPY1)	GPL14668	248 (141 pre)	AC then taxane	RFS (79 recurrences)	yes	survival endpoint in a neoadjuvant trial	2	pCR from paper
+GSE173839	breast (I-SPY2)	GPL20078	105	durvalumab+olaparib 71 vs control 34	pCR (36)	yes	ISPY2 arm; likely subset of GSE194040 - de-duplicate	3	run duplicate check
+GSE18864	breast (TNBC)	GPL570	84	cisplatin monotherapy	Miller-Payne grade (24 with a grade)	yes	single-drug cisplatin response	3	
+GSE103668	breast (TNBC)	GPL570	21	platinum + bevacizumab	response 7/14, pCR 3	yes	tiny	4	
+GSE28796	breast	GPL570	24	dose-dense docetaxel	pCR 2	yes	too few responders	-	exclude
+GSE17705	breast (ER+)	GPL96	298	tamoxifen 5 years	distant relapse (71)	yes	first endocrine-drug survival cohort	1	
+GSE9195	breast (ER+)	GPL570	77	tamoxifen	RFS (13)	yes	endocrine	3	
+GSE6532	breast (ER+)	GPL570 (+GPL96/97)	87 + 125 (multi-platform)	tamoxifen-treated subset (per paper)	RFS (28 + 44)	yes	endocrine	2	treatment per sample from paper
+GSE12093	breast (ER+)	GPL96	136	adjuvant tamoxifen	DFS (20)	yes	endocrine	3	
+GSE16391	breast (ER+, BIG 1-98)	GPL570	55	letrozole vs tamoxifen (coded 0/1)	RFS	yes	small randomised endocrine set	3	
+GSE45255	breast	GPL96	139	mixed adjuvant (tamoxifen, AC, CAF, none 10)	DFS	yes	mixed regimens	4	
+GSE58644	breast	GPL6244	321	chemo yes 123 / no 105	event (69)	yes	treated-vs-untreated breast control	2	
+GSE31519	breast (TNBC)	GPL96	67	chemo yes 58 / no 9	event-free interval (23)	yes	small	4	
+GSE59515	breast (ER+)	GPL10558	75 (25 pre)	letrozole neoadjuvant	clinical response 51/24 (all timepoints)	yes	endocrine response; baseline only	3	
+GSE20181	breast (ER+)	GPL96	176 (60 patients)	letrozole neoadjuvant	response NOT in the GEO record	partial	only with response from paper	4	
+GSE87455	breast	GPL10558	275 (122 baseline)	chemo +/- bevacizumab	response NOT in the GEO record	partial	only with response from paper	4	
+GSE2034	breast (node-negative)	GPL96	286	no systemic adjuvant therapy (per paper)	relapse (bone relapse field seen; full RFS in paper)	partial	untreated breast control	3	
+GSE7390	breast (node-negative)	GPL96	198	untreated (TRANSBIG)	RFS (91), OS (56)	yes	untreated breast control	2	
+GSE11121	breast (node-negative)	GPL96	200	untreated (Mainz)	DMFS (46)	yes	untreated breast control	2	
+GSE140082	ovarian (ICON7)	GPL14951	380	randomised: bevacizumab 199 vs standard chemo 181	OS (96 deaths)	yes	randomised bevacizumab test; PFS not in matrix	1	
+GSE32062	ovarian (serous)	GPL6480	260	platinum (all)	OS (121 deaths)	yes	large platinum-treated survival set	1	
+GSE26712	ovarian	GPL96	195 (185 tumour)	platinum (per paper)	OS (129 dead of disease)	yes	platinum survival	2	
+GSE49997	ovarian	GPL2986	204 (194 tumour)	platinum-taxane (per paper)	PFS (124), OS (57)	yes	platinum survival	2	ABI platform
+GSE13876	ovarian	GPL7759	415	platinum-based (per paper)	survival status (302 events)	yes	large survival set	3	custom array
+GSE17260	ovarian (serous)	GPL6480	110	platinum-taxane (per paper)	PFS (76), OS (46)	yes	platinum survival	2	
+GSE30161	ovarian	GPL570	58	carboplatin/paclitaxel 49, other platinum 9	clinical response (CR 32, PR 22), relapse 48, OS 36	yes	adds a platinum response set	2	
+GSE3149	ovarian	GPL96	153	not in GEO record	not in GEO record	partial	only with paper supplement	4	
+GSE14210	stomach	GPL571	145 pre-treatment	cisplatin + 5-FU (metastatic)	response/TTP NOT in characteristics (descriptions only)	partial	cisplatin/5-FU response if paper table found	3	
+GSE26253	stomach	GPL8432	432	adjuvant chemoradiation after surgery (all)	RFS (177)	yes	large treated survival set; no untreated arm	3	
+GSE84437	stomach	GPL6947	483	not recorded	OS (209)	yes (outcome); treatment no	untreated/unknown control	4	
+GSE62254	stomach (ACRG)	GPL570	300	adjuvant chemo per paper supplement	OS/DFS NOT in GEO record	partial	needs ACRG clinical table	3	
+GSE15459	stomach	GPL570	200	not in GEO record	not in GEO record	partial	needs supplement	4	
+GSE104958	oesophagus	GPL21185	46 (41 tumour)	neoadjuvant docetaxel+cisplatin+5-FU	pCR 12 / non-pCR 34	yes	adds oesophagus response set	3	
+GSE5851	colorectal (metastatic)	GPL571	80	cetuximab monotherapy	response/PFS NOT in characteristics (paper supplement)	partial	cetuximab response for the BRAF/cetuximab positive line	2	check suppl
+GSE17536	colorectal	GPL570	177	not recorded	OS (73), DSS, DFS	yes (outcome); treatment no	untreated/unknown control	3	
+GSE33113	colorectal (stage II)	GPL570	90	mostly no adjuvant chemo (stage II)	metastasis/recurrence within 3 years (18)	yes	untreated control	3	
+GSE38832	colorectal	GPL570	122	not recorded	DSS (28), DFS	yes (outcome); treatment no	control	4	
+GSE45404	rectal	GPL4133	38 + 42	chemoradiotherapy (5-FU based)	responder 16/22 and 19/23	yes	rectal CRT response	3	
+GSE35452	rectal	GPL570	46	chemoradiotherapy	responder 24 / non-responder 22	yes	rectal CRT response	3	
+GSE119409	rectal	GPL570	66	chemoradiotherapy	sensitive 15 / resistant 41	yes	rectal CRT response	3	
+GSE94104	rectal	GPL14951	80 (40 pre)	chemoradiotherapy	tumour regression grade 1/2/3	yes	rectal CRT response	3	
+GSE150082	rectal	GPL13497	39	chemoradiotherapy	response good 16 / poor 23	yes	rectal CRT response	3	
+GSE145037	rectal	GPL28140	31	chemoradiotherapy	response 20 / non-response 11	yes	rectal CRT response	4	
+GSE133057	rectal	GPL6102	33	chemoradiotherapy	OS (11 deaths); TRG from paper	yes	small	4	
+GSE13507	bladder	GPL6102	165 primary	systemic chemo yes 27 / no 138; intravesical 56/47	OS (69), CSS (32), recurrence	yes	bladder treated-vs-untreated	2	
+GSE32894	bladder	GPL6947	308	not recorded	disease-specific death (25)	yes (outcome); treatment no	untreated control	4	
+GSE176307	bladder/urothelial (metastatic)	AmpliSeq GPL24014	90	immune checkpoint (pembrolizumab 47, atezolizumab 35, other 8)	response (CR 7, PR 9, SD 4, PD 69), PFS, OS (57 deaths)	yes	bladder immunotherapy response	2	
+IMvigor210 (EGA + R package)	bladder	RNA-seq	~ 350 (reported)	atezolizumab	response, OS	no	largest bladder ICI set; controlled access / package site not checked	-	not reachable from here
+GSE115821	melanoma	RNA-seq GPL18573	37 (11 pre)	immune checkpoint	response (few R)	yes	tiny	4	
+GSE100797	melanoma	RNA-seq GPL11154	25	adoptive T-cell therapy	tumour response %, PFS (20), OS (17)	yes	small	4	
+GSE168204	melanoma	RNA-seq GPL18573	27 (10 pre)	anti-PD-1	response R 9 / NR 18	yes	tiny	4	
+GSE121810	brain (recurrent GBM)	RNA-seq GPL21290	29	neoadjuvant 14 vs adjuvant 15 pembrolizumab (randomised)	survival NOT in GEO record	partial	only with paper table	4	
+GSE9782	myeloma (APEX)	GPL96 (+GPL97)	264	bortezomib 188 vs dexamethasone (randomised)	progression, response, survival ('key = value' free text)	yes	randomised non-solid trial; good method test	2	parse free-text characteristics
+GSE57495	pancreas	GPL15048	63	not recorded (resected)	OS (42)	yes (outcome); treatment no	control	4	
+GSE62452	pancreas	GPL6244	69 tumour	not recorded	OS (50)	yes (outcome); treatment no	control	4	
+GSE79668	pancreas	RNA-seq GPL11154	51	not recorded	OS (45)	yes (outcome); treatment no	control	4	
+GSE65858	head and neck	GPL10558	270	multimodal 189 / single modality 78 / palliative 3	OS (94), PFS (133)	yes	head and neck treatment-intensity contrast	3	
+GSE41613	head and neck (oral)	GPL570	97	multimodality 53 / single 43	OS (vital status)	yes	small	4	
+GSE116918	prostate	GPL25318	248	radiotherapy (+/- ADT per paper)	biochemical recurrence (56), metastasis (22)	yes	prostate treated cohort	3	
+GSE111177	prostate	RNA-seq GPL16791	48 (24 pre)	androgen deprivation (pre/post)	recurrence field present (coding to check)	partial	tiny	4	
+GSE6891	AML	GPL570	537	intensive chemotherapy (HOVON)	outcome NOT in GEO record	partial	needs paper table	4	

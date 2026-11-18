@@ -1,0 +1,13 @@
+# GSE18864 matrix files: ['GSE18864_series_matrix.txt.gz']
+## GSE18864_series_matrix.txt.gz
+title: Tumor expression data from neoadjuvant trial of cisplatin monotherapy in triple negative breast cancer patients
+platform: GPL570
+n_samples: 84
+  [!Sample_source_name_ch1] distinct=2 :: Reference primary tumor sample(60) | Cisplatin trial pretreatment tumor biops(24)
+  [age] distinct=36 :: 53(7) | 45(5) | 46(5) | 55(5) | 49(4) | 48(4)
+  [miller-payne response] distinct=7 :: n/a(60) | 3(4) | 4(4) | 5(4) | 1(4) | 2(4)
+  [p53 status] distinct=5 :: n/d(60) | MSM(10) | NSM(5) | WT(5) | unknown(4)
+  [er/pr/her2 status] distinct=5 :: neg/neg/neg(38) | pos/pos/neg(26) | neg/neg/pos(13) | pos/pos/pos(5) | neg/neg/unk(2)
+  [grade] distinct=3 :: III(58) | II(16) | I(10)
+  [brca genotype] distinct=3 :: Unknown(59) | WT(23) | BRCA1 germline mutation(2)
+  [!Sample_description] distinct=2 :: Gene expression data from reference prim(60) | Gene expression data from pretreatment t(24)

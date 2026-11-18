@@ -1,0 +1,9 @@
+# GSE62254 matrix files: ['GSE62254_series_matrix.txt.gz']
+## GSE62254_series_matrix.txt.gz
+title: Molecular analysis of gastric cancer identifies discrete subtypes associated with distinct clinical characteristics and survival outcomes: the ACRG (Asian Cancer Research Group) study [gastric tumors]
+platform: GPL570
+n_samples: 300
+  [!Sample_source_name_ch1] distinct=300 :: Tumor from patient 107(1) | Tumor from patient 108(1) | Tumor from patient 109(1) | Tumor from patient 160(1) | Tumor from patient 164(1) | Tumor from patient 165(1)
+  [tissue] distinct=1 :: Gastric tumor(300)
+  [patient] distinct=300 :: 107(1) | 108(1) | 109(1) | 160(1) | 164(1) | 165(1)
+  [!Sample_description] distinct=2 :: ACRG Gastric cohort: microarray profiles(300) | Nugen amplification protocol(300)

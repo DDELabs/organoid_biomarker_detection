@@ -1,0 +1,10 @@
+# GSE94104 matrix files: ['GSE94104_series_matrix.txt.gz']
+## GSE94104_series_matrix.txt.gz
+title: Transcriptional analysis of locally advanced rectal cancer pre-therapeutic biopsies and post-therapeutic resections
+platform: GPL14951
+n_samples: 80
+  [!Sample_source_name_ch1] distinct=2 :: pre-therapeutic LARC biopsy(40) | post-therapeutic LARC resection(40)
+  [tissue] distinct=1 :: Locally Advanced Rectal Cancer (LARC)(80)
+  [tissue type] distinct=2 :: Biopsy(40) | Resection(40)
+  [tumour regression grade] distinct=3 :: 2(34) | 1(24) | 3(22)
+  [!Sample_description] distinct=1 :: Tumour(80)

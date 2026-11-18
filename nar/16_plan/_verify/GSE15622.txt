@@ -1,0 +1,11 @@
+# GSE15622 matrix files: ['GSE15622_series_matrix.txt.gz']
+## GSE15622_series_matrix.txt.gz
+title: Expression data from the CTCR-OV01 study
+platform: GPL8414
+n_samples: 69
+  [!Sample_source_name_ch1] distinct=69 :: Biopsy, Patient 12, pre-treatment(1) | Biopsy, Patient 14, pre-treatment(1) | Biopsy, Patient 15, pre-treatment(1) | Biopsy, Patient 16, pre-treatment(1) | Biopsy, Patient 19, pre-treatment(1) | Biopsy, Patient 24, pre-treatment(1)
+  [treatment] distinct=3 :: Paclitaxel(36) | Carboplatin(29) | Both(4)
+  [response] distinct=2 :: sensitive(42) | resistant(27)
+  [clinical group] distinct=8 :: pre_pacli_sens(13) | post_pacli_sens(11) | pre_carbo_sens(9) | post_carbo_sens(9) | post_pacli_resist(8) | pre_pacli_resist(7)
+  [ca-125 coefficient] distinct=40 :: -0.0421121970(2) | 0.2001034690(2) | -1.4979386590(2) | -0.2875815110(2) | -0.5330089410(2) | -0.4785749740(2)
+  [!Sample_description] distinct=3 :: Responder(42) | Non-responder(23) | Non-responder. Debulking surgery was del(4)

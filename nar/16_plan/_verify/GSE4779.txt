@@ -1,0 +1,12 @@
+# GSE4779 matrix files: ['GSE4779_series_matrix.txt.gz']
+## GSE4779_series_matrix.txt.gz
+title: A stroma-related gene signature predicts sensitivity to epirubicin-containing neoadjuvant chemotherapy in breast cancer.
+platform: GPL1352
+n_samples: 102
+  [!Sample_source_name_ch1] distinct=1 :: Human Breast Tumor(102)
+  [Label] distinct=2 :: npCR(63) | pCR(39)
+  [Estrogen Receptor] distinct=2 :: En(65) | Ep(37)
+  [Progesterone Receptor] distinct=3 :: Pn(75) | Pp(25) | P-(2)
+  [Size] distinct=4 :: T2(63) | T3(34) | T-(3) | T1(2)
+  [Node] distinct=4 :: N1(55) | N0(37) | N2(7) | N-(3)
+  [!Sample_description] distinct=1 :: Series of 102 tumours(102)

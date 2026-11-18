@@ -1,0 +1,19 @@
+# GSE161537 matrix files: ['GSE161537_series_matrix.txt.gz']
+## GSE161537_series_matrix.txt.gz
+title: Immunologically hot phenotype is associated with response to second-line PD-1/PD-L1 inhibition in patients with advanced non-small cell lung cancer
+platform: GPL18573
+n_samples: 82
+  [!Sample_source_name_ch1] distinct=1 :: formalin-fixed paraffin embedded biopsie(82)
+  [patient id] distinct=82 :: 17(1) | 65(1) | 134(1) | 152(1) | 44(1) | 154(1)
+  [histology] distinct=6 :: AD(55) | SC(17) | CNEGC(3) | CSARC(3) | NOS(3) | ADSC(1)
+  [age] distinct=48 :: 69(7) | 68(7) | 66(5) | 70(4) | 76(3) | 72(3)
+  [Sex] distinct=2 :: Male(53) | Female(29)
+  [immunotherapy line] distinct=7 :: 1(47) | 2(17) | 3(13) | 0(2) | 6(1) | 5(1)
+  [best response on immunotherapy (recist)] distinct=5 :: PD(34) | SD(22) | PR(19) | NA(6) | CR(1)
+  [os (month)] distinct=77 :: 19.73333333(3) | 2.466666667(2) | 0.266666667(2) | 14.13333333(2) | 0.9(1) | 27.9(1)
+  [os (event)] distinct=2 :: 1(61) | 0(21)
+  [pfs (month)] distinct=68 :: 1(4) | 1.266666667(3) | 0.933333333(3) | 1.233333333(3) | 1.2(2) | 1.7(2)
+  [performance status] distinct=4 :: 1(50) | 2(20) | 0(11) | 3(1)
+  [Stage] distinct=7 :: IV(54) | IIIB(10) | IIIA(9) | IIB(4) | IA(2) | IB(2)
+  [hot score] distinct=82 :: -0.522871380121164(1) | -0.407144512181911(1) | -0.628499213464019(1) | -0.297920364129678(1) | -0.562590838855412(1) | -0.148684835194005(1)
+  [hot phenotype] distinct=2 :: HOT(44) | COLD(38)

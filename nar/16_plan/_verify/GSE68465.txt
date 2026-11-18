@@ -1,0 +1,23 @@
+# GSE68465 matrix files: ['GSE68465_series_matrix.txt.gz']
+## GSE68465_series_matrix.txt.gz
+title: caArray_jacob-00182: Gene expression-based survival prediction in lung adenocarcinoma: a multi-site, blinded validation study
+platform: GPL96
+n_samples: 462
+  [!Sample_source_name_ch1] distinct=5 :: MI(178) | MSKCC(104) | DFCI(82) | HLM(79) | Stratagene(19)
+  [disease_state] distinct=2 :: Lung Adenocarcinoma(443) | Normal(19)
+  [Sex] distinct=2 :: Male(223) | Female(220)
+  [!Sample_characteristics_ch1] distinct=1 :: (285)
+  [age] distinct=50 :: 62(23) | 68(20) | 60(19) | 66(18) | 70(18) | 72(17)
+  [race] distinct=6 :: White(295) | Unknown(84) | Not Reported(45) | Black or African American(12) | Asian(6) | Native Hawaiian or Other Pacific Islande(1)
+  [vital_status] distinct=2 :: Dead(236) | Alive(207)
+  [clinical_treatment_adjuvant_chemo] distinct=3 :: No(341) | Yes(89) | Unknown(13)
+  [clinical_treatment_adjuvant_rt] distinct=3 :: No(364) | Yes(65) | Unknown(14)
+  [disease_stage] distinct=14 :: pN0pT2(162) | pN0pT1(114) | pN1pT2(55) | pN2pT2(34) | pN1pT1(24) | pN0pT3(16)
+  [first_progression_or_relapse] distinct=4 :: Yes(205) | No(157) | --(71) | Unknown(10)
+  [months_to_first_progression] distinct=107 :: --(265) | 5(8) | 7(7) | 3(5) | 4(5) | 12(5)
+  [mths_to_last_clinical_assessment] distinct=322 :: --(10) | 40(6) | 62(5) | 43(5) | 50(5) | 90(5)
+  [months_to_last_contact_or_death] distinct=333 :: 40(7) | 36(6) | 62(5) | 48(5) | 66(4) | 43(4)
+  [smoking_history] distinct=5 :: Smoked in the past(268) | Unknown(92) | Never smoked(49) | Currently smoking(32) | --(2)
+  [surgical_margins] distinct=3 :: ALL MARGINS PATHOLOGICALLY NEGATIVE(433) | MICROSCOPICALLY POSITIVE MARGINS OR MICR(8) | --(2)
+  [organism_part] distinct=1 :: Lung(443)
+  [histologic_grade] distinct=4 :: Moderate Differentiation(209) | POORLY DIFFERENTIATED(167) | WELL DIFFERENTIATED(60) | --(7)

@@ -1,0 +1,12 @@
+# GSE26712 matrix files: ['GSE26712_series_matrix.txt.gz']
+## GSE26712_series_matrix.txt.gz
+title: A Gene Signature Predicting for Survival in Suboptimally Debulked Patients with Ovarian Cancer
+platform: GPL96
+n_samples: 195
+  [!Sample_source_name_ch1] distinct=2 :: Ovarian tumor(185) | Ovarian surface epithelial cells(10)
+  [tissue] distinct=2 :: Late-stage high-grade ovarian cancer(185) | Normal ovarian surface epithelium(10)
+  [!Sample_characteristics_ch1] distinct=1 :: (30)
+  [surgery outcome] distinct=2 :: Suboptimal(95) | Optimal(90)
+  [status] distinct=3 :: DOD (dead of disease)(129) | NED (no evidence of disease)(32) | AWD (alive with disease)(24)
+  [survival years] distinct=170 :: 1.72(2) | 3.99(2) | 0.71(2) | 2.3(2) | 3.55(2) | 1.47(2)
+  [!Sample_description] distinct=2 :: Gene expression data from late-stage hig(185) | Gene expression data from ovarian surfac(10)

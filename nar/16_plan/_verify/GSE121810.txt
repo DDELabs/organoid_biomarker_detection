@@ -1,0 +1,8 @@
+# GSE121810 matrix files: ['GSE121810_series_matrix.txt.gz']
+## GSE121810_series_matrix.txt.gz
+title: Neoadjuvant anti-PD-1 immunotherapy promotes a survival benefit with intratumoral and systemic immune responses in recurrent glioblastoma
+platform: GPL21290
+n_samples: 29
+  [!Sample_source_name_ch1] distinct=1 :: Recurrent glioblastoma(29)
+  [therapy] distinct=2 :: adjuvant pembrolizumab(15) | neoadjuvant pembrolizumab(14)
+  [!Sample_description] distinct=1 :: mRNA from fresh surgical samples(29)

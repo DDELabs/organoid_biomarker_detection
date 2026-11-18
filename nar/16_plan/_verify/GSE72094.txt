@@ -1,0 +1,29 @@
+# GSE72094 matrix files: ['GSE72094_series_matrix.txt.gz']
+## GSE72094_series_matrix.txt.gz
+title: KRAS mutation-associated gene expression, p53 and STK11 mutations, proliferation and immune surveillance in lung adenocarcinoma
+platform: GPL15048
+n_samples: 442
+  [!Sample_source_name_ch1] distinct=1 :: lung adenocarcinoma(442)
+  [barcode_microarray] distinct=442 :: @52070900778263100909406332059157(1) | @52070900778263100909406332059199(1) | @52070900778264100909406332059229(1) | @52070900778513031510407113246252(1) | @52070900778513031510407113246258(1) | @52070900778513031510407113246261(1)
+  [filename_microarray] distinct=442 :: @52070900778263100909406332059157_1_1.CE(1) | @52070900778263100909406332059199_1_1.CE(1) | @52070900778264100909406332059229_1_1.CE(1) | @52070900778513031510407113246252_1_1.CE(1) | @52070900778513031510407113246258_1_1.CE(1) | @52070900778513031510407113246261_1_1.CE(1)
+  [rna_barin] distinct=43 :: 9(29) | 8.8(28) | 8.6(22) | 9.3(22) | 8.9(21) | 8.7(20)
+  [patient_id] distinct=442 :: K074(1) | K400(1) | K030(1) | K276(1) | K459(1) | K193(1)
+  [gender] distinct=2 :: F(240) | M(202)
+  [age_at_diagnosis] distinct=48 :: 70(25) | 72(22) | NA(21) | 66(20) | 77(20) | 67(18)
+  [race] distinct=8 :: WHITE(399) | NA(22) | BLACK(13) | UNKNOWN(3) | OTHER(2) | ASIAN INDIAN OR PAKISTANI(1)
+  [spanish_hispanic] distinct=3 :: Non Spanish/Hispanic(402) | NA(30) | Spanish/Hispanic(10)
+  [smoking_status] distinct=3 :: Ever(335) | Missing(74) | Never(33)
+  [vital_status] distinct=3 :: Alive(298) | Dead(122) | NA(22)
+  [survival_time_in_days] distinct=331 :: NA(44) | 917(3) | 489(3) | 830(3) | 807(3) | 539(3)
+  [Stage] distinct=10 :: 1A(158) | 1B(101) | 2B(51) | 3A(43) | NA(28) | 3B(19)
+  [kras_status] distinct=2 :: WT(288) | Mut(154)
+  [egfr_status] distinct=2 :: WT(395) | Mut(47)
+  [stk11_status] distinct=2 :: WT(374) | Mut(68)
+  [tp53_status] distinct=2 :: WT(331) | Mut(111)
+  [egfr_aa_mut] distinct=13 :: L858LR(23) | delE746-A750(12) | delL747-A750inP(2) | G719GC;E709A(1) | G719GC(1) | delL747-T751(1)
+  [!Sample_characteristics_ch1] distinct=1 :: (929)
+  [tp53_aa_mut] distinct=86 :: SpliceSite(6) | E180*(3) | E298*(3) | R273L(3) | Y220C(3) | C277F(3)
+  [kras_aa_mut] distinct=20 :: G12GC(58) | G12GV(31) | G12GD(26) | G12GA(8) | G13GD(7) | G13GC(5)
+  [stk11_aa_mut] distinct=49 :: SpliceSite(5) | P281fs*6(5) | D53fs*11(4) | L282fs*3(3) | D194Y(3) | K84*(2)
+  [stk11_aa_inherited] distinct=6 :: F354L(5) | R147P(1) | K178M;E223K(1) | N226S(1) | H168L(1) | M289K(1)
+  [tp53_aa_inherited] distinct=6 :: P72R(2) | G216L(1) | R283C(1) | H178P(1) | D28V(1) | P27H(1)

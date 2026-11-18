@@ -1,0 +1,10 @@
+# GSE57495 matrix files: ['GSE57495_series_matrix.txt.gz']
+## GSE57495_series_matrix.txt.gz
+title: Development of a prognostic gene signature in pancreatic cancer
+platform: GPL15048
+n_samples: 63
+  [!Sample_source_name_ch1] distinct=1 :: frozen pancreatic tissue(63)
+  [overall survival (month)] distinct=62 :: 33.4666666666667(2) | 13.5333333333333(1) | 36.3666666666667(1) | 6.2(1) | 79.8333333333333(1) | 5.03333333333333(1)
+  [vital.status] distinct=2 :: DEAD(42) | ALIVE(21)
+  [Stage] distinct=4 :: 2B(33) | 2A(17) | 1B(12) | 1(1)
+  [!Sample_description] distinct=1 :: frozen pancreatic tissue(63)

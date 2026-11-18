@@ -1,0 +1,9 @@
+# GSE104958 matrix files: ['GSE104958_series_matrix.txt.gz']
+## GSE104958_series_matrix.txt.gz
+title: A 17-molecule set as a predictor of complete response to neoadjuvant chemotherapy with docetaxel, cisplatin, and 5-fluorouracil in esophageal cancer
+platform: GPL21185
+n_samples: 46
+  [!Sample_source_name_ch1] distinct=2 :: non-pCR(34) | pCR(12)
+  [organ] distinct=1 :: esophagus(46)
+  [tissue] distinct=2 :: cancer tissue(41) | normal tissue(5)
+  [!Sample_description] distinct=1 :: Gene expression before chemotherapy(46)

@@ -1,0 +1,8 @@
+# GSE2034 matrix files: ['GSE2034_series_matrix.txt.gz']
+## GSE2034_series_matrix.txt.gz
+title: Breast cancer relapse free survival
+platform: GPL96
+n_samples: 286
+  [!Sample_source_name_ch1] distinct=1 :: Breast(286)
+  [bone relapses (1=yes, 0=no)] distinct=2 :: 0(217) | 1(69)
+  [!Sample_description] distinct=1 :: RNA was extracted from a fresh-frozen pr(286)
