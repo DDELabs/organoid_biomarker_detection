@@ -1,0 +1,30 @@
+gcn CARBOPLATIN 0 1252
+gcn CETUXIMAB 859 1261
+gcn CISPLATIN 757 1262
+gcn DACARBAZINE 715 1294
+gcn DOCETAXEL 962 1267
+gcn DOXORUBICIN 954 1299
+gcn ERLOTINIB 949 1267
+gcn ETOPOSIDE 875 1299
+gcn FLUOROURACIL 962 1294
+gcn GEMCITABINE 954 1294
+gcn IRINOTECAN 959 1295
+gcn OXALIPLATIN 961 1262
+gcn PACLITAXEL 952 1267
+gcn PEMETREXED 894 1285
+gcn SORAFENIB 952 1257
+gcn TAMOXIFEN 951 1259
+gcn VINORELBINE 950 1286
+          task                                   model  n_units  mean_rho        lo        hi  share_units_rho_pos
+0   cell-blind    Elastic net (pathways + fingerprint)       86  0.351809  0.317777  0.385841             0.976744
+1   cell-blind            Fingerprint MLP (cell lines)       86  0.440181  0.413222  0.467140             1.000000
+2   cell-blind                GCN on STRING (per drug)       16  0.349554  0.290765  0.408343             1.000000
+3   cell-blind           Paper: single network pathway       86  0.022589 -0.008604  0.053782             0.546512
+4   cell-blind           Paper: top-2 network pathways       86  0.062038  0.032966  0.091111             0.674419
+5   cell-blind  Random forest (pathways + fingerprint)       86  0.424982  0.393864  0.456101             1.000000
+6   cell-blind             Ridge: all network pathways       86  0.405705  0.376935  0.434475             1.000000
+7   cell-blind        XGBoost (pathways + fingerprint)       86  0.452333  0.423460  0.481206             1.000000
+8   drug-blind    Elastic net (pathways + fingerprint)       86  0.460551  0.418566  0.502537             0.988372
+9   drug-blind            Fingerprint MLP (cell lines)       86  0.535048  0.496220  0.573875             1.000000
+10  drug-blind  Random forest (pathways + fingerprint)       86  0.554271  0.512593  0.595949             1.000000
+11  drug-blind        XGBoost (pathways + fingerprint)       86  0.558142  0.518525  0.597759             1.000000

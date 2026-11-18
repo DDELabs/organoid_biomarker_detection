@@ -1,0 +1,40 @@
+frac	rep	n_cells	model	mean_rho
+0.05	0	48	Fingerprint MLP (cell lines)	0.35558554552713134
+0.05	0	48	XGBoost (pathways + fingerprint)	0.37109826976654803
+0.05	0	48	Elastic net (pathways + fingerprint)	0.1940600960852882
+0.05	1	48	Fingerprint MLP (cell lines)	0.2938751157459444
+0.05	1	48	XGBoost (pathways + fingerprint)	0.3359265740276534
+0.05	1	48	Elastic net (pathways + fingerprint)	0.24585958870302865
+0.05	2	48	Fingerprint MLP (cell lines)	0.3340403717673222
+0.05	2	48	XGBoost (pathways + fingerprint)	0.3464090192973344
+0.05	2	48	Elastic net (pathways + fingerprint)	0.18036997888828837
+0.1	0	97	Fingerprint MLP (cell lines)	0.3390726343266586
+0.1	0	97	XGBoost (pathways + fingerprint)	0.352223774626777
+0.1	0	97	Elastic net (pathways + fingerprint)	0.1921945950080789
+0.1	1	97	Fingerprint MLP (cell lines)	0.38645542959989804
+0.1	1	97	XGBoost (pathways + fingerprint)	0.3893071668720567
+0.1	1	97	Elastic net (pathways + fingerprint)	0.1738505013233278
+0.1	2	97	Fingerprint MLP (cell lines)	0.35744016451871563
+0.1	2	97	XGBoost (pathways + fingerprint)	0.3449507609243894
+0.1	2	97	Elastic net (pathways + fingerprint)	0.047301736367780116
+0.25	0	244	Fingerprint MLP (cell lines)	0.3920284596291203
+0.25	0	244	XGBoost (pathways + fingerprint)	0.42000465494797534
+0.25	0	244	Elastic net (pathways + fingerprint)	0.21452204647547055
+0.25	1	244	Fingerprint MLP (cell lines)	0.40069445613553495
+0.25	1	244	XGBoost (pathways + fingerprint)	0.4077081721373875
+0.25	1	244	Elastic net (pathways + fingerprint)	0.2472875384015875
+0.25	2	244	Fingerprint MLP (cell lines)	0.38721181345590133
+0.25	2	244	XGBoost (pathways + fingerprint)	0.4000500992990048
+0.25	2	244	Elastic net (pathways + fingerprint)	0.19863524547016126
+0.5	0	488	Fingerprint MLP (cell lines)	0.42859384578651416
+0.5	0	488	XGBoost (pathways + fingerprint)	0.4374084156090701
+0.5	0	488	Elastic net (pathways + fingerprint)	0.29938107400783515
+0.5	1	488	Fingerprint MLP (cell lines)	0.4467230093282407
+0.5	1	488	XGBoost (pathways + fingerprint)	0.43966166395672485
+0.5	1	488	Elastic net (pathways + fingerprint)	0.32211046427147727
+0.5	2	488	Fingerprint MLP (cell lines)	0.4351304939832503
+0.5	2	488	XGBoost (pathways + fingerprint)	0.44144284987805094
+0.5	2	488	Elastic net (pathways + fingerprint)	0.3206335323877411
+1.0	0	977	Fingerprint MLP (cell lines)	0.46492661236520105
+1.0	0	977	XGBoost (pathways + fingerprint)	0.467079798842906
+1.0	0	977	Elastic net (pathways + fingerprint)	0.38105650465416285

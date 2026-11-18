@@ -14,3 +14,45 @@ cell 2 XGBoost (pathways + fingerprint) 123 s
 cell 2 Elastic net (pathways + fingerprint) 4 s
 cell 2 Random forest (pathways + fingerprint) 71 s
 cell 2 per-drug models done
+cell 3 Fingerprint MLP (cell lines) 20 s
+cell 3 XGBoost (pathways + fingerprint) 139 s
+cell 3 Elastic net (pathways + fingerprint) 4 s
+cell 3 Random forest (pathways + fingerprint) 70 s
+cell 3 per-drug models done
+cell 4 Fingerprint MLP (cell lines) 8 s
+cell 4 XGBoost (pathways + fingerprint) 84 s
+cell 4 Elastic net (pathways + fingerprint) 3 s
+cell 4 Random forest (pathways + fingerprint) 52 s
+cell 4 per-drug models done
+drug 0 Fingerprint MLP (cell lines) 7 s
+drug 0 XGBoost (pathways + fingerprint) 82 s
+drug 0 Elastic net (pathways + fingerprint) 3 s
+drug 0 Random forest (pathways + fingerprint) 51 s
+drug 1 Fingerprint MLP (cell lines) 8 s
+drug 1 XGBoost (pathways + fingerprint) 84 s
+drug 1 Elastic net (pathways + fingerprint) 3 s
+drug 1 Random forest (pathways + fingerprint) 52 s
+drug 2 Fingerprint MLP (cell lines) 7 s
+drug 2 XGBoost (pathways + fingerprint) 83 s
+drug 2 Elastic net (pathways + fingerprint) 3 s
+drug 2 Random forest (pathways + fingerprint) 53 s
+drug 3 Fingerprint MLP (cell lines) 7 s
+drug 3 XGBoost (pathways + fingerprint) 84 s
+drug 3 Elastic net (pathways + fingerprint) 3 s
+drug 3 Random forest (pathways + fingerprint) 50 s
+drug 4 Fingerprint MLP (cell lines) 7 s
+drug 4 XGBoost (pathways + fingerprint) 86 s
+drug 4 Elastic net (pathways + fingerprint) 3 s
+drug 4 Random forest (pathways + fingerprint) 52 s
+          task                                   model  n_units  mean_rho        lo        hi  share_units_rho_pos
+0   cell-blind    Elastic net (pathways + fingerprint)       86  0.351809  0.317777  0.385841             0.976744
+1   cell-blind            Fingerprint MLP (cell lines)       86  0.440181  0.413222  0.467140             1.000000
+2   cell-blind           Paper: single network pathway       86  0.022589 -0.008604  0.053782             0.546512
+3   cell-blind           Paper: top-2 network pathways       86  0.062038  0.032966  0.091111             0.674419
+4   cell-blind  Random forest (pathways + fingerprint)       86  0.424982  0.393864  0.456101             1.000000
+5   cell-blind             Ridge: all network pathways       86  0.405705  0.376935  0.434475             1.000000
+6   cell-blind        XGBoost (pathways + fingerprint)       86  0.452333  0.423460  0.481206             1.000000
+7   drug-blind    Elastic net (pathways + fingerprint)       86  0.460551  0.418566  0.502537             0.988372
+8   drug-blind            Fingerprint MLP (cell lines)       86  0.535048  0.496220  0.573875             1.000000
+9   drug-blind  Random forest (pathways + fingerprint)       86  0.554271  0.512593  0.595949             1.000000
+10  drug-blind        XGBoost (pathways + fingerprint)       86  0.558142  0.518525  0.597759             1.000000
