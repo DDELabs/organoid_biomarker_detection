@@ -1,0 +1,21 @@
+cohort	built_n	plan_n	arms_built	arms_expected	events_built	events_expected	responders
+GSE14814	133	133	CISPLATIN;VINORELBINE: 71; (none): 62	ACT 71 / OBS 62	os_event=60 (of 133)	OS 60	
+GSE68465	443	443	(none): 341; PLATINUM: 89; (not recorded): 13	chemo yes 89 / no 341 / unknown 13	os_event=236 (of 443); rfs_event=205 (of 362)	OS 236; relapse 205	
+GSE37745	196	196	(not recorded): 96; (none): 71; PLATINUM: 29	adjuvant yes 29 / no 71 / unknown 96	os_event=145 (of 196); rfs_event=49 (of 96)	OS 145; recurrence 49	
+GSE29013	55	55	PLATINUM: 34; (none): 21	adjuvant yes 34 / no 21	os_event=18 (of 55); rfs_event=28 (of 55)	OS 18; progression 28	
+GSE31210	204	226	(not recorded): 204	(22 flagged are removed -> 204)	os_event=30 (of 204); rfs_event=54 (of 204)	relapse 64 / OS 35 in 226	
+GSE50081	181	181	(not recorded): 181	not recorded	os_event=75 (of 181); dfs_event=51 (of 177)	OS 75; DFS 51	
+GSE8894	138	138	(not recorded): 138	not recorded	rfs_event=69 (of 138)	RFS 69	
+GSE3141	111	111	(not recorded): 111	not recorded	os_event=58 (of 111)	OS (text)	
+GSE30219	293	296	(not recorded): 293	not recorded	os_event=200 (of 293); dfs_event=114 (of 278)	OS 200; DFS 114	
+GSE72094	442	442	(not recorded): 442	not recorded	os_event=122 (of 420)	OS 122	
+GSE41271	275	275	(not recorded): 275	not recorded	os_event=124 (of 275); rfs_event=122 (of 275)	OS 124; recurrence 122	
+GSE157011	484	484	(not recorded): 484	not recorded	os_event=264 (of 484)	OS 264	
+GSE33072	131	131	(not recorded): 66; SORAFENIB: 39; ERLOTINIB: 25; ERLOTINIB;BEXAROTENE: 1	erlotinib 25 / sorafenib 39 / erl+bex 1	pfs_event=63 (of 66)	8-week control, PFS (sparse)	24 of 40
+GSE161537	82	82	ICI_ANTI_PD1_PDL1: 82	anti-PD-1	os_event=61 (of 82)	CR1 PR19 SD22 PD34 NA6; OS 61	20 of 76
+GSE162520	92	92	(not recorded): 92	not recorded	os_event=21 (of 92); pfs_event=35 (of 92)	OS 21; PFS 35	
+GSE135222	27	27	ICI_ANTI_PD1_PDL1: 27	anti-PD-1	pfs_event=21 (of 27)	PFS 21	
+GSE126044	16	16	ICI_ANTI_PD1_PDL1: 16	anti-PD-1		responder 5 / non 11	5 of 16
+GSE218989	355	355	ICI_ANTI_PD1_PDL1: 355	PD-1/PD-L1		responder 168 / non 187	168 of 355
+GSE207422	24	39	ICI_ANTI_PD1_PDL1;CARBOPLATIN;GEMCITABINE: 12; ICI_ANTI_PD1_PDL1;CARBOPLATIN;PEMETREXED: 8; ICI_ANTI_PD1_PDL1;CARBOPLATIN;PACLITAXEL: 4	anti-PD-1 + chemo		bulk pre-treatment 24	9 of 24
+GSE81089	196	199	(not recorded): 196	not recorded	os_event=93 (of 196)	dead 93	

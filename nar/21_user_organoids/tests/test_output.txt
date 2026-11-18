@@ -1,0 +1,23 @@
+test_a_symbols_rows_log_long (__main__.SyntheticReproduction.test_a_symbols_rows_log_long) ... ok
+test_b_ensembl_samples_rows_wide (__main__.SyntheticReproduction.test_b_ensembl_samples_rows_wide) ... ok
+test_c_tpm_xlsx_drugs_rows (__main__.SyntheticReproduction.test_c_tpm_xlsx_drugs_rows) ... ok
+test_counts_give_same_scores_as_log (__main__.Units.test_counts_give_same_scores_as_log) ... ok
+test_ensembl_ids_with_and_without_version (__main__.Units.test_ensembl_ids_with_and_without_version) ... ok
+test_entrez_ids_stop_with_clear_message (__main__.Units.test_entrez_ids_stop_with_clear_message) ... ok
+test_ic50_is_logged_and_direction (__main__.Units.test_ic50_is_logged_and_direction) ... ok
+test_long_and_wide_response_agree (__main__.Units.test_long_and_wide_response_agree) ... ok
+test_no_overlap_stops_with_plain_message (__main__.Units.test_no_overlap_stops_with_plain_message) ... ok
+test_orientation (__main__.Units.test_orientation) ... ok
+test_sample_name_mismatch_is_reported_and_fuzzy_matched (__main__.Units.test_sample_name_mismatch_is_reported_and_fuzzy_matched) ... ok
+test_unknown_metric_warns_and_assumes_lower (__main__.Units.test_unknown_metric_warns_and_assumes_lower) ... ok
+test_value_type_detection (__main__.Units.test_value_type_detection) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 9.761s
+
+OK
+
+Pathway-score reproduction (max absolute difference to scores computed from the original curated set):
+  A symbols / genes in rows / log / long drug table: 22 samples x 533 pathways, max |difference| = 9.89e-17
+  B Ensembl ids / samples in rows / log / wide (10478 of 10912 genes have an Ensembl id): 22 samples x 533 pathways, max |difference| = 9.96e-17
+  C TPM / xlsx / drugs in rows: 22 samples x 533 pathways, max |difference| = 9.89e-17
