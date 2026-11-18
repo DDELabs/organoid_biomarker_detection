@@ -33,7 +33,7 @@ COLS = ["cohort", "source", "cancer", "cancer_group", "setting", "arm", "drugs",
         "age", "sex", "stage", "er", "her2", "patient"]
 GROUP = [("breast", "breast"), ("colo", "colorectal"), ("rectal", "colorectal"), ("colon", "colorectal"), ("bladder", "bladder"),
          ("ovar", "ovarian"), ("hepato", "liver"), ("glio", "brain"), ("kidney", "kidney"), ("renal", "kidney"),
-         ("melanoma", "melanoma"), ("nsclc", "lung"), ("oesoph", "oesophagus")]
+         ("melanoma", "melanoma"), ("nsclc", "lung"), ("oesoph", "oesophagus"), ("lung", "lung")]
 TCGA_GROUP = {"BRCA": "breast", "COAD": "colorectal", "READ": "colorectal", "BLCA": "bladder", "OV": "ovarian", "LIHC": "liver",
               "GBM": "brain", "LGG": "brain", "KIRC": "kidney", "KIRP": "kidney", "KICH": "kidney", "SKCM": "melanoma",
               "LUAD": "lung", "LUSC": "lung", "ESCA": "oesophagus", "STAD": "stomach", "PAAD": "pancreas", "HNSC": "head and neck",
@@ -57,7 +57,7 @@ def score(name, expr):
     return scoring.cached(name, compute).T
 
 
-def tidy(clin, cohort, source):
+def tidy(clin, cohort, source, cols=COLS):
     c = clin.copy()
     c["cohort"], c["source"] = cohort, source
     if "cancer" not in c:
@@ -72,7 +72,7 @@ def tidy(clin, cohort, source):
     c["drugs"] = c["drugs"].mask(none, "NONE")   # NONE = known to have had no drug; empty = not recorded
     c["treated"] = np.where(c["drugs"].isna(), np.nan, (~none).astype(float))
     c.index = [f"{cohort}:{i}" for i in c.index]
-    return c[COLS]
+    return c[cols]
 
 
 def tcga():
@@ -162,5 +162,83 @@ def main():
     print(P.groupby("source")[["has_outcome", "has_response", "has_survival"]].agg(["size", "sum"]).to_string())
 
 
+# ---------------------------------------------------------------------------------------------------------------
+# Version 2 (added for the lung harvest, nar/17_lung). Starts from the finished `training_table`, keeps every old row
+# exactly as it was, and appends the cohorts in BC.LUNG_BUILDERS (plus a `histology` column). Existing code above is unchanged.
+COLS_V2 = COLS + ["histology"]
+# new lung cohorts are compared with the lung cohorts already in the table (same hospitals are possible)
+DUP_CHECK_V2 = [([fn.__name__ for fn in BC.LUNG_BUILDERS], ["GSE42127", "TCGA-LUAD", "TCGA-LUSC"])]
+
+
+def _flag_duplicates(P, S, checks):
+    for new, old in checks:
+        a, b = S[P["cohort"].isin(new).values].dropna(axis=1), S[P["cohort"].isin(old).values]
+        b = b[a.columns].dropna(axis=1); a = a[b.columns]
+        sa, sb = (a - a.mean()) / a.std(), (b - b.mean()) / b.std()
+        r = (sa.fillna(0).values @ sb.fillna(0).values.T) / (a.shape[1] - 1)
+        for i in np.where(r.max(axis=1) > 0.95)[0]:
+            P.loc[a.index[i], "possible_duplicate_of"] = b.index[r[i].argmax()]
+    return P
+
+
+def write_tables(P, S, out, skipped):
+    """Same summary tables as main(), written to `out`."""
+    out.mkdir(parents=True, exist_ok=True)
+    ev = P[["os_event", "pfs_event", "rfs_event", "dfs_event"]]
+    P["has_survival"], P["has_response"] = ev.notna().any(axis=1), P["responder"].notna()
+    P["has_outcome"] = P["has_survival"] | P["has_response"]
+    P.to_csv(out / "patients.tsv.gz", sep="\t")
+    tc = P["source"].eq("TCGA")
+    S[tc.values].round(3).to_csv(out / "pathway_scores_tcga.tsv.gz", sep="\t")
+    S[~tc.values].round(3).to_csv(out / "pathway_scores_geo.tsv.gz", sep="\t")
+    g = P.groupby(["source", "cohort"], sort=False)
+    C = pd.DataFrame({"cancer_group": g["cancer_group"].agg(lambda s: s.mode().iat[0]), "samples": g.size(),
+                      "treated": g["treated"].sum().astype(int), "untreated_comparison": g["treated"].apply(lambda s: int((s == 0).sum())),
+                      "with_response": g["has_response"].sum(), "responders": g["responder"].sum().astype(int),
+                      "with_survival": g["has_survival"].sum(), "possible_duplicates": g["possible_duplicate_of"].count(),
+                      "events": ev.fillna(0).max(axis=1).groupby([P["source"], P["cohort"]], sort=False).sum().astype(int),
+                      "randomised": g["randomised"].first()})
+    C.to_csv(out / "cohorts.tsv", sep="\t")
+    L = P[P["treated"].eq(1) & P["has_outcome"] & P["possible_duplicate_of"].isna()].assign(drug=lambda d: d["drugs"].str.split(";")).explode("drug")
+    D = L.groupby(["cancer_group", "drug"]).agg(patients=("cohort", "size"), cohorts=("cohort", "nunique"),
+                                                with_response=("has_response", "sum"), with_survival=("has_survival", "sum"),
+                                                tcga=("source", lambda s: int((s == "TCGA").sum())))
+    D = D[D["patients"] >= 20].sort_values(["cancer_group", "patients"], ascending=[True, False])
+    D.to_csv(out / "drug_counts.tsv", sep="\t")
+    pd.Series(skipped, name="reason").rename_axis("accession").to_csv(out / "skipped.tsv", sep="\t")
+
+
+def main_v2(out_name="training_table_v2"):
+    out = RESULTS / out_name
+    base = OUT                                         # the finished version-1 table, read only
+    P = pd.read_csv(base / "patients.tsv.gz", sep="\t", index_col=0, low_memory=False)
+    P = P.drop(columns=["has_survival", "has_response", "has_outcome"])
+    for c in ("histology",):
+        P[c] = pd.Series(np.nan, index=P.index, dtype=object)
+    P.loc[P["cohort"].eq("TCGA-LUAD"), "histology"] = "adenocarcinoma"
+    P.loc[P["cohort"].eq("TCGA-LUSC"), "histology"] = "squamous"
+    S = pd.concat([pd.read_csv(base / f"pathway_scores_{k}.tsv.gz", sep="\t", index_col=0) for k in ("tcga", "geo")])
+    paths = list(S.columns)
+    clin_all, sc_all = [P], [S]
+    for fn in BC.LUNG_BUILDERS:
+        cid = fn.__name__
+        d = BC.OUT / cid
+        clin = pd.read_csv(d / "clinical.tsv", sep="\t", index_col=0, low_memory=False)
+        s = score(f"train_{cid}_reactome_rank", pd.read_csv(d / "expression.tsv.gz", sep="\t", index_col=0))
+        t = tidy(clin.loc[[i for i in clin.index if i in s.index]], cid, "GEO (new)", COLS_V2)
+        s = s.reindex(columns=paths); s.index = [f"{cid}:{i}" for i in s.index]
+        clin_all.append(t); sc_all.append(s.loc[t.index])
+        print(cid, s.shape, "pathways missing:", int(s.isna().all().sum()), flush=True)
+    P, S = pd.concat(clin_all), pd.concat(sc_all)
+    P.index.name = S.index.name = "sample_id"
+    P = _flag_duplicates(P, S, DUP_CHECK_V2)
+    skipped = {**BC.SKIPPED, **BC.SKIPPED_LUNG}
+    write_tables(P, S, out, skipped)
+    print(P.shape, S.shape)
+
+
 if __name__ == "__main__":
-    main()
+    if "--out" in sys.argv:        # e.g. --out training_table_v2 : extend version 1 with the lung cohorts
+        main_v2(sys.argv[sys.argv.index("--out") + 1])
+    else:
+        main()
