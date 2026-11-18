@@ -1,0 +1,59 @@
+Organoid	Drug Name	IC50
+SKOV3, DMSO day3	OLAPARIB	147.5
+SKOV3, olaparib day3	OLAPARIB	147.5
+SKOV3, olaparib day7	OLAPARIB	147.5
+SKOV3, olaparib day7, recover day7	OLAPARIB	147.5
+SKOV3, DMSO day3	NIRAPARIB	10.9
+SKOV3, olaparib day3	NIRAPARIB	10.9
+SKOV3, olaparib day7	NIRAPARIB	10.9
+SKOV3, olaparib day7, recover day7	NIRAPARIB	10.9
+MCF7, DMSO day3	OLAPARIB	44.8
+MCF7, olaparib day3	OLAPARIB	44.8
+MCF7, olaparib day7	OLAPARIB	44.8
+MCF7, olaparib day7, recover day7	OLAPARIB	44.8
+MCF7, DMSO day3	NIRAPARIB	4.3
+MCF7, olaparib day3	NIRAPARIB	4.3
+MCF7, olaparib day7	NIRAPARIB	4.3
+MCF7, olaparib day7, recover day7	NIRAPARIB	4.3
+OVCA432, DMSO, day3	OLAPARIB	51.5
+OVCA432, olaparib day3	OLAPARIB	51.5
+OVCA432, olaparib day3, recover day3	OLAPARIB	51.5
+OVCA432, olaparib day3, recover day7	OLAPARIB	51.5
+OVCA432, DMSO, day3	NIRAPARIB	10.3
+OVCA432, olaparib day3	NIRAPARIB	10.3
+OVCA432, olaparib day3, recover day3	NIRAPARIB	10.3
+OVCA432, olaparib day3, recover day7	NIRAPARIB	10.3
+Hey, DMSO day3	NIRAPARIB	25.7
+Hey, olaparib day3	NIRAPARIB	25.7
+Hey, olaparib day7	NIRAPARIB	25.7
+Hey, olaparib day7, recover day7	NIRAPARIB	25.7
+Hey, DMSO day3	OLAPARIB	100
+Hey, olaparib day3	OLAPARIB	100
+Hey, olaparib day7	OLAPARIB	100
+Hey, olaparib day7, recover day7	OLAPARIB	100
+Organoid 3008, DMSO day3	OLAPARIB	71.3
+Organoid 3008, olaparib day3	OLAPARIB	71.3
+Organoid 3008, olaparib day7	OLAPARIB	71.3
+Organoid 3008, olaparib day7, recover day14	OLAPARIB	71.3
+Organoid 3008, DMSO day3	NIRAPARIB	11.9
+Organoid 3008, olaparib day3	NIRAPARIB	11.9
+Organoid 3008, olaparib day7	NIRAPARIB	11.9
+Organoid 3008, olaparib day7, recover day14	NIRAPARIB	11.9
+Organoid 2445, DMSO day3	OLAPARIB	29.5
+Organoid 2445, olaparib day3	OLAPARIB	29.5
+Organoid 2445, olaparib day7	OLAPARIB	29.5
+Organoid 2445, olaparib day7, recover day14	OLAPARIB	29.5
+Organoid 2445, DMSO day3	NIRAPARIB	9.1
+Organoid 2445, olaparib day3	NIRAPARIB	9.1
+Organoid 2445, olaparib day7	NIRAPARIB	9.1
+Organoid 2445, olaparib day7, recover day14	NIRAPARIB	9.1
+Organoid 2414, DMSO day3	OLAPARIB	11
+Organoid 2414, olaparib day3	OLAPARIB	11
+Organoid 2414, olaparib day7	OLAPARIB	11
+Organoid 2414, olaparib day7, recover day14	OLAPARIB	11
+Organoid 2414, DMSO day3	NIRAPARIB	9.1
+Organoid 2414, olaparib day3	NIRAPARIB	9.1
+Organoid 2414, olaparib day7	NIRAPARIB	9.1
+Organoid 2414, olaparib day7, recover day14	NIRAPARIB	9.1
+
+
