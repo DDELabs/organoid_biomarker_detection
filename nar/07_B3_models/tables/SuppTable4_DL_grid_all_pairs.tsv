@@ -511,6 +511,38 @@ LIHC org. (Ji) | sorafenib	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.630909090909091	T
 LIHC org. (Ji) | sorafenib	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.6015151515151514	False
 LIHC org. (Ji) | sorafenib	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.5854545454545454	False
 LIHC org. (Ji) | sorafenib	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.561969696969697	False
+LIHC org. (Broutier) | sorafenib	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.5	True
+LIHC org. (Broutier) | sorafenib	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.5	False
+LIHC org. (Broutier) | sorafenib	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.5	False
 BLCA organoids | cisplatin	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.6666666666666666	False
 BLCA organoids | cisplatin	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.5	False
 BLCA organoids | cisplatin	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.6666666666666666	False
@@ -1247,6 +1279,134 @@ BRCA PDX | tamoxifen	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.5952380952380953	False
 BRCA PDX | tamoxifen	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.5978835978835979	False
 BRCA PDX | tamoxifen	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.6468253968253969	False
 BRCA PDX | tamoxifen	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.6441798941798943	False
+BRCA PDX | trastuzumab	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.5740740740740741	False
+BRCA PDX | trastuzumab	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.5833333333333334	False
+BRCA PDX | trastuzumab	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.6203703703703703	False
+BRCA PDX | trastuzumab	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.6018518518518517	False
+BRCA PDX | trastuzumab	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.6574074074074073	True
+BRCA PDX | trastuzumab	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.6481481481481483	False
+BRCA PDX | trastuzumab	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.6018518518518517	False
+BRCA PDX | trastuzumab	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.574074074074074	False
+BRCA PDX | trastuzumab	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.5833333333333334	False
+BRCA PDX | trastuzumab	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.5694444444444443	False
+BRCA PDX | trastuzumab	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.5324074074074074	False
+BRCA PDX | trastuzumab	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.5694444444444445	False
+BRCA PDX | trastuzumab	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.5601851851851851	False
+BRCA PDX | trastuzumab	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.5879629629629629	False
+BRCA PDX | trastuzumab	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.5509259259259259	False
+BRCA PDX | trastuzumab	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.6111111111111112	False
+BRCA PDX | trastuzumab	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.5648148148148148	False
+BRCA PDX | trastuzumab	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.6018518518518517	False
+BRCA PDX | trastuzumab	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.601851851851852	False
+BRCA PDX | trastuzumab	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.5833333333333334	False
+BRCA PDX | trastuzumab	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.5462962962962963	False
+BRCA PDX | trastuzumab	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.6203703703703703	False
+BRCA PDX | trastuzumab	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.5925925925925927	False
+BRCA PDX | trastuzumab	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.6111111111111112	False
+BRCA PDX | trastuzumab	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.5694444444444444	False
+BRCA PDX | trastuzumab	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.5092592592592592	False
+BRCA PDX | trastuzumab	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.5324074074074073	False
+BRCA PDX | trastuzumab	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.5277777777777778	False
+BRCA PDX | trastuzumab	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.5555555555555555	False
+BRCA PDX | trastuzumab	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.5694444444444445	False
+BRCA PDX | trastuzumab	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.5092592592592592	False
+BRCA PDX | trastuzumab	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.5879629629629629	False
+CRC PDX (Gao) | fluorouracil	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.5770975056689341	False
+CRC PDX (Gao) | fluorouracil	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.5850340136054422	False
+CRC PDX (Gao) | fluorouracil	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.5884353741496599	False
+CRC PDX (Gao) | fluorouracil	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.5963718820861678	False
+CRC PDX (Gao) | fluorouracil	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.5816326530612245	False
+CRC PDX (Gao) | fluorouracil	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.5918367346938775	False
+CRC PDX (Gao) | fluorouracil	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.5408163265306123	False
+CRC PDX (Gao) | fluorouracil	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.5952380952380952	False
+CRC PDX (Gao) | fluorouracil	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.5532879818594104	False
+CRC PDX (Gao) | fluorouracil	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.5396825396825397	False
+CRC PDX (Gao) | fluorouracil	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.6077097505668935	True
+CRC PDX (Gao) | fluorouracil	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.5680272108843537	False
+CRC PDX (Gao) | fluorouracil	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.5374149659863946	False
+CRC PDX (Gao) | fluorouracil	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.5510204081632653	False
+CRC PDX (Gao) | fluorouracil	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.5963718820861679	False
+CRC PDX (Gao) | fluorouracil	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.5714285714285715	False
+CRC PDX (Gao) | fluorouracil	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.5328798185941043	False
+CRC PDX (Gao) | fluorouracil	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.5702947845804989	False
+CRC PDX (Gao) | fluorouracil	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.5680272108843537	False
+CRC PDX (Gao) | fluorouracil	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.5770975056689343	False
+CRC PDX (Gao) | fluorouracil	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.5600907029478458	False
+CRC PDX (Gao) | fluorouracil	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.5374149659863946	False
+CRC PDX (Gao) | fluorouracil	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.5861678004535148	False
+CRC PDX (Gao) | fluorouracil	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.54421768707483	False
+CRC PDX (Gao) | fluorouracil	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.5068027210884353	False
+CRC PDX (Gao) | fluorouracil	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.49773242630385495	False
+CRC PDX (Gao) | fluorouracil	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.5340136054421768	False
+CRC PDX (Gao) | fluorouracil	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.5634920634920636	False
+CRC PDX (Gao) | fluorouracil	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.5657596371882087	False
+CRC PDX (Gao) | fluorouracil	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.5555555555555556	False
+CRC PDX (Gao) | fluorouracil	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.572562358276644	False
+CRC PDX (Gao) | fluorouracil	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.5839002267573696	False
+NSCLC PDX | paclitaxel	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.8333333333333334	False
+NSCLC PDX | paclitaxel	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.7916666666666666	False
+NSCLC PDX | paclitaxel	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.7708333333333334	False
+NSCLC PDX | paclitaxel	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.7916666666666666	False
+NSCLC PDX | paclitaxel	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.7291666666666666	False
+NSCLC PDX | paclitaxel	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.875	True
+NSCLC PDX | paclitaxel	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.8333333333333334	False
+NSCLC PDX | paclitaxel	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.8229166666666666	False
+NSCLC PDX | paclitaxel	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.875	False
+NSCLC PDX | paclitaxel	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.78125	False
+NSCLC PDX | paclitaxel	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.8125	False
+NSCLC PDX | paclitaxel	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.7708333333333334	False
+NSCLC PDX | paclitaxel	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.8541666666666666	False
+NSCLC PDX | paclitaxel	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.8541666666666666	False
+NSCLC PDX | paclitaxel	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.7604166666666666	False
+NSCLC PDX | paclitaxel	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.7916666666666666	False
+NSCLC PDX | paclitaxel	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.75	False
+NSCLC PDX | paclitaxel	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.8125	False
+NSCLC PDX | paclitaxel	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.7708333333333334	False
+NSCLC PDX | paclitaxel	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.7916666666666666	False
+NSCLC PDX | paclitaxel	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.8125	False
+NSCLC PDX | paclitaxel	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.7916666666666666	False
+NSCLC PDX | paclitaxel	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.8020833333333334	False
+NSCLC PDX | paclitaxel	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.8333333333333334	False
+NSCLC PDX | paclitaxel	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.78125	False
+NSCLC PDX | paclitaxel	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.78125	False
+NSCLC PDX | paclitaxel	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.8333333333333334	False
+NSCLC PDX | paclitaxel	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.71875	False
+NSCLC PDX | paclitaxel	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.8333333333333334	False
+NSCLC PDX | paclitaxel	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.7708333333333334	False
+NSCLC PDX | paclitaxel	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.78125	False
+NSCLC PDX | paclitaxel	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.7916666666666666	False
+NSCLC PDX | erlotinib	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.4708333333333334	False
+NSCLC PDX | erlotinib	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.4708333333333334	False
+NSCLC PDX | erlotinib	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.48333333333333334	False
+NSCLC PDX | erlotinib	8	32	0.01	0.3	0.001	0.5	60	1.5	3	0.3875	False
+NSCLC PDX | erlotinib	8	32	0.01	0.6	0.001	0.1	60	0.5	3	0.6083333333333333	True
+NSCLC PDX | erlotinib	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.4291666666666667	False
+NSCLC PDX | erlotinib	8	32	0.01	0.6	0.001	0.5	60	0.5	3	0.4875	False
+NSCLC PDX | erlotinib	8	32	0.01	0.6	0.001	0.5	60	1.5	3	0.4875	False
+NSCLC PDX | erlotinib	8	32	0.05	0.3	0.001	0.1	60	0.5	3	0.5166666666666667	False
+NSCLC PDX | erlotinib	8	32	0.05	0.3	0.001	0.1	60	1.5	3	0.4041666666666666	False
+NSCLC PDX | erlotinib	8	32	0.05	0.3	0.001	0.5	60	0.5	3	0.4479166666666667	False
+NSCLC PDX | erlotinib	8	32	0.05	0.3	0.001	0.5	60	1.5	3	0.42083333333333334	False
+NSCLC PDX | erlotinib	8	32	0.05	0.6	0.001	0.1	60	0.5	3	0.4708333333333334	False
+NSCLC PDX | erlotinib	8	32	0.05	0.6	0.001	0.1	60	1.5	3	0.5604166666666667	False
+NSCLC PDX | erlotinib	8	32	0.05	0.6	0.001	0.5	60	0.5	3	0.46875	False
+NSCLC PDX | erlotinib	8	32	0.05	0.6	0.001	0.5	60	1.5	3	0.425	False
+NSCLC PDX | erlotinib	8	128	0.01	0.3	0.001	0.1	60	0.5	3	0.3875	False
+NSCLC PDX | erlotinib	8	128	0.01	0.3	0.001	0.1	60	1.5	3	0.4083333333333334	False
+NSCLC PDX | erlotinib	8	128	0.01	0.3	0.001	0.5	60	0.5	3	0.4291666666666667	False
+NSCLC PDX | erlotinib	8	128	0.01	0.3	0.001	0.5	60	1.5	3	0.4083333333333334	False
+NSCLC PDX | erlotinib	8	128	0.01	0.6	0.001	0.1	60	0.5	3	0.4291666666666667	False
+NSCLC PDX | erlotinib	8	128	0.01	0.6	0.001	0.1	60	1.5	3	0.45	False
+NSCLC PDX | erlotinib	8	128	0.01	0.6	0.001	0.5	60	0.5	3	0.4291666666666667	False
+NSCLC PDX | erlotinib	8	128	0.01	0.6	0.001	0.5	60	1.5	3	0.4666666666666666	False
+NSCLC PDX | erlotinib	8	128	0.05	0.3	0.001	0.1	60	0.5	3	0.32708333333333334	False
+NSCLC PDX | erlotinib	8	128	0.05	0.3	0.001	0.1	60	1.5	3	0.3541666666666667	False
+NSCLC PDX | erlotinib	8	128	0.05	0.3	0.001	0.5	60	0.5	3	0.38958333333333334	False
+NSCLC PDX | erlotinib	8	128	0.05	0.3	0.001	0.5	60	1.5	3	0.44166666666666665	False
+NSCLC PDX | erlotinib	8	128	0.05	0.6	0.001	0.1	60	0.5	3	0.4166666666666667	False
+NSCLC PDX | erlotinib	8	128	0.05	0.6	0.001	0.1	60	1.5	3	0.4583333333333333	False
+NSCLC PDX | erlotinib	8	128	0.05	0.6	0.001	0.5	60	0.5	3	0.43333333333333335	False
+NSCLC PDX | erlotinib	8	128	0.05	0.6	0.001	0.5	60	1.5	3	0.37916666666666665	False
 PDAC PDX | gemcitabine	8	32	0.01	0.3	0.001	0.1	60	0.5	3	0.5555555555555555	False
 PDAC PDX | gemcitabine	8	32	0.01	0.3	0.001	0.1	60	1.5	3	0.5444444444444444	False
 PDAC PDX | gemcitabine	8	32	0.01	0.3	0.001	0.5	60	0.5	3	0.5	False

@@ -78,9 +78,13 @@ def gi():
             ("tiriac", "PAAD"): ["GEMCITABINE", "FLUOROURACIL", "OXALIPLATIN"],
             ("shi", "PAAD"): ["GEMCITABINE", "FLUOROURACIL", "OXALIPLATIN"],
             ("ji", "LIHC"): ["SORAFENIB", "GEMCITABINE", "DOXORUBICIN", "FLUOROURACIL"],
-            ("isella", "COAD"): ["CETUXIMAB"]}
-    names = {"vandewetering": "COADREAD_vdW", "tiriac": "PAAD_tiriac", "shi": "PAAD_shi", "ji": "LIHC_ji", "isella": "COAD_isella"}
+            ("isella", "COAD"): ["CETUXIMAB"],
+            ("broutier", "LIHC"): ["SORAFENIB"]}   # added for fix I12 (Broutier gene universe)
+    names = {"vandewetering": "COADREAD_vdW", "tiriac": "PAAD_tiriac", "shi": "PAAD_shi", "ji": "LIHC_ji", "isella": "COAD_isella", "broutier": "LIHC_broutier"}
+    only = __import__("os").environ.get("ONLY")
     for (key, cohort), dl in plan.items():
+        if only and key not in only.split(","):
+            continue
         osc, tsc, sur, tt, untreated = RA.cohort_inputs(key, cohort, cd)
         resp = K.set_response(key)
         parts = ["COAD", "READ"] if cohort == "COADREAD" else [cohort]

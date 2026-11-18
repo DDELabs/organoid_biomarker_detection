@@ -44,7 +44,7 @@ DEPMAP = NAR / "_cache" / "depmap" / "derived"
 PROXY = {"CARBOPLATIN": "CISPLATIN", "OXALIPLATIN": "CISPLATIN"}
 
 # ---------------------------------------------------------------------------------------------------- data
-BUNDLE_ORDER = ["COAD_paper", "BLCA_paper", "COADREAD_vdW", "COAD_isella", "PAAD_tiriac", "PAAD_shi", "LIHC_ji",
+BUNDLE_ORDER = ["COAD_paper", "BLCA_paper", "COADREAD_vdW", "COAD_isella", "PAAD_tiriac", "PAAD_shi", "LIHC_ji", "LIHC_broutier",
                 "BLCA_current", "OV_vias", "SARC_alshihabi", "LUAD_cells", "PDX_BRCA", "PDX_CRC", "PDX_NSCLC",
                 "PDX_PDAC", "PDX_CM"]
 

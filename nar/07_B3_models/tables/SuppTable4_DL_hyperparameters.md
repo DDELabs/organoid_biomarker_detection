@@ -98,6 +98,7 @@ The setting with the highest average AUC (bold) was used for the patient predict
 | PAAD org. (Shi) | fluorouracil | 8 | 32 | 0.05 | 0.6 | 0.001 | 0.5 | 60 | 3 | 1.5 | 0.794 |
 | PAAD org. (Shi) | oxaliplatin | 8 | 32 | 0.05 | 0.3 | 0.001 | 0.1 | 60 | 3 | 1.5 | 0.687 |
 | LIHC org. (Ji) | sorafenib | 8 | 128 | 0.05 | 0.6 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.631 |
+| LIHC org. (Broutier) | sorafenib | 8 | 32 | 0.01 | 0.3 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.500 |
 | BLCA organoids | cisplatin | 8 | 32 | 0.01 | 0.6 | 0.001 | 0.1 | 60 | 3 | 1.5 | 0.833 |
 | BLCA organoids | gemcitabine | 8 | 32 | 0.05 | 0.3 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.917 |
 | BLCA organoids | doxorubicin | 8 | 32 | 0.01 | 0.3 | 0.001 | 0.1 | 60 | 3 | 1.5 | 0.167 |
@@ -121,5 +122,9 @@ The setting with the highest average AUC (bold) was used for the patient predict
 | LUAD cell lines | carboplatin | 8 | 128 | 0.05 | 0.6 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.580 |
 | BRCA PDX | paclitaxel | 8 | 128 | 0.05 | 0.3 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.690 |
 | BRCA PDX | tamoxifen | 8 | 32 | 0.01 | 0.3 | 0.001 | 0.5 | 60 | 3 | 1.5 | 0.680 |
+| BRCA PDX | trastuzumab | 8 | 32 | 0.01 | 0.6 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.657 |
+| CRC PDX (Gao) | fluorouracil | 8 | 32 | 0.05 | 0.3 | 0.001 | 0.5 | 60 | 3 | 0.5 | 0.608 |
+| NSCLC PDX | paclitaxel | 8 | 32 | 0.01 | 0.6 | 0.001 | 0.1 | 60 | 3 | 1.5 | 0.875 |
+| NSCLC PDX | erlotinib | 8 | 32 | 0.01 | 0.6 | 0.001 | 0.1 | 60 | 3 | 0.5 | 0.608 |
 | PDAC PDX | gemcitabine | 8 | 32 | 0.05 | 0.6 | 0.001 | 0.5 | 60 | 3 | 1.5 | 0.700 |
 | melanoma PDX | dacarbazine | 8 | 128 | 0.01 | 0.3 | 0.001 | 0.5 | 60 | 3 | 0.5 | 0.502 |

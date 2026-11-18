@@ -10,7 +10,7 @@ from bench import MODELS, OUT
 
 LABEL = {"COAD_paper": "COAD organoids (paper data)", "BLCA_paper": "BLCA organoids (paper data)",
          "COADREAD_vdW": "CRC organoids", "COAD_isella": "CRC PDX (Isella)", "PAAD_tiriac": "PAAD org. (Tiriac)",
-         "PAAD_shi": "PAAD org. (Shi)", "LIHC_ji": "LIHC org. (Ji)", "BLCA_current": "BLCA organoids",
+         "PAAD_shi": "PAAD org. (Shi)", "LIHC_ji": "LIHC org. (Ji)", "LIHC_broutier": "LIHC org. (Broutier)", "BLCA_current": "BLCA organoids",
          "OV_vias": "OV organoids", "SARC_alshihabi": "SARC organoids", "LUAD_cells": "LUAD cell lines",
          "PDX_BRCA": "BRCA PDX", "PDX_CRC": "CRC PDX (Gao)", "PDX_NSCLC": "NSCLC PDX", "PDX_PDAC": "PDAC PDX",
          "PDX_CM": "melanoma PDX"}

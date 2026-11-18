@@ -1,4 +1,4 @@
-**Benchmark heatmap: every model (rows) on every task (columns).** Numbers are averages over the 41 lab-model set x drug pairs
+**Benchmark heatmap: every model (rows) on every task (columns).** Numbers are averages over the 46 lab-model set x drug pairs
 that have at least 15 drug-treated TCGA patients (cell-line columns: averages over drug x screen units of GDSC and CTRPv2).
 Columns: (1) Spearman correlation between predicted and measured drug response in lab models left out of training
 (leave-one-out for sets of up to 40 models, else 10-fold); (2) C-index minus 0.5 in treated TCGA patients (0 = coin toss;

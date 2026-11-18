@@ -26,3 +26,19 @@ GSE87211 5-FU+oxaliplatin+RT vs 5-FU+RT resp n treated 90 comp 111
 GSE28702 mFOLFOX6 resp n treated 83 comp 0
 GSE19860 mFOLFOX6 resp n treated 40 comp 0
 GSE104645 oxaliplatin vs irinotecan regimens resp n treated 113 comp 54
+GSE72970 FOLFIRI vs FOLFOX pfs n treated 84 comp 36
+GSE72970 FOLFIRI vs FOLFOX resp n treated 84 comp 36
+GSE62080 FOLFIRI resp n treated 21 comp 0
+GSE104645 irinotecan vs oxaliplatin regimens resp n treated 54 comp 113
+skip (too few treated) GSE39582 FOLFIRI vs no chemo rfs
+GSE169455 neoadjuvant/induction cisplatin resp n treated 149 comp 0
+GSE52219 neoadjuvant MVAC resp n treated 23 comp 0
+GSE48276 neoadjuvant MVAC vs none os n treated 16 comp 37
+GSE70691 adjuvant / neoadjuvant MVAC os n treated 38 comp 0
+GSE31684 chemo after cystectomy vs none os n treated 35 comp 58
+GSE9891 platinum-based vs no platinum os n treated 243 comp 17
+GSE9891 platinum-based (all) rfs n treated 240 comp 0
+GSE63885 platinum-based os n treated 75 comp 0
+GSE63885 platinum-based resp n treated 75 comp 0
+GSE51373 carboplatin-paclitaxel resp n treated 28 comp 0
+GSE15622 carboplatin vs paclitaxel arm resp n treated 15 comp 20
