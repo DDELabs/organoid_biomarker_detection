@@ -1,0 +1,207 @@
+AAAS	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+AP1B1	
+AP1G1	
+AP1M1	
+AP1M2	
+AP1S1	
+AP1S2	
+AP2A1	
+AP2A2	
+AP2B1	
+AP2M1	
+AP2S1	
+APOBEC3G	HIV accessory host factors (PPIA, BANF1, HMGA1, PSIP1, XRCC*, LIG4)
+ARF1	
+ATP6V1H	
+B2M	
+BANF1	HIV accessory host factors (PPIA, BANF1, HMGA1, PSIP1, XRCC*, LIG4)
+BTRC	
+CCNH	
+CCNT1	
+CCNT2	
+CCR5	
+CD247	HLA / immune receptors
+CD28	HLA / immune receptors
+CD4	HLA / immune receptors
+CD8B	HLA / immune receptors
+CDK7	
+CDK9	
+COBRA1	
+CTDP1	
+CUL5	
+CXCR4	
+DOCK2	
+ELL	
+ELMO1	
+ERCC2	
+ERCC3	
+FEN1	
+FYN	
+GTF2A1	
+GTF2A2	
+GTF2B	
+GTF2E1	
+GTF2E2	
+GTF2F1	
+GTF2F2	
+GTF2H1	
+GTF2H2	
+GTF2H2B	
+GTF2H3	
+GTF2H4	
+HCK	
+HLA-A	HLA / immune receptors
+HLA-K	HLA / immune receptors
+HMGA1	HIV accessory host factors (PPIA, BANF1, HMGA1, PSIP1, XRCC*, LIG4)
+KPNA1	
+KPNB1	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+LCK	
+LIG1	
+LIG4	HIV accessory host factors (PPIA, BANF1, HMGA1, PSIP1, XRCC*, LIG4)
+LOC128192	
+LOC131691	
+LOC389901	
+LOC440577	
+LOC643997	
+LOC645870	
+LOC652826	
+LOC652857	
+LOC654188	
+MNAT1	
+NCBP1	
+NCBP2	
+NMT1	
+NMT2	
+NPM1	
+NUP107	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+NUP133	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+NUP153	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+NUP155	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+NUP188	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+NUP205	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+NUP210	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+NUP214	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+NUP35	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+NUP37	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+NUP43	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+NUP50	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+NUP54	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+NUP62	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+NUP85	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+NUP88	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+NUP93	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+NUPL1	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+NUPL2	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+PACS1	
+PAK2	
+POLR2A	RNA polymerase II (POLR2*)
+POLR2B	RNA polymerase II (POLR2*)
+POLR2C	RNA polymerase II (POLR2*)
+POLR2D	RNA polymerase II (POLR2*)
+POLR2E	RNA polymerase II (POLR2*)
+POLR2F	RNA polymerase II (POLR2*)
+POLR2G	RNA polymerase II (POLR2*)
+POLR2H	RNA polymerase II (POLR2*)
+POLR2I	RNA polymerase II (POLR2*)
+POLR2J	RNA polymerase II (POLR2*)
+POLR2K	RNA polymerase II (POLR2*)
+POLR2L	RNA polymerase II (POLR2*)
+POM121	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+PPIA	HIV accessory host factors (PPIA, BANF1, HMGA1, PSIP1, XRCC*, LIG4)
+PPIAP22	
+PPIAP8	
+PSIP1	HIV accessory host factors (PPIA, BANF1, HMGA1, PSIP1, XRCC*, LIG4)
+PSMA1	proteasome (PSM*)
+PSMA2	proteasome (PSM*)
+PSMA3	proteasome (PSM*)
+PSMA4	proteasome (PSM*)
+PSMA5	proteasome (PSM*)
+PSMA6	proteasome (PSM*)
+PSMA7	proteasome (PSM*)
+PSMA8	proteasome (PSM*)
+PSMB1	proteasome (PSM*)
+PSMB10	proteasome (PSM*)
+PSMB2	proteasome (PSM*)
+PSMB3	proteasome (PSM*)
+PSMB4	proteasome (PSM*)
+PSMB5	proteasome (PSM*)
+PSMB6	proteasome (PSM*)
+PSMB7	proteasome (PSM*)
+PSMB8	proteasome (PSM*)
+PSMB9	proteasome (PSM*)
+PSMC1	proteasome (PSM*)
+PSMC2	proteasome (PSM*)
+PSMC3	proteasome (PSM*)
+PSMC4	proteasome (PSM*)
+PSMC5	proteasome (PSM*)
+PSMC6	proteasome (PSM*)
+PSMD1	proteasome (PSM*)
+PSMD10	proteasome (PSM*)
+PSMD11	proteasome (PSM*)
+PSMD12	proteasome (PSM*)
+PSMD13	proteasome (PSM*)
+PSMD14	proteasome (PSM*)
+PSMD2	proteasome (PSM*)
+PSMD3	proteasome (PSM*)
+PSMD4	proteasome (PSM*)
+PSMD5	proteasome (PSM*)
+PSMD6	proteasome (PSM*)
+PSMD7	proteasome (PSM*)
+PSMD8	proteasome (PSM*)
+PSMD9	proteasome (PSM*)
+PSME1	proteasome (PSM*)
+PSME2	proteasome (PSM*)
+PSME4	proteasome (PSM*)
+PSMF1	proteasome (PSM*)
+RAC1	
+RAE1	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+RAN	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+RANBP1	
+RANBP2	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+RANGAP1	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+RBX1	
+RCC1	
+RDBP	
+RNGTT	
+RNMT	
+RPS27A	ribosomal (RPL*/RPS*);ubiquitin (UB*)
+RPS27AP11	ribosomal (RPL*/RPS*)
+SEH1L	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+SKP1	
+SLC25A4	
+SLC25A5	
+SLC25A6	
+SSRP1	
+SUPT16H	
+SUPT4H1	
+SUPT5H	
+TAF1	
+TAF10	
+TAF11	
+TAF12	
+TAF13	
+TAF4	
+TAF4B	
+TAF5	
+TAF6	
+TAF9	
+TBP	
+TCEA1	
+TCEB1	
+TCEB1P3	
+TCEB2	
+TCEB3	
+TH1L	
+TPR	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+TSG101	
+UBA52	ubiquitin (UB*)
+VPS28	
+VPS37A	
+VPS37B	
+VPS37C	
+VPS37D	
+WHSC2	
+XPO1	nuclear pore (NUP*, RAN*, KPNB1, XPO1, SEH1L, SEC13, TPR, AAAS, RAE1)
+XRCC4	HIV accessory host factors (PPIA, BANF1, HMGA1, PSIP1, XRCC*, LIG4)
+XRCC5	HIV accessory host factors (PPIA, BANF1, HMGA1, PSIP1, XRCC*, LIG4)
+XRCC6	HIV accessory host factors (PPIA, BANF1, HMGA1, PSIP1, XRCC*, LIG4)

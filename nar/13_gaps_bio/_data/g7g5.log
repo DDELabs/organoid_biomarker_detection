@@ -1,0 +1,16 @@
+   screen          drug                         scope    n       rho        lo        hi         p   metric
+0   GDSC1   OXALIPLATIN                    colorectal    0       NaN       NaN       NaN       NaN      NaN
+1   GDSC1  FLUOROURACIL                    colorectal   44  0.053559 -0.264422  0.361036  0.729877  ln_ic50
+2   GDSC1  FLUOROURACIL  pan-cancer, lineage-adjusted  903  0.017656 -0.047639  0.082801  0.604691  ln_ic50
+3   GDSC2   OXALIPLATIN                    colorectal   48 -0.018020 -0.316482  0.283688  0.903244  ln_ic50
+4   GDSC2   OXALIPLATIN  pan-cancer, lineage-adjusted  961 -0.052202 -0.115062  0.011075  0.113584  ln_ic50
+5   GDSC2  FLUOROURACIL                    colorectal   48  0.015632 -0.285883  0.314330  0.916017  ln_ic50
+6   GDSC2  FLUOROURACIL  pan-cancer, lineage-adjusted  962  0.021465 -0.041799  0.084558  0.515290  ln_ic50
+7    CTRP   OXALIPLATIN                    colorectal   44  0.076679 -0.242696  0.381058  0.620799      AUC
+8    CTRP   OXALIPLATIN  pan-cancer, lineage-adjusted  768 -0.118438 -0.187611 -0.048095  0.001201      AUC
+9    CTRP  FLUOROURACIL                    colorectal   43  0.257173 -0.065325  0.531028  0.095945      AUC
+10   CTRP  FLUOROURACIL  pan-cancer, lineage-adjusted  775  0.010997 -0.059474  0.081359  0.763352      AUC
+11  PRISM   OXALIPLATIN                    colorectal   26  0.374359 -0.039706  0.678696  0.059544      AUC
+12  PRISM   OXALIPLATIN  pan-cancer, lineage-adjusted  448  0.032369 -0.060458  0.124642  0.503710      AUC
+13  PRISM  FLUOROURACIL                    colorectal   22  0.404856 -0.047156  0.719244  0.061617      AUC
+14  PRISM  FLUOROURACIL  pan-cancer, lineage-adjusted  429  0.073207 -0.021621  0.166729  0.138929      AUC

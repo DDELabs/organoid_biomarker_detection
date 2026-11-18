@@ -1,0 +1,65 @@
+fraction                                    0.10   0.25   0.50   0.75   1.00
+unit             axis       model                                           
+BLCA_CISPLATIN   lab models joint            NaN  0.557  0.554  0.548  0.548
+                            organoid-only    NaN  0.520  0.506  0.511  0.511
+                 patients   joint          0.538  0.544  0.548  0.542  0.548
+                            patient-only   0.558  0.565  0.574  0.571  0.581
+BLCA_GEMCITABINE lab models joint            NaN  0.627  0.619  0.612  0.599
+                            organoid-only    NaN  0.434  0.427  0.394  0.401
+                 patients   joint          0.547  0.588  0.607  0.613  0.599
+                            patient-only   0.557  0.606  0.629  0.652  0.668
+CRC_5FU          lab models joint            NaN  0.514  0.523  0.520  0.520
+                            organoid-only    NaN  0.500  0.510  0.502  0.499
+                 patients   joint          0.516  0.521  0.520  0.519  0.520
+                            patient-only   0.508  0.515  0.528  0.528  0.533
+CRC_IRINOTECAN   lab models joint            NaN  0.476  0.468  0.461  0.463
+                            organoid-only    NaN  0.489  0.480  0.477  0.473
+                 patients   joint          0.471  0.454  0.454  0.461  0.463
+                            patient-only   0.490  0.483  0.460  0.459  0.428
+CRC_OXALIPLATIN  lab models joint            NaN  0.490  0.503  0.508  0.508
+                            organoid-only    NaN  0.494  0.508  0.511  0.512
+                 patients   joint          0.517  0.512  0.506  0.509  0.508
+                            patient-only   0.509  0.497  0.484  0.486  0.485
+LIHC_SORAFENIB   lab models joint            NaN  0.900  0.921  0.933  0.945
+                            organoid-only    NaN  0.565  0.760  0.758  0.962
+                 patients   joint          0.811  0.842  0.919  0.930  0.945
+                            patient-only   0.929  0.952  0.940  0.950  0.951
+LUNG_PLATINUM    lab models joint            NaN  0.549  0.550  0.551  0.550
+                            organoid-only    NaN  0.492  0.496  0.484  0.482
+                 patients   joint          0.514  0.542  0.544  0.543  0.550
+                            patient-only   0.517  0.544  0.545  0.546  0.553
+OV_PACLITAXEL    lab models joint            NaN  0.551  0.550  0.554  0.558
+                            organoid-only    NaN  0.512  0.502  0.498  0.503
+                 patients   joint          0.527  0.533  0.552  0.553  0.558
+                            patient-only   0.527  0.537  0.552  0.556  0.560
+OV_PLATINUM      lab models joint            NaN  0.542  0.545  0.549  0.550
+                            organoid-only    NaN  0.513  0.519  0.521  0.520
+                 patients   joint          0.529  0.539  0.546  0.546  0.550
+                            patient-only   0.530  0.540  0.548  0.546  0.550
+PAAD_GEMCITABINE lab models joint            NaN  0.514  0.520  0.521  0.513
+                            organoid-only    NaN  0.427  0.387  0.380  0.382
+                 patients   joint          0.461  0.508  0.519  0.511  0.513
+                            patient-only   0.497  0.549  0.552  0.555  0.556
+SARC_GEMCITABINE lab models joint            NaN    NaN    NaN    NaN    NaN
+                            organoid-only    NaN    NaN    NaN    NaN    NaN
+                 patients   joint            NaN    NaN    NaN    NaN    NaN
+                            patient-only     NaN    NaN    NaN    NaN    NaN
+unit
+BLCA_CISPLATIN                   0.25:6
+BLCA_GEMCITABINE    0.25:3;0.5:1;0.75:1
+CRC_5FU                         0.25:10
+CRC_IRINOTECAN                   0.25:5
+CRC_OXALIPLATIN                  0.25:7
+LIHC_SORAFENIB                   0.25:5
+LUNG_PLATINUM             0.25:2;0.75:1
+OV_PACLITAXEL                    0.25:5
+OV_PLATINUM                      0.25:5
+PAAD_GEMCITABINE                 0.25:5
+SARC_GEMCITABINE          0.25:3;0.75:2
+           model        arm   n  responders   AUROC    p
+0  organoid-only  sorafenib  67          21  0.9648  0.0
+1  organoid-only    placebo  72          21  0.8945  0.0
+2   patient-only  sorafenib  67          21  0.9472  0.0
+3   patient-only    placebo  72          21  0.9570  0.0
+4          joint  sorafenib  67          21  0.9472  0.0
+5          joint    placebo  72          21  0.9356  0.0

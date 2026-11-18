@@ -6,3 +6,22 @@ GSE39582 5-FU-based vs no chemo (stage II-III) rfs n treated 138 comp 258
 GSE39582 5-FU-based vs no chemo (stage II-III) os n treated 139 comp 262
 GSE39582 5FU alone vs no chemo rfs n treated 76 comp 258
 GSE39582 FUFOL vs no chemo rfs n treated 50 comp 258
+GSE39582 FOLFOX vs no chemo rfs n treated 12 comp 258
+GSE103479 5-FU adjuvant vs surgery only os n treated 66 comp 86
+GSE103479 5-FU adjuvant vs surgery only pfs n treated 66 comp 84
+GSE14333 adjuvant chemo vs none (stage I-III) dfs n treated 87 comp 139
+GSE72970 all 5-FU-based (metastatic) pfs n treated 124 comp 0
+GSE72970 all 5-FU-based (metastatic) resp n treated 124 comp 0
+GSE87211 5-FU chemoradiotherapy (rectal) dfs n treated 189 comp 0
+GSE87211 5-FU chemoradiotherapy (rectal) resp n treated 201 comp 0
+GSE28702 mFOLFOX6 resp n treated 83 comp 0
+GSE19860 mFOLFOX6 resp n treated 40 comp 0
+GSE62080 FOLFIRI resp n treated 21 comp 0
+GSE104645 5-FU/tegafur-based (metastatic) resp n treated 159 comp 0
+GSE72970 FOLFOX vs FOLFIRI pfs n treated 36 comp 84
+GSE72970 FOLFOX vs FOLFIRI resp n treated 36 comp 84
+GSE39582 FOLFOX vs no chemo rfs n treated 12 comp 258
+GSE87211 5-FU+oxaliplatin+RT vs 5-FU+RT dfs n treated 88 comp 101
+GSE87211 5-FU+oxaliplatin+RT vs 5-FU+RT resp n treated 90 comp 111
+GSE28702 mFOLFOX6 resp n treated 83 comp 0
+GSE19860 mFOLFOX6 resp n treated 40 comp 0

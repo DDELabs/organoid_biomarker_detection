@@ -1,0 +1,8 @@
+file	bytes	sha256
+nar/_cache/depmap/derived/expr_cmp.pkl	111188576	e7436a2b7a6278a7e7ef752d6b9e429a100595c19fa501a9f295a634af61a4fb
+nar/_cache/depmap/derived/gdsc_long.pkl	60566864	8730cdd142295980eaac2795306736c548f226594fa39f1f98b09562acf818ef
+nar/_cache/depmap/derived/models.pkl	156452	9cd4e816a0164c860e75bf6b4c1e02a95e99ef7ca271f955a8fc7dfbe7b0a652
+nar/02_organoid_only/_data/raw/TCGA-LIHC.star_fpkm-uq.tsv.gz	100179162	9bfd71d3f55d369e39abbb6a8d073cafd43f76a4d5f6dbafdf1cced265a81dac
+nar/02_organoid_only/_data/raw/TCGA-PAAD.star_fpkm-uq.tsv.gz	49309161	234dc4caff65a092550adf1ba4b70c91167a06f07e03fc3ff25fb641ad00381c
+nar/02_organoid_only/BLCA_OV_LUAD_OTHER/_data/raw/TCGA-OV.star_fpkm-uq.tsv.gz	125578243	091f10799f952829f4aa290221bcbf5de2bb625dcfca62da02ab112fd1b6bfce
+nar/02_organoid_only/BLCA_OV_LUAD_OTHER/_data/raw/TCGA-SARC.star_fpkm-uq.tsv.gz	67145246	62b2a1d60eb69bcca06f088b5c0f1bde1823d5bbcae39d528395530dc28b7079

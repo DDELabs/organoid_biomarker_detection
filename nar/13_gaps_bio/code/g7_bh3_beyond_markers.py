@@ -85,6 +85,9 @@ def main():
         pool = np.array(ex.index)
         rs = scoring.rank_score(ex, {f"r{i}": list(rng.choice(pool, k, replace=False)) for i in range(N_RAND)}, min_size=3)
         for d in DRUGS[sn]:
+            if d not in S.resp.columns:
+                print('skip (not in screen):', sn, d, flush=True)
+                continue
             df = design(S, ex, extra, d)
             n = len(df)
             for label, covs in (("lineage", []), ("+ BCL2L1", ["BCL2L1"]), ("+ BCL2, BCL2L1, MCL1", GENES),

@@ -72,6 +72,20 @@ stops linear SVR (default margin 0.1) from returning all-zero coefficients on 0-
 Clinical balance of the predicted groups (Supp Table 2): age, sex, T and N stage, chi-square p 0.11-1.0
 (`BLCA_lee2018/extras/tables/SuppTable2_clinical_balance.tsv`). What I think: the split is not a hidden stage split.
 
+### 3.1b One line per patient (audit I07; `BLCA_lee2018/tables/BLCA_cisplatin_one_line_per_patient.tsv`)
+The two recurrence lines (SCBO-3_2, SCBO-11_2) were dropped, leaving 7 lines from 7 patients (paper source data, same
+code, 500 permutations and 2,000 bootstraps to save CPU, so the empirical p values are only comparable in size).
+
+| Analysis | Lines | Rank-1 pathway | Treated n / deaths | Treated log-rank p | HR (95% CI) | Untreated p | Shuffled-response p | Top-rank bootstrap p |
+|---|---|---|---|---|---|---|---|---|
+| As main run | 9 (7 patients) | glucose and other sugars transport | 79 / 20 | 0.044 | 2.63 (0.99-6.96) | 0.93 | 0.295 | 0.078 |
+| One line per patient | 7 (7 patients) | same pathway | 79 / 20 | 0.044 | 2.63 (0.99-6.96) | 0.93 | 0.263 | 0.084 |
+
+What I think: the rank-1 pathway and its treated-patient statistics do not change when the recurrence lines are
+removed (the 30 candidate pathways and the rank-1 choice stay the same). The shuffled-response and bootstrap checks
+move a little (0.295 -> 0.263; 0.078 -> 0.084; rank-1 p bootstrap 0.064 -> 0.083). n = 7 patients is the honest
+sample size for the organoid side.
+
 ### 3.2 Current GDC data (`BLCA_lee2018/current/`)
 
 47 proximal pathways; rank 1 "transport of organic anions". Treated n = 79, deaths = 28, **p = 0.067, HR 2.03 (0.94-4.38)**;

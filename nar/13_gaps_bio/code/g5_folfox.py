@@ -93,7 +93,7 @@ def gse39582(sign):
     P = P[(P.cohort == "GSE39582")].set_index("sample_id")
     S = pd.read_csv(TT / "pathway_scores_geo.tsv.gz", sep="\t", index_col=0, usecols=["sample_id", BH3])
     P = P.join(S, how="inner")
-    P = P[P.stage.isin([2, 3])]
+    P = P[P.stage.astype(str).isin(["2", "3"])]
     P["s"] = sign * (P[BH3] - P[BH3].mean()) / P[BH3].std()
     rows = []
     groups = {"5FU alone": P.arm == "5FU", "FUFOL (5-FU + leucovorin)": P.arm == "FUFOL",

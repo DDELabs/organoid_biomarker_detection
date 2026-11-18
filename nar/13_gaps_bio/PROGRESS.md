@@ -6,3 +6,8 @@ Scripts in code/ (run from code/, `python3 <script>`; max 2 at a time):
 - G8 g8_ercc2.py then g8_braf.py (draws G8 figure)
 - G7 g7_bh3_beyond_markers.py ; G13 g13_odd_pathways.py ; G14 g14_cellline_models.py
 - Then REPORT.md (all numbers from tables/)
+
+## Status (updated)
+All scripts run: G2, G3, G5, G7, G8 (ERCC2+BRAF), G13, G14 DONE with figure+caption+tables.
+Fix made: g7 skipped drugs absent from a screen (WEHI-539 not in GDSC1). Remaining: REPORT.md.
+REPORT.md written by code/make_report.py (all numbers read from tables/). Bladder frozen-pathway part of G2 not done.
