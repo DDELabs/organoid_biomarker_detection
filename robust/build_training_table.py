@@ -65,7 +65,7 @@ def tidy(clin, cohort, source, cols=COLS):
     c["cancer_group"] = c["cancer"].map(group)
     if "drugs" not in c:
         c["drugs"] = np.nan
-    for x in COLS:
+    for x in cols:
         if x not in c:
             c[x] = np.nan
     none = c["drugs"].isin(["", "NONE"]) | (c["drugs"].isna() & c["control_arm"].eq(True))
@@ -174,8 +174,7 @@ def _flag_duplicates(P, S, checks):
     for new, old in checks:
         a, b = S[P["cohort"].isin(new).values].dropna(axis=1), S[P["cohort"].isin(old).values]
         b = b[a.columns].dropna(axis=1); a = a[b.columns]
-        sa, sb = (a - a.mean()) / a.std(), (b - b.mean()) / b.std()
-        r = (sa.fillna(0).values @ sb.fillna(0).values.T) / (a.shape[1] - 1)
+        r = np.corrcoef(((a - a.mean()) / a.std()).values, ((b - b.mean()) / b.std()).values)[:len(a), len(a):]   # same test as DUP_CHECK
         for i in np.where(r.max(axis=1) > 0.95)[0]:
             P.loc[a.index[i], "possible_duplicate_of"] = b.index[r[i].argmax()]
     return P

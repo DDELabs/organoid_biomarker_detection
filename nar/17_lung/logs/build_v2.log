@@ -13,21 +13,9 @@ GSE157011 (484, 673) pathways missing: 1
 GSE33072 (131, 673) pathways missing: 2
 GSE161537 (82, 673) pathways missing: 185
 GSE162520 (92, 673) pathways missing: 185
-Traceback (most recent call last):
-  File "/home/user/organoid_biomarker_detection/robust/build_training_table.py", line 242, in <module>
-    main_v2(sys.argv[sys.argv.index("--out") + 1])
-    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/user/organoid_biomarker_detection/robust/build_training_table.py", line 228, in main_v2
-    t = tidy(clin.loc[[i for i in clin.index if i in s.index]], cid, "GEO (new)", COLS_V2)
-  File "/home/user/organoid_biomarker_detection/robust/build_training_table.py", line 75, in tidy
-    return c[cols]
-           ~^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/pandas/core/frame.py", line 4384, in __getitem__
-    indexer = self.columns._get_indexer_strict(key, "columns")[1]
-              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 6302, in _get_indexer_strict
-    self._raise_if_missing(keyarr, indexer, axis_name)
-    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 6355, in _raise_if_missing
-    raise KeyError(f"{not_found} not in index")
-KeyError: "['histology'] not in index"
+GSE135222 (27, 673) pathways missing: 0
+GSE126044 (16, 673) pathways missing: 0
+GSE218989 (355, 673) pathways missing: 1
+GSE207422 (24, 673) pathways missing: 0
+GSE81089 (196, 673) pathways missing: 0
+(24644, 30) (24644, 673)

@@ -740,6 +740,7 @@ LUNG_BUILDERS = [GSE14814, GSE68465, GSE37745, GSE29013, GSE31210, GSE50081, GSE
                  GSE41271, GSE157011, GSE33072, GSE161537, GSE162520, GSE135222, GSE126044, GSE218989, GSE207422, GSE81089]
 SKIPPED_LUNG = {
     "GSE232569": "Piedmont pemetrexed-platinum lung study: gene data only (per-sample files); response and survival are not in the public record",
+    "CPTAC-3": "lung part of CPTAC-3 (GDC): not a GEO series; drug names are missing in the GDC treatment facet and outcome was not checked, so no treated group can be defined",
 }
 
 

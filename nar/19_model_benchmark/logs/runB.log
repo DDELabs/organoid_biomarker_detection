@@ -1,0 +1,13 @@
+GCN_prior BRIGHTNESS {'wd': 0.0001, 'steps': 150} 0.634 98s
+GCN_prior GSE123845 {'wd': 0.0001, 'steps': 150} 0.653 193s
+GCN_prior GSE163882 {'wd': 0.0001, 'steps': 150} 0.681 286s
+GCN_prior GSE20194 {'wd': 0.0001, 'steps': 150} 0.681 384s
+GCN_prior GSE20271 {'wd': 0.0001, 'steps': 150} 0.622 484s
+GCN_prior GSE22093 {'wd': 0.0001, 'steps': 150} 0.765 582s
+GCN_prior GSE23988 {'wd': 0.0001, 'steps': 150} 0.715 680s
+GCN_prior GSE240671 {'wd': 0.0001, 'steps': 150} 0.629 776s
+GCN_prior GSE25066 {'wd': 0.0001, 'steps': 150} 0.701 873s
+GCN_prior GSE32646 {'wd': 0.0001, 'steps': 150} 0.771 978s
+GCN_prior GSE41998 {'wd': 0.0001, 'steps': 150} 0.635 1079s
+GCN_prior ISPY2 {'wd': 0.0001, 'steps': 150} 0.620 1177s
+GCN_prior TCGA-BRCA {'wd': 0.0001, 'steps': 150} 0.693 1276s
