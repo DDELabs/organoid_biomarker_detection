@@ -1,9 +1,9 @@
 group	tests	treated_p<0.05	treated_p<0.05_expected_dir	treated_expected_dir	with_comparator	interaction_p<0.05	interaction_p<0.05_expected_dir	null_p<0.05	BH_q_primary<0.05	expected_by_chance_0.05
-all	196	17	13	109	114	5	3	10	1	9.8
+all	196	14	10	108	114	5	3	10	1	9.8
 BLCA_CISPLATIN	20	1	0	13	8	1	1	2	0	1.0
-CRC_5FU	96	10	10	57	48	1	1	6	1	4.800000000000001
+CRC_5FU	96	7	7	56	48	1	1	5	1	4.800000000000001
 CRC_IRINOTECAN	16	0	0	7	12	1	1	0	0	0.8
-CRC_OXALIPLATIN	32	1	0	15	24	0	0	0	0	1.6
+CRC_OXALIPLATIN	32	1	0	15	24	0	0	1	0	1.6
 LIHC_SORAFENIB	4	4	2	2	4	0	0	0	0	0.2
 LUNG_PLATINUM	4	0	0	2	4	0	0	0	0	0.2
 OV_PLATINUM	12	1	1	9	4	0	0	0	0	0.6000000000000001

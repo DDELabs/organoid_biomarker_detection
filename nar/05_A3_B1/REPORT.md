@@ -30,13 +30,13 @@ the random-signature nulls).
 - Power: median 17 deaths per analysis; median minimal detectable HR (80% power) = 3.9. Only 2 of 57 analyses had
   80% power for HR 1.5 (ovarian carboplatin and paclitaxel), 5 of 57 for HR 2.0. A significant HR from these
   analyses is expected to be 1.7-8 times too large (type-M exaggeration) if the true HR is 1.25-2.
-- **B1, external cohorts (196 tests, 15 frozen signatures, 21 cohort/endpoint/comparison settings).** 17 treated-arm
-  tests had p < 0.05 (9.8 expected), 13 in the expected direction, mostly the 5-FU signatures in GSE39582 OS and
-  GSE87211 DFS. Of 114 tests with a comparator arm, 5 interactions had p < 0.05 (3 expected direction). 10 of 196
+- **B1, external cohorts (196 tests, 15 frozen signatures, 21 cohort/endpoint/comparison settings).** 14 treated-arm
+  tests had p < 0.05 (9.8 expected), 10 in the expected direction (before the GSE39582 / FOLFIRINOX definition fix, audit
+  I01/I02: 17 and 13), mostly the 5-FU signatures in GSE87211 DFS and the Novartis PDX signature in GSE39582. Of 114 tests with a comparator arm, 5 interactions had p < 0.05 (3 expected direction). 10 of 196
   beat the random-signature null at 0.05 (9.8 expected). After BH across the 196 primary tests, 1 remains
   (vdW 5-FU current top-10 in GSE87211 rectal DFS, HR 1.92 per SD, q = 0.002; no comparator arm there).
-- The paper's own signature (BH3-only pathway) in GSE39582: RFS HR 1.01 (0.81-1.27), p = 0.93; interaction with
-  untreated 0.80, p = 0.19.
+- The paper's own signature (BH3-only pathway) in GSE39582: RFS HR 0.95 (0.72-1.25), p = 0.70 (stage II-III, n = 138; before: 1.01, p = 0.93, n = 202); interaction with
+  untreated 0.79, p = 0.22 (before 0.80, p = 0.19).
 
 What I think: the organoid-only signals look like the number of small p-values one gets from 57 small tests plus a
 real prognostic (not drug-specific) component. The 5-FU multi-pathway scores carry prognostic information in
@@ -168,7 +168,7 @@ Tables: `A3_master_results.tsv`, `A3_expected_by_chance.tsv`, `A3_adjusted_cox_a
   score x arm interaction. Primary statistic = interaction when a comparator exists, else the treated-arm effect.
 - **Random-signature null**: rank-1 -> all 673 pathways used alone (exact null); top-10 -> 1,000 random 10-pathway sets
   with random normal weights. Null p = share of random signatures with |z| at least as large.
-- Cohorts: GSE39582 (5-FU-based vs untreated, stage II-III; subsets 5FU 76, FUFOL 50, FOLFOX 12 treated; RFS and OS),
+- Cohorts: GSE39582 (5-FU-based = 5FU + FUFOL + FOLFOX, 139 patients (138 with RFS), vs untreated 264 (258), stage II-III, shared definition of audit I01; GSE72970 FOLFIRINOX patients removed from both arms, audit I02; subsets 5FU 76, FUFOL 50, FOLFOX 12 treated; RFS and OS),
   GSE103479, GSE14333, GSE72970 (FOLFOX vs FOLFIRI), GSE87211, GSE28702, GSE19860, GSE62080, GSE104645 (added:
   colorectal, in the training table); GSE169455, GSE52219, GSE48276, GSE70691 and GSE31684 (added) for bladder;
   GSE9891, GSE15622, GSE63885, GSE51373 for ovarian; GSE109211 (STORM) for liver; GSE42127 for lung.
@@ -179,9 +179,9 @@ Counts (`tables/B1_summary_counts.tsv`):
 
 | Group | tests | treated p < 0.05 (expected dir.) | interaction p < 0.05 (expected dir.) of tests with comparator | null p < 0.05 | BH q < 0.05 |
 |---|---|---|---|---|---|
-| all | 196 | 17 (13) | 5 (3) of 114 | 10 | 1 |
-| colorectal 5-FU | 96 | 10 (10) | 1 (1) of 48 | 6 | 1 |
-| colorectal oxaliplatin | 32 | 1 (0) | 0 of 24 | 0 | 0 |
+| all | 196 | 14 (10) | 5 (3) of 114 | 10 | 1 |
+| colorectal 5-FU | 96 | 7 (7) | 1 (1) of 48 | 5 | 1 |
+| colorectal oxaliplatin | 32 | 1 (0) | 0 of 24 | 1 | 0 |
 | colorectal irinotecan | 16 | 0 | 1 (1) of 12 | 0 | 0 |
 | bladder cisplatin | 20 | 1 (0) | 1 (1) of 8 | 2 | 0 |
 | ovarian platinum | 12 | 1 (1) | 0 of 4 | 0 | 0 |
@@ -192,23 +192,26 @@ Counts (`tables/B1_summary_counts.tsv`):
 Expected by chance at 0.05: 9.8 of 196.
 
 **Colorectal (Fig. 1, Fig. 5a-f).**
-- Paper signature (vdW 5-FU 2019 files, rank-1 BH3-only) in GSE39582: RFS HR 1.01 (0.81-1.27), p = 0.93,
-  interaction 0.80, p = 0.19, null p = 0.18; OS HR 1.05, p = 0.73. Subsets: 5FU alone RFS 0.88 (p = 0.48); FUFOL 1.12
+- Paper signature (vdW 5-FU 2019 files, rank-1 BH3-only) in GSE39582: RFS HR 0.95 (0.72-1.25), p = 0.70,
+  interaction 0.79, p = 0.22, null p = 0.24 (GSE39582 now = 5FU, FUFOL, FOLFOX, stage II-III, n = 138 with RFS; before
+  n = 202: HR 1.01, p = 0.93, interaction 0.80, p = 0.19, null p = 0.18); OS HR 1.08, p = 0.60 (before 1.05, p = 0.73). Subsets (unchanged): 5FU alone RFS 0.88 (p = 0.48); FUFOL 1.12
   (p = 0.68); FOLFOX 0.57 (p = 0.40, 12 patients, 7 events). GSE103479 OS 0.98 (p = 0.93); GSE14333 DFS 1.18
   (p = 0.40); GSE72970 PFS 0.94 (p = 0.53); GSE87211 DFS 1.38 (1.00-1.89), p = 0.048 (null p = 0.33).
   What I think: the paper's 5-FU pathway does not carry over to independent 5-FU cohorts.
-- vdW 5-FU current, GSE39582 OS: rank-1 HR 1.43 (1.11-1.85), p = 0.006, but also HR 1.12 in untreated; interaction
-  1.28, p = 0.13; null p = 0.27. Top-10 in GSE87211 DFS: HR 1.92 (1.43-2.56), p = 0.00001, null p = 0.001, the one
+- vdW 5-FU current, GSE39582 OS: rank-1 HR 1.33 (0.99-1.78), p = 0.054, and HR 1.13 in untreated; interaction
+  1.19, p = 0.34; null p = 0.45 (before the fix: HR 1.43, p = 0.006, interaction 1.28, p = 0.13, null p = 0.27). Top-10 in GSE87211 DFS: HR 1.92 (1.43-2.56), p = 0.00001, null p = 0.001, the one
   BH-surviving test (no comparator arm).
-- Novartis CRC PDX 5-FU top-10, GSE39582 OS: HR 1.64 (1.27-2.11), p = 0.00014; untreated HR 1.00; interaction 1.60
-  (1.15-2.23), p = 0.006; random-signature null p = 0.021; BH q = 0.28.
+- Novartis CRC PDX 5-FU top-10, GSE39582 OS: HR 1.48 (1.11-1.98), p = 0.008; untreated HR 1.00; interaction 1.46
+  (1.01-2.10), p = 0.042; random-signature null p = 0.090; BH q = 0.65 (before the fix: HR 1.64, p = 0.00014,
+  interaction 1.60, p = 0.006, null p = 0.021, q = 0.28).
   What I think: this is the most "predictive-looking" result in B1 (treated-only effect, beats random sets), but it is
-  OS only (RFS interaction 1.11, p = 0.54) and does not survive correction for 196 tests. It is a candidate for a
+  OS only (RFS interaction 1.13, p = 0.52), no longer beats the random sets at 0.05 (null p 0.090) and does not survive correction for 196 tests. It is a candidate for a
   pre-registered test, not a finding.
-- Oxaliplatin, GSE72970 FOLFOX vs FOLFIRI: vdW current rank-1 PFS HR 1.22 (0.88-1.68), p = 0.23, interaction 1.18,
-  p = 0.41 (median-split log-rank in FOLFOX p = 0.015, Fig. 5e; FOLFIRI p = 0.81). Response cohorts GSE28702 / GSE19860
+- Oxaliplatin, GSE72970 FOLFOX vs FOLFIRI: vdW current rank-1 PFS HR 1.10 (0.78-1.55), p = 0.58, interaction 1.09,
+  p = 0.67 (36 FOLFOX patients after removing 4 FOLFIRINOX; before: 40, HR 1.22, p = 0.23, interaction 1.18, p = 0.41;
+  median-split log-rank in FOLFOX p = 0.17, before 0.015, Fig. 5e). Response cohorts GSE28702 / GSE19860
   ORs 0.60-0.78 (opposite).
-- Irinotecan: GSE72970 vdW current top-10 PFS interaction 1.65 (1.02-2.67), p = 0.042, null p = 0.070.
+- Irinotecan: GSE72970 vdW current top-10 PFS interaction 1.65 (1.02-2.67), p = 0.042, null p = 0.070 (unchanged: the 84 FOLFIRI patients did not change).
 
 **Bladder (Fig. 2, Fig. 5g-h).** Paper cisplatin rank-1: GSE169455 OR non-pCR 1.18 (0.84-1.67), p = 0.34; GSE52219
 1.57, p = 0.37; GSE48276 OS 1.28, p = 0.40 (16 treated); GSE70691 1.22, p = 0.25; GSE31684 1.16, p = 0.52. All in the

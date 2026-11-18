@@ -76,7 +76,7 @@ Clinical balance of the predicted groups (Supp Table 2): age, sex, T and N stage
 The two recurrence lines (SCBO-3_2, SCBO-11_2) were dropped, leaving 7 lines from 7 patients (paper source data, same
 code, 500 permutations and 2,000 bootstraps to save CPU, so the empirical p values are only comparable in size).
 
-| Analysis | Lines | Rank-1 pathway | Treated n / deaths | Treated log-rank p | HR (95% CI) | Untreated p | Shuffled-response p | Top-rank bootstrap p |
+| Analysis | Lines | Rank-1 pathway | Treated n / deaths | Treated log-rank p | HR (95% CI) | Untreated p | Shuffled-response p | Bootstrap p (rank statistic) |
 |---|---|---|---|---|---|---|---|---|
 | As main run | 9 (7 patients) | glucose and other sugars transport | 79 / 20 | 0.044 | 2.63 (0.99-6.96) | 0.93 | 0.295 | 0.078 |
 | One line per patient | 7 (7 patients) | same pathway | 79 / 20 | 0.044 | 2.63 (0.99-6.96) | 0.93 | 0.263 | 0.084 |

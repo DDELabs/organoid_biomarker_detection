@@ -7,3 +7,5 @@ Only 05 b1_external.py chain had not finished: relaunched (logs/b1.log, logs/b1.
 Done after restart: 03 make_figures.py + report_numbers.py; f03_report_tables.py; 03 REPORT rewritten (pooled table,
 interaction table, fold-align section, learning curves, definitions); 02 OTHER REPORT section 3.1b.
 Left: 05 REPORT B1 numbers (after b1.done); run 12_audit a02 then a03; copy MASTER to 15_fixes/tables; CHANGELOG.md.
+FINISHED (2026-11-18): 05 B1 chain done; 05 REPORT B1 numbers updated; 12_audit a02+a03 re-run; MASTER copied to tables/; CHANGELOG.md written.
+Pending (not done here): I12, I21, I22(07) in 07/13 folders (see PENDING_FOR_RUNNING_AGENTS.md); I04 for 02 figures; I23 leftovers.
