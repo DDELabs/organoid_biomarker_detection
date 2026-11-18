@@ -340,7 +340,9 @@ def run_pair(bname, drug):
 if __name__ == "__main__":
     w, n = int(sys.argv[1]), int(sys.argv[2])
     todo = B.combos()
-    only = sys.argv[3:] or None
+    only = [a for a in sys.argv[3:] if a != "--reverse"] or None
+    if "--reverse" in sys.argv:
+        todo = todo[::-1]
     for i, (b, d) in enumerate(todo):
         if i % n == w and (only is None or b in only):
             run_pair(b, d)

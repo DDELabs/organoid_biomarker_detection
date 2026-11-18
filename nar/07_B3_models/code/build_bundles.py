@@ -67,7 +67,7 @@ def gi():
         drugs[d] = dict(y=resp, treated=treated, z=z, zsrc=f"paper table ({zc})")
     org.columns = [c.upper() for c in org.columns]
     oe = oexpr.copy()
-    oe.columns = [c.upper() for c in oe.columns]
+    oe.columns = [c.upper().replace("TA", "A").replace("TB", "B") for c in oe.columns]   # P19TA -> P19A (authors' names)
     tex.columns = [c[:12] for c in tex.columns]
     surv = sur.rename(columns={"months": "T", "event": "E"})
     save("COAD_paper", org, pat, oe, tex, surv, set(sur.index) - anydrug, drugs,

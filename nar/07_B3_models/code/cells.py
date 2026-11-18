@@ -115,7 +115,7 @@ def fit_pooled(name, Xc, Fd, y, seed=0):
         m = XGBRegressor(n_estimators=400, max_depth=6, learning_rate=0.05, subsample=0.8, colsample_bytree=0.5,
                          n_jobs=2, random_state=seed, verbosity=0).fit(X, y)
     elif name.startswith("Elastic"):
-        m = ElasticNet(alpha=1e-3, l1_ratio=0.5, max_iter=3000).fit(X, y)
+        m = ElasticNet(alpha=1e-3, l1_ratio=0.5, max_iter=2000, tol=1e-3, precompute=True).fit(X, y)
     else:
         m = RandomForestRegressor(n_estimators=100, max_features=0.1, min_samples_leaf=20, max_samples=0.3, n_jobs=2,
                                   random_state=seed).fit(X, y)

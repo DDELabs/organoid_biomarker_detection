@@ -1,0 +1,2 @@
+pair	batch_size	nodes	lr	dropout	weight_decay	gamma	epochs	margin	n_folds	average_AUC
+BLCA organoids (paper data) | cisplatin	8	32	0.01	0.6	0.001	0.1	60	1.5	3	0.8333333333333334

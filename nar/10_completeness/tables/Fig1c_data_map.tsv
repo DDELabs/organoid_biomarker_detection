@@ -1,0 +1,58 @@
+set	cohort	drug	n_models	treated_n
+Colorectal organoids (van de Wetering 2015)	COAD_authors	FLUOROURACIL	19	114
+Colorectal organoids (van de Wetering 2015)	COAD_authors	IRINOTECAN	19	22
+Colorectal organoids (van de Wetering 2015)	COAD_authors	OXALIPLATIN	19	100
+Colorectal organoids (van de Wetering 2015)	COAD	CETUXIMAB	19	15
+Colorectal organoids (van de Wetering 2015)	COAD	FLUOROURACIL	19	129
+Colorectal organoids (van de Wetering 2015)	COAD	IRINOTECAN	19	32
+Colorectal organoids (van de Wetering 2015)	COAD	OXALIPLATIN	19	112
+Colorectal organoids (van de Wetering 2015)	READ	FLUOROURACIL	19	59
+Colorectal organoids (van de Wetering 2015)	READ	OXALIPLATIN	19	42
+Colorectal organoids (van de Wetering 2015)	COADREAD	FLUOROURACIL	19	188
+Colorectal organoids (van de Wetering 2015)	COADREAD	IRINOTECAN	19	39
+Colorectal organoids (van de Wetering 2015)	COADREAD	OXALIPLATIN	19	154
+Pancreatic organoids (Tiriac 2018)	PAAD	FLUOROURACIL	36	37
+Pancreatic organoids (Tiriac 2018)	PAAD	GEMCITABINE	36	104
+Pancreatic organoids (Tiriac 2018)	PAAD	OXALIPLATIN	36	21
+Pancreatic organoids (Tiriac 2018)	PAAD	IRINOTECAN	36	13
+Pancreatic organoids (Shi 2022)	PAAD	FLUOROURACIL	39	37
+Pancreatic organoids (Shi 2022)	PAAD	GEMCITABINE	39	104
+Pancreatic organoids (Shi 2022)	PAAD	IRINOTECAN	39	13
+Pancreatic organoids (Shi 2022)	PAAD	OXALIPLATIN	39	21
+Liver cancer organoids (Ji 2023)	LIHC	SORAFENIB	61	30
+Liver cancer organoids (Broutier 2017)	LIHC	SORAFENIB	5	30
+Colorectal PDX (Isella 2017, cetuximab)	COAD	CETUXIMAB	192	15
+Bladder organoids (Lee 2018), paper source-data NES	BLCA	CISPLATIN	9	79
+Bladder organoids (Lee 2018), current GDC data	BLCA	CARBOPLATIN	9	22
+Bladder organoids (Lee 2018), current GDC data	BLCA	CISPLATIN	9	79
+Bladder organoids (Lee 2018), current GDC data	BLCA	DOXORUBICIN	9	16
+Bladder organoids (Lee 2018), current GDC data	BLCA	GEMCITABINE	11	88
+Bladder organoids (Lee 2018), current GDC data	BLCA	METHOTREXATE	9	12
+Bladder organoids (Lee 2018), current GDC data	BLCA	PACLITAXEL	9	10
+Bladder organoids (Lee 2018), current GDC data	BLCA	VINBLASTINE	9	12
+Ovarian HGSOC organoids (Vias 2023)	OV	CARBOPLATIN	14	347
+Ovarian HGSOC organoids (Vias 2023)	OV	CISPLATIN	14	123
+Ovarian HGSOC organoids (Vias 2023)	OV	DOCETAXEL	14	82
+Ovarian HGSOC organoids (Vias 2023)	OV	DOXORUBICIN	14	117
+Ovarian HGSOC organoids (Vias 2023)	OV	GEMCITABINE	14	102
+Ovarian HGSOC organoids (Vias 2023)	OV	PACLITAXEL	14	348
+Sarcoma organoids (Al Shihabi 2024)	SARC	DOCETAXEL	14	37
+Sarcoma organoids (Al Shihabi 2024)	SARC	GEMCITABINE	14	42
+Lung adenocarcinoma cell lines (GDSC/CTRP; substitute for GSE165611)	LUAD	CARBOPLATIN	43	77
+Lung adenocarcinoma cell lines (GDSC/CTRP; substitute for GSE165611)	LUAD	CISPLATIN	40	84
+Lung adenocarcinoma cell lines (GDSC/CTRP; substitute for GSE165611)	LUAD	DOCETAXEL	46	22
+Lung adenocarcinoma cell lines (GDSC/CTRP; substitute for GSE165611)	LUAD	ERLOTINIB	46	21
+Lung adenocarcinoma cell lines (GDSC/CTRP; substitute for GSE165611)	LUAD	ETOPOSIDE	46	15
+Lung adenocarcinoma cell lines (GDSC/CTRP; substitute for GSE165611)	LUAD	GEMCITABINE	46	25
+Lung adenocarcinoma cell lines (GDSC/CTRP; substitute for GSE165611)	LUAD	PACLITAXEL	46	44
+Lung adenocarcinoma cell lines (GDSC/CTRP; substitute for GSE165611)	LUAD	PEMETREXED	45	59
+Lung adenocarcinoma cell lines (GDSC/CTRP; substitute for GSE165611)	LUAD	VINORELBINE	46	24
+Novartis PDX (BRCA, Gao 2015)	BRCA	PACLITAXEL	37	231
+Novartis PDX (BRCA, Gao 2015)	BRCA	TAMOXIFEN	37	253
+Novartis PDX (BRCA, Gao 2015)	BRCA	TRASTUZUMAB	36	74
+Novartis PDX (CRC, Gao 2015)	COAD	CETUXIMAB	41	14
+Novartis PDX (CRC, Gao 2015)	COAD	FLUOROURACIL	41	129
+Novartis PDX (NSCLC, Gao 2015)	LUAD	ERLOTINIB	25	21
+Novartis PDX (NSCLC, Gao 2015)	LUAD	PACLITAXEL	24	44
+Novartis PDX (PDAC, Gao 2015)	PAAD	GEMCITABINE	33	104
+Novartis PDX (CM, Gao 2015)	SKCM	DACARBAZINE	31	32

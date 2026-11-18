@@ -1,0 +1,2 @@
+pair	paper_C	paper_lr_p	paper_loo_rho	random_C_median	share_random_C_ge_paper	share_random_lr_p_le_paper	share_random_loo_ge_paper
+BLCA organoids (paper data) | cisplatin	0.5581683168316832	0.04351769537519788	0.43333333333333335	0.4814356435643564	0.04	0.08	0.25

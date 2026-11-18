@@ -1,0 +1,25 @@
+model	family	n_pairs	loo_rho_mean	loo_rho_lo	loo_rho_hi	C_mean	C_lo	C_hi	HR_geomean	HR_lo	HR_hi	share_C_above_half	n_lr_p05_expected	n_lr_p05_opposite	n_int_p05	median_loo_rho	median_C
+Paper: single network pathway	paper	1										1.0	1	0	0	0.43333333333333335	0.5581683168316832
+Paper: top-2 network pathways	paper	1										1.0	0	0	0	0.26666666666666666	0.5581683168316832
+Ridge: all network pathways	paper	1										1.0	1	0	0	0.06666666666666667	0.5853960396039604
+Whole transcriptome (ridge)	paper comparison	1										1.0	0	0	1	0.35	0.5408415841584159
+All pathways (ridge)	paper comparison	1										0.0	0	0	0	0.7666666666666667	0.49876237623762376
+First-neighbour genes (ridge)	paper comparison	1										1.0	0	0	0	0.6166666666666666	0.5470297029702971
+Bolis correlation genes (ridge)	paper comparison	1										0.0	0	0	0	0.2833333333333333	0.474009900990099
+Deep learning, MOLI-style (genes)	paper comparison	1										1.0	0	0	0	0.35	0.525990099009901
+Random pathway sets (median of 100)	paper comparison	1										0.0	0	0	0	0.11666666666666665	0.4814356435643564
+Degree-central pathways (rank 1)	paper comparison	1										1.0	0	0	0	0.3	0.5742574257425742
+Betweenness-central pathways (rank 1)	paper comparison	1										1.0	0	0	0	0.6666666666666667	0.5148514851485149
+Closeness-central pathways (rank 1)	paper comparison	1										0.0	0	1	0	0.38333333333333336	0.4121287128712871
+Elastic net (all pathways)	modern	1										0.0	0	0	0	0.35	0.4900990099009901
+Random forest (all pathways)	modern	1										0.0	0	0	0	0.6833333333333333	0.47277227722772275
+XGBoost (all pathways)	modern	1										1.0	0	0	0	-0.06666666666666667	0.5185643564356436
+Fingerprint MLP: cell lines only (zero-shot)	modern	1										1.0	0	0	0	0.5	0.5297029702970297
+Fingerprint MLP: fine-tuned on lab models	modern	1										0.0	0	0	0	0.5499999999999999	0.4863861386138614
+GCN on STRING (genes)	modern	1										0.0	0	0	0	0.5	0.4777227722772277
+Network propagation genes (ridge)	modern	1										1.0	0	0	0	0.19999999999999998	0.5321782178217822
+Paper: single network pathway + alignment	alignment	1										1.0	0	0	0	0.7166666666666667	0.5111386138613861
+Ridge: all network pathways + alignment	alignment	1										1.0	0	0	0	0.7999999999999999	0.5210396039603961
+Elastic net + alignment	alignment	1										1.0	0	0	0	0.7999999999999999	0.5210396039603961
+Random forest + alignment	alignment	1										0.0	0	0	0	0.7666666666666667	0.5
+XGBoost + alignment	alignment	1										1.0	1	0	0	0.8333333333333333	0.5272277227722773
