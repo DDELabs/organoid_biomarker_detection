@@ -1,0 +1,10 @@
+heldout	model	train_cohorts	w	lam	unit	features
+TCGA-LUAD	patient-only	TCGA-LUSC:survival;GSE42127:survival	0.0	10.0	LUNG_PLATINUM	shortlist_foldalign
+TCGA-LUAD	joint	TCGA-LUSC:survival;GSE42127:survival	0.25	10.0	LUNG_PLATINUM	shortlist_foldalign
+TCGA-LUAD	joint (w=0.5)	TCGA-LUSC:survival;GSE42127:survival	0.5	10.0	LUNG_PLATINUM	shortlist_foldalign
+TCGA-LUSC	patient-only	TCGA-LUAD:survival;GSE42127:survival	0.0	10.0	LUNG_PLATINUM	shortlist_foldalign
+TCGA-LUSC	joint	TCGA-LUAD:survival;GSE42127:survival	0.75	10.0	LUNG_PLATINUM	shortlist_foldalign
+TCGA-LUSC	joint (w=0.5)	TCGA-LUAD:survival;GSE42127:survival	0.5	10.0	LUNG_PLATINUM	shortlist_foldalign
+GSE42127	patient-only	TCGA-LUAD:survival;TCGA-LUSC:survival	0.0	3.0	LUNG_PLATINUM	shortlist_foldalign
+GSE42127	joint	TCGA-LUAD:survival;TCGA-LUSC:survival	0.25	1.0	LUNG_PLATINUM	shortlist_foldalign
+GSE42127	joint (w=0.5)	TCGA-LUAD:survival;TCGA-LUSC:survival	0.5	1.0	LUNG_PLATINUM	shortlist_foldalign

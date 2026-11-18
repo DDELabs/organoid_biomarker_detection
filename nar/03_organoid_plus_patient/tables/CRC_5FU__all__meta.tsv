@@ -1,5 +1,6 @@
 unit	CRC_5FU
 features	all
+fold_align	False
 n_features	673
 feature_source	all 673 Reactome pathways
 design	leave-one-cohort-out
@@ -7,4 +8,4 @@ trainable_cohorts	GSE39582;GSE103479;GSE14333;TCGA-COADREAD;GSE72970;GSE28702;GS
 organoid_alpha	3162.2776601683795
 lab	colorectal_vandewetering2015:FLUOROURACIL n=19 dropped_axes=7
 n_lab	19
-seconds	1662.2
+seconds	1776.1

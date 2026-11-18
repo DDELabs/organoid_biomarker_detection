@@ -1,1 +1,64 @@
 org v61 (533, 22)
+pat v61 (673, 458)
+org cur (402, 22)
+pat cur (480, 458)
+A_chain 0 authors' setup (2019) 114 8 0.014 0.014
+A_chain 1 + only patients with current STAR data 114 8 0.014 0.014
+A_chain 2 + organoid scores recomputed 114 8 0.396 0.014
+A_chain 3 + patient scores from current STAR FPKM-UQ 114 8 0.839 0.319
+A_chain 4 + shared gene universe (02 pipeline) 117 9 0.228 0.596
+A_chain 5 + organoid response from curated table 117 9 0.414 0.596
+A_chain 6 + current drug-record parser 129 11 0.413 0.774
+A_chain 7 + TCGA-CDR survival = current setup 129 25 0.866 0.620
+B_one_from_authors org organoid scores recomputed 114 8 0.396 0.014
+B_one_from_authors pat patient scores from current STAR 117 9 0.512 0.512
+B_one_from_authors univ shared gene universe, both sides 117 9 0.228 0.596
+B_one_from_authors resp organoid response from curated table 114 8 0.014 0.014
+B_one_from_authors parse current drug-record parser 125 10 0.091 0.091
+B_one_from_authors sur TCGA-CDR survival 114 20 0.002 0.002
+B_one_from_authors surcap TCGA-CDR survival capped at 2019 follow-up 114 8 0.014 0.014
+B_one_from_authors overlap only patients with current STAR data 114 8 0.014 0.014
+C_one_into_current org authors' organoid NES 129 25 0.620 0.620
+C_one_into_current pat authors' patient NES 125 24 0.597 0.005
+C_one_into_current orgpat authors' organoid + patient NES 125 24 0.005 0.005
+C_one_into_current resp authors' organoid response file 129 25 0.161 0.620
+C_one_into_current parse authors' drug-record parser 117 21 0.805 0.634
+C_one_into_current sur authors' 2019 survival 129 11 0.413 0.774
+C_one_into_current surcap TCGA-CDR capped at 2019 follow-up 129 11 0.413 0.774
+C_one_into_current version current Reactome release (both sides) 129 25 0.340 0.089
+D_regimen_authors all all 5-FU patients 114 8 0.014 0.014
+D_regimen_authors folfox 5-FU + oxaliplatin 94 6 0.045 0.045
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+D_regimen_authors nooxa 5-FU without oxaliplatin 20 2 0.808 0.808
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+D_regimen_authors alone 5-FU, no oxaliplatin or irinotecan 13 2 0.808 0.808
+D_regimen_current all all 5-FU patients 129 25 0.866 0.620
+D_regimen_current folfox 5-FU + oxaliplatin 106 18 0.829 0.764
+D_regimen_current nooxa 5-FU without oxaliplatin 23 7 0.605 0.135
+D_regimen_current alone 5-FU, no oxaliplatin or irinotecan 12 0 1.000 1.000
+D_regimen_current_capped all all 5-FU patients 129 11 0.413 0.774
+D_regimen_current_capped folfox 5-FU + oxaliplatin 106 7 0.074 0.881
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+D_regimen_current_capped nooxa 5-FU without oxaliplatin 23 4 0.277 0.039
+D_regimen_current_capped alone 5-FU, no oxaliplatin or irinotecan 12 0 1.000 1.000

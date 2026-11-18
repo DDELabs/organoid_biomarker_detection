@@ -1,0 +1,4 @@
+file	bytes	sha256
+nar/02_organoid_only/_data/braf_v600e_COAD.json	7673	1d34d6d374c14095d311f2e3a20cef43f97c8c5c555b6771d944cf6009ac659d
+nar/05_A3_B1/_data/raw/COADREAD_clinicalMatrix	607684	4742eb0d07a5c40e2e90ac79070a89ac5a2e902216329b2bfeab3c44173d70eb
+nar/10_completeness/_data/raw/xena_mut/TCGA-COAD.somaticmutation_wxs.tsv.gz	6519103	0e20c3ac94a0c79eb4f36b4566f84f0d551aac8b700521dc27f8ddf2efbe4836

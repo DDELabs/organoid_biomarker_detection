@@ -123,15 +123,16 @@ x = s2[(s2.drug == "OXALIPLATIN") & (s2.cohort == "GSE72970") & (s2.endpoint == 
 add("Reg_S2_ox_GSE72970", "Registered Stage 2: oxaliplatin GSE72970 PFS interaction (one-sided)",
     f"HR {x.estimate:.2f} ({x.lo:.2f}-{x.hi:.2f}), p1={x.p_one_sided:.3f}, Holm={x.holm_all_primary_stage2:.3f}; FOLFOX {x.n_drug_arm} vs FOLFIRI {x.n_comparator}",
     "nar/09_registered_test/tables/stage2_controlled.tsv", ["1.63 (1.00–2.64)", "1.63 (1.00-2.64)"],
-    "03 uses 40 vs 84 in the same cohort (4 FOLFIRINOX patients counted as FOLFOX)")
+    "after audit fix I02 (nar/15_fixes) 03 and 05 also exclude FOLFIRINOX: 36 vs 84 (09's 83 also drops 1 XELIRI+bevacizumab patient)")
 
 sm = t("03_organoid_plus_patient/tables/summary_main.tsv")
 sm = sm[(sm.features == "shortlist") & (sm.outcome == "survival")]
 for u in ["CRC_5FU", "BLCA_CISPLATIN", "OV_PACLITAXEL", "OV_PLATINUM", "BLCA_GEMCITABINE"]:
     x = sm[(sm.unit == u) & (sm.model == "joint")].iloc[0]
-    add(f"Joint_{u}", f"03 joint model held-out HR per SD (HR<1 = expected in 03's convention), {u}",
-        f"C={x.C:.3f}, HR {x.HR:.2f} ({x.HR_low:.2f}-{x.HR_high:.2f}), p={x.p:.3f}, n={int(x.n)}/{int(x.events)}",
-        "nar/03_organoid_plus_patient/tables/summary_main.tsv", [f"{x.HR:.2f} ({x.HR_low:.2f}-{x.HR_high:.2f})"])
+    # after audit fix I05 (nar/15_fixes): 03 reports HR per SD of the RISK score, HR > 1 = expected, like all folders
+    add(f"Joint_{u}", f"03 joint model held-out HR per SD of risk score (HR>1 = expected, harmonised I05), {u}",
+        f"C={x.C:.3f}, HR {x.HR_risk:.2f} ({x.HR_risk_low:.2f}-{x.HR_risk_high:.2f}), p={x.p:.3f}, n={int(x.n)}/{int(x.events)}",
+        "nar/03_organoid_plus_patient/tables/summary_main.tsv", [f"{x.HR_risk:.2f} ({x.HR_risk_low:.2f}-{x.HR_risk_high:.2f})"])
 
 df = pd.DataFrame(rows)
 df["status"] = ["quoted" if r != "-" else "not found as text" for r in df.reports_quoting]

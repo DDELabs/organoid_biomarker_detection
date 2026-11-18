@@ -1,0 +1,16 @@
+heldout	model	train_cohorts	w	lam	unit	features
+GSE109211 fold 0	patient-only	GSE109211	0.0	0.3	LIHC_SORAFENIB	shortlist_foldalign
+GSE109211 fold 0	joint	GSE109211	0.25	0.03	LIHC_SORAFENIB	shortlist_foldalign
+GSE109211 fold 0	joint (w=0.5)	GSE109211	0.5	0.03	LIHC_SORAFENIB	shortlist_foldalign
+GSE109211 fold 1	patient-only	GSE109211	0.0	0.3	LIHC_SORAFENIB	shortlist_foldalign
+GSE109211 fold 1	joint	GSE109211	0.25	0.1	LIHC_SORAFENIB	shortlist_foldalign
+GSE109211 fold 1	joint (w=0.5)	GSE109211	0.5	0.03	LIHC_SORAFENIB	shortlist_foldalign
+GSE109211 fold 2	patient-only	GSE109211	0.0	0.1	LIHC_SORAFENIB	shortlist_foldalign
+GSE109211 fold 2	joint	GSE109211	0.25	0.1	LIHC_SORAFENIB	shortlist_foldalign
+GSE109211 fold 2	joint (w=0.5)	GSE109211	0.5	0.1	LIHC_SORAFENIB	shortlist_foldalign
+GSE109211 fold 3	patient-only	GSE109211	0.0	0.1	LIHC_SORAFENIB	shortlist_foldalign
+GSE109211 fold 3	joint	GSE109211	0.25	0.03	LIHC_SORAFENIB	shortlist_foldalign
+GSE109211 fold 3	joint (w=0.5)	GSE109211	0.5	0.03	LIHC_SORAFENIB	shortlist_foldalign
+GSE109211 fold 4	patient-only	GSE109211	0.0	0.3	LIHC_SORAFENIB	shortlist_foldalign
+GSE109211 fold 4	joint	GSE109211	0.25	0.03	LIHC_SORAFENIB	shortlist_foldalign
+GSE109211 fold 4	joint (w=0.5)	GSE109211	0.5	0.03	LIHC_SORAFENIB	shortlist_foldalign

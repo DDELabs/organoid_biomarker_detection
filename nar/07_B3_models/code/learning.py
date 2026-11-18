@@ -1,7 +1,7 @@
 """Learning curves vs number of training lab models (organoids / PDX / cell lines standing in for organoids).
 
 For the larger sets: 5 outer folds (20 % of the lab models held out); inside the other 80 %, train on 25/50/75/100 %
-(2 random draws below 100 %). Metrics: Spearman on the held-out lab models, and C-index in the treated TCGA patients
+(1 random draw per fold). Metrics: Spearman on the held-out lab models, and C-index in the treated TCGA patients
 of the model trained on that subsample. Same subsamples for every model.
 """
 import numpy as np
@@ -11,9 +11,8 @@ from sklearn.model_selection import KFold
 import b3common as B
 from bench import Ctx, fit_predict
 
-PAIRS = [("COAD_isella", "CETUXIMAB"), ("LIHC_ji", "SORAFENIB"), ("PAAD_tiriac", "GEMCITABINE"), ("PAAD_shi", "GEMCITABINE"),
-         ("LUAD_cells", "PEMETREXED"), ("PDX_CRC", "FLUOROURACIL"), ("PDX_BRCA", "PACLITAXEL"), ("PDX_PDAC", "GEMCITABINE"),
-         ("COAD_paper", "FLUOROURACIL")]
+PAIRS = [("COAD_isella", "CETUXIMAB"), ("LIHC_ji", "SORAFENIB"), ("PAAD_shi", "GEMCITABINE"),
+         ("LUAD_cells", "PEMETREXED"), ("PDX_CRC", "FLUOROURACIL"), ("COAD_paper", "FLUOROURACIL")]
 LC_MODELS = ["Paper: single network pathway", "Ridge: all network pathways", "All pathways (ridge)", "Elastic net (all pathways)",
              "Random forest (all pathways)", "XGBoost (all pathways)", "Fingerprint MLP: fine-tuned on lab models",
              "GCN on STRING (genes)"]
@@ -27,7 +26,7 @@ def main():
         n = len(C.S)
         for fo, (tr0, te) in enumerate(KFold(5, shuffle=True, random_state=0).split(np.arange(n))):
             for frac in (0.25, 0.5, 0.75, 1.0):
-                for rep in range(2 if frac < 1 else 1):
+                for rep in range(1):
                     m = max(6, int(round(frac * len(tr0))))
                     tr = np.sort(rng.choice(tr0, m, replace=False)) if frac < 1 else tr0
                     for name in LC_MODELS:

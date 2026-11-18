@@ -1,0 +1,16 @@
+heldout	model	train_cohorts	w	lam	unit	features
+TCGA-SARC fold 0	patient-only	TCGA-SARC	0.0	10.0	SARC_GEMCITABINE	shortlist_foldalign
+TCGA-SARC fold 0	joint	TCGA-SARC	0.75	1.0	SARC_GEMCITABINE	shortlist_foldalign
+TCGA-SARC fold 0	joint (w=0.5)	TCGA-SARC	0.5	3.0	SARC_GEMCITABINE	shortlist_foldalign
+TCGA-SARC fold 1	patient-only	TCGA-SARC	0.0	10.0	SARC_GEMCITABINE	shortlist_foldalign
+TCGA-SARC fold 1	joint	TCGA-SARC	0.75	10.0	SARC_GEMCITABINE	shortlist_foldalign
+TCGA-SARC fold 1	joint (w=0.5)	TCGA-SARC	0.5	10.0	SARC_GEMCITABINE	shortlist_foldalign
+TCGA-SARC fold 2	patient-only	TCGA-SARC	0.0	10.0	SARC_GEMCITABINE	shortlist_foldalign
+TCGA-SARC fold 2	joint	TCGA-SARC	0.25	10.0	SARC_GEMCITABINE	shortlist_foldalign
+TCGA-SARC fold 2	joint (w=0.5)	TCGA-SARC	0.5	10.0	SARC_GEMCITABINE	shortlist_foldalign
+TCGA-SARC fold 3	patient-only	TCGA-SARC	0.0	0.3	SARC_GEMCITABINE	shortlist_foldalign
+TCGA-SARC fold 3	joint	TCGA-SARC	0.25	1.0	SARC_GEMCITABINE	shortlist_foldalign
+TCGA-SARC fold 3	joint (w=0.5)	TCGA-SARC	0.5	1.0	SARC_GEMCITABINE	shortlist_foldalign
+TCGA-SARC fold 4	patient-only	TCGA-SARC	0.0	1.0	SARC_GEMCITABINE	shortlist_foldalign
+TCGA-SARC fold 4	joint	TCGA-SARC	0.25	10.0	SARC_GEMCITABINE	shortlist_foldalign
+TCGA-SARC fold 4	joint (w=0.5)	TCGA-SARC	0.5	10.0	SARC_GEMCITABINE	shortlist_foldalign

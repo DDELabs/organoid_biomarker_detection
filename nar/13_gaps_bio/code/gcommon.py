@@ -72,7 +72,7 @@ def spearman_ci(x, y, n_boot=2000, seed=SEED):
                 boot_lo=float(np.nanpercentile(bs, 2.5)), boot_hi=float(np.nanpercentile(bs, 97.5)))
 
 
-def ssgsea_fast(expr, sets, alpha=0.25):
+def ssgsea_slow(expr, sets, alpha=0.25):
     """Raw ssGSEA ES (sets x samples). expr genes x samples (DataFrame); sets: dict name -> list of genes.
     Within each sample genes are ranked (high to low); ES = sum over the walk of (P_hit - P_miss), as gseapy."""
     X = expr.values
@@ -97,6 +97,27 @@ def ssgsea_fast(expr, sets, alpha=0.25):
             miss[pos] = 0
             pm = np.cumsum(miss) / (G - m)
             out[k, j] = (ph - pm).sum()
+    return pd.DataFrame(out, index=list(sets), columns=expr.columns)
+
+
+def ssgsea_fast(expr, sets, alpha=0.25):
+    """Vectorised closed form of ssgsea_slow (identical values): the sum of a running cumulative sum equals
+    sum_j x_j * (G - j), so ES = sum_hit w*(G-pos)/sum_hit w - (G(G+1)/2 - sum_hit (G-pos)) / (G - m)."""
+    X = expr.values
+    G, S = X.shape
+    order = np.argsort(-X, axis=0, kind="stable")
+    ranks = np.empty_like(order)
+    cols = np.arange(S)
+    ranks[order, cols[None, :]] = np.arange(G)[:, None]
+    idx = {g: i for i, g in enumerate(expr.index)}
+    out = np.zeros((len(sets), S))
+    tot = G * (G + 1) / 2.0
+    for k, genes in enumerate(sets.values()):
+        gi = np.array(sorted({idx[g] for g in genes if g in idx}))
+        P = ranks[gi, :].astype(float)
+        D = G - P
+        W = D ** alpha
+        out[k] = (W * D).sum(0) / W.sum(0) - (tot - D.sum(0)) / (G - len(gi))
     return pd.DataFrame(out, index=list(sets), columns=expr.columns)
 
 

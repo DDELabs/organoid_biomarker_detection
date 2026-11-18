@@ -1,0 +1,8 @@
+identical signature, skipped: OV_vias2023__OV__CISPLATIN rank1 = OV_vias2023__OV__CARBOPLATIN|rank1
+identical signature, skipped: OV_vias2023__OV__CISPLATIN top10 = OV_vias2023__OV__CARBOPLATIN|top10
+identical signature, skipped: OV_vias2023__OV__DOCETAXEL rank1 = OV_vias2023__OV__PACLITAXEL|rank1
+identical signature, skipped: OV_vias2023__OV__DOCETAXEL top10 = OV_vias2023__OV__PACLITAXEL|top10
+GSE39582 5-FU-based vs no chemo (stage II-III) rfs n treated 138 comp 258
+GSE39582 5-FU-based vs no chemo (stage II-III) os n treated 139 comp 262
+GSE39582 5FU alone vs no chemo rfs n treated 76 comp 258
+GSE39582 FUFOL vs no chemo rfs n treated 50 comp 258

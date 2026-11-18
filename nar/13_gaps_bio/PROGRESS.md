@@ -1,3 +1,8 @@
 # Progress (13_gaps_bio)
-- code/gcommon.py: helpers; fast ssGSEA validated vs gseapy (tables/check_ssgsea_fast_vs_gseapy.tsv, r >= 0.99999).
-- Gaps: G3 [ ], G5 [ ], G2 [ ], G7 [ ], G8 [ ], G13 [ ], G14 [ ], REPORT [ ]
+Scripts in code/ (run from code/, `python3 <script>`; max 2 at a time):
+- gcommon.py helpers (fast ssGSEA = closed form, validated vs gseapy: tables/check_ssgsea_fast_vs_gseapy.tsv)
+- G3 g3_organoid_bh3.py DONE (figure + tables)
+- G2 g2_decompose.py (caches _data/g2_scores.pkl) -> then G5 g5_folfox.py (needs G2 table + G3 table + `python3 g7_bh3_beyond_markers.py g5`)
+- G8 g8_ercc2.py then g8_braf.py (draws G8 figure)
+- G7 g7_bh3_beyond_markers.py ; G13 g13_odd_pathways.py ; G14 g14_cellline_models.py
+- Then REPORT.md (all numbers from tables/)

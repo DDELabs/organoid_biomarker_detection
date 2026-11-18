@@ -8,3 +8,4 @@ Darker blue = smaller p. The paper's cross-tests are: colon 5-FU patients scored
 scored with the colon biomarker (row "Colon organoids, paper data", column "Bladder organoids, paper data").
 Paper: p = 0.16 and 0.86. Blank = pathway not scored in that cohort. Numbers incl. HR and 95% CI:
 tables/SuppFig4_cross_test_matrix.tsv.
+Redrawn at print size (7.2 in wide) by nar/15_fixes/code/f10_suppfig4.py (audit I23); numbers unchanged.

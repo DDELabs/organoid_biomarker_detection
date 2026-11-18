@@ -1,0 +1,9 @@
+cohort	model	outcome	n	events	C	num	den	p	n_cohorts	unit	features
+GSE109211	organoid-only	response	67	21	0.9648033126293996	932.0	966.0	1.345078660694184e-09		LIHC_SORAFENIB	shortlist_foldalign
+GSE109211	patient-only	response	67	21	0.9472049689440993	915.0	966.0	5.471893585425317e-09		LIHC_SORAFENIB	shortlist_foldalign
+GSE109211	joint	response	67	21	0.94824016563147	916.0	966.0	5.045570264325723e-09		LIHC_SORAFENIB	shortlist_foldalign
+GSE109211	joint (w=0.5)	response	67	21	0.9037267080745341	873.0	966.0	1.4059054844696192e-07		LIHC_SORAFENIB	shortlist_foldalign
+POOLED	organoid-only	response	67	21	0.9648033126293996	932.0	966.0		1.0	LIHC_SORAFENIB	shortlist_foldalign
+POOLED	patient-only	response	67	21	0.9472049689440993	915.0	966.0		1.0	LIHC_SORAFENIB	shortlist_foldalign
+POOLED	joint	response	67	21	0.94824016563147	916.0	966.0		1.0	LIHC_SORAFENIB	shortlist_foldalign
+POOLED	joint (w=0.5)	response	67	21	0.9037267080745341	873.0	966.0		1.0	LIHC_SORAFENIB	shortlist_foldalign

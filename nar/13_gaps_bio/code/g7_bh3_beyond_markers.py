@@ -127,6 +127,31 @@ def main():
     figure(A, B, nulls)
 
 
+def g5_cell_lines():
+    """G5a: BH3-only score vs oxaliplatin (and 5-FU for contrast) in colorectal lines and pan-cancer (lineage-adjusted)."""
+    sys.path.insert(0, str(REPO / "nar/08_depmap/code"))
+    from stats import partial_spearman, spearman
+    rows = []
+    for sn in ("GDSC1", "GDSC2", "CTRP", "PRISM"):
+        S = screen(sn)
+        for d in ("OXALIPLATIN", "FLUOROURACIL"):
+            if d not in S.resp:
+                rows.append(dict(screen=sn, drug=d, scope="colorectal", n=0))
+                continue
+            s = S.common(d)
+            crc = [x for x in s if x in set(S.colon)]
+            r, p, n = spearman(S.scores.loc[BH3, crc], S.resp.loc[crc, d])
+            z, se = np.arctanh(r), 1.06 / np.sqrt(max(n - 3, 1))
+            rows.append(dict(screen=sn, drug=d, scope="colorectal", n=n, rho=r, lo=np.tanh(z - 1.96 * se),
+                             hi=np.tanh(z + 1.96 * se), p=p, metric=S.metric))
+            r, p, n = partial_spearman(S.scores.loc[BH3, s], S.resp.loc[s, d], S.lineage.reindex(s))
+            z, se = np.arctanh(r), 1 / np.sqrt(max(n - 3, 1))
+            rows.append(dict(screen=sn, drug=d, scope="pan-cancer, lineage-adjusted", n=n, rho=r, lo=np.tanh(z - 1.96 * se),
+                             hi=np.tanh(z + 1.96 * se), p=p, metric=S.metric))
+    pd.DataFrame(rows).to_csv(TAB / "G5_cell_lines_bh3_vs_oxaliplatin.tsv", sep="\t", index=False)
+    print(pd.DataFrame(rows).to_string())
+
+
 def figure(A, B, nulls):
     plt = style()
     fig = plt.figure(figsize=(12.5, 8.5))
@@ -209,4 +234,7 @@ left after removing the listed covariates (always including cancer type).
 
 
 if __name__ == "__main__":
-    main()
+    if "g5" in sys.argv:
+        g5_cell_lines()
+    else:
+        main()

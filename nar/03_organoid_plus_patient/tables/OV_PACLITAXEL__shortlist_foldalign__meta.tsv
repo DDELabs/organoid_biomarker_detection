@@ -1,0 +1,11 @@
+unit	OV_PACLITAXEL
+features	shortlist_foldalign
+fold_align	True
+n_features	86
+feature_source	STRING v12 proximity shortlist of PACLITAXEL (robust/results/survlearn, z <= -1.28)
+design	leave-one-cohort-out
+trainable_cohorts	TCGA-OV;GSE9891;GSE63885;GSE51373;GSE15622
+organoid_alpha	10000.0
+lab	ovarian_vias2023:PACLITAXEL n=14 dropped_axes=9
+n_lab	14
+seconds	63.0

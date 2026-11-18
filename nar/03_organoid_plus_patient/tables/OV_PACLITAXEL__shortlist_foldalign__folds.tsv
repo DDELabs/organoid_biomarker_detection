@@ -1,0 +1,16 @@
+heldout	model	train_cohorts	w	lam	unit	features
+TCGA-OV	patient-only	GSE9891:survival;GSE63885:survival;GSE51373:response;GSE15622:response	0.0	3.0	OV_PACLITAXEL	shortlist_foldalign
+TCGA-OV	joint	GSE9891:survival;GSE63885:survival;GSE51373:response;GSE15622:response	0.25	3.0	OV_PACLITAXEL	shortlist_foldalign
+TCGA-OV	joint (w=0.5)	GSE9891:survival;GSE63885:survival;GSE51373:response;GSE15622:response	0.5	1.0	OV_PACLITAXEL	shortlist_foldalign
+GSE9891	patient-only	TCGA-OV:survival;GSE63885:survival;GSE51373:response;GSE15622:response	0.0	10.0	OV_PACLITAXEL	shortlist_foldalign
+GSE9891	joint	TCGA-OV:survival;GSE63885:survival;GSE51373:response;GSE15622:response	0.25	10.0	OV_PACLITAXEL	shortlist_foldalign
+GSE9891	joint (w=0.5)	TCGA-OV:survival;GSE63885:survival;GSE51373:response;GSE15622:response	0.5	10.0	OV_PACLITAXEL	shortlist_foldalign
+GSE63885	patient-only	TCGA-OV:survival;GSE9891:survival;GSE51373:response;GSE15622:response	0.0	3.0	OV_PACLITAXEL	shortlist_foldalign
+GSE63885	joint	TCGA-OV:survival;GSE9891:survival;GSE51373:response;GSE15622:response	0.25	3.0	OV_PACLITAXEL	shortlist_foldalign
+GSE63885	joint (w=0.5)	TCGA-OV:survival;GSE9891:survival;GSE51373:response;GSE15622:response	0.5	1.0	OV_PACLITAXEL	shortlist_foldalign
+GSE51373	patient-only	TCGA-OV:survival;GSE9891:survival;GSE63885:survival;GSE15622:response	0.0	3.0	OV_PACLITAXEL	shortlist_foldalign
+GSE51373	joint	TCGA-OV:survival;GSE9891:survival;GSE63885:survival;GSE15622:response	0.25	3.0	OV_PACLITAXEL	shortlist_foldalign
+GSE51373	joint (w=0.5)	TCGA-OV:survival;GSE9891:survival;GSE63885:survival;GSE15622:response	0.5	10.0	OV_PACLITAXEL	shortlist_foldalign
+GSE15622	patient-only	TCGA-OV:survival;GSE9891:survival;GSE63885:survival;GSE51373:response	0.0	3.0	OV_PACLITAXEL	shortlist_foldalign
+GSE15622	joint	TCGA-OV:survival;GSE9891:survival;GSE63885:survival;GSE51373:response	0.25	3.0	OV_PACLITAXEL	shortlist_foldalign
+GSE15622	joint (w=0.5)	TCGA-OV:survival;GSE9891:survival;GSE63885:survival;GSE51373:response	0.5	3.0	OV_PACLITAXEL	shortlist_foldalign
