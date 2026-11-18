@@ -13,3 +13,4 @@ cell 2 Fingerprint MLP (cell lines) 8 s
 cell 2 XGBoost (pathways + fingerprint) 123 s
 cell 2 Elastic net (pathways + fingerprint) 4 s
 cell 2 Random forest (pathways + fingerprint) 71 s
+cell 2 per-drug models done
