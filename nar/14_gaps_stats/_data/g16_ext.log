@@ -1,0 +1,15 @@
+done CRC_OXALIPLATIN__shortlist_extgrid
+CRC_IRINOTECAN__shortlist_extgrid 29.9 s
+doCRC_5FU__shortlist_extgrid 78.6 s
+BLCBLCA_CISPLATIN__shortlist_extgrid 33.9 s
+done BLCA_CISPLATIN__shortlist_extgrid
+d/usr/local/lib/python3.13/site-packages/joblib/externals/loky/backend/resource_tracker.py:444: UserWarning: resource_tracker: There appear to be 8 leaked semlock objects to clean up at shutdown: {'/loky-2102-c2rz9857': 1, '/loky-2102-4jbnnn7m': 1, '/loky-2102-ffdnhga9': 1, '/loky-2102-hahhpfc6': 1, '/loky-2102-x3qdlnwd': 1, '/loky-2102-w9tcvq96': 1, '/loky-2102-xm9dfuq6': 1, '/loky-2102-prb7bgom': 1}
+  warnings.warn(
+/usr/local/lib/python3.13/site-packages/joblib/externals/loky/backend/resource_tracker.py:444: UserWarning: resource_tracker: There appear to be 2 leaked folder objects to clean up at shutdown: {'/dev/shm/joblib_memmapping_folder_2102_214e713a6b55496ab22f47df61a1cc5d_97888bab25f94185814327077701aabb': 1, '/dev/shm/joblib_memmapping_folder_2102_214e713a6b55496ab22f47df61a1cc5d_1764bd873f314ce9a9d006c50db76fc3': 1}
+  warnings.warn(
+rid
+done LIHC_SORAFENIB__shortlist_extgrid
+done OV_PACLITAXEL__shortlist_extgrid
+done OV_PLATINUM__shortlist_extgrid
+done LUNG_PLATINUM__shortlist_extgrid
+done SARC_GEMCITABINE__shortlist_extgrid

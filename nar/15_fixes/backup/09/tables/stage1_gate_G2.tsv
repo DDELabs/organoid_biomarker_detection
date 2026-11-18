@@ -1,0 +1,8 @@
+drug	G2_1_holm_and_direction	G2_2_purity_ipw_robust	G2_3_negative_controls_null	G2_4_weaker_in_comparator	G2_pass
+FLUOROURACIL	False	False	True	False	False
+OXALIPLATIN	False	False	True	False	False
+IRINOTECAN	False	False	False	True	False
+GEMCITABINE	False	False	True	False	False
+PACLITAXEL	False	False	True	False	False
+PEMETREXED	False	False	True	False	False
+SORAFENIB	False	False	True	True	False

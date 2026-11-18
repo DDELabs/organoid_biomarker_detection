@@ -1,0 +1,10 @@
+unit	OV_PLATINUM
+features	shortlist
+n_features	70
+feature_source	STRING v12 proximity shortlist of CARBOPLATIN (robust/results/survlearn, z <= -1.28)
+design	leave-one-cohort-out
+trainable_cohorts	TCGA-OV;GSE9891;GSE63885;GSE51373;GSE15622
+organoid_alpha	1000.0
+lab	ctrpv2_ccle:CARBOPLATIN/ovary n=38 dropped_axes=3;prism_repurposing:CARBOPLATIN/ovary n=28 dropped_axes=4
+n_lab	66
+seconds	90.5

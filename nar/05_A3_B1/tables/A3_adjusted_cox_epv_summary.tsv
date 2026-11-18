@@ -1,0 +1,5 @@
+set	n	same_direction
+full adjusted model, all estimable	49	42
+full adjusted model, >= 3 deaths per term only	22	20
+full adjusted model, < 3 deaths per term (flagged)	27	22
+reduced adjusted model (>= 3 deaths per term), all estimable	54	48

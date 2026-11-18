@@ -1,0 +1,10 @@
+unit	CRC_IRINOTECAN
+features	shortlist
+n_features	53
+feature_source	STRING v12 proximity shortlist of IRINOTECAN (robust/results/survlearn, z <= -1.28)
+design	leave-one-cohort-out
+trainable_cohorts	GSE72970;TCGA-COADREAD;GSE62080;GSE104645
+organoid_alpha	3162.2776601683795
+lab	colorectal_vandewetering2015:IRINOTECAN n=19 dropped_axes=7
+n_lab	19
+seconds	113.2

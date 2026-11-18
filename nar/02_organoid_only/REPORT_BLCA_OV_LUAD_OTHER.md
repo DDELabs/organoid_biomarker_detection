@@ -46,7 +46,12 @@ stops linear SVR (default margin 0.1) from returning all-zero coefficients on 0-
 ### 3.1 Exact reproduction on the paper's own source data (`BLCA_lee2018/paper/`)
 
 - 47 pathways pass z <= -1.2816; **30** remain after dropping those missing from the organoid data, exactly the paper's
-  number. 9 organoids have a cisplatin response (the paper's 9).
+  number. 9 organoids have a cisplatin response (the paper's 9). These 9 lines come from **7 patients**: SCBO-3_2 and
+  SCBO-11_2 are recurrence lines of the patients of SCBO-3 and SCBO-11 (audit I07). The SCBO-3 response in the curated
+  table also pools SMBO-3 screens (`data/curated/preclinical/bladder_lee2018/response.tsv`, column `screens`).
+  Treated patients: ours 79 (20 deaths) and 288 untreated, the paper 77 and 294 (the paper's patient list is not
+  public, so the 2 extra / 6 missing patients cannot be named); organoid response = CoderData AUC, not the paper's IC50
+  (audit I17). One-line-per-patient sensitivity: see section 3.1b below.
 - Rank 1 in all three models: "transport of glucose and other sugars, bile salts, organic acids, metal ions and amine
   compounds". This is also first in the paper's own multi-pathway source data. The paper's reported biomarker, "amino acid
   synthesis and interconversion (transamination)", is **rank 2 in the paper** (its code tests rank 1). In our AUC refit it is rank 6.

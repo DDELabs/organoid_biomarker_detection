@@ -1,0 +1,10 @@
+unit	LIHC_SORAFENIB
+features	shortlist
+n_features	22
+feature_source	Kong et al. 2020 proximity table (STRING>700), z <= -1.28
+design	5-fold cross-fitting by patient within the single cohort (5 repeats)
+trainable_cohorts	GSE109211
+organoid_alpha	10000.0
+lab	liver_ji2023:SORAFENIB n=61 dropped_axes=4;liver_broutier2017:SORAFENIB n=5 dropped_axes=4
+n_lab	66
+seconds	22.5

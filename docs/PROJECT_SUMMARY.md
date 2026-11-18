@@ -23,7 +23,7 @@ and bladder cancer with cisplatin (pathway "amino acid synthesis and interconver
 | 3 | Integrated evidence tiers (network, cell lines, organoids, notes, survival) with relaxed criteria | 59 top-tier candidates against about 45 expected by chance |
 | 4 | Reruns with all pathways, and with the paper's own shortlists | no gain either way |
 | 5 | Exact reproduction of the paper's headline analysis | reproduces on the authors' data (p = 0.014; untreated 0.16) |
-| 6 | Same analysis on today's TCGA data | colon 5-FU p = 0.62 (129 patients, 25 deaths); bladder cisplatin p = 0.063, right direction |
+| 6 | Same analysis on today's TCGA data | colon 5-FU p = 0.866 (129 patients, 25 deaths; source `nar/02_organoid_only/tables/cross_set_summary.tsv`, row COAD current; the earlier `robust/` run gave 0.62 and is superseded, audit I11); bladder cisplatin p = 0.067 (79 patients, 28 deaths; `nar/02_organoid_only/BLCA_OV_LUAD_OTHER/SUMMARY/tables/cross_set_summary.tsv`; earlier run 0.063), right direction |
 | 7 | Paper's method on every cancer and drug with enough patients | 152 tests, 11 significant, about 8-9 expected by chance; 0 of 17 organoid-trained tests significant |
 | 8 | Survey of public data and a combined training table | 20,766 tumour samples from TCGA and 41 other cohorts |
 | 9 | Models trained on the combined table, tested on cohorts never seen | breast response predicted in 13 of 13 cohorts (0.67-0.85); other cancers 1 of 20 |

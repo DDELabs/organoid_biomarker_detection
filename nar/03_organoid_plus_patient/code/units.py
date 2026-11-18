@@ -5,7 +5,14 @@ cohorts: cohort -> dict(treated=regex on `drugs`, comparison=regex or None, comp
 Each cohort is used for training through cross-fitting only: as a Cox block (treated patients with a
 survival endpoint, >= 8 events) or, failing that, a response block (>= 5 responders and non-responders).
 """
+import sys as _sys
+from pathlib import Path as _Path
+_sys.path.insert(0, str(_Path(__file__).resolve().parents[2] / "15_fixes" / "code"))
+import definitions as DEF  # noqa: E402  shared patient definitions (audit fixes I01, I02; nar/15_fixes)
+
 NONE = r"^NONE$"
+G39 = DEF.GSE39582_DRUGS
+XOI = DEF.BOTH_OX_IRI   # FOLFIRINOX-type records: excluded from both arms of the oxaliplatin / irinotecan units (I02)
 FU = r"FLUOROURACIL|CAPECITABINE|TEGAFUR|CHEMOTHERAPY"
 PLAT = r"CISPLATIN|CARBOPLATIN|PLATINUM|OXALIPLATIN"
 
@@ -14,7 +21,8 @@ UNITS = [
          lab=[("colorectal_vandewetering2015", "FLUOROURACIL", None)],
          align_extra=[("colorectal_pdx_isella2017", None)],
          merge={"TCGA-COAD": "TCGA-COADREAD", "TCGA-READ": "TCGA-COADREAD"},
-         cohorts={"GSE39582": dict(treated=FU, comparison=NONE, comp_label="no chemotherapy", no_stage4=True),
+         cohorts={"GSE39582": dict(treated=G39["5FU_based"], comparison=G39["untreated"], comp_label="no chemotherapy",
+                                   stages=DEF.GSE39582_STAGES),   # I01 shared definition (was FU regex incl. CHEMOTHERAPY/FOLFIRI, stage IV removed)
                   "GSE103479": dict(treated=FU, comparison=NONE, comp_label="surgery only", no_stage4=True),
                   "GSE14333": dict(treated=FU, comparison=NONE, comp_label="no chemotherapy", no_stage4=True),
                   "TCGA-COADREAD": dict(treated=FU, comparison=NONE, comp_label="no chemotherapy", no_stage4=True),
@@ -27,22 +35,23 @@ UNITS = [
     dict(id="CRC_OXALIPLATIN", cancer="colorectal", drug="oxaliplatin (FOLFOX)", short="OXALIPLATIN",
          lab=[("colorectal_vandewetering2015", "OXALIPLATIN", None)], align_extra=[],
          merge={"TCGA-COAD": "TCGA-COADREAD", "TCGA-READ": "TCGA-COADREAD"},
-         cohorts={"TCGA-COADREAD": dict(treated="OXALIPLATIN", comparison=NONE, comp_label="no chemotherapy"),
-                  "GSE72970": dict(treated="OXALIPLATIN", comparison="IRINOTECAN", comp_label="FOLFIRI (no oxaliplatin)"),
-                  "GSE39582": dict(treated="OXALIPLATIN", comparison=NONE, comp_label="no chemotherapy", no_stage4=True),
-                  "GSE28702": dict(treated="OXALIPLATIN", comparison=None),
-                  "GSE19860": dict(treated="OXALIPLATIN", comparison=None),
-                  "GSE104645": dict(treated="OXALIPLATIN", comparison="IRINOTECAN", comp_label="irinotecan (no oxaliplatin)"),
-                  "GSE87211": dict(treated="OXALIPLATIN", comparison=r"^FLUOROURACIL;RADIOTHERAPY$",
+         cohorts={"TCGA-COADREAD": dict(exclude=XOI, treated="OXALIPLATIN", comparison=NONE, comp_label="no chemotherapy"),
+                  "GSE72970": dict(exclude=XOI, treated="OXALIPLATIN", comparison="IRINOTECAN", comp_label="FOLFIRI (no oxaliplatin)"),
+                  "GSE39582": dict(exclude=XOI, treated=G39["FOLFOX"], comparison=G39["untreated"], comp_label="no chemotherapy",
+                                   stages=DEF.GSE39582_STAGES),
+                  "GSE28702": dict(exclude=XOI, treated="OXALIPLATIN", comparison=None),
+                  "GSE19860": dict(exclude=XOI, treated="OXALIPLATIN", comparison=None),
+                  "GSE104645": dict(exclude=XOI, treated="OXALIPLATIN", comparison="IRINOTECAN", comp_label="irinotecan (no oxaliplatin)"),
+                  "GSE87211": dict(exclude=XOI, treated="OXALIPLATIN", comparison=r"^FLUOROURACIL;RADIOTHERAPY$",
                                    comp_label="5-FU radiotherapy without oxaliplatin")}),
     dict(id="CRC_IRINOTECAN", cancer="colorectal", drug="irinotecan (FOLFIRI)", short="IRINOTECAN",
          lab=[("colorectal_vandewetering2015", "IRINOTECAN", None)], align_extra=[],
          merge={"TCGA-COAD": "TCGA-COADREAD", "TCGA-READ": "TCGA-COADREAD"},
-         cohorts={"GSE72970": dict(treated="IRINOTECAN", comparison="OXALIPLATIN", comp_label="FOLFOX (no irinotecan)"),
-                  "GSE39582": dict(treated="IRINOTECAN", comparison=None),
-                  "TCGA-COADREAD": dict(treated="IRINOTECAN", comparison=None),
-                  "GSE62080": dict(treated="IRINOTECAN", comparison=None),
-                  "GSE104645": dict(treated="IRINOTECAN", comparison="OXALIPLATIN", comp_label="oxaliplatin (no irinotecan)")}),
+         cohorts={"GSE72970": dict(exclude=XOI, treated="IRINOTECAN", comparison="OXALIPLATIN", comp_label="FOLFOX (no irinotecan)"),
+                  "GSE39582": dict(exclude=XOI, treated="IRINOTECAN", comparison=None),
+                  "TCGA-COADREAD": dict(exclude=XOI, treated="IRINOTECAN", comparison=None),
+                  "GSE62080": dict(exclude=XOI, treated="IRINOTECAN", comparison=None),
+                  "GSE104645": dict(exclude=XOI, treated="IRINOTECAN", comparison="OXALIPLATIN", comp_label="oxaliplatin (no irinotecan)")}),
     dict(id="BLCA_CISPLATIN", cancer="bladder", drug="cisplatin-based chemotherapy", short="CISPLATIN",
          lab=[("bladder_lee2018", "CISPLATIN", None)], align_extra=[], merge={},
          cohorts={"TCGA-BLCA": dict(treated=r"CISPLATIN|PLATINUM", comparison=NONE, comp_label="no chemotherapy"),

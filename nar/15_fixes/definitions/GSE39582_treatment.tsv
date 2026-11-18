@@ -1,0 +1,8 @@
+subset	rule_plain_words	drugs_regex	arms_included	n_all_stages	n_stage_II_III	n_stage_II_III_with_RFS	n_stage_II_III_with_OS	rfs_events	os_events	arm_counts
+5FU_based	"PRIMARY ""5-FU-treated"" group. Arm 5FU, FUFOL or FOLFOX in the GEO record, AND stage II or III. Patients whose chemotherapy type is not given (66), ""other"" (3) or unknown (17) are left out because we cannot tell which drug they got. FOLFIRI is left out (irinotecan; see its own row). Stage 0, I, IV and missing stage are left out."	^FLUOROURACIL(?:;LEUCOVORIN(?:;OXALIPLATIN)?)?$	5FU;FUFOL;FOLFOX	153	139	138	139	48	40	{'5FU': 79, 'FUFOL': 51, 'FOLFOX': 23}
+5FU_alone	Subset: arm 5FU only (5-FU without leucovorin or oxaliplatin), stage II-III.	^FLUOROURACIL$	5FU	79	76	76	76	28	19	{'5FU': 79}
+FUFOL	Subset: arm FUFOL (5-FU + leucovorin), stage II-III.	^FLUOROURACIL;LEUCOVORIN$	FUFOL	51	51	50	51	13	16	{'FUFOL': 51}
+FU_no_oxaliplatin	Subset: 5FU or FUFOL (5-FU without oxaliplatin), stage II-III.	^FLUOROURACIL(?:;LEUCOVORIN)?$	5FU;FUFOL	130	127	126	127	41	35	{'5FU': 79, 'FUFOL': 51}
+FOLFOX	Subset: arm FOLFOX (5-FU + leucovorin + oxaliplatin), stage II-III. Also the GSE39582 group of the oxaliplatin units.	^FLUOROURACIL;LEUCOVORIN;OXALIPLATIN$	FOLFOX	23	12	12	12	7	5	{'FOLFOX': 23}
+FOLFIRI	Optional subset, never part of the primary group: FOLFIRI (5-FU + leucovorin + irinotecan), stage II-III. Too small to test (3 patients).	^FLUOROURACIL;LEUCOVORIN;IRINOTECAN$	FOLFIRI	11	3	3	3	1	1	{'FOLFIRI': 11}
+untreated	"Comparator: ""no chemotherapy"", stage II or III only (same stages as the treated group)."	^NONE$	no chemotherapy	316	264	258	262	62	89	{'no chemotherapy': 316}

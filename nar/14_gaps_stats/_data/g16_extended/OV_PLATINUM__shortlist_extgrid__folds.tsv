@@ -1,0 +1,16 @@
+heldout	model	train_cohorts	w	lam	unit
+TCGA-OV	patient-only	GSE9891:survival;GSE63885:survival;GSE51373:response;GSE15622:response	0.0	1.0	OV_PLATINUM
+TCGA-OV	joint	GSE9891:survival;GSE63885:survival;GSE51373:response;GSE15622:response	0.05	1.0	OV_PLATINUM
+TCGA-OV	joint (w=0.1)	GSE9891:survival;GSE63885:survival;GSE51373:response;GSE15622:response	0.1	1.0	OV_PLATINUM
+GSE9891	patient-only	TCGA-OV:survival;GSE63885:survival;GSE51373:response;GSE15622:response	0.0	3.0	OV_PLATINUM
+GSE9891	joint	TCGA-OV:survival;GSE63885:survival;GSE51373:response;GSE15622:response	0.05	3.0	OV_PLATINUM
+GSE9891	joint (w=0.1)	TCGA-OV:survival;GSE63885:survival;GSE51373:response;GSE15622:response	0.1	3.0	OV_PLATINUM
+GSE63885	patient-only	TCGA-OV:survival;GSE9891:survival;GSE51373:response;GSE15622:response	0.0	1.0	OV_PLATINUM
+GSE63885	joint	TCGA-OV:survival;GSE9891:survival;GSE51373:response;GSE15622:response	0.05	1.0	OV_PLATINUM
+GSE63885	joint (w=0.1)	TCGA-OV:survival;GSE9891:survival;GSE51373:response;GSE15622:response	0.1	1.0	OV_PLATINUM
+GSE51373	patient-only	TCGA-OV:survival;GSE9891:survival;GSE63885:survival;GSE15622:response	0.0	1.0	OV_PLATINUM
+GSE51373	joint	TCGA-OV:survival;GSE9891:survival;GSE63885:survival;GSE15622:response	0.1	1.0	OV_PLATINUM
+GSE51373	joint (w=0.1)	TCGA-OV:survival;GSE9891:survival;GSE63885:survival;GSE15622:response	0.1	1.0	OV_PLATINUM
+GSE15622	patient-only	TCGA-OV:survival;GSE9891:survival;GSE63885:survival;GSE51373:response	0.0	1.0	OV_PLATINUM
+GSE15622	joint	TCGA-OV:survival;GSE9891:survival;GSE63885:survival;GSE51373:response	0.1	1.0	OV_PLATINUM
+GSE15622	joint (w=0.1)	TCGA-OV:survival;GSE9891:survival;GSE63885:survival;GSE51373:response	0.1	1.0	OV_PLATINUM

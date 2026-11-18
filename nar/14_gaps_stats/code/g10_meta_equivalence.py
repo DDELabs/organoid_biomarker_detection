@@ -114,7 +114,7 @@ def main():
 
 def figure(M, d, R):
     plt = C.plot_style()
-    fig, axs = plt.subplots(1, 2, figsize=(11, 9.5), gridspec_kw={"width_ratios": [1.5, 1]})
+    fig, axs = plt.subplots(1, 2, figsize=(11, 10.5), gridspec_kw={"width_ratios": [1.5, 1]})
     ax = axs[0]
     d = d.sort_values(["drug_class", "cont_HR"]).reset_index(drop=True)
     cols = dict(zip(sorted(d.drug_class.unique()), [OK["blue"], OK["orange"], OK["green"], OK["purple"], OK["verm"], OK["sky"], OK["grey"]]))
@@ -132,9 +132,10 @@ def figure(M, d, R):
     ax.set_xscale("log")
     ax.set_xlabel("HR per SD of organoid score, treated patients (log scale)\n>1 = expected direction")
     ax.set_xlim(0.03, 15)
+    ax.set_xticks([0.05, 0.1, 0.25, 0.5, 1, 2, 4, 10]); ax.set_xticklabels(["0.05", "0.1", "0.25", "0.5", "1", "2", "4", "10"]); ax.minorticks_off()
     for k, c in cols.items():
         ax.plot([], [], "s", color=c, label=k)
-    ax.legend(fontsize=7, loc="lower right", frameon=False)
+    ax.legend(fontsize=7, loc="upper center", bbox_to_anchor=(0.5, -0.09), ncol=3, frameon=False)
     C.letter(ax, "a", x=-0.45)
     ax = axs[1]
     sub = R[R.effect.str.startswith("continuous score per SD (primary)")].reset_index(drop=True)
@@ -154,6 +155,7 @@ def figure(M, d, R):
         ax.axvline(1 / b, color=OK["verm"], lw=.6, ls=":")
     ax.set_xscale("log")
     ax.set_xlim(0.2, 5)
+    ax.set_xticks([0.25, 0.5, 1, 2, 4]); ax.set_xticklabels(["0.25", "0.5", "1", "2", "4"]); ax.minorticks_off()
     ax.set_xlabel("Pooled HR (blue: 95% CI, HKSJ; grey: 95% prediction interval)\nred dotted lines: HR 1.25 and 1.5 (and inverse)")
     C.letter(ax, "b", x=-0.9)
     fig.tight_layout()

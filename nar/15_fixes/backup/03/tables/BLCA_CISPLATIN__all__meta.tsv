@@ -1,0 +1,10 @@
+unit	BLCA_CISPLATIN
+features	all
+n_features	673
+feature_source	all 673 Reactome pathways
+design	leave-one-cohort-out
+trainable_cohorts	TCGA-BLCA;GSE31684;GSE48276;GSE70691;GSE169455;GSE52219
+organoid_alpha	316.2277660168379
+lab	bladder_lee2018:CISPLATIN n=9 dropped_axes=6
+n_lab	9
+seconds	568.2

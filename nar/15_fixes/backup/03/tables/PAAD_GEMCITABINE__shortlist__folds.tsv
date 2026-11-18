@@ -1,0 +1,16 @@
+heldout	model	train_cohorts	w	lam	unit	features
+TCGA-PAAD fold 0	patient-only	TCGA-PAAD	0.0	10.0	PAAD_GEMCITABINE	shortlist
+TCGA-PAAD fold 0	joint	TCGA-PAAD	0.25	10.0	PAAD_GEMCITABINE	shortlist
+TCGA-PAAD fold 0	joint (w=0.5)	TCGA-PAAD	0.5	10.0	PAAD_GEMCITABINE	shortlist
+TCGA-PAAD fold 1	patient-only	TCGA-PAAD	0.0	10.0	PAAD_GEMCITABINE	shortlist
+TCGA-PAAD fold 1	joint	TCGA-PAAD	0.25	10.0	PAAD_GEMCITABINE	shortlist
+TCGA-PAAD fold 1	joint (w=0.5)	TCGA-PAAD	0.5	10.0	PAAD_GEMCITABINE	shortlist
+TCGA-PAAD fold 2	patient-only	TCGA-PAAD	0.0	10.0	PAAD_GEMCITABINE	shortlist
+TCGA-PAAD fold 2	joint	TCGA-PAAD	0.25	10.0	PAAD_GEMCITABINE	shortlist
+TCGA-PAAD fold 2	joint (w=0.5)	TCGA-PAAD	0.5	10.0	PAAD_GEMCITABINE	shortlist
+TCGA-PAAD fold 3	patient-only	TCGA-PAAD	0.0	10.0	PAAD_GEMCITABINE	shortlist
+TCGA-PAAD fold 3	joint	TCGA-PAAD	0.25	10.0	PAAD_GEMCITABINE	shortlist
+TCGA-PAAD fold 3	joint (w=0.5)	TCGA-PAAD	0.5	10.0	PAAD_GEMCITABINE	shortlist
+TCGA-PAAD fold 4	patient-only	TCGA-PAAD	0.0	10.0	PAAD_GEMCITABINE	shortlist
+TCGA-PAAD fold 4	joint	TCGA-PAAD	0.25	10.0	PAAD_GEMCITABINE	shortlist
+TCGA-PAAD fold 4	joint (w=0.5)	TCGA-PAAD	0.5	10.0	PAAD_GEMCITABINE	shortlist

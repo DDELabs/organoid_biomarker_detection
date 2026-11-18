@@ -1,0 +1,10 @@
+unit	LUNG_PLATINUM
+features	all
+n_features	673
+feature_source	all 673 Reactome pathways
+design	leave-one-cohort-out
+trainable_cohorts	TCGA-LUAD;TCGA-LUSC;GSE42127
+organoid_alpha	10000.0
+lab	ctrpv2_ccle:CARBOPLATIN/lung n=138 dropped_axes=1;prism_repurposing:CISPLATIN/lung n=93 dropped_axes=0
+n_lab	231
+seconds	62.4

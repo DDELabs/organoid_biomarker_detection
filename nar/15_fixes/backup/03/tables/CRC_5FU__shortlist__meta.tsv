@@ -1,0 +1,10 @@
+unit	CRC_5FU
+features	shortlist
+n_features	30
+feature_source	STRING v12 proximity shortlist of FLUOROURACIL (robust/results/survlearn, z <= -1.28)
+design	leave-one-cohort-out
+trainable_cohorts	GSE39582;GSE103479;GSE14333;TCGA-COADREAD;GSE72970;GSE28702;GSE104645;GSE19860;GSE62080;GSE87211
+organoid_alpha	100.0
+lab	colorectal_vandewetering2015:FLUOROURACIL n=19 dropped_axes=7
+n_lab	19
+seconds	253.2

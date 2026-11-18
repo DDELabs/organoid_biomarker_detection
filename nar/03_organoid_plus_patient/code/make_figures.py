@@ -27,6 +27,22 @@ def load(unit, feats):
     return ev, it, sc, meta
 
 
+def risk_convention(ev):
+    """Audit fix I05: every folder reports 'HR > 1 = expected'. 03 fits a BENEFIT score (higher = longer survival),
+    so HR per SD of the benefit score < 1 is expected. The risk score = -benefit score gives HR_risk = 1 / HR with the
+    interval limits swapped. Same for survival interaction HRs. Response interaction ORs are unchanged: with the risk
+    score AND non-response as outcome, OR > 1 = expected (as in nar/05 B1)."""
+    ev = ev.copy()
+    if "HR" in ev:
+        ev["HR_risk"], ev["HR_risk_low"], ev["HR_risk_high"] = 1 / ev["HR"], 1 / ev["HR_high"], 1 / ev["HR_low"]
+    if "ratio" in ev:
+        surv = ev["measure"].eq("interaction HR")
+        ev["ratio_risk"] = np.where(surv, 1 / ev["ratio"], ev["ratio"])
+        ev["low_risk"] = np.where(surv, 1 / ev["high"], ev["low"])
+        ev["high_risk"] = np.where(surv, 1 / ev["low"], ev["high"])
+    return ev
+
+
 def km_split(ax, sc, model, title, cohorts=None):
     """KM of held-out treated patients split at the within-cohort median of the score."""
     d = sc[(sc["group"] == "treated") & sc["has_surv"] & sc[model].notna()]
@@ -35,7 +51,7 @@ def km_split(ax, sc, model, title, cohorts=None):
     if len(d) < 10:
         ax.text(0.5, 0.5, "no survival data", ha="center", transform=ax.transAxes); ax.set_axis_off(); return None
     hi = d.groupby("unit_cohort")[model].transform(lambda v: v > v.median()).astype(bool)
-    for flag, col, lab in ((True, PS.CB[2], "high score (predicted benefit)"), (False, PS.CB[3], "low score")):
+    for flag, col, lab in ((True, PS.CB[2], "low risk score (predicted benefit)"), (False, PS.CB[3], "high risk score")):
         x = d[hi == flag]
         t, s = C.SV.km_curve(x["time"], x["event"])
         ax.step(t, s, where="post", color=col, lw=1.5, label=f"{lab}, n={len(x)}, events={int(x['event'].sum())}")
@@ -64,7 +80,8 @@ def conc_bars(ax, ev, title):
 def hr_forest(ax, ev, title):
     if "HR" not in ev:
         ev = ev.assign(HR=np.nan, HR_low=np.nan, HR_high=np.nan)
-    e = ev[ev["model"].isin(MODELS) & ev["outcome"].str.startswith("survival") & ev["HR"].notna()].copy()
+    e = risk_convention(ev[ev["model"].isin(MODELS) & ev["outcome"].str.startswith("survival") & ev["HR"].notna()])
+    e["HR"], e["HR_low"], e["HR_high"] = e["HR_risk"], e["HR_risk_low"], e["HR_risk_high"]
     cats = list(dict.fromkeys(e.loc[e["cohort"] != "POOLED", "cohort"])) + (["POOLED"] if (e["cohort"] == "POOLED").any() else [])
     if not cats:
         ax.text(0.5, 0.5, "no held-out survival cohort\n(no public survival times)", ha="center", transform=ax.transAxes); ax.set_axis_off(); return
@@ -79,14 +96,15 @@ def hr_forest(ax, ev, title):
                         color=PS.MODEL_COL[m], ms=4, lw=1, capsize=2, label=m if i == 0 else None)
     ax.axvline(1, color="k", lw=0.8, ls="--"); ax.set_xscale("log")
     ax.set_yticks(range(len(cats))); ax.set_yticklabels(cats, fontsize=7); ax.invert_yaxis()
-    ax.set_xlabel("HR per SD of score (<1 = higher score, longer survival)")
+    ax.set_xlabel("HR per SD of risk score\n(> 1 = expected: higher risk score, shorter survival)")
     ax.set_title(title, fontsize=8); ax.legend(fontsize=7, frameon=False, loc="best")
 
 
 def int_forest(ax, it, title):
     if it is None or not len(it):
         ax.text(0.5, 0.5, "no comparison group\nin this cancer", ha="center", va="center", transform=ax.transAxes); ax.set_axis_off(); return
-    i2 = it[it["model"].isin(MODELS)].copy()
+    i2 = risk_convention(it[it["model"].isin(MODELS)])
+    i2["ratio"], i2["low"], i2["high"] = i2["ratio_risk"], i2["low_risk"], i2["high_risk"]
     i2["lab"] = i2["cohort"] + " " + i2["outcome"].str.replace("survival ", "").str.replace("response", "resp.")
     cats = list(dict.fromkeys(i2["lab"]))
     for j, m in enumerate(MODELS):
@@ -99,7 +117,7 @@ def int_forest(ax, it, title):
                         color=PS.MODEL_COL[m], ms=4, lw=1, capsize=2, label=m if i == 0 else None)
     ax.axvline(1, color="k", lw=0.8, ls="--"); ax.set_xscale("log")
     ax.set_yticks(range(len(cats))); ax.set_yticklabels(cats, fontsize=7); ax.invert_yaxis()
-    ax.set_xlabel("treatment x score interaction\nHR (drug-specific < 1) / OR for resp. (drug-specific > 1)", fontsize=7)
+    ax.set_xlabel("treatment x risk-score interaction\nHR or OR (> 1 = drug-specific direction)", fontsize=8)
     ax.set_title(title, fontsize=8); ax.legend(fontsize=7, frameon=False, loc="best")
 
 
@@ -172,8 +190,8 @@ def main_fig(cancer):
     unit = MAIN_UNIT[cancer]
     u = UNIT[unit]
     ev, it, sc, meta = load(unit, "shortlist")
-    fig = plt.figure(figsize=(12, 10.5))
-    gs = fig.add_gridspec(3, 3, hspace=0.75, wspace=0.42)
+    fig = plt.figure(figsize=(7.5, 9.6))     # audit I04: journal page size (was 12 x 10.5 in)
+    gs = fig.add_gridspec(3, 3, hspace=0.95, wspace=0.55)
     a0, a1 = fig.add_subplot(gs[0, 0]), fig.add_subplot(gs[0, 1])
     align_panel((a0, a1), cancer)
     a2 = fig.add_subplot(gs[0, 2]); lc_panel(a2, unit)
@@ -181,13 +199,16 @@ def main_fig(cancer):
     a4 = fig.add_subplot(gs[1, 2]); hr_forest(a4, ev, "Held-out treated patients: HR per SD")
     a5 = fig.add_subplot(gs[2, 0])
     has_surv = sc["has_surv"].any() and (sc["group"] == "treated").any()
+    tsurv = sc[(sc["group"] == "treated") & sc["has_surv"]]
+    big = tsurv["unit_cohort"].value_counts().index[0] if len(tsurv) else None
+    ep_big = tsurv.loc[tsurv["unit_cohort"] == big, "endpoint"].iloc[0] if big else ""
     if sc.loc[sc["group"] == "treated", "has_surv"].sum() >= 10:
-        km_split(a5, sc, "joint", "Joint model, held-out treated (pooled)")
+        km_split(a5, sc, "joint", f"Joint model, held-out treated\n{big} ({ep_big})", cohorts=[big])
     else:
         response_panel(a5, sc, "joint", "Joint model: responders by score half")
     a6 = fig.add_subplot(gs[2, 1])
     if sc.loc[sc["group"] == "treated", "has_surv"].sum() >= 10:
-        km_split(a6, sc, "organoid-only", "Organoid-only model, held-out treated (pooled)")
+        km_split(a6, sc, "organoid-only", f"Organoid-only model, held-out treated\n{big} ({ep_big})", cohorts=[big])
     else:
         response_panel(a6, sc, "organoid-only", "Organoid-only model: responders by score half")
     a7 = fig.add_subplot(gs[2, 2]); int_forest(a7, it, "Drug vs comparison: does the score\nmatter more with the drug?")
@@ -203,9 +224,9 @@ Patients enter training only through cross-fitting ({meta['design']}): every sco
 (a) Lab models (coloured) and tumours (grey) on the first two principal components of the raw pathway scores. (b) The same after within-cohort standardisation and alignment (model-only directions removed, then covariance matched to tumours; see alignment_{cancer}.png).
 (c) Learning curves: pooled held-out concordance when only part of the lab models (solid lines) or part of the training patients (dashed lines) is used; bands = 10th-90th percentile over random subsets. 0.5 = no better than chance.
 (d) Held-out concordance in every cohort (C-index for survival, AUROC for response; 0.5 = chance, higher = better) for the organoid-only model (orange), the patient-only model (light blue) and the joint model (green). POOLED counts pairs within cohorts only.
-(e) Hazard ratio (HR) per standard deviation of the score in held-out treated patients, with 95% confidence interval. HR below 1 means patients with a higher score lived longer without an event.
-(f) Kaplan-Meier curves (fraction still event-free over time) of held-out treated patients split at the within-cohort median of the joint score; (g) the same for the organoid-only score. For liver (no survival times public) the panels show the fraction of responders in the high and low score halves in the sorafenib and placebo arms.
-(h) Interaction test where a comparison group exists (untreated, placebo or another drug). For survival the number is an interaction hazard ratio: below 1 means the score separates outcomes more strongly in drug-treated patients than in the comparison group, which is what a drug-specific marker should do. For response the number is an interaction odds ratio: here ABOVE 1 is the drug-specific direction (a higher score raises the odds of response more with the drug).
+(e) Hazard ratio (HR) per standard deviation of the risk score in held-out treated patients, with 95% confidence interval. Convention used in every folder of this project: HR above 1 is the expected direction (a higher risk score, i.e. predicted non-response, goes with a shorter time to an event). The model's internal benefit score is the negative of the risk score.
+(f) Kaplan-Meier curves (fraction still event-free over time) of held-out treated patients of ONE cohort (named in the title, one endpoint only) split at the cohort median of the joint score; (g) the same for the organoid-only score. Curves are not pooled across cohorts, because cohorts use different endpoints (OS, RFS, DFS, PFS); the pooled statistic is the stratified Cox HR in (e). For liver (no survival times public) the panels show the fraction of responders in the high and low score halves in the sorafenib and placebo arms.
+(h) Interaction test where a comparison group exists (untreated, placebo or another drug). For survival the number is an interaction hazard ratio for the risk score; for response it is an interaction odds ratio (odds of response for the benefit score, which equals the odds of non-response for the risk score). In both, ABOVE 1 is the drug-specific direction: the score separates outcomes more strongly with the drug than in the comparison group.
 """
 
 
@@ -241,8 +262,8 @@ def supp_fig(unit):
     fig.tight_layout()
     PS.save(fig, C.FIGS / "supp" / f"unit_{unit}", caption=f"""**Supplementary figure for {unit} ({u['cancer']}, {u['drug']}).**
 Lab models: {meta['lab']}. Design: {meta['design']}.
-(a) Held-out concordance per cohort using the {meta['n_features']} network-proximal pathways (C-index for survival, AUROC for response; 0.5 = chance) for organoid-only (orange), patient-only (light blue) and joint (green) models. (b) The same using all 673 pathways. (c) Treatment x score interaction, network shortlist. Drug-specific direction: interaction HR below 1 (survival) or interaction OR above 1 (response).
-(d, e) Hazard ratio per SD of the score in held-out treated patients with 95% CI, shortlist and all pathways. (f) Interaction, all pathways.
+(a) Held-out concordance per cohort using the {meta['n_features']} network-proximal pathways (C-index for survival, AUROC for response; 0.5 = chance) for organoid-only (orange), patient-only (light blue) and joint (green) models. (b) The same using all 673 pathways. (c) Treatment x risk-score interaction, network shortlist. Drug-specific direction: interaction HR or OR above 1.
+(d, e) Hazard ratio per SD of the risk score in held-out treated patients with 95% CI, shortlist and all pathways (above 1 = expected). (f) Interaction, all pathways.
 Remaining rows: Kaplan-Meier curves in each held-out survival cohort, treated patients split at the cohort median score, one column per model (shortlist features). Log-rank p in each title.
 """)
 
@@ -260,18 +281,20 @@ def summary_tables():
             if len(it):
                 irows.append(it.assign(unit=u["id"], cancer=u["cancer"], drug=u["drug"], features=f))
     S = pd.concat(rows, ignore_index=True)
+    S = risk_convention(S)
     S.drop(columns=["num", "den"], errors="ignore").to_csv(C.TABLES / "summary_all.tsv", sep="\t", index=False)
-    I = pd.concat(irows, ignore_index=True) if irows else pd.DataFrame()
+    I = risk_convention(pd.concat(irows, ignore_index=True)) if irows else pd.DataFrame()
     I.to_csv(C.TABLES / "interaction_all.tsv", sep="\t", index=False)
     M = S[(S["cohort"] == "POOLED") & S["model"].isin(MODELS + ["joint (w=0.5)"])]
-    M = M[["cancer", "unit", "drug", "features", "n_features", "model", "outcome", "n_cohorts", "n", "events", "C", "HR", "HR_low", "HR_high", "p", "design"]]
+    M = risk_convention(M[["cancer", "unit", "drug", "features", "n_features", "model", "outcome", "n_cohorts", "n", "events", "C", "HR", "HR_low", "HR_high", "p", "design"]])
     M.to_csv(C.TABLES / "summary_main.tsv", sep="\t", index=False)
     return S, I
 
 
 def forest(S, I):
     M = S[(S["cohort"] == "POOLED") & S["model"].isin(MODELS) & (S["features"] == "shortlist")]
-    surv = M[M["outcome"] == "survival"]
+    surv = risk_convention(M[M["outcome"] == "survival"])
+    surv["HR"], surv["HR_low"], surv["HR_high"] = surv["HR_risk"], surv["HR_risk_low"], surv["HR_risk_high"]
     units = [u["id"] for u in UNITS if u["id"] in set(M["unit"])]
     fig, ax = plt.subplots(1, 3, figsize=(13, 0.45 * len(units) + 2.5), gridspec_kw=dict(width_ratios=[1.2, 1, 1.2]))
     for j, m in enumerate(MODELS):
@@ -290,9 +313,9 @@ def forest(S, I):
         a.set_yticks(range(len(units))); a.set_yticklabels(ylab, fontsize=7); a.invert_yaxis()
     ax[0].axvline(1, color="k", ls="--", lw=0.8); ax[0].set_xscale("log")
     from matplotlib.ticker import NullFormatter
-    ax[0].set_xticks([0.5, 0.75, 1, 1.5, 2, 3]); ax[0].set_xticklabels(["0.5", "0.75", "1", "1.5", "2", "3"])
+    ax[0].set_xticks([0.33, 0.5, 0.75, 1, 1.5, 2, 3]); ax[0].set_xticklabels(["0.33", "0.5", "0.75", "1", "1.5", "2", "3"])
     ax[0].xaxis.set_minor_formatter(NullFormatter())
-    ax[0].set_xlabel("pooled HR per SD in held-out treated patients\n(<1 = higher score, longer survival)")
+    ax[0].set_xlabel("pooled HR per SD of risk score, held-out treated\n(> 1 = expected: higher risk, shorter survival)")
     ax[0].set_title("Survival in held-out treated patients", fontsize=9); ax[0].legend(fontsize=7, frameon=False)
     ax[1].axvline(0.5, color="k", ls="--", lw=0.8); ax[1].set_xlabel("pooled held-out concordance\n(circle = C-index, triangle = AUROC)")
     ax[1].set_title("Concordance", fontsize=9)
@@ -300,7 +323,9 @@ def forest(S, I):
     keep = dict(zip(l, h))
     ax[1].legend(keep.values(), keep.keys(), fontsize=6.5, frameon=False, loc="upper center", bbox_to_anchor=(0.5, -0.12), ncol=2)
     # interaction: joint model, every cohort with a comparison
-    J = I[(I["features"] == "shortlist") & (I["model"] == "joint")].copy() if len(I) else pd.DataFrame()
+    J = risk_convention(I[(I["features"] == "shortlist") & (I["model"] == "joint")]) if len(I) else pd.DataFrame()
+    if len(J):
+        J["ratio"], J["low"], J["high"] = J["ratio_risk"], J["low_risk"], J["high_risk"]
     if len(J):
         J["lab"] = J["unit"] + " | " + J["cohort"] + " " + J["outcome"].str.replace("survival ", "").str.replace("response", "resp.")
         for i, (_, r) in enumerate(J.iterrows()):
@@ -308,14 +333,14 @@ def forest(S, I):
             ax[2].text(1.02, i, f"p={r['p']:.2g}", transform=ax[2].get_yaxis_transform(), fontsize=6.5, va="center")
         ax[2].set_yticks(range(len(J))); ax[2].set_yticklabels(J["lab"], fontsize=6.5); ax[2].invert_yaxis()
         ax[2].axvline(1, color="k", ls="--", lw=0.8); ax[2].set_xscale("log")
-        ax[2].set_xlabel("treatment x score interaction (joint model)\nHR (survival) or OR (response)")
+        ax[2].set_xlabel("treatment x risk-score interaction (joint model)\nHR or OR (> 1 = drug-specific direction)")
         ax[2].set_title("Drug-specific test (drug vs comparison)", fontsize=9)
     PS.letters(ax, x=-0.25)
     fig.tight_layout()
     PS.save(fig, C.FIGS / "forest_cross_cancer", caption="""**Cross-cancer summary (network-proximal pathways).**
-(a) Pooled hazard ratio per SD of the score in held-out treated patients (Cox model stratified by cohort; 95% CI), for the organoid-only (orange), patient-only (light blue) and joint (green) models, one row per cancer x drug unit. HR below 1 means a higher score goes with longer event-free survival.
+(a) Pooled hazard ratio per SD of the risk score in held-out treated patients (Cox model stratified by cohort; 95% CI), for the organoid-only (orange), patient-only (light blue) and joint (green) models, one row per cancer x drug unit. HR above 1 is the expected direction (higher risk score, shorter event-free survival), the convention used in every folder.
 (b) Pooled held-out concordance (pairs compared only within a cohort): circles are C-index for survival, triangles are AUROC for response. 0.5 = chance.
-(c) Treatment x score interaction of the joint model in every cohort that has a comparison group (untreated, placebo, or another drug). Drug-specific direction: HR below 1 for survival rows (PFS/RFS/DFS/OS), OR above 1 for response rows ('resp.'). p-values printed at the right.
+(c) Treatment x risk-score interaction of the joint model in every cohort that has a comparison group (untreated, placebo, or another drug). Drug-specific direction: above 1, for survival rows (PFS/RFS/DFS/OS, interaction HR) and response rows ('resp.', interaction OR). p-values printed at the right.
 """)
 
 

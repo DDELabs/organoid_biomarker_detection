@@ -1,0 +1,19 @@
+heldout	model	train_cohorts	w	lam	unit	features
+TCGA-BLCA	patient-only	GSE31684:survival;GSE48276:survival;GSE70691:survival;GSE169455:response;GSE52219:response	0.0	3.0	BLCA_CISPLATIN	shortlist
+TCGA-BLCA	joint	GSE31684:survival;GSE48276:survival;GSE70691:survival;GSE169455:response;GSE52219:response	0.25	3.0	BLCA_CISPLATIN	shortlist
+TCGA-BLCA	joint (w=0.5)	GSE31684:survival;GSE48276:survival;GSE70691:survival;GSE169455:response;GSE52219:response	0.5	1.0	BLCA_CISPLATIN	shortlist
+GSE31684	patient-only	TCGA-BLCA:survival;GSE48276:survival;GSE70691:survival;GSE169455:response;GSE52219:response	0.0	1.0	BLCA_CISPLATIN	shortlist
+GSE31684	joint	TCGA-BLCA:survival;GSE48276:survival;GSE70691:survival;GSE169455:response;GSE52219:response	0.25	1.0	BLCA_CISPLATIN	shortlist
+GSE31684	joint (w=0.5)	TCGA-BLCA:survival;GSE48276:survival;GSE70691:survival;GSE169455:response;GSE52219:response	0.5	1.0	BLCA_CISPLATIN	shortlist
+GSE48276	patient-only	TCGA-BLCA:survival;GSE31684:survival;GSE70691:survival;GSE169455:response;GSE52219:response	0.0	3.0	BLCA_CISPLATIN	shortlist
+GSE48276	joint	TCGA-BLCA:survival;GSE31684:survival;GSE70691:survival;GSE169455:response;GSE52219:response	0.25	10.0	BLCA_CISPLATIN	shortlist
+GSE48276	joint (w=0.5)	TCGA-BLCA:survival;GSE31684:survival;GSE70691:survival;GSE169455:response;GSE52219:response	0.5	10.0	BLCA_CISPLATIN	shortlist
+GSE70691	patient-only	TCGA-BLCA:survival;GSE31684:survival;GSE48276:survival;GSE169455:response;GSE52219:response	0.0	10.0	BLCA_CISPLATIN	shortlist
+GSE70691	joint	TCGA-BLCA:survival;GSE31684:survival;GSE48276:survival;GSE169455:response;GSE52219:response	0.25	10.0	BLCA_CISPLATIN	shortlist
+GSE70691	joint (w=0.5)	TCGA-BLCA:survival;GSE31684:survival;GSE48276:survival;GSE169455:response;GSE52219:response	0.5	10.0	BLCA_CISPLATIN	shortlist
+GSE169455	patient-only	TCGA-BLCA:survival;GSE31684:survival;GSE48276:survival;GSE70691:survival;GSE52219:response	0.0	10.0	BLCA_CISPLATIN	shortlist
+GSE169455	joint	TCGA-BLCA:survival;GSE31684:survival;GSE48276:survival;GSE70691:survival;GSE52219:response	0.25	3.0	BLCA_CISPLATIN	shortlist
+GSE169455	joint (w=0.5)	TCGA-BLCA:survival;GSE31684:survival;GSE48276:survival;GSE70691:survival;GSE52219:response	0.5	3.0	BLCA_CISPLATIN	shortlist
+GSE52219	patient-only	TCGA-BLCA:survival;GSE31684:survival;GSE48276:survival;GSE70691:survival;GSE169455:response	0.0	3.0	BLCA_CISPLATIN	shortlist
+GSE52219	joint	TCGA-BLCA:survival;GSE31684:survival;GSE48276:survival;GSE70691:survival;GSE169455:response	0.25	3.0	BLCA_CISPLATIN	shortlist
+GSE52219	joint (w=0.5)	TCGA-BLCA:survival;GSE31684:survival;GSE48276:survival;GSE70691:survival;GSE169455:response	0.5	3.0	BLCA_CISPLATIN	shortlist

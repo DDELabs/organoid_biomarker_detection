@@ -95,7 +95,7 @@ for k, r in C.iterrows():
     ax.text(k - 0.2, r["observed_p_below_0.05"] + 0.2, f"{int(r['observed_p_below_0.05'])}", ha="center", fontsize=7)
 ax.set_xticks(xx)
 ax.set_xticklabels(["treated\nlog-rank", "response\nshuffle", "random-\npathway", "untreated\nlog-rank",
-                    "interaction", "multi-pathway\nk=10"], fontsize=7)
+                    "interaction", "multi-pathway\nk=10"], fontsize=7, rotation=35, ha="right")   # audit I23: no overlap
 ax.set_ylabel("Number of the 57 analyses")
 ax.set_ylim(0, 14.5)
 ax.legend(frameon=False, fontsize=7, loc="upper left")
@@ -172,9 +172,10 @@ letter(ax, "a")
 ax = axs[1]
 ax.plot(D, [mdhr(x) for x in D], color="k")
 ax.scatter(ev, M["MDHR_80"], s=14, c=[dircol(r) for _, r in M.iterrows()], edgecolor="k", lw=0.3, zorder=3)
-for _, r in M[M["treated_p"] < 0.05].iterrows():
-    ax.annotate(r["analysis_id"].split("__")[-1].lower(), (r["treated_events"], r["MDHR_80"]), fontsize=6.5,
-                xytext=(3, 3), textcoords="offset points")
+for k, (_, r) in enumerate(M[M["treated_p"] < 0.05].sort_values("treated_events").iterrows()):   # audit I23: staggered labels
+    ax.annotate(r["analysis_id"].split("__")[-1].lower(), (r["treated_events"], r["MDHR_80"]), fontsize=7,
+                xytext=(4, 10 if k % 2 == 0 else -12), textcoords="offset points",
+                arrowprops=dict(arrowstyle="-", lw=0.4, color="0.4"))
 ax.set_xscale("log"); ax.set_yscale("log")
 from matplotlib.ticker import NullFormatter
 ax.yaxis.set_minor_formatter(NullFormatter())

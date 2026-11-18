@@ -1,0 +1,10 @@
+unit	PAAD_GEMCITABINE
+features	all
+n_features	673
+feature_source	all 673 Reactome pathways
+design	5-fold cross-fitting by patient within the single cohort (5 repeats)
+trainable_cohorts	TCGA-PAAD
+organoid_alpha	10000.0
+lab	pancreas_tiriac2018:GEMCITABINE n=36 dropped_axes=3;pancreas_shi2022:GEMCITABINE n=39 dropped_axes=4
+n_lab	75
+seconds	280.2

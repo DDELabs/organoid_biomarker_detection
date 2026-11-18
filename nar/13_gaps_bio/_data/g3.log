@@ -1,0 +1,18 @@
+      score          drug   n       rho        lo        hi         p  share_pathways_rho_le  share_random_sets_rho_le
+0   current    NAVITOCLAX  19  0.046553 -0.440470  0.512405  0.849902               0.611632                    0.5830
+1   current     OBATOCLAX  19 -0.375439 -0.723113  0.124019  0.113198               0.097561                    0.0585
+2   current  FLUOROURACIL  19 -0.407733 -0.740818  0.086295  0.083124               0.069418                    0.0415
+3   current   OXALIPLATIN  19 -0.334504 -0.699995  0.169847  0.161575               0.116323                    0.0880
+8   authors    NAVITOCLAX  19 -0.039526 -0.507195  0.446126  0.872366               0.503268                       NaN
+9   authors     OBATOCLAX  19 -0.203509 -0.620483  0.303173  0.403352               0.326797                       NaN
+10  authors  FLUOROURACIL  19 -0.571178 -0.823845 -0.129145  0.010636               0.014706                       NaN
+11  authors   OXALIPLATIN  19 -0.336260 -0.701003  0.167925  0.159249               0.111111                       NaN
+         drug   n       rho         p  rank_most_negative
+0     AMG-706  19 -0.702729  0.000792                   1
+1   ZM-447439  19 -0.664910  0.001896                   2
+2    LY317615  19 -0.633333  0.003603                   3
+3  CHIR-99021  19 -0.571554  0.010573                   4
+4   PD-173074  19 -0.570551  0.010742                   5
+5   NUTLIN-3A  19 -0.533567  0.018635                   6
+6   DASATINIB  19 -0.493199  0.031895                   7
+7  VORINOSTAT  19 -0.492982  0.031982                   8

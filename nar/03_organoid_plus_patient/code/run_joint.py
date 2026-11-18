@@ -41,9 +41,16 @@ def unit_data(u):
         drugs = x["drugs"].fillna("")
         tr = drugs.str.contains(cfg["treated"], regex=True)
         cmp = drugs.str.contains(cfg["comparison"], regex=True) & ~tr if cfg.get("comparison") else pd.Series(False, index=x.index)
+        if cfg.get("exclude"):                      # audit fix I02: e.g. FOLFIRINOX out of both arms
+            ex = drugs.str.contains(cfg["exclude"], regex=True)
+            tr, cmp = tr & ~ex, cmp & ~ex
         if cfg.get("no_stage4"):
             st = x["stage"].map(C.stage_num)
             keep = ~(st == 4)
+            tr, cmp = tr & keep, cmp & keep
+        if cfg.get("stages"):                       # audit fix I01: keep only the listed stages (GSE39582: II-III)
+            st = x["stage"].map(C.stage_num)
+            keep = st.isin(cfg["stages"])
             tr, cmp = tr & keep, cmp & keep
         x["group"] = np.where(tr, "treated", np.where(cmp, "comparison", "other"))
         x = x[x["group"] != "other"]
@@ -122,10 +129,23 @@ def fit_all(Xo, yo, blocks, seed):
     return out
 
 
-def run_unit(u, features, seed=C.SEED):
+def run_unit(u, features, seed=C.SEED, fold_align=False):
+    """fold_align=True (audit fix I06): the lab-model alignment (contrastive PCA + CORAL) is redone inside each
+    fold using only the training patients' expression (held-out cohort / test-fold patients removed)."""
     t0 = time.time()
     D, ZD, Zall = unit_data(u)
     Xo_full, yo, labinfo = lab_data(u, Zall)
+    zcoh = C.patients()[0].loc[Zall.index, "cohort"].replace(u.get("merge", {}))
+
+    def Xo_without(drop_index=None, drop_cohorts=()):
+        """Organoid features aligned to the unit's patients minus the held-out ones (fold_align only)."""
+        if not fold_align:
+            return Xo
+        keep = ~zcoh.isin(list(drop_cohorts))
+        if drop_index is not None:
+            keep &= ~zcoh.index.isin(drop_index)
+        Xf, _, _ = lab_data(u, Zall[keep.values])
+        return Xf[feats].values
     if features == "shortlist":
         feats, how = shortlist(u["short"], list(Zall.columns))
     else:
@@ -134,6 +154,7 @@ def run_unit(u, features, seed=C.SEED):
     yo_v = yo.values
     beta_org, alpha_org = C.organoid_only(Xo, yo_v)
     mn = u.get("min_train", (None, None))
+    org_fold = {}                                   # fold_align: organoid-only refit per fold
     train_c = trainable(D, *mn)
     models = ["organoid-only", "patient-only", "joint", "joint (w=0.5)"]
     scores = pd.DataFrame(np.nan, index=D.index, columns=models)
@@ -143,8 +164,11 @@ def run_unit(u, features, seed=C.SEED):
         design = "leave-one-cohort-out"
         for c in train_c:
             blocks, used = blocks_for(D, [x for x in train_c if x != c], feats, ZD)
-            fits = fit_all(Xo, yo_v, blocks, seed)
+            Xf = Xo_without(drop_cohorts=[c])
+            fits = fit_all(Xf, yo_v, blocks, seed)
             idx = D.index[D["unit_cohort"] == c]
+            if fold_align:
+                scores.loc[idx, "organoid-only"] = ZD.loc[idx, feats].values @ C.organoid_only(Xf, yo_v)[0]
             for m, (b, info) in fits.items():
                 scores.loc[idx, m] = ZD.loc[idx, feats].values @ b
                 fold_info.append(dict(heldout=c, model=m, train_cohorts=";".join(f"{k}:{t}" for k, t, _ in used), **info))
@@ -153,9 +177,12 @@ def run_unit(u, features, seed=C.SEED):
         full_fits = None
         if rest:
             blocks, used = blocks_for(D, train_c, feats, ZD)
-            full_fits = fit_all(Xo, yo_v, blocks, seed)
+            Xf = Xo_without(drop_cohorts=rest)
+            full_fits = fit_all(Xf, yo_v, blocks, seed)
             for c in rest:
                 idx = D.index[D["unit_cohort"] == c]
+                if fold_align:
+                    scores.loc[idx, "organoid-only"] = ZD.loc[idx, feats].values @ C.organoid_only(Xf, yo_v)[0]
                 for m, (b, info) in full_fits.items():
                     scores.loc[idx, m] = ZD.loc[idx, feats].values @ b
                     fold_info.append(dict(heldout=c, model=m, train_cohorts="all trainable", **info))
@@ -172,8 +199,8 @@ def run_unit(u, features, seed=C.SEED):
             for f in range(5):
                 Dtr = D.drop(fold.index[fold == f])
                 blocks, used = blocks_for(Dtr, [c], feats, ZD, *mn)
-                fits = fit_all(Xo, yo_v, blocks, seed + rep)
                 te = fold.index[fold == f]
+                fits = fit_all(Xo_without(drop_index=te), yo_v, blocks, seed + rep)
                 comp = D.index[D["group"] != "treated"]
                 for m, (b, info) in fits.items():
                     acc[m].loc[te] += ZD.loc[te, feats].values @ b
@@ -186,7 +213,7 @@ def run_unit(u, features, seed=C.SEED):
         for m in models[1:]:
             scores[m] = acc[m] / cnt
     ev, it = evaluate(D, scores, models)
-    meta = dict(unit=u["id"], features=features, n_features=len(feats), feature_source=how, design=design,
+    meta = dict(unit=u["id"], features=features + ("_foldalign" if fold_align else ""), fold_align=fold_align, n_features=len(feats), feature_source=how, design=design,
                 trainable_cohorts=";".join(train_c), organoid_alpha=alpha_org,
                 lab=";".join(f"{x['set']}:{x['drug']}{'/' + x['lineage'] if x['lineage'] else ''} n={x['n']} dropped_axes={x['dropped_axes']}" for x in labinfo),
                 n_lab=int(len(yo)), seconds=round(time.time() - t0, 1))
@@ -275,13 +302,15 @@ def main():
     ap.add_argument("units", nargs="*")
     ap.add_argument("--features", default="both")
     ap.add_argument("--jobs", type=int, default=2)
+    ap.add_argument("--fold-align", action="store_true", help="audit fix I06: realign inside each fold; tag <features>_foldalign")
     a = ap.parse_args()
     us = [u for u in UNITS if not a.units or u["id"] in a.units]
     feats = ["shortlist", "all"] if a.features == "both" else [a.features]
     jobs = [(u, f) for u in us for f in feats]
 
     def one(u, f):
-        D, sc, ev, it, fi, meta, extra = run_unit(u, f)
+        D, sc, ev, it, fi, meta, extra = run_unit(u, f, fold_align=a.fold_align)
+        f = f + ("_foldalign" if a.fold_align else "")
         tag = f"{u['id']}__{f}"
         ev.assign(unit=u["id"], features=f).to_csv(C.TABLES / f"{tag}__eval.tsv", sep="\t", index=False)
         it.assign(unit=u["id"], features=f).to_csv(C.TABLES / f"{tag}__interaction.tsv", sep="\t", index=False)

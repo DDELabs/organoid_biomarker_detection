@@ -1,0 +1,7 @@
+family	n_tests	observed_p_below_0.05	expected_by_chance	binomial_p_at_least_observed	observed_p_below_0.01	expected_0.01	BH_q_below_0.05	BH_q_below_0.10	Holm_below_0.05	expected_direction_among_p_below_0.05
+treated log-rank p (rank-1)	57	7	2.85	0.023103644489763996	2	0.5700000000000001	0	1	0	4.0
+permutation p (response shuffle)	57	3	2.85	0.5475069811979753	0	0.5700000000000001	0	0	0	
+random-pathway bootstrap p	57	5	2.85	0.15541425974642856	1	0.5700000000000001	0	0	0	
+untreated log-rank p	57	12	2.85	2.0907266003245914e-05	1	0.5700000000000001	0	1	0	
+interaction p (score x treated)	57	5	2.85	0.15541425974642856	1	0.5700000000000001	0	0	0	
+multi-pathway k=10 log-rank p	57	7	2.85	0.023103644489763996	0	0.5700000000000001	0	0	0	

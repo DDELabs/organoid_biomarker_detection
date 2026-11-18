@@ -22,7 +22,13 @@ J = importlib.util.module_from_spec(spec)
 sys.modules["j_common"] = J
 spec.loader.exec_module(J)
 
+sys.path.insert(0, str(REPO / "nar" / "15_fixes" / "code"))
+import definitions as DEF  # noqa: E402  shared patient definitions (audit fixes I01, I02)
+
 N_NULL = 1000
+G39 = r"^(" + "|".join(DEF.GSE39582_ARMS["5FU_based"]) + r")\|"          # I01: 5FU|FUFOL|FOLFOX, stage II-III
+G39_NONE = r"^no chemotherapy\|NONE$"
+OX_ONLY = r"^(?!.*IRINOTECAN).*OXALIPLATIN"                                 # I02: FOLFIRINOX out of the oxaliplatin arm
 NONE = r"^NONE$"
 FU = r"FLUOROURACIL|CHEMOTHERAPY"
 
@@ -41,11 +47,11 @@ GROUPS = {
 
 # tests: (group, cohort, label, treated(arm/drugs regex on 'arm|drugs'), comparator regex or None, endpoint, filter)
 T = [
-    ("CRC_5FU", "GSE39582", "5-FU-based vs no chemo (stage II-III)", r"\|.*(" + FU + ")", r"\|NONE$", "rfs", "nost4"),
-    ("CRC_5FU", "GSE39582", "5-FU-based vs no chemo (stage II-III)", r"\|.*(" + FU + ")", r"\|NONE$", "os", "nost4"),
-    ("CRC_5FU", "GSE39582", "5FU alone vs no chemo", r"^5FU\|", r"\|NONE$", "rfs", "nost4"),
-    ("CRC_5FU", "GSE39582", "FUFOL vs no chemo", r"^FUFOL\|", r"\|NONE$", "rfs", "nost4"),
-    ("CRC_5FU", "GSE39582", "FOLFOX vs no chemo", r"^FOLFOX\|", r"\|NONE$", "rfs", "nost4"),
+    ("CRC_5FU", "GSE39582", "5-FU-based vs no chemo (stage II-III)", G39, G39_NONE, "rfs", "st23"),
+    ("CRC_5FU", "GSE39582", "5-FU-based vs no chemo (stage II-III)", G39, G39_NONE, "os", "st23"),
+    ("CRC_5FU", "GSE39582", "5FU alone vs no chemo", r"^5FU\|", G39_NONE, "rfs", "st23"),
+    ("CRC_5FU", "GSE39582", "FUFOL vs no chemo", r"^FUFOL\|", G39_NONE, "rfs", "st23"),
+    ("CRC_5FU", "GSE39582", "FOLFOX vs no chemo", r"^FOLFOX\|", G39_NONE, "rfs", "st23"),
     ("CRC_5FU", "GSE103479", "5-FU adjuvant vs surgery only", r"FLUOROURACIL", r"\|NONE$", "os", "nost4"),
     ("CRC_5FU", "GSE103479", "5-FU adjuvant vs surgery only", r"FLUOROURACIL", r"\|NONE$", "pfs", "nost4"),
     ("CRC_5FU", "GSE14333", "adjuvant chemo vs none (stage I-III)", r"CHEMOTHERAPY", r"\|NONE$", "dfs", "nost4"),
@@ -57,19 +63,19 @@ T = [
     ("CRC_5FU", "GSE19860", "mFOLFOX6", r"FLUOROURACIL", None, "resp", None),
     ("CRC_5FU", "GSE62080", "FOLFIRI", r"FLUOROURACIL", None, "resp", None),
     ("CRC_5FU", "GSE104645", "5-FU/tegafur-based (metastatic)", r"FLUOROURACIL|TEGAFUR", None, "resp", None),
-    ("CRC_OXALIPLATIN", "GSE72970", "FOLFOX vs FOLFIRI", r"OXALIPLATIN", r"^(?!.*OXALIPLATIN).*IRINOTECAN", "pfs", None),
-    ("CRC_OXALIPLATIN", "GSE72970", "FOLFOX vs FOLFIRI", r"OXALIPLATIN", r"^(?!.*OXALIPLATIN).*IRINOTECAN", "resp", None),
-    ("CRC_OXALIPLATIN", "GSE39582", "FOLFOX vs no chemo", r"OXALIPLATIN", r"\|NONE$", "rfs", "nost4"),
+    ("CRC_OXALIPLATIN", "GSE72970", "FOLFOX vs FOLFIRI", OX_ONLY, r"^(?!.*OXALIPLATIN).*IRINOTECAN", "pfs", None),
+    ("CRC_OXALIPLATIN", "GSE72970", "FOLFOX vs FOLFIRI", OX_ONLY, r"^(?!.*OXALIPLATIN).*IRINOTECAN", "resp", None),
+    ("CRC_OXALIPLATIN", "GSE39582", "FOLFOX vs no chemo", r"^FOLFOX\|", G39_NONE, "rfs", "st23"),
     ("CRC_OXALIPLATIN", "GSE87211", "5-FU+oxaliplatin+RT vs 5-FU+RT", r"OXALIPLATIN", r"\|FLUOROURACIL;RADIOTHERAPY$", "dfs", None),
     ("CRC_OXALIPLATIN", "GSE87211", "5-FU+oxaliplatin+RT vs 5-FU+RT", r"OXALIPLATIN", r"\|FLUOROURACIL;RADIOTHERAPY$", "resp", None),
     ("CRC_OXALIPLATIN", "GSE28702", "mFOLFOX6", r"OXALIPLATIN", None, "resp", None),
     ("CRC_OXALIPLATIN", "GSE19860", "mFOLFOX6", r"OXALIPLATIN", None, "resp", None),
-    ("CRC_OXALIPLATIN", "GSE104645", "oxaliplatin vs irinotecan regimens", r"OXALIPLATIN", r"^(?!.*OXALIPLATIN).*IRINOTECAN", "resp", None),
+    ("CRC_OXALIPLATIN", "GSE104645", "oxaliplatin vs irinotecan regimens", OX_ONLY, r"^(?!.*OXALIPLATIN).*IRINOTECAN", "resp", None),
     ("CRC_IRINOTECAN", "GSE72970", "FOLFIRI vs FOLFOX", r"^(?!.*OXALIPLATIN).*IRINOTECAN", r"^(?!.*IRINOTECAN).*OXALIPLATIN", "pfs", None),
     ("CRC_IRINOTECAN", "GSE72970", "FOLFIRI vs FOLFOX", r"^(?!.*OXALIPLATIN).*IRINOTECAN", r"^(?!.*IRINOTECAN).*OXALIPLATIN", "resp", None),
     ("CRC_IRINOTECAN", "GSE62080", "FOLFIRI", r"IRINOTECAN", None, "resp", None),
     ("CRC_IRINOTECAN", "GSE104645", "irinotecan vs oxaliplatin regimens", r"^(?!.*OXALIPLATIN).*IRINOTECAN", r"^(?!.*IRINOTECAN).*OXALIPLATIN", "resp", None),
-    ("CRC_IRINOTECAN", "GSE39582", "FOLFIRI vs no chemo", r"IRINOTECAN", r"\|NONE$", "rfs", "nost4"),
+    ("CRC_IRINOTECAN", "GSE39582", "FOLFIRI vs no chemo", r"^FOLFIRI\|", G39_NONE, "rfs", "st23"),
     ("BLCA_CISPLATIN", "GSE169455", "neoadjuvant/induction cisplatin", r"CISPLATIN", None, "resp", None),
     ("BLCA_CISPLATIN", "GSE52219", "neoadjuvant MVAC", r"CISPLATIN", None, "resp", None),
     ("BLCA_CISPLATIN", "GSE48276", "neoadjuvant MVAC vs none", r"CISPLATIN", r"\|NONE$", "os", None),
@@ -173,6 +179,8 @@ def cohort_rows(P, cohort, treat, comp, endpoint, filt):
     d["arm1"] = tr[d.index].astype(int)
     if filt == "nost4":
         d = d[d["stage"].map(J.stage_num) != 4]
+    if filt == "st23":                                        # I01 shared GSE39582 definition: stage II-III only
+        d = d[d["stage"].map(J.stage_num).isin(DEF.GSE39582_STAGES)]
     if endpoint == "resp":
         d = d[d["responder"].notna()]
     else:

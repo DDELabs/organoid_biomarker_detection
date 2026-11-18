@@ -9,7 +9,11 @@ Folder `nar/09_registered_test/`. Code in `code/` (run in order `s00`–`s04`), 
   `a0bdd620293e2559667cf7f4c218894ae3e70cf1eb404558a084d28aee878ab7`, the same as `nar/08_depmap/tables/frozen_hypotheses.sha256`.
   The code checks this hash at every run and stops if it differs. The file was never edited.
 - The analysis plan (`ANALYSIS_PLAN.md`, sha256 `97b2a634…1ef1967`, written 2026-11-17T13:11:00Z) was written before
-  any outcome was opened. Everything below follows it. Post-hoc remarks are marked as such.
+  any outcome was opened. Everything below follows it. Post-hoc remarks are marked as such. Wording note (audit I16):
+  this is an **internally time-stamped analysis plan**, not an external registration. The proof of timing is the sha256
+  hashes and file times only; the TCGA survival cache was built at 13:08, before the plan (13:11), and the plan was
+  committed to git after the results (13:22). Before any further (Stage 3) test, the plan and its hash should be
+  deposited publicly (OSF or Zenodo).
 - **Stage 1 (TCGA, 7 primary tests):** no drug's score showed the predicted score × drug interaction. All 7
   Holm-adjusted p-values are 1.0. The closest was gemcitabine (HR 1.12, 95% CI 0.94–1.32, p = 0.199; random-signature
   p = 0.070). **Gate G2: 0 of 7 drugs pass.**
@@ -19,7 +23,7 @@ Folder `nar/09_registered_test/`. Code in `code/` (run in order `s00`–`s04`), 
 - Power was the main limit. Only paclitaxel, gemcitabine and 5-FU had ≥ 80% power in TCGA for an interaction HR of
   1.43 per SD. No external cohort had ≥ 80% power for that effect (the best was 54%).
 
-What I think: with a clean pre-registered design, these cell-line-derived pathway hypotheses do not show
+What I think: with a clean, internally time-stamped design, these cell-line-derived pathway hypotheses do not show
 drug-specific predictive value in patients. For paclitaxel, gemcitabine and 5-FU this is an informative estimate: the
 confidence intervals exclude interaction HRs above about 1.13–1.32 per SD in TCGA. For irinotecan, sorafenib,
 oxaliplatin and pemetrexed the patient data cannot tell either way.
@@ -96,10 +100,11 @@ off drug), it does so just as much without the drug. That points to a general (p
 | Gemcitabine | 1.11 (0.94–1.31), p 0.211 | 1.19 (0.97–1.42), p 0.071 | 1.04 (0.87–1.25), p 0.682 | **1.49 (1.12–1.99), p 0.006** (Holm within family 0.043) | – |
 | Paclitaxel | 1.00 (0.88–1.12), p 0.937 | 0.90 (0.74–1.12), p 0.313 | 0.89 (0.78–1.03), p 0.111 | 0.80 (0.63–1.02), p 0.071 | – |
 | Pemetrexed | 0.94 (0.67–1.32), p 0.713 | 0.91 (0.58–1.29), p 0.637 | 0.82 (0.54–1.25), p 0.356 | 0.98 (0.69–1.38), p 0.886 | – |
-| Sorafenib | 0.82 (0.45–1.50), p 0.515 | 0.82 (0.19–2.89), p 1.000* | 0.84 (0.43–1.65), p 0.619 | 1.40 (0.47–4.21), p 0.546 | – |
+| Sorafenib | 0.82 (0.45–1.50), p 0.515 | 0.82 (0.19–2.89), p NA* | 0.84 (0.43–1.65), p 0.619 | 1.40 (0.47–4.21), p 0.546 | – |
 
 \*Sorafenib IPW: with 6 events on the drug, some bootstrap fits were unstable. That inflated the bootstrap SE
-(z ≈ 0). The percentile interval is shown. IPW weights were well behaved: range 0.18–5.56, effective sample size
+(z ≈ 0, which printed as p = 1.000). The percentile interval is shown and the p-value is reported as NA (audit I20);
+`tables/stage1_sensitivity.tsv` still holds the raw bootstrap-SE value. IPW weights were well behaved: range 0.18–5.56, effective sample size
 47–99% of n (`tables/stage1_ipw_weights.tsv`).
 
 What I think: no adjustment changes the picture. Gemcitabine is the one to note. When proliferation and its own
@@ -276,6 +281,18 @@ oxaliplatin and irinotecan) or new data (Stage 3).
   adjustment, IPW and an active comparator.
 - In TCGA, irinotecan and sorafenib are mostly given after progression. Under the pre-specified PFI design (exposure
   must come before the event), only 23 and 8 patients counted as exposed.
+- Drug records without a start day are counted as exposed from day 0 (1–6% of patients per drug). Sensitivity
+  (audit I19, `tables/stage1_sensitivity_no_missing_start.tsv`, made by `nar/15_fixes/code/f09_sensitivity.py`):
+  dropping these patients changes the primary PFI interaction HRs only slightly: 5-FU 0.93 → 0.93 (7 dropped),
+  oxaliplatin 0.93 → 0.91 (2), irinotecan unchanged (0), gemcitabine 1.12 (p 0.199) → 1.09 (p 0.326) (12),
+  paclitaxel 1.00 → 1.01 (59), pemetrexed 0.98 → 0.95 (4), sorafenib 0.82 → 0.71 (1). No drug changes its conclusion.
+- GSE39582 treated group (audit I01). The primary Stage 2 test (frozen) uses 5FU/FUFOL/FOLFOX/FOLFIRI at all stages
+  (156 vs 298 with RFS). The project-wide shared definition (`nar/15_fixes/definitions/GSE39582_treatment.tsv`:
+  5FU/FUFOL/FOLFOX, stage II–III, unknown regimen excluded) gives, as a sensitivity analysis
+  (`tables/stage2_sensitivity_GSE39582_harmonised.tsv`): RFS interaction HR 1.17 (0.80–1.71), one-sided p = 0.21,
+  137 vs 252 patients (47 vs 61 events); OS 1.20 (0.81–1.80), p = 0.18. The primary was 1.06 (0.74–1.52), p = 0.37.
+  What I think: the harmonised definition moves the estimate a little towards the expected direction, but it stays
+  far from p < 0.025.
 - GSE14333 "adjuvant chemotherapy" has no regimen recorded. It was assumed to be 5-FU-based, as stated in the plan.
 - The only change after the plan was cosmetic (figure layout), plus one numerical fix. The first Stage 1 run crashed
   in the sorafenib random-set null. By then it had already printed the primary PFI estimates, so I had seen them. I

@@ -1,0 +1,38 @@
+                                  effect                                   subset   k        HR   lo_HKSJ   hi_HKSJ    p_HKSJ      hi90  tau2_REML        I2     PI_lo     PI_hi
+0      continuous score per SD (primary)                             all analyses  57  0.963858  0.902159  1.029776  0.269733  1.018591   0.006467  0.198800  0.809746  1.147301
+1      continuous score per SD (primary)               drug class: antimetabolite  16  0.945754  0.811366  1.102402  0.450024  1.072811   0.019698  0.447072  0.674354  1.326382
+2      continuous score per SD (primary)                  drug class: microtubule  10  1.020419  0.903971  1.151866  0.714653  1.125697   0.000000  0.000000  0.901851  1.154575
+3      continuous score per SD (primary)                     drug class: platinum  13  1.022066  0.886895  1.177838  0.743239  1.147819   0.007078  0.232676  0.808710  1.291709
+4      continuous score per SD (primary)               drug class: targeted/other   9  0.893833  0.663571  1.203996  0.410233  1.136524   0.000000  0.000000  0.658566  1.213148
+5      continuous score per SD (primary)  drug class: topoisomerase/anthracycline   8  0.895212  0.719920  1.113186  0.268759  1.065993   0.000000  0.000000  0.714481  1.121660
+6      continuous score per SD (primary)    one analysis per patient cluster (11)  11  0.877525  0.716378  1.074922  0.181886  1.034994   0.031403  0.567806  0.559140  1.377204
+7      continuous score per SD (primary)    excluding the two paper-era file sets  53  0.951195  0.890366  1.016180  0.134747  1.005131   0.006785  0.172616  0.796019  1.136622
+8      continuous score per SD (primary)                        TCGA cohort: BLCA   8  1.112598  0.881919  1.403614  0.313519  1.340259   0.000000  0.000000  0.874817  1.415009
+9      continuous score per SD (primary)                        TCGA cohort: BRCA   3  1.021567  0.529348  1.971477  0.901736  1.596017   0.000000  0.000000  0.146582  7.119565
+10     continuous score per SD (primary)                        TCGA cohort: COAD  10  0.901761  0.685691  1.185919  0.415278  1.125880   0.038240  0.229420  0.530571  1.532639
+11     continuous score per SD (primary)                    TCGA cohort: COADREAD   3  0.787545  0.462050  1.342336  0.193795  1.130943   0.000000  0.000000  0.163071  3.803421
+12     continuous score per SD (primary)                        TCGA cohort: LUAD  11  0.988189  0.741284  1.317334  0.928452  1.248541   0.043069  0.460700  0.568540  1.717590
+13     continuous score per SD (primary)                          TCGA cohort: OV   6  1.051600  0.949272  1.164959  0.262167  1.139469   0.000000  0.000000  0.941521  1.174549
+14     continuous score per SD (primary)                        TCGA cohort: PAAD   9  0.927189  0.766841  1.121066  0.385406  1.080603   0.011823  0.000000  0.671587  1.280071
+15                          median split                             all analyses  54  0.980260  0.866085  1.109487  0.748025  1.087001   0.011179  0.193182  0.766727  1.253262
+16      adjusted continuous score per SD                             all analyses  49  0.987760  0.921390  1.058911  0.723408  1.046768   0.000000  0.202580  0.921355  1.058952
+17  score x treatment interaction per SD                             all analyses  57  0.948010  0.867936  1.035473  0.230620  1.020497   0.018338  0.109482  0.712644  1.261112
+18  score x treatment interaction per SD               drug class: antimetabolite  16  0.888697  0.733839  1.076234  0.208724  1.040267   0.050637  0.396848  0.528524  1.494319
+19  score x treatment interaction per SD                  drug class: microtubule  10  1.086358  0.897807  1.314508  0.351328  1.267830   0.000000  0.000000  0.894495  1.319374
+20  score x treatment interaction per SD                     drug class: platinum  13  0.989211  0.796088  1.229184  0.915147  1.181545   0.033079  0.331689  0.626668  1.561494
+21  score x treatment interaction per SD               drug class: targeted/other   9  0.871498  0.641915  1.183192  0.329916  1.115184   0.000000  0.000000  0.636945  1.192425
+22  score x treatment interaction per SD  drug class: topoisomerase/anthracycline   8  0.983109  0.714601  1.352509  0.903065  1.269407   0.000000  0.000000  0.706712  1.367606
+23  score x treatment interaction per SD    one analysis per patient cluster (11)  11  0.867566  0.721226  1.043599  0.117407  1.008244   0.015830  0.210982  0.616978  1.219931
+24  score x treatment interaction per SD    excluding the two paper-era file sets  53  0.931860  0.852058  1.019136  0.119762  1.004154   0.016223  0.071242  0.710696  1.221848
+25  score x treatment interaction per SD                        TCGA cohort: BLCA   8  1.139798  0.876697  1.481857  0.276929  1.406531   0.002044  0.000000  0.850108  1.528204
+26  score x treatment interaction per SD                        TCGA cohort: BRCA   3  1.059581  0.527977  2.126442  0.754935  1.699958   0.000000  0.000000  0.135444  8.289093
+27  score x treatment interaction per SD                        TCGA cohort: COAD  10  0.956333  0.715120  1.278907  0.736201  1.210314   0.034271  0.136920  0.568763  1.608001
+28  score x treatment interaction per SD                    TCGA cohort: COADREAD   3  0.791609  0.431420  1.452519  0.239464  1.195116   0.000000  0.000000  0.131838  4.753163
+29  score x treatment interaction per SD                        TCGA cohort: LUAD  11  1.054689  0.870545  1.277785  0.550205  1.232853   0.000000  0.000000  0.867998  1.281534
+30  score x treatment interaction per SD                          TCGA cohort: OV   6  0.977742  0.761239  1.255819  0.826339  1.189694   0.000000  0.000000  0.746132  1.281246
+31  score x treatment interaction per SD                        TCGA cohort: PAAD   9  0.897614  0.641821  1.255350  0.478969  1.176417   0.072355  0.386657  0.435562  1.849818
+   bound  n_analyses  n_upper_bound_below  n_two_sided_equivalent
+0   1.25          57                   18                       4
+1   1.50          57                   33                      13
+2   2.00          57                   44                      27
+3   3.00          57                   52                      44

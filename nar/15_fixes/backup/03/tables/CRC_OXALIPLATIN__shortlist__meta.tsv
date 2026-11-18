@@ -1,0 +1,10 @@
+unit	CRC_OXALIPLATIN
+features	shortlist
+n_features	70
+feature_source	STRING v12 proximity shortlist of OXALIPLATIN (robust/results/survlearn, z <= -1.28)
+design	leave-one-cohort-out
+trainable_cohorts	TCGA-COADREAD;GSE72970;GSE28702;GSE19860;GSE104645;GSE87211
+organoid_alpha	100.0
+lab	colorectal_vandewetering2015:OXALIPLATIN n=19 dropped_axes=7
+n_lab	19
+seconds	40.2

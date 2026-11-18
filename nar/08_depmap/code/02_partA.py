@@ -384,8 +384,7 @@ def fig3(te, ts, tf, fpreds, fnulls):
         ax.set_xlabel("Drugs, sorted by association")
         ax.set_ylabel("BH3 score vs drug response\n(lineage-adjusted rho)")
         ax.set_title(f"{n}: {len(g)} drugs (negative = BH3-high lines\nmore sensitive)", fontsize=8.5)
-    ax = axes[1, 0]
-    panel(ax, "e")
+    ax = axes[1, 0]   # audit I23: no second letter "e" here; the caption calls this "the bottom-left panel of (e)"
     g = te[te.screen == "GDSC2"].dropna(subset=["colon_rho"]).sort_values("colon_rho").reset_index(drop=True)
     ax.scatter(range(len(g)), g.colon_rho, s=4, color=OI["grey"])
     hit = g[g.drug == FU]
@@ -413,7 +412,7 @@ def fig3(te, ts, tf, fpreds, fnulls):
 (e) For every drug in a screen we correlate the BH3-only activation score with drug response across all cell lines,
 after removing differences between cancer types (lineage-adjusted partial Spearman rho). Drugs are sorted from the
 most negative rho (BH3-high lines more sensitive) to the most positive. 5-FU is the red dot; its rank is printed.
-The bottom-left panel repeats this in GDSC2 colorectal lines only. Numbers: `tables/A_e_*.tsv`.
+The bottom-left panel (part of e, no separate letter) repeats this in GDSC2 colorectal lines only. Numbers: `tables/A_e_*.tsv`.
 (f) A cisplatin model was trained on 9 bladder cancer organoids (Lee 2018) with the same robust stability learner
 and the cisplatin-proximal Reactome pathways, then applied unchanged to bladder cancer cell lines. Each dot is a line.
 The title gives Spearman rho and the random-pathway 95% band (1,000 random signatures of equal size).

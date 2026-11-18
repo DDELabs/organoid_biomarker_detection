@@ -16,11 +16,17 @@ the random-signature nulls).
   PDX, HR 0.21, the opposite direction), smallest Holm p = 0.063. The paper's colon 5-FU result: p = 0.014,
   q = 0.27, Holm p = 0.79.
 - Untreated patients show **more** small p-values than treated patients (12 of 57 vs 2.85 expected, binomial
-  p = 0.00002). The same pathway splits often mark general prognosis, not drug response.
+  p = 0.00002). Note (audit I08): the binomial p assumes the 57 tests are independent. They are not: untreated
+  tests share patients (11 LUAD tests use the same 327 untreated patients; ovarian carboplatin and cisplatin give
+  identical p). The binomial p values here are therefore too small; a permutation version that keeps the
+  dependence is gap G9 (`nar/14_gaps_stats/`). The same pathway splits often mark general prognosis, not drug response.
 - Score x treatment interaction: 5 of 57 p < 0.05 (2.85 expected); 3 of the 5 are in the opposite direction; smallest
   BH q = 0.36.
 - Adjusting for age, sex, stage, purity, MSI and regimen keeps the direction in 42 of 49 estimable analyses
-  (correlation of log HR 0.77).
+  (correlation of log HR 0.77). But 27 of those 49 full models have fewer than 3 deaths per estimated term
+  (flagged in `tables/A3_adjusted_cox_epv.tsv`, audit I09); among the 22 with >= 3 deaths per term, 20 keep the
+  direction. A reduced model (at most deaths/3 - 1 covariates: stage, then age, purity, MSI, sex, regimen) keeps
+  the direction in 48 of 54 estimable analyses.
 - Power: median 17 deaths per analysis; median minimal detectable HR (80% power) = 3.9. Only 2 of 57 analyses had
   80% power for HR 1.5 (ovarian carboplatin and paclitaxel), 5 of 57 for HR 2.0. A significant HR from these
   analyses is expected to be 1.7-8 times too large (type-M exaggeration) if the true HR is 1.25-2.
@@ -73,20 +79,22 @@ do. The study is mainly limited by the small number of deaths per test.
 
 | Family (57 tests) | p < 0.05 observed | expected | binomial p | BH q < 0.05 | Holm < 0.05 |
 |---|---|---|---|---|---|
-| treated log-rank (main test) | 7 | 2.85 | 0.023 | 0 | 0 |
+| treated log-rank (main test) | 7 | 2.85 | 0.023 (assumes independence) | 0 | 0 |
 | response-shuffle p | 3 | 2.85 | 0.55 | 0 | 0 |
-| random-pathway bootstrap p | 5 | 2.85 | 0.16 | 0 | 0 |
-| untreated log-rank | 12 | 2.85 | 0.00002 | 0 | 0 |
+| random-pathway bootstrap p (rank-1 p statistic, not the paper's top-rank statistic) | 5 | 2.85 | 0.16 | 0 | 0 |
+| untreated log-rank | 12 | 2.85 | 0.00002 (assumes independence; too small, see G9) | 0 | 0 |
 | score x treatment interaction | 5 | 2.85 | 0.16 | 0 | 0 |
 | multi-pathway (top-10) log-rank | 7 | 2.85 | 0.023 | 0 | 0 |
 
 What I think: there are somewhat more small treated p-values than chance (7 vs 2.85), but the untreated test, which
 cannot reflect drug response, has even more (12). So the excess is better explained by general prognosis than by
-drug-specific prediction. The 57 tests share patients (e.g. colon and colon + rectum), so the binomial p is a guide.
+drug-specific prediction. The 57 tests share patients (e.g. colon and colon + rectum; 11 LUAD untreated tests use the
+same 327 patients), so the binomial p assumes independence that does not hold and is too small. Use it as a guide
+only; the dependence-aware permutation version is gap G9 (`nar/14_gaps_stats/`). [Audit I08.]
 
 **The 7 nominal hits (master table; Fig. 1).**
 
-| Analysis | n / deaths | HR (95% CI) | p | BH q | Holm | perm. p | bootstrap p | direction |
+| Analysis | n / deaths | HR (95% CI) | p | BH q | Holm | perm. p | rank-1 p bootstrap | direction |
 |---|---|---|---|---|---|---|---|---|
 | Novartis PDX melanoma, dacarbazine (SKCM) | 32 / 21 | 0.21 (0.07-0.58) | 0.0011 | 0.063 | 0.063 | 0.065 | 0.013 | opposite |
 | Lung cell lines, pemetrexed (LUAD) | 59 / 15 | 0.19 (0.05-0.69) | 0.0048 | 0.14 | 0.27 | 0.12 | 0.11 | opposite |
@@ -101,7 +109,12 @@ What I think: no single analysis survives correction for 57 tests. Three of the 
 
 **Adjusted Cox (Fig. 3).** 49 analyses gave an estimable adjusted HR for the median split; 42 of 49 kept the same
 direction; correlation of log HR adjusted vs unadjusted = 0.77. Analyses with < 10 deaths become unstable (very wide
-intervals, e.g. rectum oxaliplatin adjusted HR 23.6). Notable: paper bladder cisplatin 2.63 -> 2.27 (0.80-6.46),
+intervals, e.g. rectum oxaliplatin adjusted HR 23.6). Audit I09: 27 of the 49 full models have < 3 deaths per
+estimated term (split + covariates) and are flagged (`low_epv_full` in `tables/A3_master_results.tsv`, details in
+`tables/A3_adjusted_cox_epv.tsv`, summary `tables/A3_adjusted_cox_epv_summary.tsv`). Among the 22 unflagged models,
+20 keep the direction. A reduced model with at most deaths/3 - 1 covariates (priority: stage, age, purity, MSI, sex,
+regimen; >= 3 deaths per term) keeps the direction in 48 of 54 estimable analyses; in analyses with < 6 deaths it has
+no covariates and equals the unadjusted Cox. Reduced model, rectum oxaliplatin: HR 5.37, p = 0.13 (was 23.6). Notable: paper bladder cisplatin 2.63 -> 2.27 (0.80-6.46),
 p = 0.13; dacarbazine 0.21 -> 0.09 (0.02-0.46), p = 0.004; pemetrexed 0.19 -> 0.09 (0.02-0.44), p = 0.003; sarcoma
 docetaxel 1.17 -> 6.86 (1.37-34.4), p = 0.019. For the paper's colon 5-FU result the median-split HR is not
 estimable (no deaths in predicted responders); the continuous score gives HR 1.52 per SD (p = 0.091) unadjusted and

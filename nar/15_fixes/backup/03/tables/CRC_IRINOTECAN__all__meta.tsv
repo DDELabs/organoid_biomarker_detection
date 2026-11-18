@@ -1,0 +1,10 @@
+unit	CRC_IRINOTECAN
+features	all
+n_features	673
+feature_source	all 673 Reactome pathways
+design	leave-one-cohort-out
+trainable_cohorts	GSE72970;TCGA-COADREAD;GSE62080;GSE104645
+organoid_alpha	10000.0
+lab	colorectal_vandewetering2015:IRINOTECAN n=19 dropped_axes=7
+n_lab	19
+seconds	349.0

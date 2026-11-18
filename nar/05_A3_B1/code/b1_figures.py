@@ -82,37 +82,39 @@ MAIN = [("GSE39582", "RFS", "5-FU-based vs no chemo (stage II-III)", "COAD_vande
         ("GSE48276", "OS", "neoadjuvant MVAC vs none", "BLCA_lee2018_paper__BLCA__CISPLATIN|rank1"),
         ("GSE9891", "OS", "platinum+taxane vs platinum alone", "OV_vias2023__OV__PACLITAXEL|rank1"),
         ("GSE42127", "OS", "adjuvant platinum vs observation", "LUAD_cellline_substitute__LUAD__CISPLATIN|rank1")]
-fig, axs = plt.subplots(len(MAIN), 2, figsize=(9.5, 3.0 * len(MAIN)))
+# audit I04: split the 6-cohort KM figure (was 9.5 x 18 in) into two page-sized figures of 3 cohorts each
 L = iter("abcdefghijklmnop")
-for row, (coh, ep, comp, sig) in enumerate(MAIN):
-    d = SC[(SC.cohort == coh) & (SC.endpoint == ep.lower()) & (SC.comparison == comp) & (SC.sig_id == sig)]
-    for col, arm in enumerate((1, 0)):
-        ax = axs[row, col]
-        letter(ax, next(L), x=-0.15)
-        a = d[d.arm1 == arm]
-        if len(a) < 5:
-            ax.set_axis_off(); continue
-        g = (a.score > a.score.median()).astype(int).values
-        for lab, m, c in (("low score (predicted sensitive)", g == 0, OK["blue"]),
-                          ("high score (predicted resistant)", g == 1, OK["verm"])):
-            sf = SurvfuncRight(a["T"].values[m], a["E"].values[m])
-            ax.step(np.r_[0, sf.surv_times], np.r_[1, sf.surv_prob], where="post", color=c,
-                    label=f"{lab}: n={m.sum()}, events={int(a['E'].values[m].sum())}")
-        p = logrank(a["T"], a["E"], g)
-        armname = comp.split(" vs ")[0] if arm == 1 else (comp.split(" vs ")[1] if " vs " in comp else "comparator")
-        ax.set_title(f"{coh} {ep}, {armname}\n{SIGLAB[sig.split('|')[0]]}; log-rank p = {p:.2g}", fontsize=7.5)
-        ax.set_ylim(0, 1.03); ax.set_xlabel("Months"); ax.set_ylabel(f"{ep} probability")
-        ax.legend(frameon=False, fontsize=6, loc="lower left")
-fig.tight_layout()
-save_fig(fig, "B1_Fig5_KM_main_cohorts", """
-**Kaplan-Meier curves in the main external cohorts.** Left column = patients who got the drug; right column = the
-comparator arm of the same cohort (no chemotherapy, other regimen, or platinum without taxane). Patients are split at
-the median of the frozen rank-1 organoid pathway score within each arm: vermilion = high score (predicted resistant),
-blue = low score (predicted sensitive). If the signature were drug-specific, the curves would separate on the left
-(vermilion lower) but not on the right. Signatures: colorectal 5-FU = the paper's BH3-only pathway (van de Wetering
-organoids, authors' files); FOLFOX = current-data oxaliplatin signature; bladder = Lee 2018 cisplatin (paper NES);
-ovarian = Vias 2023 paclitaxel; lung = lung cell-line cisplatin (the organoid substitute).""")
-plt.close(fig)
+for part, MAINP in (("", MAIN[:3]), ("b", MAIN[3:])):
+  fig, axs = plt.subplots(len(MAINP), 2, figsize=(7.2, 3.0 * len(MAINP)))
+  for row, (coh, ep, comp, sig) in enumerate(MAINP):
+      d = SC[(SC.cohort == coh) & (SC.endpoint == ep.lower()) & (SC.comparison == comp) & (SC.sig_id == sig)]
+      for col, arm in enumerate((1, 0)):
+          ax = axs[row, col]
+          letter(ax, next(L), x=-0.15)
+          a = d[d.arm1 == arm]
+          if len(a) < 5:
+              ax.set_axis_off(); continue
+          g = (a.score > a.score.median()).astype(int).values
+          for lab, m, c in (("low score (predicted sensitive)", g == 0, OK["blue"]),
+                            ("high score (predicted resistant)", g == 1, OK["verm"])):
+              sf = SurvfuncRight(a["T"].values[m], a["E"].values[m])
+              ax.step(np.r_[0, sf.surv_times], np.r_[1, sf.surv_prob], where="post", color=c,
+                      label=f"{lab}: n={m.sum()}, events={int(a['E'].values[m].sum())}")
+          p = logrank(a["T"], a["E"], g)
+          armname = comp.split(" vs ")[0] if arm == 1 else (comp.split(" vs ")[1] if " vs " in comp else "comparator")
+          ax.set_title(f"{coh} {ep}, {armname}\n{SIGLAB[sig.split('|')[0]]}; log-rank p = {p:.2g}", fontsize=7.5)
+          ax.set_ylim(0, 1.03); ax.set_xlabel("Months"); ax.set_ylabel(f"{ep} probability")
+          ax.legend(frameon=False, fontsize=6, loc="lower left")
+  fig.tight_layout()
+  save_fig(fig, "B1_Fig5" + part + "_KM_main_cohorts", ("" if not part else "(Second part of Fig. 5: cohorts 4-6, panels continue the lettering.) ") + """
+  **Kaplan-Meier curves in the main external cohorts.** Left column = patients who got the drug; right column = the
+  comparator arm of the same cohort (no chemotherapy, other regimen, or platinum without taxane). Patients are split at
+  the median of the frozen rank-1 organoid pathway score within each arm: vermilion = high score (predicted resistant),
+  blue = low score (predicted sensitive). If the signature were drug-specific, the curves would separate on the left
+  (vermilion lower) but not on the right. Signatures: colorectal 5-FU = the paper's BH3-only pathway (van de Wetering
+  organoids, authors' files); FOLFOX = current-data oxaliplatin signature; bladder = Lee 2018 cisplatin (paper NES);
+  ovarian = Vias 2023 paclitaxel; lung = lung cell-line cisplatin (the organoid substitute).""")
+  plt.close(fig)
 
 # STORM response bars
 d = SC[(SC.cohort == "GSE109211")]

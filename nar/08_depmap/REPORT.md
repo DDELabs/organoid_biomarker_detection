@@ -159,7 +159,8 @@ Pan-cancer, lineage-adjusted results (negative rho = lines with a high BH3-only 
 | Obatoclax | +0.046 | +0.036 | −0.092 | +0.004 |
 
 All four navitoclax correlations have p < 0.02. Within colorectal lines alone (n = 25–48), every confidence interval
-crosses 0 (rho from −0.164 to +0.405).
+crosses 0 except one: PRISM navitoclax, rho +0.405 (95% CI 0.030 to 0.681), n = 27, p = 0.036, which points the
+opposite way to the pan-cancer result (rho from −0.164 to +0.405 across the colorectal rows). [Corrected after audit I10.]
 
 What I think: this is the clearest positive result in Part A. Across about 500–960 lines, the score behaves like a
 priming marker for the BCL-2 and BCL-XL inhibitors navitoclax and ABT-737. Obatoclax does not follow, which fits its
@@ -247,6 +248,9 @@ The table shows the resistant-minus-parental BH3-only score (MSigDB set). The or
 | GSE56322 | 1 vs 1 | −0.003 | no test |
 
 All four gene-set versions give a negative difference in HCT-8 at 24 h and at 48 h (p 0.0002–0.026).
+Note (audit I24): each HCT-8 row compares 3 resistant vs 3 parental samples at the SAME time point. nar/02 (paper
+Fig. 4b design) compares parental 0 h (3) with resistant 0 h + 24 h + 48 h pooled (9) and gets p = 0.039; the two tests
+answer different questions.
 
 What I think: this is the one cell-line setting that supports the organoid direction. When exposed to 5-FU, the
 resistant HCT-8 line switches on the BH3-only programme less than its parent. It is one isogenic pair, so it is a

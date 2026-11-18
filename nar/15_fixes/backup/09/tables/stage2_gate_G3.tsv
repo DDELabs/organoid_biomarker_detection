@@ -1,0 +1,8 @@
+drug	n_controlled_primary	n_adequately_powered	n_one_sided_p_lt_0.025	n_same_direction	G3_powered_hit	G3_all_same_direction	G3_pass	note
+FLUOROURACIL	3	0.0	0.0	1.0	False	False	False	
+OXALIPLATIN	4	0.0	1.0	1.0	False	False	False	
+IRINOTECAN	2	0.0	0.0	1.0	False	False	False	
+GEMCITABINE	0						False	no controlled external cohort
+PACLITAXEL	6	0.0	0.0	1.0	False	False	False	
+PEMETREXED	0						False	no controlled external cohort
+SORAFENIB	1	0.0	0.0	0.0	False	False	False	
