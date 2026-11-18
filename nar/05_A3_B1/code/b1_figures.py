@@ -34,8 +34,9 @@ def forest(ax, d, est, lo, hi, title):
     for yi, (_, r) in zip(y, d.iterrows()):
         c = OK["blue"] if r["kind"] == "rank1" else OK["orange"]
         if not np.isfinite(r[est]):
-            ax.plot([1], [yi], "x", color=c)
-            continue
+            if est == "est" or r["has_comparator"]:
+                ax.plot([1], [yi], "x", color=c)          # model not estimable
+            continue                                      # no comparator arm: left blank
         ax.plot([max(r[lo], CL[0]), min(r[hi], CL[1])], [yi, yi], color=c, lw=1)
         ax.plot([np.clip(r[est], *CL)], [yi], "D" if r["has_comparator"] else "s", color=c, ms=3.5)
         ax.text(CL[1] * 1.1, yi, f"{r[est]:.2f} p={r[est.replace('est', 'p') if est != 'est' else 'p']:.2g}",
