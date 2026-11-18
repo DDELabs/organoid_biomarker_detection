@@ -1,27 +1,2 @@
 0
 500
-1000
-1500
-2000
-2500
-3000
-3500
-4000
-4500
-                                                       statistic   observed  null_mean  null_median  null_2.5pct  null_97.5pct  null_95pct  perm_p_at_least_observed                                                        note  n_permutations
-0                                  treated: count p<0.05 (of 57)   7.000000   2.867000     3.000000     0.000000      7.000000    6.000000                  0.029794                                                         NaN            5000
-1                    treated: count p<0.05 in expected direction   4.000000   1.472000     1.000000     0.000000      4.000000    4.000000                  0.065587                                                         NaN            5000
-2                                          treated: count p<0.01   2.000000   0.533400     0.000000     0.000000      2.000000    2.000000                  0.099580                                                         NaN            5000
-3                                             treated: minimum p   0.001098        NaN          NaN          NaN           NaN         NaN                  0.037792  p = share of permutations with a value as small or smaller            5000
-4                                untreated: count p<0.05 (of 57)  12.000000   2.957400     3.000000     0.000000      8.000000    7.000000                  0.000600                                                         NaN            5000
-5                                           untreated: minimum p   0.001172   0.019456     0.013245     0.000446      0.072239    0.059439                  0.062987  p = share of permutations with a value as small or smaller            5000
-6  treated: independent patient clusters with >=1 p<0.05 (of 11)   6.000000   2.341000     2.000000     0.000000      5.000000    5.000000                  0.012198                                                         NaN            5000
-                                       analysis_id  cluster  treated_p_obs  untreated_p_obs  treated_perm_p_single  familywise_minP_adjusted_p  null_share_p_below_0.05
-56               PDX_gao2015_CM__SKCM__DACARBAZINE        7       0.001098         0.402747               0.004199                    0.037792                   0.0608
-46      LUAD_cellline_substitute__LUAD__PEMETREXED        3       0.004847         0.542800               0.006199                    0.163567                   0.0484
-0   COAD_vandewetering__COAD_authors__FLUOROURACIL        1       0.014352         0.160535               0.011598                    0.412517                   0.0450
-17                     PAAD_shi__PAAD__GEMCITABINE        9       0.022757         0.017219               0.022595                    0.544091                   0.0532
-44     LUAD_cellline_substitute__LUAD__GEMCITABINE        3       0.029743         0.024773               0.029994                    0.617277                   0.0488
-53              PDX_gao2015_NSCLC__LUAD__ERLOTINIB        8       0.039597         0.867129               0.046991                    0.676665                   0.0584
-23             BLCA_lee2018_paper__BLCA__CISPLATIN        0       0.043518         0.929385               0.041392                    0.690062                   0.0484
-25           BLCA_lee2018_current__BLCA__CISPLATIN        0       0.067211         0.106700               0.066787                    0.740052                   0.0490

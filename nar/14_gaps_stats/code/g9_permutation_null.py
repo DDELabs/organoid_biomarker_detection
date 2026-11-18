@@ -103,7 +103,7 @@ def main():
         r["perm_p_at_least_observed"] = float((np.sum(null <= obsv) + 1) / (len(null) + 1))
         r["note"] = "p = share of permutations with a value as small or smaller"
         return r
-    cnt_t = np.sum(res_t < 0.05, 1)
+    cnt_t = np.nansum(res_t < 0.05, 1)
     cnt_u = np.nansum(res_u < 0.05, 1)
     cnt_te = np.sum((res_t < 0.05) & dir_t, 1)
     ncl = len(set(cid))
@@ -111,7 +111,7 @@ def main():
     rows = [summ("treated: count p<0.05 (of 57)", int(np.sum(ot < 0.05)), cnt_t),
             summ("treated: count p<0.05 in expected direction", int(np.sum((ot < 0.05) & expdir)), cnt_te),
             summ("treated: count p<0.01", int(np.sum(ot < 0.01)), np.sum(res_t < 0.01, 1)),
-            summ_low("treated: minimum p", float(np.min(ot)), np.min(res_t, 1)),
+            summ_low("treated: minimum p", float(np.min(ot)), np.nanmin(res_t, 1)),
             summ("untreated: count p<0.05 (of %d)" % np.isfinite(ou).sum(), int(np.nansum(ou < 0.05)), cnt_u),
             summ_low("untreated: minimum p", float(np.nanmin(ou)), np.nanmin(res_u, 1)),
             summ(f"treated: independent patient clusters with >=1 p<0.05 (of {ncl})", len(set(cid[ot < 0.05])), clhit)]
@@ -121,7 +121,7 @@ def main():
     # per analysis permutation p (single test, for reference) and cluster ids
     per = pd.DataFrame({"analysis_id": aids, "cluster": cid, "treated_p_obs": ot, "untreated_p_obs": ou,
                         "treated_perm_p_single": [(np.sum(res_t[:, j] <= ot[j]) + 1) / (NPERM + 1) for j in range(len(aids))],
-                        "familywise_minP_adjusted_p": [(np.sum(np.min(res_t, 1) <= ot[j]) + 1) / (NPERM + 1) for j in range(len(aids))],
+                        "familywise_minP_adjusted_p": [(np.sum(np.nanmin(res_t, 1) <= ot[j]) + 1) / (NPERM + 1) for j in range(len(aids))],
                         "null_share_p_below_0.05": np.mean(res_t < 0.05, 0)})
     per.to_csv(TAB / "G9_per_analysis_permutation.tsv", sep="\t", index=False)
     # check: binomial independent reference
