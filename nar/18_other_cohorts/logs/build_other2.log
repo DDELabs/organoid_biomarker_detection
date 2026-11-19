@@ -17,3 +17,47 @@
 {'cohort': 'GSE32062', 'samples': 260, 'genes': 19529, 'with_response': 0, 'responders': 0, 'with_survival': 260, 'events': 121, 'note': 'all patients had platinum and taxane; the 10-sample GPL570 file of the same series is not used'}
 {'cohort': 'GSE26712', 'samples': 185, 'genes': 12502, 'with_response': 0, 'responders': 0, 'with_survival': 185, 'events': 129, 'note': 'tumours only (10 normal surface samples dropped); platinum is from the paper; event = death of disease'}
 {'cohort': 'GSE49997', 'samples': 194, 'genes': 16072, 'with_response': 0, 'responders': 0, 'with_survival': 194, 'events': 57, 'note': '10 samples excluded by the authors are removed; regimen from the paper'}
+{'cohort': 'GSE17260', 'samples': 110, 'genes': 19529, 'with_response': 0, 'responders': 0, 'with_survival': 110, 'events': 46, 'note': 'regimen from the paper; same centre as GSE32062 (duplicate check)'}
+{'cohort': 'GSE30161', 'samples': 58, 'genes': 20848, 'with_response': 55, 'responders': 32, 'with_survival': 58, 'events': 36, 'note': 'responder = complete response (32) vs partial response or progression (23); unknown response left empty'}
+{'cohort': 'GSE35452', 'samples': 46, 'genes': 20848, 'with_response': 46, 'responders': 24, 'with_survival': 0, 'events': 0, 'note': 'pre-treatment biopsies; 5-FU based chemoradiotherapy'}
+{'cohort': 'GSE119409', 'samples': 66, 'genes': 20848, 'with_response': 56, 'responders': 15, 'with_survival': 0, 'events': 0, 'note': '10 patients with unknown sensitivity left empty'}
+{'cohort': 'GSE150082', 'samples': 39, 'genes': 21754, 'with_response': 39, 'responders': 16, 'with_survival': 0, 'events': 0, 'note': 'responder = good response; capecitabine + radiotherapy; two-colour array against a universal reference'}
+{'cohort': 'GSE45404_GPL4133', 'samples': 38, 'genes': 19203, 'with_response': 38, 'responders': 16, 'with_survival': 0, 'events': 0, 'note': 'first part of GSE45404 (Agilent)'}
+{'cohort': 'GSE45404_GPL570', 'samples': 42, 'genes': 20848, 'with_response': 42, 'responders': 19, 'with_survival': 0, 'events': 0, 'note': 'second part of GSE45404 (the file name says Plus 2.0 chip; the platform field in the file is GPL4133, so the chip is checked when built)'}
+{'cohort': 'GSE145037', 'samples': 31, 'genes': 18418, 'with_response': 31, 'responders': 20, 'with_survival': 0, 'events': 0, 'note': 'chemoradiotherapy regimen not named in the record'}
+{'cohort': 'GSE133057', 'samples': 33, 'genes': 19526, 'with_response': 33, 'responders': 13, 'with_survival': 33, 'events': 11, 'note': 'responder = AJCC tumour regression score 0 or 1 (complete or near-complete response)'}
+{'cohort': 'GSE115821', 'samples': 14, 'genes': 75251, 'with_response': 14, 'responders': 2, 'with_survival': 0, 'events': 0, 'note': 'pre-treatment biopsies only, matched to the count table by sample name; anti-PD-1 drug is pembrolizumab or nivolumab (not given per patient)'}
+{'cohort': 'GSE168204', 'samples': 2, 'genes': 75253, 'with_response': 2, 'responders': 2, 'with_survival': 0, 'events': 0, 'note': 'pre-treatment biopsies only, matched to the count table by sample name'}
+{'cohort': 'GSE100797', 'samples': 25, 'genes': 18418, 'with_response': 25, 'responders': 10, 'with_survival': 25, 'events': 17, 'note': 'responder = RECIST CR or PR; times as given in the record (assumed months); expression already normalised by the authors'}
+{'cohort': 'GSE13507', 'samples': 165, 'genes': 19188, 'with_response': 0, 'responders': 0, 'with_survival': 165, 'events': 69, 'note': '165 primary tumours; mixed non-muscle-invasive and muscle-invasive; intravesical therapy not modelled; survival month as given'}
+{'cohort': 'GSE176307', 'samples': 90, 'genes': 16383, 'with_response': 89, 'responders': 16, 'with_survival': 90, 'events': 57, 'note': 'responder = CR or PR (RECIST) on checkpoint inhibitor; times are in days (converted); 89 samples have expression'}
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'drugs'
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'drugs'
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'drugs'
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'drugs'
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'drugs'
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'drugs'
+{'cohort': 'GSE26253', 'samples': 432, 'genes': 13491, 'with_response': 0, 'responders': 0, 'with_survival': 432, 'events': 177, 'note': 'all patients had adjuvant chemoradiotherapy; there is no untreated comparison'}
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'drugs'
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'drugs'
+{'cohort': 'GSE104958', 'samples': 41, 'genes': 34729, 'with_response': 41, 'responders': 10, 'with_survival': 0, 'events': 0, 'note': '41 tumour biopsies (5 normal samples dropped); responder = pathological complete response'}
+{'cohort': 'GSE9782', 'samples': 264, 'genes': 12502, 'with_response': 239, 'responders': 113, 'with_survival': 0, 'events': 0, 'note': 'study 039 (APEX) randomised bortezomib vs dexamethasone (80 vs 76); studies 024, 025 and 040 are single-arm bortezomib; A-chip (GPL96) only'}
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'drugs'

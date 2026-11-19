@@ -1,0 +1,6 @@
+item	value
+series matrix rows with expression	0
+GSE188541 samples	6
+GSE188541 organoid lines	1 (iPSC-derived liver organoids on chips; control, APAP, FIAU, tenofovir, tenofovir+inarigivir, plus un-chipped organoids)
+organoids with IC50 in the uploaded table	3 (72.3, 2E, CC3)
+organoids with both expression and IC50	0

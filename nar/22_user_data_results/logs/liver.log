@@ -1,0 +1,17 @@
+                   drug  tcga_lihc_patients
+0           ALLOPURINOL                   0
+1            AMIODARONE                   0
+2   DIHYDROTESTOSTERONE                   0
+3           FIALURIDINE                   0
+4           FIOXURIDINE                   0
+5            NEVARAPINE                   0
+6      PROPYLTHIOURACIL                   0
+7              RIFAMPIN                   0
+8             STAVUDINE                   0
+9             TAMOXIFEN                   1
+10          TERBINAFINE                   0
+11          THIOGUANINE                   0
+  organoid_a organoid_b  n_drugs  spearman_rho         p
+0         2E       72.3       12     -0.097902  0.762122
+1         2E        CC3       12      0.251748  0.429919
+2       72.3        CC3       12     -0.335664  0.286123

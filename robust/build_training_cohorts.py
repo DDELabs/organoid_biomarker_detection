@@ -1562,6 +1562,8 @@ if __name__ == "__main__":
         d = OUT / cid
         expr, clin, note = fn()
         expr = expr.loc[:, clin.index].dropna(how="all")
+        if "drugs" not in clin:
+            clin["drugs"] = np.nan          # treatment not recorded
         clin["drugs"] = clin["drugs"].replace("", "NONE")   # NONE = known to have had no drug; empty = unknown
         d.mkdir(parents=True, exist_ok=True)
         expr.round(4).to_csv(d / "expression.tsv.gz", sep="\t")
