@@ -2,7 +2,6 @@
 # one process at a time (1 CPU).  Order: cheap steps first, then the heavy ones.
 cd "$(dirname "$0")/code"
 L=../logs
-python3 -I apply_model_cohorts.py lung > $L/apply_lung.log 2>&1
 python3 -I apply_model_cohorts.py lung_listed > $L/apply_lung_listed.log 2>&1
 python3 -I lung_clusters.py > $L/lung_clusters.log 2>&1
 python3 -I liver_describe.py > $L/liver.log 2>&1

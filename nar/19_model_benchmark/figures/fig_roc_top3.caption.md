@@ -1,0 +1,1 @@
+**Figure (a-c). ROC curves of the three models with the highest mean AUC.** Thin light-blue lines: one per held-out cohort. Thick blue line: average over cohorts. Orange dashed: the existing L2 model, averaged the same way. Closer to the top-left corner is better; the dotted diagonal is a coin flip.

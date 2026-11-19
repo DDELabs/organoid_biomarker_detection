@@ -1,0 +1,2 @@
+model	n	accuracy	balanced_accuracy	chance_balanced_accuracy	shuffled_balanced_accuracy_mean	shuffled_balanced_accuracy_p95	permutation_p	n_shuffles
+multinomial logistic (L2, C=0.05), 5-fold CV, 5 repeats	102	0.9235294117647059	0.8905901934322987	0.25	0.2479880791722897	0.33375955915429595	0.009900990099009901	100
