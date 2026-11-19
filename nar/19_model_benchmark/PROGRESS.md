@@ -21,3 +21,6 @@ All done. Final: REPORT_breast.md (models finished after a restart; RF bug fixed
 - [x] code/pos_organoid.py: organoid-trained tasks. Bladder paper-data original reproduced (rank-1 log-rank p 0.044; AA pathway p 0.031).
 - [ ] running: bladder current / ERCC2 / cetuximab BRAF / rectal / olaparib (logs/pos_orgA.log, pos_orgB.log)
 - [ ] lung untreated prognosis, ovarian joint LOCO, analysis, figures, REPORT_positives.md
+- [x] 2026-11-19 (after restart): all runs had finished; outputs in tables/preds_pos/*.pkl. Analysis (pos_analyze.py, paired bootstrap bug fixed) -> tables/positives_all_models.tsv, positives_per_cohort.tsv, positives_chosen_hyperparameters.tsv; figures (pos_figures.py) -> figures/fig_positives_heatmap, fig_bar_<task>; tables/positives_model_comparison.tsv.
+- [x] HER2 randomised NOAH / CHER-LOB: NOT added. Existing result (nar/18) points the opposite way (AUC 0.33 trastuzumab arm vs 0.59 chemo-alone, p=0.025), so it is not a positive; re-running a binary zoo trained on all 13 breast cohorts is not cheap. Noted in report.
+- [x] REPORT_positives.md written. DONE.
