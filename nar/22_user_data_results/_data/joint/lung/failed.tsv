@@ -1,0 +1,10 @@
+LUNG_GEMCITABINE_vs_platinum_proxy__shortlist	EOFError: Compressed file ended before the end-of-stream marker was reached
+LUNG_GEMCITABINE_matched__shortlist	EOFError: Compressed file ended before the end-of-stream marker was reached
+LUNG_ETOPOSIDE_vs_platinum_proxy__shortlist	EOFError: Compressed file ended before the end-of-stream marker was reached
+LUNG_ETOPOSIDE_matched__shortlist	EOFError: Compressed file ended before the end-of-stream marker was reached
+LUNG_PACLITAXEL_vs_platinum_proxy__shortlist	EOFError: Compressed file ended before the end-of-stream marker was reached
+LUNG_PACLITAXEL_matched__shortlist	EOFError: Compressed file ended before the end-of-stream marker was reached
+LUNG_CAMPTOTHECIN_vs_platinum_proxy__shortlist	EOFError: Compressed file ended before the end-of-stream marker was reached
+LUNG_GEMCITABINE_matched__shortlist	IndexError: list index out of range
+LUNG_ETOPOSIDE_matched__shortlist	IndexError: list index out of range
+LUNG_PACLITAXEL_matched__shortlist	IndexError: list index out of range

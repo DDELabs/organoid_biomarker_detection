@@ -1,0 +1,11 @@
+unit	OV_NIRAPARIB_vs_platinum
+features	shortlist
+fold_align	False
+n_features	47
+feature_source	Kong et al. 2020 proximity table (STRING>700), z <= -1.28
+design	leave-one-cohort-out
+trainable_cohorts	TCGA-OV;GSE9891;GSE63885;GSE15622;GSE51373
+organoid_alpha	10000.0
+lab	ovary_gse229119_noMCF7:NIRAPARIB n=6 dropped_axes=5
+n_lab	6
+seconds	7.2

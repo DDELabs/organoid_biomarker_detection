@@ -1509,9 +1509,9 @@ def GSE9782():
     c["randomised"] = meta["studycode"].eq("39")                 # APEX (study 039) randomised bortezomib vs dexamethasone
     c["responder"] = meta["pgx_responder"].map({"R": 1, "NR": 0})   # IE (not evaluable) left empty
     c["pfs_months"] = num(meta["pgx_days_to_progression"]) / 30.44
-    c["pfs_event"] = num(meta["pgx_progression(0"] if "pgx_progression(0" in meta else np.nan)
+    c["pfs_event"] = np.where(c["pfs_months"].notna(), num(meta["pgx_progression(0=no,1=yes)"]).fillna(0), np.nan)   # GEO leaves 0 blank
     c["os_months"] = num(meta["days_survived_from_randomization"]) / 30.44
-    c["os_event"] = num(meta["did_patient_die(0"] if "did_patient_die(0" in meta else np.nan)
+    c["os_event"] = np.where(c["os_months"].notna(), num(meta["did_patient_die(0=no,1=yes)"]).fillna(0), np.nan)   # GEO leaves 0 blank
     c["age"], c["sex"] = num(meta["age_at_randomization"]), meta["sex"]
     return e, c, "study 039 (APEX) randomised bortezomib vs dexamethasone (80 vs 76); studies 024, 025 and 040 are single-arm bortezomib; A-chip (GPL96) only"
 

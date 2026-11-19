@@ -1,0 +1,1 @@
+Ovary: PARP-drug model in platinum / paclitaxel treated patients. Each row is one organoid drug used as the model, one patient group and one cohort. HR above 1 = patients predicted less sensitive did worse (the direction the method expects). Table: tables/apply_ovary.tsv.

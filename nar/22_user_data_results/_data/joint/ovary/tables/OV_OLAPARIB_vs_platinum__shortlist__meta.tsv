@@ -1,0 +1,11 @@
+unit	OV_OLAPARIB_vs_platinum
+features	shortlist
+fold_align	False
+n_features	47
+feature_source	Kong et al. 2020 proximity table (STRING>700), z <= -1.28
+design	leave-one-cohort-out
+trainable_cohorts	TCGA-OV;GSE9891;GSE63885;GSE15622;GSE51373
+organoid_alpha	100.0
+lab	ovary_gse229119_noMCF7:OLAPARIB n=6 dropped_axes=5
+n_lab	6
+seconds	11.8

@@ -1,0 +1,11 @@
+unit	LUNG_GEMCITABINE_vs_platinum_proxy
+features	shortlist
+fold_align	False
+n_features	47
+feature_source	Kong et al. 2020 proximity table (STRING>700), z <= -1.28
+design	leave-one-cohort-out
+trainable_cohorts	TCGA-LUAD;TCGA-LUSC;GSE42127;GSE14814;GSE29013;GSE68465;GSE37745
+organoid_alpha	316.2277660168379
+lab	luad_gse165611:GEMCITABINE n=102 dropped_axes=1
+n_lab	102
+seconds	13.5

@@ -1,0 +1,56 @@
+LUNG_GEMCITABINE_vs_platinum_proxy__shortlist 14 s
+Traceback (most recent call last):
+  File "/home/user/organoid_biomarker_detection/nar/22_user_data_results/code/run_joint_u22.py", line 71, in <module>
+    D, sc, ev, it, fi, meta, extra = RJ.run_unit(u, f)
+                                     ~~~~~~~~~~~^^^^^^
+  File "/home/user/organoid_biomarker_detection/nar/03_organoid_plus_patient/code/run_joint.py", line 168, in run_unit
+    fits = fit_all(Xf, yo_v, blocks, seed)
+  File "/home/user/organoid_biomarker_detection/nar/03_organoid_plus_patient/code/run_joint.py", line 123, in fit_all
+    (w0, l0), res0 = C.tune(None, None, blocks, ws=(0.0,), seed=seed)
+                     ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/organoid_biomarker_detection/nar/03_organoid_plus_patient/code/common.py", line 321, in tune
+    beta, a = fit_joint(Xo, yo, tb, w, lam)
+              ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/organoid_biomarker_detection/nar/03_organoid_plus_patient/code/common.py", line 249, in fit_joint
+    F = (Xo.shape[1] if Xo is not None else blocks[0].X.shape[1])
+                                            ~~~~~~^^^
+IndexError: list index out of range
+LUNG_GEMCITABINE_matched__shortlist failed list index out of range
+LUNG_ETOPOSIDE_vs_platinum_proxy__shortlist 9 s
+Traceback (most recent call last):
+  File "/home/user/organoid_biomarker_detection/nar/22_user_data_results/code/run_joint_u22.py", line 71, in <module>
+    D, sc, ev, it, fi, meta, extra = RJ.run_unit(u, f)
+                                     ~~~~~~~~~~~^^^^^^
+  File "/home/user/organoid_biomarker_detection/nar/03_organoid_plus_patient/code/run_joint.py", line 168, in run_unit
+    fits = fit_all(Xf, yo_v, blocks, seed)
+  File "/home/user/organoid_biomarker_detection/nar/03_organoid_plus_patient/code/run_joint.py", line 123, in fit_all
+    (w0, l0), res0 = C.tune(None, None, blocks, ws=(0.0,), seed=seed)
+                     ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/organoid_biomarker_detection/nar/03_organoid_plus_patient/code/common.py", line 321, in tune
+    beta, a = fit_joint(Xo, yo, tb, w, lam)
+              ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/organoid_biomarker_detection/nar/03_organoid_plus_patient/code/common.py", line 249, in fit_joint
+    F = (Xo.shape[1] if Xo is not None else blocks[0].X.shape[1])
+                                            ~~~~~~^^^
+IndexError: list index out of range
+LUNG_ETOPOSIDE_matched__shortlist failed list index out of range
+LUNG_PACLITAXEL_vs_platinum_proxy__shortlist 9 s
+Traceback (most recent call last):
+  File "/home/user/organoid_biomarker_detection/nar/22_user_data_results/code/run_joint_u22.py", line 71, in <module>
+    D, sc, ev, it, fi, meta, extra = RJ.run_unit(u, f)
+                                     ~~~~~~~~~~~^^^^^^
+  File "/home/user/organoid_biomarker_detection/nar/03_organoid_plus_patient/code/run_joint.py", line 168, in run_unit
+    fits = fit_all(Xf, yo_v, blocks, seed)
+  File "/home/user/organoid_biomarker_detection/nar/03_organoid_plus_patient/code/run_joint.py", line 123, in fit_all
+    (w0, l0), res0 = C.tune(None, None, blocks, ws=(0.0,), seed=seed)
+                     ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/organoid_biomarker_detection/nar/03_organoid_plus_patient/code/common.py", line 321, in tune
+    beta, a = fit_joint(Xo, yo, tb, w, lam)
+              ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/organoid_biomarker_detection/nar/03_organoid_plus_patient/code/common.py", line 249, in fit_joint
+    F = (Xo.shape[1] if Xo is not None else blocks[0].X.shape[1])
+                                            ~~~~~~^^^
+IndexError: list index out of range
+LUNG_PACLITAXEL_matched__shortlist failed list index out of range
+LUNG_CAMPTOTHECIN_vs_platinum_proxy__shortlist 9 s
+done lung

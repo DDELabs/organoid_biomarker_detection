@@ -1,0 +1,91 @@
+cohort	quantity	expected_from_verify_file	observed_in_v2	match
+GSE14814	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	133	133	True
+GSE68465	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	462	443	False
+GSE37745	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	196	196	True
+GSE29013	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	55	55	True
+GSE31210	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	246	204	False
+GSE50081	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	181	181	True
+GSE8894	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	138	138	True
+GSE3141	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	111	111	True
+GSE30219	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	307	293	False
+GSE72094	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	442	442	True
+GSE41271	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	275	275	True
+GSE157011	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	484	484	True
+GSE33072	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	131	131	True
+GSE161537	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	82	82	True
+GSE162520	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	92	92	True
+GSE135222	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	27	27	True
+GSE126044	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	16	16	True
+GSE218989	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	355	355	True
+GSE207422	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	39	24	False
+GSE81089	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	218	196	False
+GSE16446	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	120	120	True
+GSE50948	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	156	156	True
+GSE34138	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	178	178	True
+GSE17705	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	298	298	True
+GSE66305	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	88	88	True
+GSE42822	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	91	91	True
+GSE6861	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	161	161	True
+GSE4779	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	102	102	True
+GSE32603	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	248	141	False
+GSE6532_GPL96	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	87; 327; 327	327	True
+GSE6532_GPL570	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	87; 327; 327	87	True
+GSE58644	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	321	321	True
+GSE7390	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	198	198	True
+GSE11121	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	200	200	True
+GSE37946	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	50	50	True
+GSE76360	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	100	50	False
+GSE21974	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	57	32	False
+GSE18728	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	61	21	False
+GSE173839	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	105	105	True
+GSE18864	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	84	24	False
+GSE103668	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	21	21	True
+GSE9195	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	77	77	True
+GSE12093	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	136	136	True
+GSE45255	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	139	139	True
+GSE31519	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	67	67	True
+GSE59515	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	75	25	False
+GSE140082	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	380	380	True
+GSE32062	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	10	260	True
+GSE26712	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	195	185	False
+GSE49997	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	204	194	False
+GSE17260	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	110	110	True
+GSE30161	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	58	58	True
+GSE35452	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	46	46	True
+GSE119409	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	66	66	True
+GSE150082	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	39	39	True
+GSE45404_GPL4133	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	38; 42	38	True
+GSE45404_GPL570	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	38; 42	42	True
+GSE145037	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	31	31	True
+GSE133057	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	33	33	True
+GSE115821	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	23	14	True
+GSE168204	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	7	2	False
+GSE100797	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	25	25	True
+GSE13507	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	256	165	False
+GSE176307	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	90	90	True
+GSE32894	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	308	224	False
+GSE65858	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	270	270	True
+GSE41613	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	97	97	True
+GSE17536	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	177	177	True
+GSE33113	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	96	89	False
+GSE38832	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	122	122	True
+GSE26253	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	432	432	True
+GSE84437	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	483	433	False
+GSE15459	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	200	192	False
+GSE104958	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	46	41	False
+GSE9782	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	264	264	True
+GSE116918	samples kept vs n_samples in verify file (kept can be lower when normals, other timepoints or unlabelled samples are dropped)	248	248	True
+GSE14814	ACT (adjuvant chemo) / OBS (observation) arms	71/62	71/62	True
+GSE14814	deaths (OS status Dead)	60	60	True
+GSE140082	bevacizumab / standard arms	199/181	199/181	True
+GSE140082	PFS events	235	235	True
+GSE140082	OS events	96	96	True
+GSE50948	arms HER2+ CT+H / HER2+ CT / HER2- CT	63/51/42	63/51/42	True
+GSE50948	pCR	53	53	True
+GSE66305	arms A (chemo+trastuzumab) / B (chemo+lapatinib) / C (both)	23/31/34	23/31/34	True
+GSE66305	pCR	27	27	True
+GSE9782	bortezomib (PS341) arm	188	188	True
+GSE9782	progression events (PGx_Progression=1); table v2 as built has no event flag (builder column-name bug, fixed afterwards; run_v2.py takes the fixed values)	189	event column empty	False
+GSE173839	durvalumab+olaparib / control	71/34	71/34	True
+GSE173839	pCR (excluding 5 samples coded -1)	36	36	True
+GSE16446	pCR	16	16	True

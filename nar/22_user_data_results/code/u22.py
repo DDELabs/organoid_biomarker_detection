@@ -89,7 +89,7 @@ def proximity(drug):
     """(z Series, column name).  Paper table first (with the platinum proxy of nar/02); otherwise recomputed on the
     paper's own STRING network (1000 degree-matched random target sets), cached."""
     paper = N.precomputed_proximity()
-    d = C.PROX_PROXY.get(drug, drug)
+    d = {**C.PROX_PROXY, "CARBOPLATIN": "CISPLATIN"}.get(drug, drug)
     if d in paper.columns:
         PROX_LOG.append((drug, d, "paper table"))
         return paper[d].dropna(), d

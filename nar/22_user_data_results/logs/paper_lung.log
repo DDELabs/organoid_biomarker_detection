@@ -1,0 +1,27 @@
+LUAD__GEMCITABINE__GEMCITABINE done 25 23 s
+LUSC__GEMCITABINE__GEMCITABINE done 35 25 s
+LUAD__PACLITAXEL__PACLITAXEL done 44 19 s
+LUSC__PACLITAXEL__PACLITAXEL done 28 21 s
+LUAD__PACLITAXEL__DOCETAXEL done 22 19 s
+LUSC__PACLITAXEL__DOCETAXEL done 31 21 s
+LUAD__ETOPOSIDE__ETOPOSIDE done 15 10 s
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+/usr/local/lib/python3.13/site-packages/statsmodels/duration/hazard_regression.py:512: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  fit_rslts = super().fit(**args)
+LUSC__ETOPOSIDE__ETOPOSIDE done 14 12 s
+LUAD__GEMCITABINE__CISPLATIN done 84 31 s
+LUSC__GEMCITABINE__CISPLATIN done 72 32 s
+LUAD__GEMCITABINE__CARBOPLATIN no drug response or no proximity None 1 s
+LUSC__GEMCITABINE__CARBOPLATIN no drug response or no proximity None 0 s
+LUAD__ETOPOSIDE__CISPLATIN done 84 11 s
+LUSC__ETOPOSIDE__CISPLATIN done 72 13 s
+LUAD__ETOPOSIDE__CARBOPLATIN no drug response or no proximity None 0 s
+LUSC__ETOPOSIDE__CARBOPLATIN no drug response or no proximity None 0 s
+finished lung

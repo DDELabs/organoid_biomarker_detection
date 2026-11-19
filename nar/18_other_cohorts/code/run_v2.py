@@ -23,7 +23,17 @@ def hm_ci(a, n1, n0):
 
 def load(path):
     RTC.T = path
-    return RTC.load()
+    P, Z = RTC.load()
+    if "GSE9782" in set(P["cohort"]):   # the built table has no GSE9782 event flags (column-name bug, fixed in the builder); take them from the builder's fixed output
+        sys.path.insert(0, str(ROOT / "robust"))
+        import build_training_cohorts as B
+        _, c, _ = B.GSE9782()
+        c.index = "GSE9782:" + c.index.astype(str)
+        ix = c.index.intersection(P.index)
+        assert len(ix) == 264, len(ix)
+        for k in ("pfs_months", "pfs_event", "os_months", "os_event"):
+            P.loc[ix, k] = c.loc[ix, k].astype(float)
+    return P, Z
 
 def part1_tables(P, Z, tag):
     R = RTC.part1(P, Z)

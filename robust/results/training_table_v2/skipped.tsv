@@ -9,3 +9,15 @@ GSE235067	bladder chemo cohort: 66-gene panel and no response in the public reco
 GSE186102	eribulin breast cohort: targeted gene panel, only 10 complete responses
 GSE232569	Piedmont pemetrexed-platinum lung study: gene data only (per-sample files); response and survival are not in the public record
 CPTAC-3	lung part of CPTAC-3 (GDC): not a GEO series; drug names are missing in the GDC treatment facet and outcome was not checked, so no treated group can be defined
+GSE28796	dose-dense docetaxel breast cohort: only 2 complete responders (plan: exclude)
+GSE20181	letrozole breast cohort: response is not in the public record (only in the paper)
+GSE87455	breast chemotherapy + bevacizumab cohort: response is not in the public record (only in the paper)
+GSE2034	breast relapse-free survival cohort: only a bone-relapse flag is in the public record, not survival time
+GSE16391	BIG 1-98 breast cohort: the 0/1 code for letrozole versus tamoxifen is not explained in the record, and it is a matched case-control sample
+GSE3149	ovarian cohort: no clinical data in the public record
+GSE13876	ovarian cohort: two-colour custom array with several samples per patient (415 samples, 157 patients); survival status is in a free-text field per channel; not built
+GSE94104	rectal chemoradiotherapy cohort: the 3-level regression grade has no stated direction (which grade is best) in the record
+GSE111177	prostate androgen-deprivation cohort: no time-to-event or response definition in the record (metastasis yes/no only)
+GSE5851	cetuximab colorectal cohort: no response or survival in the record or the supplementary files (raw CEL files only)
+GSE14210	stomach cisplatin/5-FU cohort: no per-sample response or time-to-progression in the record or the supplementary files
+GSE62254	ACRG stomach cohort: clinical table is not in the GEO record or supplementary files

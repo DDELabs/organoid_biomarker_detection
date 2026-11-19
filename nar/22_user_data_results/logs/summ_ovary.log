@@ -1,0 +1,5 @@
+  cohort organoid_drug patient_drug  n_treated  events_treated  logrank_p        HR  permutation_p_rank1
+0     OV     NIRAPARIB  CARBOPLATIN        348             218   0.875782  0.978821             1.000000
+1     OV     NIRAPARIB   PACLITAXEL        348             215   0.475196  0.906876             0.548173
+2     OV      OLAPARIB  CARBOPLATIN        348             218   0.019818  0.728314             0.096346
+3     OV      OLAPARIB   PACLITAXEL        348             215   0.201755  0.839590             0.531561

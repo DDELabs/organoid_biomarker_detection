@@ -1,0 +1,1 @@
+Patient cluster probabilities (classifier trained on the 102 cell lines) turned into an expected drug value (sum of probability times the cluster value) and split at the median in treated patients. Table: tables/lung_cluster_expected_value_survival.tsv.

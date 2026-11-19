@@ -1,0 +1,22 @@
+heldout	model	train_cohorts	w	lam	unit	features
+TCGA-LUAD	patient-only	TCGA-LUSC:survival;GSE42127:survival;GSE14814:survival;GSE29013:survival;GSE68465:survival;GSE37745:survival	0.0	1.0	LUNG_PACLITAXEL_vs_platinum_proxy	shortlist
+TCGA-LUAD	joint	TCGA-LUSC:survival;GSE42127:survival;GSE14814:survival;GSE29013:survival;GSE68465:survival;GSE37745:survival	0.25	0.3	LUNG_PACLITAXEL_vs_platinum_proxy	shortlist
+TCGA-LUAD	joint (w=0.5)	TCGA-LUSC:survival;GSE42127:survival;GSE14814:survival;GSE29013:survival;GSE68465:survival;GSE37745:survival	0.5	0.3	LUNG_PACLITAXEL_vs_platinum_proxy	shortlist
+TCGA-LUSC	patient-only	TCGA-LUAD:survival;GSE42127:survival;GSE14814:survival;GSE29013:survival;GSE68465:survival;GSE37745:survival	0.0	10.0	LUNG_PACLITAXEL_vs_platinum_proxy	shortlist
+TCGA-LUSC	joint	TCGA-LUAD:survival;GSE42127:survival;GSE14814:survival;GSE29013:survival;GSE68465:survival;GSE37745:survival	0.75	10.0	LUNG_PACLITAXEL_vs_platinum_proxy	shortlist
+TCGA-LUSC	joint (w=0.5)	TCGA-LUAD:survival;GSE42127:survival;GSE14814:survival;GSE29013:survival;GSE68465:survival;GSE37745:survival	0.5	10.0	LUNG_PACLITAXEL_vs_platinum_proxy	shortlist
+GSE42127	patient-only	TCGA-LUAD:survival;TCGA-LUSC:survival;GSE14814:survival;GSE29013:survival;GSE68465:survival;GSE37745:survival	0.0	1.0	LUNG_PACLITAXEL_vs_platinum_proxy	shortlist
+GSE42127	joint	TCGA-LUAD:survival;TCGA-LUSC:survival;GSE14814:survival;GSE29013:survival;GSE68465:survival;GSE37745:survival	0.5	0.3	LUNG_PACLITAXEL_vs_platinum_proxy	shortlist
+GSE42127	joint (w=0.5)	TCGA-LUAD:survival;TCGA-LUSC:survival;GSE14814:survival;GSE29013:survival;GSE68465:survival;GSE37745:survival	0.5	0.3	LUNG_PACLITAXEL_vs_platinum_proxy	shortlist
+GSE14814	patient-only	TCGA-LUAD:survival;TCGA-LUSC:survival;GSE42127:survival;GSE29013:survival;GSE68465:survival;GSE37745:survival	0.0	10.0	LUNG_PACLITAXEL_vs_platinum_proxy	shortlist
+GSE14814	joint	TCGA-LUAD:survival;TCGA-LUSC:survival;GSE42127:survival;GSE29013:survival;GSE68465:survival;GSE37745:survival	0.25	3.0	LUNG_PACLITAXEL_vs_platinum_proxy	shortlist
+GSE14814	joint (w=0.5)	TCGA-LUAD:survival;TCGA-LUSC:survival;GSE42127:survival;GSE29013:survival;GSE68465:survival;GSE37745:survival	0.5	3.0	LUNG_PACLITAXEL_vs_platinum_proxy	shortlist
+GSE29013	patient-only	TCGA-LUAD:survival;TCGA-LUSC:survival;GSE42127:survival;GSE14814:survival;GSE68465:survival;GSE37745:survival	0.0	10.0	LUNG_PACLITAXEL_vs_platinum_proxy	shortlist
+GSE29013	joint	TCGA-LUAD:survival;TCGA-LUSC:survival;GSE42127:survival;GSE14814:survival;GSE68465:survival;GSE37745:survival	0.75	10.0	LUNG_PACLITAXEL_vs_platinum_proxy	shortlist
+GSE29013	joint (w=0.5)	TCGA-LUAD:survival;TCGA-LUSC:survival;GSE42127:survival;GSE14814:survival;GSE68465:survival;GSE37745:survival	0.5	10.0	LUNG_PACLITAXEL_vs_platinum_proxy	shortlist
+GSE68465	patient-only	TCGA-LUAD:survival;TCGA-LUSC:survival;GSE42127:survival;GSE14814:survival;GSE29013:survival;GSE37745:survival	0.0	10.0	LUNG_PACLITAXEL_vs_platinum_proxy	shortlist
+GSE68465	joint	TCGA-LUAD:survival;TCGA-LUSC:survival;GSE42127:survival;GSE14814:survival;GSE29013:survival;GSE37745:survival	0.75	10.0	LUNG_PACLITAXEL_vs_platinum_proxy	shortlist
+GSE68465	joint (w=0.5)	TCGA-LUAD:survival;TCGA-LUSC:survival;GSE42127:survival;GSE14814:survival;GSE29013:survival;GSE37745:survival	0.5	10.0	LUNG_PACLITAXEL_vs_platinum_proxy	shortlist
+GSE37745	patient-only	TCGA-LUAD:survival;TCGA-LUSC:survival;GSE42127:survival;GSE14814:survival;GSE29013:survival;GSE68465:survival	0.0	10.0	LUNG_PACLITAXEL_vs_platinum_proxy	shortlist
+GSE37745	joint	TCGA-LUAD:survival;TCGA-LUSC:survival;GSE42127:survival;GSE14814:survival;GSE29013:survival;GSE68465:survival	0.75	10.0	LUNG_PACLITAXEL_vs_platinum_proxy	shortlist
+GSE37745	joint (w=0.5)	TCGA-LUAD:survival;TCGA-LUSC:survival;GSE42127:survival;GSE14814:survival;GSE29013:survival;GSE68465:survival	0.5	10.0	LUNG_PACLITAXEL_vs_platinum_proxy	shortlist

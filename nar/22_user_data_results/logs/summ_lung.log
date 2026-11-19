@@ -1,0 +1,17 @@
+   cohort organoid_drug patient_drug  n_treated  events_treated  logrank_p        HR  permutation_p_rank1
+0    LUAD     ETOPOSIDE  CARBOPLATIN         77              33   0.241009  0.657640             0.112957
+1    LUAD     ETOPOSIDE    CISPLATIN         84              28   0.868471  1.065147             0.843854
+2    LUAD     ETOPOSIDE    ETOPOSIDE         15               4   0.508359  2.203024             0.401993
+3    LUAD   GEMCITABINE  CARBOPLATIN         77              33   0.724024  1.135229             0.774086
+4    LUAD   GEMCITABINE    CISPLATIN         84              28   0.912000  0.958879             0.913621
+5    LUAD   GEMCITABINE  GEMCITABINE         25              16   0.597160  1.306499             0.877076
+6    LUAD    PACLITAXEL    DOCETAXEL         22              13   0.005686  0.142156             0.063123
+7    LUAD    PACLITAXEL   PACLITAXEL         44              21   0.046643  0.397618             0.079734
+8    LUSC     ETOPOSIDE  CARBOPLATIN         57              23   0.061296  0.434887             0.119601
+9    LUSC     ETOPOSIDE    CISPLATIN         72              23   0.440191  1.395978             0.205980
+10   LUSC     ETOPOSIDE    ETOPOSIDE         14               6   0.940733  1.071418             0.993355
+11   LUSC   GEMCITABINE  CARBOPLATIN         57              23   0.932143  0.963402             0.933555
+12   LUSC   GEMCITABINE    CISPLATIN         72              23   0.854059  0.926067             0.930233
+13   LUSC   GEMCITABINE  GEMCITABINE         35              20   0.615076  0.797488             0.614618
+14   LUSC    PACLITAXEL    DOCETAXEL         31              14   0.581134  0.724629             0.694352
+15   LUSC    PACLITAXEL   PACLITAXEL         28              10   0.507892  0.652416             0.475083

@@ -1,0 +1,1 @@
+Lung: organoid-only model (paper method, top pathway) in treated patients. Each row is one organoid drug used as the model, one patient group and one cohort. HR above 1 = patients predicted less sensitive did worse (the direction the method expects). Table: tables/apply_lung.tsv.

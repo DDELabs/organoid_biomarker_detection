@@ -1,0 +1,8 @@
+test	n_drug	resp_drug	n_control	resp_control	auc_in_drug_arm	auc_in_control_arm	p_auc_difference	interaction_coef	p_interaction	endpoint	n	treated	events	interaction_hazard_ratio	hr_ci_low	hr_ci_high
+NOAH (randomised): trastuzumab + chemo vs chemo alone	63.0	31.0	51.0	13.0	0.3276209677419355	0.5890688259109312	0.024557964582676194	-0.8884570225427538	0.041105019093895884	response						
+CHER-LOB (randomised): chemotherapy + lapatinib vs chemotherapy + trastuzumab	31.0	8.0	23.0	6.0	0.3695652173913043	0.37254901960784315	0.9859897996556488	-0.6039307704511573	0.3785247879672301	response						
+CHER-LOB (randomised): chemotherapy + trastuzumab + lapatinib vs chemotherapy + trastuzumab	34.0	13.0	23.0	6.0	0.2417582417582418	0.5784313725490196	0.03941027968026458	-1.1248779042208206	0.12836525391099052	response						
+APEX (randomised): bortezomib vs dexamethasone, response	71.0	38.0	70.0	28.0	0.511164274322169	0.5272108843537415	0.871398973778336	-0.038302538261343194	0.9108237255380706	response						
+TRANSFER trastuzumab: trained in other trastuzumab-treated breast cohorts, tested in NOAH	63.0	31.0	51.0	13.0	0.591733870967742	0.5182186234817814	0.5348039297299343	0.36901425164686696	0.4037391534697028	response						
+ICON7 (randomised): bevacizumab x score									0.2911255397283323	PFS	380.0	199.0	235.0	0.8702168986036697	0.6722579877232926	1.1264685053130103
+ICON7 (randomised): bevacizumab x score									0.28192341817477307	OS	380.0	199.0	96.0	0.7928285877934111	0.5194331706414614	1.2101213498672956

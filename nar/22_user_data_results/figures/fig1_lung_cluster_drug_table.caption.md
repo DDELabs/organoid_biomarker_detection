@@ -1,0 +1,1 @@
+a) The drug table gives one number per cluster and drug (102 patient-derived cell lines; 13 in C1, 45 in C2, 19 in C3, 25 in C4), not one per line. Blank cells have no entry. b) Cross-validated accuracy of a classifier that predicts the cluster from Reactome pathway scores, compared with chance and with shuffled cluster labels.

@@ -1,0 +1,15 @@
+test	n_drug	resp_drug	n_control	resp_control	auc_in_drug_arm	auc_in_control_arm	p_auc_difference	interaction_coef	p_interaction	table
+I-SPY2 (HER2-negative): Paclitaxel + ABT 888 + Carboplatin vs paclitaxel alone	71	27	179	31	0.8282828282828283	0.6904969485614646	0.07726293269117987	0.9194837353254658	0.06261011144515354	original_part2_rerun
+I-SPY2 (HER2-negative): Paclitaxel + AMG 386 vs paclitaxel alone	115	33	179	31	0.7169253510716925	0.6848299912816042	0.6868210052491711	0.23755359930336292	0.5202740285506379	original_part2_rerun
+I-SPY2 (HER2-negative): Paclitaxel + Ganetespib vs paclitaxel alone	93	26	179	31	0.6859931113662457	0.689843068875327	0.9642043844369754	-0.020243355284861115	0.9533114199130094	original_part2_rerun
+I-SPY2 (HER2-negative): Paclitaxel + Ganitumab vs paclitaxel alone	105	24	179	31	0.6738683127572016	0.6734960767218832	0.9966000508787846	-0.06365387999539569	0.8472616089504914	original_part2_rerun
+I-SPY2 (HER2-negative): Paclitaxel + MK-2206 vs paclitaxel alone	60	18	179	31	0.5	0.5425021795989537	0.6721188059073109	-0.18666509980429383	0.5997830005035367	original_part2_rerun
+I-SPY2 (HER2-negative): Paclitaxel + Pembrolizumab vs paclitaxel alone	69	31	179	31	0.8030560271646858	0.682868352223191	0.12731626079474226	0.3993732467365646	0.3438960850749062	original_part2_rerun
+BrighTNess: paclitaxel + carboplatin (with or without veliparib) vs paclitaxel alone	359	196	123	40	0.6529986227619883	0.6984939759036145	0.4478510810000933	-0.24755529758546568	0.34175313514628347	original_part2_rerun
+TRANSFER carboplatin: trained in BrighTNess, tested in I-SPY2 triple-negative	39	22	85	17	0.751336898395722	0.6003460207612457	0.17494479699134025	0.7801714731624427	0.14659387730831272	original_part2_rerun
+TRANSFER carboplatin: trained in I-SPY2, tested in BrighTNess	359	196	123	40	0.6471453612119695	0.5668674698795181	0.2023576228259487	0.19481067980136785	0.4264076601396882	original_part2_rerun
+NOAH (randomised): trastuzumab + chemo vs chemo alone	63	31	51	13	0.3276209677419355	0.5890688259109312	0.024557964582676194	-0.8884570225427538	0.041105019093895884	new_drug_specific_response
+CHER-LOB (randomised): chemotherapy + lapatinib vs chemotherapy + trastuzumab	31	8	23	6	0.3695652173913043	0.37254901960784315	0.9859897996556488	-0.6039307704511573	0.3785247879672301	new_drug_specific_response
+CHER-LOB (randomised): chemotherapy + trastuzumab + lapatinib vs chemotherapy + trastuzumab	34	13	23	6	0.2417582417582418	0.5784313725490196	0.03941027968026458	-1.1248779042208206	0.12836525391099052	new_drug_specific_response
+APEX (randomised): bortezomib vs dexamethasone, response	71	38	70	28	0.511164274322169	0.5272108843537415	0.871398973778336	-0.038302538261343194	0.9108237255380706	new_drug_specific_response
+TRANSFER trastuzumab: trained in other trastuzumab-treated breast cohorts, tested in NOAH	63	31	51	13	0.591733870967742	0.5182186234817814	0.5348039297299343	0.36901425164686696	0.4037391534697028	new_drug_specific_response
