@@ -1,0 +1,1 @@
+a) Olaparib and niraparib IC50 for the 7 lines (MCF7 is a breast line). b) Signature built from the 10 pathways most positively and 10 most negatively correlated with ln IC50 across 6 ovarian lines, tested in platinum-treated patients; HR above 1 = high score did worse.

@@ -1,0 +1,1 @@
+**How the model's total weight is shared between themes.** (a) Share of the summed absolute weight of all 673 pathways. (b) Solid bars: share of the weight; hatched bars: the share each theme would have if all pathways had equal weight. Proliferation (27 pathways) holds 4.8% of the weight; immune (53 pathways) 6.5%.
