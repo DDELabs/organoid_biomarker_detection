@@ -1,0 +1,48 @@
+bladder_logrank_currentdata organoids 9 features 668 eval n 79
+   L2 {'alpha': 1.0} inner=0.52
+   L1 {'alpha': 0.03} inner=0.88
+   ElasticNet {'alpha': 0.01, 'l1': 0.8} inner=0.83
+   SVM_linear {'C': 0.01} inner=1.00
+   SVM_RBF {'C': 10.0, 'g': 0.3} inner=0.52
+   RandomForest {'leaf': 1} inner=0.28
+   XGBoost {'depth': 2, 'lam': 1} inner=0.67
+   MLP {'alpha': 1.0} inner=0.73
+   NetSmoothL2 {'s': 0.3, 'alpha': 10.0} inner=0.52
+   GCN_prior {'wd': 0.0001, 'steps': 150} inner=0.80
+   L2_shortlist {'alpha': 1.0} inner=0.23
+   L1_shortlist {'alpha': 0.003} inner=0.50
+   ElasticNet_shortlist {'alpha': 0.01, 'l1': 0.2} inner=0.43
+   SVM_linear_shortlist {'C': 0.01} inner=0.43
+saved bladder_logrank_currentdata 37s
+bladder_ERCC2_paperdata organoids 9 features 488 eval n 402
+   L2 {'alpha': 1.0} inner=0.67
+   L1 {'alpha': 0.1} inner=-0.43
+   ElasticNet {'alpha': 0.01, 'l1': 0.5} inner=-0.13
+   SVM_linear {'C': 0.01} inner=0.98
+   SVM_RBF {'C': 10.0, 'g': 0.3} inner=0.77
+   RandomForest {'leaf': 1} inner=0.25
+   XGBoost {'depth': 4, 'lam': 1} inner=-0.50
+   MLP {'alpha': 0.1} inner=0.72
+   NetSmoothL2 {'s': 0.6, 'alpha': 10.0} inner=0.77
+   GCN_prior {'wd': 0.01, 'steps': 150} inner=0.83
+   L2_shortlist {'alpha': 10.0} inner=0.15
+   L1_shortlist {'alpha': 0.1} inner=0.28
+   ElasticNet_shortlist {'alpha': 0.1, 'l1': 0.5} inner=0.13
+   SVM_linear_shortlist {'C': 1e-05} inner=0.23
+saved bladder_ERCC2_paperdata 29s
+bladder_ERCC2_currentdata organoids 9 features 668 eval n 397
+   L2 {'alpha': 1.0} inner=0.52
+   L1 {'alpha': 0.03} inner=0.88
+   ElasticNet {'alpha': 0.01, 'l1': 0.8} inner=0.83
+   SVM_linear {'C': 0.01} inner=1.00
+   SVM_RBF {'C': 10.0, 'g': 0.3} inner=0.52
+   RandomForest {'leaf': 1} inner=0.28
+   XGBoost {'depth': 2, 'lam': 1} inner=0.67
+   MLP {'alpha': 1.0} inner=0.73
+   NetSmoothL2 {'s': 0.3, 'alpha': 10.0} inner=0.52
+   GCN_prior {'wd': 0.0001, 'steps': 150} inner=0.80
+   L2_shortlist {'alpha': 1.0} inner=0.23
+   L1_shortlist {'alpha': 0.003} inner=0.50
+   ElasticNet_shortlist {'alpha': 0.01, 'l1': 0.2} inner=0.43
+   SVM_linear_shortlist {'C': 0.01} inner=0.43
+saved bladder_ERCC2_currentdata 32s

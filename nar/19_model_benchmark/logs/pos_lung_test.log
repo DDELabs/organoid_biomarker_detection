@@ -1,0 +1,12 @@
+test cohorts 14 ADJ cohorts ['GSE14814', 'GSE29013', 'GSE37745', 'GSE42127', 'GSE68465', 'TCGA-LUAD', 'TCGA-LUSC'] shortlist 47
+--- training set without GSE14814: 1720 patients, 6 cohorts (4s)
+   L2 {'alpha': 10000.0} inner=0.217 (5s)
+--- training set without GSE157011: 1853 patients, 7 cohorts (5s)
+   L2 {'alpha': 10000.0} inner=0.195 (6s)
+--- training set without GSE37745: 1754 patients, 6 cohorts (6s)
+   L2 {'alpha': 10000.0} inner=0.190 (7s)
+--- training set without GSE42127: 1681 patients, 6 cohorts (7s)
+   L2 {'alpha': 10000.0} inner=0.187 (8s)
+--- training set without GSE68465: 1424 patients, 6 cohorts (8s)
+   L2 {'alpha': 100000.0} inner=0.160 (9s)
+saved 9s

@@ -1,0 +1,64 @@
+rectal_GSE87211_5FU organoids 19 features 533 eval n 189
+   L2 {'alpha': 1.0} inner=0.17
+   L1 {'alpha': 0.3} inner=0.08
+   ElasticNet {'alpha': 0.1, 'l1': 0.5} inner=0.12
+   SVM_linear {'C': 0.01} inner=0.79
+   SVM_RBF {'C': 10.0, 'g': 0.3} inner=0.06
+   RandomForest {'leaf': 3} inner=0.00
+   XGBoost {'depth': 2, 'lam': 1} inner=0.33
+   MLP {'alpha': 1.0} inner=0.08
+   NetSmoothL2 {'s': 0.6, 'alpha': 100.0} inner=0.17
+   GCN_prior {'wd': 0.01, 'steps': 150} inner=-0.08
+   L2_shortlist {'alpha': 1.0} inner=0.58
+   L1_shortlist {'alpha': 0.1} inner=0.57
+   ElasticNet_shortlist {'alpha': 0.03, 'l1': 0.5} inner=0.57
+   SVM_linear_shortlist {'C': 0.01} inner=0.33
+saved rectal_GSE87211_5FU 76s
+ovarian_olaparib_GSE63885 organoids 6 features 671 eval n 75
+   L2 {'alpha': 1.0} inner=0.54
+   L1 {'alpha': 0.01} inner=0.31
+   ElasticNet {'alpha': 0.01, 'l1': 0.2} inner=0.31
+   SVM_linear {'C': 0.01} inner=1.00
+   SVM_RBF {'C': 10.0, 'g': 0.3} inner=0.60
+   RandomForest {'leaf': 1} inner=-0.26
+   XGBoost {'depth': 2, 'lam': 1} inner=-0.03
+   MLP {'alpha': 1.0} inner=0.83
+   NetSmoothL2 {'s': 0.3, 'alpha': 10.0} inner=0.77
+   GCN_prior {'wd': 0.0001, 'steps': 150} inner=0.09
+   L2_shortlist {'alpha': 1.0} inner=0.43
+   L1_shortlist {'alpha': 0.003} inner=0.89
+   ElasticNet_shortlist {'alpha': 0.01, 'l1': 0.8} inner=0.89
+   SVM_linear_shortlist {'C': 1e-05} inner=0.77
+saved ovarian_olaparib_GSE63885 35s
+ovarian_olaparib_TCGAOV organoids 6 features 671 eval n 368
+   L2 {'alpha': 1.0} inner=0.54
+   L1 {'alpha': 0.01} inner=0.31
+   ElasticNet {'alpha': 0.01, 'l1': 0.2} inner=0.31
+   SVM_linear {'C': 0.01} inner=1.00
+   SVM_RBF {'C': 10.0, 'g': 0.3} inner=0.60
+   RandomForest {'leaf': 1} inner=-0.26
+   XGBoost {'depth': 2, 'lam': 1} inner=-0.03
+   MLP {'alpha': 1.0} inner=0.83
+   NetSmoothL2 {'s': 0.3, 'alpha': 10.0} inner=0.77
+   GCN_prior {'wd': 0.0001, 'steps': 150} inner=0.09
+   L2_shortlist {'alpha': 1.0} inner=0.43
+   L1_shortlist {'alpha': 0.003} inner=0.89
+   ElasticNet_shortlist {'alpha': 0.01, 'l1': 0.8} inner=0.89
+   SVM_linear_shortlist {'C': 1e-05} inner=0.77
+saved ovarian_olaparib_TCGAOV 51s
+ovarian_olaparib_GSE9891 organoids 6 features 671 eval n 241
+   L2 {'alpha': 1.0} inner=0.54
+   L1 {'alpha': 0.01} inner=0.31
+   ElasticNet {'alpha': 0.01, 'l1': 0.2} inner=0.31
+   SVM_linear {'C': 0.01} inner=1.00
+   SVM_RBF {'C': 10.0, 'g': 0.3} inner=0.60
+   RandomForest {'leaf': 1} inner=-0.26
+   XGBoost {'depth': 2, 'lam': 1} inner=-0.03
+   MLP {'alpha': 1.0} inner=0.83
+   NetSmoothL2 {'s': 0.3, 'alpha': 10.0} inner=0.77
+   GCN_prior {'wd': 0.0001, 'steps': 150} inner=0.09
+   L2_shortlist {'alpha': 1.0} inner=0.43
+   L1_shortlist {'alpha': 0.003} inner=0.89
+   ElasticNet_shortlist {'alpha': 0.01, 'l1': 0.8} inner=0.89
+   SVM_linear_shortlist {'C': 1e-05} inner=0.77
+saved ovarian_olaparib_GSE9891 33s

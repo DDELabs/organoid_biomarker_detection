@@ -1,0 +1,273 @@
+task	model	cohort	n	events	c_index	auc
+ovarian_paclitaxel_joint_survival	Joint_original	TCGA-OV	332	252	0.5649215922798553	
+ovarian_paclitaxel_joint_survival	Joint_original	GSE9891	191	138	0.5481396757047702	
+ovarian_paclitaxel_joint_survival	Joint_original	GSE63885	41	36	0.4782608695652174	
+ovarian_paclitaxel_joint_survival	PatientOnly_original	TCGA-OV	332	252	0.5636429433051869	
+ovarian_paclitaxel_joint_survival	PatientOnly_original	GSE9891	191	138	0.610374756105766	
+ovarian_paclitaxel_joint_survival	PatientOnly_original	GSE63885	41	36	0.4948849104859335	
+ovarian_paclitaxel_joint_survival	Proliferation_score	TCGA-OV	332	252	0.5112907117008444	
+ovarian_paclitaxel_joint_survival	Proliferation_score	GSE9891	191	138	0.5348852856085582	
+ovarian_paclitaxel_joint_survival	Proliferation_score	GSE63885	41	36	0.49104859335038364	
+ovarian_paclitaxel_joint_survival	L2	TCGA-OV	332	252	0.5060796139927624	
+ovarian_paclitaxel_joint_survival	L2	GSE9891	191	138	0.49888986072798225	
+ovarian_paclitaxel_joint_survival	L2	GSE63885	41	36	0.4718670076726343	
+ovarian_paclitaxel_joint_survival	L1	TCGA-OV	332	252	0.5107358262967431	
+ovarian_paclitaxel_joint_survival	L1	GSE9891	191	138	0.4725156428715602	
+ovarian_paclitaxel_joint_survival	L1	GSE63885	41	36	0.4616368286445013	
+ovarian_paclitaxel_joint_survival	ElasticNet	TCGA-OV	332	252	0.5109770808202654	
+ovarian_paclitaxel_joint_survival	ElasticNet	GSE9891	191	138	0.5124806566641997	
+ovarian_paclitaxel_joint_survival	ElasticNet	GSE63885	41	36	0.551150895140665	
+ovarian_paclitaxel_joint_survival	SVM_linear	TCGA-OV	332	252	0.5520144752714113	
+ovarian_paclitaxel_joint_survival	SVM_linear	GSE9891	191	138	0.5490143308887843	
+ovarian_paclitaxel_joint_survival	SVM_linear	GSE63885	41	36	0.5	
+ovarian_paclitaxel_joint_survival	SVM_RBF	TCGA-OV	332	252	0.5716043425814235	
+ovarian_paclitaxel_joint_survival	SVM_RBF	GSE9891	191	138	0.6010899549216174	
+ovarian_paclitaxel_joint_survival	SVM_RBF	GSE63885	41	36	0.5524296675191815	
+ovarian_paclitaxel_joint_survival	RandomForest	TCGA-OV	332	252	0.5533896260554886	
+ovarian_paclitaxel_joint_survival	RandomForest	GSE9891	191	138	0.5906613738814506	
+ovarian_paclitaxel_joint_survival	RandomForest	GSE63885	41	36	0.5370843989769821	
+ovarian_paclitaxel_joint_survival	XGBoost	TCGA-OV	332	252	0.5544028950542823	
+ovarian_paclitaxel_joint_survival	XGBoost	GSE9891	191	138	0.5523783892888381	
+ovarian_paclitaxel_joint_survival	XGBoost	GSE63885	41	36	0.4846547314578005	
+ovarian_paclitaxel_joint_survival	MLP	TCGA-OV	332	252	0.5161640530759952	
+ovarian_paclitaxel_joint_survival	MLP	GSE9891	191	138	0.5099912534481599	
+ovarian_paclitaxel_joint_survival	MLP	GSE63885	41	36	0.5818414322250639	
+ovarian_paclitaxel_joint_survival	NetSmoothL2	TCGA-OV	332	252	0.5177804583835947	
+ovarian_paclitaxel_joint_survival	NetSmoothL2	GSE9891	191	138	0.5184686806162955	
+ovarian_paclitaxel_joint_survival	NetSmoothL2	GSE63885	41	36	0.4948849104859335	
+ovarian_paclitaxel_joint_survival	GCN_prior	TCGA-OV	332	252	0.4964053075995175	
+ovarian_paclitaxel_joint_survival	GCN_prior	GSE9891	191	138	0.49909170423198546	
+ovarian_paclitaxel_joint_survival	GCN_prior	GSE63885	41	36	0.4296675191815857	
+ovarian_paclitaxel_joint_survival	L2_shortlist	TCGA-OV	332	252	0.5457418576598311	
+ovarian_paclitaxel_joint_survival	L2_shortlist	GSE9891	191	138	0.5555406041848886	
+ovarian_paclitaxel_joint_survival	L2_shortlist	GSE63885	41	36	0.5076726342710998	
+ovarian_paclitaxel_joint_survival	L1_shortlist	TCGA-OV	332	252	0.5261278648974669	
+ovarian_paclitaxel_joint_survival	L1_shortlist	GSE9891	191	138	0.5715535221691449	
+ovarian_paclitaxel_joint_survival	L1_shortlist	GSE63885	41	36	0.5281329923273658	
+ovarian_paclitaxel_joint_survival	ElasticNet_shortlist	TCGA-OV	332	252	0.5533896260554886	
+ovarian_paclitaxel_joint_survival	ElasticNet_shortlist	GSE9891	191	138	0.5718226468411491	
+ovarian_paclitaxel_joint_survival	ElasticNet_shortlist	GSE63885	41	36	0.5358056265984654	
+ovarian_paclitaxel_joint_survival	SVM_linear_shortlist	TCGA-OV	332	252	0.543860072376357	
+ovarian_paclitaxel_joint_survival	SVM_linear_shortlist	GSE9891	191	138	0.5823185090493171	
+ovarian_paclitaxel_joint_survival	SVM_linear_shortlist	GSE63885	41	36	0.49872122762148335	
+ovarian_paclitaxel_joint_response	Joint_original	TCGA-OV	4	1		
+ovarian_paclitaxel_joint_response	Joint_original	GSE9891	183	63		0.5783068783068783
+ovarian_paclitaxel_joint_response	Joint_original	GSE63885	41	3		0.38596491228070173
+ovarian_paclitaxel_joint_response	Joint_original	GSE51373	28	12		0.7291666666666666
+ovarian_paclitaxel_joint_response	Joint_original	GSE15622	20	7		0.5164835164835165
+ovarian_paclitaxel_joint_response	PatientOnly_original	TCGA-OV	4	1		
+ovarian_paclitaxel_joint_response	PatientOnly_original	GSE9891	183	63		0.6728835978835979
+ovarian_paclitaxel_joint_response	PatientOnly_original	GSE63885	41	3		0.43859649122807015
+ovarian_paclitaxel_joint_response	PatientOnly_original	GSE51373	28	12		0.6614583333333334
+ovarian_paclitaxel_joint_response	PatientOnly_original	GSE15622	20	7		0.5274725274725275
+ovarian_paclitaxel_joint_response	Proliferation_score	TCGA-OV	4	1		
+ovarian_paclitaxel_joint_response	Proliferation_score	GSE9891	183	63		0.5125661375661376
+ovarian_paclitaxel_joint_response	Proliferation_score	GSE63885	41	3		0.42105263157894735
+ovarian_paclitaxel_joint_response	Proliferation_score	GSE51373	28	12		0.7083333333333334
+ovarian_paclitaxel_joint_response	Proliferation_score	GSE15622	20	7		0.3516483516483517
+ovarian_paclitaxel_joint_response	L2	TCGA-OV	4	1		
+ovarian_paclitaxel_joint_response	L2	GSE9891	183	63		0.5431216931216931
+ovarian_paclitaxel_joint_response	L2	GSE63885	41	3		0.39473684210526316
+ovarian_paclitaxel_joint_response	L2	GSE51373	28	12		0.6041666666666666
+ovarian_paclitaxel_joint_response	L2	GSE15622	20	7		0.4945054945054945
+ovarian_paclitaxel_joint_response	L1	TCGA-OV	4	1		
+ovarian_paclitaxel_joint_response	L1	GSE9891	183	63		0.4898148148148148
+ovarian_paclitaxel_joint_response	L1	GSE63885	41	3		0.5350877192982456
+ovarian_paclitaxel_joint_response	L1	GSE51373	28	12		0.6770833333333334
+ovarian_paclitaxel_joint_response	L1	GSE15622	20	7		0.6813186813186813
+ovarian_paclitaxel_joint_response	ElasticNet	TCGA-OV	4	1		
+ovarian_paclitaxel_joint_response	ElasticNet	GSE9891	183	63		0.5781746031746032
+ovarian_paclitaxel_joint_response	ElasticNet	GSE63885	41	3		0.8157894736842105
+ovarian_paclitaxel_joint_response	ElasticNet	GSE51373	28	12		0.6458333333333334
+ovarian_paclitaxel_joint_response	ElasticNet	GSE15622	20	7		0.6373626373626373
+ovarian_paclitaxel_joint_response	SVM_linear	TCGA-OV	4	1		
+ovarian_paclitaxel_joint_response	SVM_linear	GSE9891	183	63		0.5981481481481481
+ovarian_paclitaxel_joint_response	SVM_linear	GSE63885	41	3		0.4824561403508772
+ovarian_paclitaxel_joint_response	SVM_linear	GSE51373	28	12		0.5364583333333334
+ovarian_paclitaxel_joint_response	SVM_linear	GSE15622	20	7		0.24175824175824176
+ovarian_paclitaxel_joint_response	SVM_RBF	TCGA-OV	4	1		
+ovarian_paclitaxel_joint_response	SVM_RBF	GSE9891	183	63		0.6656084656084656
+ovarian_paclitaxel_joint_response	SVM_RBF	GSE63885	41	3		0.5614035087719298
+ovarian_paclitaxel_joint_response	SVM_RBF	GSE51373	28	12		0.609375
+ovarian_paclitaxel_joint_response	SVM_RBF	GSE15622	20	7		0.3516483516483517
+ovarian_paclitaxel_joint_response	RandomForest	TCGA-OV	4	1		
+ovarian_paclitaxel_joint_response	RandomForest	GSE9891	183	63		0.6238095238095238
+ovarian_paclitaxel_joint_response	RandomForest	GSE63885	41	3		0.32456140350877194
+ovarian_paclitaxel_joint_response	RandomForest	GSE51373	28	12		0.6302083333333334
+ovarian_paclitaxel_joint_response	RandomForest	GSE15622	20	7		0.46153846153846156
+ovarian_paclitaxel_joint_response	XGBoost	TCGA-OV	4	1		
+ovarian_paclitaxel_joint_response	XGBoost	GSE9891	183	63		0.5826719576719577
+ovarian_paclitaxel_joint_response	XGBoost	GSE63885	41	3		0.41228070175438597
+ovarian_paclitaxel_joint_response	XGBoost	GSE51373	28	12		0.5677083333333334
+ovarian_paclitaxel_joint_response	XGBoost	GSE15622	20	7		0.6043956043956044
+ovarian_paclitaxel_joint_response	MLP	TCGA-OV	4	1		
+ovarian_paclitaxel_joint_response	MLP	GSE9891	183	63		0.5513227513227513
+ovarian_paclitaxel_joint_response	MLP	GSE63885	41	3		0.7982456140350878
+ovarian_paclitaxel_joint_response	MLP	GSE51373	28	12		0.5885416666666666
+ovarian_paclitaxel_joint_response	MLP	GSE15622	20	7		0.5604395604395604
+ovarian_paclitaxel_joint_response	NetSmoothL2	TCGA-OV	4	1		
+ovarian_paclitaxel_joint_response	NetSmoothL2	GSE9891	183	63		0.5661375661375662
+ovarian_paclitaxel_joint_response	NetSmoothL2	GSE63885	41	3		0.4473684210526316
+ovarian_paclitaxel_joint_response	NetSmoothL2	GSE51373	28	12		0.578125
+ovarian_paclitaxel_joint_response	NetSmoothL2	GSE15622	20	7		0.43956043956043955
+ovarian_paclitaxel_joint_response	GCN_prior	TCGA-OV	4	1		
+ovarian_paclitaxel_joint_response	GCN_prior	GSE9891	183	63		0.46785714285714286
+ovarian_paclitaxel_joint_response	GCN_prior	GSE63885	41	3		0.3508771929824561
+ovarian_paclitaxel_joint_response	GCN_prior	GSE51373	28	12		0.40625
+ovarian_paclitaxel_joint_response	GCN_prior	GSE15622	20	7		0.45054945054945056
+ovarian_paclitaxel_joint_response	L2_shortlist	TCGA-OV	4	1		
+ovarian_paclitaxel_joint_response	L2_shortlist	GSE9891	183	63		0.5775132275132275
+ovarian_paclitaxel_joint_response	L2_shortlist	GSE63885	41	3		0.5175438596491229
+ovarian_paclitaxel_joint_response	L2_shortlist	GSE51373	28	12		0.578125
+ovarian_paclitaxel_joint_response	L2_shortlist	GSE15622	20	7		0.5604395604395604
+ovarian_paclitaxel_joint_response	L1_shortlist	TCGA-OV	4	1		
+ovarian_paclitaxel_joint_response	L1_shortlist	GSE9891	183	63		0.5907407407407408
+ovarian_paclitaxel_joint_response	L1_shortlist	GSE63885	41	3		0.5
+ovarian_paclitaxel_joint_response	L1_shortlist	GSE51373	28	12		0.546875
+ovarian_paclitaxel_joint_response	L1_shortlist	GSE15622	20	7		0.5164835164835165
+ovarian_paclitaxel_joint_response	ElasticNet_shortlist	TCGA-OV	4	1		
+ovarian_paclitaxel_joint_response	ElasticNet_shortlist	GSE9891	183	63		0.5933862433862434
+ovarian_paclitaxel_joint_response	ElasticNet_shortlist	GSE63885	41	3		0.5175438596491229
+ovarian_paclitaxel_joint_response	ElasticNet_shortlist	GSE51373	28	12		0.5520833333333334
+ovarian_paclitaxel_joint_response	ElasticNet_shortlist	GSE15622	20	7		0.5604395604395604
+ovarian_paclitaxel_joint_response	SVM_linear_shortlist	TCGA-OV	4	1		
+ovarian_paclitaxel_joint_response	SVM_linear_shortlist	GSE9891	183	63		0.580026455026455
+ovarian_paclitaxel_joint_response	SVM_linear_shortlist	GSE63885	41	3		0.5175438596491229
+ovarian_paclitaxel_joint_response	SVM_linear_shortlist	GSE51373	28	12		0.5572916666666666
+ovarian_paclitaxel_joint_response	SVM_linear_shortlist	GSE15622	20	7		0.4835164835164835
+ovarian_platinum_joint_survival	Joint_original	TCGA-OV	370	278	0.5677327397688222	
+ovarian_platinum_joint_survival	Joint_original	GSE9891	238	179	0.6248992576882291	
+ovarian_platinum_joint_survival	Joint_original	GSE63885	75	66	0.512	
+ovarian_platinum_joint_survival	PatientOnly_original	TCGA-OV	370	278	0.5659950015620119	
+ovarian_platinum_joint_survival	PatientOnly_original	GSE9891	238	179	0.6282078472958642	
+ovarian_platinum_joint_survival	PatientOnly_original	GSE63885	75	66	0.5081904761904762	
+ovarian_platinum_joint_survival	Proliferation_score	TCGA-OV	370	278	0.5158544204935958	
+ovarian_platinum_joint_survival	Proliferation_score	GSE9891	238	179	0.5448992576882291	
+ovarian_platinum_joint_survival	Proliferation_score	GSE63885	75	66	0.46476190476190476	
+ovarian_platinum_joint_survival	L2	TCGA-OV	370	278	0.5269056544829741	
+ovarian_platinum_joint_survival	L2	GSE9891	238	179	0.5893955461293744	
+ovarian_platinum_joint_survival	L2	GSE63885	75	66	0.5104761904761905	
+ovarian_platinum_joint_survival	L1	TCGA-OV	370	278	0.5445368634801625	
+ovarian_platinum_joint_survival	L1	GSE9891	238	179	0.526829268292683	
+ovarian_platinum_joint_survival	L1	GSE63885	75	66	0.5009523809523809	
+ovarian_platinum_joint_survival	ElasticNet	TCGA-OV	370	278	0.5498672289909403	
+ovarian_platinum_joint_survival	ElasticNet	GSE9891	238	179	0.5261505832449629	
+ovarian_platinum_joint_survival	ElasticNet	GSE63885	75	66	0.5013333333333333	
+ovarian_platinum_joint_survival	SVM_linear	TCGA-OV	370	278	0.5296587004061231	
+ovarian_platinum_joint_survival	SVM_linear	GSE9891	238	179	0.5940615058324497	
+ovarian_platinum_joint_survival	SVM_linear	GSE63885	75	66	0.5211428571428571	
+ovarian_platinum_joint_survival	SVM_RBF	TCGA-OV	370	278	0.5688261480787254	
+ovarian_platinum_joint_survival	SVM_RBF	GSE9891	238	179	0.6246871686108165	
+ovarian_platinum_joint_survival	SVM_RBF	GSE63885	75	66	0.5554285714285714	
+ovarian_platinum_joint_survival	RandomForest	TCGA-OV	370	278	0.5377421118400499	
+ovarian_platinum_joint_survival	RandomForest	GSE9891	238	179	0.6096712619300106	
+ovarian_platinum_joint_survival	RandomForest	GSE63885	75	66	0.5093333333333333	
+ovarian_platinum_joint_survival	XGBoost	TCGA-OV	370	278	0.544771165260856	
+ovarian_platinum_joint_survival	XGBoost	GSE9891	238	179	0.5930858960763521	
+ovarian_platinum_joint_survival	XGBoost	GSE63885	75	66	0.5173333333333333	
+ovarian_platinum_joint_survival	MLP	TCGA-OV	370	278	0.5365901280849734	
+ovarian_platinum_joint_survival	MLP	GSE9891	238	179	0.5122799575821845	
+ovarian_platinum_joint_survival	MLP	GSE63885	75	66	0.5603809523809524	
+ovarian_platinum_joint_survival	NetSmoothL2	TCGA-OV	370	278	0.5474656357388317	
+ovarian_platinum_joint_survival	NetSmoothL2	GSE9891	238	179	0.6109013785790032	
+ovarian_platinum_joint_survival	NetSmoothL2	GSE63885	75	66	0.5097142857142857	
+ovarian_platinum_joint_survival	GCN_prior	TCGA-OV	370	278	0.5041783817557013	
+ovarian_platinum_joint_survival	GCN_prior	GSE9891	238	179	0.5380699893955462	
+ovarian_platinum_joint_survival	GCN_prior	GSE63885	75	66	0.4807619047619048	
+ovarian_platinum_joint_survival	L2_shortlist	TCGA-OV	370	278	0.5266323024054983	
+ovarian_platinum_joint_survival	L2_shortlist	GSE9891	238	179	0.5796818663838812	
+ovarian_platinum_joint_survival	L2_shortlist	GSE63885	75	66	0.5352380952380953	
+ovarian_platinum_joint_survival	L1_shortlist	TCGA-OV	370	278	0.5265151515151515	
+ovarian_platinum_joint_survival	L1_shortlist	GSE9891	238	179	0.5967338282078473	
+ovarian_platinum_joint_survival	L1_shortlist	GSE63885	75	66	0.536	
+ovarian_platinum_joint_survival	ElasticNet_shortlist	TCGA-OV	370	278	0.529482974070603	
+ovarian_platinum_joint_survival	ElasticNet_shortlist	GSE9891	238	179	0.5848568398727465	
+ovarian_platinum_joint_survival	ElasticNet_shortlist	GSE63885	75	66	0.5375238095238095	
+ovarian_platinum_joint_survival	SVM_linear_shortlist	TCGA-OV	370	278	0.5240940331146516	
+ovarian_platinum_joint_survival	SVM_linear_shortlist	GSE9891	238	179	0.5801484623541887	
+ovarian_platinum_joint_survival	SVM_linear_shortlist	GSE63885	75	66	0.532952380952381	
+ovarian_platinum_joint_response	Joint_original	TCGA-OV	6	1		
+ovarian_platinum_joint_response	Joint_original	GSE9891	229	83		0.7056444957913847
+ovarian_platinum_joint_response	Joint_original	GSE63885	75	10		0.4646153846153846
+ovarian_platinum_joint_response	Joint_original	GSE51373	28	12		0.625
+ovarian_platinum_joint_response	Joint_original	GSE15622	15	6		0.5555555555555556
+ovarian_platinum_joint_response	PatientOnly_original	TCGA-OV	6	1		
+ovarian_platinum_joint_response	PatientOnly_original	GSE9891	229	83		0.7091104142597788
+ovarian_platinum_joint_response	PatientOnly_original	GSE63885	75	10		0.5169230769230769
+ovarian_platinum_joint_response	PatientOnly_original	GSE51373	28	12		0.703125
+ovarian_platinum_joint_response	PatientOnly_original	GSE15622	15	6		0.5185185185185185
+ovarian_platinum_joint_response	Proliferation_score	TCGA-OV	6	1		
+ovarian_platinum_joint_response	Proliferation_score	GSE9891	229	83		0.5258293447763658
+ovarian_platinum_joint_response	Proliferation_score	GSE63885	75	10		0.3353846153846154
+ovarian_platinum_joint_response	Proliferation_score	GSE51373	28	12		0.7083333333333334
+ovarian_platinum_joint_response	Proliferation_score	GSE15622	15	6		0.7962962962962963
+ovarian_platinum_joint_response	L2	TCGA-OV	6	1		
+ovarian_platinum_joint_response	L2	GSE9891	229	83		0.6376464763162238
+ovarian_platinum_joint_response	L2	GSE63885	75	10		0.46
+ovarian_platinum_joint_response	L2	GSE51373	28	12		0.7447916666666666
+ovarian_platinum_joint_response	L2	GSE15622	15	6		0.6666666666666666
+ovarian_platinum_joint_response	L1	TCGA-OV	6	1		
+ovarian_platinum_joint_response	L1	GSE9891	229	83		0.5498432084502393
+ovarian_platinum_joint_response	L1	GSE63885	75	10		0.583076923076923
+ovarian_platinum_joint_response	L1	GSE51373	28	12		0.6197916666666666
+ovarian_platinum_joint_response	L1	GSE15622	15	6		0.16666666666666666
+ovarian_platinum_joint_response	ElasticNet	TCGA-OV	6	1		
+ovarian_platinum_joint_response	ElasticNet	GSE9891	229	83		0.560488529460307
+ovarian_platinum_joint_response	ElasticNet	GSE63885	75	10		0.5784615384615385
+ovarian_platinum_joint_response	ElasticNet	GSE51373	28	12		0.609375
+ovarian_platinum_joint_response	ElasticNet	GSE15622	15	6		0.14814814814814814
+ovarian_platinum_joint_response	SVM_linear	TCGA-OV	6	1		
+ovarian_platinum_joint_response	SVM_linear	GSE9891	229	83		0.6461462287506189
+ovarian_platinum_joint_response	SVM_linear	GSE63885	75	10		0.4646153846153846
+ovarian_platinum_joint_response	SVM_linear	GSE51373	28	12		0.71875
+ovarian_platinum_joint_response	SVM_linear	GSE15622	15	6		0.6666666666666666
+ovarian_platinum_joint_response	SVM_RBF	TCGA-OV	6	1		
+ovarian_platinum_joint_response	SVM_RBF	GSE9891	229	83		0.6912031688397425
+ovarian_platinum_joint_response	SVM_RBF	GSE63885	75	10		0.5230769230769231
+ovarian_platinum_joint_response	SVM_RBF	GSE51373	28	12		0.6770833333333334
+ovarian_platinum_joint_response	SVM_RBF	GSE15622	15	6		0.6481481481481481
+ovarian_platinum_joint_response	RandomForest	TCGA-OV	6	1		
+ovarian_platinum_joint_response	RandomForest	GSE9891	229	83		0.6675193926390494
+ovarian_platinum_joint_response	RandomForest	GSE63885	75	10		0.44461538461538463
+ovarian_platinum_joint_response	RandomForest	GSE51373	28	12		0.5989583333333334
+ovarian_platinum_joint_response	RandomForest	GSE15622	15	6		0.7037037037037037
+ovarian_platinum_joint_response	XGBoost	TCGA-OV	6	1		
+ovarian_platinum_joint_response	XGBoost	GSE9891	229	83		0.6654563459316719
+ovarian_platinum_joint_response	XGBoost	GSE63885	75	10		0.48923076923076925
+ovarian_platinum_joint_response	XGBoost	GSE51373	28	12		0.578125
+ovarian_platinum_joint_response	XGBoost	GSE15622	15	6		0.37037037037037035
+ovarian_platinum_joint_response	MLP	TCGA-OV	6	1		
+ovarian_platinum_joint_response	MLP	GSE9891	229	83		0.5148539362931177
+ovarian_platinum_joint_response	MLP	GSE63885	75	10		0.6307692307692307
+ovarian_platinum_joint_response	MLP	GSE51373	28	12		0.6041666666666666
+ovarian_platinum_joint_response	MLP	GSE15622	15	6		0.35185185185185186
+ovarian_platinum_joint_response	NetSmoothL2	TCGA-OV	6	1		
+ovarian_platinum_joint_response	NetSmoothL2	GSE9891	229	83		0.6696649612147219
+ovarian_platinum_joint_response	NetSmoothL2	GSE63885	75	10		0.4553846153846154
+ovarian_platinum_joint_response	NetSmoothL2	GSE51373	28	12		0.71875
+ovarian_platinum_joint_response	NetSmoothL2	GSE15622	15	6		0.6296296296296297
+ovarian_platinum_joint_response	GCN_prior	TCGA-OV	6	1		
+ovarian_platinum_joint_response	GCN_prior	GSE9891	229	83		0.5695659349727678
+ovarian_platinum_joint_response	GCN_prior	GSE63885	75	10		0.4323076923076923
+ovarian_platinum_joint_response	GCN_prior	GSE51373	28	12		0.4739583333333333
+ovarian_platinum_joint_response	GCN_prior	GSE15622	15	6		0.6111111111111112
+ovarian_platinum_joint_response	L2_shortlist	TCGA-OV	6	1		
+ovarian_platinum_joint_response	L2_shortlist	GSE9891	229	83		0.626918633437861
+ovarian_platinum_joint_response	L2_shortlist	GSE63885	75	10		0.5923076923076923
+ovarian_platinum_joint_response	L2_shortlist	GSE51373	28	12		0.7239583333333334
+ovarian_platinum_joint_response	L2_shortlist	GSE15622	15	6		0.8333333333333334
+ovarian_platinum_joint_response	L1_shortlist	TCGA-OV	6	1		
+ovarian_platinum_joint_response	L1_shortlist	GSE9891	229	83		0.6450734444627826
+ovarian_platinum_joint_response	L1_shortlist	GSE63885	75	10		0.6323076923076923
+ovarian_platinum_joint_response	L1_shortlist	GSE51373	28	12		0.6927083333333334
+ovarian_platinum_joint_response	L1_shortlist	GSE15622	15	6		0.6481481481481481
+ovarian_platinum_joint_response	ElasticNet_shortlist	TCGA-OV	6	1		
+ovarian_platinum_joint_response	ElasticNet_shortlist	GSE9891	229	83		0.626836111569566
+ovarian_platinum_joint_response	ElasticNet_shortlist	GSE63885	75	10		0.66
+ovarian_platinum_joint_response	ElasticNet_shortlist	GSE51373	28	12		0.6979166666666666
+ovarian_platinum_joint_response	ElasticNet_shortlist	GSE15622	15	6		0.6481481481481481
+ovarian_platinum_joint_response	SVM_linear_shortlist	TCGA-OV	6	1		
+ovarian_platinum_joint_response	SVM_linear_shortlist	GSE9891	229	83		0.635335864003961
+ovarian_platinum_joint_response	SVM_linear_shortlist	GSE63885	75	10		0.6369230769230769
+ovarian_platinum_joint_response	SVM_linear_shortlist	GSE51373	28	12		0.7395833333333334
+ovarian_platinum_joint_response	SVM_linear_shortlist	GSE15622	15	6		0.8518518518518519

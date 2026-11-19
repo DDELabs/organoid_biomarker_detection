@@ -1,0 +1,267 @@
+model	inner_cv_spearman	alpha	l1	C	g	leaf	depth	lam	s	wd	steps	task	held_out
+L2	0.5166666666666667	1.0										bladder_ERCC2_currentdata	
+L1	0.8833333333333333	0.03										bladder_ERCC2_currentdata	
+ElasticNet	0.8333333333333333	0.01	0.8									bladder_ERCC2_currentdata	
+SVM_linear	1.0			0.01								bladder_ERCC2_currentdata	
+SVM_RBF	0.5166666666666667			10.0	0.3							bladder_ERCC2_currentdata	
+RandomForest	0.2833333333333333					1.0						bladder_ERCC2_currentdata	
+XGBoost	0.6666666666666667						2.0	1.0				bladder_ERCC2_currentdata	
+MLP	0.7333333333333334	1.0										bladder_ERCC2_currentdata	
+NetSmoothL2	0.5166666666666667	10.0							0.3			bladder_ERCC2_currentdata	
+GCN_prior	0.7999999999999999									0.0001	150.0	bladder_ERCC2_currentdata	
+L2_shortlist	0.2333333333333333	1.0										bladder_ERCC2_currentdata	
+L1_shortlist	0.5	0.003										bladder_ERCC2_currentdata	
+ElasticNet_shortlist	0.43333333333333335	0.01	0.2									bladder_ERCC2_currentdata	
+SVM_linear_shortlist	0.43333333333333335			0.01								bladder_ERCC2_currentdata	
+L2	0.6666666666666667	1.0										bladder_ERCC2_paperdata	
+L1	-0.43333333333333335	0.1										bladder_ERCC2_paperdata	
+ElasticNet	-0.13333333333333333	0.01	0.5									bladder_ERCC2_paperdata	
+SVM_linear	0.9833333333333333			0.01								bladder_ERCC2_paperdata	
+SVM_RBF	0.7666666666666667			10.0	0.3							bladder_ERCC2_paperdata	
+RandomForest	0.25					1.0						bladder_ERCC2_paperdata	
+XGBoost	-0.5						4.0	1.0				bladder_ERCC2_paperdata	
+MLP	0.7166666666666667	0.1										bladder_ERCC2_paperdata	
+NetSmoothL2	0.7666666666666667	10.0							0.6			bladder_ERCC2_paperdata	
+GCN_prior	0.8333333333333333									0.01	150.0	bladder_ERCC2_paperdata	
+L2_shortlist	0.15	10.0										bladder_ERCC2_paperdata	
+L1_shortlist	0.2833333333333333	0.1										bladder_ERCC2_paperdata	
+ElasticNet_shortlist	0.13333333333333333	0.1	0.5									bladder_ERCC2_paperdata	
+SVM_linear_shortlist	0.2333333333333333			1e-05								bladder_ERCC2_paperdata	
+L2	0.5166666666666667	1.0										bladder_logrank_currentdata	
+L1	0.8833333333333333	0.03										bladder_logrank_currentdata	
+ElasticNet	0.8333333333333333	0.01	0.8									bladder_logrank_currentdata	
+SVM_linear	1.0			0.01								bladder_logrank_currentdata	
+SVM_RBF	0.5166666666666667			10.0	0.3							bladder_logrank_currentdata	
+RandomForest	0.2833333333333333					1.0						bladder_logrank_currentdata	
+XGBoost	0.6666666666666667						2.0	1.0				bladder_logrank_currentdata	
+MLP	0.7333333333333334	1.0										bladder_logrank_currentdata	
+NetSmoothL2	0.5166666666666667	10.0							0.3			bladder_logrank_currentdata	
+GCN_prior	0.7999999999999999									0.0001	150.0	bladder_logrank_currentdata	
+L2_shortlist	0.2333333333333333	1.0										bladder_logrank_currentdata	
+L1_shortlist	0.5	0.003										bladder_logrank_currentdata	
+ElasticNet_shortlist	0.43333333333333335	0.01	0.2									bladder_logrank_currentdata	
+SVM_linear_shortlist	0.43333333333333335			0.01								bladder_logrank_currentdata	
+L2	0.6666666666666667	1.0										bladder_logrank_paperdata	
+L1	-0.43333333333333335	0.1										bladder_logrank_paperdata	
+ElasticNet	-0.13333333333333333	0.01	0.5									bladder_logrank_paperdata	
+SVM_linear	0.9833333333333333			0.01								bladder_logrank_paperdata	
+SVM_RBF	0.7666666666666667			10.0	0.3							bladder_logrank_paperdata	
+RandomForest	0.25					1.0						bladder_logrank_paperdata	
+XGBoost	-0.5						4.0	1.0				bladder_logrank_paperdata	
+MLP	0.7166666666666667	0.1										bladder_logrank_paperdata	
+NetSmoothL2	0.7666666666666667	10.0							0.6			bladder_logrank_paperdata	
+GCN_prior	0.8333333333333333									0.01	150.0	bladder_logrank_paperdata	
+L2_shortlist	0.15	10.0										bladder_logrank_paperdata	
+L1_shortlist	0.2833333333333333	0.1										bladder_logrank_paperdata	
+ElasticNet_shortlist	0.13333333333333333	0.1	0.5									bladder_logrank_paperdata	
+SVM_linear_shortlist	0.2333333333333333			1e-05								bladder_logrank_paperdata	
+L2	-0.15614035087719297	1000.0										colon_cetuximab_BRAF	
+L1	0.18947368421052632	0.003										colon_cetuximab_BRAF	
+ElasticNet	0.13684210526315788	0.01	0.8									colon_cetuximab_BRAF	
+SVM_linear	0.7771929824561404			0.01								colon_cetuximab_BRAF	
+SVM_RBF	-0.06842105263157894			10.0	1.0							colon_cetuximab_BRAF	
+RandomForest	-0.019298245614035085					1.0						colon_cetuximab_BRAF	
+XGBoost	0.29298245614035084						4.0	1.0				colon_cetuximab_BRAF	
+MLP	0.056140350877192984	10.0										colon_cetuximab_BRAF	
+NetSmoothL2	-0.14385964912280702	1000.0							0.6			colon_cetuximab_BRAF	
+GCN_prior	0.019298245614035085									0.0001	150.0	colon_cetuximab_BRAF	
+L2_shortlist	-0.4263157894736842	1.0										colon_cetuximab_BRAF	
+L1_shortlist	-0.04912280701754386	0.1										colon_cetuximab_BRAF	
+ElasticNet_shortlist	-0.012280701754385965	0.1	0.8									colon_cetuximab_BRAF	
+SVM_linear_shortlist	-0.1824561403508772			1e-05								colon_cetuximab_BRAF	
+L2	0.21066863512435358	1.0										ovarian_joint_OV_PACLITAXEL	TCGA-OV
+L1	0.18991919660477974	0.003										ovarian_joint_OV_PACLITAXEL	TCGA-OV
+ElasticNet	0.18288452174942565	0.01	0.2									ovarian_joint_OV_PACLITAXEL	TCGA-OV
+SVM_linear	-0.015817257007725544			0.001								ovarian_joint_OV_PACLITAXEL	TCGA-OV
+SVM_RBF	0.10871978069651766			10.0	1.0							ovarian_joint_OV_PACLITAXEL	TCGA-OV
+RandomForest	0.02423117145109633					5.0						ovarian_joint_OV_PACLITAXEL	TCGA-OV
+XGBoost	0.11535116018725089						2.0	1.0				ovarian_joint_OV_PACLITAXEL	TCGA-OV
+MLP	0.08089526404558559	0.1										ovarian_joint_OV_PACLITAXEL	TCGA-OV
+NetSmoothL2	0.09350491347186099	10.0							0.3			ovarian_joint_OV_PACLITAXEL	TCGA-OV
+GCN_prior	-0.00398522564998717									0.01	150.0	ovarian_joint_OV_PACLITAXEL	TCGA-OV
+L2_shortlist	0.1738846115492325	100.0										ovarian_joint_OV_PACLITAXEL	TCGA-OV
+L1_shortlist	0.1658271825807348	0.003										ovarian_joint_OV_PACLITAXEL	TCGA-OV
+ElasticNet_shortlist	0.16846063223187618	0.1	0.2									ovarian_joint_OV_PACLITAXEL	TCGA-OV
+SVM_linear_shortlist	0.201058880632773			0.01								ovarian_joint_OV_PACLITAXEL	TCGA-OV
+L2	0.0771308703482549	1.0										ovarian_joint_OV_PACLITAXEL	GSE9891
+L1	0.13282250675351776	0.1										ovarian_joint_OV_PACLITAXEL	GSE9891
+ElasticNet	0.05043516988771031	0.01	0.8									ovarian_joint_OV_PACLITAXEL	GSE9891
+SVM_linear	0.007224030054555568			0.001								ovarian_joint_OV_PACLITAXEL	GSE9891
+SVM_RBF	0.10173153284163389			10.0	1.0							ovarian_joint_OV_PACLITAXEL	GSE9891
+RandomForest	0.10904548006251828					25.0						ovarian_joint_OV_PACLITAXEL	GSE9891
+XGBoost	0.05078940416655149						2.0	30.0				ovarian_joint_OV_PACLITAXEL	GSE9891
+MLP	-0.04963104484368869	10.0										ovarian_joint_OV_PACLITAXEL	GSE9891
+NetSmoothL2	0.05457610442779007	10.0							0.6			ovarian_joint_OV_PACLITAXEL	GSE9891
+GCN_prior	0.046149593581060744									0.0001	150.0	ovarian_joint_OV_PACLITAXEL	GSE9891
+L2_shortlist	0.09466146228108777	1.0										ovarian_joint_OV_PACLITAXEL	GSE9891
+L1_shortlist	0.08509355072498598	0.003										ovarian_joint_OV_PACLITAXEL	GSE9891
+ElasticNet_shortlist	0.08861785168400563	0.01	0.2									ovarian_joint_OV_PACLITAXEL	GSE9891
+SVM_linear_shortlist	0.01927388648094011			0.01								ovarian_joint_OV_PACLITAXEL	GSE9891
+L2	0.20621453675585136	10000.0										ovarian_joint_OV_PACLITAXEL	GSE63885
+L1	0.14498365220326204	0.03										ovarian_joint_OV_PACLITAXEL	GSE63885
+ElasticNet	0.13320070220369662	0.01	0.5									ovarian_joint_OV_PACLITAXEL	GSE63885
+SVM_linear	0.12256844043550502			0.001								ovarian_joint_OV_PACLITAXEL	GSE63885
+SVM_RBF	0.19086496951420556			10.0	1.0							ovarian_joint_OV_PACLITAXEL	GSE63885
+RandomForest	0.18668969238992741					5.0						ovarian_joint_OV_PACLITAXEL	GSE63885
+XGBoost	0.17151055081823113						2.0	30.0				ovarian_joint_OV_PACLITAXEL	GSE63885
+MLP	0.11450494298501578	10.0										ovarian_joint_OV_PACLITAXEL	GSE63885
+NetSmoothL2	0.18368719479572743	1000.0							0.3			ovarian_joint_OV_PACLITAXEL	GSE63885
+GCN_prior	0.08166869292152805									0.01	150.0	ovarian_joint_OV_PACLITAXEL	GSE63885
+L2_shortlist	0.18130329598743805	10000.0										ovarian_joint_OV_PACLITAXEL	GSE63885
+L1_shortlist	0.14540988587075432	0.03										ovarian_joint_OV_PACLITAXEL	GSE63885
+ElasticNet_shortlist	0.16418029065244466	0.1	0.2									ovarian_joint_OV_PACLITAXEL	GSE63885
+SVM_linear_shortlist	0.16123040300106628			0.01								ovarian_joint_OV_PACLITAXEL	GSE63885
+L2	0.13038888893807582	1000.0										ovarian_joint_OV_PACLITAXEL	GSE51373
+L1	0.09916717068084857	0.003										ovarian_joint_OV_PACLITAXEL	GSE51373
+ElasticNet	0.11596803759380242	0.01	0.5									ovarian_joint_OV_PACLITAXEL	GSE51373
+SVM_linear	0.10781132920977829			0.001								ovarian_joint_OV_PACLITAXEL	GSE51373
+SVM_RBF	0.14526093567406537			1.0	1.0							ovarian_joint_OV_PACLITAXEL	GSE51373
+RandomForest	0.11692807449554685					5.0						ovarian_joint_OV_PACLITAXEL	GSE51373
+XGBoost	0.14983126187884205						4.0	30.0				ovarian_joint_OV_PACLITAXEL	GSE51373
+MLP	0.1763047931779202	10.0										ovarian_joint_OV_PACLITAXEL	GSE51373
+NetSmoothL2	0.12153239356722084	1000.0							0.3			ovarian_joint_OV_PACLITAXEL	GSE51373
+GCN_prior	0.024763813316325867									0.0001	150.0	ovarian_joint_OV_PACLITAXEL	GSE51373
+L2_shortlist	0.15119037910467759	1000.0										ovarian_joint_OV_PACLITAXEL	GSE51373
+L1_shortlist	0.156072744786855	0.01										ovarian_joint_OV_PACLITAXEL	GSE51373
+ElasticNet_shortlist	0.151933542017691	0.03	0.5									ovarian_joint_OV_PACLITAXEL	GSE51373
+SVM_linear_shortlist	0.16076564280051797			0.01								ovarian_joint_OV_PACLITAXEL	GSE51373
+L2	0.16390197071685875	10000.0										ovarian_joint_OV_PACLITAXEL	GSE15622
+L1	0.13322199299962778	0.003										ovarian_joint_OV_PACLITAXEL	GSE15622
+ElasticNet	0.13142172622274453	0.01	0.5									ovarian_joint_OV_PACLITAXEL	GSE15622
+SVM_linear	0.1453793281545395			0.0001								ovarian_joint_OV_PACLITAXEL	GSE15622
+SVM_RBF	0.23058998706235534			0.1	1.0							ovarian_joint_OV_PACLITAXEL	GSE15622
+RandomForest	0.1837203676357193					5.0						ovarian_joint_OV_PACLITAXEL	GSE15622
+XGBoost	0.15526784596754062						2.0	30.0				ovarian_joint_OV_PACLITAXEL	GSE15622
+MLP	0.10947065076023728	10.0										ovarian_joint_OV_PACLITAXEL	GSE15622
+NetSmoothL2	0.15969077954637045	10000.0							0.3			ovarian_joint_OV_PACLITAXEL	GSE15622
+GCN_prior	0.025130682299554383									0.0001	150.0	ovarian_joint_OV_PACLITAXEL	GSE15622
+L2_shortlist	0.14014300639321597	1000.0										ovarian_joint_OV_PACLITAXEL	GSE15622
+L1_shortlist	0.127601672794676	0.03										ovarian_joint_OV_PACLITAXEL	GSE15622
+ElasticNet_shortlist	0.14557499040055186	0.03	0.5									ovarian_joint_OV_PACLITAXEL	GSE15622
+SVM_linear_shortlist	0.1313452906039673			0.0001								ovarian_joint_OV_PACLITAXEL	GSE15622
+L2	0.23966827643326866	1000000.0										ovarian_joint_OV_PLATINUM	TCGA-OV
+L1	0.15320327141488418	0.1										ovarian_joint_OV_PLATINUM	TCGA-OV
+ElasticNet	0.15705911420855337	0.1	0.8									ovarian_joint_OV_PLATINUM	TCGA-OV
+SVM_linear	0.2136241551057757			1e-05								ovarian_joint_OV_PLATINUM	TCGA-OV
+SVM_RBF	0.28974475735968824			1.0	1.0							ovarian_joint_OV_PLATINUM	TCGA-OV
+RandomForest	0.2668345345544044					25.0						ovarian_joint_OV_PLATINUM	TCGA-OV
+XGBoost	0.196085673912469						4.0	30.0				ovarian_joint_OV_PLATINUM	TCGA-OV
+MLP	0.12139066265159877	10.0										ovarian_joint_OV_PLATINUM	TCGA-OV
+NetSmoothL2	0.1939992823945054	10000.0							0.3			ovarian_joint_OV_PLATINUM	TCGA-OV
+GCN_prior	0.07271009618904847									0.01	150.0	ovarian_joint_OV_PLATINUM	TCGA-OV
+L2_shortlist	0.34684062879853694	10000.0										ovarian_joint_OV_PLATINUM	TCGA-OV
+L1_shortlist	0.27667122403173633	0.1										ovarian_joint_OV_PLATINUM	TCGA-OV
+ElasticNet_shortlist	0.23673113646604962	0.1	0.8									ovarian_joint_OV_PLATINUM	TCGA-OV
+SVM_linear_shortlist	0.3446084983265924			0.0001								ovarian_joint_OV_PLATINUM	TCGA-OV
+L2	0.2776538872060742	100000.0										ovarian_joint_OV_PLATINUM	GSE9891
+L1	0.12142060419678105	0.1										ovarian_joint_OV_PLATINUM	GSE9891
+ElasticNet	0.11352707013510252	0.1	0.8									ovarian_joint_OV_PLATINUM	GSE9891
+SVM_linear	0.2517246792895819			1e-05								ovarian_joint_OV_PLATINUM	GSE9891
+SVM_RBF	0.17802072440258127			0.1	0.3							ovarian_joint_OV_PLATINUM	GSE9891
+RandomForest	0.16429961241628316					25.0						ovarian_joint_OV_PLATINUM	GSE9891
+XGBoost	0.12258468802407083						2.0	1.0				ovarian_joint_OV_PLATINUM	GSE9891
+MLP	-0.05415242953822502	10.0										ovarian_joint_OV_PLATINUM	GSE9891
+NetSmoothL2	0.1905499205451141	10000.0							0.6			ovarian_joint_OV_PLATINUM	GSE9891
+GCN_prior	0.08376710145548144									0.0001	150.0	ovarian_joint_OV_PLATINUM	GSE9891
+L2_shortlist	0.19205575853579473	1000000.0										ovarian_joint_OV_PLATINUM	GSE9891
+L1_shortlist	0.11664836015380524	0.03										ovarian_joint_OV_PLATINUM	GSE9891
+ElasticNet_shortlist	0.08539283978872636	0.03	0.8									ovarian_joint_OV_PLATINUM	GSE9891
+SVM_linear_shortlist	0.217563033319164			1e-05								ovarian_joint_OV_PLATINUM	GSE9891
+L2	0.28146634080640265	1000000.0										ovarian_joint_OV_PLATINUM	GSE63885
+L1	0.20535931142172548	0.03										ovarian_joint_OV_PLATINUM	GSE63885
+ElasticNet	0.17439206887521697	0.03	0.8									ovarian_joint_OV_PLATINUM	GSE63885
+SVM_linear	0.27431301749286385			1e-05								ovarian_joint_OV_PLATINUM	GSE63885
+SVM_RBF	0.26528875866057194			0.1	1.0							ovarian_joint_OV_PLATINUM	GSE63885
+RandomForest	0.2549662794263157					25.0						ovarian_joint_OV_PLATINUM	GSE63885
+XGBoost	0.21804115274658648						2.0	1.0				ovarian_joint_OV_PLATINUM	GSE63885
+MLP	0.06354666123815988	10.0										ovarian_joint_OV_PLATINUM	GSE63885
+NetSmoothL2	0.2543203687721227	10000.0							0.6			ovarian_joint_OV_PLATINUM	GSE63885
+GCN_prior	0.12584152401603335									0.0001	150.0	ovarian_joint_OV_PLATINUM	GSE63885
+L2_shortlist	0.31002369559373366	10000.0										ovarian_joint_OV_PLATINUM	GSE63885
+L1_shortlist	0.3520231148507784	0.1										ovarian_joint_OV_PLATINUM	GSE63885
+ElasticNet_shortlist	0.3474073972416416	0.1	0.8									ovarian_joint_OV_PLATINUM	GSE63885
+SVM_linear_shortlist	0.32244247844707624			0.001								ovarian_joint_OV_PLATINUM	GSE63885
+L2	0.17609502097172522	1000000.0										ovarian_joint_OV_PLATINUM	GSE51373
+L1	0.09826664528388178	0.1										ovarian_joint_OV_PLATINUM	GSE51373
+ElasticNet	0.10762321443163153	0.1	0.5									ovarian_joint_OV_PLATINUM	GSE51373
+SVM_linear	0.16456864052502018			1e-05								ovarian_joint_OV_PLATINUM	GSE51373
+SVM_RBF	0.21399843360370407			0.1	1.0							ovarian_joint_OV_PLATINUM	GSE51373
+RandomForest	0.19035856785338234					5.0						ovarian_joint_OV_PLATINUM	GSE51373
+XGBoost	0.09998857729724146						2.0	30.0				ovarian_joint_OV_PLATINUM	GSE51373
+MLP	0.002016470861094105	10.0										ovarian_joint_OV_PLATINUM	GSE51373
+NetSmoothL2	0.15708257780307522	10000.0							0.3			ovarian_joint_OV_PLATINUM	GSE51373
+GCN_prior	0.10354160196323994									0.0001	150.0	ovarian_joint_OV_PLATINUM	GSE51373
+L2_shortlist	0.20126268037843997	1000000.0										ovarian_joint_OV_PLATINUM	GSE51373
+L1_shortlist	0.12119346174601807	0.03										ovarian_joint_OV_PLATINUM	GSE51373
+ElasticNet_shortlist	0.10013810225985992	0.03	0.8									ovarian_joint_OV_PLATINUM	GSE51373
+SVM_linear_shortlist	0.23915850427284857			0.0001								ovarian_joint_OV_PLATINUM	GSE51373
+L2	0.20010377647193056	10000.0										ovarian_joint_OV_PLATINUM	GSE15622
+L1	0.1442756191839187	0.01										ovarian_joint_OV_PLATINUM	GSE15622
+ElasticNet	0.14170133318850214	0.01	0.8									ovarian_joint_OV_PLATINUM	GSE15622
+SVM_linear	0.18698571381302664			1e-05								ovarian_joint_OV_PLATINUM	GSE15622
+SVM_RBF	0.2513361604134813			1.0	1.0							ovarian_joint_OV_PLATINUM	GSE15622
+RandomForest	0.1766261941528505					25.0						ovarian_joint_OV_PLATINUM	GSE15622
+XGBoost	0.1685456592746833						2.0	30.0				ovarian_joint_OV_PLATINUM	GSE15622
+MLP	0.1086175113177895	10.0										ovarian_joint_OV_PLATINUM	GSE15622
+NetSmoothL2	0.18674469553301132	10000.0							0.3			ovarian_joint_OV_PLATINUM	GSE15622
+GCN_prior	0.009238501751899678									0.0001	150.0	ovarian_joint_OV_PLATINUM	GSE15622
+L2_shortlist	0.19558368377808816	1000000.0										ovarian_joint_OV_PLATINUM	GSE15622
+L1_shortlist	0.16465194721192325	0.03										ovarian_joint_OV_PLATINUM	GSE15622
+ElasticNet_shortlist	0.15635043980376434	0.03	0.8									ovarian_joint_OV_PLATINUM	GSE15622
+SVM_linear_shortlist	0.19193226765047028			1e-05								ovarian_joint_OV_PLATINUM	GSE15622
+L2	0.5428571428571429	1.0										ovarian_olaparib_GSE63885	
+L1	0.3142857142857143	0.01										ovarian_olaparib_GSE63885	
+ElasticNet	0.3142857142857143	0.01	0.2									ovarian_olaparib_GSE63885	
+SVM_linear	1.0			0.01								ovarian_olaparib_GSE63885	
+SVM_RBF	0.6			10.0	0.3							ovarian_olaparib_GSE63885	
+RandomForest	-0.2571428571428572					1.0						ovarian_olaparib_GSE63885	
+XGBoost	-0.028571428571428574						2.0	1.0				ovarian_olaparib_GSE63885	
+MLP	0.8285714285714287	1.0										ovarian_olaparib_GSE63885	
+NetSmoothL2	0.7714285714285715	10.0							0.3			ovarian_olaparib_GSE63885	
+GCN_prior	0.08571428571428573									0.0001	150.0	ovarian_olaparib_GSE63885	
+L2_shortlist	0.4285714285714286	1.0										ovarian_olaparib_GSE63885	
+L1_shortlist	0.8857142857142858	0.003										ovarian_olaparib_GSE63885	
+ElasticNet_shortlist	0.8857142857142858	0.01	0.8									ovarian_olaparib_GSE63885	
+SVM_linear_shortlist	0.7714285714285715			1e-05								ovarian_olaparib_GSE63885	
+L2	0.5428571428571429	1.0										ovarian_olaparib_GSE9891	
+L1	0.3142857142857143	0.01										ovarian_olaparib_GSE9891	
+ElasticNet	0.3142857142857143	0.01	0.2									ovarian_olaparib_GSE9891	
+SVM_linear	1.0			0.01								ovarian_olaparib_GSE9891	
+SVM_RBF	0.6			10.0	0.3							ovarian_olaparib_GSE9891	
+RandomForest	-0.2571428571428572					1.0						ovarian_olaparib_GSE9891	
+XGBoost	-0.028571428571428574						2.0	1.0				ovarian_olaparib_GSE9891	
+MLP	0.8285714285714287	1.0										ovarian_olaparib_GSE9891	
+NetSmoothL2	0.7714285714285715	10.0							0.3			ovarian_olaparib_GSE9891	
+GCN_prior	0.08571428571428573									0.0001	150.0	ovarian_olaparib_GSE9891	
+L2_shortlist	0.4285714285714286	1.0										ovarian_olaparib_GSE9891	
+L1_shortlist	0.8857142857142858	0.003										ovarian_olaparib_GSE9891	
+ElasticNet_shortlist	0.8857142857142858	0.01	0.8									ovarian_olaparib_GSE9891	
+SVM_linear_shortlist	0.7714285714285715			1e-05								ovarian_olaparib_GSE9891	
+L2	0.5428571428571429	1.0										ovarian_olaparib_TCGAOV	
+L1	0.3142857142857143	0.01										ovarian_olaparib_TCGAOV	
+ElasticNet	0.3142857142857143	0.01	0.2									ovarian_olaparib_TCGAOV	
+SVM_linear	1.0			0.01								ovarian_olaparib_TCGAOV	
+SVM_RBF	0.6			10.0	0.3							ovarian_olaparib_TCGAOV	
+RandomForest	-0.2571428571428572					1.0						ovarian_olaparib_TCGAOV	
+XGBoost	-0.028571428571428574						2.0	1.0				ovarian_olaparib_TCGAOV	
+MLP	0.8285714285714287	1.0										ovarian_olaparib_TCGAOV	
+NetSmoothL2	0.7714285714285715	10.0							0.3			ovarian_olaparib_TCGAOV	
+GCN_prior	0.08571428571428573									0.0001	150.0	ovarian_olaparib_TCGAOV	
+L2_shortlist	0.4285714285714286	1.0										ovarian_olaparib_TCGAOV	
+L1_shortlist	0.8857142857142858	0.003										ovarian_olaparib_TCGAOV	
+ElasticNet_shortlist	0.8857142857142858	0.01	0.8									ovarian_olaparib_TCGAOV	
+SVM_linear_shortlist	0.7714285714285715			1e-05								ovarian_olaparib_TCGAOV	
+L2	0.1736842105263158	1.0										rectal_GSE87211_5FU	
+L1	0.07543859649122807	0.3										rectal_GSE87211_5FU	
+ElasticNet	0.11754385964912278	0.1	0.5									rectal_GSE87211_5FU	
+SVM_linear	0.7894736842105263			0.01								rectal_GSE87211_5FU	
+SVM_RBF	0.057894736842105256			10.0	0.3							rectal_GSE87211_5FU	
+RandomForest	0.0035087719298245615					3.0						rectal_GSE87211_5FU	
+XGBoost	0.32631578947368417						2.0	1.0				rectal_GSE87211_5FU	
+MLP	0.07543859649122807	1.0										rectal_GSE87211_5FU	
+NetSmoothL2	0.1719298245614035	100.0							0.6			rectal_GSE87211_5FU	
+GCN_prior	-0.0824561403508772									0.01	150.0	rectal_GSE87211_5FU	
+L2_shortlist	0.5807017543859649	1.0										rectal_GSE87211_5FU	
+L1_shortlist	0.5736842105263157	0.1										rectal_GSE87211_5FU	
+ElasticNet_shortlist	0.5701754385964912	0.03	0.5									rectal_GSE87211_5FU	
+SVM_linear_shortlist	0.3298245614035088			0.01								rectal_GSE87211_5FU	

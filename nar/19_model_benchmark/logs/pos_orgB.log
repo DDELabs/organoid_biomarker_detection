@@ -1,0 +1,58 @@
+colon_cetuximab_BRAF organoids 19 features 533 eval n 573
+   L2 {'alpha': 1000.0} inner=-0.16
+   L1 {'alpha': 0.003} inner=0.19
+   ElasticNet {'alpha': 0.01, 'l1': 0.8} inner=0.14
+   SVM_linear {'C': 0.01} inner=0.78
+   SVM_RBF {'C': 10.0, 'g': 1.0} inner=-0.07
+   RandomForest {'leaf': 1} inner=-0.02
+   XGBoost {'depth': 4, 'lam': 1} inner=0.29
+   MLP {'alpha': 10.0} inner=0.06
+   NetSmoothL2 {'s': 0.6, 'alpha': 1000.0} inner=-0.14
+   GCN_prior {'wd': 0.0001, 'steps': 150} inner=0.02
+   L2_shortlist {'alpha': 1.0} inner=-0.43
+   L1_shortlist {'alpha': 0.1} inner=-0.05
+   ElasticNet_shortlist {'alpha': 0.1, 'l1': 0.8} inner=-0.01
+   SVM_linear_shortlist {'C': 1e-05} inner=-0.18
+saved colon_cetuximab_BRAF 70s
+Traceback (most recent call last):
+  File "/home/user/organoid_biomarker_detection/nar/19_model_benchmark/code/pos_organoid.py", line 235, in <module>
+    run(task)
+    ~~~^^^^^^
+  File "/home/user/organoid_biomarker_detection/nar/19_model_benchmark/code/pos_organoid.py", line 208, in run
+    D = load_olaparib_task(t) if task.startswith("ovarian_olaparib") else load_bundle_task(t)
+                                                                          ~~~~~~~~~~~~~~~~^^^
+  File "/home/user/organoid_biomarker_detection/nar/19_model_benchmark/code/pos_organoid.py", line 88, in load_bundle_task
+    ev = P.loc[Zc.index, ["T", "E"]]
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexing.py", line 1200, in __getitem__
+    return self._getitem_tuple(key)
+           ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexing.py", line 1386, in _getitem_tuple
+    return self._getitem_lowerdim(tup)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexing.py", line 1117, in _getitem_lowerdim
+    return getattr(section, self.name)[new_key]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexing.py", line 1200, in __getitem__
+    return self._getitem_tuple(key)
+           ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexing.py", line 1386, in _getitem_tuple
+    return self._getitem_lowerdim(tup)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexing.py", line 1093, in _getitem_lowerdim
+    section = self._getitem_axis(key, axis=i)
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexing.py", line 1438, in _getitem_axis
+    return self._getitem_iterable(key, axis=axis)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexing.py", line 1378, in _getitem_iterable
+    keyarr, indexer = self._get_listlike_indexer(key, axis)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexing.py", line 1576, in _get_listlike_indexer
+    keyarr, indexer = ax._get_indexer_strict(key, axis_name)
+                      ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 6302, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 6355, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['GSE87211:GSM2325238', 'GSE87211:GSM2325248', 'GSE87211:GSM2325254', 'GSE87211:GSM2325255', 'GSE87211:GSM2325258', 'GSE87211:GSM2325267', 'GSE87211:GSM2325283', 'GSE87211:GSM2325284', 'GSE87211:GSM2325285', 'GSE87211:GSM2325286', 'GSE87211:GSM2325335', 'GSE87211:GSM2325361', 'GSE87211:GSM2325407', 'GSE87211:GSM2325408'] not in index"

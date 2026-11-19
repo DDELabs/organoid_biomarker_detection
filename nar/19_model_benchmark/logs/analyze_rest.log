@@ -1,0 +1,13 @@
+bladder_ERCC2_currentdata 2s
+bladder_ERCC2_paperdata 2s
+bladder_logrank_currentdata 69s
+bladder_logrank_paperdata 55s
+colon_cetuximab_BRAF 2s
+ovarian_paclitaxel_joint_survival 377s
+ovarian_paclitaxel_joint_response 3s
+ovarian_platinum_joint_survival 451s
+ovarian_platinum_joint_response 3s
+ovarian_olaparib_GSE63885 144s
+ovarian_olaparib_GSE9891 150s
+ovarian_olaparib_TCGAOV 429s
+rectal_GSE87211_5FU 96s
