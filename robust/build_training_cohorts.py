@@ -956,7 +956,7 @@ def GSE58644():
     names = pd.DataFrame({"CHEMOTHERAPY": ch.eq(1), "TAMOXIFEN": tam.eq(1), "TRASTUZUMAB": her.eq(1)})
     d = names.apply(lambda r: ";".join(k for k, v in r.items() if v), axis=1)
     known_none = ch.eq(0) & ~tam.eq(1) & ~her.eq(1) & tam.eq(0)
-    c["drugs"] = np.where(d != "", d, np.where(known_none, "", np.nan))
+    c["drugs"] = np.where(d != "", d, np.where(known_none, "", None))
     c["arm"] = np.where(d != "", "adjuvant " + d.str.lower(), np.where(known_none, "no adjuvant chemotherapy or tamoxifen", "unknown"))
     c["control_arm"] = known_none
     c["rfs_months"], c["rfs_event"] = num(meta["time"]), num(meta["event"])    # months; event type not stated
@@ -1100,7 +1100,7 @@ def GSE45255():
     t = meta["treatment type"]
     d = t.map(lambda x: _drug_text(x) if isinstance(x, str) else "")
     none = t.str.lower().eq("none")
-    c["drugs"] = np.where(d != "", d, np.where(none, "", np.nan))
+    c["drugs"] = np.where(d != "", d, np.where(none, "", None))
     c["arm"] = np.where(d != "", "adjuvant " + t.astype(str), np.where(none, "no adjuvant treatment", "unknown"))
     c["control_arm"] = none
     c["rfs_months"], c["rfs_event"] = num(meta["dmfs time"]) * 12, num(meta["dmfs event (defined as distant metastasis or death from breast cancer)"])
@@ -1115,7 +1115,7 @@ def GSE31519():
     e = array_expr("GSE31519", "GPL96")[meta.index]
     c = base(meta, "breast (triple-negative)", "adjuvant / neoadjuvant")
     y = meta["chemotherapy treatment (yes/no)"].str.lower()
-    c["drugs"] = np.where(y == "yes", "CHEMOTHERAPY", np.where(y == "no", "", np.nan))
+    c["drugs"] = np.where(y == "yes", "CHEMOTHERAPY", np.where(y == "no", "", None))
     c["arm"] = np.where(y == "yes", "chemotherapy (regimen not given)", "no chemotherapy")
     c["control_arm"] = y.eq("no")
     c["rfs_months"] = num(meta["event-free interval (months)"])
