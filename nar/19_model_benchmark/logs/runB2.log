@@ -1,0 +1,26 @@
+RandomForest BRIGHTNESS {'leaf': 5} 0.654 63s
+RandomForest GSE123845 {'leaf': 5} 0.700 136s
+RandomForest GSE163882 {'leaf': 5} 0.704 206s
+RandomForest GSE20194 {'leaf': 5} 0.840 275s
+RandomForest GSE20271 {'leaf': 5} 0.748 345s
+RandomForest GSE22093 {'leaf': 5} 0.760 420s
+RandomForest GSE23988 {'leaf': 5} 0.891 494s
+RandomForest GSE240671 {'leaf': 25} 0.657 564s
+RandomForest GSE25066 {'leaf': 25} 0.781 625s
+RandomForest GSE32646 {'leaf': 5} 0.801 701s
+RandomForest GSE41998 {'leaf': 5} 0.691 772s
+RandomForest ISPY2 {'leaf': 5} 0.672 826s
+RandomForest TCGA-BRCA {'leaf': 5} 0.714 899s
+SVM_RBF BRIGHTNESS {'C': 1, 'g': 0.3} 0.667 33s
+SVM_RBF GSE123845 {'C': 1, 'g': 0.3} 0.776 76s
+SVM_RBF GSE163882 {'C': 1, 'g': 0.3} 0.739 116s
+SVM_RBF GSE20194 {'C': 1, 'g': 1.0} 0.839 156s
+SVM_RBF GSE20271 {'C': 1, 'g': 1.0} 0.788 197s
+SVM_RBF GSE22093 {'C': 1, 'g': 0.3} 0.745 239s
+SVM_RBF GSE23988 {'C': 1, 'g': 0.3} 0.870 283s
+SVM_RBF GSE240671 {'C': 1, 'g': 0.3} 0.732 325s
+SVM_RBF GSE25066 {'C': 1, 'g': 0.3} 0.797 361s
+SVM_RBF GSE32646 {'C': 1, 'g': 0.3} 0.766 402s
+SVM_RBF GSE41998 {'C': 1, 'g': 1.0} 0.691 440s
+SVM_RBF ISPY2 {'C': 1, 'g': 1.0} 0.689 464s
+SVM_RBF TCGA-BRCA {'C': 1, 'g': 1.0} 0.724 502s

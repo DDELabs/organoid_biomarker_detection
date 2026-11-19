@@ -1,0 +1,80 @@
+{
+  "set": "luad_gse165611",
+  "cancer": "lung",
+  "created": "2026-11-18T16:08:03",
+  "n_samples": 102,
+  "n_genes": 19861,
+  "n_pathways_scored": 673,
+  "n_samples_with_response": 102,
+  "n_drugs": 30,
+  "drugs": [
+    "ADAVOSERTIB",
+    "AFATINIB",
+    "ALECTINIB",
+    "AT7519",
+    "AZD-4547",
+    "AZD-7762",
+    "BARASERTIB",
+    "BERZOSERTIB",
+    "CABOZANTINIB",
+    "CAMPTOTHECIN",
+    "CAPIVARSERTIB",
+    "DASATINIB",
+    "DINACICLIB",
+    "ETOPOSIDE",
+    "EVEROLIMUS",
+    "GEFITINIB",
+    "GEMCITABINE",
+    "NAVITOCLAX",
+    "PACLITAXEL",
+    "PALBOCICLIB",
+    "PAZOPANIB",
+    "PD0166285",
+    "PF-562271",
+    "REPOTRECTINIB",
+    "RUXOLITINIB",
+    "SELUMETINIB",
+    "TANESPIMYCIN",
+    "TRAMETINIB",
+    "VEMURAFENIB",
+    "XAV939"
+  ],
+  "drugs_with_network_score": [
+    "CAMPTOTHECIN",
+    "GEFITINIB",
+    "GEMCITABINE",
+    "NAVITOCLAX",
+    "PACLITAXEL",
+    "PALBOCICLIB",
+    "PF-562271",
+    "RUXOLITINIB",
+    "SELUMETINIB",
+    "TANESPIMYCIN",
+    "TRAMETINIB",
+    "XAV939"
+  ],
+  "metric": "LOG2FC",
+  "direction": "lower",
+  "expression_layout": "genes in rows, samples in columns",
+  "gene_id_type": "gene symbols",
+  "value_type": "tpm",
+  "response_layout": "long",
+  "input_files": {
+    "samples": {
+      "name": "samples.tsv",
+      "size_bytes": 2891,
+      "sha256": "59e106274bd681f3d62a8ada646709e69b7711d6a49d046a7636d54d6b3aba73"
+    },
+    "response": {
+      "name": "drug_response.tsv",
+      "size_bytes": 98236,
+      "sha256": "43964aac88a010b756419de30787e308deb4f95bdbdf7b5d155c8e420ef031fb"
+    },
+    "expression": {
+      "name": "expression.tsv.gz",
+      "size_bytes": 3610369,
+      "sha256": "82399b765745c1b1f00abc89f49bcb35bad4001c9324058299801ccbfd5f4b51"
+    }
+  },
+  "scoring": "rank_score (singscore-style), Reactome sets >= 5 genes, as robust/build_training_table.score"
+}

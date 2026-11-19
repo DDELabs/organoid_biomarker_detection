@@ -33,3 +33,111 @@ ElasticNet GSE22093 {'C': 0.01, 'l1_ratio': 0.2} 0.760 785s
 ElasticNet GSE23988 {'C': 0.01, 'l1_ratio': 0.2} 0.835 916s
 ElasticNet GSE240671 {'C': 0.01, 'l1_ratio': 0.2} 0.740 1046s
 ElasticNet GSE25066 {'C': 0.01, 'l1_ratio': 0.2} 0.794 1163s
+ElasticNet GSE32646 {'C': 0.03, 'l1_ratio': 0.5} 0.737 1291s
+ElasticNet GSE41998 {'C': 0.03, 'l1_ratio': 0.2} 0.715 1406s
+ElasticNet ISPY2 {'C': 0.03, 'l1_ratio': 0.2} 0.702 1495s
+ElasticNet TCGA-BRCA {'C': 0.03, 'l1_ratio': 0.5} 0.686 1619s
+SVM_linear BRIGHTNESS {'C': 0.0001} 0.683 8s
+SVM_linear GSE123845 {'C': 0.0001} 0.781 20s
+SVM_linear GSE163882 {'C': 0.0001} 0.762 31s
+SVM_linear GSE20194 {'C': 0.0001} 0.812 43s
+SVM_linear GSE20271 {'C': 0.0001} 0.808 56s
+SVM_linear GSE22093 {'C': 0.0001} 0.769 68s
+SVM_linear GSE23988 {'C': 0.0001} 0.857 81s
+SVM_linear GSE240671 {'C': 0.0001} 0.746 94s
+SVM_linear GSE25066 {'C': 0.0001} 0.794 104s
+SVM_linear GSE32646 {'C': 0.0001} 0.785 116s
+SVM_linear GSE41998 {'C': 0.0001} 0.729 129s
+SVM_linear ISPY2 {'C': 0.0001} 0.718 135s
+SVM_linear TCGA-BRCA {'C': 0.0001} 0.681 147s
+L2_shortlist BRIGHTNESS {'C': 0.003} 0.679 1s
+L2_shortlist GSE123845 {'C': 0.003} 0.788 1s
+L2_shortlist GSE163882 {'C': 0.003} 0.705 2s
+L2_shortlist GSE20194 {'C': 0.003} 0.799 3s
+L2_shortlist GSE20271 {'C': 0.003} 0.790 4s
+L2_shortlist GSE22093 {'C': 0.003} 0.764 4s
+L2_shortlist GSE23988 {'C': 0.003} 0.811 5s
+L2_shortlist GSE240671 {'C': 0.003} 0.713 6s
+L2_shortlist GSE25066 {'C': 0.003} 0.777 7s
+L2_shortlist GSE32646 {'C': 0.003} 0.777 7s
+L2_shortlist GSE41998 {'C': 0.003} 0.715 8s
+L2_shortlist ISPY2 {'C': 0.003} 0.711 9s
+L2_shortlist TCGA-BRCA {'C': 0.01} 0.644 10s
+L1_shortlist BRIGHTNESS {'C': 0.1} 0.680 4s
+L1_shortlist GSE123845 {'C': 0.1} 0.788 8s
+L1_shortlist GSE163882 {'C': 0.1} 0.672 13s
+L1_shortlist GSE20194 {'C': 0.3} 0.807 17s
+L1_shortlist GSE20271 {'C': 0.1} 0.788 21s
+L1_shortlist GSE22093 {'C': 0.1} 0.757 26s
+L1_shortlist GSE23988 {'C': 0.1} 0.815 30s
+L1_shortlist GSE240671 {'C': 0.1} 0.728 34s
+L1_shortlist GSE25066 {'C': 0.1} 0.783 37s
+L1_shortlist GSE32646 {'C': 0.1} 0.747 41s
+L1_shortlist GSE41998 {'C': 0.1} 0.704 45s
+L1_shortlist ISPY2 {'C': 0.1} 0.706 48s
+L1_shortlist TCGA-BRCA {'C': 0.1} 0.655 52s
+ElasticNet_shortlist BRIGHTNESS {'C': 0.03, 'l1_ratio': 0.5} 0.685 12s
+ElasticNet_shortlist GSE123845 {'C': 0.01, 'l1_ratio': 0.2} 0.779 25s
+ElasticNet_shortlist GSE163882 {'C': 0.03, 'l1_ratio': 0.2} 0.672 37s
+ElasticNet_shortlist GSE20194 {'C': 0.03, 'l1_ratio': 0.2} 0.807 48s
+ElasticNet_shortlist GSE20271 {'C': 0.1, 'l1_ratio': 0.5} 0.785 61s
+ElasticNet_shortlist GSE22093 {'C': 0.03, 'l1_ratio': 0.5} 0.755 74s
+ElasticNet_shortlist GSE23988 {'C': 0.03, 'l1_ratio': 0.2} 0.812 86s
+ElasticNet_shortlist GSE240671 {'C': 0.01, 'l1_ratio': 0.2} 0.707 98s
+ElasticNet_shortlist GSE25066 {'C': 0.03, 'l1_ratio': 0.5} 0.772 109s
+ElasticNet_shortlist GSE32646 {'C': 0.03, 'l1_ratio': 0.2} 0.754 122s
+ElasticNet_shortlist GSE41998 {'C': 0.03, 'l1_ratio': 0.2} 0.706 134s
+ElasticNet_shortlist ISPY2 {'C': 0.03, 'l1_ratio': 0.2} 0.708 144s
+ElasticNet_shortlist TCGA-BRCA {'C': 0.03, 'l1_ratio': 0.2} 0.650 156s
+SVM_linear_shortlist BRIGHTNESS {'C': 0.0001} 0.675 1s
+SVM_linear_shortlist GSE123845 {'C': 0.0001} 0.773 2s
+SVM_linear_shortlist GSE163882 {'C': 0.001} 0.672 4s
+SVM_linear_shortlist GSE20194 {'C': 0.001} 0.801 5s
+SVM_linear_shortlist GSE20271 {'C': 0.001} 0.797 6s
+SVM_linear_shortlist GSE22093 {'C': 0.001} 0.756 7s
+SVM_linear_shortlist GSE23988 {'C': 0.0001} 0.796 8s
+SVM_linear_shortlist GSE240671 {'C': 0.0001} 0.701 10s
+SVM_linear_shortlist GSE25066 {'C': 0.0001} 0.756 11s
+SVM_linear_shortlist GSE32646 {'C': 0.001} 0.758 12s
+SVM_linear_shortlist GSE41998 {'C': 0.001} 0.712 13s
+SVM_linear_shortlist ISPY2 {'C': 0.0001} 0.711 14s
+SVM_linear_shortlist TCGA-BRCA {'C': 0.001} 0.646 15s
+L2_fixed_shortlist BRIGHTNESS {'C': 0.01} 0.674 0s
+L2_fixed_shortlist GSE123845 {'C': 0.01} 0.790 0s
+L2_fixed_shortlist GSE163882 {'C': 0.01} 0.674 0s
+L2_fixed_shortlist GSE20194 {'C': 0.01} 0.800 0s
+L2_fixed_shortlist GSE20271 {'C': 0.01} 0.797 0s
+L2_fixed_shortlist GSE22093 {'C': 0.01} 0.760 0s
+L2_fixed_shortlist GSE23988 {'C': 0.01} 0.813 0s
+L2_fixed_shortlist GSE240671 {'C': 0.01} 0.718 0s
+L2_fixed_shortlist GSE25066 {'C': 0.01} 0.791 0s
+L2_fixed_shortlist GSE32646 {'C': 0.01} 0.760 0s
+L2_fixed_shortlist GSE41998 {'C': 0.01} 0.711 0s
+L2_fixed_shortlist ISPY2 {'C': 0.01} 0.707 0s
+L2_fixed_shortlist TCGA-BRCA {'C': 0.01} 0.644 0s
+NetSmoothL2 BRIGHTNESS {'s': 0.3, 'C': 0.003} 0.683 3s
+NetSmoothL2 GSE123845 {'s': 0.3, 'C': 0.003} 0.772 7s
+NetSmoothL2 GSE163882 {'s': 0.3, 'C': 0.003} 0.752 11s
+NetSmoothL2 GSE20194 {'s': 0.3, 'C': 0.003} 0.806 15s
+NetSmoothL2 GSE20271 {'s': 0.3, 'C': 0.003} 0.809 19s
+NetSmoothL2 GSE22093 {'s': 0.3, 'C': 0.003} 0.761 22s
+NetSmoothL2 GSE23988 {'s': 0.3, 'C': 0.003} 0.859 26s
+NetSmoothL2 GSE240671 {'s': 0.3, 'C': 0.003} 0.750 30s
+NetSmoothL2 GSE25066 {'s': 0.3, 'C': 0.003} 0.797 34s
+NetSmoothL2 GSE32646 {'s': 0.3, 'C': 0.003} 0.774 38s
+NetSmoothL2 GSE41998 {'s': 0.3, 'C': 0.003} 0.723 42s
+NetSmoothL2 ISPY2 {'s': 0.3, 'C': 0.003} 0.714 45s
+NetSmoothL2 TCGA-BRCA {'s': 0.3, 'C': 0.003} 0.672 48s
+MLP BRIGHTNESS {'alpha': 10} 0.658 5s
+MLP GSE123845 {'alpha': 10} 0.780 13s
+MLP GSE163882 {'alpha': 10} 0.718 20s
+MLP GSE20194 {'alpha': 10} 0.840 26s
+MLP GSE20271 {'alpha': 10} 0.678 33s
+MLP GSE22093 {'alpha': 10} 0.731 40s
+MLP GSE23988 {'alpha': 10} 0.828 46s
+MLP GSE240671 {'alpha': 10} 0.730 54s
+MLP GSE25066 {'alpha': 10} 0.767 60s
+MLP GSE32646 {'alpha': 10} 0.734 68s
+MLP GSE41998 {'alpha': 10} 0.696 75s
+MLP ISPY2 {'alpha': 10} 0.696 81s
+MLP TCGA-BRCA {'alpha': 10} 0.684 88s

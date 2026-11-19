@@ -1,0 +1,8 @@
+sample	patient	cancer_type	line_type	organoid_line
+Hey	Hey	ovarian	cell line	Hey
+MCF7	MCF7	ovarian	cell line (breast)	MCF7
+Organoid 2414	Organoid 2414	ovarian	organoid	Organoid 2414
+Organoid 2445	Organoid 2445	ovarian	organoid	Organoid 2445
+Organoid 3008	Organoid 3008	ovarian	organoid	Organoid 3008
+OVCA432	OVCA432	ovarian	cell line	OVCA432
+SKOV3	SKOV3	ovarian	cell line	SKOV3

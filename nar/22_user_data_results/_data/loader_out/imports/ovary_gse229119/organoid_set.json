@@ -1,0 +1,39 @@
+{
+  "set": "ovary_gse229119",
+  "cancer": "ovarian",
+  "created": "2026-11-18T16:08:10",
+  "n_samples": 7,
+  "n_genes": 31374,
+  "n_pathways_scored": 671,
+  "n_samples_with_response": 7,
+  "n_drugs": 2,
+  "drugs": [
+    "NIRAPARIB",
+    "OLAPARIB"
+  ],
+  "drugs_with_network_score": [],
+  "metric": "ln_IC50",
+  "direction": "lower",
+  "expression_layout": "genes in rows, samples in columns",
+  "gene_id_type": "gene symbols",
+  "value_type": "log",
+  "response_layout": "long",
+  "input_files": {
+    "samples": {
+      "name": "samples.tsv",
+      "size_bytes": 299,
+      "sha256": "f44961072f1a9774e881c8e39891d9c8db10a48442b6e86eef6ea4b892b91185"
+    },
+    "response": {
+      "name": "drug_response.tsv",
+      "size_bytes": 427,
+      "sha256": "ffac5f98d3fc7ca8430c376c8d3bf99f1e4f9f84900ce580d503bbad64d66311"
+    },
+    "expression": {
+      "name": "expression.tsv.gz",
+      "size_bytes": 542888,
+      "sha256": "eb670d04b60aa80fa6a073695b0b02c3e31517a71d989f3eaa501b6a99be0525"
+    }
+  },
+  "scoring": "rank_score (singscore-style), Reactome sets >= 5 genes, as robust/build_training_table.score"
+}

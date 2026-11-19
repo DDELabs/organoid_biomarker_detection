@@ -27,7 +27,9 @@ J = np.load(TAB / "pathway_jaccard.npy")
 def lr(**kw):
     return lambda X, y_, hp: LogisticRegression(max_iter=3000, **{**kw, **hp}).fit(X, y_).decision_function
 def lsvm(X, y_, hp): return LinearSVC(C=hp["C"], max_iter=5000, dual=True).fit(X, y_).decision_function
-def rf(X, y_, hp): return RandomForestClassifier(n_estimators=300, min_samples_leaf=hp["leaf"], max_features="sqrt", n_jobs=1, random_state=SEED).fit(X, y_).predict_proba
+def rf(X, y_, hp):
+    m = RandomForestClassifier(n_estimators=300, min_samples_leaf=hp["leaf"], max_features="sqrt", n_jobs=1, random_state=SEED).fit(X, y_)
+    return lambda Xt: m.predict_proba(Xt)[:, 1]
 def xg(X, y_, hp):
     m = xgb.XGBClassifier(n_estimators=200, learning_rate=0.05, max_depth=hp["depth"], subsample=0.8, colsample_bytree=0.3,
                           reg_lambda=hp["lam"], n_jobs=1, random_state=SEED, verbosity=0).fit(X, y_)

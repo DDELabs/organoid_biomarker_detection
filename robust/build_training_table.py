@@ -33,7 +33,9 @@ COLS = ["cohort", "source", "cancer", "cancer_group", "setting", "arm", "drugs",
         "age", "sex", "stage", "er", "her2", "patient"]
 GROUP = [("breast", "breast"), ("colo", "colorectal"), ("rectal", "colorectal"), ("colon", "colorectal"), ("bladder", "bladder"),
          ("ovar", "ovarian"), ("hepato", "liver"), ("glio", "brain"), ("kidney", "kidney"), ("renal", "kidney"),
-         ("melanoma", "melanoma"), ("nsclc", "lung"), ("oesoph", "oesophagus"), ("lung", "lung")]
+         ("melanoma", "melanoma"), ("nsclc", "lung"), ("oesoph", "oesophagus"), ("lung", "lung"),
+         ("stomach", "stomach"), ("gastric", "stomach"), ("myeloma", "myeloma"), ("head", "head and neck"),     # added for nar/18_other_cohorts
+         ("prostate", "prostate"), ("pancrea", "pancreas")]
 TCGA_GROUP = {"BRCA": "breast", "COAD": "colorectal", "READ": "colorectal", "BLCA": "bladder", "OV": "ovarian", "LIHC": "liver",
               "GBM": "brain", "LGG": "brain", "KIRC": "kidney", "KIRP": "kidney", "KICH": "kidney", "SKCM": "melanoma",
               "LUAD": "lung", "LUSC": "lung", "ESCA": "oesophagus", "STAD": "stomach", "PAAD": "pancreas", "HNSC": "head and neck",
@@ -236,8 +238,86 @@ def main_v2(out_name="training_table_v2"):
     print(P.shape, S.shape)
 
 
+# ---------------------------------------------------------------------------------------------------------------
+# Version 2, part 2 (added for the non-lung harvest, nar/18_other_cohorts). Starts from a saved copy of the lung-only
+# training_table_v2 (data/external/training_table_v2_lung_only), keeps every row as it was and appends BC.OTHER_BUILDERS.
+LUNG_ONLY_V2 = Path(__file__).resolve().parent.parent / "data" / "external" / "training_table_v2_lung_only"
+DUP_THRESHOLD = 0.95
+
+
+def flag_duplicates_same_cancer(P, S, new_cohorts):
+    """For each new cohort: correlate its pathway profiles with every other cohort of the same cancer group (older cohorts
+    and new cohorts earlier in the list). A sample with correlation > 0.95 gets possible_duplicate_of. Same test as DUP_CHECK.
+    Returns the largest correlation per (new cohort, other cohort) pair for the report."""
+    rows = []
+    seen = []
+    for cid in new_cohorts:
+        idx = P.index[P["cohort"].eq(cid)]
+        if len(idx) == 0:
+            continue
+        grp = P.loc[idx, "cancer_group"].iat[0]
+        other = P.index[P["cancer_group"].eq(grp) & ~P["cohort"].eq(cid) & (~P["cohort"].isin(new_cohorts) | P["cohort"].isin(seen))]
+        seen.append(cid)
+        if len(other) == 0:
+            continue
+        a, b = S.loc[idx].dropna(axis=1), S.loc[other]
+        b = b[a.columns].dropna(axis=1)
+        a = a[b.columns]
+        if a.shape[1] < 50:
+            continue
+        az = ((a - a.mean()) / a.std()).fillna(0).values
+        bz = ((b - b.mean()) / b.std()).fillna(0).values
+        r = np.corrcoef(az, bz)[:len(a), len(a):]
+        best = r.argmax(axis=1)
+        for j, oc in enumerate(P.loc[other, "cohort"].unique()):
+            cols = np.where(P.loc[other, "cohort"].values == oc)[0]
+            rm = r[:, cols].max(axis=1)
+            rows.append(dict(new_cohort=cid, compared_with=oc, cancer_group=grp, n_new=len(a), n_other=len(cols),
+                             max_correlation=float(rm.max()), samples_above_0_95=int((rm > DUP_THRESHOLD).sum())))
+        for i in np.where(r.max(axis=1) > DUP_THRESHOLD)[0]:
+            if pd.isna(P.loc[a.index[i], "possible_duplicate_of"]):
+                P.loc[a.index[i], "possible_duplicate_of"] = b.index[best[i]]
+    return P, pd.DataFrame(rows)
+
+
+def main_v2_other(out_name="training_table_v2", base_dir=None, dup_report=None):
+    out = RESULTS / out_name
+    base = Path(base_dir) if base_dir else LUNG_ONLY_V2
+    P = pd.read_csv(base / "patients.tsv.gz", sep="\t", index_col=0, low_memory=False)
+    P = P.drop(columns=["has_survival", "has_response", "has_outcome"])
+    S = pd.concat([pd.read_csv(base / f"pathway_scores_{k}.tsv.gz", sep="\t", index_col=0) for k in ("tcga", "geo")])
+    paths = list(S.columns)
+    clin_all, sc_all = [P], [S]
+    new_ids = []
+    for fn in BC.OTHER_BUILDERS:
+        cid = fn.__name__
+        d = BC.OUT / cid
+        if not (d / "clinical.tsv").exists():
+            print("not built, skipped:", cid, flush=True)
+            continue
+        clin = pd.read_csv(d / "clinical.tsv", sep="\t", index_col=0, low_memory=False)
+        s = score(f"train_{cid}_reactome_rank", pd.read_csv(d / "expression.tsv.gz", sep="\t", index_col=0))
+        t = tidy(clin.loc[[i for i in clin.index if i in s.index]], cid, "GEO (new)", COLS_V2)
+        s = s.reindex(columns=paths); s.index = [f"{cid}:{i}" for i in s.index]
+        clin_all.append(t); sc_all.append(s.loc[t.index])
+        new_ids.append(cid)
+        print(cid, s.shape, "pathways missing:", int(s.isna().all().sum()), flush=True)
+    P, S = pd.concat(clin_all), pd.concat(sc_all)
+    P.index.name = S.index.name = "sample_id"
+    P, rep = flag_duplicates_same_cancer(P, S, new_ids)
+    if dup_report is not None:
+        Path(dup_report).parent.mkdir(parents=True, exist_ok=True)
+        rep.to_csv(dup_report, sep="\t", index=False)
+    skipped = {**BC.SKIPPED, **BC.SKIPPED_LUNG, **BC.SKIPPED_OTHER}
+    write_tables(P, S, out, skipped)
+    print(P.shape, S.shape)
+
+
 if __name__ == "__main__":
-    if "--out" in sys.argv:        # e.g. --out training_table_v2 : extend version 1 with the lung cohorts
+    if "--others" in sys.argv:     # e.g. --others training_table_v2 : lung-only v2 copy + the non-lung cohorts (nar/18_other_cohorts)
+        main_v2_other(sys.argv[sys.argv.index("--others") + 1],
+                      dup_report=Path(__file__).resolve().parent.parent / "nar" / "18_other_cohorts" / "tables" / "duplicate_check.tsv")
+    elif "--out" in sys.argv:        # e.g. --out training_table_v2 : extend version 1 with the lung cohorts
         main_v2(sys.argv[sys.argv.index("--out") + 1])
     else:
         main()

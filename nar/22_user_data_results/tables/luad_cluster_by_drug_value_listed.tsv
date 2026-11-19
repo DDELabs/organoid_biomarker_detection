@@ -1,0 +1,31 @@
+Drug Name	C1	C2	C3	C4
+AT7519				0.4
+AZD4547				0.2
+AZD7762			-0.4	0.6
+Adavosertib			-0.5	0.5
+Afatinib				-0.1
+Alectinib		-0.1		0.3
+Barasertib			-0.2	
+Berzosertib			-0.4	0.3
+Cabozantinib		-0.3		0.45
+Camptothecin			-0.5	
+Capivarsertib				0.1
+Dasatinib		-0.6		0.75
+Dinaciclib				0.6
+Etoposide				0.1
+Everolimus				0.2
+Gefitinib				-0.1
+Gemcitabine		-0.2		0.5
+Navitoclax		0.3	-0.2	-0.1
+PD0166285				0.8
+PF-562271			-0.1	0.3
+Paclitaxel				0.3
+Palbociclib			-0.2	0.4
+Pazopanib		-0.1		0.3
+Repotrectinib		-0.5		0.6
+Ruxolitinib	-0.1			0.1
+Selumetinib		0.1		-0.2
+Tanespimycin			-0.2	0.4
+Trametinib		0.5		-0.35
+Vemurafenib				0.4
+XAV939		-0.1		0.4

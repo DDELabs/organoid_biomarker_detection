@@ -14,3 +14,24 @@ GCN_prior TCGA-BRCA {'wd': 0.0001, 'steps': 150} 0.693 1276s
 XGBoost BRIGHTNESS {'depth': 4, 'lam': 30} 0.681 55s
 XGBoost GSE123845 {'depth': 4, 'lam': 1} 0.702 114s
 XGBoost GSE163882 {'depth': 4, 'lam': 1} 0.708 168s
+XGBoost GSE20194 {'depth': 4, 'lam': 1} 0.863 221s
+XGBoost GSE20271 {'depth': 4, 'lam': 1} 0.743 277s
+XGBoost GSE22093 {'depth': 4, 'lam': 1} 0.757 330s
+XGBoost GSE23988 {'depth': 4, 'lam': 30} 0.878 386s
+XGBoost GSE240671 {'depth': 4, 'lam': 30} 0.685 442s
+XGBoost GSE25066 {'depth': 4, 'lam': 1} 0.832 494s
+XGBoost GSE32646 {'depth': 4, 'lam': 1} 0.727 548s
+XGBoost GSE41998 {'depth': 4, 'lam': 1} 0.705 603s
+XGBoost ISPY2 {'depth': 4, 'lam': 30} 0.704 653s
+XGBoost TCGA-BRCA {'depth': 4, 'lam': 1} 0.670 710s
+Traceback (most recent call last):
+  File "/home/user/organoid_biomarker_detection/nar/19_model_benchmark/code/bench_breast.py", line 135, in <module>
+    run(n)
+    ~~~^^^
+  File "/home/user/organoid_biomarker_detection/nar/19_model_benchmark/code/bench_breast.py", line 120, in run
+    sc = [inner_score(fitfn, Xtr, ytr, gtr, hp) for hp in grid]
+          ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/organoid_biomarker_detection/nar/19_model_benchmark/code/bench_breast.py", line 107, in inner_score
+    if len(set(yy)) == 2: aucs.append(roc_auc_score(yy, s[m]))
+                                                        ~^^^
+IndexError: boolean index did not match indexed array along axis 0; size of axis is 1972 but size of corresponding boolean axis is 986

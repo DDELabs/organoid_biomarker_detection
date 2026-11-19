@@ -744,10 +744,818 @@ SKIPPED_LUNG = {
 }
 
 
+# ------------------------------------------------------------------------- other cancers
+# Added for the non-lung harvest (nar/18_other_cohorts). Everything below is new; cohorts above are untouched.
+def _chars(gse, name=None):
+    """Like read_meta, but also reads 'key = value' characteristics; text without a key is kept as _text<i>."""
+    import gzip
+    rows = {}
+    with gzip.open(m(gse, name), "rt", errors="replace") as f:
+        for line in f:
+            if line.startswith("!series_matrix_table_begin"):
+                break
+            if line.startswith("!Sample_"):
+                p = line.rstrip("\n").split("\t")
+                rows.setdefault(p[0][8:], []).append([x.strip('"') for x in p[1:]])
+    gsm = rows["geo_accession"][0]
+    out = read_meta(m(gse, name))
+    for i, vals in enumerate(rows.get("characteristics_ch1", [])):
+        for g, v in zip(gsm, vals):
+            mt = re.match(r"^\s*(.+?)\s+=\s+(.*)$", v)
+            if mt:
+                out.loc[g, mt.group(1).strip().lower()] = mt.group(2).strip()
+            elif ":" not in v and v.strip():
+                out.loc[g, f"_text{i}"] = v.strip()
+    return out
+
+
+def _array_expr_col(gse, gpl, col, name=None):
+    """Like array_expr, for platforms whose annotation column is not in the usual list (col = its name)."""
+    import gzip, io
+    raw = read_expr(m(gse, name))
+    raw.index = raw.index.astype(str)
+    raw = raw.apply(pd.to_numeric, errors="coerce")
+    path = B.gpl_file(gpl)
+    txt = (gzip.open(path, "rt", errors="replace") if str(path).endswith(".gz") else open(path, errors="replace")).read().split("\n")
+    a = next(i for i, l in enumerate(txt) if l.startswith("!platform_table_begin")) + 1
+    z = next((i for i, l in enumerate(txt) if l.startswith("!platform_table_end")), len(txt))
+    t = pd.read_csv(io.StringIO("\n".join(txt[a:z])), sep="\t", dtype=str, quoting=3)
+    sym = pd.Series(t[col].values, index=t["ID"].astype(str)).dropna().str.strip()
+    sym = sym[(sym != "") & ~sym.str.contains("///|//|,| ", regex=True)]
+    raw, _ = B.to_log2(raw)
+    return B.collapse(raw, sym)
+
+
+def _mo(days):
+    return num(days) / 30.44
+
+
+def _yes01(s):
+    return s.astype(str).str.strip().str.lower().map({"yes": 1, "y": 1, "1": 1, "1.0": 1, "true": 1, "no": 0, "n": 0, "0": 0, "0.0": 0, "false": 0})
+
+
+def _drug_text(text):
+    """Free-text adjuvant regimen -> drug list (only drugs named in the text)."""
+    t = str(text).lower()
+    out = []
+    for key, drugs in (("tam", "TAMOXIFEN"), ("arimidex", "ANASTROZOLE"), ("anastrozole", "ANASTROZOLE"), ("goserelin", "GOSERELIN"),
+                       ("zoledron", "ZOLEDRONIC ACID"), ("taxol", "PACLITAXEL"), ("caf", "CYCLOPHOSPHAMIDE;DOXORUBICIN;FLUOROURACIL"),
+                       ("cmf", "CYCLOPHOSPHAMIDE;METHOTREXATE;FLUOROURACIL"), ("ec", "EPIRUBICIN;CYCLOPHOSPHAMIDE"),
+                       ("ac", "DOXORUBICIN;CYCLOPHOSPHAMIDE")):
+        if key in t:
+            if key == "ac" and ("caf" in t or "cmf" in t or "taxol" in t and "ac" not in t.replace("taxol", "")):
+                continue
+            if key == "ec" and not re.search(r"(^|[^a-z])ec", t):
+                continue
+            out += [d for d in drugs.split(";") if d not in out]
+    return ";".join(out)
+
+
+# ---- breast
+def GSE16446():
+    meta = read_meta(m("GSE16446"))
+    e = array_expr("GSE16446", "GPL570")[meta.index]
+    c = base(meta, "breast (ER-negative)", "neoadjuvant")
+    c["arm"], c["drugs"] = "epirubicin monotherapy", "EPIRUBICIN"
+    c["responder"] = num(meta["pcr"])
+    c["rfs_months"], c["rfs_event"] = _mo(meta["dmfs_time"]), num(meta["dmfs_event"])      # distant metastasis-free survival
+    c["os_months"], c["os_event"] = _mo(meta["os_time"]), num(meta["os_event"])
+    c["er"], c["her2"] = 0, num(meta["her2fishbin"])
+    return e, c, "all ER-negative, epirubicin alone; follow-up times are in days (converted to months); relapse = distant metastasis"
+
+
+def GSE50948():
+    meta = read_meta(m("GSE50948"))
+    e = array_expr("GSE50948", "GPL570")[meta.index]
+    c = base(meta, "breast", "neoadjuvant", True)
+    a = meta["arm"]
+    c["arm"] = a.map({"HER2+ CT H": "doxorubicin/paclitaxel + trastuzumab", "HER2+ CT": "doxorubicin/paclitaxel alone (HER2-positive)",
+                      "HER2- CT": "doxorubicin/paclitaxel (HER2-negative)"})
+    c["drugs"] = a.map({"HER2+ CT H": "DOXORUBICIN;PACLITAXEL;TRASTUZUMAB", "HER2+ CT": "DOXORUBICIN;PACLITAXEL", "HER2- CT": "DOXORUBICIN;PACLITAXEL"})
+    c["control_arm"] = a.eq("HER2+ CT")
+    c["responder"] = meta["pcr"].map({"pCR": 1, "RD": 0})
+    c["age"] = num(meta["age"])
+    c["er"], c["her2"] = meta["er"].map({"ER+": 1, "ER-": 0}), meta["her2"].map({"HER2+": 1, "HER2-": 0})
+    return e, c, "transNOAH: HER2-positive patients randomised to chemotherapy with or without trastuzumab; the HER2-negative arm is not randomised"
+
+
+def GSE34138():
+    meta = read_meta(m("GSE34138"))
+    e = array_expr("GSE34138", "GPL6884")[meta.index]
+    c = base(meta, "breast (HER2-negative)", "neoadjuvant")
+    c["arm"], c["drugs"] = "doxorubicin + cyclophosphamide (AC)", "DOXORUBICIN;CYCLOPHOSPHAMIDE"
+    r = meta["response"]
+    c["responder"] = np.where(r.isin(["CR"]), 1.0, np.where(r.isin(["NOCR", "CR+kl", "PD"]), 0.0, np.nan))
+    c["er"] = (num(meta["ihc er percentage"]) >= 10).astype(float).where(meta["ihc er percentage"].notna())
+    c["her2"] = 0
+    return e, c, "responder = complete clinical response (CR 28); 'CR+kl' (near complete, 10) counted as non-responder; all HER2-negative"
+
+
+def GSE17705():
+    meta = read_meta(m("GSE17705"))
+    e = array_expr("GSE17705", "GPL96")[meta.index]
+    c = base(meta, "breast (ER-positive)", "adjuvant")
+    c["arm"], c["drugs"] = "tamoxifen for 5 years", "TAMOXIFEN"
+    c["rfs_months"] = num(meta["event time (years)"]) * 12
+    c["rfs_event"] = num(meta["distant relapse (1=dr, 0 censored)"])
+    c["er"] = 1
+    c["site"] = meta["profiling lab"]
+    return e, c, "all ER-positive on tamoxifen; relapse = distant relapse; two profiling labs"
+
+
+def GSE66305():
+    meta = read_meta(m("GSE66305"))
+    e = array_expr("GSE66305", "GPL570")[meta.index]
+    c = base(meta, "breast (HER2-positive)", "neoadjuvant", True)
+    a = meta["cher-lob arm"]
+    base_chem = "PACLITAXEL;FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE"      # CHER-LOB design (not stated in GEO)
+    c["arm"] = a.map({"A": "chemotherapy + trastuzumab", "B": "chemotherapy + lapatinib", "C": "chemotherapy + trastuzumab + lapatinib"})
+    c["drugs"] = a.map({"A": base_chem + ";TRASTUZUMAB", "B": base_chem + ";LAPATINIB", "C": base_chem + ";TRASTUZUMAB;LAPATINIB"})
+    c["control_arm"] = a.eq("A")
+    c["responder"] = num(meta["pcr (1=yes)"])
+    c["her2"] = 1
+    return e, c, "CHER-LOB randomised trial; chemotherapy backbone (weekly paclitaxel then FEC) is from the trial design, not the GEO record"
+
+
+def GSE42822():
+    meta = read_meta(m("GSE42822"))
+    e = array_expr("GSE42822", "GPL96")[meta.index]
+    c = base(meta, "breast", "neoadjuvant")
+    h = meta["treatment.type"].eq("FEC/TX+H")
+    c["arm"] = np.where(h, "FEC/taxane + trastuzumab", "FEC/taxane")
+    c["drugs"] = np.where(h, "FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE;TAXANE;TRASTUZUMAB", "FLUOROURACIL;EPIRUBICIN;CYCLOPHOSPHAMIDE;TAXANE")
+    c["responder"] = num(meta["pcr (1) vs rd (0)"])
+    c["age"] = num(meta["age"])
+    k = [x for x in meta.columns if x.startswith("er.status")][0]
+    c["er"] = meta[k].str.extract(r"(\d)")[0].astype(float)
+    k = [x for x in meta.columns if x.startswith("her2.status")][0]
+    c["her2"] = meta[k].str.extract(r"(\d)")[0].astype(float)
+    return e, c, "FNA biopsies before FEC then taxane; trastuzumab added for HER2-positive; not randomised; MDACC-type cohort, check overlap with GSE20194/GSE25066"
+
+
+def GSE6861():
+    meta = _chars("GSE6861")
+    e = array_expr("GSE6861", "GPL1352")[meta.index]
+    c = base(meta, "breast", "neoadjuvant")
+    c["arm"], c["drugs"] = "anthracycline/taxane", "ANTHRACYCLINE;TAXANE"
+    c["responder"] = meta["_text0"].str.startswith("pCR").astype(float).where(meta["_text0"].notna())
+    return e, c, "EORTC 10994 pCR; regimen text from the series title only; may share patients with GSE4779"
+
+
+def GSE4779():
+    meta = read_meta(m("GSE4779"))
+    e = array_expr("GSE4779", "GPL1352")[meta.index]
+    c = base(meta, "breast", "neoadjuvant")
+    c["arm"], c["drugs"] = "epirubicin-containing (FEC)", "EPIRUBICIN"
+    c["responder"] = meta["label"].map({"pCR": 1, "npCR": 0})
+    c["er"] = meta["estrogen receptor"].map({"Ep": 1, "En": 0})
+    return e, c, "epirubicin-containing neoadjuvant chemotherapy; may share patients with GSE6861"
+
+
+def GSE32603():
+    meta = read_meta(m("GSE32603"))
+    meta = meta[meta["biopsy time"] == "T1"]
+    e = _array_expr_col("GSE32603", "GPL14668", "GENE SYMBOL")[meta.index]
+    c = base(meta, "breast", "neoadjuvant")
+    c["patient"] = meta["patient"]
+    c["arm"], c["drugs"] = "AC then taxane", "DOXORUBICIN;CYCLOPHOSPHAMIDE;TAXANE"
+    c["responder"] = num(meta["pcr_yes is 1"])
+    c["rfs_months"], c["rfs_event"] = _mo(meta["rfs_days"]), num(meta["recurrence_yes is 1"])
+    c["er"], c["her2"] = num(meta["hr-positive_yes is 1"]), num(meta["her2-positive_yes is 1"])
+    return e, c, "I-SPY1 pre-treatment biopsies (T1) only; regimen from the trial design; the same patients may be in GSE22226"
+
+
+def _gse6532(gpl):
+    meta = read_meta(m("GSE6532", f"GSE6532-{gpl}_series_matrix.txt.gz"))
+    e = array_expr("GSE6532", gpl, f"GSE6532-{gpl}_series_matrix.txt.gz")[meta.index]
+    c = base(meta, "breast (ER-positive)", "adjuvant")
+    unt = meta["description"].str.contains("untreated")
+    c["arm"] = np.where(unt, "no adjuvant therapy", "tamoxifen")
+    c["drugs"] = np.where(unt, "", "TAMOXIFEN")
+    c["control_arm"] = unt
+    c["rfs_months"], c["rfs_event"] = _mo(meta["t.rfs"]), num(meta["e.rfs"])
+    c["age"], c["er"] = num(meta["age"]), num(meta["er"])
+    return e, c
+
+
+def GSE6532_GPL96():
+    e, c = _gse6532("GPL96")
+    return e, c, "Oxford/Guy/Uppsala series; per-sample 'untreated' or 'tamoxifen' text in the record; the B-chip file (GPL97) holds the same patients and is not used"
+
+
+def GSE6532_GPL570():
+    e, c = _gse6532("GPL570")
+    return e, c, "Guy's tamoxifen-treated subset on the Plus 2.0 chip"
+
+
+def GSE58644():
+    meta = read_meta(m("GSE58644"))
+    e = array_expr("GSE58644", "GPL6244")[meta.index]
+    c = base(meta, "breast", "adjuvant")
+    ch, tam, her = num(meta["chemo"]), num(meta["tamoxifen"]), num(meta["herceptin"])
+    names = pd.DataFrame({"CHEMOTHERAPY": ch.eq(1), "TAMOXIFEN": tam.eq(1), "TRASTUZUMAB": her.eq(1)})
+    d = names.apply(lambda r: ";".join(k for k, v in r.items() if v), axis=1)
+    known_none = ch.eq(0) & ~tam.eq(1) & ~her.eq(1) & tam.eq(0)
+    c["drugs"] = np.where(d != "", d, np.where(known_none, "", np.nan))
+    c["arm"] = np.where(d != "", "adjuvant " + d.str.lower(), np.where(known_none, "no adjuvant chemotherapy or tamoxifen", "unknown"))
+    c["control_arm"] = known_none
+    c["rfs_months"], c["rfs_event"] = num(meta["time"]), num(meta["event"])    # months; event type not stated
+    c["age"], c["stage"] = num(meta["age"]), meta["stage"]
+    c["er"], c["her2"] = num(meta["er"]), num(meta["her2"])
+    return e, c, "time in months and event type not stated in the record (treated as relapse-type event); treatment unknown for about a third"
+
+
+def GSE7390():
+    meta = read_meta(m("GSE7390"))
+    e = array_expr("GSE7390", "GPL96")[meta.index]
+    c = base(meta, "breast (node-negative)", "surgery only")
+    c["arm"], c["drugs"], c["control_arm"] = "no adjuvant systemic therapy", "", True
+    c["rfs_months"], c["rfs_event"] = _mo(meta["t.rfs"]), num(meta["e.rfs"])
+    c["os_months"], c["os_event"] = _mo(meta["t.os"]), num(meta["e.os"])
+    c["age"], c["er"] = num(meta["age"]), num(meta["er"])
+    return e, c, "TRANSBIG node-negative patients who got no adjuvant systemic therapy"
+
+
+def GSE11121():
+    meta = read_meta(m("GSE11121"))
+    e = array_expr("GSE11121", "GPL96")[meta.index]
+    c = base(meta, "breast (node-negative)", "surgery only")
+    c["arm"], c["drugs"], c["control_arm"] = "no adjuvant systemic therapy", "", True
+    c["rfs_months"], c["rfs_event"] = _mo(meta["t.dmfs"]), num(meta["e.dmfs"])      # distant metastasis-free survival
+    return e, c, "Mainz node-negative patients without adjuvant systemic therapy; endpoint is distant metastasis-free survival"
+
+
+def GSE37946():
+    meta = read_meta(m("GSE37946"))
+    e = array_expr("GSE37946", "GPL96")[meta.index]
+    c = base(meta, "breast (HER2-positive)", "neoadjuvant")
+    c["arm"], c["drugs"] = "trastuzumab-based chemotherapy", "CHEMOTHERAPY;TRASTUZUMAB"
+    c["responder"] = meta["path_response"].map({"pCR": 1, "RD": 0})
+    c["age"], c["er"], c["her2"] = num(meta["age"]), meta["er"].map({"POS": 1, "NEG": 0}), 1
+    return e, c, "regimen details not in the record"
+
+
+def GSE76360():
+    meta = read_meta(m("GSE76360"))
+    meta = meta[meta["timepoint"] == "baseline"]
+    e = array_expr("GSE76360", "GPL6947")[meta.index]
+    c = base(meta, "breast (HER2-positive)", "neoadjuvant")
+    c["patient"] = meta["subject id"]
+    c["arm"], c["drugs"] = "preoperative trastuzumab", "TRASTUZUMAB"
+    r = meta["response at surgery"]
+    c["responder"] = np.where(r.eq("pCR"), 1.0, np.where(r.isin(["OBJR", "NOR"]), 0.0, np.nan))
+    c["er"], c["her2"] = meta["er status"].map({"Pos": 1, "Neg": 0}), 1
+    return e, c, "baseline biopsies only; responder = pathological complete response (objective response without pCR counted as non-responder)"
+
+
+def GSE21974():
+    meta = read_meta(m("GSE21974"))
+    meta = meta[meta["before/after chemotherapy"] == "before"]
+    e = array_expr("GSE21974", "GPL6480")[meta.index]
+    c = base(meta, "breast", "neoadjuvant")
+    c["patient"] = meta["patient no"]
+    c["arm"], c["drugs"] = "neoadjuvant chemotherapy (regimen not given)", "CHEMOTHERAPY"
+    c["responder"] = meta["response"].map({"R": 1, "NR": 0})
+    c["er"] = (num(meta["er(%)"]) >= 10).astype(float)
+    return e, c, "before-chemotherapy biopsies only (32 patients); response as labelled by the authors (R / NR)"
+
+
+def GSE18728():
+    meta = read_meta(m("GSE18728"))
+    meta = meta[(meta["time point"] == "bl") & (meta["include in bl"] == "Y")]
+    e = array_expr("GSE18728", "GPL570")[meta.index]
+    c = base(meta, "breast", "neoadjuvant")
+    c["patient"] = meta["upin"]
+    c["arm"], c["drugs"] = "neoadjuvant docetaxel + capecitabine", "DOCETAXEL;CAPECITABINE"
+    c["responder"] = meta["response category"].map({"R": 1, "NR": 0})
+    c["er"] = meta["er original"].map({"pos": 1, "neg": 0, "focally pos": 1})
+    c["her2"] = meta["her2 summary"].map({"pos": 1, "neg": 0})
+    return e, c, "baseline samples flagged for the baseline analysis; regimen from the original paper, not the GEO record"
+
+
+def GSE173839():
+    meta = read_meta(m("GSE173839"))
+    ex = pd.read_csv(RAW / "GSE173839" / "GSE173839_ISPY2_AgilentGeneExp_durvaPlusCtr_FFPE_meanCol_geneLevel_n105.txt.gz", sep="\t", index_col=0)
+    ex.columns = ex.columns.astype(str)
+    meta = meta[meta["title"].isin(ex.columns)]
+    e = ex[meta["title"].values]
+    e.columns = meta.index
+    c = base(meta, "breast (HER2-negative)", "neoadjuvant", True)
+    d = meta["arm"].eq("durvalumab/olaparib")
+    c["patient"] = meta["title"]
+    c["arm"] = np.where(d, "paclitaxel + durvalumab + olaparib", "paclitaxel (control)")
+    c["drugs"] = np.where(d, "PACLITAXEL;DURVALUMAB;OLAPARIB", "PACLITAXEL")
+    c["control_arm"] = ~d
+    c["responder"] = num(meta["pcr"]).where(lambda s: s >= 0)
+    c["er"], c["her2"] = num(meta["hr"]), 0
+    return by_symbol(e), c, "I-SPY2 durvalumab+olaparib arm with concurrent controls; likely a subset of GSE194040 (duplicate check)"
+
+
+def GSE18864():
+    meta = read_meta(m("GSE18864"))
+    meta = meta[meta["miller-payne response"].isin(list("012345"))]
+    e = array_expr("GSE18864", "GPL570")[meta.index]
+    c = base(meta, "breast (triple-negative)", "neoadjuvant")
+    c["arm"], c["drugs"] = "cisplatin monotherapy", "CISPLATIN"
+    mp = num(meta["miller-payne response"])
+    c["responder"] = (mp >= 4).astype(float)
+    c["age"] = num(meta["age"])
+    return e, c, "24 trial biopsies (the 60 reference tumours are untreated and left out); responder = Miller-Payne grade 4 or 5 (at least 90% cell loss)"
+
+
+def GSE103668():
+    meta = read_meta(m("GSE103668"))
+    e = array_expr("GSE103668", "GPL570")[meta.index]
+    c = base(meta, "breast (triple-negative)", "neoadjuvant")
+    c["arm"], c["drugs"] = "platinum + bevacizumab", "PLATINUM;BEVACIZUMAB"
+    c["responder"] = num(meta["response"])
+    c["er"], c["her2"] = 0, 0
+    return e, c, "responder = the authors' response flag (7 of 21); platinum drug not named in the record"
+
+
+def GSE9195():
+    meta = read_meta(m("GSE9195"))
+    e = array_expr("GSE9195", "GPL570")[meta.index]
+    c = base(meta, "breast (ER-positive)", "adjuvant")
+    c["arm"], c["drugs"] = "tamoxifen", "TAMOXIFEN"
+    c["rfs_months"], c["rfs_event"] = _mo(meta["t.rfs"]), num(meta["e.rfs"])
+    c["age"], c["er"] = num(meta["age"]), 1
+    return e, c, "tamoxifen-only treated ER-positive patients (Guy's)"
+
+
+def GSE12093():
+    meta = read_meta(m("GSE12093"))
+    e = array_expr("GSE12093", "GPL96")[meta.index]
+    c = base(meta, "breast (ER-positive)", "adjuvant")
+    c["arm"], c["drugs"] = "adjuvant tamoxifen", "TAMOXIFEN"
+    c["rfs_months"], c["rfs_event"] = num(meta["dfs.time"]), num(meta["dfs.status"])    # months in the record
+    c["er"] = 1
+    return e, c, "node-negative, tamoxifen-treated (Rotterdam); time in months as given"
+
+
+def GSE45255():
+    meta = read_meta(m("GSE45255"))
+    e = array_expr("GSE45255", "GPL96")[meta.index]
+    c = base(meta, "breast", "adjuvant")
+    t = meta["treatment type"]
+    d = t.map(lambda x: _drug_text(x) if isinstance(x, str) else "")
+    none = t.str.lower().eq("none")
+    c["drugs"] = np.where(d != "", d, np.where(none, "", np.nan))
+    c["arm"] = np.where(d != "", "adjuvant " + t.astype(str), np.where(none, "no adjuvant treatment", "unknown"))
+    c["control_arm"] = none
+    c["rfs_months"], c["rfs_event"] = num(meta["dmfs time"]) * 12, num(meta["dmfs event (defined as distant metastasis or death from breast cancer)"])
+    c["age"] = num(meta["patient age"])
+    c["er"] = meta["er status"].map({"ER+": 1, "ER-": 0})
+    c["her2"] = meta["her2 status"].map({"He+": 1, "He-": 0})
+    return e, c, "mixed adjuvant regimens parsed from the treatment text; endpoint = distant metastasis or breast-cancer death (years x 12)"
+
+
+def GSE31519():
+    meta = read_meta(m("GSE31519"))
+    e = array_expr("GSE31519", "GPL96")[meta.index]
+    c = base(meta, "breast (triple-negative)", "adjuvant / neoadjuvant")
+    y = meta["chemotherapy treatment (yes/no)"].str.lower()
+    c["drugs"] = np.where(y == "yes", "CHEMOTHERAPY", np.where(y == "no", "", np.nan))
+    c["arm"] = np.where(y == "yes", "chemotherapy (regimen not given)", "no chemotherapy")
+    c["control_arm"] = y.eq("no")
+    c["rfs_months"] = num(meta["event-free interval (months)"])
+    c["rfs_event"] = num(meta[[x for x in meta.columns if x.startswith("event (1")][0]].astype(str).str.extract(r"(\d)$")[0])
+    c["er"], c["her2"] = 0, 0
+    return e, c, "triple-negative; 9 patients without chemotherapy; event-free interval in months"
+
+
+def GSE59515():
+    meta = read_meta(m("GSE59515"))
+    meta = meta[meta["time point"] == "pre-treatment"]
+    e = array_expr("GSE59515", "GPL10558")[meta.index]
+    c = base(meta, "breast (ER-positive)", "neoadjuvant")
+    c["patient"] = meta["patient id"]
+    c["arm"], c["drugs"] = "neoadjuvant letrozole", "LETROZOLE"
+    c["responder"] = meta["clinical response"].map({"Responder": 1, "Non-responder": 0})
+    c["er"] = 1
+    return e, c, "baseline biopsies only (25 patients)"
+
+
+# ---- ovarian
+def GSE140082():
+    meta = read_meta(m("GSE140082"))
+    e = array_expr("GSE140082", "GPL14951")[meta.index]
+    c = base(meta, "ovarian", "first-line", True)
+    b = meta["treatment"].eq("bevacizumab")
+    c["arm"] = np.where(b, "carboplatin/paclitaxel + bevacizumab", "carboplatin/paclitaxel")
+    c["drugs"] = np.where(b, "CARBOPLATIN;PACLITAXEL;BEVACIZUMAB", "CARBOPLATIN;PACLITAXEL")
+    c["control_arm"] = ~b
+    c["os_months"], c["os_event"] = _mo(meta["final_ostm"]), num(meta["final_osid"])
+    c["pfs_months"], c["pfs_event"] = _mo(meta["final_pfstm"]), num(meta["final_pfsid"])
+    c["age"], c["stage"] = num(meta["age"]), meta["figo_stage"]
+    c["histology"] = meta["histology.serous"]
+    return e, c, "ICON7 randomised trial (FFPE); times are in days (converted to months); the standard arm is carboplatin + paclitaxel"
+
+
+def GSE32062():
+    meta = read_meta(m("GSE32062", "GSE32062-GPL6480_series_matrix.txt.gz"))
+    e = array_expr("GSE32062", "GPL6480", "GSE32062-GPL6480_series_matrix.txt.gz")[meta.index]
+    c = base(meta, "ovarian (high-grade serous)", "first-line")
+    c["arm"], c["drugs"] = "platinum + taxane", "PLATINUM;TAXANE"
+    c["pfs_months"], c["pfs_event"] = num(meta["pfs (m)"]), num(meta["rec (1)"])
+    c["os_months"], c["os_event"] = num(meta["os (m)"]), num(meta["death (1)"])
+    c["stage"] = meta["stage"]
+    return e, c, "all patients had platinum and taxane; the 10-sample GPL570 file of the same series is not used"
+
+
+def GSE26712():
+    meta = read_meta(m("GSE26712"))
+    meta = meta[meta["tissue"].str.contains("cancer")]
+    e = array_expr("GSE26712", "GPL96")[meta.index]
+    c = base(meta, "ovarian", "first-line")
+    c["arm"], c["drugs"] = "platinum-based chemotherapy", "PLATINUM"
+    c["os_months"] = num(meta["survival years"]) * 12
+    c["os_event"] = meta["status"].str.startswith("DOD").astype(int)
+    return e, c, "tumours only (10 normal surface samples dropped); platinum is from the paper; event = death of disease"
+
+
+def GSE49997():
+    meta = read_meta(m("GSE49997"))
+    meta = meta[meta["excluded"] == "no"]
+    e = array_expr("GSE49997", "GPL2986")[meta.index]
+    c = base(meta, "ovarian", "first-line")
+    c["arm"], c["drugs"] = "platinum + taxane", "PLATINUM;TAXANE"
+    c["pfs_months"], c["pfs_event"] = num(meta["pfs month"]), num(meta["pfs event"])
+    c["os_months"], c["os_event"] = num(meta["os month"]), num(meta["os event"])
+    c["age"], c["stage"] = num(meta["age"]), meta["figo grade"]
+    c["histology"] = meta["histology"]
+    return e, c, "10 samples excluded by the authors are removed; regimen from the paper"
+
+
+def GSE17260():
+    meta = read_meta(m("GSE17260"))
+    e = array_expr("GSE17260", "GPL6480")[meta.index]
+    c = base(meta, "ovarian (serous)", "first-line")
+    c["arm"], c["drugs"] = "platinum + taxane", "PLATINUM;TAXANE"
+    c["pfs_months"], c["pfs_event"] = num(meta["progression-free survival (m)"]), num(meta["recurrence (1)"])
+    c["os_months"], c["os_event"] = num(meta["overall survival (m)"]), num(meta["death (1)"])
+    c["stage"] = meta["stage"]
+    return e, c, "regimen from the paper; same centre as GSE32062 (duplicate check)"
+
+
+def GSE30161():
+    meta = read_meta(m("GSE30161"))
+    e = array_expr("GSE30161", "GPL570")[meta.index]
+    c = base(meta, "ovarian", "adjuvant")
+    ag = meta["chemo agent"].map({"Carboplatin/Taxol": "CARBOPLATIN;PACLITAXEL", "Cisplatin/Taxol": "CISPLATIN;PACLITAXEL", "Carboplatin": "CARBOPLATIN",
+                                  "Cisplatin/Cytoxan": "CISPLATIN;CYCLOPHOSPHAMIDE", "Carboplatin/Cytoxan": "CARBOPLATIN;CYCLOPHOSPHAMIDE"})
+    c["arm"], c["drugs"] = ag.str.lower().str.replace(";", " + "), ag
+    r = meta["chemoresponse"].str[:2]
+    c["responder"] = np.where(r.eq("CR"), 1.0, np.where(r.isin(["PR", "PD"]), 0.0, np.nan))
+    c["pfs_months"] = num(meta["pfi days"]) / 30.44
+    c["pfs_event"] = num(meta["relapse(1=yes, 0=no)"])
+    c["os_months"], c["os_event"] = num(meta["overall survival days"]) / 30.44, num(meta["censoring(dead=1,alive=0)"])
+    c["age"], c["stage"], c["histology"] = num(meta["age"]), meta["stage"], meta["histo"]
+    return e, c, "responder = complete response (32) vs partial response or progression (23); unknown response left empty"
+
+
+def GSE13876():
+    meta = _chars("GSE13876")
+    raise RuntimeError("two-colour custom array with replicate samples; not built")
+
+
+# ---- rectal chemoradiotherapy
+CRT = "FLUOROURACIL"
+
+
+def _crt(gse, gpl, col, good, bad, note, cohort_note, name=None, drugs=CRT, arm="chemoradiotherapy (fluoropyrimidine-based)", chars=False):
+    meta = (_chars if chars else read_meta)(m(gse, name))
+    if gpl == "symbols":      # series matrix already holds gene symbols
+        e = by_symbol(read_expr(m(gse, name)).apply(pd.to_numeric, errors="coerce"))[meta.index]
+    else:
+        e = array_expr(gse, gpl, name)[meta.index]
+    c = base(meta, "rectal (locally advanced)", "neoadjuvant chemoradiotherapy")
+    c["arm"], c["drugs"] = arm, drugs
+    v = meta[col]
+    c["responder"] = np.where(v.isin(good), 1.0, np.where(v.isin(bad), 0.0, np.nan))
+    return e, c, cohort_note
+
+
+def GSE35452():
+    return _crt("GSE35452", "GPL570", "response to preoperative chemoradiotherapy", ["Responder"], ["Non-responder"], "", "pre-treatment biopsies; 5-FU based chemoradiotherapy")
+
+
+def GSE119409():
+    return _crt("GSE119409", "GPL570", "sensitivity", ["sensitive"], ["resistant"], "", "10 patients with unknown sensitivity left empty")
+
+
+def GSE150082():
+    e, c, n = _crt("GSE150082", "GPL13497", "response", ["Good"], ["Poor"], "", "responder = good response; capecitabine + radiotherapy",
+                   drugs="CAPECITABINE", arm="capecitabine + radiotherapy")
+    return e, c, n + "; two-colour array against a universal reference"
+
+
+def GSE45404_GPL4133():
+    return _crt("GSE45404", "GPL4133", "class", ["Responder"], ["Non Responder"], "", "first part of GSE45404 (Agilent)", name="GSE45404-GPL4133_series_matrix.txt.gz")
+
+
+def GSE45404_GPL570():
+    return _crt("GSE45404", "GPL570", "class", ["Responder"], ["Non Responder"], "", "second part of GSE45404 (the file name says Plus 2.0 chip; the platform field in the file is GPL4133, so the chip is checked when built)",
+                name="GSE45404-GPL570_series_matrix.txt.gz")
+
+
+def GSE145037():
+    return _crt("GSE145037", "symbols", "response to the crt", ["response"], ["non-response"], "", "chemoradiotherapy regimen not named in the record")
+
+
+def GSE133057():
+    meta = read_meta(m("GSE133057"))
+    e = array_expr("GSE133057", "GPL6102")[meta.index]
+    c = base(meta, "rectal (locally advanced)", "neoadjuvant chemoradiotherapy")
+    c["arm"], c["drugs"] = "5-fluorouracil + 50.4 Gy radiotherapy", CRT
+    s = num(meta["ajcc score"])
+    c["responder"] = (s <= 1).astype(float).where(s.notna())
+    c["os_months"], c["os_event"] = _mo(meta["overall survival (in days)"]), num(meta["dead (1)/alive(0)"])
+    c["age"], c["sex"] = num(meta["age"]), meta["gender"]
+    return e, c, "responder = AJCC tumour regression score 0 or 1 (complete or near-complete response)"
+
+
+# ---- melanoma
+def _counts(path, cols_from, meta_titles):
+    d = pd.read_csv(path, index_col=0)
+    d = d.drop(columns=[x for x in ("Chr", "Start", "End", "Strand", "Length") if x in d.columns])
+    d.columns = [str(x).replace(".bam", "") for x in d.columns]
+    return d
+
+
+def _rna_counts(path, meta, key):
+    d = _counts(path, None, None)
+    ids = meta[key].astype(str).str.replace(".bam", "", regex=False)
+    keep = ids[ids.isin(d.columns)]
+    e = d[keep.values]
+    e = by_symbol(e)
+    e = np.log2(e / e.sum() * 1e6 + 1)
+    e.columns = keep.index
+    return e, meta.loc[keep.index]
+
+
+def GSE115821():
+    meta = pd.concat([read_meta(m("GSE115821", f"GSE115821-{g}_series_matrix.txt.gz")) for g in ("GPL11154", "GPL18573")])
+    meta = meta[meta["treatment state"].str.startswith("PRE")]
+    e, meta = _rna_counts(RAW / "GSE115821" / "GSE115821_MGH_counts.csv.gz", meta, "title")
+    c = base(meta, "melanoma (metastatic)", "immunotherapy")
+    ab = meta["antibody"]
+    c["patient"] = meta["patient id"]
+    c["arm"] = ab
+    c["drugs"] = ab.map({"anti-PD-1": "PEMBROLIZUMAB;NIVOLUMAB", "anti-CTLA-4": "IPILIMUMAB", "anti-PD-1+anti-CTLA-4": "NIVOLUMAB;IPILIMUMAB"})
+    c["responder"] = meta["response"].map({"R": 1, "NR": 0})
+    c["age"] = num(meta["age at the baseline"])
+    return e, c, "pre-treatment biopsies only, matched to the count table by sample name; anti-PD-1 drug is pembrolizumab or nivolumab (not given per patient)"
+
+
+def GSE168204():
+    meta = pd.concat([read_meta(m("GSE168204", f"GSE168204-{g}_series_matrix.txt.gz")) for g in ("GPL11154", "GPL18573")])
+    meta = meta[meta["treatment state"].eq("PRE")]
+    meta["_id"] = meta["title"].astype(str)
+    e, meta = _rna_counts(RAW / "GSE168204" / "GSE168204_MGH_counts.csv.gz", meta, "_id")
+    c = base(meta, "melanoma (metastatic)", "immunotherapy")
+    ab = meta["antibody"]
+    c["arm"] = ab
+    c["drugs"] = ab.map({"anti-PD1": "PEMBROLIZUMAB;NIVOLUMAB", "anti-PDL1": "ATEZOLIZUMAB", "anti-PD1+anti-CTLA4": "NIVOLUMAB;IPILIMUMAB"})
+    c["responder"] = meta["response immune checkpoint blockade therapy"].map({"R": 1, "NR": 0})
+    c["age"] = num(meta["age at the baseline"])
+    return e, c, "pre-treatment biopsies only, matched to the count table by sample name"
+
+
+def GSE100797():
+    meta = read_meta(m("GSE100797"))
+    d = pd.read_csv(RAW / "GSE100797" / "GSE100797_ProcessedData.txt.gz", sep="\t", index_col=0)
+    meta = meta[meta["title"].isin(d.columns)]
+    e = by_symbol(d[meta["title"].values])
+    e.columns = meta.index
+    c = base(meta, "melanoma (metastatic)", "adoptive T-cell therapy")
+    c["arm"], c["drugs"] = "tumour-infiltrating lymphocyte therapy", "TIL"
+    c["responder"] = meta["recist"].map({"CR": 1, "PR": 1, "SD": 0, "PD": 0})
+    c["pfs_months"], c["pfs_event"] = num(meta["pfs.time"]), num(meta["pfs.event"])
+    c["os_months"], c["os_event"] = num(meta["os.time"]), num(meta["os.event"])
+    return e, c, "responder = RECIST CR or PR; times as given in the record (assumed months); expression already normalised by the authors"
+
+
+# ---- bladder
+def GSE13507():
+    meta = read_meta(m("GSE13507"))
+    meta = meta[meta["biological source"].eq("primary bladder cancer")]
+    e = array_expr("GSE13507", "GPL6102")[meta.index]
+    c = base(meta, "bladder", "perioperative")
+    y = meta["systemic chemo"]
+    c["arm"] = np.where(y == "Yes", "systemic chemotherapy (regimen not given)", "no systemic chemotherapy")
+    c["drugs"] = np.where(y == "Yes", "CHEMOTHERAPY", "")
+    c["control_arm"] = y.eq("No")
+    c["os_months"], c["os_event"] = num(meta["survival month"]), meta["overall survival"].map({"death": 1, "survival": 0})
+    c["age"], c["sex"] = num(meta["age"]), meta["sex"].map({"M": "Male", "F": "Female"})
+    c["stage"] = meta["stage"].str.extract(r"^T?(a|is|\d)")[0].map({"a": "I", "is": "I", "1": "I", "2": "II", "3": "III", "4": "IV"})
+    return e, c, "165 primary tumours; mixed non-muscle-invasive and muscle-invasive; intravesical therapy not modelled; survival month as given"
+
+
+def GSE176307():
+    meta = read_meta(m("GSE176307"))
+    d = pd.read_csv(RAW / "GSE176307" / "GSE176307_BACI_log_trans_normalized_RNAseq.csv.gz", index_col=0).T
+    meta["_id"] = meta["title"].str.extract(r"(BACI\d+)")[0]
+    meta = meta[meta["_id"].isin(d.columns)]
+    e = by_symbol(d[meta["_id"].values])
+    e.columns = meta.index
+    c = base(meta, "bladder (metastatic urothelial)", "immunotherapy")
+    t = meta["io.therapy"]
+    c["arm"] = t
+    c["drugs"] = t.str.upper()
+    r = meta["io.response"]
+    c["responder"] = np.where(r.isin(["CR", "PR"]), 1.0, np.where(r.isin(["SD", "PD"]), 0.0, np.nan))
+    c["os_months"], c["os_event"] = _mo(meta["overall survival"]), meta["alive"].map({"No": 1, "Yes": 0})
+    c["pfs_months"], c["pfs_event"] = _mo(meta["pfs"]), meta["progressed"].map({"Yes": 1, "No": 0})
+    c["age"], c["sex"] = num(meta["age"]), meta["gender"].map({"M": "Male", "F": "Female"})
+    return e, c, "responder = CR or PR (RECIST) on checkpoint inhibitor; times are in days (converted); 89 samples have expression"
+
+
+def GSE32894():
+    meta = read_meta(m("GSE32894"))
+    meta = meta[meta["dod_event_(yes/no)"].isin(["yes", "no"])]
+    e = array_expr("GSE32894", "GPL6947")[meta.index]
+    c = base(meta, "bladder", "surgery (treatment not recorded)")
+    c["os_months"], c["os_event"] = num(meta["time_to_dod_(months)"]), meta["dod_event_(yes/no)"].map({"yes": 1, "no": 0})   # death from disease
+    c["age"], c["sex"] = num(meta["age"]), meta["gender"].map({"M": "Male", "F": "Female"})
+    return e, c, "event = death from disease (patients flagged 'dod excluded' are removed); treatment not recorded"
+
+
+# ---- head and neck
+def GSE65858():
+    meta = read_meta(m("GSE65858"))
+    e = array_expr("GSE65858", "GPL10558")[meta.index]
+    c = base(meta, "head and neck", "primary treatment (surgery / radiotherapy, intensity only)")
+    t = meta["treatment"]
+    c["arm"] = t.map({"multi": "multimodality treatment", "mono": "single-modality treatment", "palliative": "palliative"})
+    c["os_months"], c["os_event"] = _mo(meta["os"]), meta["os_event"].map({"TRUE": 1, "FALSE": 0})
+    c["pfs_months"], c["pfs_event"] = _mo(meta["pfs"]), meta["pfs_event"].map({"TRUE": 1, "FALSE": 0})
+    c["age"], c["sex"] = num(meta["age"]), meta["gender"].map({"M": "Male", "F": "Female"})
+    c["stage"] = meta["uicc_stage"].str.extract(r"^(IV|III|II|I)")[0]
+    return e, c, "drugs not recorded (multimodality = surgery with radiotherapy or chemoradiotherapy); times in days (converted)"
+
+
+def GSE41613():
+    meta = read_meta(m("GSE41613"))
+    e = array_expr("GSE41613", "GPL570")[meta.index]
+    c = base(meta, "head and neck (oral cavity)", "primary treatment (intensity only)")
+    c["arm"] = meta["treatment"]
+    c["os_months"] = num(meta["fu time"])
+    c["os_event"] = meta["vital"].str.startswith("Dead").astype(int)
+    c["sex"] = meta["sex"].map({"M": "Male", "F": "Female"})
+    c["stage"] = meta["tumor stage"].map({"I/II": "II", "III/IV": "III"})
+    return e, c, "HPV-negative oral cancer; drugs not recorded; follow-up in months as given; event = death from any cause"
+
+
+# ---- colorectal
+def GSE17536():
+    meta = read_meta(m("GSE17536"))
+    e = array_expr("GSE17536", "GPL570")[meta.index]
+    c = base(meta, "colorectal (colon)", "surgery (treatment not recorded)")
+    c["os_months"] = num(meta["overall survival follow-up time"])
+    c["os_event"] = meta["overall_event (death from any cause)"].map({"death": 1, "no death": 0})
+    c["dfs_months"], c["dfs_event"] = num(meta["dfs_time"]), meta["dfs_event (disease free survival; cancer recurrence)"].map({"recurrence": 1, "no recurrence": 0})
+    c["age"], c["sex"], c["stage"] = num(meta["age"]), meta["gender"].str.capitalize(), meta["ajcc_stage"].map({"1": "I", "2": "II", "3": "III", "4": "IV"})
+    return e, c, "Moffitt colon cancer; treatment not recorded"
+
+
+def GSE33113():
+    meta = read_meta(m("GSE33113"))
+    meta = meta[meta["tissue"].eq("primary tumor resection") & meta["meta or recurrence within 3 years"].isin(["yes", "no"])]
+    e = array_expr("GSE33113", "GPL570")[meta.index]
+    c = base(meta, "colorectal (colon, stage II)", "surgery (adjuvant chemotherapy not recorded)")
+    c["dfs_months"] = num(meta["time to meta or recurrence"]) / 30.44
+    c["dfs_event"] = meta["meta or recurrence within 3 years"].map({"yes": 1, "no": 0})
+    c["sex"] = meta["sex"].map({"m": "Male", "f": "Female"})
+    c["age"] = num(meta["age at diagnosis"].str.replace(",", "."))
+    c["stage"] = "II"
+    return e, c, "stage II only; per-patient chemotherapy not recorded; time in days (converted); event = metastasis or recurrence within 3 years"
+
+
+def GSE38832():
+    meta = read_meta(m("GSE38832"))
+    e = array_expr("GSE38832", "GPL570")[meta.index]
+    c = base(meta, "colorectal (colon)", "surgery (treatment not recorded)")
+    c["os_months"] = num(meta["dss_time (disease specific survival time, months)"])
+    c["os_event"] = num(meta["dss_event (disease specific survival)"].str.extract(r"^(\d)")[0])      # death from cancer
+    dfs = meta["dfs_event (disease free survival)"].str.extract(r"^(\d)")[0]
+    c["dfs_event"] = num(dfs)
+    c["dfs_months"] = num(meta["dfs_time (disease free survival time, months)"])
+    c["stage"] = meta["ajcc_stage"].map({"1": "I", "2": "II", "3": "III", "4": "IV"})
+    return e, c, "treatment not recorded; os = death from cancer (disease-specific)"
+
+
+# ---- stomach / oesophagus
+def GSE26253():
+    meta = read_meta(m("GSE26253"))
+    e = array_expr("GSE26253", "GPL8432")[meta.index]
+    c = base(meta, "stomach", "adjuvant")
+    c["arm"], c["drugs"] = "adjuvant chemoradiotherapy after gastrectomy (regimen not given)", "CHEMOTHERAPY"
+    c["rfs_months"] = num(meta["recurrence free survival time (month)"])
+    c["rfs_event"] = num(meta["status (0=non-recurrence, 1=recurrence)"])
+    c["stage"] = meta["pathological stage"].str.extract(r"^(\d)")[0].map({"1": "I", "2": "II", "3": "III", "4": "IV"})
+    return e, c, "all patients had adjuvant chemoradiotherapy; there is no untreated comparison"
+
+
+def GSE84437():
+    meta = read_meta(m("GSE84437"))
+    meta = meta[meta["death"].notna()]
+    e = array_expr("GSE84437", "GPL6947")[meta.index]
+    c = base(meta, "stomach", "surgery (treatment not recorded)")
+    c["os_months"], c["os_event"] = num(meta["duration overall survival"]), num(meta["death"])
+    c["age"], c["sex"] = num(meta["age"]), meta["sex"].str.capitalize()
+    return e, c, "treatment not recorded; overall survival time in months as given"
+
+
+def GSE15459():
+    meta = read_meta(m("GSE15459"))
+    o = pd.read_excel(RAW / "GSE15459" / "GSE15459_outcome.xls")
+    o = o.dropna(subset=["Outcome (1=dead)"]).set_index("GSM ID")
+    meta = meta.loc[[i for i in meta.index if i in o.index]]
+    e = array_expr("GSE15459", "GPL570")[meta.index]
+    o = o.loc[meta.index]
+    c = base(meta, "stomach", "surgery (treatment not recorded)")
+    c["os_months"], c["os_event"] = o["Overall.Survival (Months)**"], o["Outcome (1=dead)"]
+    c["age"], c["sex"] = o["Age_at_surgery"], o["Gender"]
+    c["stage"] = o["Stage"].map({1.0: "I", 2.0: "II", 3.0: "III", 4.0: "IV"})
+    return e, c, "outcome table taken from the supplementary file GSE15459_outcome.xls; treatment not recorded"
+
+
+def GSE104958():
+    meta = read_meta(m("GSE104958"))
+    meta = meta[meta["tissue"].eq("cancer tissue")]
+    e = array_expr("GSE104958", "GPL21185")[meta.index]
+    c = base(meta, "oesophagus", "neoadjuvant")
+    c["arm"], c["drugs"] = "docetaxel + cisplatin + 5-fluorouracil", "DOCETAXEL;CISPLATIN;FLUOROURACIL"
+    c["responder"] = meta["source_name_ch1"].map({"pCR": 1, "non-pCR": 0})
+    return e, c, "41 tumour biopsies (5 normal samples dropped); responder = pathological complete response"
+
+
+# ---- myeloma
+def _gse9782_meta():
+    a = _chars("GSE9782", "GSE9782-GPL96_series_matrix.txt.gz")
+    return a
+
+
+def GSE9782():
+    meta = _gse9782_meta()
+    e = array_expr("GSE9782", "GPL96", "GSE9782-GPL96_series_matrix.txt.gz")[meta.index]
+    c = base(meta, "myeloma (relapsed)", "relapsed / refractory", True)
+    b = meta["treatment"].eq("PS341")
+    c["arm"] = np.where(b, "bortezomib", "dexamethasone")
+    c["drugs"] = np.where(b, "BORTEZOMIB", "DEXAMETHASONE")
+    c["control_arm"] = ~b
+    c["study"] = meta["studycode"]
+    c["randomised"] = meta["studycode"].eq("39")                 # APEX (study 039) randomised bortezomib vs dexamethasone
+    c["responder"] = meta["pgx_responder"].map({"R": 1, "NR": 0})   # IE (not evaluable) left empty
+    c["pfs_months"] = num(meta["pgx_days_to_progression"]) / 30.44
+    c["pfs_event"] = num(meta["pgx_progression(0"] if "pgx_progression(0" in meta else np.nan)
+    c["os_months"] = num(meta["days_survived_from_randomization"]) / 30.44
+    c["os_event"] = num(meta["did_patient_die(0"] if "did_patient_die(0" in meta else np.nan)
+    c["age"], c["sex"] = num(meta["age_at_randomization"]), meta["sex"]
+    return e, c, "study 039 (APEX) randomised bortezomib vs dexamethasone (80 vs 76); studies 024, 025 and 040 are single-arm bortezomib; A-chip (GPL96) only"
+
+
+# ---- prostate
+def GSE116918():
+    meta = read_meta(m("GSE116918"))
+    e = array_expr("GSE116918", "GPL25318")[meta.index]
+    c = base(meta, "prostate", "radiotherapy (intensity only)")
+    c["arm"] = "radical radiotherapy (androgen deprivation not recorded per patient)"
+    c["rfs_months"], c["rfs_event"] = num(meta["follow-up time (bcr, months)"]), num(meta["bcr event (1=yes, 0=no)"])   # biochemical recurrence
+    c["age"] = num(meta["patient age (years)"])
+    c["stage"] = meta["t-stage"]
+    return e, c, "biopsies before radical radiotherapy; endpoint = biochemical recurrence; no drug recorded"
+
+
+OTHER_BUILDERS = [GSE16446, GSE50948, GSE34138, GSE17705, GSE66305, GSE42822, GSE6861, GSE4779, GSE32603, GSE6532_GPL96, GSE6532_GPL570,
+                  GSE58644, GSE7390, GSE11121, GSE37946, GSE76360, GSE21974, GSE18728, GSE173839, GSE18864, GSE103668, GSE9195, GSE12093,
+                  GSE45255, GSE31519, GSE59515,
+                  GSE140082, GSE32062, GSE26712, GSE49997, GSE17260, GSE30161,
+                  GSE35452, GSE119409, GSE150082, GSE45404_GPL4133, GSE45404_GPL570, GSE145037, GSE133057,
+                  GSE115821, GSE168204, GSE100797,
+                  GSE13507, GSE176307, GSE32894, GSE65858, GSE41613, GSE17536, GSE33113, GSE38832,
+                  GSE26253, GSE84437, GSE15459, GSE104958, GSE9782, GSE116918]
+SKIPPED_OTHER = {
+    "GSE28796": "dose-dense docetaxel breast cohort: only 2 complete responders (plan: exclude)",
+    "GSE20181": "letrozole breast cohort: response is not in the public record (only in the paper)",
+    "GSE87455": "breast chemotherapy + bevacizumab cohort: response is not in the public record (only in the paper)",
+    "GSE2034": "breast relapse-free survival cohort: only a bone-relapse flag is in the public record, not survival time",
+    "GSE16391": "BIG 1-98 breast cohort: the 0/1 code for letrozole versus tamoxifen is not explained in the record, and it is a matched case-control sample",
+    "GSE3149": "ovarian cohort: no clinical data in the public record",
+    "GSE13876": "ovarian cohort: two-colour custom array with several samples per patient (415 samples, 157 patients); survival status is in a free-text field per channel; not built",
+    "GSE94104": "rectal chemoradiotherapy cohort: the 3-level regression grade has no stated direction (which grade is best) in the record",
+    "GSE111177": "prostate androgen-deprivation cohort: no time-to-event or response definition in the record (metastasis yes/no only)",
+    "GSE5851": "cetuximab colorectal cohort: no response or survival in the record or the supplementary files (raw CEL files only)",
+    "GSE14210": "stomach cisplatin/5-FU cohort: no per-sample response or time-to-progression in the record or the supplementary files",
+    "GSE62254": "ACRG stomach cohort: clinical table is not in the GEO record or supplementary files",
+}
+
+
 if __name__ == "__main__":
     want = set(sys.argv[1:])
     rows = []
-    for fn in BUILDERS + LUNG_BUILDERS:
+    for fn in BUILDERS + LUNG_BUILDERS + OTHER_BUILDERS:
         cid = fn.__name__
         if want and cid not in want:
             continue

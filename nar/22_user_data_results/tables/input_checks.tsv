@@ -1,0 +1,19 @@
+set	check	value
+LUAD	geneID_expression_median.txt rows	19861
+LUAD	duplicate gene symbols in median file	0
+LUAD	genes compared median-file vs GEO series matrix	19763
+LUAD	max abs difference of values	1.83
+LUAD	share of values identical	0.999949400394677
+LUAD	series-matrix probes	55570
+LUAD	median_response.txt equals supp_table_S2b IC50 column (row by row)	True
+LUAD	rows per organoid x drug (repeats)	8
+LUAD	cluster x drug cells with more than one distinct value	0
+LUAD	cluster x drug cells listed	48
+LUAD	luad drug.xlsx Sheet1 matrix equals zero-filled cluster x drug table	True
+LUAD	organoids in expression / in response / both	102 / 102 / 102
+OVARY	log2TPM table genes x samples	31374 x 28
+OVARY	minimum value (floor for TPM = 0)	-9.0
+OVARY	share of values at the floor	0.27255393455909804
+OVARY	lines with more than one distinct IC50 per drug (should be 0)	0
+OVARY	rows collapsed into line x drug	56 -> 14
+LIHC	data rows in the series matrix (only the header line = 0)	0

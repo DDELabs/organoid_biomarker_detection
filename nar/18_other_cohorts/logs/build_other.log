@@ -1,0 +1,16 @@
+{'cohort': 'GSE17705', 'samples': 298, 'genes': 12502, 'with_response': 0, 'responders': 0, 'with_survival': 298, 'events': 71, 'note': 'all ER-positive on tamoxifen; relapse = distant relapse; two profiling labs'}
+{'cohort': 'GSE66305', 'samples': 88, 'genes': 20848, 'with_response': 88, 'responders': 27, 'with_survival': 0, 'events': 0, 'note': 'CHER-LOB randomised trial; chemotherapy backbone (weekly paclitaxel then FEC) is from the trial design, not the GEO record'}
+{'cohort': 'GSE42822', 'samples': 91, 'genes': 12502, 'with_response': 91, 'responders': 37, 'with_survival': 0, 'events': 0, 'note': 'FNA biopsies before FEC then taxane; trastuzumab added for HER2-positive; not randomised; MDACC-type cohort, check overlap with GSE20194/GSE25066'}
+{'cohort': 'GSE6861', 'samples': 161, 'genes': 20886, 'with_response': 161, 'responders': 66, 'with_survival': 0, 'events': 0, 'note': 'EORTC 10994 pCR; regimen text from the series title only; may share patients with GSE4779'}
+{'cohort': 'GSE4779', 'samples': 102, 'genes': 20886, 'with_response': 102, 'responders': 39, 'with_survival': 0, 'events': 0, 'note': 'epirubicin-containing neoadjuvant chemotherapy; may share patients with GSE6861'}
+{'cohort': 'GSE32603', 'samples': 141, 'genes': 13392, 'with_response': 138, 'responders': 35, 'with_survival': 141, 'events': 40, 'note': 'I-SPY1 pre-treatment biopsies (T1) only; regimen from the trial design; the same patients may be in GSE22226'}
+{'cohort': 'GSE6532_GPL96', 'samples': 327, 'genes': 12502, 'with_response': 0, 'responders': 0, 'with_survival': 119, 'events': 44, 'note': "Oxford/Guy/Uppsala series; per-sample 'untreated' or 'tamoxifen' text in the record; the B-chip file (GPL97) holds the same patients and is not used"}
+{'cohort': 'GSE6532_GPL570', 'samples': 87, 'genes': 20848, 'with_response': 0, 'responders': 0, 'with_survival': 87, 'events': 28, 'note': "Guy's tamoxifen-treated subset on the Plus 2.0 chip"}
+Traceback (most recent call last):
+  File "/home/user/organoid_biomarker_detection/robust/build_training_cohorts.py", line 1563, in <module>
+    expr, clin, note = fn()
+                       ~~^^
+  File "/home/user/organoid_biomarker_detection/robust/build_training_cohorts.py", line 959, in GSE58644
+    c["drugs"] = np.where(d != "", d, np.where(known_none, "", np.nan))
+                                      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.DTypePromotionError: The DType <class 'numpy.dtypes.StrDType'> could not be promoted by <class 'numpy.dtypes._PyFloatDType'>. This means that no common DType exists for the given inputs. For example they cannot be stored in a single array unless the dtype is `object`. The full list of DTypes is: (<class 'numpy.dtypes.StrDType'>, <class 'numpy.dtypes._PyFloatDType'>)
